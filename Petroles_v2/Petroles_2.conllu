@@ -66,7 +66,7 @@
 36	sudeste	sudeste	ADJ	_	Gender=Fem|Number=Sing	35	amod	LOCAL_POL_1	start_char=195|end_char=202
 37	(	(	PUNCT	_	_	38	punct	LOCAL_POL_2	start_char=203|end_char=204
 38	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	5	appos:parataxis	_	start_char=204|end_char=210
-39	2.1	2.1	PROPN	_	Number=Sing	38	appos	_	start_char=211|end_char=214
+39	2.1	2.1	NUM	_	Number=Sing	38	nummod	_	start_char=211|end_char=214
 40	)	)	PUNCT	_	_	38	punct	_	start_char=214|end_char=215
 41	.	.	PUNCT	_	_	5	punct	_	start_char=215|end_char=216
 
@@ -108,11 +108,11 @@
 2	)	)	PUNCT	_	_	1	punct	_	start_char=565|end_char=566
 3	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=567|end_char=568
 4	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	0	root	_	start_char=569|end_char=573
-5	de	de	ADP	_	_	6	case	_	start_char=574|end_char=576
+5	de	de	ADP	_	_	4	flat:name	_	start_char=574|end_char=576
 6	Fratura	Fratura	PROPN	_	Number=Sing	4	flat:name	LITOLOGIA	start_char=577|end_char=584
-7	de	de	ADP	_	_	8	case	_	start_char=585|end_char=587
+7	de	de	ADP	_	_	4	flat:name	_	start_char=585|end_char=587
 8	Martin	Martin	PROPN	_	Gender=Masc|Number=Sing	4	flat:name	_	start_char=588|end_char=594
-9	Vaz	Vaz	PROPN	_	Number=Sing	8	flat:name	_	start_char=595|end_char=598
+9	Vaz	Vaz	PROPN	_	Number=Sing	4	flat:name	_	start_char=595|end_char=598
 10	,	,	PUNCT	_	_	12	punct	_	start_char=598|end_char=599
 11	de	de	ADP	_	_	12	case	_	start_char=600|end_char=602
 12	direção	direção	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=603|end_char=610
@@ -158,9 +158,9 @@
 3	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=405|end_char=406
 4	Lineamento	Lineamento	PROPN	_	Gender=Masc|Number=Sing	0	root	_	start_char=407|end_char=417
 5	Sismo-Tectônico	Sismo-Tectônico	PROPN	_	Number=Sing	4	flat:name	_	start_char=418|end_char=433
-6	de	de	ADP	_	_	7	case	_	start_char=434|end_char=436
+6	de	de	ADP	_	_	4	flat:name	_	start_char=434|end_char=436
 7	Cabo	Cabo	PROPN	_	Number=Sing	4	flat:name	_	start_char=437|end_char=441
-8	Frio	Frio	PROPN	_	Number=Sing	7	flat:name	_	start_char=442|end_char=446
+8	Frio	Frio	PROPN	_	Number=Sing	4	flat:name	_	start_char=442|end_char=446
 9	,	,	PUNCT	_	_	13	punct	_	start_char=446|end_char=447
 10	com	com	ADP	_	_	13	case	_	start_char=448|end_char=451
 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	start_char=452|end_char=454
@@ -179,9 +179,9 @@
 23	ligando	ligar	VERB	_	VerbForm=Ger	4	acl	_	start_char=517|end_char=524
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	start_char=525|end_char=526
 25	Ilha	Ilha	PROPN	_	Gender=Fem|Number=Sing	23	obj	_	start_char=527|end_char=531
-26	de	de	ADP	_	_	27	case	_	start_char=532|end_char=534
+26	de	de	ADP	_	_	25	flat:name	_	start_char=532|end_char=534
 27	Cabo	Cabo	PROPN	_	Number=Sing	25	flat:name	_	start_char=535|end_char=539
-28	Frio	Frio	PROPN	_	Number=Sing	27	flat:name	_	start_char=540|end_char=544
+28	Frio	Frio	PROPN	_	Number=Sing	25	flat:name	_	start_char=540|end_char=544
 29	a	a	ADP	_	_	30	case	_	start_char=545|end_char=546
 30	Poços	Poços	PROPN	_	Number=Sing	23	iobj	_	start_char=547|end_char=552
 31	de	de	ADP	_	_	30	flat:name	_	start_char=553|end_char=555
@@ -229,9 +229,9 @@
 33	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	start_char=177|end_char=178
 34	Alinhamento	Alinhamento	PROPN	_	Gender=Masc|Number=Sing	8	appos	UNIDADE_LITO_1	start_char=179|end_char=190
 35	Magmático	Magmático	PROPN	_	Number=Sing	34	flat:name	UNIDADE_LITO_2	start_char=191|end_char=200
-36	de	de	ADP	_	_	37	case	UNIDADE_LITO_3	start_char=201|end_char=203
+36	de	de	ADP	_	_	34	flat:name	UNIDADE_LITO_3	start_char=201|end_char=203
 37	Cabo	Cabo	PROPN	_	Number=Sing	34	flat:name	UNIDADE_LITO_4	start_char=204|end_char=208
-38	Frio	Frio	PROPN	_	Number=Sing	37	flat:name	UNIDADE_LITO_5	start_char=209|end_char=213
+38	Frio	Frio	PROPN	_	Number=Sing	34	flat:name	UNIDADE_LITO_5	start_char=209|end_char=213
 39	,	,	PUNCT	_	_	40	punct	_	start_char=213|end_char=214
 40	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	34	acl	_	start_char=215|end_char=228
 41-42	pela	_	_	_	_	_	_	_	start_char=229|end_char=233
@@ -290,8 +290,8 @@
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	América	América	PROPN	_	Gender=Fem|Number=Sing	13	nmod	_	start_char=92|end_char=99
 18-19	do	_	_	_	_	_	_	_	start_char=100|end_char=102
-18	de	de	ADP	_	_	20	case	_	_
-19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+18	de	de	ADP	_	_	17	flat:name	_	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	_	_
 20	Sul	Sul	PROPN	_	Gender=Masc|Number=Sing	17	flat:name	_	start_char=103|end_char=106
 21	e	e	CCONJ	_	_	22	cc	_	start_char=107|end_char=108
 22	África	África	PROPN	_	Gender=Fem|Number=Sing	17	conj	LOCAL_POL	start_char=109|end_char=115
@@ -330,8 +330,8 @@
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=109|end_char=110
 17	América	América	PROPN	_	Gender=Fem|Number=Sing	15	obj	_	start_char=111|end_char=118
 18-19	do	_	_	_	_	_	_	_	start_char=119|end_char=121
-18	de	de	ADP	_	_	20	case	_	_
-19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+18	de	de	ADP	_	_	17	flat:name	_	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	_	_
 20	Sul	Sul	PROPN	_	Number=Sing	17	flat:name	_	start_char=122|end_char=125
 21	,	,	PUNCT	_	_	22	punct	_	start_char=125|end_char=126
 22	África	África	PROPN	_	Gender=Fem|Number=Sing	17	conj	LOCAL_POL	start_char=127|end_char=133
@@ -365,7 +365,7 @@
 16	de	de	ADP	_	_	14	fixed	_	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	fase	fase	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	start_char=84|end_char=88
-19	rifte	rifte	NOUN	_	Gender=Fem|Number=Sing	18	appos	LOCAL_GEO	start_char=89|end_char=94
+19	rifte	rifte	NOUN	_	Gender=Fem|Number=Sing	18	nmod	LOCAL_GEO	start_char=89|end_char=94
 20	iniciada	iniciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	acl	_	start_char=95|end_char=103
 21-22	no	_	_	_	_	_	_	_	start_char=104|end_char=106
 21	em	em	ADP	_	_	23	case	_	_
@@ -422,7 +422,7 @@
 # sent_id = 20-20140904-TESEDSC_0-51-2
 1	-	-	PUNCT	_	_	2	punct	_	start_char=123|end_char=124
 2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	_	start_char=125|end_char=130
-3	de	de	ADP	_	_	4	case	_	start_char=131|end_char=133
+3	de	de	ADP	_	_	2	flat:name	_	start_char=131|end_char=133
 4	Santos	Santos	PROPN	_	Number=Sing	2	flat:name	BACIA	start_char=134|end_char=140
 5	:	:	PUNCT	_	_	2	punct	_	start_char=141|end_char=142
 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=143|end_char=144
@@ -492,7 +492,7 @@
 3	,	,	PUNCT	_	_	2	punct	_	start_char=10|end_char=11
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=13
 5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj:pass	_	start_char=14|end_char=19
-6	de	de	ADP	_	_	7	case	_	start_char=20|end_char=22
+6	de	de	ADP	_	_	5	flat:name	_	start_char=20|end_char=22
 7	Santos	Santos	PROPN	_	Number=Sing	5	flat:name	BACIA	start_char=23|end_char=29
 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	start_char=30|end_char=31
 9	limitada	limitar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	start_char=32|end_char=40
@@ -501,8 +501,8 @@
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	Serra	Serra	PROPN	_	Gender=Masc|Number=Sing	9	obl:agent	_	start_char=46|end_char=51
 13-14	do	_	_	_	_	_	_	_	start_char=52|end_char=54
-13	de	de	ADP	_	_	15	case	_	_
-14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+13	de	de	ADP	_	_	12	flat:name	_	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	flat:name	_	_
 15	Mar	Mar	PROPN	_	Number=Sing	12	flat:name	LOCAL_GEO	start_char=55|end_char=58
 16	,	,	PUNCT	_	_	18	punct	_	start_char=58|end_char=59
 17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	start_char=60|end_char=63
@@ -761,7 +761,7 @@
 18	de	de	ADP	_	_	20	case	_	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	BACIA_1	start_char=105|end_char=110
-21	de	de	ADP	_	_	22	case	_	start_char=111|end_char=113
+21	de	de	ADP	_	_	20	flat:name	_	start_char=111|end_char=113
 22	Santos	Santos	PROPN	_	Number=Sing	20	flat:name	BACIA_2	start_char=114|end_char=120
 23	.	.	PUNCT	_	_	7	punct	_	start_char=120|end_char=121
 
@@ -865,8 +865,8 @@
 50	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	Serra	Serra	PROPN	_	Gender=Masc|Number=Sing	48	nmod	_	start_char=258|end_char=263
 52-53	do	_	_	_	_	_	_	_	start_char=264|end_char=266
-52	de	de	ADP	_	_	54	case	_	_
-53	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
+52	de	de	ADP	_	_	51	flat:name	_	_
+53	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	flat:name	_	_
 54	Mar	Mar	PROPN	_	Number=Sing	51	flat:name	LOCAL_GEO	start_char=267|end_char=270
 55	.	.	PUNCT	_	_	41	punct	_	start_char=270|end_char=271
 
@@ -913,7 +913,7 @@
 6	de	de	ADP	_	_	8	case	_	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	BACIA_TIPO	start_char=26|end_char=31
-9	de	de	ADP	_	_	10	case	_	start_char=32|end_char=34
+9	de	de	ADP	_	_	8	flat:name	_	start_char=32|end_char=34
 10	Santos	Santos	PROPN	_	Number=Sing	8	flat:name	BACIA	start_char=35|end_char=41
 11	,	,	PUNCT	_	_	12	punct	_	start_char=41|end_char=42
 12	já	já	ADV	_	_	18	advmod	_	start_char=43|end_char=45
@@ -933,7 +933,7 @@
 25	Formações	Formações	PROPN	_	Gender=Fem|Number=Sing	21	appos:parataxis	_	start_char=112|end_char=121
 26	Iguape	Iguape	PROPN	_	Number=Sing	25	flat:name	_	start_char=122|end_char=128
 27	e	e	CCONJ	_	_	28	cc	_	start_char=129|end_char=130
-28	Sepetiba	Sepetiba	PROPN	_	Gender=Fem|Number=Sing	26	conj	_	start_char=131|end_char=139
+28	Sepetiba	Sepetiba	PROPN	_	Gender=Fem|Number=Sing	25	conj	_	start_char=131|end_char=139
 29	)	)	PUNCT	_	_	25	punct	_	start_char=139|end_char=140
 30	,	,	PUNCT	_	_	31	punct	_	start_char=140|end_char=141
 31	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	32	nsubj	_	start_char=142|end_char=145
@@ -1019,8 +1019,8 @@
 4	Continental	Continental	PROPN	_	Number=Sing	3	flat:name	_	start_char=168|end_char=179
 5	Sudeste	Sudeste	PROPN	_	Number=Sing	3	flat:name	_	start_char=180|end_char=187
 6-7	do	_	_	_	_	_	_	_	start_char=188|end_char=190
-6	de	de	ADP	_	_	8	case	_	_
-7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+6	de	de	ADP	_	_	3	flat:name	_	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	flat:name	_	_
 8	Brasil	Brasil	PROPN	_	Number=Sing	3	flat:name	_	start_char=191|end_char=197
 
 # text = 2.2.1 As Bacias de Santos e Campos
@@ -1028,10 +1028,10 @@
 1	2.2.1	2.2.1	NUM	_	NumType=Card	3	parataxis	_	_
 2	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	start_char=134|end_char=136
 3	Bacias	Bacias	PROPN	_	Number=Sing	0	root	_	start_char=137|end_char=143
-4	de	de	ADP	_	_	5	case	_	start_char=144|end_char=146
+4	de	de	ADP	_	_	3	flat:name	_	start_char=144|end_char=146
 5	Santos	Santos	PROPN	_	Number=Sing	3	flat:name	LOCAL_POL|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=147|end_char=153
 6	e	e	CCONJ	_	_	7	cc	_	start_char=154|end_char=155
-7	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	5	conj	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=156|end_char=162
+7	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	3	conj	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=156|end_char=162
 
 # text = Tal região, caracterizada por esta dinâmica morfologia de serras e vales intervenientes, resultou da evolução tectônica do RCSB.
 # sent_id = 20-20140904-TESEDSC_0-48-1
@@ -1245,8 +1245,8 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=1
 2	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	7	nsubj:pass	CAMPO	start_char=2|end_char=7
 3-4	do	_	_	_	_	_	_	_	start_char=8|end_char=10
-3	de	de	ADP	_	_	5	case	_	_
-4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+3	de	de	ADP	_	_	2	flat:name	_	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	flat:name	_	_
 5	Mar	Mar	PROPN	_	Number=Sing	2	flat:name	_	start_char=11|end_char=14
 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	start_char=15|end_char=16
 7	formada	formar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	start_char=17|end_char=24
@@ -1295,7 +1295,7 @@
 48	de	de	ADP	_	_	50	case	_	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
 50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	46	nmod	BACIA_TIPO	start_char=238|end_char=243
-51	de	de	ADP	_	_	52	case	_	start_char=244|end_char=246
+51	de	de	ADP	_	_	50	flat:name	_	start_char=244|end_char=246
 52	Santos	Santos	PROPN	_	Number=Sing	50	flat:name	LOCAL_POL|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=247|end_char=253
 53	(	(	PUNCT	_	_	54	punct	_	start_char=254|end_char=255
 54	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	7	appos:parataxis	_	start_char=255|end_char=262
@@ -1344,7 +1344,7 @@
 30	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	start_char=175|end_char=183
 31	(	(	PUNCT	_	_	32	punct	_	start_char=184|end_char=185
 32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	7	appos:parataxis	_	start_char=185|end_char=191
-33	1.1	1.1	NUM	_	NumType=Card	32	appos	_	start_char=192|end_char=195
+33	1.1	1.1	NUM	_	NumType=Card	32	nummod	_	start_char=192|end_char=195
 34	)	)	PUNCT	_	_	32	punct	_	start_char=195|end_char=196
 35	.	.	PUNCT	_	_	7	punct	_	start_char=196|end_char=197
 
@@ -1403,9 +1403,9 @@
 5	por	por	ADP	_	_	7	case	_	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	4	obl:agent	_	start_char=27|end_char=31
-8	de	de	ADP	_	_	9	case	_	start_char=32|end_char=34
+8	de	de	ADP	_	_	7	flat:name	_	start_char=32|end_char=34
 9	Cabo	Cabo	PROPN	_	Number=Sing	7	flat:name	_	start_char=35|end_char=39
-10	Frio	Frio	PROPN	_	Number=Sing	9	flat:name	_	start_char=40|end_char=44
+10	Frio	Frio	PROPN	_	Number=Sing	7	flat:name	_	start_char=40|end_char=44
 11	,	,	PUNCT	_	_	14	punct	_	start_char=44|end_char=45
 12	e	e	CCONJ	_	_	14	cc	_	start_char=46|end_char=47
 13	para	para	ADP	_	_	14	case	_	start_char=48|end_char=52
@@ -1414,7 +1414,7 @@
 15	por	por	ADP	_	_	17	case	_	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Plataforma	Plataforma	PROPN	_	Gender=Fem|Number=Sing	14	orphan	_	start_char=62|end_char=72
-18	de	de	ADP	_	_	19	case	_	start_char=73|end_char=75
+18	de	de	ADP	_	_	17	flat:name	_	start_char=73|end_char=75
 19	Florianópolis	Florianópolis	PROPN	_	Number=Sing	17	flat:name	_	start_char=76|end_char=89
 20	,	,	PUNCT	_	_	21	punct	_	start_char=89|end_char=90
 21	ambas	ambos	PRON	_	Gender=Fem|Number=Plur|PronType=Tot	23	nsubj	_	start_char=91|end_char=96
@@ -1517,7 +1517,7 @@
 # sent_id = 20-20140904-TESEDSC_0-67-2
 1	-	-	PUNCT	_	_	2	punct	_	start_char=226|end_char=227
 2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	BACIA_TIPO	start_char=228|end_char=233
-3	de	de	ADP	_	_	4	case	_	start_char=234|end_char=236
+3	de	de	ADP	_	_	2	flat:name	_	start_char=234|end_char=236
 4	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=237|end_char=243
 5	:	:	PUNCT	_	_	2	punct	_	start_char=243|end_char=244
 6-7	situa-se	_	_	_	_	_	_	_	start_char=245|end_char=253
@@ -1531,11 +1531,11 @@
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	Estado	Estado	PROPN	_	Gender=Masc|Number=Sing	9	nmod	LOCAL_POL_1	start_char=279|end_char=285
 14-15	do	_	_	_	_	_	_	LOCAL_POL_2	start_char=286|end_char=288
-14	de	de	ADP	_	_	16	case	LOCAL_POL_3 etc	_
-15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+14	de	de	ADP	_	_	13	flat:name	LOCAL_POL_3 etc	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	flat:name	_	_
 16	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	13	flat:name	_	start_char=289|end_char=292
-17	de	de	ADP	_	_	16	flat:name	_	start_char=293|end_char=295
-18	Janeiro	Janeiro	PROPN	_	Number=Sing	16	flat:name	_	start_char=296|end_char=303
+17	de	de	ADP	_	_	13	flat:name	_	start_char=293|end_char=295
+18	Janeiro	Janeiro	PROPN	_	Number=Sing	13	flat:name	_	start_char=296|end_char=303
 19	,	,	PUNCT	_	_	20	punct	_	start_char=303|end_char=304
 20	cobrindo	cobrir	VERB	_	VerbForm=Ger	6	advcl	_	start_char=305|end_char=313
 21	cerca	cerca	ADV	_	_	24	advmod	_	MWEPOS=ADV|start_char=314|end_char=319
@@ -1578,23 +1578,23 @@
 15	de	de	ADP	_	_	17	case	_	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	14	nmod	LOCAL_GEO_1	start_char=75|end_char=79
-18	de	de	ADP	_	_	19	case	LOCAL_GEO_2	start_char=80|end_char=82
+18	de	de	ADP	_	_	17	flat:name	LOCAL_GEO_2	start_char=80|end_char=82
 19	Cabo	Cabo	PROPN	_	Number=Sing	17	flat:name	LOCAL_GEO_3	start_char=83|end_char=87
-20	Frio	Frio	PROPN	_	Number=Sing	19	flat:name	LOCAL_GEO_4	start_char=88|end_char=92
+20	Frio	Frio	PROPN	_	Number=Sing	17	flat:name	LOCAL_GEO_4	start_char=88|end_char=92
 21	,	,	PUNCT	_	_	14	punct	_	start_char=92|end_char=93
 22	coincidindo	coincidir	VERB	_	VerbForm=Ger	6	advcl	_	start_char=94|end_char=105
 23	aí	aí	ADV	_	_	22	advmod	_	start_char=106|end_char=108
 24	com	com	ADP	_	_	26	case	_	start_char=109|end_char=112
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	start_char=113|end_char=114
 26	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	22	obj	_	start_char=115|end_char=119
-27	de	de	ADP	_	_	28	case	_	start_char=120|end_char=122
+27	de	de	ADP	_	_	26	flat:name	_	start_char=120|end_char=122
 28	Transferência	Transferência	PROPN	_	Number=Sing	26	flat:name	_	start_char=123|end_char=136
 29-30	do	_	_	_	_	_	_	_	start_char=137|end_char=139
-29	de	de	ADP	_	_	31	case	_	_
-30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+29	de	de	ADP	_	_	26	flat:name	_	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	flat:name	_	_
 31	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	26	flat:name	LOCAL_POL_1	start_char=140|end_char=143
-32	de	de	ADP	_	_	31	flat:name	LOCAL_POL_2	start_char=144|end_char=146
-33	Janeiro	Janeiro	PROPN	_	Number=Sing	31	flat:name	LOCAL_POL_3	start_char=147|end_char=158
+32	de	de	ADP	_	_	26	flat:name	LOCAL_POL_2	start_char=144|end_char=146
+33	Janeiro	Janeiro	PROPN	_	Number=Sing	26	flat:name	LOCAL_POL_3	start_char=147|end_char=158
 34	.	.	PUNCT	_	_	6	punct	_	_
 
 # text = Secundariamente, foram empregados dados de sísmica e batimetria com vistas a enriquecer, não só a interpretação, como também criar, eventualmente, vínculos que permitam restringir o cenário de ambigüidades tão típico da interpretação de dados potenciais.
@@ -1718,10 +1718,10 @@
 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	36	nmod	_	start_char=221|end_char=226
 40-41	do	_	_	_	_	_	_	_	start_char=227|end_char=229
-40	de	de	ADP	_	_	42	case	_	_
-41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
+40	de	de	ADP	_	_	39	flat:name	_	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	flat:name	_	_
 42	São	São	PROPN	_	Number=Sing	39	flat:name	_	start_char=230|end_char=233
-43	João	João	PROPN	_	Number=Sing	42	flat:name	_	start_char=234|end_char=238
+43	João	João	PROPN	_	Number=Sing	39	flat:name	_	start_char=234|end_char=238
 44	(	(	PUNCT	_	_	45	punct	_	start_char=239|end_char=240
 45	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	19	appos:parataxis	_	start_char=240|end_char=247
 46	e	e	CCONJ	_	_	45	flat:name	_	start_char=248|end_char=249
@@ -1794,11 +1794,11 @@
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	Estado	estado	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	start_char=331|end_char=337
 35-36	do	_	_	_	_	_	_	_	start_char=338|end_char=340
-35	de	de	ADP	_	_	37	case	_	_
-36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+35	de	de	ADP	_	_	34	flat:name	_	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	flat:name	_	_
 37	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	34	flat:name	_	start_char=341|end_char=344
-38	de	de	ADP	_	_	39	case	_	start_char=345|end_char=347
-39	Janeiro	Janeiro	PROPN	_	Number=Sing	37	flat:name	_	start_char=348|end_char=355
+38	de	de	ADP	_	_	34	flat:name	_	start_char=345|end_char=347
+39	Janeiro	Janeiro	PROPN	_	Number=Sing	34	flat:name	_	start_char=348|end_char=355
 40	estudada	estudar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	30	acl	_	start_char=356|end_char=364
 41-42	nesta	_	_	_	_	_	_	_	start_char=365|end_char=370
 41	em	em	ADP	_	_	43	case	_	_
@@ -1806,7 +1806,7 @@
 43	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	40	obl	_	start_char=371|end_char=379
 44	(	(	PUNCT	_	_	45	punct	_	start_char=380|end_char=381
 45	figura	figura	NOUN	_	Gender=Fem|Number=Sing	5	appos:parataxis	_	start_char=381|end_char=387
-46	1.1	1.1	NUM	_	NumType=Card	45	appos	_	start_char=388|end_char=391
+46	1.1	1.1	NUM	_	NumType=Card	45	nummod	_	start_char=388|end_char=391
 47	)	)	PUNCT	_	_	45	punct	_	start_char=391|end_char=392
 48	.	.	PUNCT	_	_	5	punct	_	start_char=392|end_char=393
 
@@ -1857,12 +1857,12 @@
 11	designado	designar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	start_char=65|end_char=74
 12	como	como	ADP	_	_	13	case	_	start_char=75|end_char=79
 13	sub-area	sub-area	NOUN	_	Gender=Masc|Number=Sing	11	xcomp	_	start_char=80|end_char=88
-14	4	4	NUM	_	NumType=Card	13	appos	_	start_char=89|end_char=90
+14	4	4	NUM	_	NumType=Card	13	nummod	_	start_char=89|end_char=90
 15-16	da	_	_	_	_	_	_	_	start_char=91|end_char=93
 15	de	de	ADP	_	_	17	case	_	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	BACIA_TIPO	start_char=94|end_char=99
-18	de	de	ADP	_	_	19	case	_	start_char=100|end_char=102
+18	de	de	ADP	_	_	17	flat:name	_	start_char=100|end_char=102
 19	Santos	Santos	PROPN	_	Number=Sing	17	flat:name	LOCAL_POL|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=103|end_char=109
 20	e	e	CCONJ	_	_	23	cc	_	start_char=110|end_char=111
 21-22	ao	_	_	_	_	_	_	_	start_char=112|end_char=114
@@ -1873,7 +1873,7 @@
 24	de	de	ADP	_	_	26	case	_	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	BACIA_TIPO	start_char=124|end_char=129
-27	de	de	ADP	_	_	28	case	_	start_char=130|end_char=132
+27	de	de	ADP	_	_	26	flat:name	_	start_char=130|end_char=132
 28	Campos	Campos	PROPN	_	Number=Sing	26	flat:name	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=133|end_char=139
 29	.	.	PUNCT	_	_	4	punct	_	start_char=139|end_char=140
 
@@ -1881,7 +1881,7 @@
 # sent_id = 20-20140904-TESEDSC_0-223
 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=2
 2	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	start_char=3|end_char=10
-3	3.1	3.1	NUM	_	NumType=Card	2	appos	_	start_char=11|end_char=14
+3	3.1	3.1	NUM	_	NumType=Card	2	nummod	_	start_char=11|end_char=14
 4	e	e	CCONJ	_	_	5	cc	_	start_char=15|end_char=16
 5	3.2	3.2	NUM	_	NumType=Card	3	conj	_	start_char=17|end_char=20
 6	,	,	PUNCT	_	_	7	punct	_	start_char=20|end_char=21
@@ -2291,7 +2291,7 @@
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	ano	ano	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	start_char=35|end_char=38
 8	de	de	ADP	_	_	9	case	_	start_char=39|end_char=41
-9	1978	1978	NUM	_	NumType=Card	7	nmod	_	start_char=42|end_char=46
+9	1978	1978	NUM	_	NumType=Card	7	nummod	_	start_char=42|end_char=46
 10	,	,	PUNCT	_	_	11	punct	_	start_char=46|end_char=47
 11	fazendo	fazer	VERB	_	VerbForm=Ger	4	advcl	_	start_char=48|end_char=55
 12	parte	parte	NOUN	_	Gender=Fem|Number=Sing	11	fixed	_	MWEPOS=VERB|start_char=56|end_char=61
@@ -2301,22 +2301,22 @@
 15	Projeto	Projeto	PROPN	_	Gender=Masc|Number=Sing	11	obj	_	start_char=65|end_char=72
 16	Aerogeofisico	Aerogeofisico	PROPN	_	Number=Sing	15	flat:name	_	start_char=73|end_char=86
 17	São	São	PROPN	_	Number=Sing	15	flat:name	_	start_char=87|end_char=90
-18	Paulo	Paulo	PROPN	_	Number=Sing	17	flat:name	_	start_char=91|end_char=96
-19	–	–	PUNCT	_	_	20	punct	_	start_char=97|end_char=98
+18	Paulo	Paulo	PROPN	_	Number=Sing	15	flat:name	_	start_char=91|end_char=96
+19	–	–	PUNCT	_	_	15	flat:name	_	start_char=97|end_char=98
 20	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	15	flat:name	_	start_char=99|end_char=102
-21	de	de	ADP	_	_	22	case	_	start_char=103|end_char=105
-22	Janeiro	Janeiro	PROPN	_	Number=Sing	20	flat:name	_	start_char=106|end_char=113
+21	de	de	ADP	_	_	15	flat:name	_	start_char=103|end_char=105
+22	Janeiro	Janeiro	PROPN	_	Number=Sing	15	flat:name	_	start_char=106|end_char=113
 23-24	da	_	_	_	_	_	_	_	start_char=114|end_char=116
-23	de	de	ADP	_	_	25	case	_	_
-24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	CPRM	CPRM	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	start_char=117|end_char=121
+23	de	de	ADP	_	_	15	flat:name	_	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	flat:name	_	_
+25	CPRM	CPRM	PROPN	_	Gender=Masc|Number=Sing	15	flat:name	_	start_char=117|end_char=121
 26	.	.	PUNCT	_	_	4	punct	_	start_char=121|end_char=122
 
 # text = As figuras 3.3 e 3.4 apresentam mapas mostrando a junção entre os aerolevantamentos da área marinha (Fugro) e da área emersa (CPRM).
 # sent_id = 20-20140904-TESEDSC_0-241-2
 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	start_char=321|end_char=323
 2	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	_	start_char=324|end_char=331
-3	3.3	3.3	NUM	_	NumType=Card	2	appos	_	start_char=332|end_char=335
+3	3.3	3.3	NUM	_	NumType=Card	2	nummod	_	start_char=332|end_char=335
 4	e	e	CCONJ	_	_	5	cc	_	start_char=336|end_char=337
 5	3.4	3.4	NUM	_	NumType=Card	3	conj	_	start_char=338|end_char=341
 6	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=342|end_char=352
@@ -2360,9 +2360,9 @@
 9	seguir	seguir	VERB	_	VerbForm=Inf	8	fixed	_	start_char=54|end_char=60
 10	:	:	PUNCT	_	_	7	punct	_	start_char=61|end_char=62
 11	-	-	PUNCT	_	_	12	punct	_	start_char=63|end_char=64
-12	Total	Total	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	start_char=65|end_char=70
-13	de	de	ADP	_	_	14	case	_	start_char=71|end_char=73
-14	Perfis	Perfis	PROPN	_	Number=Sing	12	nmod	_	start_char=74|end_char=80
+12	Total	Total	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	start_char=65|end_char=70
+13	de	de	ADP	_	_	12	flat:name	_	start_char=71|end_char=73
+14	Perfis	Perfis	PROPN	_	Number=Sing	12	flat:name	_	start_char=74|end_char=80
 15	:	:	PUNCT	_	_	17	punct	_	start_char=80|end_char=81
 16	41.595	41.595	NUM	_	NumType=Card	17	nummod	_	start_char=82|end_char=88
 17	km	km	NOUN	_	Gender=Masc|Number=Plur	12	appos	_	start_char=89|end_char=91
@@ -2373,14 +2373,14 @@
 22	38.000	38.000	NUM	_	NumType=Card	23	nummod	_	start_char=110|end_char=116
 23	km²	km²	NOUN	_	Gender=Masc|Number=Plur	19	appos	_	start_char=117|end_char=120
 24	-	-	PUNCT	_	_	25	punct	_	start_char=121|end_char=122
-25	Direção	direção	PROPN	_	Gender=Fem|Number=Sing	12	conj	_	start_char=123|end_char=130
+25	Direção	direção	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	start_char=123|end_char=130
 26-27	das	_	_	_	_	_	_	_	start_char=131|end_char=134
 26	de	de	ADP	_	_	28	case	_	_
 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
 28	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	start_char=135|end_char=141
 29	de	de	ADP	_	_	30	case	_	start_char=142|end_char=144
 30	vôo	vôo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	start_char=145|end_char=148
-31	:	:	PUNCT	_	_	32	punct	_	start_char=148|end_char=149
+31	:	:	PUNCT	_	_	25	punct	_	start_char=148|end_char=149
 32	N-S	N-S	PROPN	_	Gender=Masc|Number=Sing	25	appos	_	start_char=150|end_char=153
 33	-	-	PUNCT	_	_	34	punct	_	start_char=154|end_char=155
 34	Espaçamento	espaçamento	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	start_char=156|end_char=167
@@ -2393,14 +2393,14 @@
 41	1.000	1.000	NUM	_	NumType=Card	42	nummod	_	start_char=192|end_char=197
 42	m	m	NOUN	_	Gender=Masc|Number=Plur	34	appos	_	start_char=198|end_char=199
 43	-	-	PUNCT	_	_	44	punct	_	start_char=200|end_char=201
-44	Direção	direção	PROPN	_	Gender=Fem|Number=Sing	12	conj	_	start_char=202|end_char=209
+44	Direção	direção	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	start_char=202|end_char=209
 45-46	das	_	_	_	_	_	_	_	start_char=210|end_char=213
 45	de	de	ADP	_	_	47	case	_	_
 46	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	47	det	_	_
 47	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	44	nmod	_	start_char=214|end_char=220
 48	de	de	ADP	_	_	49	case	_	start_char=221|end_char=223
 49	controle	controle	NOUN	_	Gender=Masc|Number=Sing	47	nmod	_	start_char=224|end_char=232
-50	:	:	PUNCT	_	_	51	punct	_	start_char=232|end_char=233
+50	:	:	PUNCT	_	_	44	punct	_	start_char=232|end_char=233
 51	E-W	E-W	PROPN	_	Gender=Masc|Number=Sing	44	appos	_	start_char=234|end_char=237
 52	-	-	PUNCT	_	_	53	punct	_	start_char=238|end_char=239
 53	Espaçamento	espaçamento	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	start_char=240|end_char=251
@@ -2458,11 +2458,11 @@
 4	a	a	ADP	_	_	6	case	_	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Centro	Centro	PROPN	_	Gender=Masc|Number=Sing	3	obl	_	start_char=20|end_char=26
-7	de	de	ADP	_	_	8	case	_	start_char=27|end_char=29
+7	de	de	ADP	_	_	6	flat:name	_	start_char=27|end_char=29
 8	Hidrografia	Hidrografia	PROPN	_	Number=Sing	6	flat:name	_	start_char=30|end_char=41
 9-10	da	_	_	_	_	_	_	_	start_char=42|end_char=44
-9	de	de	ADP	_	_	11	case	_	_
-10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+9	de	de	ADP	_	_	6	flat:name	_	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	flat:name	_	_
 11	Marinha	Marinha	PROPN	_	Number=Sing	6	flat:name	_	start_char=45|end_char=52
 12	(	(	PUNCT	_	_	13	punct	_	start_char=53|end_char=54
 13	CHM	CHM	PROPN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=54|end_char=57
@@ -2499,9 +2499,9 @@
 41	a	a	ADP	_	_	43	case	_	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	Ilha	Ilha	PROPN	_	Number=Sing	39	conj	_	start_char=217|end_char=221
-44	de	de	ADP	_	_	45	case	_	start_char=222|end_char=224
+44	de	de	ADP	_	_	43	flat:name	_	start_char=222|end_char=224
 45	Cabo	Cabo	PROPN	_	Number=Sing	43	flat:name	_	start_char=225|end_char=229
-46	Frio	Frio	PROPN	_	Number=Sing	45	flat:name	_	start_char=230|end_char=234
+46	Frio	Frio	PROPN	_	Number=Sing	43	flat:name	_	start_char=230|end_char=234
 47	.	.	PUNCT	_	_	2	punct	_	start_char=234|end_char=235
 
 # text = Estes levantamentos, executados nos anos de 1979, 1997 e 2003, recobrem uma área que parte da região costeira até a base do talude, abrangendo toda a porção proximal da Bacia de Santos contida no referido estado (figura 3.5).
@@ -2515,7 +2515,7 @@
 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	start_char=36|end_char=40
 8	de	de	ADP	_	_	9	case	_	start_char=41|end_char=43
-9	1979	1979	NUM	_	NumType=Card	7	nmod	_	start_char=44|end_char=48
+9	1979	1979	NUM	_	NumType=Card	7	nummod	_	start_char=44|end_char=48
 10	,	,	PUNCT	_	_	11	punct	_	start_char=48|end_char=49
 11	1997	1997	NUM	_	NumType=Card	9	conj	_	start_char=50|end_char=54
 12	e	e	CCONJ	_	_	13	cc	_	start_char=55|end_char=56
@@ -2548,7 +2548,7 @@
 36	de	de	ADP	_	_	38	case	_	_
 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 38	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	35	nmod	BACIA_TIPO	start_char=169|end_char=174
-39	de	de	ADP	_	_	40	case	_	start_char=175|end_char=177
+39	de	de	ADP	_	_	38	flat:name	_	start_char=175|end_char=177
 40	Santos	Santos	PROPN	_	Number=Sing	38	flat:name	LOCAL_POL|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=178|end_char=184
 41	contida	conter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	34	acl	_	start_char=185|end_char=192
 42-43	no	_	_	_	_	_	_	_	start_char=193|end_char=195
@@ -2558,7 +2558,7 @@
 45	estado	estado	NOUN	_	Gender=Masc|Number=Sing	41	obl	_	start_char=205|end_char=211
 46	(	(	PUNCT	_	_	47	punct	_	start_char=212|end_char=213
 47	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	appos:parataxis	_	start_char=213|end_char=219
-48	3.5	3.5	NUM	_	NumType=Card	47	appos	_	start_char=220|end_char=223
+48	3.5	3.5	NUM	_	NumType=Card	47	nummod	_	start_char=220|end_char=223
 49	)	)	PUNCT	_	_	47	punct	_	start_char=223|end_char=224
 50	.	.	PUNCT	_	_	15	punct	_	start_char=224|end_char=225
 
@@ -2580,7 +2580,7 @@
 12	e	e	CCONJ	_	_	14	cc	_	start_char=55|end_char=56
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=57|end_char=58
 14	Baia	Baia	PROPN	_	Gender=Fem|Number=Sing	11	conj	_	start_char=59|end_char=63
-15	de	de	ADP	_	_	16	case	_	start_char=64|end_char=66
+15	de	de	ADP	_	_	14	flat:name	_	start_char=64|end_char=66
 16	Guanabara	Guanabara	PROPN	_	Number=Sing	14	flat:name	_	start_char=67|end_char=76
 17	,	,	PUNCT	_	_	1	punct	_	start_char=76|end_char=77
 18	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=78|end_char=85
@@ -2744,7 +2744,7 @@
 32	integrado	integrado	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	start_char=183|end_char=192
 33	(	(	PUNCT	_	_	34	punct	_	start_char=193|end_char=194
 34	figura	figura	NOUN	_	Gender=Fem|Number=Sing	26	appos:parataxis	_	start_char=194|end_char=200
-35	3.5	3.5	NUM	_	NumType=Card	34	appos	_	start_char=201|end_char=204
+35	3.5	3.5	NUM	_	NumType=Card	34	nummod	_	start_char=201|end_char=204
 36	)	)	PUNCT	_	_	34	punct	_	start_char=204|end_char=205
 37	.	.	PUNCT	_	_	28	punct	_	start_char=205|end_char=206
 
@@ -2830,7 +2830,7 @@
 49	em	em	ADP	_	_	51	case	_	_
 50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
 51	capítulo	capítulo	NOUN	_	Gender=Masc|Number=Sing	48	obl	_	start_char=420|end_char=428
-52	7	7	NUM	_	NumType=Card	51	appos	_	start_char=429|end_char=430
+52	7	7	NUM	_	NumType=Card	51	nummod	_	start_char=429|end_char=430
 53	sobre	sobre	ADP	_	_	54	case	_	start_char=431|end_char=436
 54	integração	integração	NOUN	_	Gender=Fem|Number=Sing	51	nmod	_	start_char=437|end_char=447
 55-56	dos	_	_	_	_	_	_	_	start_char=448|end_char=451
@@ -2866,7 +2866,7 @@
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	ano	ano	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	start_char=106|end_char=109
 22	de	de	ADP	_	_	23	case	_	start_char=110|end_char=112
-23	1979	1979	NUM	_	NumType=Card	21	nmod	_	start_char=113|end_char=117
+23	1979	1979	NUM	_	NumType=Card	21	nummod	_	start_char=113|end_char=117
 24	.	.	PUNCT	_	_	17	punct	_	start_char=117|end_char=118
 
 # text = Com vistas a enfatizar as feições sutis do relevo topográfico, encontrado numa área tipicamente de relevo inexpressivo como é a plataforma continental, foi aplicado um sombreamento digital no mapa com o posicionamento da fonte de luz a baixa inclinação e perpendicular ao trend magnético observado.
@@ -2921,7 +2921,7 @@
 44	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	45	amod	_	start_char=236|end_char=241
 45	inclinação	inclinação	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	start_char=242|end_char=252
 46	e	e	CCONJ	_	_	47	cc	_	start_char=253|end_char=254
-47	perpendicular	perpendicular	NOUN	_	Gender=Masc|Number=Sing	45	conj	_	start_char=255|end_char=268
+47	perpendicular	perpendicular	ADJ	_	Gender=Masc|Number=Sing	45	conj	_	start_char=255|end_char=268
 48-49	ao	_	_	_	_	_	_	_	start_char=269|end_char=271
 48	a	a	ADP	_	_	50	case	_	_
 49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
@@ -3001,13 +3001,13 @@
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	escala	escala	NOUN	_	Gender=Fem|Number=Sing	18	obl	_	start_char=85|end_char=91
 22	de	de	ADP	_	_	23	case	_	start_char=92|end_char=94
-23	1:400.000	1:400.000	NUM	_	NumType=Card	21	nmod	_	start_char=95|end_char=96
+23	1:400.000	1:400.000	NUM	_	NumType=Card	21	nummod	_	start_char=95|end_char=96
 24	(	(	PUNCT	_	_	25	punct	_	start_char=105|end_char=106
 25	figura	figura	NOUN	_	Gender=Fem|Number=Sing	18	appos:parataxis	_	start_char=106|end_char=112
-26	1.2	1.2	NUM	_	NumType=Card	25	appos	_	start_char=113|end_char=116
+26	1.2	1.2	NUM	_	NumType=Card	25	nummod	_	start_char=113|end_char=116
 27	e	e	CCONJ	_	_	28	cc	_	start_char=117|end_char=118
 28	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	25	conj	_	start_char=119|end_char=124
-29	2	2	NUM	_	NumType=Card	28	appos	_	start_char=125|end_char=126
+29	2	2	NUM	_	NumType=Card	28	nummod	_	start_char=125|end_char=126
 30	)	)	PUNCT	_	_	25	punct	_	start_char=126|end_char=127
 31	.	.	PUNCT	_	_	18	punct	_	start_char=127|end_char=128
 
@@ -3052,8 +3052,8 @@
 34	de	de	ADP	_	_	35	case	_	start_char=194|end_char=196
 35	Arraial	Arraial	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	start_char=197|end_char=204
 36-37	do	_	_	_	_	_	_	_	start_char=205|end_char=207
-36	de	de	ADP	_	_	38	case	_	_
-37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+36	de	de	ADP	_	_	35	flat:name	_	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	flat:name	_	_
 38	Cabo	Cabo	PROPN	_	Number=Sing	35	flat:name	_	start_char=208|end_char=212
 39	e	e	CCONJ	_	_	42	cc	_	start_char=213|end_char=214
 40-41	da	_	_	_	_	_	_	_	start_char=215|end_char=217
@@ -3071,10 +3071,10 @@
 50	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	escala	escala	NOUN	_	Gender=Fem|Number=Sing	48	nmod	_	start_char=261|end_char=267
 52	de	de	ADP	_	_	53	case	_	start_char=268|end_char=270
-53	1:50.000	1:50.000	NUM	_	NumType=Card	51	nmod	_	start_char=271|end_char=272
+53	1:50.000	1:50.000	NUM	_	NumType=Card	51	nummod	_	start_char=271|end_char=272
 54	(	(	PUNCT	_	_	55	punct	_	start_char=280|end_char=281
 55	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	18	appos:parataxis	_	start_char=281|end_char=288
-56	1.3	1.3	NUM	_	NumType=Card	55	appos	_	start_char=289|end_char=292
+56	1.3	1.3	NUM	_	NumType=Card	55	nummod	_	start_char=289|end_char=292
 57	,	,	PUNCT	_	_	58	punct	_	start_char=292|end_char=293
 58	7.6	7.6	NUM	_	NumType=Card	56	conj	_	start_char=294|end_char=297
 59	,	,	PUNCT	_	_	60	punct	_	start_char=297|end_char=298
@@ -3265,7 +3265,7 @@
 20	pólo	pólo	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	start_char=109|end_char=113
 21	sul	sul	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	start_char=114|end_char=117
 22	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	start_char=118|end_char=127
-23	e	e	CCONJ	_	_	30	cc	_	start_char=128|end_char=129
+23	e	e	CCONJ	_	_	29	cc	_	start_char=128|end_char=129
 24	,	,	PUNCT	_	_	25	punct	_	start_char=129|end_char=130
 25	opostamente	opostamente	ADV	_	_	30	advmod	_	start_char=131|end_char=142
 26	,	,	PUNCT	_	_	25	punct	_	start_char=142|end_char=143
@@ -3288,7 +3288,7 @@
 4	de	de	ADP	_	_	6	case	_	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=22|end_char=28
-7	4.6	4.6	NUM	_	NumType=Card	6	appos	_	start_char=29|end_char=32
+7	4.6	4.6	NUM	_	NumType=Card	6	nummod	_	start_char=29|end_char=32
 8	,	,	PUNCT	_	_	9	punct	_	start_char=32|end_char=33
 9	por	por	ADP	_	_	12	advmod	_	MWEPOS=ADV|start_char=34|end_char=37
 10	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	_	start_char=38|end_char=45
@@ -3445,7 +3445,7 @@
 1	Em	em	ADP	_	_	3	case	_	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	capitulo	capítulo	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	start_char=3|end_char=11
-4	7	7	NUM	_	NumType=Card	3	appos	_	start_char=12|end_char=13
+4	7	7	NUM	_	NumType=Card	3	nummod	_	start_char=12|end_char=13
 5	,	,	PUNCT	_	_	3	punct	_	start_char=13|end_char=14
 6	sobre	sobre	ADP	_	_	8	case	_	start_char=15|end_char=20
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=21|end_char=22
@@ -3476,10 +3476,10 @@
 7	total	total	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=26|end_char=31
 8	(	(	PUNCT	_	_	9	punct	_	start_char=32|end_char=33
 9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	appos:parataxis	_	start_char=33|end_char=39
-10	1.2	1.2	NUM	_	NumType=Card	9	appos	_	start_char=40|end_char=43
+10	1.2	1.2	NUM	_	NumType=Card	9	nummod	_	start_char=40|end_char=43
 11	e	e	CCONJ	_	_	12	cc	_	start_char=44|end_char=45
 12	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	start_char=46|end_char=51
-13	2	2	NUM	_	NumType=Card	12	appos	_	start_char=52|end_char=53
+13	2	2	NUM	_	NumType=Card	12	nummod	_	start_char=52|end_char=53
 14	)	)	PUNCT	_	_	9	punct	_	start_char=53|end_char=54
 15	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=55|end_char=61
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=62|end_char=63
@@ -3541,7 +3541,7 @@
 31	de	de	ADP	_	_	33	case	_	_
 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	29	nmod	BACIA_TIPO	start_char=150|end_char=155
-34	de	de	ADP	_	_	35	case	_	start_char=156|end_char=158
+34	de	de	ADP	_	_	33	flat:name	_	start_char=156|end_char=158
 35	Campos	Campos	PROPN	_	Number=Sing	33	flat:name	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=159|end_char=165
 36	)	)	PUNCT	_	_	29	punct	_	start_char=165|end_char=166
 37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	start_char=167|end_char=169
@@ -3680,7 +3680,7 @@
 9	entre	entre	ADP	_	_	11	case	_	start_char=25|end_char=30
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=31|end_char=32
 11	Baia	Baia	PROPN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=33|end_char=37
-12	de	de	ADP	_	_	13	case	_	start_char=38|end_char=40
+12	de	de	ADP	_	_	11	flat:name	_	start_char=38|end_char=40
 13	Guanabara	Guanabara	PROPN	_	Number=Sing	11	flat:name	_	start_char=41|end_char=50
 14	e	e	CCONJ	_	_	16	cc	_	start_char=51|end_char=52
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	start_char=53|end_char=54
@@ -3763,7 +3763,7 @@
 39	sobre	sobre	ADP	_	_	41	case	_	start_char=192|end_char=197
 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	start_char=198|end_char=199
 41	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	33	nmod	BACIA_TIPO	start_char=200|end_char=205
-42	de	de	ADP	_	_	43	case	_	start_char=206|end_char=208
+42	de	de	ADP	_	_	41	flat:name	_	start_char=206|end_char=208
 43	Campos	Campos	PROPN	_	Number=Sing	41	flat:name	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=209|end_char=215
 44	.	.	PUNCT	_	_	6	punct	_	start_char=215|end_char=216
 
@@ -3806,10 +3806,10 @@
 11	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=42|end_char=51
 12	(	(	PUNCT	_	_	13	punct	_	start_char=52|end_char=53
 13	figura	figura	NOUN	_	Gender=Fem|Number=Sing	19	appos:parataxis	_	start_char=53|end_char=59
-14	1.2	1.2	NUM	_	NumType=Card	13	appos	_	start_char=60|end_char=63
+14	1.2	1.2	NUM	_	NumType=Card	13	nummod	_	start_char=60|end_char=63
 15	e	e	CCONJ	_	_	16	cc	_	start_char=64|end_char=65
 16	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	start_char=66|end_char=71
-17	3	3	NUM	_	NumType=Card	16	appos	_	start_char=72|end_char=73
+17	3	3	NUM	_	NumType=Card	16	nummod	_	start_char=72|end_char=73
 18	)	)	PUNCT	_	_	13	punct	_	start_char=73|end_char=74
 19	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=75|end_char=81
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	start_char=82|end_char=83
@@ -3927,7 +3927,7 @@
 13	de	de	ADP	_	_	15	case	_	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	Baia	Baia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	start_char=65|end_char=69
-16	de	de	ADP	_	_	17	case	_	start_char=70|end_char=72
+16	de	de	ADP	_	_	15	flat:name	_	start_char=70|end_char=72
 17	Guanabara	Guanabara	PROPN	_	Number=Sing	15	flat:name	_	start_char=73|end_char=82
 18	,	,	PUNCT	_	_	20	punct	_	start_char=82|end_char=83
 19	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	_	start_char=84|end_char=87
@@ -4000,12 +4000,12 @@
 3	de	de	ADP	_	_	4	case	_	start_char=11|end_char=13
 4	Arraial	Arraial	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=14|end_char=21
 5-6	do	_	_	_	_	_	_	_	start_char=22|end_char=24
-5	de	de	ADP	_	_	7	case	_	_
-6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+5	de	de	ADP	_	_	4	flat:name	_	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	flat:name	_	_
 7	Cabo	Cabo	PROPN	_	Number=Sing	4	flat:name	_	start_char=25|end_char=29
 8	(	(	PUNCT	_	_	9	punct	_	start_char=30|end_char=31
 9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	appos:parataxis	_	start_char=31|end_char=37
-10	1.3	1.3	NUM	_	NumType=Card	9	appos	_	start_char=38|end_char=41
+10	1.3	1.3	NUM	_	NumType=Card	9	nummod	_	start_char=38|end_char=41
 11	)	)	PUNCT	_	_	9	punct	_	start_char=41|end_char=42
 12	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	_	start_char=43|end_char=46
 13	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	start_char=47|end_char=51
@@ -4035,9 +4035,9 @@
 34	de	de	ADP	_	_	36	case	_	_
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	Ilha	Ilha	PROPN	_	Gender=Fem|Number=Sing	32	nmod	_	start_char=176|end_char=180
-37	de	de	ADP	_	_	38	case	_	start_char=181|end_char=183
+37	de	de	ADP	_	_	36	flat:name	_	start_char=181|end_char=183
 38	Cabo	Cabo	PROPN	_	Number=Sing	36	flat:name	_	start_char=184|end_char=188
-39	Frio	Frio	PROPN	_	Number=Sing	38	flat:name	_	start_char=189|end_char=193
+39	Frio	Frio	PROPN	_	Number=Sing	36	flat:name	_	start_char=189|end_char=193
 40	,	,	PUNCT	_	_	29	punct	_	start_char=193|end_char=194
 41	cujos	cujo	DET	_	Gender=Masc|Number=Plur|PronType=Rel	42	det	_	start_char=195|end_char=200
 42	flancos	flanco	NOUN	_	Gender=Masc|Number=Plur	47	nsubj	_	start_char=201|end_char=208
@@ -4060,8 +4060,8 @@
 5	de	de	ADP	_	_	6	case	_	start_char=329|end_char=331
 6	Arraial	Arraial	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=332|end_char=339
 7-8	do	_	_	_	_	_	_	_	start_char=340|end_char=342
-7	de	de	ADP	_	_	9	case	_	_
-8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+7	de	de	ADP	_	_	6	flat:name	_	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	flat:name	_	_
 9	Cabo	Cabo	PROPN	_	Number=Sing	6	flat:name	_	start_char=343|end_char=347
 10	,	,	PUNCT	_	_	1	punct	_	start_char=347|end_char=348
 11	se	se	PRON	_	_	12	expl	_	start_char=349|end_char=351
@@ -4108,7 +4108,7 @@
 8	em	em	ADP	_	_	10	case	_	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	start_char=294|end_char=300
-11	1.3	1.3	NUM	_	NumType=Card	10	appos	_	start_char=301|end_char=304
+11	1.3	1.3	NUM	_	NumType=Card	10	nummod	_	start_char=301|end_char=304
 12	.	.	PUNCT	_	_	2	punct	_	start_char=304|end_char=305
 
 # text = A outra anomalia se encontra na região submersa e pode ser observada no mapa regional (oeste da área) como um alto localizado A SSE da Ilha Grande.
@@ -4144,7 +4144,7 @@
 26	alto	alto	ADJ	_	Gender=Masc|Number=Sing	13	xcomp	_	start_char=214|end_char=218
 27	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	26	acl	_	start_char=219|end_char=229
 28	a	a	ADP	_	_	29	case	_	start_char=230|end_char=231
-29	SSE	SSE	PROPN	_	Gender=Masc|Number=Sing	27	obl	_	start_char=232|end_char=235
+29	SSE	SSE	NOUN	_	Gender=Masc|Number=Sing	27	obl	_	start_char=232|end_char=235
 30-31	da	_	_	_	_	_	_	_	start_char=236|end_char=238
 30	de	de	ADP	_	_	32	case	_	_
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
@@ -4229,7 +4229,7 @@
 8	em	em	ADP	_	_	10	case	_	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	capitulo	capitulo	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	start_char=78|end_char=86
-11	7	7	NUM	_	NumType=Card	10	appos	_	start_char=87|end_char=88
+11	7	7	NUM	_	NumType=Card	10	nummod	_	start_char=87|end_char=88
 12	referente	referente	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=89|end_char=98
 13-14	aos	_	_	_	_	_	_	_	start_char=99|end_char=102
 13	a	a	ADP	_	_	15	case	_	_
@@ -4322,7 +4322,7 @@
 25	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	start_char=128|end_char=137
 26	(	(	PUNCT	_	_	27	punct	_	start_char=138|end_char=139
 27	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	6	appos:parataxis	_	start_char=139|end_char=145
-28	2	2	NUM	_	NumType=Card	27	appos	_	start_char=146|end_char=147
+28	2	2	NUM	_	NumType=Card	27	nummod	_	start_char=146|end_char=147
 29	e	e	CCONJ	_	_	30	cc	_	start_char=148|end_char=149
 30	3	3	NUM	_	NumType=Card	28	conj	_	start_char=150|end_char=151
 31	)	)	PUNCT	_	_	27	punct	_	start_char=151|end_char=152
@@ -4379,7 +4379,7 @@
 41	de	de	ADP	_	_	43	case	_	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	Baia	Baia	PROPN	_	Gender=Fem|Number=Sing	39	nmod	_	start_char=212|end_char=216
-44	de	de	ADP	_	_	45	case	_	start_char=217|end_char=219
+44	de	de	ADP	_	_	43	flat:name	_	start_char=217|end_char=219
 45	Guanabara	Guanabara	PROPN	_	Number=Sing	43	flat:name	_	start_char=220|end_char=229
 46	,	,	PUNCT	_	_	49	punct	_	start_char=229|end_char=230
 47	e	e	CCONJ	_	_	49	cc	_	start_char=231|end_char=232
@@ -4496,7 +4496,7 @@
 11	em	em	ADP	_	_	13	case	_	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	item	item	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	start_char=72|end_char=76
-14	1.4	1.4	NUM	_	NumType=Card	13	appos	_	start_char=77|end_char=80
+14	1.4	1.4	NUM	_	NumType=Card	13	nummod	_	start_char=77|end_char=80
 15	,	,	PUNCT	_	_	10	punct	_	start_char=80|end_char=81
 16	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	aux:pass	_	start_char=82|end_char=87
 17	extraídos	extrair	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	start_char=88|end_char=97
@@ -4556,7 +4556,7 @@
 16-17	deste	_	_	_	_	_	_	_	start_char=96|end_char=101
 16	de	de	ADP	_	_	18	case	_	_
 17	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	_	_
-18	texto	texto	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	start_char=102|end_char=111
+18	texto	texto	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	start_char=102|end_char=111
 19	.	.	PUNCT	_	_	12	punct	_	_
 
 # text = O atual campo geomagnético na área se apresenta emergindo com uma inclinação aproximada de 36º, isto é, a inclinação do hemisfério sul magnético sinalizada convencionalmente por – 36º.
@@ -4577,7 +4577,7 @@
 13	inclinação	inclinação	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	start_char=215|end_char=225
 14	aproximada	aproximar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	13	acl	_	start_char=226|end_char=236
 15	de	de	ADP	_	_	16	case	_	start_char=237|end_char=239
-16	36º	36º	NUM	_	NumType=Ord	13	nmod	_	start_char=240|end_char=243
+16	36º	36º	NUM	_	NumType=Ord	13	nummod	_	start_char=240|end_char=243
 17	,	,	PUNCT	_	_	18	punct	_	start_char=243|end_char=244
 18	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	22	cc	_	MWEPOS=CCONJ|start_char=245|end_char=249
 19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	fixed	_	start_char=250|end_char=251
@@ -4602,8 +4602,8 @@
 1	5.1	5.1	NUM	_	NumType=Ord	2	parataxis	_	_
 2	Estrutura	estrutura	PROPN	_	Number=Sing	0	root	_	start_char=112|end_char=121
 3-4	do	_	_	_	_	_	_	_	start_char=122|end_char=124
-3	de	de	ADP	_	_	5	case	_	_
-4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+3	de	de	ADP	_	_	2	flat:name	_	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	flat:name	_	_
 5	Campo	Campo	PROPN	_	Gender=Masc|Number=Sing	2	flat:name	CAMPO_TIPO	start_char=125|end_char=130
 6	Magnético	Magnético	PROPN	_	Number=Sing	2	flat:name	_	start_char=131|end_char=140
 7	Anômalo	Anômalo	PROPN	_	Number=Sing	2	flat:name	_	start_char=141|end_char=148
@@ -4631,7 +4631,7 @@
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	escala	escala	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	start_char=84|end_char=90
 19	de	de	ADP	_	_	20	case	_	start_char=91|end_char=93
-20	1:50.000	1:50.000	NUM	_	NumType=Card	18	appos	_	start_char=94|end_char=95
+20	1:50.000	1:50.000	NUM	_	NumType=Card	18	nummod	_	start_char=94|end_char=95
 21	.	.	PUNCT	_	_	7	punct	_	start_char=102|end_char=103
 
 # text = A descrição detalhada destes, sua classificação e associação com as unidades geológicas conhecidas será abordada no capitulo 7 que integra os resultados da interpretação.
@@ -4658,7 +4658,7 @@
 18	em	em	ADP	_	_	20	case	_	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	capitulo	capítulo	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	start_char=116|end_char=124
-21	7	7	NUM	_	NumType=Card	20	appos	_	start_char=125|end_char=126
+21	7	7	NUM	_	NumType=Card	20	nummod	_	start_char=125|end_char=126
 22	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	23	nsubj	_	start_char=127|end_char=130
 23	integra	integrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	start_char=131|end_char=138
 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	start_char=139|end_char=141
@@ -4674,8 +4674,8 @@
 1	6	6	NUM	_	NumType=Ord	2	parataxis	_	_
 2	INTERPRETAÇÃO	INTERPRETAÇÃO	PROPN	_	Gender=Fem|Number=Sing	0	root	_	start_char=172|end_char=185
 3-4	DOS	_	_	_	_	_	_	_	start_char=186|end_char=189
-3	DE	de	ADP	_	_	5	case	_	_
-4	OS	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+3	DE	de	ADP	_	_	2	flat:name	_	_
+4	OS	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	flat:name	_	_
 5	ALVOS	ALVOS	PROPN	_	Number=Sing	2	flat:name	_	start_char=190|end_char=195
 
 # text = Estes perfis se encontram plotados no mapa de campo magnético total (anexo 2) e no mapa de interpretação (anexo 1).
@@ -4695,7 +4695,7 @@
 12	total	total	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=62|end_char=67
 13	(	(	PUNCT	_	_	14	punct	_	start_char=68|end_char=69
 14	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	_	start_char=69|end_char=74
-15	2	2	NUM	_	NumType=Card	14	appos	_	start_char=75|end_char=76
+15	2	2	NUM	_	NumType=Card	14	nummod	_	start_char=75|end_char=76
 16	)	)	PUNCT	_	_	14	punct	_	start_char=76|end_char=77
 17	e	e	CCONJ	_	_	20	cc	_	start_char=78|end_char=79
 18-19	no	_	_	_	_	_	_	_	start_char=80|end_char=82
@@ -4706,7 +4706,7 @@
 22	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	start_char=91|end_char=104
 23	(	(	PUNCT	_	_	24	punct	_	start_char=105|end_char=106
 24	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	_	start_char=106|end_char=111
-25	1	1	NUM	_	NumType=Card	24	appos	_	start_char=112|end_char=113
+25	1	1	NUM	_	NumType=Card	24	nummod	_	start_char=112|end_char=113
 26	)	)	PUNCT	_	_	24	punct	_	start_char=113|end_char=114
 27	.	.	PUNCT	_	_	4	punct	_	start_char=114|end_char=115
 
@@ -4759,7 +4759,7 @@
 6	em	em	ADP	_	_	8	case	_	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	item	item	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	start_char=276|end_char=280
-9	2.2.3	2.2.3	NUM	_	NumType=Card	8	appos	_	start_char=281|end_char=286
+9	2.2.3	2.2.3	NUM	_	NumType=Card	8	nummod	_	start_char=281|end_char=286
 10	,	,	PUNCT	_	_	12	punct	_	start_char=286|end_char=287
 11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	start_char=288|end_char=289
 12	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	start_char=290|end_char=298
@@ -4803,7 +4803,7 @@
 48	de	de	ADP	_	_	50	case	_	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
 50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	47	nmod	BACIA_TIPO	start_char=483|end_char=488
-51	de	de	ADP	_	_	52	case	_	start_char=489|end_char=491
+51	de	de	ADP	_	_	50	flat:name	_	start_char=489|end_char=491
 52	Campos	Campos	PROPN	_	Number=Sing	50	flat:name	LOCAL_GEO|UNIDADE-LITOESTRATIGRÁFICA|BACIA	start_char=492|end_char=498
 53	.	.	PUNCT	_	_	12	punct	_	start_char=498|end_char=499
 
@@ -4813,15 +4813,15 @@
 2	O	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=214|end_char=215
 3	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Plur	0	root	_	start_char=216|end_char=222
 4-5	da	_	_	_	_	_	_	_	start_char=223|end_char=225
-4	de	de	ADP	_	_	6	case	_	_
-5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+4	de	de	ADP	_	_	3	flat:name	_	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	flat:name	_	_
 6	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	3	flat:name	_	start_char=226|end_char=231
 7-8	do	_	_	_	_	_	_	_	start_char=232|end_char=234
-7	de	de	ADP	_	_	9	case	_	_
-8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+7	de	de	ADP	_	_	3	flat:name	_	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	flat:name	_	_
 9	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	_	start_char=235|end_char=238
-10	São	São	PROPN	_	Gender=Masc|Number=Sing	9	flat:name	_	start_char=239|end_char=242
-11	João	João	PROPN	_	Gender=Masc|Number=Sing	9	flat:name	_	start_char=243|end_char=247
+10	São	São	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	_	start_char=239|end_char=242
+11	João	João	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	_	start_char=243|end_char=247
 
 # text = 6.1 Grábens Terciários
 # sent_id = 20-20140904-TESEDSC_0-543-2
@@ -4895,7 +4895,7 @@
 22	de	de	ADP	_	_	24	case	_	_
 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	start_char=113|end_char=118
-25	1	1	NUM	_	NumType=Card	24	appos	_	start_char=119|end_char=120
+25	1	1	NUM	_	NumType=Card	24	nummod	_	start_char=119|end_char=120
 26	e	e	CCONJ	_	_	28	cc	_	start_char=121|end_char=122
 27	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	start_char=123|end_char=127
 28	representada	representado	ADJ	_	Gender=Fem|Number=Sing	15	conj	_	start_char=128|end_char=140
@@ -4903,7 +4903,7 @@
 29	em	em	ADP	_	_	31	case	_	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	figura	figura	NOUN	_	Gender=Fem|Number=Sing	28	obl	_	start_char=144|end_char=150
-32	6.1	6.1	NUM	_	NumType=Card	31	appos	_	start_char=151|end_char=154
+32	6.1	6.1	NUM	_	NumType=Card	31	nummod	_	start_char=151|end_char=154
 33	.	.	PUNCT	_	_	15	punct	_	start_char=154|end_char=155
 
 # text = Observa-se que a falha na borda sul controla um depocentro local em que o embasamento mostra forte basculamento, atingindo cerca de 800 milissegundos em tempo duplo (800 m de profundidade, utilizando-se a velocidade média sedimentar de 2.000 m/s), e com rápido acunhamento na direção do gráben interno, onde novamente é falhado.
@@ -5066,7 +5066,7 @@
 10	de	de	ADP	_	_	12	case	_	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=50|end_char=55
-13	2	2	NUM	_	NumType=Card	12	appos	_	start_char=56|end_char=57
+13	2	2	NUM	_	NumType=Card	12	nummod	_	start_char=56|end_char=57
 14	,	,	PUNCT	_	_	4	punct	_	start_char=57|end_char=58
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	start_char=59|end_char=60
 16	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	_	start_char=61|end_char=67
@@ -5131,7 +5131,7 @@
 70	em	em	ADP	_	_	72	case	_	_
 71	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	72	det	_	_
 72	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	66	nmod	_	start_char=329|end_char=334
-73	2	2	NUM	_	NumType=Card	72	appos	_	start_char=335|end_char=336
+73	2	2	NUM	_	NumType=Card	72	nummod	_	start_char=335|end_char=336
 74	)	)	PUNCT	_	_	66	punct	_	start_char=336|end_char=337
 75	.	.	PUNCT	_	_	27	punct	_	start_char=337|end_char=338
 
@@ -5182,7 +5182,7 @@
 13	em	em	ADP	_	_	15	case	_	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	figura	figura	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	start_char=83|end_char=89
-16	6.2	6.2	NUM	_	NumType=Card	15	appos	_	start_char=90|end_char=93
+16	6.2	6.2	NUM	_	NumType=Card	15	nummod	_	start_char=90|end_char=93
 17	.	.	PUNCT	_	_	12	punct	_	start_char=93|end_char=94
 
 # text = No perfil magnético (figura 6.2), o corpo sedimentar é representado pelo contraste negativo de susceptibilidades (regiões claras na imagem).
@@ -5194,7 +5194,7 @@
 4	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	start_char=10|end_char=19
 5	(	(	PUNCT	_	_	6	punct	_	start_char=20|end_char=21
 6	figura	figura	NOUN	_	Gender=Fem|Number=Sing	14	appos:parataxis	_	start_char=21|end_char=27
-7	6.2	6.2	NUM	_	NumType=Card	6	appos	_	start_char=28|end_char=31
+7	6.2	6.2	NUM	_	NumType=Card	6	nummod	_	start_char=28|end_char=31
 8	)	)	PUNCT	_	_	6	punct	_	start_char=31|end_char=32
 9	,	,	PUNCT	_	_	3	punct	_	start_char=32|end_char=33
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=34|end_char=35
@@ -5319,7 +5319,7 @@
 30	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	start_char=153|end_char=159
 31	(	(	PUNCT	_	_	32	punct	_	start_char=160|end_char=161
 32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	9	appos:parataxis	_	start_char=161|end_char=167
-33	6.2	6.2	NUM	_	NumType=Card	32	appos	_	start_char=168|end_char=171
+33	6.2	6.2	NUM	_	NumType=Card	32	nummod	_	start_char=168|end_char=171
 34	)	)	PUNCT	_	_	32	punct	_	start_char=171|end_char=172
 35	.	.	PUNCT	_	_	9	punct	_	start_char=172|end_char=173
 
@@ -5467,7 +5467,7 @@
 14	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	start_char=69|end_char=78
 15	(	(	PUNCT	_	_	16	punct	_	start_char=79|end_char=80
 16	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	5	appos:parataxis	_	start_char=80|end_char=85
-17	3	3	NUM	_	NumType=Card	16	appos	_	start_char=86|end_char=87
+17	3	3	NUM	_	NumType=Card	16	nummod	_	start_char=86|end_char=87
 18	)	)	PUNCT	_	_	16	punct	_	start_char=87|end_char=88
 19	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	_	start_char=89|end_char=92
 20	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	start_char=93|end_char=99
@@ -5584,7 +5584,7 @@
 39	bom	bom	ADJ	_	Gender=Masc|Number=Sing	11	conj	_	start_char=192|end_char=195
 40	(	(	PUNCT	_	_	41	punct	_	start_char=196|end_char=197
 41	figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	appos:parataxis	_	start_char=197|end_char=203
-42	6.2	6.2	NUM	_	NumType=Card	41	appos	_	start_char=204|end_char=207
+42	6.2	6.2	NUM	_	NumType=Card	41	nummod	_	start_char=204|end_char=207
 43	)	)	PUNCT	_	_	41	punct	_	start_char=207|end_char=208
 44	.	.	PUNCT	_	_	1	punct	_	start_char=208|end_char=209
 
@@ -5605,7 +5605,7 @@
 13	estimadas	estimar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	11	acl	_	start_char=79|end_char=88
 14	em	em	ADP	_	_	15	case	_	start_char=89|end_char=91
 15	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	13	obl	_	start_char=92|end_char=100
-16	cgs	cgs	NOUN	_	Gender=Fem|Number=Plur	15	appos	MÉTODO	start_char=101|end_char=104
+16	cgs	cgs	NOUN	_	Gender=Fem|Number=Plur	15	nmod	MÉTODO	start_char=101|end_char=104
 17	.	.	PUNCT	_	_	7	punct	_	start_char=104|end_char=105
 
 # text = A escala vertical de profundidades (consideradas a partir da altura de vôo igual a 150 m a partir do nível do mar) e a escala horizontal de distâncias estão representadas em metros.
@@ -5640,7 +5640,7 @@
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	mar	mar	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	start_char=110|end_char=113
 27	)	)	PUNCT	_	_	7	punct	_	start_char=113|end_char=114
-28	e	e	CCONJ	_	_	35	cc	_	start_char=115|end_char=116
+28	e	e	CCONJ	_	_	30	cc	_	start_char=115|end_char=116
 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	start_char=117|end_char=118
 30	escala	escala	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	start_char=119|end_char=125
 31	horizontal	horizontal	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	start_char=126|end_char=136
@@ -5810,7 +5810,7 @@
 27	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	26	amod	_	start_char=119|end_char=129
 28	(	(	PUNCT	_	_	29	punct	_	start_char=130|end_char=131
 29	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	8	appos:parataxis	_	start_char=131|end_char=137
-30	2	2	NUM	_	NumType=Card	29	appos	_	start_char=138|end_char=139
+30	2	2	NUM	_	NumType=Card	29	nummod	_	start_char=138|end_char=139
 31	e	e	CCONJ	_	_	32	cc	_	start_char=140|end_char=141
 32	3	3	NUM	_	NumType=Card	30	conj	_	start_char=142|end_char=143
 33	)	)	PUNCT	_	_	29	punct	_	start_char=143|end_char=144
@@ -5912,7 +5912,7 @@
 29	de	de	ADP	_	_	31	case	_	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	figura	figura	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	start_char=185|end_char=191
-32	6.3	6.3	NUM	_	NumType=Card	31	appos	_	start_char=192|end_char=195
+32	6.3	6.3	NUM	_	NumType=Card	31	nummod	_	start_char=192|end_char=195
 33	.	.	PUNCT	_	_	13	punct	_	start_char=195|end_char=196
 
 # text = Estes mesmos autores descrevem esta linha como: “uma seção transversal ao eixo principal da bacia, mostrando as falhas limites (uma na borda sul, com maior rejeito e com indicações de rotação em bloco das primeiras camadas sedimentares depositadas, e outra na borda norte, que delimita a deposição interior a um pequeno gráben de geometria mais simétrica).
@@ -5927,7 +5927,7 @@
 8	:	:	PUNCT	_	_	4	punct	_	start_char=202|end_char=203
 9	“	“	PUNCT	_	_	11	punct	_	start_char=204|end_char=205
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=205|end_char=208
-11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	6	appos:parataxis	_	start_char=209|end_char=214
+11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	appos:parataxis	_	start_char=209|end_char=214
 12	transversal	transversal	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	start_char=215|end_char=226
 13-14	ao	_	_	_	_	_	_	_	_
 13	a	a	ADP	_	_	15	case	_	_
@@ -6010,10 +6010,10 @@
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	start_char=62|end_char=67
 14-15	do	_	_	_	_	_	_	_	start_char=68|end_char=70
-14	de	de	ADP	_	_	16	case	_	_
-15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+14	de	de	ADP	_	_	13	flat:name	_	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	flat:name	_	_
 16	São	São	PROPN	_	Number=Sing	13	flat:name	_	start_char=71|end_char=74
-17	João	João	PROPN	_	Number=Sing	16	flat:name	_	start_char=75|end_char=79
+17	João	João	PROPN	_	Number=Sing	13	flat:name	_	start_char=75|end_char=79
 18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	start_char=80|end_char=81
 19	consistente	consistente	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=82|end_char=93
 20	,	,	PUNCT	_	_	19	punct	_	start_char=93|end_char=94
@@ -6087,8 +6087,8 @@
 
 # text = Figura 6.2 Perfil AA’ sobre o gráben da Barra do São João mostrando o modelo de inversão compacta generalizada.
 # sent_id = 20-20140904-TESEDSC_0-560
-1	Figura	Figura	PROPN	_	Number=Sing	0	root	_	start_char=4|end_char=10
-2	6.2	6.2	NUM	_	Number=Sing	1	appos	_	start_char=11|end_char=14
+1	Figura	figura	NOUN	_	Number=Sing	0	root	_	start_char=4|end_char=10
+2	6.2	6.2	NUM	_	Number=Sing	1	nummod	_	start_char=11|end_char=14
 3	Perfil	Perfil	PROPN	_	Number=Sing	1	appos	_	start_char=15|end_char=21
 4	AA’	AA’	PROPN	_	Number=Sing	3	flat:name	_	start_char=22|end_char=24
 5	sobre	sobre	ADP	_	_	7	case	_	start_char=26|end_char=31
@@ -6099,10 +6099,10 @@
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=44|end_char=49
 11-12	do	_	_	_	_	_	_	_	start_char=50|end_char=52
-11	de	de	ADP	_	_	13	case	_	_
-12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+11	de	de	ADP	_	_	10	flat:name	_	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	flat:name	_	_
 13	São	São	PROPN	_	Number=Sing	10	flat:name	_	start_char=53|end_char=56
-14	João	João	PROPN	_	Number=Sing	13	flat:name	_	start_char=57|end_char=61
+14	João	João	PROPN	_	Number=Sing	10	flat:name	_	start_char=57|end_char=61
 15	mostrando	mostrar	VERB	_	VerbForm=Ger	3	acl	_	start_char=62|end_char=71
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	start_char=72|end_char=73
 17	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	start_char=74|end_char=80
@@ -6116,7 +6116,7 @@
 # sent_id = 20-20140904-TESEDSC_0-565
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=1
 2	figura	figura	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	start_char=2|end_char=8
-3	6.3	6.3	NUM	_	NumType=Card	2	appos	_	start_char=9|end_char=12
+3	6.3	6.3	NUM	_	NumType=Card	2	nummod	_	start_char=9|end_char=12
 4	representa	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=23
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=24|end_char=25
 6	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=26|end_char=39
@@ -6134,10 +6134,10 @@
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	14	nmod	_	start_char=76|end_char=81
 18-19	do	_	_	_	_	_	_	_	start_char=82|end_char=84
-18	de	de	ADP	_	_	20	case	_	_
-19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+18	de	de	ADP	_	_	17	flat:name	_	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	_	_
 20	São	São	PROPN	_	Number=Sing	17	flat:name	_	start_char=85|end_char=88
-21	João	João	PROPN	_	Number=Sing	20	flat:name	_	start_char=89|end_char=93
+21	João	João	PROPN	_	Number=Sing	17	flat:name	_	start_char=89|end_char=93
 22	a	a	ADP	_	_	23	case	_	start_char=94|end_char=95
 23	leste	leste	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	start_char=96|end_char=101
 24-25	da	_	_	_	_	_	_	_	start_char=102|end_char=104
@@ -6145,7 +6145,7 @@
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	linha	linha	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	start_char=105|end_char=110
 27	sísmica	sísmico	ADJ	_	Gender=Fem|Number=Sing	26	amod	MÉTODO	start_char=111|end_char=118
-28	28-RL-64	28-RL-64	NUM	_	NumType=Card	26	appos	_	start_char=119|end_char=127
+28	28-RL-64	28-RL-64	NUM	_	NumType=Card	26	nummod	_	start_char=119|end_char=127
 29	(	(	PUNCT	_	_	30	punct	_	start_char=128|end_char=129
 30	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	_	start_char=129|end_char=136
 31	e	e	CCONJ	_	_	30	flat:name	_	start_char=137|end_char=138
@@ -6164,7 +6164,7 @@
 43	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	41	nmod	_	start_char=180|end_char=193
 44	(	(	PUNCT	_	_	45	punct	_	start_char=194|end_char=195
 45	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	_	start_char=195|end_char=200
-46	1	1	NUM	_	NumType=Card	45	appos	_	start_char=201|end_char=202
+46	1	1	NUM	_	NumType=Card	45	nummod	_	start_char=201|end_char=202
 47	)	)	PUNCT	_	_	45	punct	_	start_char=202|end_char=203
 48	e	e	CCONJ	_	_	52	cc	_	start_char=204|end_char=205
 49-50	no	_	_	_	_	_	_	_	start_char=206|end_char=208
@@ -6175,7 +6175,7 @@
 53	total	total	ADJ	_	Gender=Masc|Number=Sing	52	amod	_	start_char=218|end_char=223
 54	(	(	PUNCT	_	_	55	punct	_	start_char=224|end_char=225
 55	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	_	start_char=225|end_char=230
-56	3	3	NUM	_	NumType=Card	55	appos	_	start_char=231|end_char=232
+56	3	3	NUM	_	NumType=Card	55	nummod	_	start_char=231|end_char=232
 57	)	)	PUNCT	_	_	55	punct	_	start_char=232|end_char=233
 58	.	.	PUNCT	_	_	4	punct	_	start_char=233|end_char=234
 
