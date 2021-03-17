@@ -1073,7 +1073,7 @@
 18	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	15	obj	O	_
 19	(	(	PUNCT	_	_	21	punct	O	SpaceAfter=No
 20	78	78	NUM	_	NumType=Card	21	nummod	O	SpaceAfter=No
-21	%	%	SYM	_	_	18	appos	O	SpaceAfter=No
+21	%	%	SYM	_	_	18	appos:parataxis	O	SpaceAfter=No
 22	)	)	PUNCT	_	_	21	punct	O	_
 23	quando	quando	SCONJ	_	_	24	mark	O	_
 24	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	O	_
@@ -2179,11 +2179,11 @@
 1	SOFC	SOFC	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
 2	(	(	PUNCT	_	_	3	punct	O	SpaceAfter=No
 3	solid	solid	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
-4	oxide	oxide	NOUN	_	Gender=Fem|Number=Sing	3	compound	O	_
-5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
-6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
+4	oxide	oxide	NOUN	_	Gender=Fem|Number=Sing	3	flat:foreign	O	_
+5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
+6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
 7	–	–	PUNCT	_	_	8	punct	O	_
-8	célula	célular	NOUN	_	Gender=Fem|Number=Sing	3	appos:transl	O	_
+8	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos	O	_
 9	a	a	ADP	_	_	10	case	O	_
 10	combustível	combustível	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
 11	de	de	ADP	_	_	12	case	O	_

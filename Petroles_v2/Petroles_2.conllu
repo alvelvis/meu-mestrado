@@ -76,7 +76,7 @@
 2	maior	grande	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	start_char=2|end_char=7
 3	parte	parte	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	O	start_char=8|end_char=13
 4-5	delas	_	_	_	_	_	_	O	start_char=14|end_char=19
-4	de	de	ADP	_	_	4	case	O	_
+4	de	de	ADP	_	_	5	case	O	_
 5	elas	ele	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	nmod	O	_
 6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	O	start_char=20|end_char=23
 7	admitidas	admitir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	start_char=24|end_char=33
@@ -2794,7 +2794,7 @@
 14	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	acl:relcl	O	start_char=187|end_char=194
 15	principalmente	principalmente	ADV	_	_	17	advmod	O	start_char=195|end_char=209
 16	por	por	ADP	_	_	17	case	O	start_char=210|end_char=213
-17	digitação	digitação	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	start_char=214|end_char=223
+17	digitação	digitação	NOUN	_	Gender=Fem|Number=Sing	14	obl:agent	O	start_char=214|end_char=223
 18	de	de	ADP	_	_	19	case	O	start_char=224|end_char=226
 19	folhas	folha	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	start_char=227|end_char=233
 20	de	de	ADP	_	_	21	case	O	start_char=234|end_char=236
@@ -2834,7 +2834,7 @@
 53	sobre	sobre	ADP	_	_	54	case	O	start_char=431|end_char=436
 54	integração	integração	NOUN	_	Gender=Fem|Number=Sing	51	nmod	O	start_char=437|end_char=447
 55-56	dos	_	_	_	_	_	_	O	start_char=448|end_char=451
-55	de	de	ADP	_	_	55	case	O	_
+55	de	de	ADP	_	_	57	case	O	_
 56	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	57	det	O	_
 57	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	54	nmod	O	start_char=452|end_char=462
 58	)	)	PUNCT	_	_	48	punct	O	start_char=462|end_char=463
@@ -5891,7 +5891,7 @@
 9	falhas	falha	NOUN	_	Gender=Fem|Number=Plur	2	nmod	O	start_char=41|end_char=47
 10	de	de	ADP	_	_	11	case	O	start_char=48|end_char=50
 11	borda	borda	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	start_char=51|end_char=56
-13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	O	start_char=57|end_char=58
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	O	start_char=57|end_char=58
 13	sugerida	sugerir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	start_char=59|end_char=67
 14	por	por	ADP	_	_	15	case	O	start_char=68|end_char=71
 15	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	13	obl:agent	O	start_char=72|end_char=84
