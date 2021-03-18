@@ -116,9 +116,9 @@
 10	,	,	PUNCT	_	_	12	punct	_	start_char=598|end_char=599
 11	de	de	ADP	_	_	12	case	_	start_char=600|end_char=602
 12	direção	direção	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=603|end_char=610
-13	E-W	E-W	PROPN	_	Gender=Fem|Number=Sing	12	appos	_	start_char=611|end_char=614
+13	E-W	E-W	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	start_char=611|end_char=614
 14	a	a	ADP	_	_	15	case	_	start_char=615|end_char=616
-15	ENE	ENE	PROPN	_	Gender=Fem|Number=Sing	12	appos	_	start_char=617|end_char=620
+15	ENE	ENE	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	start_char=617|end_char=620
 16	,	,	PUNCT	_	_	17	punct	_	start_char=620|end_char=621
 17	caracterizada	caracterizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	start_char=622|end_char=635
 18	em	em	ADP	_	_	19	case	_	start_char=636|end_char=638
@@ -223,7 +223,7 @@
 27	de	de	ADP	_	_	29	case	_	_
 28	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	29	det	_	_
 29	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	start_char=164|end_char=172
-30	:	:	PUNCT	_	_	4	punct	_	start_char=172|end_char=173
+30	:	:	PUNCT	_	_	34	punct	_	start_char=172|end_char=173
 31	1	1	NUM	_	NumType=Card	34	parataxis	_	start_char=174|end_char=175
 32	)	)	PUNCT	_	_	31	punct	_	start_char=175|end_char=176
 33	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	start_char=177|end_char=178
@@ -250,7 +250,7 @@
 53	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	start_char=303|end_char=304
 54	monte	monte	NOUN	_	Gender=Masc|Number=Sing	52	obj	_	start_char=305|end_char=310
 55	submarino	submarino	ADJ	_	Gender=Masc|Number=Sing	54	amod	_	start_char=311|end_char=320
-56	Almirante	Almirante	PROPN	_	Gender=Masc|Number=Sing	54	appos	UNIDADE_LITO_1	start_char=321|end_char=330
+56	Almirante	Almirante	PROPN	_	Gender=Masc|Number=Sing	54	nmod	UNIDADE_LITO_1	start_char=321|end_char=330
 57	Saldanha	Saldanha	PROPN	_	Number=Sing	56	flat:name	UNIDADE_LITO_2	start_char=331|end_char=339
 58-59	às	_	_	_	_	_	_	_	start_char=340|end_char=342
 58	a	a	ADP	_	_	60	case	_	_
@@ -264,7 +264,7 @@
 66	com	com	ADP	_	_	67	case	_	start_char=374|end_char=377
 67	direção	direção	NOUN	_	Gender=Fem|Number=Sing	52	obl	_	start_char=378|end_char=385
 68	geral	geral	ADJ	_	Gender=Fem|Number=Sing	67	amod	_	start_char=386|end_char=391
-69	WNW-ESSE	WNW-ESSE	PROPN	_	Gender=Fem|Number=Sing	67	appos	_	start_char=392|end_char=400
+69	WNW-ESSE	WNW-ESSE	PROPN	_	Gender=Fem|Number=Sing	67	nmod	_	start_char=392|end_char=400
 70	.	.	PUNCT	_	_	4	punct	_	start_char=400|end_char=401
 
 # text = A margem continental brasileira teve origem na separação dos grandes blocos continentais da América do Sul e África resultante do processo de rifteamento ocorrido no mesozóico.
@@ -324,7 +324,7 @@
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	supercontinente	supercontinente	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=59|end_char=74
 12	paleozóico	paleozóico	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	start_char=75|end_char=85
-13	Gondwana	Gondwana	PROPN	_	Gender=Masc|Number=Sing	11	appos	LOCAL_GEOPOL	start_char=86|end_char=94
+13	Gondwana	Gondwana	PROPN	_	Gender=Masc|Number=Sing	11	nmod	LOCAL_GEOPOL	start_char=86|end_char=94
 14	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	start_char=95|end_char=98
 15	englobava	englobar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	acl:relcl	_	start_char=99|end_char=108
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=109|end_char=110
@@ -354,7 +354,7 @@
 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=29|end_char=31
 7	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	start_char=32|end_char=38
 8	de	de	ADP	_	_	9	case	_	start_char=39|end_char=41
-9	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	7	appos	BACIA	start_char=42|end_char=48
+9	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	7	nmod	BACIA	start_char=42|end_char=48
 10	e	e	CCONJ	_	_	11	cc	_	start_char=49|end_char=50
 11	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	9	conj	BACIA	start_char=51|end_char=57
 12	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	13	nsubj	_	start_char=58|end_char=61
@@ -413,7 +413,7 @@
 25-26	do	_	_	_	_	_	_	_	start_char=153|end_char=155
 25	de	de	ADP	_	_	27	case	_	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	Mar	Mar	PROPN	_	Gender=Masc|Number=Sing	24	appos	_	start_char=156|end_char=159
+27	Mar	Mar	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	start_char=156|end_char=159
 28	e	e	CCONJ	_	_	29	cc	_	start_char=160|end_char=161
 29	Mantiqueira	Mantiqueira	PROPN	_	Gender=Fem|Number=Sing	27	conj	_	start_char=162|end_char=173
 30	.	.	PUNCT	_	_	10	punct	_	start_char=173|end_char=174
@@ -438,7 +438,7 @@
 15	com	com	ADP	_	_	16	case	_	start_char=179|end_char=182
 16	orientação	orientação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	start_char=183|end_char=193
 17	geral	geral	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	start_char=194|end_char=199
-18	SW-NE	SW-NE	PROPN	_	Gender=Fem|Number=Sing	16	appos	_	start_char=200|end_char=205
+18	SW-NE	SW-NE	PROPN	_	Gender=Fem|Number=Sing	16	nmod	_	start_char=200|end_char=205
 19	e	e	CCONJ	_	_	20	cc	_	start_char=206|end_char=207
 20	geometria	geometria	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	start_char=208|end_char=217
 21	côncava	côncavo	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	start_char=218|end_char=225
@@ -609,7 +609,7 @@
 5	de	de	ADP	_	_	7	case	_	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=28|end_char=34
-8	Neocomiano	Neocomiano	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	start_char=35|end_char=45
+8	Neocomiano	Neocomiano	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=35|end_char=45
 9-10	ao	_	_	_	_	_	_	_	start_char=46|end_char=48
 9	a	a	ADP	_	_	11	case	_	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -774,7 +774,7 @@
 5	conhecida	conhecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	start_char=20|end_char=29
 6	como	como	ADP	_	_	7	case	_	start_char=30|end_char=34
 7	formações	formação	NOUN	_	Gender=Fem|Number=Plur	5	xcomp	_	start_char=35|end_char=44
-8	Florianópolis	Florianópolis	PROPN	_	Gender=Fem|Number=Sing	7	appos	UNIDADE_LIT	start_char=45|end_char=58
+8	Florianópolis	Florianópolis	PROPN	_	Gender=Fem|Number=Sing	7	nmod	UNIDADE_LIT	start_char=45|end_char=58
 9	,	,	PUNCT	_	_	10	punct	_	start_char=58|end_char=59
 10	Guarujá	Guarujá	PROPN	_	Gender=Masc|Number=Sing	8	conj	UNIDADE_LIT	start_char=60|end_char=67
 11	e	e	CCONJ	_	_	12	cc	_	start_char=68|end_char=69
@@ -1311,7 +1311,7 @@
 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=2
 2	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	start_char=3|end_char=9
 3	de	de	ADP	_	_	4	case	_	start_char=10|end_char=12
-4	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	2	appos	BACIA	start_char=13|end_char=19
+4	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	2	nmod	BACIA	start_char=13|end_char=19
 5	e	e	CCONJ	_	_	6	cc	_	start_char=20|end_char=21
 6	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	4	conj	BACIA	start_char=22|end_char=28
 7	constituem	constituir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=29|end_char=39
@@ -1792,7 +1792,7 @@
 32-33	do	_	_	_	_	_	_	_	start_char=328|end_char=330
 32	de	de	ADP	_	_	34	case	_	_
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	Estado	estado	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	start_char=331|end_char=337
+34	Estado	Estado	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	start_char=331|end_char=337
 35-36	do	_	_	_	_	_	_	_	start_char=338|end_char=340
 35	de	de	ADP	_	_	34	flat:name	_	_
 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	flat:name	_	_
@@ -1814,7 +1814,7 @@
 # sent_id = 20-20140904-TESEDSC_0-221-2
 1	3.1	3.1	NUM	_	NumType=Card	3	parataxis	_	start_char=88|end_char=91
 2	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=92|end_char=94
-3	Dados	dado	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=95|end_char=100
+3	Dados	Dado	PROPN	_	Gender=Masc|Number=Plur	0	root	_	start_char=95|end_char=100
 4	Aeromagnetométricos	Aeromagnetométricos	PROPN	_	Number=Sing	3	flat:name	_	start_char=101|end_char=120
 
 # text = Nos itens a seguir será dada um descrição dos dados geofísicos utilizados neste estudo.
@@ -3146,7 +3146,7 @@
 6	em	em	ADP	_	_	8	case	_	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	direção	direção	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	start_char=40|end_char=47
-9	NE/SW	NE/SW	PROPN	_	Gender=Fem|Number=Sing	8	appos	_	start_char=48|end_char=53
+9	NE/SW	NE/SW	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	start_char=48|end_char=53
 10	afetando	afetar	VERB	_	VerbForm=Ger	2	advcl	_	start_char=54|end_char=62
 11	,	,	PUNCT	_	_	10	punct	_	start_char=62|end_char=63
 12	principalmente	principalmente	ADV	_	_	10	advmod	_	start_char=64|end_char=78
@@ -3609,7 +3609,7 @@
 21	de	de	ADP	_	_	23	case	_	_
 22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
 23	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	start_char=113|end_char=125
-24	NE-SW	NE-SW	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	start_char=126|end_char=131
+24	NE-SW	NE-SW	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	start_char=126|end_char=131
 25-26	na	_	_	_	_	_	_	_	start_char=132|end_char=134
 25	em	em	ADP	_	_	27	case	_	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -3732,7 +3732,7 @@
 11	em	em	ADP	_	_	13	case	_	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	direção	direção	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	start_char=72|end_char=79
-14	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	13	appos	_	start_char=80|end_char=85
+14	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	13	nmod	_	start_char=80|end_char=85
 15	,	,	PUNCT	_	_	16	punct	_	start_char=85|end_char=86
 16	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	_	start_char=87|end_char=96
 17-18	pela	_	_	_	_	_	_	_	start_char=97|end_char=101
@@ -3946,7 +3946,7 @@
 31	em	em	ADP	_	_	33	case	_	_
 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	direção	direção	NOUN	_	Gender=Fem|Number=Sing	27	obl	_	start_char=156|end_char=163
-34	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	33	appos	_	start_char=164|end_char=169
+34	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	33	nmod	_	start_char=164|end_char=169
 35	.	.	PUNCT	_	_	2	punct	_	start_char=169|end_char=170
 
 # text = Naturalmente, padrões intermediários entre altas e baixas freqüências também são observados no quadro geral da estrutura magnética.
@@ -4775,7 +4775,7 @@
 22	de	de	ADP	_	_	20	fixed	_	start_char=336|end_char=338
 23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	start_char=339|end_char=341
 24	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	12	obl	INSTRUMENTO	start_char=342|end_char=346
-25	Bouguer	Bouguer	PROPN	_	Gender=Masc|Number=Sing	24	appos	_	start_char=347|end_char=354
+25	Bouguer	Bouguer	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	start_char=347|end_char=354
 26	,	,	PUNCT	_	_	27	punct	_	start_char=354|end_char=355
 27	obtido	obter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	_	start_char=356|end_char=362
 28	de	de	ADP	_	_	29	case	_	start_char=363|end_char=365
@@ -5070,7 +5070,7 @@
 14	,	,	PUNCT	_	_	4	punct	_	start_char=57|end_char=58
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	start_char=59|end_char=60
 16	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	_	start_char=61|end_char=67
-17	AA	AA	PROPN	_	Gender=Masc|Number=Sing	16	appos	_	start_char=68|end_char=70
+17	AA	AA	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	start_char=68|end_char=70
 18	’	’	PROPN	_	Number=Sing	17	flat:name	_	start_char=70|end_char=71
 19	,	,	PUNCT	_	_	4	punct	_	start_char=71|end_char=72
 20	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	21	nsubj	_	start_char=73|end_char=76
@@ -5107,7 +5107,7 @@
 50	seguindo	seguir	VERB	_	VerbForm=Ger	45	conj	_	start_char=215|end_char=223
 51	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	52	det	_	start_char=224|end_char=227
 52	direção	direção	NOUN	_	Gender=Fem|Number=Sing	50	obj	_	start_char=228|end_char=235
-53	NW/SE	NW/SE	PROPN	_	Gender=Fem|Number=Sing	52	appos	_	start_char=236|end_char=241
+53	NW/SE	NW/SE	PROPN	_	Gender=Fem|Number=Sing	52	nmod	_	start_char=236|end_char=241
 54	perpendicular	perpendicular	ADJ	_	Gender=Fem|Number=Sing	52	amod	_	start_char=242|end_char=255
 55-56	aos	_	_	_	_	_	_	_	start_char=256|end_char=259
 55	a	a	ADP	_	_	57	case	_	_
@@ -5478,7 +5478,7 @@
 25	freqüência	freqüência	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	start_char=119|end_char=129
 26	de	de	ADP	_	_	27	case	_	start_char=130|end_char=132
 27	direção	direção	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	start_char=133|end_char=140
-28	E-W	E-W	PROPN	_	Gender=Fem|Number=Sing	27	appos	LOCAL_POL	start_char=141|end_char=144
+28	E-W	E-W	PROPN	_	Gender=Fem|Number=Sing	27	nmod	LOCAL_POL	start_char=141|end_char=144
 29	separando	separar	VERB	_	VerbForm=Ger	22	acl	_	start_char=145|end_char=154
 30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	start_char=155|end_char=157
 31	calhas	calha	NOUN	_	Gender=Fem|Number=Plur	29	obj	_	start_char=158|end_char=164
@@ -6001,7 +6001,7 @@
 4	para	para	ADP	_	_	6	case	_	start_char=26|end_char=30
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=31|end_char=32
 6	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=33|end_char=39
-7	AA’	AA’	PROPN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=40|end_char=42
+7	AA’	AA’	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=40|end_char=42
 8	sobre	sobre	ADP	_	_	10	case	_	start_char=44|end_char=49
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=50|end_char=51
 10	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=52|end_char=58
@@ -6054,14 +6054,14 @@
 16	a	a	ADP	_	_	18	case	_	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	start_char=81|end_char=87
-19	AA’	AA’	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	start_char=88|end_char=90
+19	AA’	AA’	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	start_char=88|end_char=90
 20	.	.	PUNCT	_	_	15	punct	_	start_char=91|end_char=92
 
 # text = O perfil BB’ secciona o gráben numa porção um pouco mais alargada em relação ao perfil anterior mais a oeste.
 # sent_id = 20-20140904-TESEDSC_0-569
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=1
 2	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=2|end_char=8
-3	BB’	BB’	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	start_char=9|end_char=11
+3	BB’	BB’	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=9|end_char=11
 4	secciona	seccionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=21
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=22|end_char=23
 6	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=24|end_char=30
@@ -6089,7 +6089,7 @@
 # sent_id = 20-20140904-TESEDSC_0-560
 1	Figura	figura	NOUN	_	Number=Sing	0	root	_	start_char=4|end_char=10
 2	6.2	6.2	NUM	_	Number=Sing	1	nummod	_	start_char=11|end_char=14
-3	Perfil	Perfil	PROPN	_	Number=Sing	1	appos	_	start_char=15|end_char=21
+3	Perfil	Perfil	PROPN	_	Number=Sing	1	nmod	_	start_char=15|end_char=21
 4	AA’	AA’	PROPN	_	Number=Sing	3	flat:name	_	start_char=22|end_char=24
 5	sobre	sobre	ADP	_	_	7	case	_	start_char=26|end_char=31
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=32|end_char=33
@@ -6124,7 +6124,7 @@
 7	de	de	ADP	_	_	9	case	_	_
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=43|end_char=49
-10	BB’	BB’	PROPN	_	Gender=Masc|Number=Sing	9	appos	_	start_char=50|end_char=52
+10	BB’	BB’	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=50|end_char=52
 11	,	,	PUNCT	_	_	12	punct	_	start_char=53|end_char=54
 12	cortando	cortar	VERB	_	VerbForm=Ger	9	acl	_	start_char=55|end_char=63
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	start_char=64|end_char=65

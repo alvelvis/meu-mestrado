@@ -1066,7 +1066,7 @@
 11	que	que	SCONJ	_	_	15	mark	_	SpacesAfter=\s\s
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpacesAfter=\s\s
 13	método	método	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	SpacesAfter=\s\s
-14	UOP-326	UOP-326	PROPN	_	Gender=Masc|Number=Sing	13	appos	_	_
+14	UOP-326	UOP-326	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	_
 15	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
 16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 17	pior	mau	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_
@@ -1304,11 +1304,11 @@
 22	,	,	PUNCT	_	_	31	punct	_	_
 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	_	_
-25	Apollo	Apollo	PROPN	_	Gender=Masc|Number=Sing	24	appos	_	_
+25	Apollo	Apollo	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	_
 26	e	e	CCONJ	_	_	28	cc	_	_
 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
 28	missões	missão	NOUN	_	Gender=Fem|Number=Plur	24	conj	_	_
-29	Space	Space	PROPN	_	Gender=Fem|Number=Sing	28	appos	_	_
+29	Space	Space	PROPN	_	Gender=Fem|Number=Sing	28	nmod	_	_
 30	Shuttle	Shuttle	PROPN	_	Number=Sing	29	flat:name	_	_
 31	fizeram	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	conj	_	_
 32	uso	uso	NOUN	_	Gender=Masc|Number=Sing	31	obj	_	_
@@ -1326,7 +1326,7 @@
 4	combustível	combustível	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_
 5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No
 6	Figura	figura	NOUN	_	Gender=Masc|Number=Sing	2	appos:parataxis	_	_
-7	1	1	PROPN	_	Number=Sing	6	appos	_	SpaceAfter=No
+7	1	1	NUM	_	NumType=Ord	6	nummod	_	SpaceAfter=No
 8	)	)	PUNCT	_	_	6	punct	_	_
 9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
 10	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
@@ -4079,7 +4079,7 @@
 30	para	para	ADP	_	_	32	case	_	_
 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	combustível	combustível	NOUN	_	Gender=Masc|Number=Sing	21	obl	_	_
-33	H2	H2	PROPN	_	Gender=Masc|Number=Sing	32	appos	_	SpaceAfter=No
+33	H2	H2	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
 34	)	)	PUNCT	_	_	32	punct	_	SpaceAfter=No
 35	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\r\n
 
@@ -4463,7 +4463,7 @@
 3	de	de	ADP	_	_	5	case	_	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\s
-6	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	5	appos	_	SpacesAfter=\s\s
+6	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	5	nmod	_	SpacesAfter=\s\s
 7	Y/Nafion®	Y/Nafion®	PROPN	_	Number=Sing	6	compound	_	SpaceAfter=No
 8	foi	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	SpacesAfter=\s\s
 9-10	no	_	_	_	_	_	_	_	SpacesAfter=\s\s
@@ -4482,14 +4482,14 @@
 20	de	de	ADP	_	_	22	case	_	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	membrana	membrana	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	SpacesAfter=\s\s
-23	Nafion®	Nafion®	PROPN	_	Number=Sing	22	appos	_	SpaceAfter=No
+23	Nafion®	Nafion®	PROPN	_	Number=Sing	22	nmod	_	SpaceAfter=No
 24	.	.	PUNCT	_	_	14	punct	_	SpacesAfter=\s\s\s\s
 
 # text = O sistema Zeólita Y/PBE dopado com ácido fosfórico apresentou valores de condutividade uma ordem de grandeza maior que membrana Nafion® não hidratada.
 # sent_id = 10-20150122-MONOGRAFIA_0_resumo-14
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpacesAfter=\s\s
 2	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	SpacesAfter=\s\s
-3	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	_
+3	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_
 4	Y/PBE	Y/PBE	PROPN	_	Number=Sing	3	compound	_	SpacesAfter=\s\s
 5	dopado	dopar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	SpacesAfter=\s\s
 6	com	com	ADP	_	_	7	case	_	_
@@ -4506,7 +4506,7 @@
 17	maior	maior	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_
 18	que	que	SCONJ	_	_	19	mark	_	_
 19	membrana	membrana	NOUN	_	Gender=Fem|Number=Sing	17	advcl	_	_
-20	Nafion®	Nafion®	PROPN	_	Number=Sing	19	appos	_	_
+20	Nafion®	Nafion®	PROPN	_	Number=Sing	19	nmod	_	_
 21	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
 22	hidratada	hidratado	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
 23	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
@@ -4550,7 +4550,7 @@
 31	de	de	ADP	_	_	33	case	_	_
 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	aluno	aluno	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	_
-34	Thiago	Thiago	PROPN	_	Gender=Masc|Number=Sing	33	appos	_	_
+34	Thiago	Thiago	PROPN	_	Gender=Masc|Number=Sing	33	nmod	_	_
 35	Cleyandson	Cleyandson	PROPN	_	Number=Sing	34	flat:name	_	_
 36	Rodrigues	Rodrigues	PROPN	_	Number=Sing	34	flat:name	_	_
 37	Alves	Alves	PROPN	_	Number=Sing	34	flat:name	_	SpaceAfter=No
@@ -4577,7 +4577,7 @@
 55	em	em	ADP	_	_	57	case	_	_
 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
 57	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	54	obl	_	_
-58	Radix	Radix	PROPN	_	Gender=Fem|Number=Sing	57	appos	_	_
+58	Radix	Radix	PROPN	_	Gender=Fem|Number=Sing	57	nmod	_	_
 59	Engenharia	Engenharia	PROPN	_	Number=Sing	58	flat:name	_	_
 60	e	e	CCONJ	_	_	58	flat:name	_	_
 61	Software	software	PROPN	_	Gender=Fem|Number=Sing	58	flat:name	_	SpaceAfter=No
@@ -4649,7 +4649,7 @@
 49	em	em	ADP	_	_	51	case	_	_
 50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
 51	software	software	NOUN	_	Gender=Masc|Number=Sing	48	nmod	_	_
-52	Aspen	Aspen	PROPN	_	Gender=Masc|Number=Sing	51	appos	_	_
+52	Aspen	Aspen	PROPN	_	Gender=Masc|Number=Sing	51	nmod	_	_
 53	Plus	Plus	PROPN	_	Number=Sing	52	flat:name	_	SpaceAfter=No
 54	,	,	PUNCT	_	_	55	punct	_	_
 55	análise	análise	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	_
@@ -4805,7 +4805,7 @@
 23	de	de	ADP	_	_	25	case	_	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_
-26	Doris	Doris	PROPN	_	Gender=Fem|Number=Sing	25	appos	_	_
+26	Doris	Doris	PROPN	_	Gender=Fem|Number=Sing	25	nmod	_	_
 27	Engenharia	Engenharia	PROPN	_	Number=Sing	26	flat:name	_	SpaceAfter=No
 28	,	,	PUNCT	_	_	29	punct	_	_
 29	subsidiária	subsidiário	NOUN	_	Gender=Fem|Number=Sing	25	appos	_	_
@@ -4858,7 +4858,7 @@
 4	de	de	ADP	_	_	6	case	_	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
-7	Gas-to-Liquids	Gas-to-Liquids	PROPN	_	Gender=Fem|Number=Sing	6	appos	_	_
+7	Gas-to-Liquids	Gas-to-Liquids	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	_
 8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No
 9	GTL	GTL	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	SpaceAfter=No
 10	)	)	PUNCT	_	_	9	punct	_	SpaceAfter=No
@@ -4923,7 +4923,7 @@
 31	gás	gás	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_
 32	de	de	ADP	_	_	33	case	_	_
 33	síntese	síntese	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_
-34	H2:CO=2:1	H2:CO=2:1	PROPN	_	Gender=Fem|Number=Sing	28	appos	_	SpaceAfter=No
+34	H2:CO=2:1	H2:CO=2:1	PROPN	_	Gender=Fem|Number=Sing	33	nmod	_	SpaceAfter=No
 35	.	.	PUNCT	_	_	19	punct	_	_
 
 # text = Foi investigado o uso de catalisadores sólidos, não promovido (20%Co/?-Al2O3) e promovido (0,5%Pt-20%Co/?-Al2O3) e um sistema estruturado (0,5%Pt-20%Co/?-Al2O3-micromonólito), observando a influência da temperatura (185 a 230ºC) e velocidade espacial (0,3 a 1,2 mol.gcat-1.h-1).
@@ -4982,7 +4982,7 @@
 1	Para	para	ADP	_	_	3	case	_	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_
-4	Co-Pt/?-Al2O3	Co-Pt/?-Al2O3	PROPN	_	Gender=Unsp|Number=Unsp	3	appos	_	SpaceAfter=No
+4	Co-Pt/?-Al2O3	Co-Pt/?-Al2O3	PROPN	_	Gender=Unsp|Number=Unsp	3	nmod	_	SpaceAfter=No
 5	,	,	PUNCT	_	_	3	punct	_	_
 6	em	em	ADP	_	_	8	case	_	_
 7	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	_	_
@@ -5229,7 +5229,7 @@
 14	planta	planta	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_
 15	experimental	experimental	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_
 16	piloto	piloto	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_
-17	Usina	Usina	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	_
+17	Usina	Usina	PROPN	_	Gender=Fem|Number=Sing	14	nmod	_	_
 18	Caetés	Caetés	PROPN	_	Number=Sing	17	flat:name	_	SpaceAfter=No
 19	,	,	PUNCT	_	_	20	punct	_	_
 20	situada	situar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
@@ -5575,7 +5575,7 @@
 7	que	que	SCONJ	_	_	24	mark	_	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	_	SpacesAfter=\s\s
-10	Nannochloropsis	Nannochloropsis	PROPN	_	Gender=Fem|Number=Sing	9	appos	_	_
+10	Nannochloropsis	Nannochloropsis	PROPN	_	Gender=Fem|Number=Sing	9	nmod	_	_
 11	oculata	oculata	NOUN	_	Number=Sing	10	compound	_	SpaceAfter=No
 12	,	,	PUNCT	_	_	15	punct	_	_
 13	além	além	ADV	_	_	15	cc	_	_
@@ -5882,37 +5882,37 @@
 8	ppm	ppm	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
 9	para	para	ADP	_	_	11	case	_	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Cu	Cu	PROPN	_	Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No
+11	Cu	Cu	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
 12	,	,	PUNCT	_	_	14	punct	_	_
 13	14,32	14,32	NUM	_	NumType=Card	14	nummod	_	_
 14	ppm	ppm	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
 15	para	para	ADP	_	_	17	case	_	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Cr	Cr	PROPN	_	Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+17	Cr	Cr	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	20	punct	_	_
 19	14,98	14,98	NUM	_	NumType=Card	20	nummod	_	_
 20	ppm	ppm	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
 21	para	para	ADP	_	_	23	case	_	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Pb	Pb	PROPN	_	Gender=Masc|Number=Sing	20	obl	_	SpaceAfter=No
+23	Pb	Pb	PROPN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
 24	,	,	PUNCT	_	_	26	punct	_	_
 25	2,01	2,01	NUM	_	NumType=Card	26	nummod	_	SpaceAfter=No
 26	%	%	SYM	_	_	8	conj	_	_
 27	para	para	ADP	_	_	29	case	_	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Fe	Fe	PROPN	_	Gender=Masc|Number=Sing	26	obl	_	SpaceAfter=No
+29	Fe	Fe	PROPN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
 30	,	,	PUNCT	_	_	32	punct	_	_
 31	12,61	12,61	NUM	_	NumType=Card	32	nummod	_	_
 32	ppm	ppm	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
 33	para	para	ADP	_	_	35	case	_	_
 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	Ni	Ni	PROPN	_	Gender=Masc|Number=Sing	32	obl	_	_
+35	Ni	Ni	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	_
 36	e	e	CCONJ	_	_	38	cc	_	_
 37	64,82	64,82	NUM	_	NumType=Card	38	nummod	_	_
 38	ppm	ppm	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
 39	para	para	ADP	_	_	41	case	_	_
 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-41	Zn	Zn	PROPN	_	Gender=Masc|Number=Sing	38	obl	_	SpaceAfter=No
+41	Zn	Zn	PROPN	_	Gender=Masc|Number=Sing	38	nmod	_	SpaceAfter=No
 42	.	.	PUNCT	_	_	8	punct	_	_
 
 # text = As espécies de Hidrocarbonetos Policíclicos Aromáticos encontrados foram: naftaleno, 1 Metilnaftaleno, Bifenil, Acenafteno, Fluoreno, Dibenzothiofeno, Fenantreno, Antraceno, Fluoranteno, Pireno, Benzo(a)antraceno, Criseno, Benzo(b)fluoranteno, Benzo(k)fluoranteno, Benzo(a)pireno, Perileno, Benzo(e)pireno, Indeno(1,2,3-cd)pireno, Dibenzo(a,h)antraceno e Benzo(g.h.i)perileno.
@@ -6855,7 +6855,7 @@
 8	pequenas	pequeno	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_
 9	de	de	ADP	_	_	10	case	_	_
 10	arenito	arenito	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_
-11	Botucatu	Botucatu	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	_
+11	Botucatu	Botucatu	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	_
 12	de	de	ADP	_	_	13	case	_	_
 13	alta	alto	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_
 14	permeabilidade	permeabilidade	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
@@ -7351,7 +7351,7 @@
 29	pastas	pasta	NOUN	_	Gender=Fem|Number=Plur	26	nmod	_	SpacesAfter=\s\s
 30	de	de	ADP	_	_	31	case	_	SpacesAfter=\s\s
 31	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	SpacesAfter=\s\s
-32	Portland	Portland	PROPN	_	Gender=Masc|Number=Sing	29	appos	_	SpacesAfter=\s\s
+32	Portland	Portland	PROPN	_	Gender=Masc|Number=Sing	29	nmod	_	SpacesAfter=\s\s
 33	com	com	ADP	_	_	34	case	_	SpacesAfter=\s\s
 34	adição	adição	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	SpacesAfter=\s\s
 35	de	de	ADP	_	_	36	case	_	SpacesAfter=\s\s
@@ -7682,7 +7682,7 @@
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	SpacesAfter=\s\s
 19	pasta	pasta	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpacesAfter=\s\s
 20	geopolimérica	geopolimérico	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	SpacesAfter=\s\s
-21	P3	P3	PROPN	_	Gender=Fem|Number=Sing	19	appos	_	SpaceAfter=No
+21	P3	P3	PROPN	_	Gender=Fem|Number=Sing	19	nmod	_	SpaceAfter=No
 22	)	)	PUNCT	_	_	16	punct	_	_
 23	devido	devido	ADV	_	_	27	case	_	SpacesAfter=\s\s|MWE=devido_a|MWEPOS=ADP
 24-25	à	_	_	_	_	_	_	_	SpacesAfter=\s\s
@@ -8167,7 +8167,7 @@
 12	sobre	sobre	ADP	_	_	14	case	_	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	zeólita	zeólita	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_
-15	H-ZSM-5	H-ZSM-5	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	_
+15	H-ZSM-5	H-ZSM-5	PROPN	_	Gender=Fem|Number=Sing	14	nmod	_	_
 16	com	com	ADP	_	_	17	case	_	_
 17	SAR	SAR	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_
 18	igual	igual	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_
@@ -9321,7 +9321,7 @@
 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	porção	porção	NOUN	_	Gender=Fem|Number=Sing	23	conj	_	_
 31	proximal	proximal	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	_
-32	NE	NE	PROPN	_	Gender=Fem|Number=Sing	30	appos	_	_
+32	NE	NE	PROPN	_	Gender=Fem|Number=Sing	30	nmod	_	_
 33-34	da	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	35	case	_	_
 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
@@ -9512,7 +9512,7 @@
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	ISO	ISO	PROPN	_	Gender=Fem|Number=Sing	6	obl	_	_
 10	14001	14001	NUM	_	NumType=Card	9	appos	_	SpaceAfter=No
-11	-	-	PUNCT	_	_	21	punct	_	_
+11	-	-	PUNCT	_	_	12	punct	_	_
 12	EMS	EMS	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	_
 13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No
 14	Environmental	Environmental	X	_	Gender=Masc|Number=Sing	12	appos	_	_
@@ -9558,7 +9558,7 @@
 50	por	por	ADP	_	_	52	case	_	_
 51	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	52	det	_	_
 52	agências	agências	NOUN	_	Gender=Fem|Number=Plur	49	obl:agent	_	_
-53	EPA	EPA	PROPN	_	Gender=Fem|Number=Sing	52	appos	_	_
+53	EPA	EPA	PROPN	_	Gender=Fem|Number=Sing	52	nmod	_	_
 54	(	(	PUNCT	_	_	55	punct	_	SpaceAfter=No
 55	Environmental	Environmental	X	_	Gender=Fem|Number=Sing	53	appos	_	_
 56	Pollution	Pollution	X	_	Number=Sing	55	flat:name	_	_
@@ -10271,7 +10271,7 @@
 # sent_id = 2-20150126-TESEDSC_0_intro-20
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_
-3	I-1	I-1	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	_
+3	I-1	I-1	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_
 4	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	histórico	histórico	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_
@@ -10418,7 +10418,7 @@
 # sent_id = 2-20150126-TESEDSC_0_resumo-4
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	derivado	derivado	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	CPO-9A	CPO-9A	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	_
+3	CPO-9A	CPO-9A	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_
 4	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter=\s\s
 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpacesAfter=\s\s
 6	incremento	incremento	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpacesAfter=\s\s
@@ -10432,7 +10432,7 @@
 13	e	e	CCONJ	_	_	17	cc	_	SpacesAfter=\s\s
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpacesAfter=\s\s
 15	derivado	derivado	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	SpacesAfter=\s\s
-16	CPO-GA	CPO-GA	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	SpacesAfter=\s\s
+16	CPO-GA	CPO-GA	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	SpacesAfter=\s\s
 17	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	SpacesAfter=\s\s
 18	ser	ser	AUX	_	VerbForm=Inf	22	cop	_	_
 19	30	30	NUM	_	NumType=Card	20	nummod	_	SpaceAfter=No
@@ -11618,7 +11618,7 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	peixe-rei	peixe-rei	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	marinho	marinho	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_
-4	Odontesthes	Odontesthes	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	_
+4	Odontesthes	Odontesthes	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_
 5	argentinensis	argentinensis	NOUN	_	Gender=Masc|Number=Sing	4	compound	_	_
 6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 7	distribuído	distribuído	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_
@@ -12376,7 +12376,7 @@
 10	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_
 11	de	de	ADP	_	_	12	case	_	_
 12	grau	grau	NOUN	_	Gender=Unsp|Number=Sing	10	nmod	_	_
-13	API	API	PROPN	_	Number=Sing	12	appos	_	_
+13	API	API	PROPN	_	Number=Sing	12	nmod	_	_
 14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No
 15	American	American	PROPN	_	Gender=Fem|Number=Sing	13	appos	_	_
 16	Petroleum	Petroleum	PROPN	_	Number=Sing	15	flat:name	_	_
@@ -12391,7 +12391,7 @@
 25	ferramenta	ferramenta	NOUN	_	Gender=Fem|Number=Sing	23	xcomp	_	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_
-28	OSCAR	Oscar	PROPN	_	Gender=Masc|Number=Sing	27	appos	_	SpaceAfter=No
+28	OSCAR	Oscar	PROPN	_	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
 29	,	,	PUNCT	_	_	23	punct	_	_
 30	sendo	ser	AUX	_	VerbForm=Ger	31	aux:pass	_	_
 31	alimentado	alimentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	advcl	_	_
@@ -12403,7 +12403,7 @@
 36	por	por	ADP	_	_	38	case	_	_
 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	35	obl:agent	_	_
-39	POM	POM	PROPN	_	Gender=Masc|Number=Sing	38	appos	_	_
+39	POM	POM	PROPN	_	Gender=Masc|Number=Sing	38	nmod	_	_
 40	e	e	CCONJ	_	_	41	cc	_	_
 41	dados	dado	NOUN	_	Gender=Masc|Number=Plur	33	conj	_	_
 42	de	de	ADP	_	_	43	case	_	_
@@ -12414,7 +12414,7 @@
 46	por	por	ADP	_	_	48	case	_	_
 47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	45	obl:agent	_	_
-49	ETA	ETA	PROPN	_	Gender=Masc|Number=Sing	48	appos	_	SpaceAfter=No
+49	ETA	ETA	PROPN	_	Gender=Masc|Number=Sing	48	nmod	_	SpaceAfter=No
 50	,	,	PUNCT	_	_	45	punct	_	_
 51	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 52	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	54	nsubj:pass	_	_
@@ -12520,7 +12520,7 @@
 1	Apenas	apenas	ADV	_	_	3	advmod	_	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	bloco	bloco	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_
-4	ES-M-418	ES-M-418	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	_
+4	ES-M-418	ES-M-418	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	_
 5	e	e	CCONJ	_	_	7	cc	_	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	CT-1	CT-1	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	_
@@ -12748,7 +12748,7 @@
 27-28	no	_	_	_	_	_	_	_	_
 27	em	em	ADP	_	_	29	case	_	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	23	obl	_	SpaceAfter=No
+29	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
 30	.	.	PUNCT	_	_	17	punct	_	_
 
 # text = A produção no pólo pré-sal em 2017 deverá ficar próxima de 1,2 milhão de barris/dia.
@@ -12964,7 +12964,7 @@
 21	de	de	ADP	_	_	23	case	_	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	processo	processo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_
-24	GTL	GTL	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	SpaceAfter=No
+24	GTL	GTL	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
 25	,	,	PUNCT	_	_	26	punct	_	_
 26	utilizando	utilizar	VERB	_	VerbForm=Ger	10	advcl	_	_
 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
@@ -13004,7 +13004,7 @@
 21	Fischer-Tropsch	Fischer-Tropsch	PROPN	_	Gender=Unsp|Number=Sing	19	nmod	_	_
 22	e	e	CCONJ	_	_	23	cc	_	SpacesAfter=\s\s
 23	processo	processo	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_
-24	GTL	GTL	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	SpaceAfter=No
+24	GTL	GTL	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
 25	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n
 
 # text = Neste trabalho foram realizados estudos sobre a estabilidade oxidativa do biodiesel de óleo de soja, assim como do oleato de metila, que é um dos principais constituintes deste biodiesel, na presença de metais de transição (Zn, Ni, Fe e Cu).
@@ -13658,7 +13658,7 @@
 2	cepa	cepa	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_
 3	Pseudomonas	Pseudomonas	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_
 4	aeruginosa	aeruginosa	NOUN	_	Number=Sing	3	compound	_	_
-5	PA1	PA1	PROPN	_	Number=Sing	3	appos	_	SpaceAfter=No
+5	PA1	PA1	PROPN	_	Number=Sing	2	nmod	_	SpaceAfter=No
 6	,	,	PUNCT	_	_	7	punct	_	_
 7	isolada	isolar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
 8	de	de	ADP	_	_	9	case	_	_
@@ -13731,7 +13731,7 @@
 22	cepa	cepa	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_
 23	Pseudomonas	Pseudomonas	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_
 24	aeruginosa	aeruginosa	ADJ	_	Number=Sing	23	compound	_	_
-25	PA1	PA1	PROPN	_	Number=Sing	22	appos	_	SpaceAfter=No
+25	PA1	PA1	PROPN	_	Number=Sing	22	nmod	_	SpaceAfter=No
 26	,	,	PUNCT	_	_	31	punct	_	_
 27	com	com	ADP	_	_	31	case	_	_
 28	vistas	vista	NOUN	_	Gender=Masc|Number=Plur	27	fixed	_	_
@@ -14366,7 +14366,7 @@
 8	entender	entender	VERB	_	VerbForm=Inf	0	root	_	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_
-11	PVT	PVT	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	_
+11	PVT	PVT	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	_
 12	de	de	ADP	_	_	13	case	_	_
 13	misturas	mistura	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_
 14	de	de	ADP	_	_	15	case	_	_
@@ -14729,7 +14729,7 @@
 20	em	em	ADP	_	_	22	case	_	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	célula	célula	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_
-23	SAGD	SAGD	PROPN	_	Gender=Fem|Number=Sing	22	appos	_	_
+23	SAGD	SAGD	PROPN	_	Gender=Fem|Number=Sing	22	nmod	_	_
 24	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	_	_
 25	desenvolvidos	desenvolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
 26	para	para	SCONJ	_	_	27	mark	_	_
@@ -15415,7 +15415,7 @@
 61	para	para	ADP	_	_	63	case	_	_
 62	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	det	_	_
 63	setor	setor	NOUN	_	Gender=Masc|Number=Sing	42	obl	_	_
-64	Petróleo	Petróleo	PROPN	_	Gender=Masc|Number=Sing	63	appos	_	_
+64	Petróleo	Petróleo	PROPN	_	Gender=Masc|Number=Sing	63	nmod	_	_
 65	e	e	CCONJ	_	_	66	cc	_	_
 66	Gás	gás	PROPN	_	Gender=Masc|Number=Sing	64	conj	_	SpaceAfter=No
 67	,	,	PUNCT	_	_	68	punct	_	_
@@ -16600,7 +16600,7 @@
 14	por	por	ADP	_	_	16	case	_	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	navio	navio	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	_	_
-17	Braer	Braer	PROPN	_	Gender=Masc|Number=Sing	16	appos	_	_
+17	Braer	Braer	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	_
 18	(	(	PUNCT	_	_	19	punct	_	SpaceAfter=No
 19	1993	1993	NUM	_	NumType=Card	13	appos:parataxis	_	SpaceAfter=No
 20	)	)	PUNCT	_	_	19	punct	_	_
@@ -16614,7 +16614,7 @@
 26	otólitos	otólito	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_
 27	de	de	ADP	_	_	28	case	_	_
 28	arenques	arenque	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_
-29	Clupea	Clupea	PROPN	_	Gender=Masc|Number=Plur	28	appos	_	_
+29	Clupea	Clupea	PROPN	_	Gender=Masc|Number=Plur	28	nmod	_	_
 30	arengus	arengus	NOUN	_	Gender=Masc|Number=Plur	29	compound	_	_
 31	(	(	PUNCT	_	_	32	punct	_	SpaceAfter=No
 32	larvas	larva	NOUN	_	Gender=Fem|Number=Plur	29	appos:parataxis	_	SpaceAfter=No
@@ -17204,7 +17204,7 @@
 4	montado	montar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	SpacesAfter=\s\s
 5	em	em	ADP	_	_	6	case	_	SpacesAfter=\s\s
 6	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	SpacesAfter=\s\s
-7	Linux	Linux	PROPN	_	Gender=Fem|Number=Sing	6	appos	_	SpaceAfter=No
+7	Linux	Linux	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
 8	,	,	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s
 9	e	e	CCONJ	_	_	10	cc	_	SpacesAfter=\s\s
 10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	SpacesAfter=\s\s
@@ -18805,7 +18805,7 @@
 14	principal	principal	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_
 15	dentre	dentre	ADP	_	_	17	case	_	SpacesAfter=\s\s
 16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	SpacesAfter=\s\s
-17	GEE	Gee	PROPN	_	Gender=Masc|Number=Plur	14	obl	_	SpaceAfter=No
+17	GEE	Gee	PROPN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	20	punct	_	SpacesAfter=\s\s
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	SpacesAfter=\s\s
 20	dióxido	dióxido	NOUN	_	Gender=Masc|Number=Sing	14	appos	_	SpacesAfter=\s\s
@@ -18993,7 +18993,7 @@
 36	em	em	ADP	_	_	38	case	_	_
 37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	_	_
 38	regiões	região	NOUN	_	Gender=Fem|Number=Plur	18	obl	_	_
-39	Norte	norte	PROPN	_	Number=Sing	38	appos	_	_
+39	Norte	norte	PROPN	_	Number=Sing	38	nmod	_	_
 40	e	e	CCONJ	_	_	41	cc	_	_
 41	Nordeste	nordeste	NOUN	_	Gender=Unsp|Number=Sing	39	conj	_	SpaceAfter=No
 42	,	,	PUNCT	_	_	38	punct	_	_
@@ -19106,7 +19106,7 @@
 17	terras	terra	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_
 18	e	e	CCONJ	_	_	19	cc	_	_
 19	renda	renda	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	SpaceAfter=No
-20	,	,	PUNCT	_	_	19	punct	_	_
+20	,	,	PUNCT	_	_	23	punct	_	_
 21-22	pelo	_	_	_	_	_	_	_	_
 21	por	por	ADP	_	_	23	case	_	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
@@ -19119,7 +19119,7 @@
 28	por	por	ADP	_	_	30	case	_	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	índice	índice	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_
-31	FIRJAN	Firjan	PROPN	_	Gender=Masc|Number=Sing	30	appos	_	_
+31	FIRJAN	Firjan	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	_
 32	de	de	ADP	_	_	33	case	_	_
 33	Desenvolvimento	Desenvolvimento	PROPN	_	Number=Sing	30	nmod	_	_
 34-35	dos	_	_	_	_	_	_	_	_
@@ -19810,7 +19810,7 @@
 8	em	em	ADP	_	_	10	case	_	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	direção	direção	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_
-11	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	10	appos	_	_
+11	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	_
 12	e	e	CCONJ	_	_	13	cc	_	_
 13	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
 14	mergulho	mergulho	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_
@@ -19832,7 +19832,7 @@
 29	em	em	ADP	_	_	31	case	_	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	direção	direção	NOUN	_	Gender=Fem|Number=Sing	28	obl	_	_
-32	NW-SE	NW-SE	PROPN	_	Gender=Fem|Number=Sing	31	appos	_	_
+32	NW-SE	NW-SE	PROPN	_	Gender=Fem|Number=Sing	31	nmod	_	_
 33	com	com	ADP	_	_	34	case	_	_
 34	predomínio	predomínio	NOUN	_	Gender=Masc|Number=Sing	28	obl	_	_
 35	de	de	ADP	_	_	36	case	_	_
@@ -19911,7 +19911,7 @@
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_
 19	semicristalino	semicristalino	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_
-20	Polifluoreto	Polifluoreto	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	_
+20	Polifluoreto	Polifluoreto	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	_
 21	de	de	ADP	_	_	20	flat:name	_	_
 22	Vinilideno	Vinilideno	PROPN	_	Gender=Masc|Number=Sing	20	flat:name	_	_
 23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No
@@ -20800,7 +20800,7 @@
 13	de	de	ADP	_	_	15	case	_	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_
-16	PEMFC	PEMFC	PROPN	_	Gender=Fem|Number=Sing	15	appos	_	_
+16	PEMFC	PEMFC	PROPN	_	Gender=Fem|Number=Sing	15	nmod	_	_
 17-18	na	_	_	_	_	_	_	_	_
 17	em	em	ADP	_	_	19	case	_	_
 18	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
@@ -20958,7 +20958,7 @@
 11	de	de	ADP	_	_	13	case	_	_
 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	nanocompósitos	nanocompósito	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpacesAfter=\s\s
-14	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	13	appos	_	_
+14	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	13	nmod	_	_
 15	Y/PBE	Y/PBE	PROPN	_	Number=Sing	14	compound	_	SpacesAfter=\s\s
 16	e	e	CCONJ	_	_	17	cc	_	SpacesAfter=\s\s
 17	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	14	conj	_	SpacesAfter=\s\s
@@ -21077,7 +21077,7 @@
 13	utilizar	utilizar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	30	advcl	_	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_
-16	Co/?-Al2O3	Co/?-Al2O3	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	SpaceAfter=No
+16	Co/?-Al2O3	Co/?-Al2O3	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
 17	,	,	PUNCT	_	_	13	punct	_	_
 18-19	nas	_	_	_	_	_	_	_	_
 18	em	em	ADP	_	_	20	case	_	_
@@ -23815,7 +23815,7 @@
 22	em	em	ADP	_	_	24	case	_	_
 23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
 24	blocos	bloco	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_
-25	BM-CUM-1	BM-CUM-1	PROPN	_	Gender=Fem|Number=Sing	24	appos	_	SpaceAfter=No
+25	BM-CUM-1	BM-CUM-1	PROPN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No
 26	,	,	PUNCT	_	_	27	punct	_	_
 27	BM-CUM-2	BM-CUM-2	PROPN	_	Gender=Fem|Number=Sing	25	conj	_	_
 28	e	e	CCONJ	_	_	29	cc	_	_
@@ -23887,7 +23887,7 @@
 41	englobando	englobar	VERB	_	VerbForm=Ger	38	advcl	_	_
 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
 43	bloco	bloco	NOUN	_	Gender=Masc|Number=Sing	41	obj	_	_
-44	J-M-259	J-M-259	PROPN	_	Gender=Fem|Number=Sing	43	appos	_	SpaceAfter=No
+44	J-M-259	J-M-259	PROPN	_	Gender=Fem|Number=Sing	43	nmod	_	SpaceAfter=No
 45	)	)	PUNCT	_	_	39	punct	_	_
 46	até	até	ADP	_	_	48	case	_	_
 47	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
@@ -23996,7 +23996,7 @@
 35	de	de	ADP	_	_	36	case	_	_
 36	simulação	simulação	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	_
 37	comercial	comercial	ADJ	_	Gender=Fem|Number=Sing	36	amod	_	_
-38	HYSYS	HYSYS	PROPN	_	Gender=Masc|Number=Sing	36	appos	_	SpaceAfter=No
+38	HYSYS	HYSYS	PROPN	_	Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No
 39	.	.	PUNCT	_	_	5	punct	_	_
 
 # text = O estudo das condições de cultivo para produção de lipase do fungo A. parasiticus por FES foi realizado empregando-se técnicas de planejamento experimental.
@@ -24017,7 +24017,7 @@
 12	de	de	ADP	_	_	14	case	_	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	fungo	fungo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_
-15	A.	A.	PROPN	_	Gender=Masc|Number=Sing	14	appos	_	_
+15	A.	A.	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	_
 16	parasiticus	parasiticus	NOUN	_	Gender=Masc|Number=Sing	15	compound	_	_
 17	por	por	ADP	_	_	18	case	_	_
 18	FES	FES	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	_
@@ -25817,7 +25817,7 @@
 8	que	que	SCONJ	_	_	12	mark	_	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_
-11	EP-VE	EP-VE	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	_
+11	EP-VE	EP-VE	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	_
 12	representou	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	_	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_
