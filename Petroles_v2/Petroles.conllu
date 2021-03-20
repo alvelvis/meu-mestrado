@@ -10755,8 +10755,8 @@
 10	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
 11	como	como	ADP	_	_	13	case	O	_
 12	principal	principal	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
-13	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	14	xcomp	O	_
-14	diminuir	diminuir	VERB	_	VerbForm=Inf	10	xcomp	O	_
+13	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	10	xcomp	O	_
+14	diminuir	diminuir	VERB	_	VerbForm=Inf	10	ccomp	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	volume	volume	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
 17	gasto	gastar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	O	_
@@ -10775,7 +10775,7 @@
 30	de	de	ADP	_	_	31	case	O	_
 31	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	O	_
 32	químico	químico	ADJ	_	Gender=Masc|Number=Sing	31	amod	O	_
-33	formado	formar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	29	acl	O	SpaceAfter=No
+33	formado	formar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	O	SpaceAfter=No
 34	.	.	PUNCT	_	_	10	punct	O	_
 
 # text = Foi visto que a redução à metade do volume utilizado não alterou a qualidade dos resultados.
@@ -18311,7 +18311,7 @@
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	O	_
 16	permanece	permanecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	O	_
-17	parado	parar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	xcomp	O	_
+17	parado	parado	ADJ	_	Gender=Masc|Number=Sing	16	xcomp	O	_
 18	antes	antes	ADV	_	_	17	advmod	O	_
 19-20	da	_	_	_	_	_	_	O	_
 19	de	de	ADP	_	_	21	case	O	_
