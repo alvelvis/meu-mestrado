@@ -233,7 +233,7 @@
 37	Cabo	Cabo	PROPN	_	Number=Sing	34	flat:name	B_LOCAL_MUNICIPIO	start_char=204|end_char=208
 38	Frio	Frio	PROPN	_	Number=Sing	34	flat:name	I_LOCAL_MUNICIPIO	start_char=209|end_char=213
 39	,	,	PUNCT	_	_	40	punct	O	start_char=213|end_char=214
-40	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	34	acl	O	start_char=215|end_char=228
+40	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	34	acl	O	start_char=215|end_char=228
 41-42	pela	_	_	_	_	_	_	O	start_char=229|end_char=233
 41	por	por	ADP	_	_	43	case	O	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
@@ -405,7 +405,7 @@
 18	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	start_char=106|end_char=113
 19	de	de	ADP	_	_	20	case	O	start_char=114|end_char=116
 20	montanhas	montanha	NOUN	_	Gender=Fem|Number=Plur	18	nmod	B_LOCAL_MUNICIPIO	start_char=117|end_char=126
-21	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	O	start_char=127|end_char=139
+21	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	O	start_char=127|end_char=139
 22-23	pelas	_	_	_	_	_	_	O	start_char=140|end_char=145
 22	por	por	ADP	_	_	24	case	O	_
 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
@@ -1777,7 +1777,7 @@
 18	de	de	ADP	_	_	20	case	O	start_char=247|end_char=249
 19	alta	alto	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	start_char=250|end_char=254
 20	resolução	resolução	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	start_char=255|end_char=264
-21	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	start_char=265|end_char=275
+21	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	O	start_char=265|end_char=275
 22-23	pela	_	_	_	_	_	_	O	start_char=276|end_char=280
 22	por	por	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
@@ -1885,7 +1885,7 @@
 4	e	e	CCONJ	_	_	5	cc	O	start_char=15|end_char=16
 5	3.2	3.2	NUM	_	NumType=Card	3	conj	O	start_char=17|end_char=20
 6	,	,	PUNCT	_	_	7	punct	O	start_char=20|end_char=21
-7	cedidas	cedir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	start_char=22|end_char=29
+7	cedidas	cedir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	start_char=22|end_char=29
 8-9	pela	_	_	_	_	_	_	O	start_char=30|end_char=34
 8	por	por	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
@@ -3043,7 +3043,7 @@
 26	de	de	ADP	_	_	28	case	O	_
 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	O	_
 28	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	25	nmod	O	start_char=150|end_char=159
-29	produzidas	produzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	28	acl	O	start_char=160|end_char=170
+29	produzidas	produzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	28	acl	O	start_char=160|end_char=170
 30-31	pelos	_	_	_	_	_	_	O	start_char=171|end_char=176
 30	por	por	ADP	_	_	32	case	O	_
 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
@@ -3734,7 +3734,7 @@
 13	direção	direção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	start_char=72|end_char=79
 14	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	start_char=80|end_char=85
 15	,	,	PUNCT	_	_	16	punct	O	start_char=85|end_char=86
-16	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	O	start_char=87|end_char=96
+16	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	O	start_char=87|end_char=96
 17-18	pela	_	_	_	_	_	_	O	start_char=97|end_char=101
 17	por	por	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
@@ -3832,7 +3832,7 @@
 4	alta	alto	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	start_char=12|end_char=16
 5	freqüência	freqüência	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	start_char=17|end_char=27
 6	,	,	PUNCT	_	_	7	punct	O	start_char=27|end_char=28
-7	demarcadas	demarcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	start_char=29|end_char=39
+7	demarcadas	demarcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	start_char=29|end_char=39
 8-9	no	_	_	_	_	_	_	O	start_char=40|end_char=42
 8	em	em	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
@@ -4338,7 +4338,7 @@
 6	dois	dois	NUM	_	NumType=Card	7	nummod	O	start_char=32|end_char=36
 7	domínios	domínio	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	O	start_char=37|end_char=45
 8	principais	principal	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	start_char=46|end_char=56
-9	caracterizados	caracterizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	O	start_char=57|end_char=71
+9	caracterizados	caracterizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	acl	O	start_char=57|end_char=71
 10-11	pelo	_	_	_	_	_	_	O	start_char=72|end_char=76
 10	por	por	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
@@ -4449,7 +4449,7 @@
 36	retilíneo	retilíneo	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=184|end_char=193
 37	e	e	CCONJ	_	_	39	cc	O	start_char=194|end_char=195
 38	fortemente	fortemente	ADV	_	_	39	advmod	O	start_char=196|end_char=206
-39	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	36	conj	O	start_char=207|end_char=217
+39	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	36	conj	O	start_char=207|end_char=217
 40-41	pela	_	_	_	_	_	_	O	start_char=218|end_char=222
 40	por	por	ADP	_	_	42	case	O	_
 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
@@ -5235,7 +5235,7 @@
 11	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	start_char=51|end_char=61
 12	(	(	PUNCT	_	_	13	punct	O	start_char=62|end_char=63
 13	depocentro	depocentro	NOUN	_	Gender=Masc|Number=Sing	10	appos	O	start_char=63|end_char=73
-14	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	acl	O	start_char=74|end_char=84
+14	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	O	start_char=74|end_char=84
 15-16	pela	_	_	_	_	_	_	O	start_char=85|end_char=89
 15	por	por	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
@@ -5274,7 +5274,7 @@
 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	B_LOCAL_GEO	_
 46	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	43	nmod	O	start_char=198|end_char=204
 47	interno	interno	ADJ	_	Gender=Masc|Number=Sing	46	amod	O	start_char=205|end_char=212
-48	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	46	acl	O	start_char=213|end_char=221
+48	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	46	acl	O	start_char=213|end_char=221
 49-50	pelos	_	_	_	_	_	_	O	start_char=222|end_char=227
 49	por	por	ADP	_	_	52	case	O	_
 50	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	O	_
@@ -5352,7 +5352,7 @@
 23	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	16	conj	O	start_char=109|end_char=115
 24	interno	interno	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	start_char=116|end_char=123
 25	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj:pass	O	start_char=124|end_char=127
-26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	aux:pass	O	start_char=128|end_char=136
+26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	cop	O	start_char=128|end_char=136
 27	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	16	acl:relcl	O	start_char=137|end_char=146
 28	por	por	ADP	_	_	30	case	O	start_char=147|end_char=150
 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	start_char=151|end_char=153
@@ -5429,7 +5429,7 @@
 11	direção	direção	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	start_char=47|end_char=54
 12	,	,	PUNCT	_	_	14	punct	O	start_char=54|end_char=55
 13	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	14	det	O	start_char=56|end_char=59
-14	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	O	start_char=60|end_char=69
+14	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	O	start_char=60|end_char=69
 15	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	start_char=70|end_char=80
 16	,	,	PUNCT	_	_	19	punct	O	start_char=80|end_char=81
 17	ainda	ainda	ADV	_	_	18	advmod	O	start_char=82|end_char=87
@@ -5671,7 +5671,7 @@
 14	vermelhos	vermelho	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	start_char=76|end_char=85
 15	)	)	PUNCT	_	_	13	punct	O	start_char=85|end_char=86
 16	,	,	PUNCT	_	_	17	punct	O	start_char=86|end_char=87
-17	gerada	gerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	O	start_char=88|end_char=94
+17	gerada	gerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	O	start_char=88|end_char=94
 18-19	pelas	_	_	_	_	_	_	O	start_char=95|end_char=100
 18	por	por	ADP	_	_	20	case	O	_
 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
@@ -5715,7 +5715,7 @@
 # sent_id = 20-20140904-TESEDSC_0-567
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	start_char=0|end_char=1
 2	calha	calha	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	start_char=2|end_char=7
-3	condicionada	condicionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	start_char=8|end_char=20
+3	condicionada	condicionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	O	start_char=8|end_char=20
 4-5	pela	_	_	_	_	_	_	O	start_char=21|end_char=25
 4	por	por	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
