@@ -2596,10 +2596,10 @@
 28	de	de	ADP	_	_	30	case	O	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
 30	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	26	obl	B_FLUIDO	_
-31	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	32	nsubj	O	_
-32	está	estar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	O	_
+31	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	34	nsubj	O	_
+32	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	O	_
 33	com	com	ADP	_	_	34	case	O	_
-34	40%	40%	NUM	_	NumType=Card	32	obl	O	SpaceAfter=No
+34	40%	40%	NUM	_	NumType=Card	30	acl:relcl	O	SpaceAfter=No
 35	.	.	PUNCT	_	_	2	punct	O	_
 
 # text = Dentre os principais combustíveis fósseis, como o petróleo e o carvão, o gás natural é o que gera menores emissões de poluentes.
@@ -2665,11 +2665,11 @@
 27	em	em	ADP	_	_	28	case	O	_
 28	escala	escala	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
 29	industrial	industrial	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
-30	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	O	_
+30	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	cop	O	_
 31-32	pelo	_	_	_	_	_	_	O	_
 31	por	por	ADP	_	_	33	case	O	_
 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
-33	processo	processo	NOUN	_	Gender=Masc|Number=Sing	30	obl	O	_
+33	processo	processo	NOUN	_	Gender=Masc|Number=Sing	14	conj	O	_
 34	de	de	ADP	_	_	35	case	O	_
 35	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
 36	a	a	ADP	_	_	37	case	O	_
@@ -4316,7 +4316,7 @@
 3	de	de	ADP	_	_	5	case	O	_
 4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	O	_
 5	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
-6	é	ser	VERB	_	_	7	cop	O	_
+6	é	ser	AUX	_	_	7	cop	O	_
 7	importante	importante	NOUN	_	Gender=Masc|Number=Sing	0	root	O	SpacesAfter=\s\s
 8	desenvolver	desenvolver	VERB	_	VerbForm=Inf	7	xcomp	O	SpacesAfter=\s\s
 9	membranas	membrana	NOUN	_	Gender=Fem|Number=Plur	8	obj	O	SpacesAfter=\s\s
@@ -4465,7 +4465,7 @@
 5	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	SpacesAfter=\s\s
 6	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B_LITOLOGIA	SpacesAfter=\s\s
 7	Y/Nafion®	Y/Nafion®	PROPN	_	Number=Sing	6	compound	O	SpaceAfter=No
-8	foi	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	O	SpacesAfter=\s\s
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	O	SpacesAfter=\s\s
 9-10	no	_	_	_	_	_	_	O	SpacesAfter=\s\s
 9	em	em	ADP	_	_	11	case	O	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
@@ -6493,7 +6493,7 @@
 2	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	O	_
 3	de	de	ADP	_	_	4	case	O	_
 4	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
-5	foram	ser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	cop	O	SpaceAfter=No
+5	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	cop	O	SpaceAfter=No
 6	:	:	PUNCT	_	_	5	punct	O	_
 7	delimitação	delimitação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
 8	de	de	ADP	_	_	9	case	O	_
@@ -14896,7 +14896,7 @@
 15	condições	condição	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
 16	operacionais	operacional	ADJ	_	Gender=Fem|Number=Plur	15	amod	O	SpaceAfter=No
 17	)	)	PUNCT	_	_	8	punct	O	_
-18	são	ser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	SpaceAfter=No
+18	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	cop	O	SpaceAfter=No
 19	:	:	PUNCT	_	_	29	punct	O	_
 20	1	1	NUM	_	NumType=Card	29	parataxis	O	SpaceAfter=No
 21	)	)	PUNCT	_	_	20	punct	O	_
@@ -14907,7 +14907,7 @@
 26	combinado	combinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	25	acl	B_LOCAL_MUNICIPIO	_
 27	com	com	ADP	_	_	28	case	O	_
 28	vapor	vapor	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
-29	acelera	acelerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	18	ccomp	O	_
+29	acelera	acelerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	início	início	NOUN	_	Gender=Masc|Number=Sing	29	obj	O	_
 32	e	e	CCONJ	_	_	34	cc	O	_
@@ -14970,7 +14970,7 @@
 86	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	85	obj	O	_
 87	de	de	ADP	_	_	88	case	O	_
 88	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	86	nmod	O	_
-89	superiores	alto	ADJ	_	Gender=Fem|Number=Plur	86	amod	O	_
+89	superiores	alto	ADJ	_	Gender=Masc|Number=Plur	86	amod	O	_
 90	a	a	ADP	_	_	91	case	O	_
 91	45%	45%	NOUN	_	Gender=Unsp|Number=Plur	89	obl	O	SpaceAfter=No
 92	.	.	PUNCT	_	_	18	punct	O	_
@@ -15057,7 +15057,7 @@
 5	como	como	ADV	_	_	1	fixed	O	_
 6	seus	seu	DET	_	Gender=Masc|Number=Plur|PronType=Prs	17	det	O	_
 7	derivados	derivado	NOUN	_	Gender=Masc|Number=Plur	3	conj	O	_
-8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	O	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	O	_
 9	entre	entre	ADP	_	_	11	case	O	_
 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
 11	contaminantes	contaminante	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
