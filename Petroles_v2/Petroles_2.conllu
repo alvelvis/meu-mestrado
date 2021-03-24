@@ -4625,7 +4625,7 @@
 12	nT	nT	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	start_char=55|end_char=57
 13	sendo	ser	AUX	_	VerbForm=Ger	15	cop	O	start_char=58|end_char=63
 14	melhor	bom	ADV	_	_	15	advmod	O	start_char=64|end_char=70
-15	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	7	advcl	O	start_char=71|end_char=80
+15	observada	observado	ADJ	_	Gender=Fem|Number=Sing	7	advcl	O	start_char=71|end_char=80
 16-17	na	_	_	_	_	_	_	O	start_char=81|end_char=83
 16	em	em	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
@@ -5352,7 +5352,7 @@
 23	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	16	conj	O	start_char=109|end_char=115
 24	interno	interno	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	start_char=116|end_char=123
 25	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj:pass	O	start_char=124|end_char=127
-26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	cop	O	start_char=128|end_char=136
+26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	aux	O	start_char=128|end_char=136
 27	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	16	acl:relcl	O	start_char=137|end_char=146
 28	por	por	ADP	_	_	30	case	O	start_char=147|end_char=150
 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	start_char=151|end_char=153
