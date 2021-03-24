@@ -5,13 +5,13 @@
 
 # text = Um dos fatores que determina a qualidade da gasolina pirolisada e de suas frações de destilação e hidrogenação na indústria de petróleo é o teor de dienos conjugados, assim como o das olefinas, de compostos aromáticos e ramificados (POLÁK et al., 1986; VELASCO-ARJONA et al., 1998 e SWARIN et al., 1989).
 # sent_id = 0-20150121-TESEMSC_0_intro-2
-1	Um	um	DET	_	Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+1	Um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	28	nsubj	O	_
 2-3	dos	_	_	_	_	_	_	O	_
 2	de	de	ADP	_	_	4	case	O	_
 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
-4	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	O	_
+4	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
 5	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	6	nsubj	O	_
-6	determina	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	O	_
+6	determina	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
 9-10	da	_	_	_	_	_	_	O	_
@@ -54,7 +54,7 @@
 43	e	e	CCONJ	_	_	44	cc	O	_
 44	ramificados	ramificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	42	conj	O	_
 45	(	(	PUNCT	_	_	46	punct	O	SpaceAfter=No
-46	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	28	appos:parataxis	O	_
+46	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	28	parataxis	O	_
 47	et	et	PROPN	_	Gender=Unsp|Number=Sing	46	flat:name	O	_
 48	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	46	flat:name	O	SpaceAfter=No
 49	,	,	PUNCT	_	_	46	flat:name	O	_
@@ -145,7 +145,7 @@
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 32	polimerização	polimerização	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
 33	(	(	PUNCT	_	_	34	punct	O	SpaceAfter=No
-34	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	27	appos:parataxis	O	_
+34	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	27	parataxis	O	_
 35	et	et	PROPN	_	Gender=Unsp|Number=Sing	34	flat:name	O	_
 36	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	34	flat:name	O	SpaceAfter=No
 37	,	,	PUNCT	_	_	34	flat:name	O	_
@@ -186,7 +186,7 @@
 27	combustíveis	combustível	NOUN	_	Gender=Masc|Number=Plur	24	obl	O	_
 28	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	O	_
 29	(	(	PUNCT	_	_	30	punct	O	SpaceAfter=No
-30	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	3	appos:parataxis	O	_
+30	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	3	parataxis	O	_
 31	et	et	PROPN	_	Gender=Unsp|Number=Sing	30	flat:name	O	_
 32	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	30	flat:name	O	SpaceAfter=No
 33	,	,	PUNCT	_	_	30	flat:name	O	_
@@ -265,7 +265,7 @@
 60	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	61	cop	O	_
 61	armazenado	armazenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	54	acl:relcl	O	_
 62	(	(	PUNCT	_	_	63	punct	O	SpaceAfter=No
-63	D’ORNELLAS	D’Ornellas	PROPN	_	Gender=Unsp|Number=Sing	22	appos:parataxis	O	_
+63	D’ORNELLAS	D’Ornellas	PROPN	_	Gender=Unsp|Number=Sing	22	parataxis	O	_
 64	et	et	PROPN	_	Gender=Unsp|Number=Sing	63	flat:name	O	_
 65	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	63	flat:name	O	SpaceAfter=No
 66	,	,	PUNCT	_	_	63	flat:name	O	_
@@ -402,7 +402,7 @@
 35	usualmente	usualmente	ADV	_	_	36	advmod	O	_
 36	recomendada	recomendar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	O	_
 37	(	(	PUNCT	_	_	38	punct	O	SpaceAfter=No
-38	ALLINGER	Allinger	PROPN	_	Gender=Unsp|Number=Sing	36	appos:parataxis	O	_
+38	ALLINGER	Allinger	PROPN	_	Gender=Unsp|Number=Sing	36	parataxis	O	_
 39	et.	et.	PROPN	_	Gender=Unsp|Number=Sing	38	flat:name	O	_
 40	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	38	flat:name	O	SpaceAfter=No
 41	,	,	PUNCT	_	_	38	flat:name	O	_
@@ -432,7 +432,7 @@
 65	,	,	PUNCT	_	_	62	flat:name	O	_
 66	1996	1996	NUM	_	NumType=Card	62	flat:name	O	SpaceAfter=No
 67	;	;	PUNCT	_	_	68	punct	O	_
-68	UOP-326	UOP-326	PROPN	_	_	38	conj	O	SpaceAfter=No
+68	UOP-326	UOP-326	PROPN	_	Gender=Unsp|Number=Sing	38	conj	O	SpaceAfter=No
 69	,	,	PUNCT	_	_	68	flat:name	O	_
 70	1965	1965	NUM	_	NumType=Card	68	flat:name	O	SpaceAfter=No
 71	)	)	PUNCT	_	_	37	punct	O	SpaceAfter=No
@@ -530,14 +530,14 @@
 6	como	como	ADP	_	_	7	case	O	_
 7	UOP-326	UOP-326	PROPN	_	Gender=Masc|Number=Sing	4	xcomp	O	SpaceAfter=No
 8	,	,	PUNCT	_	_	4	punct	O	_
-9	e	e	CCONJ	_	_	4	cc	O	_
+9	e	e	CCONJ	_	_	12	cc	O	_
 10	vem	vir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	O	_
 11	sendo	ser	AUX	_	VerbForm=Ger	12	aux:pass	O	_
 12	empregado	empregar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	O	_
 13	desde	desde	ADP	_	_	14	case	O	_
 14	1965	1965	NUM	_	NumType=Card	12	obl	O	_
 15	(	(	PUNCT	_	_	16	punct	O	SpaceAfter=No
-16	VELASCO-ARJONA	Velasco-Arjona	PROPN	_	Gender=Unsp|Number=Sing	4	appos:parataxis	O	_
+16	VELASCO-ARJONA	Velasco-Arjona	PROPN	_	Gender=Unsp|Number=Sing	4	parataxis	O	_
 17	et	et	PROPN	_	Gender=Unsp|Number=Sing	16	flat:name	O	_
 18	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	16	flat:name	O	SpaceAfter=No
 19	,	,	PUNCT	_	_	16	flat:name	O	_
@@ -574,12 +574,12 @@
 2	e	e	CCONJ	_	_	3	cc	O	_
 3	Hidemitsu	Hidemitsu	PROPN	_	Gender=Masc|Number=Sing	1	conj	O	_
 4	(	(	PUNCT	_	_	5	punct	O	SpaceAfter=No
-5	SODEOKA	Sodeoka	PROPN	_	Gender=Unsp|Number=Sing	1	appos:parataxis	O	_
+5	SODEOKA	Sodeoka	PROPN	_	Gender=Unsp|Number=Sing	16	parataxis	O	_
 6	et	et	PROPN	_	Gender=Unsp|Number=Sing	5	flat:name	O	_
 7	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	5	flat:name	O	SpaceAfter=No
 8	,	,	PUNCT	_	_	5	flat:name	O	_
-9	apud	apud	ADP	_	_	5	flat:name	O	_
-10	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	5	conj	O	_
+9	apud	apud	ADP	_	_	10	case	O	_
+10	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	5	nmod	O	_
 11	et	et	PROPN	_	Gender=Unsp|Number=Sing	10	flat:name	O	_
 12	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	10	flat:name	O	SpaceAfter=No
 13	,	,	PUNCT	_	_	10	flat:name	O	_
@@ -716,7 +716,7 @@
 14	policíclicos	policíclico	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	_
 15	também	também	ADV	_	_	16	advmod	O	_
 16	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	SpaceAfter=No
-17	,	,	PUNCT	_	_	31	punct	O	_
+17	,	,	PUNCT	_	_	24	punct	O	_
 18	mas	mas	CCONJ	_	_	31	cc	O	_
 19	devido	devido	ADP	_	_	24	case	O	MWE=devido_a|MWEPOS=ADP
 20-21	aos	_	_	_	_	_	_	O	_
@@ -727,7 +727,7 @@
 24	pontos	ponto	NOUN	_	Gender=Masc|Number=Plur	31	obl	O	_
 25	de	de	ADP	_	_	26	case	O	_
 26	ebulição	ebulição	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	SpaceAfter=No
-27	,	,	PUNCT	_	_	19	punct	O	_
+27	,	,	PUNCT	_	_	24	punct	O	_
 28	estes	este	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	10	appos	O	_
 29	não	não	ADV	_	Polarity=Neg	31	advmod	O	_
 30	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	O	_
@@ -737,7 +737,7 @@
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	31	obl	O	_
 35	(	(	PUNCT	_	_	36	punct	O	SpaceAfter=No
-36	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	16	appos:parataxis	O	_
+36	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	16	parataxis	O	_
 37	et	et	PROPN	_	Gender=Unsp|Number=Sing	36	flat:name	O	_
 38	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	36	flat:name	O	SpaceAfter=No
 39	,	,	PUNCT	_	_	36	flat:name	O	_
@@ -1186,10 +1186,10 @@
 27	de	de	ADP	_	_	28	case	O	_
 28	sódio	sódio	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
 29	(	(	PUNCT	_	_	30	punct	O	SpaceAfter=No
-30	Sir	Sir	PROPN	_	Gender=Fem|Number=Sing	26	appos:parataxis	B_LOCAL_CIDADE	_
+30	Sir	Sir	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	B_LOCAL_CIDADE	_
 31	Humphrey	Humphrey	PROPN	_	Number=Sing	30	flat:name	O	SpaceAfter=No
 32	,	,	PUNCT	_	_	30	flat:name	O	_
-33	Inglaterra	Inglaterra	PROPN	_	Gender=Fem|Number=Sing	30	appos:parataxis	O	SpaceAfter=No
+33	Inglaterra	Inglaterra	PROPN	_	Gender=Fem|Number=Sing	30	flat:name	O	SpaceAfter=No
 34	)	)	PUNCT	_	_	30	punct	O	SpaceAfter=No
 35	.	.	PUNCT	_	_	5	punct	O	_
 
@@ -1325,7 +1325,7 @@
 3	a	a	ADP	_	_	4	case	O	_
 4	combustível	combustível	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
 5	(	(	PUNCT	_	_	6	punct	O	SpaceAfter=No
-6	Figura	figura	NOUN	_	Gender=Masc|Number=Sing	2	appos:parataxis	O	_
+6	Figura	figura	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
 7	1	1	NUM	_	NumType=Ord	6	nummod	O	SpaceAfter=No
 8	)	)	PUNCT	_	_	6	punct	O	_
 9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	O	_
@@ -1636,12 +1636,12 @@
 1	PEMFC	PEMFC	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
 2	(	(	PUNCT	_	_	3	punct	O	SpaceAfter=No
 3	proton	proton	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
-4	exchange	exchange	NOUN	_	Gender=Fem|Number=Sing	3	compound	O	_
-5	membran	membran	NOUN	_	Gender=Fem|Number=Sing	3	compound	O	_
-6	fuel	fuel	NOUN	_	Gender=Fem|Number=Sing	3	compound	O	_
-7	cell	cell	NOUN	_	Gender=Fem|Number=Sing	3	compound	O	_
+4	exchange	exchange	NOUN	_	Gender=Fem|Number=Sing	3	flat:foreign	O	_
+5	membran	membran	NOUN	_	Gender=Fem|Number=Sing	3	flat:foreign	O	_
+6	fuel	fuel	NOUN	_	Gender=Fem|Number=Sing	3	flat:foreign	O	_
+7	cell	cell	NOUN	_	Gender=Fem|Number=Sing	3	flat:foreign	O	_
 8	–	–	PUNCT	_	_	9	punct	O	_
-9	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos:transl	O	_
+9	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos	O	_
 10	a	o	ADP	_	_	11	case	O	_
 11	combustível	combustível	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
 12	de	de	ADP	_	_	13	case	O	_
@@ -1822,11 +1822,11 @@
 1	PAFC	PAFC	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
 2	(	(	PUNCT	_	_	3	punct	O	SpaceAfter=No
 3	phosphoric	phosphoric	NOUN	_	Gender=Masc|Number=Sing	1	appos	O	_
-4	acid	acid	VERB	_	Gender=Masc|Number=Sing	3	compound	O	_
-5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
-6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
+4	acid	acid	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
+5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
+6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
 7	–	–	PUNCT	_	_	8	punct	O	_
-8	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos:transl	O	_
+8	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos	O	_
 9	a	a	ADP	_	_	10	case	O	_
 10	combustível	combustível	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
 11	de	de	ADP	_	_	12	case	O	_
@@ -1972,11 +1972,11 @@
 1	MCFC	MCFC	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
 2	(	(	PUNCT	_	_	3	punct	O	SpaceAfter=No
 3	Molten	Molten	NOUN	_	Gender=Masc|Number=Sing	1	appos	O	_
-4	carbonate	carbonate	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
-5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
-6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	compound	O	_
+4	carbonate	carbonate	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
+5	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
+6	cell	cell	NOUN	_	Gender=Masc|Number=Sing	3	flat:foreign	O	_
 7	–	–	PUNCT	_	_	8	punct	O	_
-8	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos:transl	O	_
+8	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	appos	O	_
 9	a	o	ADP	_	_	10	case	O	_
 10	combustível	combustível	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
 11	de	de	ADP	_	_	12	case	O	_
@@ -3422,7 +3422,7 @@
 # text = Figura 2.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-81
 1	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2	2	2	NUM	_	NumType=Card	1	compound	O	SpaceAfter=No
+2	2	2	NUM	_	NumType=Card	1	nummod	O	SpaceAfter=No
 3	.	.	PUNCT	_	_	1	punct	O	_
 
 # text = Estrutura molecular do Nafion®.
@@ -3438,7 +3438,7 @@
 # text = Figura 3.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-83
 1	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2	3	3	NUM	_	NumType=Card	1	compound	O	SpaceAfter=No
+2	3	3	NUM	_	NumType=Card	1	nummod	O	SpaceAfter=No
 3	.	.	PUNCT	_	_	1	punct	O	_
 
 # text = Representação da nanoestrutura do Nafion®.
@@ -3537,7 +3537,7 @@
 # text = O poli(bisfenol A-co-epicloridrina) (PBE) é uma resina epóxi contendo grupos éter que podem coordenar cátions (Figura 4).
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-89
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
-2	poli	poli	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	B_QUIMICA	SpaceAfter=No
+2	poli	poli	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	B_QUIMICA	SpaceAfter=No
 3	(	(	PUNCT	_	_	2	compound	O	SpaceAfter=No
 4	bisfenol	bisfenol	NOUN	_	Gender=Masc|Number=Sing	2	compound	O	_
 5	A-co-epicloridrina	A-co-epicloridrina	NOUN	_	Gender=Masc|Number=Sing	2	compound	O	SpaceAfter=No
@@ -3557,8 +3557,8 @@
 19	coordenar	coordenar	VERB	_	VerbForm=Inf	18	xcomp	O	_
 20	cátions	cátion	NOUN	_	Gender=Masc|Number=Plur	19	obj	O	_
 21	(	(	PUNCT	_	_	22	punct	O	SpaceAfter=No
-22	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	12	appos:parataxis	O	_
-23	4	4	NUM	_	NumType=Card	22	compound	O	SpaceAfter=No
+22	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	12	parataxis	O	_
+23	4	4	NUM	_	NumType=Card	22	nummod	O	SpaceAfter=No
 24	)	)	PUNCT	_	_	22	punct	O	SpaceAfter=No
 25	.	.	PUNCT	_	_	12	punct	O	_
 
@@ -3669,7 +3669,7 @@
 # text = Figura 4.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-93
 1	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2	4	4	NUM	_	NumType=Card	1	compound	O	SpaceAfter=No
+2	4	4	NUM	_	NumType=Card	1	nummod	O	SpaceAfter=No
 3	.	.	PUNCT	_	_	1	punct	O	_
 
 # text = Estrutura molecular do PBE.
@@ -4329,7 +4329,7 @@
 16	100	100	NUM	_	NumType=Card	14	obl	O	_
 17	oC	oC	SYM	_	_	16	nmod	O	SpaceAfter=No
 18	[	[	PUNCT	_	_	19	punct	O	_
-19	1	1	NUM	_	NumType=Card	7	appos:parataxis	O	SpaceAfter=No
+19	1	1	NUM	_	NumType=Card	7	nmod:appos	O	SpaceAfter=No
 20	]	_	PUNCT	_	_	19	punct	O	SpaceAfter=No
 21	.	.	PUNCT	_	_	7	punct	O	SpacesAfter=\s\r\n
 
@@ -9438,7 +9438,7 @@
 51	poluentes	poluente	NOUN	_	Gender=Masc|Number=Plur	49	nmod	O	_
 52	ambientais	ambiental	ADJ	_	Gender=Masc|Number=Plur	51	amod	O	_
 53	(	(	PUNCT	_	_	54	punct	O	SpaceAfter=No
-54	Chet	Chet	PROPN	_	Gender=Masc|Number=Sing	39	appos:parataxis	O	SpaceAfter=No
+54	Chet	Chet	PROPN	_	Gender=Masc|Number=Sing	39	parataxis	O	SpaceAfter=No
 55	,	,	PUNCT	_	_	54	flat:name	O	_
 56	1999	1999	NUM	_	NumType=Card	54	flat:name	O	SpaceAfter=No
 57	;	;	PUNCT	_	_	58	punct	O	_
@@ -9516,8 +9516,8 @@
 12	EMS	EMS	PROPN	_	Gender=Masc|Number=Sing	2	appos	O	_
 13	(	(	PUNCT	_	_	14	punct	O	SpaceAfter=No
 14	Environmental	Environmental	X	_	Gender=Masc|Number=Sing	12	appos	O	_
-15	Management	Management	X	_	Number=Sing	14	flat:name	O	_
-16	System	System	X	_	Number=Sing	14	flat:name	O	SpaceAfter=No
+15	Management	Management	X	_	Number=Sing	14	flat:foreign	O	_
+16	System	System	X	_	Number=Sing	14	flat:foreign	O	SpaceAfter=No
 17	)	)	PUNCT	_	_	14	punct	O	SpaceAfter=No
 18	,	,	PUNCT	_	_	21	punct	O	_
 19-20	no	_	_	_	_	_	_	O	_
@@ -9594,7 +9594,7 @@
 84	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	85	det	O	_
 85	países	país	NOUN	_	Gender=Masc|Number=Plur	70	obl	O	_
 86	(	(	PUNCT	_	_	87	punct	O	SpaceAfter=No
-87	Denilizi	Denilizi	PROPN	_	Gender=Masc|Number=Sing	85	appos:parataxis	O	SpaceAfter=No
+87	Denilizi	Denilizi	PROPN	_	Gender=Masc|Number=Sing	70	parataxis	O	SpaceAfter=No
 88	,	,	PUNCT	_	_	87	flat:name	O	_
 89	2004	2004	NUM	_	NumType=Card	87	flat:name	O	SpaceAfter=No
 90	)	)	PUNCT	_	_	87	punct	O	SpaceAfter=No
@@ -9741,7 +9741,7 @@
 46	de	de	ADP	_	_	42	flat:name	O	_
 47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	flat:name	O	_
 48	Meio	Meio	PROPN	_	Number=Sing	42	flat:name	O	_
-49	Ambiente	Ambiente	PROPN	_	Number=Sing	48	compound	O	SpaceAfter=No
+49	Ambiente	Ambiente	PROPN	_	Number=Sing	42	flat:name	O	SpaceAfter=No
 50	,	,	PUNCT	_	_	51	punct	O	_
 51	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	42	appos:parataxis	B_LOCAL_MUNICIPIO|B_LOCAL_CIDADE|B_LOCAL_ESTADO	_
 52	de	de	ADP	_	_	51	flat:name	I_LOCAL_MUNICIPIO|I_LOCAL_CIDADE|I_LOCAL_ESTADO	_
@@ -9759,7 +9759,7 @@
 63	de	de	ADP	_	_	61	flat:name	O	_
 64	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	flat:name	O	_
 65	Meio	Meio	PROPN	_	Number=Sing	61	flat:name	O	_
-66	Ambiente	Ambiente	PROPN	_	Number=Sing	61	compound	O	SpaceAfter=No
+66	Ambiente	Ambiente	PROPN	_	Number=Sing	61	flat:name	O	SpaceAfter=No
 67	,	,	PUNCT	_	_	68	punct	O	_
 68	São	São	PROPN	_	Gender=Masc|Number=Sing	61	appos:parataxis	B_LOCAL_MUNICIPIO|B_BACIA|B_LOCAL_ESTADO	_
 69	Paulo	Paulo	PROPN	_	Number=Sing	68	flat:name	I_LOCAL_MUNICIPIO|I_BACIA|I_LOCAL_ESTADO	SpaceAfter=No
@@ -9896,7 +9896,7 @@
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
 14	fenol	fenol	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
 15	(	(	PUNCT	_	_	16	punct	O	SpaceAfter=No
-16	Smith	Smith	PROPN	_	Gender=Masc|Number=Sing	3	appos:parataxis	O	SpaceAfter=No
+16	Smith	Smith	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	SpaceAfter=No
 17	,	,	PUNCT	_	_	16	flat:name	O	_
 18	1987	1987	NUM	_	NumType=Card	16	flat:name	O	SpaceAfter=No
 19	;	;	PUNCT	_	_	20	punct	O	_
@@ -10059,7 +10059,7 @@
 44	e	e	CCONJ	_	_	45	cc	O	_
 45	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	32	conj	O	_
 46	(	(	PUNCT	_	_	47	punct	O	SpaceAfter=No
-47	Atlow	Atlow	PROPN	_	Gender=Masc|Number=Sing	15	appos:parataxis	O	SpaceAfter=No
+47	Atlow	Atlow	PROPN	_	Gender=Masc|Number=Sing	15	parataxis	O	SpaceAfter=No
 48	,	,	PUNCT	_	_	47	flat:name	O	_
 49	1983	1983	NUM	_	NumType=Card	47	flat:name	O	SpaceAfter=No
 50	)	)	PUNCT	_	_	47	punct	O	SpaceAfter=No
@@ -10150,7 +10150,7 @@
 28	e	e	CCONJ	_	_	29	cc	O	_
 29	venenosos	venenoso	ADJ	_	Gender=Masc|Number=Plur	27	conj	O	_
 30	(	(	PUNCT	_	_	31	punct	O	SpaceAfter=No
-31	Orser	Orser	PROPN	_	Gender=Masc|Number=Sing	27	appos:parataxis	O	SpaceAfter=No
+31	Orser	Orser	PROPN	_	Gender=Masc|Number=Sing	27	parataxis	O	SpaceAfter=No
 32	,	,	PUNCT	_	_	31	flat:name	O	_
 33	1994	1994	NUM	_	NumType=Card	31	flat:name	O	_
 34	e	e	CCONJ	_	_	35	cc	O	_
@@ -10257,7 +10257,7 @@
 33	e	e	CCONJ	_	_	34	cc	O	_
 34	plásticos	plástico	NOUN	_	Gender=Masc|Number=Plur	30	conj	O	_
 35	(	(	PUNCT	_	_	36	punct	O	SpaceAfter=No
-36	Chen	Chen	PROPN	_	Gender=Masc|Number=Sing	6	appos:parataxis	O	SpaceAfter=No
+36	Chen	Chen	PROPN	_	Gender=Masc|Number=Sing	6	parataxis	O	SpaceAfter=No
 37	,	,	PUNCT	_	_	36	flat:name	O	_
 38	1999	1999	NUM	_	NumType=Card	36	flat:name	O	_
 39	e	e	CCONJ	_	_	40	cc	O	_
@@ -10265,7 +10265,7 @@
 41	,	,	PUNCT	_	_	40	flat:name	O	_
 42	2000	2000	NUM	_	NumType=Card	40	flat:name	O	SpaceAfter=No
 43	)	)	PUNCT	_	_	36	punct	O	SpaceAfter=No
-44	.	.	PUNCT	_	_	8	punct	O	_
+44	.	.	PUNCT	_	_	6	punct	O	_
 
 # text = A tabela I-1 apresenta o histórico dos processos geradores de compostos fenólicos na indústria petrolífera.
 # sent_id = 2-20150126-TESEDSC_0_intro-20
@@ -12375,7 +12375,7 @@
 9	de	de	ADP	_	_	10	case	B_FLUIDO	_
 10	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	I_FLUIDO|B_LOCAL_MUNICIPIO	_
 11	de	de	ADP	_	_	12	case	I_FLUIDO	_
-12	grau	grau	NOUN	_	Gender=Unsp|Number=Sing	10	nmod	O	_
+12	grau	grau	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
 13	API	API	PROPN	_	Number=Sing	12	nmod	O	_
 14	(	(	PUNCT	_	_	15	punct	O	SpaceAfter=No
 15	American	American	PROPN	_	Gender=Fem|Number=Sing	13	appos	O	_
@@ -12416,7 +12416,7 @@
 48	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	45	obl:agent	B_LOCAL_MUNICIPIO	_
 49	ETA	ETA	PROPN	_	Gender=Masc|Number=Sing	48	nmod	O	SpaceAfter=No
 50	,	,	PUNCT	_	_	45	punct	O	_
-51	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
+51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
 52	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	54	nsubj:pass	O	_
 53	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	54	aux:pass	O	_
 54	alimentado	alimentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	48	acl:relcl	O	_
@@ -12744,7 +12744,7 @@
 23	uso	uso	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
 24	de	de	ADP	_	_	25	case	B_FLUIDO	_
 25	Gás	Gás	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
-26	Natural	Natural	PROPN	_	Number=Sing	25	compound	O	_
+26	Natural	Natural	PROPN	_	Number=Sing	25	flat:name	O	_
 27-28	no	_	_	_	_	_	_	O	_
 27	em	em	ADP	_	_	29	case	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
@@ -13060,7 +13060,7 @@
 43	de	de	ADP	_	_	44	case	O	_
 44	transição	transição	NOUN	_	Gender=Fem|Number=Sing	42	nmod	O	_
 45	(	(	PUNCT	_	_	46	punct	O	SpaceAfter=No
-46	Zn	Zn	PROPN	_	Gender=Masc|Number=Sing	42	appos:parataxis	O	SpaceAfter=No
+46	Zn	Zn	PROPN	_	Gender=Masc|Number=Sing	42	appos	O	SpaceAfter=No
 47	,	,	PUNCT	_	_	48	punct	O	_
 48	Ni	Ni	PROPN	_	Gender=Masc|Number=Sing	46	conj	O	SpaceAfter=No
 49	,	,	PUNCT	_	_	50	punct	O	_
@@ -15038,54 +15038,6 @@
 23	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	0	root	O	SpaceAfter=No
 24	.	.	PUNCT	_	_	23	punct	O	_
 
-# text = Os resultados simulados do SAGD  Wind Down mostram que 84% da produção do SAGD convencional podem ser recuperados com a metade de volume de vapor injetado, indicando uma redução da razão vapor/óleo de 42%.
-# sent_id = 55-20141209-TESEMSC_0_resumo-13
-1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
-2	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	O	_
-3	simulados	simular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
-4-5	do	_	_	_	_	_	_	O	_
-4	de	de	ADP	_	_	6	case	O	_
-5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
-6	SAGD	SAGD	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
-7			PUNCT	_	_	6	flat:foreign	O	_
-8	Wind	Wind	PROPN	_	Number=Sing	6	flat:foreign	O	_
-9	Down	Down	PROPN	_	Number=Sing	6	flat:foreign	O	_
-10	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-11	que	que	SCONJ	_	_	20	mark	O	_
-12	84%	84%	NOUN	_	Gender=Unsp|Number=Plur	20	nsubj	O	_
-13-14	da	_	_	_	_	_	_	O	_
-13	de	de	ADP	_	_	15	case	O	_
-14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
-15	produção	produção	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
-16-17	do	_	_	_	_	_	_	O	_
-16	de	de	ADP	_	_	18	case	O	_
-17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
-18	SAGD	SAGD	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
-19	convencional	convencional	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
-20	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	O	_
-21	ser	ser	AUX	_	VerbForm=Inf	22	aux:pass	O	_
-22	recuperados	recuperar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	20	xcomp	O	_
-23	com	com	ADP	_	_	25	case	O	_
-24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
-25	metade	metade	NOUN	_	Gender=Fem|Number=Sing	22	obl	O	_
-26	de	de	ADP	_	_	27	case	O	_
-27	volume	volume	NOUN	_	Gender=Masc|Number=Sing	25	nmod	O	_
-28	de	de	ADP	_	_	29	case	O	_
-29	vapor	vapor	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
-30	injetado	injetar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	29	acl	O	SpaceAfter=No
-31	,	,	PUNCT	_	_	32	punct	O	_
-32	indicando	indicar	VERB	_	VerbForm=Ger	22	advcl	O	_
-33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
-34	redução	redução	NOUN	_	Gender=Fem|Number=Sing	32	obj	O	_
-35-36	da	_	_	_	_	_	_	O	_
-35	de	de	ADP	_	_	37	case	O	_
-36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
-37	razão	razão	NOUN	_	Gender=Fem|Number=Sing	34	nmod	B_FLUIDO	_
-38	vapor/óleo	vapor/óleo	NOUN	_	Gender=Masc|Number=Sing	37	nmod	B_LOCAL_MUNICIPIO	_
-39	de	de	ADP	_	_	40	case	O	_
-40	42%	42%	NOUN	_	Gender=Unsp|Number=Plur	37	nmod	O	SpaceAfter=No
-41	.	.	PUNCT	_	_	10	punct	O	SpacesAfter=\n
-
 # text = ﻿Introdução.
 # sent_id = 6-20140908-MONOGRAFIA_0_intro-1
 1	﻿Introdução	﻿Introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	SpaceAfter=No
@@ -15156,7 +15108,7 @@
 28	ecossistemas	ecossistema	NOUN	_	Gender=Masc|Number=Plur	25	nmod	O	_
 29	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
 30	(	(	PUNCT	_	_	31	punct	O	SpaceAfter=No
-31	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	11	appos:parataxis	O	SpaceAfter=No
+31	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	O	SpaceAfter=No
 32	,	,	PUNCT	_	_	31	flat:name	O	_
 33	1997	1997	NUM	_	NumType=Card	31	flat:name	O	SpaceAfter=No
 34	)	)	PUNCT	_	_	31	punct	O	SpaceAfter=No
@@ -15189,7 +15141,7 @@
 23	programas	programa	NOUN	_	Gender=Masc|Number=Plur	21	nmod	O	_
 24	de	de	ADP	_	_	25	case	O	_
 25	monitoramento	monitoramento	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
-26	globais	global	ADJ	_	Gender=Masc|Number=Plur	25	amod	O	_
+26	globais	global	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
 27	e	e	CCONJ	_	_	28	cc	O	_
 28	regionais	regional	ADJ	_	Gender=Masc|Number=Plur	26	conj	O	_
 29-30	nos	_	_	_	_	_	_	O	_
@@ -15198,7 +15150,7 @@
 31	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	18	obl	O	_
 32	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	_
 33	(	(	PUNCT	_	_	34	punct	O	SpaceAfter=No
-34	GESAMP	GESAMP	PROPN	_	Gender=Masc|Number=Sing	11	appos:parataxis	O	SpaceAfter=No
+34	GESAMP	GESAMP	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	O	SpaceAfter=No
 35	,	,	PUNCT	_	_	34	flat:name	O	_
 36	1993	1993	NUM	_	NumType=Card	34	flat:name	O	SpaceAfter=No
 37	)	)	PUNCT	_	_	34	punct	O	SpaceAfter=No
@@ -15307,7 +15259,7 @@
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	derrame	derrame	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
 22	(	(	PUNCT	_	_	23	punct	O	SpaceAfter=No
-23	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	3	appos:parataxis	O	SpaceAfter=No
+23	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	SpaceAfter=No
 24	,	,	PUNCT	_	_	23	flat:name	O	_
 25	1997	1997	NUM	_	NumType=Card	23	flat:name	O	SpaceAfter=No
 26	)	)	PUNCT	_	_	23	punct	O	SpaceAfter=No
@@ -15614,7 +15566,7 @@
 25	em	em	ADP	_	_	26	case	O	_
 26	estes	este	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	24	obl	O	_
 27	(	(	PUNCT	_	_	28	punct	O	SpaceAfter=No
-28	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	20	appos:parataxis	O	SpaceAfter=No
+28	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	20	parataxis	O	SpaceAfter=No
 29	,	,	PUNCT	_	_	28	flat:name	O	_
 30	1997	1997	NUM	_	NumType=Card	28	flat:name	O	SpaceAfter=No
 31	)	)	PUNCT	_	_	28	punct	O	SpaceAfter=No
@@ -15643,14 +15595,14 @@
 17	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	I_FLUIDO|B_LOCAL_MUNICIPIO|B_LOCAL_CIDADE|B_LITOLOGIA	_
 18	de	de	ADP	_	_	19	case	I_LOCAL_MUNICIPIO|I_LOCAL_CIDADE	_
 19	água	água	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
-20	doce	doce	ADJ	_	Gender=Masc|Number=Sing	19	amod	O	_
+20	doce	doce	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
 21	e	e	CCONJ	_	_	23	cc	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	ação	ação	NOUN	_	Gender=Fem|Number=Sing	17	conj	O	_
 24	mecânica	mecânico	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
 25-26	das	_	_	_	_	_	_	O	_
 25	de	de	ADP	_	_	27	case	O	_
-26	as	o	DET	_	Gender=Fem|Number=Plur|PronType=Art	27	det	O	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	O	_
 27	marés	maré	NOUN	_	Gender=Fem|Number=Plur	23	nmod	O	_
 28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
 29	principais	principal	ADJ	_	Gender=Masc|Number=Plur	30	amod	O	_
@@ -15681,7 +15633,7 @@
 54	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	52	conj	O	_
 55	orgânica	orgânica	ADJ	_	Gender=Fem|Number=Sing	54	amod	O	_
 56	(	(	PUNCT	_	_	57	punct	O	SpaceAfter=No
-57	Ibagy	Ibagy	PROPN	_	Gender=Masc|Number=Sing	30	appos:parataxis	O	SpaceAfter=No
+57	Ibagy	Ibagy	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	SpaceAfter=No
 58	,	,	PUNCT	_	_	57	flat:name	O	_
 59	1997	1997	NUM	_	NumType=Card	57	flat:name	O	SpaceAfter=No
 60	)	)	PUNCT	_	_	57	punct	O	SpaceAfter=No
@@ -15910,7 +15862,7 @@
 53	de	de	ADP	_	_	54	case	O	_
 54	limpeza	limpeza	NOUN	_	Gender=Fem|Number=Sing	51	nmod	O	_
 55	(	(	PUNCT	_	_	56	punct	O	SpaceAfter=No
-56	CETESB	CETESB	PROPN	_	Gender=Masc|Number=Sing	12	appos:parataxis	O	SpaceAfter=No
+56	CETESB	CETESB	PROPN	_	Gender=Masc|Number=Sing	12	parataxis	O	SpaceAfter=No
 57	,	,	PUNCT	_	_	56	flat:name	O	_
 58	2002	2002	NUM	_	NumType=Card	56	flat:name	O	SpaceAfter=No
 59	)	)	PUNCT	_	_	56	punct	O	SpaceAfter=No
@@ -15996,7 +15948,7 @@
 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
 30	água	água	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
 31	(	(	PUNCT	_	_	32	punct	O	SpaceAfter=No
-32	Thuer	Thuer	PROPN	_	Number=Sing	13	appos:parataxis	O	_
+32	Thuer	Thuer	PROPN	_	Number=Sing	13	parataxis	O	_
 33	&	&	PROPN	_	Number=Sing	32	flat:name	O	_
 34	Stumm	stumm	PROPN	_	Number=Sing	32	flat:name	O	SpaceAfter=No
 35	,	,	PUNCT	_	_	32	flat:name	O	_
@@ -16071,7 +16023,7 @@
 40	comunidades	comunidade	NOUN	_	Gender=Fem|Number=Plur	37	nmod	O	_
 41	microbianas	microbiano	ADJ	_	Gender=Fem|Number=Plur	40	amod	O	_
 42	(	(	PUNCT	_	_	43	punct	O	SpaceAfter=No
-43	Wheeler	Wheeler	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	SpaceAfter=No
+43	Wheeler	Wheeler	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	SpaceAfter=No
 44	,	,	PUNCT	_	_	43	flat:name	O	_
 45	1978	1978	NUM	_	NumType=Card	43	flat:name	O	SpaceAfter=No
 46	;	;	PUNCT	_	_	47	punct	O	_
@@ -17100,7 +17052,7 @@
 30	aves	ave	NOUN	_	Gender=Fem|Number=Plur	24	appos:parataxis	O	_
 31	marinhas	marinho	ADJ	_	Gender=Fem|Number=Plur	30	amod	B_LOCAL_MUNICIPIO	_
 32	(	(	PUNCT	_	_	33	punct	O	SpaceAfter=No
-33	Cunha	Cunha	PROPN	_	Gender=Masc|Number=Sing	6	appos:parataxis	O	_
+33	Cunha	Cunha	PROPN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
 34	&	&	PROPN	_	Number=Sing	33	flat:name	O	_
 35	Guerra	Guerra	PROPN	_	Number=Sing	33	flat:name	O	SpaceAfter=No
 36	,	,	PUNCT	_	_	33	flat:name	O	_
@@ -18850,7 +18802,7 @@
 56	Gases	gases	PROPN	_	Number=Sing	49	flat:name	O	SpacesAfter=\s\s
 57	de	de	ADP	_	_	49	flat:name	O	SpacesAfter=\s\s
 58	Efeito	efeito	PROPN	_	Number=Sing	49	flat:name	O	SpacesAfter=\s\s
-59	Estufa	estufa	PROPN	_	Number=Sing	58	compound	B_LOCAL_GEO	SpaceAfter=No
+59	Estufa	estufa	PROPN	_	Number=Sing	49	flat:name	B_LOCAL_GEO	SpaceAfter=No
 60	,	,	PUNCT	_	_	63	punct	O	SpacesAfter=\s\s
 61-62	do	_	_	_	_	_	_	O	SpacesAfter=\s\s
 61	de	de	ADP	_	_	63	case	O	_
@@ -20207,8 +20159,8 @@
 
 # text = Em geral a nafta de craqueamento térmico oxida-se mais rapidamente que a nafta de destilação direta, formando com isso produtos indesejáveis, tais como a goma e os peróxidos (D’ORNELLAS et al., 1997).
 # sent_id = 0-20150121-TESEMSC_0_intro-7
-1	Em	em	ADP	_	_	2	case	O	_
-2	geral	geral	ADJ	_	Gender=Masc|Number=Sing	8	obl	O	_
+1	Em	em	ADP	_	_	8	conj	O	MWE=Em_geral|MWEPOS=CCONJ
+2	geral	geral	ADJ	_	Gender=Masc|Number=Sing	1	fixed	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	nafta	nafta	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
 5	de	de	ADP	_	_	6	case	O	_
@@ -20240,7 +20192,7 @@
 30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	O	_
 31	peróxidos	peróxido	NOUN	_	Gender=Masc|Number=Plur	28	conj	O	_
 32	(	(	PUNCT	_	_	33	punct	O	SpaceAfter=No
-33	D’ORNELLAS	D’Ornellas	PROPN	_	Gender=Unsp|Number=Sing	8	appos:parataxis	O	_
+33	D’ORNELLAS	D’Ornellas	PROPN	_	Gender=Unsp|Number=Sing	8	parataxis	O	_
 34	et	et	PROPN	_	Gender=Unsp|Number=Sing	33	flat:name	O	_
 35	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	33	flat:name	O	SpaceAfter=No
 36	,	,	PUNCT	_	_	33	flat:name	O	_
@@ -20454,7 +20406,7 @@
 88	de	de	ADP	_	_	89	case	O	_
 89	análise	análise	NOUN	_	Gender=Fem|Number=Sing	87	nmod	O	_
 90	(	(	PUNCT	_	_	91	punct	O	SpaceAfter=No
-91	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	87	appos:parataxis	O	_
+91	POLÁK	Polák	PROPN	_	Gender=Unsp|Number=Sing	10	parataxis	O	_
 92	et	et	PROPN	_	Gender=Unsp|Number=Sing	91	flat:name	O	_
 93	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	91	flat:name	O	SpaceAfter=No
 94	,	,	PUNCT	_	_	91	flat:name	O	_
@@ -20496,12 +20448,12 @@
 2	et	et	PROPN	_	Gender=Unsp|Number=Sing	1	flat:name	O	_
 3	al	al	PROPN	_	Gender=Unsp|Number=Sing	1	flat:name	O	_
 4	(	(	PUNCT	_	_	5	punct	O	SpaceAfter=No
-5	PENG	PENG	PROPN	_	Gender=Unsp|Number=Sing	2	appos:parataxis	O	_
+5	PENG	PENG	PROPN	_	Gender=Unsp|Number=Sing	16	parataxis	O	_
 6	et	et	PROPN	_	Gender=Unsp|Number=Sing	5	flat:name	O	_
 7	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	5	flat:name	O	SpaceAfter=No
 8	,	,	PUNCT	_	_	5	flat:name	O	_
-9	apud	apud	ADP	_	_	5	flat:name	O	_
-10	POLÀK	Polàk	PROPN	_	Gender=Unsp|Number=Sing	5	conj	O	_
+9	apud	apud	ADP	_	_	10	case	O	_
+10	POLÀK	Polàk	PROPN	_	Gender=Unsp|Number=Sing	5	nmod	O	_
 11	et	et	PROPN	_	Gender=Unsp|Number=Sing	10	flat:name	O	_
 12	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	10	flat:name	O	SpaceAfter=No
 13	,	,	PUNCT	_	_	10	flat:name	O	_
@@ -20868,7 +20820,7 @@
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	Nafion®	Nafion®	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	SpaceAfter=No
 7	[	[	PUNCT	_	_	8	punct	O	SpaceAfter=No
-8	1	1	PROPN	_	Gender=Masc|Number=Sing	6	appos:parataxis	O	SpaceAfter=No
+8	1	1	NUM	_	NumType=Card	6	appos:parataxis	O	SpaceAfter=No
 9	]	]	PUNCT	_	_	8	punct	O	_
 10-11	encontra-se	_	_	_	_	_	_	O	_
 10	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
@@ -24261,7 +24213,7 @@
 48	diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Ind	49	det	O	_
 49	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	45	nmod	O	_
 50	(	(	PUNCT	_	_	51	punct	O	SpaceAfter=No
-51	CETESB	CETESB	PROPN	_	Gender=Masc|Number=Sing	33	appos:parataxis	O	SpaceAfter=No
+51	CETESB	CETESB	PROPN	_	Gender=Masc|Number=Sing	33	parataxis	O	SpaceAfter=No
 52	,	,	PUNCT	_	_	51	flat:name	O	_
 53	2002	2002	NUM	_	NumType=Card	51	flat:name	O	SpaceAfter=No
 54	)	)	PUNCT	_	_	51	punct	O	SpaceAfter=No
@@ -24430,7 +24382,7 @@
 52	baixa	baixa	ADJ	_	Gender=Fem|Number=Sing	53	amod	O	_
 53	mortalidade	mortalidade	NOUN	_	Gender=Fem|Number=Sing	48	conj	O	_
 54	(	(	PUNCT	_	_	55	punct	O	SpaceAfter=No
-55	Ibagy	Ibagy	PROPN	_	Gender=Masc|Number=Sing	14	appos:parataxis	O	SpaceAfter=No
+55	Ibagy	Ibagy	PROPN	_	Gender=Masc|Number=Sing	14	parataxis	O	SpaceAfter=No
 56	,	,	PUNCT	_	_	55	flat:name	O	_
 57	1997	1997	NUM	_	NumType=Card	55	flat:name	O	SpaceAfter=No
 58	)	)	PUNCT	_	_	55	punct	O	SpaceAfter=No
@@ -24477,7 +24429,7 @@
 33	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	34	det	O	_
 34	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	23	obj	O	_
 35	(	(	PUNCT	_	_	36	punct	O	SpaceAfter=No
-36	Day	Day	PROPN	_	Gender=Unsp|Number=Sing	29	appos:parataxis	O	_
+36	Day	Day	PROPN	_	Gender=Unsp|Number=Sing	23	parataxis	O	_
 37	et	et	PROPN	_	Gender=Unsp|Number=Sing	36	flat:name	O	_
 38	al.	al.	PROPN	_	Gender=Unsp|Number=Sing	36	flat:name	O	SpaceAfter=No
 39	,	,	PUNCT	_	_	36	flat:name	O	_
@@ -24511,7 +24463,7 @@
 18	por	por	ADP	_	_	19	case	O	_
 19	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	17	obl:agent	O	_
 20	(	(	PUNCT	_	_	21	punct	O	SpaceAfter=No
-21	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	1	appos:parataxis	O	SpaceAfter=No
+21	Kennish	Kennish	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	SpaceAfter=No
 22	,	,	PUNCT	_	_	21	flat:name	O	_
 23	1997	1997	NUM	_	NumType=Card	21	flat:name	O	SpaceAfter=No
 24	)	)	PUNCT	_	_	21	punct	B_FLUIDO	SpaceAfter=No
@@ -24633,7 +24585,7 @@
 23	maiores	grande	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
 24	valores	valor	NOUN	_	Gender=Masc|Number=Plur	19	obj	O	_
 25	(	(	PUNCT	_	_	26	punct	O	SpaceAfter=No
-26	Gundlach	Gundlach	PROPN	_	Gender=Masc|Number=Sing	1	appos:parataxis	O	_
+26	Gundlach	Gundlach	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
 27	&	&	PROPN	_	Number=Sing	26	flat:name	O	_
 28	Hayes	Hayes	PROPN	_	Number=Sing	26	flat:name	O	SpaceAfter=No
 29	,	,	PUNCT	_	_	26	flat:name	O	_
@@ -24643,7 +24595,7 @@
 33	,	,	PUNCT	_	_	32	flat:name	O	_
 34	2002	2002	NUM	_	NumType=Card	32	flat:name	O	SpaceAfter=No
 35	)	)	PUNCT	_	_	26	punct	O	SpaceAfter=No
-36	.	.	PUNCT	_	_	13	punct	O	_
+36	.	.	PUNCT	_	_	1	punct	O	_
 
 # text = Esta sensibilidade determina o grau de proteção que deve ser dado para estes ambientes (Tabela 1).
 # sent_id = 6-20140908-MONOGRAFIA_0_intro-33
@@ -24662,8 +24614,8 @@
 13	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	14	det	O	_
 14	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
 15	(	(	PUNCT	_	_	16	punct	O	SpaceAfter=No
-16	Tabela	Tabela	PROPN	_	Gender=Fem|Number=Sing	3	appos:parataxis	O	_
-17	1	1	NUM	_	Number=Sing	16	compound	O	SpaceAfter=No
+16	Tabela	Tabela	PROPN	_	Gender=Fem|Number=Sing	3	parataxis	O	_
+17	1	1	NUM	_	Number=Sing	16	nummod	O	SpaceAfter=No
 18	)	)	PUNCT	_	_	16	punct	O	SpaceAfter=No
 19	.	.	PUNCT	_	_	3	punct	O	_
 
@@ -24699,8 +24651,8 @@
 
 # text = Tabela 1 - Vulnerabilidade dos ecossistemas costeiros de acordo com CETESB (2002) e Gundlach &Hayes (1978): Índices maiores determinam maior sensibilidade.
 # sent_id = 6-20140908-MONOGRAFIA_0_intro-35
-1	Tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	O	MWE=Tabela_1|MWEPOS=NOUN
-2	1	1	NUM	_	NumType=Card	1	compound	O	_
+1	Tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+2	1	1	NUM	_	NumType=Card	1	nummod	O	_
 3	-	-	PUNCT	_	_	1	punct	O	_
 4	Vulnerabilidade	vulnerabilidade	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
 5-6	dos	_	_	_	_	_	_	O	_
@@ -24811,7 +24763,7 @@
 9	diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
 10	processos	processo	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
 11	(	(	PUNCT	_	_	12	punct	O	SpaceAfter=No
-12	Figura	figura	PROPN	_	Gender=Masc|Number=Sing	10	appos:parataxis	O	_
+12	Figura	figura	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
 13	1	1	PROPN	_	Number=Sing	12	flat:name	O	SpaceAfter=No
 14	)	)	PUNCT	_	_	12	punct	O	_
 15	como	como	ADP	_	_	17	case	O	_
@@ -24843,11 +24795,11 @@
 41	e	e	CCONJ	_	_	42	cc	O	_
 42	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	17	conj	O	_
 43	(	(	PUNCT	_	_	44	punct	O	SpaceAfter=No
-44	Ferreira	Ferreira	PROPN	_	Gender=Fem|Number=Sing	7	appos:parataxis	O	SpaceAfter=No
+44	Ferreira	Ferreira	PROPN	_	Gender=Fem|Number=Sing	7	parataxis	O	SpaceAfter=No
 45	,	,	PUNCT	_	_	44	flat:name	O	_
 46	1995	1995	NUM	_	NumType=Card	44	flat:name	O	SpaceAfter=No
 47	)	)	PUNCT	_	_	44	punct	B_FLUIDO	SpaceAfter=No
-48	.	.	PUNCT	_	_	10	punct	O	SpacesAfter=\r\n
+48	.	.	PUNCT	_	_	7	punct	O	SpacesAfter=\r\n
 
 # text = Figura 1 - Degradação do óleo no mar (Extraído de CETESB, 2001).
 # sent_id = 6-20140908-MONOGRAFIA_0_intro-39
@@ -24974,11 +24926,11 @@
 91	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	92	det	O	_
 92	morte	morte	NOUN	_	Gender=Fem|Number=Sing	89	obl	O	_
 93	(	(	PUNCT	_	_	94	punct	O	SpaceAfter=No
-94	CETESB	CETESB	PROPN	_	Gender=Fem|Number=Sing	89	appos:parataxis	O	SpaceAfter=No
+94	CETESB	CETESB	PROPN	_	Gender=Fem|Number=Sing	3	parataxis	O	SpaceAfter=No
 95	,	,	PUNCT	_	_	94	flat:name	O	_
 96	2002	2002	NUM	_	NumType=Card	94	flat:name	O	SpaceAfter=No
 97	)	)	PUNCT	_	_	94	punct	O	SpaceAfter=No
-98	.	.	PUNCT	_	_	94	punct	O	SpacesAfter=\r\n
+98	.	.	PUNCT	_	_	3	punct	O	SpacesAfter=\r\n
 
 # text = Desta forma foi elaborado o Sistema de Diagnótico do Plâncton, que utiliza um banco de dados pretéritos e fornece informações sobre a abundância das principais espécies de ovos e larvas de peixes em determinadas áreas do estuário, baseando-se em condições ambientais semelhantes àquelas apresentadas no passado.
 # sent_id = 6-20140908-MONOGRAFIA_0_resumo-2
@@ -25386,7 +25338,7 @@
 17	Gases	gases	PROPN	_	Number=Sing	15	nmod	O	_
 18	de	de	ADP	_	_	17	flat:name	O	_
 19	Efeito	efeito	PROPN	_	Number=Sing	17	flat:name	O	_
-20	Estufa	estufa	PROPN	_	Number=Sing	19	compound	O	_
+20	Estufa	estufa	PROPN	_	Number=Sing	17	flat:name	O	_
 21	(	(	PUNCT	_	_	22	punct	O	SpaceAfter=No
 22	GEE	GEE	PROPN	_	Gender=Masc|Number=Sing	17	appos	O	SpaceAfter=No
 23	)	)	PUNCT	_	_	22	punct	O	_
@@ -25476,7 +25428,7 @@
 100	de	de	ADP	_	_	99	flat:name	O	_
 101	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	99	flat:name	O	_
 102	Nações	Nações	PROPN	_	Number=Sing	99	flat:name	O	_
-103	Unidas	Unidas	PROPN	_	Number=Sing	102	compound	O	_
+103	Unidas	Unidas	PROPN	_	Number=Sing	99	flat:name	O	_
 104	sobre	sobre	ADP	_	_	99	flat:name	O	_
 105	Mudanças	Mudanças	PROPN	_	Number=Sing	99	flat:name	O	_
 106-107	do	_	_	_	_	_	_	O	_
@@ -25836,4 +25788,51 @@
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	relaxação	relaxação	NOUN	_	Gender=Fem|Number=Sing	24	obl	O	SpaceAfter=No
 28	.	.	PUNCT	_	_	7	punct	O	_
+
+# text = Os resultados simulados do SAGD  Wind Down mostram que 84% da produção do SAGD convencional podem ser recuperados com a metade de volume de vapor injetado, indicando uma redução da razão vapor/óleo de 42%.
+# sent_id = 55-20141209-TESEMSC_0_resumo-13
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+2	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	O	_
+3	simulados	simular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
+4-5	do	_	_	_	_	_	_	O	_
+4	de	de	ADP	_	_	6	case	O	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+6	SAGD	SAGD	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+7	Wind	Wind	PROPN	_	Number=Sing	6	flat:name	O	_
+8	Down	Down	PROPN	_	Number=Sing	6	flat:name	O	_
+9	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+10	que	que	SCONJ	_	_	19	mark	O	_
+11	84%	84%	NOUN	_	Gender=Unsp|Number=Plur	19	nsubj	O	_
+12-13	da	_	_	_	_	_	_	O	_
+12	de	de	ADP	_	_	14	case	O	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+14	produção	produção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+15-16	do	_	_	_	_	_	_	O	_
+15	de	de	ADP	_	_	17	case	O	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+17	SAGD	SAGD	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+18	convencional	convencional	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
+19	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	O	_
+20	ser	ser	AUX	_	VerbForm=Inf	21	aux:pass	O	_
+21	recuperados	recuperar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	xcomp	O	_
+22	com	com	ADP	_	_	24	case	O	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+24	metade	metade	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+25	de	de	ADP	_	_	26	case	O	_
+26	volume	volume	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+27	de	de	ADP	_	_	28	case	O	_
+28	vapor	vapor	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+29	injetado	injetar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	28	acl	O	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	O	_
+31	indicando	indicar	VERB	_	VerbForm=Ger	21	advcl	O	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+33	redução	redução	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+34-35	da	_	_	_	_	_	_	O	_
+34	de	de	ADP	_	_	36	case	O	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+36	razão	razão	NOUN	_	Gender=Fem|Number=Sing	33	nmod	B_FLUIDO	_
+37	vapor/óleo	vapor/óleo	NOUN	_	Gender=Masc|Number=Sing	36	nmod	B_LOCAL_MUNICIPIO	_
+38	de	de	ADP	_	_	39	case	O	_
+39	42%	42%	NOUN	_	Gender=Unsp|Number=Plur	36	nmod	O	SpaceAfter=No
+40	.	.	PUNCT	_	_	9	punct	O	SpacesAfter=\n
 
