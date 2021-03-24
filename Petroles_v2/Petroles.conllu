@@ -548,10 +548,10 @@
 # text = Alguns métodos vêm sendo descritos na literatura para a determinação do valor de dienos conjugados.
 # sent_id = 0-20150121-TESEMSC_0_intro-17
 1	Alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
-2	métodos	método	NOUN	_	Gender=Masc|Number=Plur	3	nsubj:pass	O	_
-3	vêm	vir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+2	métodos	método	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	O	_
+3	vêm	vir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	O	_
 4	sendo	ser	AUX	_	VerbForm=Ger	5	aux:pass	O	_
-5	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	xcomp	O	_
+5	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	O	_
 6-7	na	_	_	_	_	_	_	O	_
 6	em	em	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
@@ -4372,10 +4372,10 @@
 # text = O PBE teve o início da sua temperatura de início de decomposição elevado para 180 oC e o Nafion para 290 oC.
 # sent_id = 10-20150122-MONOGRAFIA_0_resumo-7
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
-2	PBE	PBE	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
-3	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+2	PBE	PBE	PROPN	_	Gender=Masc|Number=Sing	14	nsubj	O	_
+3	teve	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
-5	início	início	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+5	início	início	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
 6-7	da	_	_	_	_	_	_	O	_
 6	de	de	ADP	_	_	9	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
@@ -4385,17 +4385,17 @@
 11	início	início	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	SpacesAfter=\s\s
 12	de	de	ADP	_	_	13	case	O	SpacesAfter=\s\s
 13	decomposição	decomposição	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	SpacesAfter=\s\s
-14	elevado	elevar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	O	SpacesAfter=\s\s
+14	elevado	elevar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	O	SpacesAfter=\s\s
 15	para	para	ADP	_	_	17	case	B_LOCAL_ESTADO	SpacesAfter=\s\s
 16	180	180	NUM	_	NumType=Card	17	nummod	O	SpacesAfter=\s\s
 17	oC	oC	SYM	_	_	14	obl	O	SpacesAfter=\s\s
 18	e	e	CCONJ	_	_	20	cc	O	SpacesAfter=\s\s
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	SpacesAfter=\s\s
-20	Nafion	Nafion	PROPN	_	Gender=Masc|Number=Sing	3	conj	O	SpacesAfter=\s\s
+20	Nafion	Nafion	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	SpacesAfter=\s\s
 21	para	para	ADP	_	_	23	case	B_LOCAL_ESTADO	SpacesAfter=\s\s
 22	290	290	NUM	_	NumType=Card	23	nummod	O	SpacesAfter=\s\s
 23	oC	oC	SYM	_	_	20	orphan	O	SpaceAfter=No
-24	.	.	PUNCT	_	_	3	punct	O	SpacesAfter=\s\s\s\s
+24	.	.	PUNCT	_	_	14	punct	O	SpacesAfter=\s\s\s\s
 
 # text = Caracterizações térmicas e morfológicas auxiliaram na determinação do modelo de interação entre os componentes do ESP.
 # sent_id = 10-20150122-MONOGRAFIA_0_resumo-10
@@ -8097,14 +8097,14 @@
 # text = O dimetil éter (DME) vem sendo considerado o combustível do século XXI, pois pode ser usado em substituição ao diesel e GLP, com menores problemas ambientais.
 # sent_id = 16-20150122-MONOGRAFIA_0_resumo-5
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
-2	dimetil	dimetil	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
+2	dimetil	dimetil	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	O	_
 3	éter	éter	NOUN	_	Gender=Masc|Number=Sing	2	compound	O	_
 4	(	(	PUNCT	_	_	5	punct	O	SpaceAfter=No
 5	DME	DME	PROPN	_	Gender=Masc|Number=Sing	2	appos	O	SpaceAfter=No
 6	)	)	PUNCT	_	_	5	punct	O	_
-7	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+7	vem	vir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	O	_
 8	sendo	ser	AUX	_	VerbForm=Ger	9	aux:pass	O	_
-9	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	xcomp	O	_
+9	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
 11	combustível	combustível	NOUN	_	Gender=Masc|Number=Sing	9	xcomp	O	_
 12-13	do	_	_	_	_	_	_	O	_
@@ -8114,7 +8114,7 @@
 15	XXI	XXI	NUM	_	Number=Sing	14	nummod	O	SpaceAfter=No
 16	,	,	PUNCT	_	_	9	punct	O	_
 17	pois	pois	CCONJ	_	_	18	cc	O	_
-18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	O	_
+18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	O	_
 19	ser	ser	AUX	_	VerbForm=Inf	20	aux:pass	O	_
 20	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	xcomp	O	_
 21	em	em	ADP	_	_	22	case	O	_
@@ -8130,7 +8130,7 @@
 30	menores	pequeno	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	_
 31	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
 32	ambientais	ambiental	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	SpaceAfter=No
-33	.	.	PUNCT	_	_	7	punct	O	_
+33	.	.	PUNCT	_	_	9	punct	O	_
 
 # text = Tradicionalmente ele é produzido pela desidratação do metanol sobre catalisadores ácidos.
 # sent_id = 16-20150122-MONOGRAFIA_0_resumo-6
