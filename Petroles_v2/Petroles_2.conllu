@@ -28,7 +28,7 @@
 # sent_id = 20-20140904-TESEDSC_0-35
 1	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	start_char=0|end_char=7
 2	(	(	PUNCT	_	_	3	punct	O	start_char=8|end_char=9
-3	2001	2001	NUM	_	NumType=Card	1	appos:parataxis	O	start_char=9|end_char=13
+3	2001	2001	NUM	_	NumType=Card	1	nmod:appos	O	start_char=9|end_char=13
 4	)	)	PUNCT	_	_	3	punct	O	start_char=13|end_char=14
 5	relaciona	relacionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	start_char=15|end_char=24
 6	algumas	algum	PRON	_	Gender=Fem|Number=Plur|PronType=Ind	5	obj	O	start_char=25|end_char=32
@@ -233,7 +233,7 @@
 37	Cabo	Cabo	PROPN	_	Number=Sing	34	flat:name	B_LOCAL_MUNICIPIO	start_char=204|end_char=208
 38	Frio	Frio	PROPN	_	Number=Sing	34	flat:name	I_LOCAL_MUNICIPIO	start_char=209|end_char=213
 39	,	,	PUNCT	_	_	40	punct	O	start_char=213|end_char=214
-40	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	34	acl	O	start_char=215|end_char=228
+40	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	34	acl	O	start_char=215|end_char=228
 41-42	pela	_	_	_	_	_	_	O	start_char=229|end_char=233
 41	por	por	ADP	_	_	43	case	O	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
@@ -259,7 +259,7 @@
 61	de	de	ADP	_	_	62	case	O	start_char=354|end_char=356
 62	Jaboticabal	Jaboticabal	PROPN	_	Gender=Unsp|Number=Sing	60	nmod	B_LOCAL_MUNICIPIO	start_char=357|end_char=368
 63	(	(	PUNCT	_	_	64	punct	O	start_char=369|end_char=370
-64	SP	SP	PROPN	_	Gender=Masc|Number=Sing	60	appos:parataxis	O	start_char=370|end_char=372
+64	SP	SP	PROPN	_	Gender=Masc|Number=Sing	60	nmod:appos	O	start_char=370|end_char=372
 65	)	)	PUNCT	_	_	64	punct	O	start_char=372|end_char=373
 66	com	com	ADP	_	_	67	case	O	start_char=374|end_char=377
 67	direção	direção	NOUN	_	Gender=Fem|Number=Sing	52	obl	O	start_char=378|end_char=385
@@ -405,7 +405,7 @@
 18	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	start_char=106|end_char=113
 19	de	de	ADP	_	_	20	case	O	start_char=114|end_char=116
 20	montanhas	montanha	NOUN	_	Gender=Fem|Number=Plur	18	nmod	B_LOCAL_MUNICIPIO	start_char=117|end_char=126
-21	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	O	start_char=127|end_char=139
+21	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	O	start_char=127|end_char=139
 22-23	pelas	_	_	_	_	_	_	O	start_char=140|end_char=145
 22	por	por	ADP	_	_	24	case	O	_
 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
@@ -481,7 +481,7 @@
 20	et	et	PROPN	_	Number=Sing	19	flat:name	O	start_char=108|end_char=110
 21	al.	al.	PROPN	_	Number=Sing	19	flat:name	O	start_char=111|end_char=114
 22	(	(	PUNCT	_	_	23	punct	O	start_char=115|end_char=116
-23	2001	2001	NUM	_	NumType=Card	19	appos:parataxis	O	start_char=116|end_char=120
+23	2001	2001	NUM	_	NumType=Card	19	nmod:appos	O	start_char=116|end_char=120
 24	)	)	PUNCT	_	_	23	punct	O	start_char=120|end_char=121
 25	.	.	PUNCT	_	_	12	punct	O	start_char=121|end_char=122
 
@@ -930,7 +930,7 @@
 22	de	de	ADP	_	_	23	case	O	start_char=92|end_char=94
 23	siliciclásticos	siliciclástico	NOUN	_	Gender=Masc|Number=Plur	21	nmod	O	start_char=95|end_char=110
 24	(	(	PUNCT	_	_	25	punct	O	start_char=111|end_char=112
-25	Formações	Formações	PROPN	_	Gender=Fem|Number=Sing	21	appos:parataxis	O	start_char=112|end_char=121
+25	Formações	Formações	PROPN	_	Gender=Fem|Number=Sing	21	nmod:appos	O	start_char=112|end_char=121
 26	Iguape	Iguape	PROPN	_	Number=Sing	25	flat:name	B_LOCAL_MUNICIPIO	start_char=122|end_char=128
 27	e	e	CCONJ	_	_	28	cc	O	start_char=129|end_char=130
 28	Sepetiba	Sepetiba	PROPN	_	Gender=Fem|Number=Sing	25	conj	O	start_char=131|end_char=139
@@ -947,7 +947,7 @@
 39	e	e	CCONJ	_	_	40	cc	O	start_char=195|end_char=196
 40	talude	talude	NOUN	_	Gender=Masc|Number=Sing	38	conj	O	start_char=197|end_char=203
 41	(	(	PUNCT	_	_	42	punct	O	start_char=204|end_char=205
-42	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	35	appos:parataxis	B_UNIDADE_LITOESTRATIGRAFICA	start_char=205|end_char=213
+42	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	35	nmod:appos	B_UNIDADE_LITOESTRATIGRAFICA	start_char=205|end_char=213
 43	Marambaia	Marambaia	PROPN	_	Number=Sing	42	flat:name	I_UNIDADE_LITOESTRATIGRAFICA	start_char=214|end_char=223
 44	)	)	PUNCT	_	_	42	punct	O	start_char=223|end_char=224
 45	.	.	PUNCT	_	_	18	punct	O	start_char=224|end_char=225
@@ -1521,7 +1521,7 @@
 4	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	B_LOCAL_GEO|B_BACIA|B_UNIDADE_LITOESTRATIGRAFICA	start_char=237|end_char=243
 5	:	:	PUNCT	_	_	2	punct	O	start_char=243|end_char=244
 6-7	situa-se	_	_	_	_	_	_	O	start_char=245|end_char=253
-6	situa	situar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	appos:parataxis	O	_
+6	situa	situar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	nmod:appos	O	_
 7	se	se	PRON	_	_	6	expl	O	_
 8	em	em	ADP	_	_	9	case	O	start_char=254|end_char=256
 9	águas	água	NOUN	_	Gender=Fem|Number=Plur	6	obl	O	start_char=257|end_char=262
@@ -1777,7 +1777,7 @@
 18	de	de	ADP	_	_	20	case	O	start_char=247|end_char=249
 19	alta	alto	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	start_char=250|end_char=254
 20	resolução	resolução	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	start_char=255|end_char=264
-21	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	start_char=265|end_char=275
+21	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	O	start_char=265|end_char=275
 22-23	pela	_	_	_	_	_	_	O	start_char=276|end_char=280
 22	por	por	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
@@ -1885,7 +1885,7 @@
 4	e	e	CCONJ	_	_	5	cc	O	start_char=15|end_char=16
 5	3.2	3.2	NUM	_	NumType=Card	3	conj	O	start_char=17|end_char=20
 6	,	,	PUNCT	_	_	7	punct	O	start_char=20|end_char=21
-7	cedidas	cedir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	start_char=22|end_char=29
+7	cedidas	cedir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	start_char=22|end_char=29
 8-9	pela	_	_	_	_	_	_	O	start_char=30|end_char=34
 8	por	por	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
@@ -2333,7 +2333,7 @@
 16	área	área	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	start_char=408|end_char=412
 17	marinha	marinho	ADJ	_	Gender=Fem|Number=Sing	16	amod	O	start_char=413|end_char=420
 18	(	(	PUNCT	_	_	19	punct	O	start_char=421|end_char=422
-19	Fugro	Fugro	PROPN	_	Gender=Fem|Number=Sing	16	appos:parataxis	O	start_char=422|end_char=427
+19	Fugro	Fugro	PROPN	_	Gender=Fem|Number=Sing	16	nmod:appos	O	start_char=422|end_char=427
 20	)	)	PUNCT	_	_	19	punct	O	start_char=427|end_char=428
 21	e	e	CCONJ	_	_	24	cc	O	start_char=429|end_char=430
 22-23	da	_	_	_	_	_	_	O	start_char=431|end_char=433
@@ -2342,7 +2342,7 @@
 24	área	área	NOUN	_	Gender=Fem|Number=Sing	16	conj	O	start_char=434|end_char=438
 25	emersa	emerso	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	start_char=439|end_char=445
 26	(	(	PUNCT	_	_	27	punct	O	start_char=446|end_char=447
-27	CPRM	CPRM	PROPN	_	Gender=Fem|Number=Sing	24	appos:parataxis	O	start_char=447|end_char=451
+27	CPRM	CPRM	PROPN	_	Gender=Fem|Number=Sing	24	nmod:appos	O	start_char=447|end_char=451
 28	)	)	PUNCT	_	_	27	punct	O	start_char=451|end_char=452
 29	.	.	PUNCT	_	_	6	punct	O	start_char=452|end_char=453
 
@@ -3043,7 +3043,7 @@
 26	de	de	ADP	_	_	28	case	O	_
 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	O	_
 28	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	25	nmod	O	start_char=150|end_char=159
-29	produzidas	produzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	28	acl	O	start_char=160|end_char=170
+29	produzidas	produzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	28	acl	O	start_char=160|end_char=170
 30-31	pelos	_	_	_	_	_	_	O	start_char=171|end_char=176
 30	por	por	ADP	_	_	32	case	O	_
 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
@@ -3734,7 +3734,7 @@
 13	direção	direção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	start_char=72|end_char=79
 14	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	start_char=80|end_char=85
 15	,	,	PUNCT	_	_	16	punct	O	start_char=85|end_char=86
-16	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	O	start_char=87|end_char=96
+16	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	O	start_char=87|end_char=96
 17-18	pela	_	_	_	_	_	_	O	start_char=97|end_char=101
 17	por	por	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
@@ -3832,7 +3832,7 @@
 4	alta	alto	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	start_char=12|end_char=16
 5	freqüência	freqüência	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	start_char=17|end_char=27
 6	,	,	PUNCT	_	_	7	punct	O	start_char=27|end_char=28
-7	demarcadas	demarcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	start_char=29|end_char=39
+7	demarcadas	demarcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	start_char=29|end_char=39
 8-9	no	_	_	_	_	_	_	O	start_char=40|end_char=42
 8	em	em	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
@@ -3851,7 +3851,7 @@
 20	avermelhados	avermelhar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	O	start_char=81|end_char=93
 21	(	(	PUNCT	_	_	23	punct	O	start_char=94|end_char=95
 22	altas	alto	ADJ	_	Gender=Fem|Number=Plur	23	amod	O	start_char=95|end_char=100
-23	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	19	appos:parataxis	O	start_char=101|end_char=111
+23	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	19	nmod:appos	O	start_char=101|end_char=111
 24	)	)	PUNCT	_	_	23	punct	O	start_char=111|end_char=112
 25	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	O	start_char=113|end_char=116
 26	separadas	separar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	start_char=117|end_char=126
@@ -3870,7 +3870,7 @@
 38	azul	azul	NOUN	_	Gender=Masc|Number=Sing	36	conj	O	start_char=190|end_char=194
 39	(	(	PUNCT	_	_	41	punct	O	start_char=195|end_char=196
 40	baixas	baixo	ADJ	_	Gender=Fem|Number=Plur	41	amod	O	start_char=196|end_char=202
-41	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	35	appos:parataxis	O	start_char=203|end_char=213
+41	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	35	nmod:appos	O	start_char=203|end_char=213
 42	)	)	PUNCT	_	_	41	punct	O	start_char=213|end_char=214
 43	.	.	PUNCT	_	_	26	punct	O	start_char=214|end_char=215
 
@@ -4133,7 +4133,7 @@
 16	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	13	obl	O	start_char=176|end_char=180
 17	regional	regional	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	start_char=181|end_char=189
 18	(	(	PUNCT	_	_	19	punct	O	start_char=190|end_char=191
-19	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	5	appos:parataxis	O	start_char=191|end_char=196
+19	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	5	nmod:appos	O	start_char=191|end_char=196
 20-21	da	_	_	_	_	_	_	O	start_char=197|end_char=199
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
@@ -4338,7 +4338,7 @@
 6	dois	dois	NUM	_	NumType=Card	7	nummod	O	start_char=32|end_char=36
 7	domínios	domínio	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	O	start_char=37|end_char=45
 8	principais	principal	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	start_char=46|end_char=56
-9	caracterizados	caracterizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	O	start_char=57|end_char=71
+9	caracterizados	caracterizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	acl	O	start_char=57|end_char=71
 10-11	pelo	_	_	_	_	_	_	O	start_char=72|end_char=76
 10	por	por	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
@@ -4449,7 +4449,7 @@
 36	retilíneo	retilíneo	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=184|end_char=193
 37	e	e	CCONJ	_	_	39	cc	O	start_char=194|end_char=195
 38	fortemente	fortemente	ADV	_	_	39	advmod	O	start_char=196|end_char=206
-39	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	36	conj	O	start_char=207|end_char=217
+39	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	36	conj	O	start_char=207|end_char=217
 40-41	pela	_	_	_	_	_	_	O	start_char=218|end_char=222
 40	por	por	ADP	_	_	42	case	O	_
 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
@@ -4625,7 +4625,7 @@
 12	nT	nT	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	start_char=55|end_char=57
 13	sendo	ser	AUX	_	VerbForm=Ger	15	cop	O	start_char=58|end_char=63
 14	melhor	bom	ADV	_	_	15	advmod	O	start_char=64|end_char=70
-15	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	7	advcl	O	start_char=71|end_char=80
+15	observada	observado	ADJ	_	Gender=Fem|Number=Sing	7	advcl	O	start_char=71|end_char=80
 16-17	na	_	_	_	_	_	_	O	start_char=81|end_char=83
 16	em	em	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
@@ -4768,7 +4768,7 @@
 15	e	e	CCONJ	_	_	14	flat:name	O	start_char=311|end_char=312
 16	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	14	flat:name	O	start_char=313|end_char=319
 17	(	(	PUNCT	_	_	18	punct	O	start_char=320|end_char=321
-18	1990	1990	NUM	_	NumType=Card	14	appos:parataxis	O	start_char=321|end_char=325
+18	1990	1990	NUM	_	NumType=Card	14	nmod:appos	O	start_char=321|end_char=325
 19	)	)	PUNCT	_	_	18	punct	O	start_char=325|end_char=326
 20	a	a	ADP	_	_	24	case	O	start_char=327|end_char=328
 21	partir	partir	VERB	_	VerbForm=Inf	20	fixed	O	start_char=329|end_char=335
@@ -5092,7 +5092,7 @@
 35	e	e	CCONJ	_	_	34	flat:name	O	start_char=149|end_char=150
 36	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	34	flat:name	O	start_char=151|end_char=157
 37	(	(	PUNCT	_	_	38	punct	O	start_char=158|end_char=159
-38	1990	1990	NUM	_	NumType=Card	34	appos:parataxis	O	start_char=159|end_char=163
+38	1990	1990	NUM	_	NumType=Card	34	nmod:appos	O	start_char=159|end_char=163
 39	)	)	PUNCT	_	_	38	punct	O	start_char=163|end_char=164
 40	,	,	PUNCT	_	_	45	punct	O	start_char=164|end_char=165
 41	estando	estar	AUX	_	VerbForm=Ger	45	cop	O	start_char=166|end_char=173
@@ -5123,7 +5123,7 @@
 63	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	64	det	B_LOCAL_GEO	_
 64	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	61	nmod	B_INSTRUMENTO	start_char=298|end_char=304
 65	(	(	PUNCT	_	_	66	punct	O	start_char=305|end_char=306
-66	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	27	appos:parataxis	O	start_char=306|end_char=310
+66	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	27	nmod:appos	O	start_char=306|end_char=310
 67	de	de	ADP	_	_	68	case	O	start_char=311|end_char=313
 68	campo	campo	NOUN	_	Gender=Masc|Number=Sing	66	nmod	O	start_char=314|end_char=319
 69	total	total	ADJ	_	Gender=Masc|Number=Sing	68	amod	O	start_char=320|end_char=325
@@ -5235,7 +5235,7 @@
 11	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	start_char=51|end_char=61
 12	(	(	PUNCT	_	_	13	punct	O	start_char=62|end_char=63
 13	depocentro	depocentro	NOUN	_	Gender=Masc|Number=Sing	10	appos	O	start_char=63|end_char=73
-14	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	acl	O	start_char=74|end_char=84
+14	controlado	controlar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	O	start_char=74|end_char=84
 15-16	pela	_	_	_	_	_	_	O	start_char=85|end_char=89
 15	por	por	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
@@ -5274,7 +5274,7 @@
 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	B_LOCAL_GEO	_
 46	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	43	nmod	O	start_char=198|end_char=204
 47	interno	interno	ADJ	_	Gender=Masc|Number=Sing	46	amod	O	start_char=205|end_char=212
-48	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	46	acl	O	start_char=213|end_char=221
+48	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	46	acl	O	start_char=213|end_char=221
 49-50	pelos	_	_	_	_	_	_	O	start_char=222|end_char=227
 49	por	por	ADP	_	_	52	case	O	_
 50	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	O	_
@@ -5352,7 +5352,7 @@
 23	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	16	conj	O	start_char=109|end_char=115
 24	interno	interno	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	start_char=116|end_char=123
 25	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj:pass	O	start_char=124|end_char=127
-26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	aux:pass	O	start_char=128|end_char=136
+26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	27	aux	O	start_char=128|end_char=136
 27	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	16	acl:relcl	O	start_char=137|end_char=146
 28	por	por	ADP	_	_	30	case	O	start_char=147|end_char=150
 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	start_char=151|end_char=153
@@ -5429,7 +5429,7 @@
 11	direção	direção	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	start_char=47|end_char=54
 12	,	,	PUNCT	_	_	14	punct	O	start_char=54|end_char=55
 13	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	14	det	O	start_char=56|end_char=59
-14	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	O	start_char=60|end_char=69
+14	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	O	start_char=60|end_char=69
 15	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	start_char=70|end_char=80
 16	,	,	PUNCT	_	_	19	punct	O	start_char=80|end_char=81
 17	ainda	ainda	ADV	_	_	18	advmod	O	start_char=82|end_char=87
@@ -5667,11 +5667,11 @@
 10	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	start_char=49|end_char=57
 11	teórica	teórico	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	start_char=58|end_char=65
 12	(	(	PUNCT	_	_	13	punct	O	start_char=66|end_char=67
-13	círculos	círculo	NOUN	_	Gender=Masc|Number=Plur	4	appos:parataxis	O	start_char=67|end_char=75
+13	círculos	círculo	NOUN	_	Gender=Masc|Number=Plur	4	nmod:appos	O	start_char=67|end_char=75
 14	vermelhos	vermelho	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	start_char=76|end_char=85
 15	)	)	PUNCT	_	_	13	punct	O	start_char=85|end_char=86
 16	,	,	PUNCT	_	_	17	punct	O	start_char=86|end_char=87
-17	gerada	gerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	O	start_char=88|end_char=94
+17	gerada	gerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	O	start_char=88|end_char=94
 18-19	pelas	_	_	_	_	_	_	O	start_char=95|end_char=100
 18	por	por	ADP	_	_	20	case	O	_
 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
@@ -5691,7 +5691,7 @@
 31	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	start_char=167|end_char=175
 32	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	31	acl	O	start_char=176|end_char=185
 33	(	(	PUNCT	_	_	34	punct	O	start_char=186|end_char=187
-34	tom	tom	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=187|end_char=190
+34	tom	tom	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=187|end_char=190
 35	azul	azul	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=191|end_char=195
 36	continuo	contínuo	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=196|end_char=204
 37	)	)	PUNCT	_	_	34	punct	O	start_char=204|end_char=205
@@ -5715,7 +5715,7 @@
 # sent_id = 20-20140904-TESEDSC_0-567
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	start_char=0|end_char=1
 2	calha	calha	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	start_char=2|end_char=7
-3	condicionada	condicionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	start_char=8|end_char=20
+3	condicionada	condicionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	O	start_char=8|end_char=20
 4-5	pela	_	_	_	_	_	_	O	start_char=21|end_char=25
 4	por	por	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
@@ -5927,7 +5927,7 @@
 8	:	:	PUNCT	_	_	4	punct	O	start_char=202|end_char=203
 9	“	“	PUNCT	_	_	11	punct	O	start_char=204|end_char=205
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	O	start_char=205|end_char=208
-11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	appos:parataxis	O	start_char=209|end_char=214
+11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	nmod:appos	O	start_char=209|end_char=214
 12	transversal	transversal	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	start_char=215|end_char=226
 13-14	ao	_	_	_	_	_	_	O	_
 13	a	a	ADP	_	_	15	case	O	_
