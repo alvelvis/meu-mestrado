@@ -644,7 +644,7 @@
 9	em	em	ADP	_	_	11	case	O	_
 10	dois	dois	NUM	_	NumType=Card	11	nummod	O	_
 11	aspectos	aspecto	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	SpaceAfter=No
-12	:	:	PUNCT	_	_	11	punct	O	_
+12	:	:	PUNCT	_	_	14	punct	O	_
 13	menor	pequeno	ADJ	_	Gender=Masc|Number=Sing	14	amod	O	_
 14	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	appos	O	_
 15	de	de	ADP	_	_	16	case	O	_
@@ -727,7 +727,7 @@
 24	pontos	ponto	NOUN	_	Gender=Masc|Number=Plur	31	obl	O	_
 25	de	de	ADP	_	_	26	case	O	_
 26	ebulição	ebulição	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	SpaceAfter=No
-27	,	,	PUNCT	_	_	19	punct	O	_
+27	,	,	PUNCT	_	_	28	punct	O	_
 28	estes	este	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	10	appos	O	_
 29	não	não	ADV	_	Polarity=Neg	31	advmod	O	_
 30	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	O	_
@@ -1384,7 +1384,7 @@
 15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	eletrólito	eletrólito	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	O	_
 17	apropriado	apropriar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	O	SpaceAfter=No
-18	:	:	PUNCT	_	_	8	punct	O	_
+18	:	:	PUNCT	_	_	20	punct	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	oxidação	oxidação	NOUN	_	Gender=Fem|Number=Sing	8	appos	O	_
 21	de	de	ADP	_	_	23	case	O	_
@@ -1656,7 +1656,7 @@
 # text = Eletrólito: membrana polimérica de condução protônica; Faixa de temperatura: 80oC-120oC; Vantagens: alta densidade de potência, operação flexível, mobilidade; Desvantagens: custo da membrana e catalisador, contaminação do catalisador com monóxido de carbono; Aplicações: veículos automotores, espaçonaves, unidades estacionárias.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-16
 1	Eletrólito	eletrólito	NOUN	_	Gender=Masc|Number=Sing	0	root	O	SpaceAfter=No
-2	:	:	PUNCT	_	_	1	punct	O	_
+2	:	:	PUNCT	_	_	3	punct	O	_
 3	membrana	membrana	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
 4	polimérica	polimérico	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
 5	de	de	ADP	_	_	6	case	O	_
@@ -1838,12 +1838,12 @@
 # text = Eletrólito: solução de ácido fosfórico; Faixa de temperatura: 160oC – 220oC; Maior desenvolvimento tecnológico: tolerância a CO; Desvantagens: controle de porosidade do eletrodo, eficiência limitada pela corrosão; Aplicações: unidades estacionárias, geração de calor.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-21
 1	Eletrólito	eletrólito	NOUN	_	Gender=Masc|Number=Sing	0	root	O	SpaceAfter=No
-2	:	:	PUNCT	_	_	1	punct	O	_
+2	:	:	PUNCT	_	_	3	punct	O	_
 3	solução	solução	NOUN	_	Gender=Fem|Number=Sing	1	appos	B_QUIMICA	_
 4	de	de	ADP	_	_	5	case	I_QUIMICA	_
 5	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	3	nmod	I_QUIMICA	_
 6	fosfórico	fosfórico	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	SpaceAfter=No
-7	;	;	PUNCT	_	_	1	punct	O	_
+7	;	;	PUNCT	_	_	8	punct	O	_
 8	Faixa	faixa	NOUN	_	Gender=Fem|Number=Sing	1	conj	O	_
 9	de	de	ADP	_	_	10	case	O	_
 10	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	SpaceAfter=No
@@ -1987,7 +1987,7 @@
 # text = Eletrólito: carbonatos fundidos; Faixa de temperatura: 550oC - 660oC; Vantagens: tolerância a CO e CO2, eletrodos de níquel; Desvantagens: corrosão do catodo, interface trifásica de difícil controle; Aplicações: unidades estacionárias, co-geração de eletricidade e calor.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-27
 1	Eletrólito	eletrólito	NOUN	_	Gender=Masc|Number=Sing	0	root	O	SpaceAfter=No
-2	:	:	PUNCT	_	_	1	punct	O	_
+2	:	:	PUNCT	_	_	3	punct	O	_
 3	carbonatos	carbonato	NOUN	_	Gender=Masc|Number=Plur	1	appos	B_LITOLOGIA	_
 4	fundidos	fundir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	SpaceAfter=No
 5	;	;	PUNCT	_	_	6	punct	O	_
@@ -2195,7 +2195,7 @@
 # text = Eletrólito: zircônia (condutor de ânion oxigênio); Faixa de temperatura: 850oC - 1000oC; Vantagens: alta eficiência (cinética favorável); Desvantagens: problemas de materiais, expansão térmica; Aplicações: unidades estacionárias, cogeração de eletricidade e calor.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-34
 1	Eletrólito	eletrólito	NOUN	_	Gender=Masc|Number=Sing	0	root	O	SpaceAfter=No
-2	:	:	PUNCT	_	_	1	punct	O	_
+2	:	:	PUNCT	_	_	3	punct	O	_
 3	zircônia	zircônia	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
 4	(	(	PUNCT	_	_	5	punct	O	SpaceAfter=No
 5	condutor	condutor	NOUN	_	Gender=Masc|Number=Sing	3	appos	O	_
@@ -2563,7 +2563,7 @@
 # text = É um dos combustíveis fósseis mais utilizados no mundo, com sua participação na matriz energética mundial de aproximadamente de 23%, atrás apenas do petróleo que está com 40%.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-48
 1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	O	_
-2	um	um	NUM	_	NumType=Card	0	root	O	_
+2	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	O	_
 3-4	dos	_	_	_	_	_	_	O	_
 3	de	de	ADP	_	_	5	case	O	_
 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
@@ -3966,7 +3966,7 @@
 9	de	de	ADP	_	_	11	case	O	_
 10	esses	esse	DET	_	Gender=Masc|Number=Plur	11	det	O	_
 11	dispositivos	dispositivo	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	SpaceAfter=No
-12	:	:	PUNCT	_	_	4	punct	O	_
+12	:	:	PUNCT	_	_	17	punct	O	_
 13	(	(	PUNCT	_	_	14	punct	O	SpaceAfter=No
 14	i	i	NOUN	_	Gender=Masc|Number=Sing	17	parataxis	O	SpaceAfter=No
 15	)	)	PUNCT	_	_	14	punct	O	_
@@ -4763,7 +4763,7 @@
 36	e	e	CCONJ	_	_	37	cc	O	_
 37	segurança	segurança	NOUN	_	Gender=Fem|Number=Sing	35	conj	O	_
 38	de	de	ADP	_	_	39	case	O	_
-39	um	um	NUM	_	NumType=Card	37	nummod	O	_
+39	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	37	nmod	O	_
 40-41	dos	_	_	_	_	_	_	O	_
 40	de	de	ADP	_	_	42	case	O	_
 41	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	O	_
@@ -4814,7 +4814,7 @@
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 32	Doris	Doris	PROPN	_	Gender=Fem|Number=Sing	29	nmod	O	_
 33	Engineering	Engineering	PROPN	_	Number=Sing	32	flat:name	O	SpaceAfter=No
-34	,	,	PUNCT	_	_	36	punct	O	_
+34	,	,	PUNCT	_	_	35	punct	O	_
 35	ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Tot	15	appos	O	_
 36	localizados	localizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	35	acl	O	_
 37-38	no	_	_	_	_	_	_	O	_
@@ -10863,7 +10863,7 @@
 8	como	como	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	transporte	transporte	NOUN	_	Gender=Masc|Number=Sing	5	appos:parataxis	O	SpaceAfter=No
-11	,	,	PUNCT	_	_	10	punct	O	_
+11	,	,	PUNCT	_	_	13	punct	O	_
 12	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	O	_
 13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	appos	O	_
 14	naval	naval	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
@@ -10991,7 +10991,7 @@
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	inverno	inverno	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
 16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	O	_
-17	um	um	NUM	_	NumType=Card	0	root	O	_
+17	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	O	_
 18-19	dos	_	_	_	_	_	_	O	_
 18	de	de	ADP	_	_	21	case	O	_
 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
@@ -11563,7 +11563,7 @@
 16	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	O	_
 17	figurado	figurar	VERB	_	VerbForm=Part	9	conj	O	_
 18	como	como	ADP	_	_	19	case	O	_
-19	um	um	NUM	_	NumType=Card	17	obl	O	_
+19	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	17	obl	O	_
 20-21	dos	_	_	_	_	_	_	O	_
 20	de	de	ADP	_	_	23	case	O	_
 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
@@ -11940,7 +11940,7 @@
 4	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
 5	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
 6	considerados	considerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-7	um	um	NUM	_	NumType=Card	6	obj	O	_
+7	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	6	obj	O	_
 8-9	dos	_	_	_	_	_	_	O	_
 8	de	de	ADP	_	_	11	case	O	_
 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
@@ -13040,7 +13040,7 @@
 26	,	,	PUNCT	_	_	28	punct	O	_
 27	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	28	nsubj	O	_
 28	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	O	_
-29	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	23	acl:relcl	O	_
+29	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	23	nmod	O	_
 30-31	dos	_	_	_	_	_	_	O	_
 30	de	de	ADP	_	_	33	case	O	_
 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	O	_
@@ -15484,8 +15484,8 @@
 40	(	(	PUNCT	_	_	41	punct	O	SpaceAfter=No
 41	FURG	FURG	PROPN	_	Gender=Fem|Number=Sing	33	appos	O	SpaceAfter=No
 42	)	)	PUNCT	_	_	41	punct	O	SpaceAfter=No
-43	,	,	PUNCT	_	_	30	punct	O	_
-44	uma	uma	NUM	_	NumType=Card	33	appos	O	_
+43	,	,	PUNCT	_	_	44	punct	O	_
+44	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	33	appos	O	_
 45-46	das	_	_	_	_	_	_	O	_
 45	de	de	ADP	_	_	48	case	O	_
 46	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	O	_
@@ -15625,7 +15625,7 @@
 1	Estuários	Estuário	NOUN	_	Gender=Masc|Number=Plur	3	nsubj:pass	O	_
 2	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	O	_
 3	considerados	considerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-4	um	um	NUM	_	NumType=Card	3	obj	O	_
+4	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	3	obj	O	_
 5-6	dos	_	_	_	_	_	_	O	_
 5	de	de	ADP	_	_	9	case	O	_
 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
@@ -16135,7 +16135,7 @@
 19	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	17	conj	O	_
 20	de	de	ADP	_	_	21	case	O	_
 21	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	SpaceAfter=No
-22	,	,	PUNCT	_	_	26	punct	O	_
+22	,	,	PUNCT	_	_	24	punct	O	_
 23	sendo	ser	AUX	_	VerbForm=Ger	24	cop	O	_
 24	os	o	PRON	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Dem	17	advcl	O	_
 25	mais	mais	ADV	_	_	26	advmod	O	_
@@ -16996,8 +16996,8 @@
 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
 2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	O	_
 3	clorados	clorar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	SpaceAfter=No
-4	,	,	PUNCT	_	_	8	punct	O	_
-5	e	e	CCONJ	_	_	8	cc	O	_
+4	,	,	PUNCT	_	_	7	punct	O	_
+5	e	e	CCONJ	_	_	7	cc	O	_
 6	especialmente	especialmente	ADV	_	_	8	advmod	O	_
 7	os	eles	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	appos	O	_
 8	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	O	_
@@ -18165,7 +18165,7 @@
 3	de	de	ADP	_	_	4	case	O	_
 4	coreflow	coreflow	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	O	_
-6	uma	um	NUM	_	NumType=Card	0	root	O	_
+6	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	0	root	O	_
 7-8	das	_	_	_	_	_	_	O	_
 7	de	de	ADP	_	_	9	case	O	_
 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
@@ -19031,7 +19031,7 @@
 71	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	72	nsubj	O	_
 72	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	61	acl:relcl	O	_
 73	como	como	ADP	_	_	74	case	B_LOCAL_MUNICIPIO	_
-74	uma	um	NUM	_	NumType=Card	72	xcomp	O	_
+74	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	72	xcomp	O	_
 75	de	de	ADP	_	_	77	case	O	_
 76	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	77	det	O	_
 77	finalidades	finalidade	NOUN	_	Gender=Fem|Number=Plur	74	nmod	O	SpaceAfter=No
@@ -19309,7 +19309,7 @@
 12	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	O	_
 13	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	O	_
 14	como	como	ADP	_	_	15	case	O	_
-15	uma	um	NUM	_	NumType=Card	13	xcomp	O	_
+15	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	13	xcomp	O	_
 16	de	de	ADP	_	_	18	case	O	_
 17	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	18	det	O	_
 18	diretrizes	diretriz	NOUN	_	Gender=Fem|Number=Plur	15	nmod	O	_
@@ -19917,7 +19917,7 @@
 23	(	(	PUNCT	_	_	24	punct	O	SpaceAfter=No
 24	PVDF	PVDF	PROPN	_	Gender=Masc|Number=Sing	20	appos	O	SpaceAfter=No
 25	)	)	PUNCT	_	_	24	punct	O	SpaceAfter=No
-26	,	,	PUNCT	_	_	6	punct	O	_
+26	,	,	PUNCT	_	_	27	punct	O	_
 27	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	18	appos	O	_
 28	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	O	_
 29	vem	vir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux	O	_
@@ -21387,7 +21387,7 @@
 62	,	,	PUNCT	_	_	63	punct	O	_
 63	oxigênio	oxigênio	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	_
 64	dissolvido	dissolver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	63	acl	O	SpaceAfter=No
-65	,	,	PUNCT	_	_	64	punct	O	_
+65	,	,	PUNCT	_	_	66	punct	O	_
 66	sódio	sódio	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	SpaceAfter=No
 67	,	,	PUNCT	_	_	68	punct	O	_
 68	potássio	potássio	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	SpaceAfter=No
@@ -21470,7 +21470,7 @@
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
 22	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
 23	sendo	ser	AUX	_	VerbForm=Ger	24	cop	O	_
-24	um	um	NUM	_	NumType=Card	18	nsubj:pass	O	_
+24	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	18	nsubj:pass	O	_
 25-26	dos	_	_	_	_	_	_	O	_
 25	de	de	ADP	_	_	28	case	O	_
 26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
@@ -25228,7 +25228,7 @@
 33	flutuantes	flutuante	ADJ	_	Gender=Fem|Number=Plur	32	amod	O	_
 34	de	de	ADP	_	_	35	case	O	_
 35	produção	produção	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	SpaceAfter=No
-36	,	,	PUNCT	_	_	30	punct	O	_
+36	,	,	PUNCT	_	_	37	punct	O	_
 37	estas	este	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	32	appos	O	_
 38	estando	estar	AUX	_	VerbForm=Ger	40	aux	O	_
 39	também	também	ADV	_	_	40	advmod	O	_
