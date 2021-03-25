@@ -2845,7 +2845,7 @@
 1	Estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	O	start_char=0|end_char=5
 2	levantamentos	levantamento	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	O	start_char=6|end_char=19
 3	radiais	radial	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	start_char=20|end_char=27
-4	,	,	PUNCT	_	_	2	punct	O	start_char=27|end_char=28
+4	,	,	PUNCT	_	_	7	punct	O	start_char=27|end_char=28
 5	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	9	nsubj	O	start_char=29|end_char=32
 6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	O	start_char=33|end_char=36
 7	os	o	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	2	acl:relcl	O	start_char=37|end_char=39
@@ -3198,7 +3198,7 @@
 9	igual	igual	ADJ	_	Gender=Fem|Number=Sing	11	obl	O	start_char=42|end_char=47
 10	26.000	26.000	NUM	_	NumType=Card	11	nummod	O	start_char=48|end_char=54
 11	nT	nT	NOUN	_	Gender=Masc|Number=Plur	0	root	O	start_char=55|end_char=57
-12	:	:	PUNCT	_	_	11	punct	O	start_char=57|end_char=58
+12	:	:	PUNCT	_	_	13	punct	O	start_char=57|end_char=58
 13	intensidade	intensidade	NOUN	_	Gender=Fem|Number=Sing	11	appos	O	start_char=59|end_char=70
 14	fraca	fraco	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	start_char=71|end_char=76
 15	correspondente	correspondente	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	start_char=77|end_char=91
@@ -5943,7 +5943,7 @@
 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	start_char=265|end_char=267
 23	falhas	falha	NOUN	_	Gender=Fem|Number=Plur	21	obj	O	start_char=268|end_char=274
 24	limites	limite	NOUN	_	Gender=Masc|Number=Plur	23	nmod	O	start_char=275|end_char=282
-25	(	(	PUNCT	_	_	29	punct	O	start_char=283|end_char=284
+25	(	(	PUNCT	_	_	26	punct	O	start_char=283|end_char=284
 26	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	23	appos	O	start_char=284|end_char=287
 27-28	na	_	_	_	_	_	_	O	_
 27	em	em	ADP	_	_	29	case	O	start_char=288|end_char=290
@@ -6166,7 +6166,7 @@
 45	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	O	start_char=195|end_char=200
 46	1	1	NUM	_	NumType=Card	45	nummod	O	start_char=201|end_char=202
 47	)	)	PUNCT	_	_	45	punct	O	start_char=202|end_char=203
-48	e	e	CCONJ	_	_	52	cc	O	start_char=204|end_char=205
+48	e	e	CCONJ	_	_	50	cc	O	start_char=204|end_char=205
 49-50	no	_	_	_	_	_	_	O	start_char=206|end_char=208
 49	em	em	ADP	_	_	50	case	O	_
 50	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	41	conj	O	_
