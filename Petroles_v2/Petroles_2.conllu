@@ -28,7 +28,7 @@
 # sent_id = 20-20140904-TESEDSC_0-35
 1	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	start_char=0|end_char=7
 2	(	(	PUNCT	_	_	3	punct	O	start_char=8|end_char=9
-3	2001	2001	NUM	_	NumType=Card	1	appos:parataxis	O	start_char=9|end_char=13
+3	2001	2001	NUM	_	NumType=Card	1	nmod:appos	O	start_char=9|end_char=13
 4	)	)	PUNCT	_	_	3	punct	O	start_char=13|end_char=14
 5	relaciona	relacionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	start_char=15|end_char=24
 6	algumas	algum	PRON	_	Gender=Fem|Number=Plur|PronType=Ind	5	obj	O	start_char=25|end_char=32
@@ -65,7 +65,7 @@
 35	região	região	NOUN	_	Gender=Fem|Number=Sing	29	nmod	B_LOCAL_POL	start_char=188|end_char=194
 36	sudeste	sudeste	ADJ	_	Gender=Fem|Number=Sing	35	amod	I_LOCAL_POL	start_char=195|end_char=202
 37	(	(	PUNCT	_	_	38	punct	O	start_char=203|end_char=204
-38	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	5	appos:parataxis	O	start_char=204|end_char=210
+38	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	5	nmod:appos	O	start_char=204|end_char=210
 39	2.1	2.1	NUM	_	Number=Sing	38	nummod	O	start_char=211|end_char=214
 40	)	)	PUNCT	_	_	38	punct	O	start_char=214|end_char=215
 41	.	.	PUNCT	_	_	5	punct	O	start_char=215|end_char=216
@@ -259,7 +259,7 @@
 61	de	de	ADP	_	_	62	case	O	start_char=354|end_char=356
 62	Jaboticabal	Jaboticabal	PROPN	_	Gender=Unsp|Number=Sing	60	nmod	B_LOCAL_MUNICIPIO	start_char=357|end_char=368
 63	(	(	PUNCT	_	_	64	punct	O	start_char=369|end_char=370
-64	SP	SP	PROPN	_	Gender=Masc|Number=Sing	60	appos:parataxis	O	start_char=370|end_char=372
+64	SP	SP	PROPN	_	Gender=Masc|Number=Sing	60	nmod:appos	O	start_char=370|end_char=372
 65	)	)	PUNCT	_	_	64	punct	O	start_char=372|end_char=373
 66	com	com	ADP	_	_	67	case	O	start_char=374|end_char=377
 67	direção	direção	NOUN	_	Gender=Fem|Number=Sing	52	obl	O	start_char=378|end_char=385
@@ -481,7 +481,7 @@
 20	et	et	PROPN	_	Number=Sing	19	flat:name	O	start_char=108|end_char=110
 21	al.	al.	PROPN	_	Number=Sing	19	flat:name	O	start_char=111|end_char=114
 22	(	(	PUNCT	_	_	23	punct	O	start_char=115|end_char=116
-23	2001	2001	NUM	_	NumType=Card	19	appos:parataxis	O	start_char=116|end_char=120
+23	2001	2001	NUM	_	NumType=Card	19	nmod:appos	O	start_char=116|end_char=120
 24	)	)	PUNCT	_	_	23	punct	O	start_char=120|end_char=121
 25	.	.	PUNCT	_	_	12	punct	O	start_char=121|end_char=122
 
@@ -890,7 +890,7 @@
 16	de	de	ADP	_	_	17	case	O	start_char=71|end_char=73
 17	apatita	apatita	NOUN	_	Gender=Fem|Number=Sing	15	nmod	B_LITOLOGIA	start_char=74|end_char=81
 18	(	(	PUNCT	_	_	19	punct	O	start_char=82|end_char=83
-19	Lelarge	Lelarge	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=83|end_char=90
+19	Lelarge	Lelarge	PROPN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=83|end_char=90
 20	,	,	PUNCT	_	_	19	flat:name	O	start_char=90|end_char=91
 21	1993	1993	NUM	_	NumType=Card	19	flat:name	O	start_char=92|end_char=96
 22	em	em	ADP	_	_	23	case	O	start_char=97|end_char=99
@@ -930,7 +930,7 @@
 22	de	de	ADP	_	_	23	case	O	start_char=92|end_char=94
 23	siliciclásticos	siliciclástico	NOUN	_	Gender=Masc|Number=Plur	21	nmod	O	start_char=95|end_char=110
 24	(	(	PUNCT	_	_	25	punct	O	start_char=111|end_char=112
-25	Formações	Formações	PROPN	_	Gender=Fem|Number=Sing	21	appos:parataxis	O	start_char=112|end_char=121
+25	Formações	Formações	PROPN	_	Gender=Fem|Number=Sing	21	nmod:appos	O	start_char=112|end_char=121
 26	Iguape	Iguape	PROPN	_	Number=Sing	25	flat:name	B_LOCAL_MUNICIPIO	start_char=122|end_char=128
 27	e	e	CCONJ	_	_	28	cc	O	start_char=129|end_char=130
 28	Sepetiba	Sepetiba	PROPN	_	Gender=Fem|Number=Sing	25	conj	O	start_char=131|end_char=139
@@ -947,7 +947,7 @@
 39	e	e	CCONJ	_	_	40	cc	O	start_char=195|end_char=196
 40	talude	talude	NOUN	_	Gender=Masc|Number=Sing	38	conj	O	start_char=197|end_char=203
 41	(	(	PUNCT	_	_	42	punct	O	start_char=204|end_char=205
-42	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	35	appos:parataxis	B_UNIDADE_LITOESTRATIGRAFICA	start_char=205|end_char=213
+42	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	35	nmod:appos	B_UNIDADE_LITOESTRATIGRAFICA	start_char=205|end_char=213
 43	Marambaia	Marambaia	PROPN	_	Number=Sing	42	flat:name	I_UNIDADE_LITOESTRATIGRAFICA	start_char=214|end_char=223
 44	)	)	PUNCT	_	_	42	punct	O	start_char=223|end_char=224
 45	.	.	PUNCT	_	_	18	punct	O	start_char=224|end_char=225
@@ -1129,7 +1129,7 @@
 26	cisalhamento	cisalhamento	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	start_char=160|end_char=172
 27	reinantes	reinante	ADJ	_	Gender=Masc|Number=Plur	26	amod	O	start_char=173|end_char=182
 28	(	(	PUNCT	_	_	29	punct	O	start_char=183|end_char=184
-29	Gorini	Gorini	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=184|end_char=190
+29	Gorini	Gorini	PROPN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=184|end_char=190
 30	,	,	PUNCT	_	_	29	flat:name	O	start_char=190|end_char=191
 31	1977	1977	NUM	_	NumType=Card	29	flat:name	O	start_char=192|end_char=196
 32	;	;	PUNCT	_	_	33	punct	O	start_char=196|end_char=197
@@ -1192,7 +1192,7 @@
 34	distensão	distensão	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	start_char=187|end_char=196
 35	crustal	crustal	ADJ	_	Gender=Fem|Number=Sing	34	amod	O	start_char=197|end_char=204
 36	(	(	PUNCT	_	_	37	punct	O	start_char=205|end_char=206
-37	Chang	Chang	PROPN	_	Gender=Masc|Number=Sing	15	appos:parataxis	O	start_char=206|end_char=211
+37	Chang	Chang	PROPN	_	Gender=Masc|Number=Sing	15	nmod:appos	O	start_char=206|end_char=211
 38	et	et	PROPN	_	Number=Sing	37	flat:name	O	start_char=212|end_char=214
 39	al.	al.	PROPN	_	Number=Sing	37	flat:name	O	start_char=215|end_char=218
 40	,	,	PUNCT	_	_	37	flat:name	O	start_char=218|end_char=219
@@ -1298,7 +1298,7 @@
 51	de	de	ADP	_	_	50	flat:name	O	start_char=244|end_char=246
 52	Santos	Santos	PROPN	_	Number=Sing	50	flat:name	B_BACIA_TIPO	start_char=247|end_char=253
 53	(	(	PUNCT	_	_	54	punct	O	start_char=254|end_char=255
-54	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	7	appos:parataxis	B_LOCAL_MUNICIPIO|B_BACIA|B_LOCAL_POL|B_UNIDADE_LITOESTRATIGRAFICA|B_LOCAL_CIDADE	start_char=255|end_char=262
+54	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	7	nmod:appos	B_LOCAL_MUNICIPIO|B_BACIA|B_LOCAL_POL|B_UNIDADE_LITOESTRATIGRAFICA|B_LOCAL_CIDADE	start_char=255|end_char=262
 55	e	e	CCONJ	_	_	54	flat:name	O	start_char=263|end_char=264
 56	Carneiro	Carneiro	PROPN	_	Number=Sing	54	flat:name	O	start_char=265|end_char=273
 57	,	,	PUNCT	_	_	54	flat:name	O	start_char=273|end_char=274
@@ -1343,7 +1343,7 @@
 29	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	30	det	O	_
 30	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	start_char=175|end_char=183
 31	(	(	PUNCT	_	_	32	punct	O	start_char=184|end_char=185
-32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	7	appos:parataxis	O	start_char=185|end_char=191
+32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	7	nmod:appos	O	start_char=185|end_char=191
 33	1.1	1.1	NUM	_	NumType=Card	32	nummod	O	start_char=192|end_char=195
 34	)	)	PUNCT	_	_	32	punct	O	start_char=195|end_char=196
 35	.	.	PUNCT	_	_	7	punct	O	start_char=196|end_char=197
@@ -1432,7 +1432,7 @@
 32	oceânicos	oceânico	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	start_char=158|end_char=167
 33	expressivos	expressivo	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	start_char=168|end_char=179
 34	(	(	PUNCT	_	_	35	punct	O	start_char=180|end_char=181
-35	Cainelli	Cainelli	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=181|end_char=189
+35	Cainelli	Cainelli	PROPN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=181|end_char=189
 36	&	&	PROPN	_	Number=Sing	35	flat:name	O	start_char=190|end_char=191
 37	Mohriak	Mohriak	PROPN	_	Number=Sing	35	flat:name	O	start_char=192|end_char=199
 38	,	,	PUNCT	_	_	35	flat:name	O	start_char=199|end_char=200
@@ -1521,7 +1521,7 @@
 4	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	B_LOCAL_GEO|B_BACIA|B_UNIDADE_LITOESTRATIGRAFICA	start_char=237|end_char=243
 5	:	:	PUNCT	_	_	2	punct	O	start_char=243|end_char=244
 6-7	situa-se	_	_	_	_	_	_	O	start_char=245|end_char=253
-6	situa	situar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	appos:parataxis	O	_
+6	situa	situar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	nmod:appos	O	_
 7	se	se	PRON	_	_	6	expl	O	_
 8	em	em	ADP	_	_	9	case	O	start_char=254|end_char=256
 9	águas	água	NOUN	_	Gender=Fem|Number=Plur	6	obl	O	start_char=257|end_char=262
@@ -1723,7 +1723,7 @@
 42	São	São	PROPN	_	Number=Sing	39	flat:name	B_CAMPO|B_LOCAL_MUNICIPIO	start_char=230|end_char=233
 43	João	João	PROPN	_	Number=Sing	39	flat:name	I_CAMPO|I_LOCAL_MUNICIPIO	start_char=234|end_char=238
 44	(	(	PUNCT	_	_	45	punct	O	start_char=239|end_char=240
-45	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	19	appos:parataxis	O	start_char=240|end_char=247
+45	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	19	nmod:appos	O	start_char=240|end_char=247
 46	e	e	CCONJ	_	_	45	flat:name	O	start_char=248|end_char=249
 47	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	45	flat:name	O	start_char=250|end_char=256
 48	1990	1990	PROPN	_	Number=Sing	45	flat:name	O	start_char=257|end_char=261
@@ -1805,7 +1805,7 @@
 42	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	43	det	O	_
 43	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	40	obl	O	start_char=371|end_char=379
 44	(	(	PUNCT	_	_	45	punct	O	start_char=380|end_char=381
-45	figura	figura	NOUN	_	Gender=Fem|Number=Sing	5	appos:parataxis	O	start_char=381|end_char=387
+45	figura	figura	NOUN	_	Gender=Fem|Number=Sing	5	nmod:appos	O	start_char=381|end_char=387
 46	1.1	1.1	NUM	_	NumType=Card	45	nummod	O	start_char=388|end_char=391
 47	)	)	PUNCT	_	_	45	punct	O	start_char=391|end_char=392
 48	.	.	PUNCT	_	_	5	punct	O	start_char=392|end_char=393
@@ -2333,7 +2333,7 @@
 16	área	área	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	start_char=408|end_char=412
 17	marinha	marinho	ADJ	_	Gender=Fem|Number=Sing	16	amod	O	start_char=413|end_char=420
 18	(	(	PUNCT	_	_	19	punct	O	start_char=421|end_char=422
-19	Fugro	Fugro	PROPN	_	Gender=Fem|Number=Sing	16	appos:parataxis	O	start_char=422|end_char=427
+19	Fugro	Fugro	PROPN	_	Gender=Fem|Number=Sing	16	nmod:appos	O	start_char=422|end_char=427
 20	)	)	PUNCT	_	_	19	punct	O	start_char=427|end_char=428
 21	e	e	CCONJ	_	_	24	cc	O	start_char=429|end_char=430
 22-23	da	_	_	_	_	_	_	O	start_char=431|end_char=433
@@ -2342,7 +2342,7 @@
 24	área	área	NOUN	_	Gender=Fem|Number=Sing	16	conj	O	start_char=434|end_char=438
 25	emersa	emerso	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	start_char=439|end_char=445
 26	(	(	PUNCT	_	_	27	punct	O	start_char=446|end_char=447
-27	CPRM	CPRM	PROPN	_	Gender=Fem|Number=Sing	24	appos:parataxis	O	start_char=447|end_char=451
+27	CPRM	CPRM	PROPN	_	Gender=Fem|Number=Sing	24	nmod:appos	O	start_char=447|end_char=451
 28	)	)	PUNCT	_	_	27	punct	O	start_char=451|end_char=452
 29	.	.	PUNCT	_	_	6	punct	O	start_char=452|end_char=453
 
@@ -2557,7 +2557,7 @@
 44	referido	referir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	45	acl	O	start_char=196|end_char=204
 45	estado	estado	NOUN	_	Gender=Masc|Number=Sing	41	obl	O	start_char=205|end_char=211
 46	(	(	PUNCT	_	_	47	punct	O	start_char=212|end_char=213
-47	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	appos:parataxis	O	start_char=213|end_char=219
+47	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	nmod:appos	O	start_char=213|end_char=219
 48	3.5	3.5	NUM	_	NumType=Card	47	nummod	O	start_char=220|end_char=223
 49	)	)	PUNCT	_	_	47	punct	O	start_char=223|end_char=224
 50	.	.	PUNCT	_	_	15	punct	O	start_char=224|end_char=225
@@ -2743,7 +2743,7 @@
 31	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	28	obl	B_INSTRUMENTO	start_char=178|end_char=182
 32	integrado	integrado	ADJ	_	Gender=Masc|Number=Sing	31	amod	O	start_char=183|end_char=192
 33	(	(	PUNCT	_	_	34	punct	O	start_char=193|end_char=194
-34	figura	figura	NOUN	_	Gender=Fem|Number=Sing	26	appos:parataxis	O	start_char=194|end_char=200
+34	figura	figura	NOUN	_	Gender=Fem|Number=Sing	26	nmod:appos	O	start_char=194|end_char=200
 35	3.5	3.5	NUM	_	NumType=Card	34	nummod	O	start_char=201|end_char=204
 36	)	)	PUNCT	_	_	34	punct	O	start_char=204|end_char=205
 37	.	.	PUNCT	_	_	28	punct	O	start_char=205|end_char=206
@@ -3003,7 +3003,7 @@
 22	de	de	ADP	_	_	23	case	O	start_char=92|end_char=94
 23	1:400.000	1:400.000	NUM	_	NumType=Card	21	nummod	O	start_char=95|end_char=96
 24	(	(	PUNCT	_	_	25	punct	O	start_char=105|end_char=106
-25	figura	figura	NOUN	_	Gender=Fem|Number=Sing	18	appos:parataxis	O	start_char=106|end_char=112
+25	figura	figura	NOUN	_	Gender=Fem|Number=Sing	18	nmod:appos	O	start_char=106|end_char=112
 26	1.2	1.2	NUM	_	NumType=Card	25	nummod	O	start_char=113|end_char=116
 27	e	e	CCONJ	_	_	28	cc	O	start_char=117|end_char=118
 28	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	25	conj	O	start_char=119|end_char=124
@@ -3073,7 +3073,7 @@
 52	de	de	ADP	_	_	53	case	O	start_char=268|end_char=270
 53	1:50.000	1:50.000	NUM	_	NumType=Card	51	nummod	O	start_char=271|end_char=272
 54	(	(	PUNCT	_	_	55	punct	O	start_char=280|end_char=281
-55	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	18	appos:parataxis	O	start_char=281|end_char=288
+55	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	18	nmod:appos	O	start_char=281|end_char=288
 56	1.3	1.3	NUM	_	NumType=Card	55	nummod	O	start_char=289|end_char=292
 57	,	,	PUNCT	_	_	58	punct	O	start_char=292|end_char=293
 58	7.6	7.6	NUM	_	NumType=Card	56	conj	O	start_char=294|end_char=297
@@ -3475,7 +3475,7 @@
 6	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	5	amod	I_CAMPO_TIPO	start_char=16|end_char=25
 7	total	total	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	start_char=26|end_char=31
 8	(	(	PUNCT	_	_	9	punct	O	start_char=32|end_char=33
-9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	appos:parataxis	O	start_char=33|end_char=39
+9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	15	nmod:appos	O	start_char=33|end_char=39
 10	1.2	1.2	NUM	_	NumType=Card	9	nummod	O	start_char=40|end_char=43
 11	e	e	CCONJ	_	_	12	cc	O	start_char=44|end_char=45
 12	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	start_char=46|end_char=51
@@ -3805,7 +3805,7 @@
 10	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	start_char=36|end_char=41
 11	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	start_char=42|end_char=51
 12	(	(	PUNCT	_	_	13	punct	O	start_char=52|end_char=53
-13	figura	figura	NOUN	_	Gender=Fem|Number=Sing	19	appos:parataxis	O	start_char=53|end_char=59
+13	figura	figura	NOUN	_	Gender=Fem|Number=Sing	19	nmod:appos	O	start_char=53|end_char=59
 14	1.2	1.2	NUM	_	NumType=Card	13	nummod	O	start_char=60|end_char=63
 15	e	e	CCONJ	_	_	16	cc	O	start_char=64|end_char=65
 16	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	13	conj	O	start_char=66|end_char=71
@@ -3851,7 +3851,7 @@
 20	avermelhados	avermelhar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	O	start_char=81|end_char=93
 21	(	(	PUNCT	_	_	23	punct	O	start_char=94|end_char=95
 22	altas	alto	ADJ	_	Gender=Fem|Number=Plur	23	amod	O	start_char=95|end_char=100
-23	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	19	appos:parataxis	O	start_char=101|end_char=111
+23	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	19	nmod:appos	O	start_char=101|end_char=111
 24	)	)	PUNCT	_	_	23	punct	O	start_char=111|end_char=112
 25	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	O	start_char=113|end_char=116
 26	separadas	separar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	start_char=117|end_char=126
@@ -3870,7 +3870,7 @@
 38	azul	azul	NOUN	_	Gender=Masc|Number=Sing	36	conj	O	start_char=190|end_char=194
 39	(	(	PUNCT	_	_	41	punct	O	start_char=195|end_char=196
 40	baixas	baixo	ADJ	_	Gender=Fem|Number=Plur	41	amod	O	start_char=196|end_char=202
-41	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	35	appos:parataxis	O	start_char=203|end_char=213
+41	amplitudes	amplitude	NOUN	_	Gender=Fem|Number=Plur	35	nmod:appos	O	start_char=203|end_char=213
 42	)	)	PUNCT	_	_	41	punct	O	start_char=213|end_char=214
 43	.	.	PUNCT	_	_	26	punct	O	start_char=214|end_char=215
 
@@ -4004,7 +4004,7 @@
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	flat:name	O	_
 7	Cabo	Cabo	PROPN	_	Number=Sing	4	flat:name	O	start_char=25|end_char=29
 8	(	(	PUNCT	_	_	9	punct	O	start_char=30|end_char=31
-9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	appos:parataxis	O	start_char=31|end_char=37
+9	figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	nmod:appos	O	start_char=31|end_char=37
 10	1.3	1.3	NUM	_	NumType=Card	9	nummod	O	start_char=38|end_char=41
 11	)	)	PUNCT	_	_	9	punct	O	start_char=41|end_char=42
 12	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	O	start_char=43|end_char=46
@@ -4133,7 +4133,7 @@
 16	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	13	obl	O	start_char=176|end_char=180
 17	regional	regional	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	start_char=181|end_char=189
 18	(	(	PUNCT	_	_	19	punct	O	start_char=190|end_char=191
-19	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	5	appos:parataxis	O	start_char=191|end_char=196
+19	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	5	nmod:appos	O	start_char=191|end_char=196
 20-21	da	_	_	_	_	_	_	O	start_char=197|end_char=199
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
@@ -4321,7 +4321,7 @@
 24	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	18	conj	O	start_char=122|end_char=127
 25	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	24	amod	O	start_char=128|end_char=137
 26	(	(	PUNCT	_	_	27	punct	O	start_char=138|end_char=139
-27	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	6	appos:parataxis	O	start_char=139|end_char=145
+27	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	6	nmod:appos	O	start_char=139|end_char=145
 28	2	2	NUM	_	NumType=Card	27	nummod	O	start_char=146|end_char=147
 29	e	e	CCONJ	_	_	30	cc	O	start_char=148|end_char=149
 30	3	3	NUM	_	NumType=Card	28	conj	O	start_char=150|end_char=151
@@ -4694,7 +4694,7 @@
 11	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	10	amod	I_CAMPO_TIPO	start_char=52|end_char=61
 12	total	total	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	start_char=62|end_char=67
 13	(	(	PUNCT	_	_	14	punct	O	start_char=68|end_char=69
-14	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=69|end_char=74
+14	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=69|end_char=74
 15	2	2	NUM	_	NumType=Card	14	nummod	O	start_char=75|end_char=76
 16	)	)	PUNCT	_	_	14	punct	O	start_char=76|end_char=77
 17	e	e	CCONJ	_	_	20	cc	O	start_char=78|end_char=79
@@ -4705,7 +4705,7 @@
 21	de	de	ADP	_	_	22	case	O	start_char=88|end_char=90
 22	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	start_char=91|end_char=104
 23	(	(	PUNCT	_	_	24	punct	O	start_char=105|end_char=106
-24	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=106|end_char=111
+24	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=106|end_char=111
 25	1	1	NUM	_	NumType=Card	24	nummod	O	start_char=112|end_char=113
 26	)	)	PUNCT	_	_	24	punct	O	start_char=113|end_char=114
 27	.	.	PUNCT	_	_	4	punct	O	start_char=114|end_char=115
@@ -4768,7 +4768,7 @@
 15	e	e	CCONJ	_	_	14	flat:name	O	start_char=311|end_char=312
 16	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	14	flat:name	O	start_char=313|end_char=319
 17	(	(	PUNCT	_	_	18	punct	O	start_char=320|end_char=321
-18	1990	1990	NUM	_	NumType=Card	14	appos:parataxis	O	start_char=321|end_char=325
+18	1990	1990	NUM	_	NumType=Card	14	nmod:appos	O	start_char=321|end_char=325
 19	)	)	PUNCT	_	_	18	punct	O	start_char=325|end_char=326
 20	a	a	ADP	_	_	24	case	O	start_char=327|end_char=328
 21	partir	partir	VERB	_	VerbForm=Inf	20	fixed	O	start_char=329|end_char=335
@@ -5092,7 +5092,7 @@
 35	e	e	CCONJ	_	_	34	flat:name	O	start_char=149|end_char=150
 36	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	34	flat:name	O	start_char=151|end_char=157
 37	(	(	PUNCT	_	_	38	punct	O	start_char=158|end_char=159
-38	1990	1990	NUM	_	NumType=Card	34	appos:parataxis	O	start_char=159|end_char=163
+38	1990	1990	NUM	_	NumType=Card	34	nmod:appos	O	start_char=159|end_char=163
 39	)	)	PUNCT	_	_	38	punct	O	start_char=163|end_char=164
 40	,	,	PUNCT	_	_	45	punct	O	start_char=164|end_char=165
 41	estando	estar	AUX	_	VerbForm=Ger	45	cop	O	start_char=166|end_char=173
@@ -5123,7 +5123,7 @@
 63	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	64	det	B_LOCAL_GEO	_
 64	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	61	nmod	B_INSTRUMENTO	start_char=298|end_char=304
 65	(	(	PUNCT	_	_	66	punct	O	start_char=305|end_char=306
-66	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	27	appos:parataxis	O	start_char=306|end_char=310
+66	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	27	nmod:appos	O	start_char=306|end_char=310
 67	de	de	ADP	_	_	68	case	O	start_char=311|end_char=313
 68	campo	campo	NOUN	_	Gender=Masc|Number=Sing	66	nmod	O	start_char=314|end_char=319
 69	total	total	ADJ	_	Gender=Masc|Number=Sing	68	amod	O	start_char=320|end_char=325
@@ -5193,7 +5193,7 @@
 3	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	start_char=3|end_char=9
 4	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	3	amod	O	start_char=10|end_char=19
 5	(	(	PUNCT	_	_	6	punct	O	start_char=20|end_char=21
-6	figura	figura	NOUN	_	Gender=Fem|Number=Sing	14	appos:parataxis	O	start_char=21|end_char=27
+6	figura	figura	NOUN	_	Gender=Fem|Number=Sing	14	nmod:appos	O	start_char=21|end_char=27
 7	6.2	6.2	NUM	_	NumType=Card	6	nummod	O	start_char=28|end_char=31
 8	)	)	PUNCT	_	_	6	punct	O	start_char=31|end_char=32
 9	,	,	PUNCT	_	_	3	punct	O	start_char=32|end_char=33
@@ -5210,7 +5210,7 @@
 19	de	de	ADP	_	_	20	case	O	start_char=92|end_char=94
 20	susceptibilidades	susceptibilidade	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	start_char=95|end_char=112
 21	(	(	PUNCT	_	_	22	punct	O	start_char=113|end_char=114
-22	regiões	região	NOUN	_	Gender=Fem|Number=Plur	14	appos:parataxis	O	start_char=114|end_char=121
+22	regiões	região	NOUN	_	Gender=Fem|Number=Plur	14	nmod:appos	O	start_char=114|end_char=121
 23	claras	claro	ADJ	_	Gender=Fem|Number=Plur	22	amod	O	start_char=122|end_char=128
 24-25	na	_	_	_	_	_	_	O	start_char=129|end_char=131
 24	em	em	ADP	_	_	26	case	O	_
@@ -5318,7 +5318,7 @@
 29	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	30	det	O	_
 30	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	start_char=153|end_char=159
 31	(	(	PUNCT	_	_	32	punct	O	start_char=160|end_char=161
-32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	9	appos:parataxis	O	start_char=161|end_char=167
+32	figura	figura	NOUN	_	Gender=Fem|Number=Sing	9	nmod:appos	O	start_char=161|end_char=167
 33	6.2	6.2	NUM	_	NumType=Card	32	nummod	O	start_char=168|end_char=171
 34	)	)	PUNCT	_	_	32	punct	O	start_char=171|end_char=172
 35	.	.	PUNCT	_	_	9	punct	O	start_char=172|end_char=173
@@ -5466,7 +5466,7 @@
 13	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	start_char=63|end_char=68
 14	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	start_char=69|end_char=78
 15	(	(	PUNCT	_	_	16	punct	O	start_char=79|end_char=80
-16	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	5	appos:parataxis	O	start_char=80|end_char=85
+16	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	5	nmod:appos	O	start_char=80|end_char=85
 17	3	3	NUM	_	NumType=Card	16	nummod	O	start_char=86|end_char=87
 18	)	)	PUNCT	_	_	16	punct	O	start_char=87|end_char=88
 19	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	O	start_char=89|end_char=92
@@ -5583,7 +5583,7 @@
 38	muito	muito	ADV	_	_	39	advmod	O	start_char=186|end_char=191
 39	bom	bom	ADJ	_	Gender=Masc|Number=Sing	11	conj	O	start_char=192|end_char=195
 40	(	(	PUNCT	_	_	41	punct	O	start_char=196|end_char=197
-41	figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	appos:parataxis	O	start_char=197|end_char=203
+41	figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	nmod:appos	O	start_char=197|end_char=203
 42	6.2	6.2	NUM	_	NumType=Card	41	nummod	O	start_char=204|end_char=207
 43	)	)	PUNCT	_	_	41	punct	O	start_char=207|end_char=208
 44	.	.	PUNCT	_	_	1	punct	O	start_char=208|end_char=209
@@ -5667,7 +5667,7 @@
 10	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	start_char=49|end_char=57
 11	teórica	teórico	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	start_char=58|end_char=65
 12	(	(	PUNCT	_	_	13	punct	O	start_char=66|end_char=67
-13	círculos	círculo	NOUN	_	Gender=Masc|Number=Plur	4	appos:parataxis	O	start_char=67|end_char=75
+13	círculos	círculo	NOUN	_	Gender=Masc|Number=Plur	4	nmod:appos	O	start_char=67|end_char=75
 14	vermelhos	vermelho	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	start_char=76|end_char=85
 15	)	)	PUNCT	_	_	13	punct	O	start_char=85|end_char=86
 16	,	,	PUNCT	_	_	17	punct	O	start_char=86|end_char=87
@@ -5691,7 +5691,7 @@
 31	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	start_char=167|end_char=175
 32	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	31	acl	O	start_char=176|end_char=185
 33	(	(	PUNCT	_	_	34	punct	O	start_char=186|end_char=187
-34	tom	tom	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=187|end_char=190
+34	tom	tom	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=187|end_char=190
 35	azul	azul	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=191|end_char=195
 36	continuo	contínuo	ADJ	_	Gender=Masc|Number=Sing	34	amod	O	start_char=196|end_char=204
 37	)	)	PUNCT	_	_	34	punct	O	start_char=204|end_char=205
@@ -5809,7 +5809,7 @@
 26	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	23	obl	O	start_char=113|end_char=118
 27	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	26	amod	O	start_char=119|end_char=129
 28	(	(	PUNCT	_	_	29	punct	O	start_char=130|end_char=131
-29	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	8	appos:parataxis	O	start_char=131|end_char=137
+29	anexos	anexo	NOUN	_	Gender=Masc|Number=Plur	8	nmod:appos	O	start_char=131|end_char=137
 30	2	2	NUM	_	NumType=Card	29	nummod	O	start_char=138|end_char=139
 31	e	e	CCONJ	_	_	32	cc	O	start_char=140|end_char=141
 32	3	3	NUM	_	NumType=Card	30	conj	O	start_char=142|end_char=143
@@ -5927,7 +5927,7 @@
 8	:	:	PUNCT	_	_	4	punct	O	start_char=202|end_char=203
 9	“	“	PUNCT	_	_	11	punct	O	start_char=204|end_char=205
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	O	start_char=205|end_char=208
-11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	appos:parataxis	O	start_char=209|end_char=214
+11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	nmod:appos	O	start_char=209|end_char=214
 12	transversal	transversal	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	start_char=215|end_char=226
 13-14	ao	_	_	_	_	_	_	O	_
 13	a	a	ADP	_	_	15	case	O	_
@@ -6147,7 +6147,7 @@
 27	sísmica	sísmico	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	start_char=111|end_char=118
 28	28-RL-64	28-RL-64	NUM	_	NumType=Card	26	nummod	O	start_char=119|end_char=127
 29	(	(	PUNCT	_	_	30	punct	B_METODO	start_char=128|end_char=129
-30	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=129|end_char=136
+30	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=129|end_char=136
 31	e	e	CCONJ	_	_	30	flat:name	O	start_char=137|end_char=138
 32	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	30	flat:name	O	_
 33	,	,	PUNCT	_	_	30	flat:name	O	start_char=139|end_char=150
@@ -6163,7 +6163,7 @@
 42	de	de	ADP	_	_	43	case	O	start_char=177|end_char=179
 43	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	41	nmod	O	start_char=180|end_char=193
 44	(	(	PUNCT	_	_	45	punct	O	start_char=194|end_char=195
-45	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=195|end_char=200
+45	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=195|end_char=200
 46	1	1	NUM	_	NumType=Card	45	nummod	O	start_char=201|end_char=202
 47	)	)	PUNCT	_	_	45	punct	O	start_char=202|end_char=203
 48	e	e	CCONJ	_	_	50	cc	O	start_char=204|end_char=205
@@ -6174,7 +6174,7 @@
 52	campo	campo	NOUN	_	Gender=Masc|Number=Sing	50	nmod	O	start_char=212|end_char=217
 53	total	total	ADJ	_	Gender=Masc|Number=Sing	52	amod	O	start_char=218|end_char=223
 54	(	(	PUNCT	_	_	55	punct	O	start_char=224|end_char=225
-55	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	appos:parataxis	O	start_char=225|end_char=230
+55	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	4	nmod:appos	O	start_char=225|end_char=230
 56	3	3	NUM	_	NumType=Card	55	nummod	O	start_char=231|end_char=232
 57	)	)	PUNCT	_	_	55	punct	O	start_char=232|end_char=233
 58	.	.	PUNCT	_	_	4	punct	O	start_char=233|end_char=234
