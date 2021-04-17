@@ -377,7 +377,7 @@
 27	retentoras	retentor	ADJ	_	Gender=Fem|Number=Plur	13	conj	O	start_char=131|end_char=141
 28	de	de	ADP	_	_	30	case	O	start_char=142|end_char=144
 29	espessos	espesso	ADJ	_	Gender=Masc|Number=Plur	30	amod	O	start_char=145|end_char=153
-30	pacotes	pacote	NOUN	_	Gender=Masc|Number=Plur	27	nmod	O	start_char=154|end_char=161
+30	pacotes	pacote	NOUN	_	Gender=Masc|Number=Plur	27	obl	O	start_char=154|end_char=161
 31	sedimentares	sedimentar	ADJ	_	Gender=Masc|Number=Plur	30	amod	O	start_char=162|end_char=174
 32	.	.	PUNCT	_	_	5	punct	O	start_char=174|end_char=175
 
@@ -665,7 +665,7 @@
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	12	obl	B_BACIA_TIPO	start_char=78|end_char=83
 16	(	(	PUNCT	_	_	17	punct	O	start_char=84|end_char=85
-17	Pereira	Pereira	PROPN	_	Gender=Masc|Number=Sing	7	appos	O	start_char=85|end_char=92
+17	Pereira	Pereira	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	start_char=85|end_char=92
 18	&	&	PROPN	_	Number=Sing	17	flat:name	O	start_char=93|end_char=94
 19	Feijó	Feijó	PROPN	_	Number=Sing	17	flat:name	B_LOCAL_MUNICIPIO|B_LOCAL_CIDADE	start_char=95|end_char=100
 20	,	,	PUNCT	_	_	17	flat:name	O	start_char=100|end_char=101
@@ -1467,10 +1467,10 @@
 16	,	,	PUNCT	_	_	9	punct	O	start_char=73|end_char=74
 17	quando	quando	ADV	_	_	18	advmod	O	start_char=75|end_char=81
 18-19	acumularam-se	_	_	_	_	_	_	O	start_char=82|end_char=95
-18	acumularam	acumular	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	9	advcl	O	_
+18	acumularam	acumular	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Pass	9	advcl	O	_
 19	se	se	PRON	_	_	18	expl	O	_
 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	start_char=96|end_char=98
-21	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	18	obj	O	start_char=99|end_char=109
+21	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	18	nsubj:pass	O	start_char=99|end_char=109
 22	lacustres	lacustre	ADJ	_	Gender=Masc|Number=Plur	21	amod	O	start_char=110|end_char=119
 23-24	da	_	_	_	_	_	_	O	start_char=120|end_char=122
 23	de	de	ADP	_	_	25	case	O	_
@@ -1501,10 +1501,10 @@
 11	,	,	PUNCT	_	_	7	punct	O	start_char=84|end_char=85
 12	quando	quando	ADV	_	_	13	advmod	O	start_char=86|end_char=92
 13-14	depositaram-se	_	_	_	_	_	_	O	start_char=93|end_char=107
-13	depositaram	depositar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	advcl	O	_
+13	depositaram	depositar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Pass	7	advcl	O	_
 14	se	se	PRON	_	_	13	expl	O	_
 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	start_char=108|end_char=110
-16	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	O	start_char=111|end_char=120
+16	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	13	nsubj:pass	O	start_char=111|end_char=120
 17	negros	negro	ADJ	_	Gender=Masc|Number=Plur	16	amod	O	start_char=121|end_char=127
 18-19	da	_	_	_	_	_	_	O	start_char=128|end_char=130
 18	de	de	ADP	_	_	20	case	O	_
@@ -1547,7 +1547,7 @@
 26	de	de	ADP	_	_	28	case	O	_
 27	os	o	DET	_	Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
 28	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	31	nmod	O	start_char=340|end_char=345
-29	apenas	apenas	ADV	_	_	30	advmod	O	start_char=346|end_char=352
+29	apenas	apenas	ADV	_	_	31	advmod	O	start_char=346|end_char=352
 30	500	500	NUM	_	NumType=Card	31	nummod	O	start_char=353|end_char=356
 31	km²	km²	NOUN	_	Gender=Masc|Number=Plur	32	nsubj	O	start_char=357|end_char=360
 32	são	ser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	O	start_char=361|end_char=364
@@ -4716,9 +4716,9 @@
 1	Deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	_
 3	notar	notar	VERB	_	VerbForm=Inf	1	xcomp	O	start_char=8|end_char=13
-4	,	,	PUNCT	_	_	3	punct	O	start_char=13|end_char=14
+4	,	,	PUNCT	_	_	5	punct	O	start_char=13|end_char=14
 5	entretanto	entretanto	CCONJ	_	_	1	cc	O	start_char=15|end_char=25
-6	,	,	PUNCT	_	_	3	punct	O	start_char=25|end_char=26
+6	,	,	PUNCT	_	_	5	punct	O	start_char=25|end_char=26
 7	que	que	SCONJ	_	_	9	mark	O	start_char=27|end_char=30
 8	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	9	aux:pass	O	start_char=31|end_char=36
 9	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	O	start_char=37|end_char=50
@@ -4932,7 +4932,7 @@
 20	basculamento	basculamento	NOUN	_	Gender=Masc|Number=Sing	18	obj	O	start_char=99|end_char=111
 21	,	,	PUNCT	_	_	22	punct	O	start_char=111|end_char=112
 22	atingindo	atingir	VERB	_	VerbForm=Ger	18	advcl	O	start_char=113|end_char=122
-23	cerca	cerca	ADV	_	_	25	advmod	O	start_char=123|end_char=128
+23	cerca	cerca	ADV	_	_	26	advmod	O	start_char=123|end_char=128
 24	de	de	ADP	_	_	23	fixed	O	start_char=129|end_char=131
 25	800	800	NUM	_	NumType=Card	26	nummod	O	start_char=132|end_char=135
 26	milissegundos	milissegundo	NOUN	_	Gender=Masc|Number=Plur	22	obj	O	start_char=136|end_char=149
@@ -5047,8 +5047,8 @@
 16	a	a	ADP	_	_	18	case	O	start_char=87|end_char=88
 17	700	700	NUM	_	NumType=Card	18	nummod	O	start_char=89|end_char=92
 18	m	m	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	start_char=93|end_char=94
-19	”	”	PUNCT	_	_	9	punct	O	start_char=94|end_char=95
-20	.	.	PUNCT	_	_	9	punct	O	start_char=95|end_char=96
+19	”	”	PUNCT	_	_	18	punct	O	start_char=94|end_char=95
+20	.	.	PUNCT	_	_	8	punct	O	start_char=95|end_char=96
 
 # text = Como se pode observar no mapa de interpretação do anexo 2, o perfil AA’, que corta o referido gráben, se encontra próximo à linha sísmica de Mohriak e Barros (1990), estando, entretanto, deslocado mais para oeste e seguindo uma direção NW/SE perpendicular aos alinhamentos magnéticos das bordas do gráben (mapa de campo total no anexo 2).
 # sent_id = 20-20140904-TESEDSC_0-548
@@ -5067,18 +5067,18 @@
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	anexo	anexo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	start_char=50|end_char=55
 13	2	2	NUM	_	NumType=Card	12	nummod	O	start_char=56|end_char=57
-14	,	,	PUNCT	_	_	4	punct	O	start_char=57|end_char=58
+14	,	,	PUNCT	_	_	3	punct	O	start_char=57|end_char=58
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	start_char=59|end_char=60
 16	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	O	start_char=61|end_char=67
 17	AA	AA	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	start_char=68|end_char=70
 18	’	’	PROPN	_	Number=Sing	17	flat:name	O	start_char=70|end_char=71
-19	,	,	PUNCT	_	_	4	punct	O	start_char=71|end_char=72
+19	,	,	PUNCT	_	_	21	punct	O	start_char=71|end_char=72
 20	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	21	nsubj	O	start_char=73|end_char=76
 21	corta	cortar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	O	start_char=77|end_char=82
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	B_LOCAL_GEO	start_char=83|end_char=84
 23	referido	referir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	O	start_char=85|end_char=93
 24	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	21	obj	O	start_char=94|end_char=100
-25	,	,	PUNCT	_	_	23	punct	O	start_char=100|end_char=101
+25	,	,	PUNCT	_	_	21	punct	O	start_char=100|end_char=101
 26	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	expl	O	start_char=102|end_char=104
 27	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	start_char=105|end_char=113
 28	próximo	próximo	ADV	_	_	27	advmod	O	start_char=114|end_char=121
@@ -5112,7 +5112,7 @@
 55-56	aos	_	_	_	_	_	_	O	start_char=256|end_char=259
 55	a	a	ADP	_	_	57	case	O	_
 56	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	57	det	O	_
-57	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	50	obl	O	start_char=260|end_char=272
+57	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	54	obl	O	start_char=260|end_char=272
 58	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	57	amod	O	start_char=273|end_char=283
 59-60	das	_	_	_	_	_	_	O	start_char=284|end_char=287
 59	de	de	ADP	_	_	61	case	O	_
@@ -5329,9 +5329,9 @@
 1	Deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	_
 3	notar	notar	VERB	_	VerbForm=Inf	1	xcomp	O	start_char=8|end_char=13
-4	,	,	PUNCT	_	_	3	punct	O	start_char=13|end_char=14
-5	entretanto	entretanto	CCONJ	_	_	3	cc	O	start_char=15|end_char=25
-6	,	,	PUNCT	_	_	3	punct	O	start_char=25|end_char=26
+4	,	,	PUNCT	_	_	5	punct	O	start_char=13|end_char=14
+5	entretanto	entretanto	CCONJ	_	_	1	cc	O	start_char=15|end_char=25
+6	,	,	PUNCT	_	_	5	punct	O	start_char=25|end_char=26
 7	que	que	SCONJ	_	_	11	mark	O	start_char=27|end_char=30
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	start_char=31|end_char=32
 9	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	O	start_char=33|end_char=39
@@ -5427,7 +5427,7 @@
 9	em	em	ADP	_	_	11	case	O	_
 10	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	O	_
 11	direção	direção	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	start_char=47|end_char=54
-12	,	,	PUNCT	_	_	14	punct	O	start_char=54|end_char=55
+12	,	,	PUNCT	_	_	2	punct	O	start_char=54|end_char=55
 13	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	14	det	O	start_char=56|end_char=59
 14	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	O	start_char=60|end_char=69
 15	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	start_char=70|end_char=80
@@ -5764,7 +5764,7 @@
 45-46	pela	_	_	_	_	_	_	O	start_char=256|end_char=260
 45	por	por	ADP	_	_	47	case	O	_
 46	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	O	_
-47	área	área	NOUN	_	Gender=Fem|Number=Sing	44	obl	O	start_char=261|end_char=265
+47	área	área	NOUN	_	Gender=Fem|Number=Sing	44	obl:agent	O	start_char=261|end_char=265
 48	esbranquiçada	esbranquiçado	ADJ	_	Gender=Fem|Number=Sing	47	amod	O	start_char=266|end_char=279
 49-50	ao	_	_	_	_	_	_	O	start_char=280|end_char=282
 49	a	a	ADP	_	_	51	case	O	_
@@ -5820,7 +5820,7 @@
 # sent_id = 20-20140904-TESEDSC_0-570-2
 1-2	Pode-se	_	_	_	_	_	_	O	start_char=197|end_char=204
 1	Pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-2	se	se	PRON	_	_	3	expl	O	_
+2	se	se	PRON	_	_	1	expl	O	_
 3	verificar	verificar	VERB	_	VerbForm=Inf	1	xcomp	O	start_char=205|end_char=214
 4-5	neste	_	_	_	_	_	_	O	start_char=215|end_char=220
 4	em	em	ADP	_	_	6	case	O	_
@@ -5905,7 +5905,7 @@
 23	como	como	SCONJ	_	_	24	mark	O	start_char=149|end_char=153
 24	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	O	start_char=154|end_char=160
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	start_char=161|end_char=162
-26	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	24	obj	B_LOCAL_MUNICIPIO	start_char=163|end_char=169
+26	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	B_LOCAL_MUNICIPIO	start_char=163|end_char=169
 27	de	de	ADP	_	_	28	case	O	start_char=170|end_char=172
 28	inversão	inversão	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	start_char=173|end_char=181
 29-30	da	_	_	_	_	_	_	O	start_char=182|end_char=184
@@ -5969,7 +5969,7 @@
 46	sedimentares	sedimentar	ADJ	_	Gender=Fem|Number=Plur	45	amod	O	start_char=379|end_char=391
 47	depositadas	depositar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	45	acl	O	start_char=392|end_char=403
 48	,	,	PUNCT	_	_	53	punct	O	start_char=403|end_char=404
-49	e	e	CCONJ	_	_	53	cc	O	start_char=405|end_char=406
+49	e	e	CCONJ	_	_	50	cc	O	start_char=405|end_char=406
 50	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	26	conj	O	start_char=407|end_char=412
 51-52	na	_	_	_	_	_	_	O	_
 51	em	em	ADP	_	_	53	case	O	_

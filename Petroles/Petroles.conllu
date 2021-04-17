@@ -20359,10 +20359,10 @@
 1	Dentre	Dentre	ADP	_	_	2	case	O	_
 2	eles	eles	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	obl	O	_
 3-4	destacam-se	_	_	_	_	_	_	O	_
-3	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+3	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 4	se	se	PRON	_	_	3	expl	O	_
 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
-6	métodos	método	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	O	_
+6	métodos	método	NOUN	_	Gender=Masc|Number=Plur	3	nsubj:pass	O	_
 7	fotométrico	fotométrico	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	SpaceAfter=No
 8	,	,	PUNCT	_	_	9	punct	O	_
 9	cromatográfico	cromatográfico	ADJ	_	Gender=Masc|Number=Sing	7	conj	O	_
@@ -20571,7 +20571,7 @@
 40	50	50	NUM	_	NumType=Card	38	nummod	O	_
 41	a	a	ADP	_	_	42	case	O	_
 42	60%	60%	NUM	_	NumType=Card	40	conj	O	SpaceAfter=No
-43	.	.	PUNCT	_	_	1	punct	O	_
+43	.	.	PUNCT	_	_	4	punct	O	_
 
 # text = Se produzido a partir de fontes renováveis (etanol e água) ou tecnologias limpas, como as células fotovoltaicas, turbinas eólicas e turbinas de hidrelétricas, o hidrogênio torna-se um combustível renovável e ecologicamente correto.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-41
@@ -20619,9 +20619,9 @@
 # text = Este processo realiza-se em duas etapas: (i) A reação decompõe o combustível em água e monóxido de carbono; (ii) O monóxido de carbono e a água são convertidos em dióxido de carbono e hidrogênio.
 # sent_id = 10-20150122-MONOGRAFIA_0_intro-54
 1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	O	_
-2	processo	processo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+2	processo	processo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj:pass	O	_
 3-4	realiza-se	_	_	_	_	_	_	O	_
-3	realiza	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+3	realiza	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 4	se	se	PRON	_	_	3	expl	O	Gender=Masc
 5	em	em	ADP	_	_	7	case	O	_
 6	duas	dois	NUM	_	NumType=Card	7	nummod	O	_
@@ -20826,10 +20826,10 @@
 2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	SpacesAfter=\s\s
 4-5	apresenta-se	_	_	_	_	_	_	O	SpacesAfter=\s\s
-4	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+4	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 5	se	se	PRON	_	_	4	expl	O	Gender=Masc
 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	O	SpacesAfter=\s\s
-7	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	SpacesAfter=\s\s
+7	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	SpacesAfter=\s\s
 8-9	do	_	_	_	_	_	_	O	SpacesAfter=\s\s
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
@@ -20844,7 +20844,7 @@
 17	Zeólita	Zeólita	PROPN	_	Gender=Fem|Number=Sing	14	conj	O	SpacesAfter=\s\s
 18	Y/Nafion®	Y/Nafion®	PROPN	_	Number=Sing	17	compound	B_LITOLOGIA	SpaceAfter=No
 19	,	,	PUNCT	_	_	4	punct	O	SpacesAfter=\s\s
-20	os	o	DET	_	Gender=Masc|Number=Plur|PronType=Art	21	det	O	SpacesAfter=\s\s
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	SpacesAfter=\s\s
 21	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	23	obl	O	SpacesAfter=\s\s
 22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	O	SpacesAfter=\s\s
 23	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	acl:relcl	O	SpacesAfter=\s\s
@@ -21090,9 +21090,9 @@
 5	mundial	mundial	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	SpaceAfter=No
 6	,	,	PUNCT	_	_	3	punct	O	_
 7-8	buscam-se	_	_	_	_	_	_	O	_
-7	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+7	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 8	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	7	expl	O	_
-9	alternativas	alternativa	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	B_LOCAL_ESTADO	_
+9	alternativas	alternativa	NOUN	_	Gender=Fem|Number=Plur	7	nsubj:pass	B_LOCAL_ESTADO	_
 10	renováveis	renovável	ADJ	_	Gender=Fem|Number=Plur	9	amod	O	_
 11	para	para	SCONJ	_	_	12	mark	O	_
 12	ampliar	ampliar	VERB	_	VerbForm=Inf	7	advcl	O	_
@@ -21131,10 +21131,10 @@
 3	contexto	contexto	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	O	_
 5-6	destaca-se	_	_	_	_	_	_	O	_
-5	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+5	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 6	se	se	PRON	_	_	5	expl	O	Gender=Masc
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	B_PRODUTO	_
-8	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
+8	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
 9	como	como	ADP	_	_	11	case	O	_
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	B_LOCAL_ESTADO	_
 11	alternativa	alternativa	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	O	_
@@ -21182,10 +21182,10 @@
 23	alcalino	alcalino	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	SpaceAfter=No
 24	,	,	PUNCT	_	_	15	punct	O	_
 25-26	verifica-se	_	_	_	_	_	_	O	_
-25	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+25	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 26	se	se	PRON	_	_	25	expl	O	Gender=Unsp
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
-28	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	O	_
+28	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	25	nsubj:pass	O	_
 29	em	em	SCONJ	_	_	30	mark	O	_
 30	tratar	tratar	VERB	_	VerbForm=Inf	28	acl	O	_
 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
@@ -21535,10 +21535,10 @@
 12	Cone	Cone	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	SpaceAfter=No
 13	,	,	PUNCT	_	_	5	punct	O	_
 14-15	destacam-se	_	_	_	_	_	_	O	_
-14	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+14	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 15	se	se	PRON	_	_	14	expl	O	Gender=Masc
 16	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	O	_
-17	espécies	espécie	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	O	_
+17	espécies	espécie	NOUN	_	Gender=Fem|Number=Plur	14	nsubj:pass	O	_
 18	de	de	ADP	_	_	19	case	O	_
 19	corais	coral	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
 20	azooxantelados	azooxantelado	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	SpaceAfter=No
@@ -21685,10 +21685,10 @@
 2	geral	geral	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	SpaceAfter=No
 3	,	,	PUNCT	_	_	2	punct	O	_
 4-5	obteve-se	_	_	_	_	_	_	O	_
-4	obteve	obter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+4	obteve	obter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 5	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	expl	O	_
 6	boa	bom	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
-7	concordância	concordância	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
+7	concordância	concordância	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	_
 8-9	nas	_	_	_	_	_	_	O	_
 8	em	em	ADP	_	_	10	case	O	_
 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
@@ -21980,13 +21980,13 @@
 # text = Encontram-se na literatura formulações geopoliméricas básicas que atendem às especificações da indústria de petróleo, incluindo reologia, resistência à compressão e tempo de espessamento.
 # sent_id = 1-20140905-TESEDSC_0_resumo-5
 1-2	Encontram-se	_	_	_	_	_	_	O	_
-1	Encontram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+1	Encontram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	_
 3-4	na	_	_	_	_	_	_	O	_
 3	em	em	ADP	_	_	5	case	O	_
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
 5	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	1	obl	O	_
-6	formulações	formulação	NOUN	_	Gender=Fem|Number=Plur	1	nsubj	O	_
+6	formulações	formulação	NOUN	_	Gender=Fem|Number=Plur	1	nsubj:pass	O	_
 7	geopoliméricas	geopolimérico	ADJ	_	Gender=Fem|Number=Plur	6	amod	O	_
 8	básicas	básico	ADJ	_	Gender=Fem|Number=Plur	6	amod	O	_
 9	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	10	nsubj	O	_
@@ -22024,10 +22024,10 @@
 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	O	SpacesAfter=\s\s
 5-6	desenvolveu-se	_	_	_	_	_	_	O	SpacesAfter=\s\s
-5	desenvolveu	desenvolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+5	desenvolveu	desenvolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 6	se	se	PRON	_	_	5	expl	O	Gender=Fem
 7	novas	novo	ADJ	_	Gender=Fem|Number=Plur	8	amod	O	_
-8	formulações	formulação	NOUN	_	Gender=Fem|Number=Plur	5	obj	O	_
+8	formulações	formulação	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	O	_
 9	geopoliméricas	geopolimérico	ADJ	_	Gender=Fem|Number=Plur	8	amod	O	_
 10-11	à	_	_	_	_	_	_	O	_
 10	a	a	ADP	_	_	12	case	O	_
@@ -22100,10 +22100,10 @@
 18	)	)	PUNCT	_	_	11	punct	O	SpaceAfter=No
 19	,	,	PUNCT	_	_	5	punct	O	_
 20-21	realizou-se	_	_	_	_	_	_	O	_
-20	realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+20	realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 21	se	se	PRON	_	_	20	expl	O	Gender=Masc
 22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	O	SpacesAfter=\s\s
-23	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	O	SpacesAfter=\s\s
+23	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	20	nsubj:pass	O	SpacesAfter=\s\s
 24	de	de	ADP	_	_	25	case	O	SpacesAfter=\s\s
 25	misturas	mistura	NOUN	_	Gender=Fem|Number=Plur	23	nmod	O	SpacesAfter=\s\s
 26	secas	seco	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	SpacesAfter=\s\s
@@ -22137,11 +22137,11 @@
 # text = Realizou-se o primeiro estudo mecânico triaxial desta classe de pastas.
 # sent_id = 1-20140905-TESEDSC_0_resumo-9
 1-2	Realizou-se	_	_	_	_	_	_	O	_
-1	Realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+1	Realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	Gender=Masc
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 4	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	5	amod	O	SpacesAfter=\s\s
-5	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	O	SpacesAfter=\s\s
+5	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	1	nsubj:pass	O	SpacesAfter=\s\s
 6	mecânico	mecânico	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	SpacesAfter=\s\s
 7	triaxial	triaxial	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	SpacesAfter=\s\s
 8-9	desta	_	_	_	_	_	_	O	SpacesAfter=\s\s
@@ -22300,11 +22300,11 @@
 # text = Apresentam-se as principais ações governamentais que restringem e incentivam a produção e o consumo de biocombustíveis no país, além da análise de seus efeitos sobre a estrutura da indústria.
 # sent_id = 120-20121105-TESEMSC_0_resumo-3
 1-2	Apresentam-se	_	_	_	_	_	_	O	_
-1	Apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+1	Apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	Gender=Fem
 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
 4	principais	principal	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
-5	ações	ação	NOUN	_	Gender=Fem|Number=Plur	1	nsubj	O	_
+5	ações	ação	NOUN	_	Gender=Fem|Number=Plur	1	nsubj:pass	O	_
 6	governamentais	governamental	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
 7	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	8	nsubj	O	_
 8	restringem	restringer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	O	_
@@ -22614,9 +22614,9 @@
 18	,	,	PUNCT	_	_	17	punct	O	_
 19	porém	porém	CCONJ	_	_	20	cc	O	_
 20-21	observou-se	_	_	_	_	_	_	O	_
-20	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	O	_
+20	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	9	conj	O	_
 21	se	se	PRON	_	_	20	expl	O	Gender=Fem
-22	conversão	conversão	NOUN	_	Gender=Fem|Number=Sing	20	obj	O	_
+22	conversão	conversão	NOUN	_	Gender=Fem|Number=Sing	20	nsubj:pass	O	_
 23	mínima	pequeno	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
 24-25	neste	_	_	_	_	_	_	O	_
 24	em	em	ADP	_	_	26	case	O	_
@@ -22920,10 +22920,10 @@
 2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	SpacesAfter=\s\s
 4-5	estudou-se	_	_	_	_	_	_	O	SpacesAfter=\s\s
-4	estudou	estudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+4	estudou	estudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 5	se	se	PRON	_	_	4	expl	O	Gender=Masc
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	SpacesAfter=\s\s
-7	degradação	degradação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	SpacesAfter=\s\s
+7	degradação	degradação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	SpacesAfter=\s\s
 8	oxidativa	oxidativo	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	SpacesAfter=\s\s
 9	usando	usar	VERB	_	VerbForm=Ger	4	advcl	B_QUIMICA	SpacesAfter=\s\s
 10	enzima	enzima	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	SpacesAfter=\s\s
@@ -23004,10 +23004,10 @@
 # text = Determinou-se a recuperação, os limites de detecção e quantificação, e a repetitividade das análises com o objetivo de validar parcialmente o método.
 # sent_id = 22-20150122-MONOGRAFIA_0_resumo-7
 1-2	Determinou-se	_	_	_	_	_	_	O	_
-1	Determinou	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+1	Determinou	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 2	se	se	PRON	_	_	1	expl	O	Gender=Fem
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
-4	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	O	SpaceAfter=No
+4	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	1	nsubj:pass	O	SpaceAfter=No
 5	,	,	PUNCT	_	_	7	punct	O	_
 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	O	_
 7	limites	limite	NOUN	_	Gender=Masc|Number=Plur	4	conj	O	_
@@ -23018,7 +23018,7 @@
 12	,	,	PUNCT	_	_	15	punct	O	_
 13	e	e	CCONJ	_	_	15	cc	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
-15	repetitividade	repetitividade	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	O	_
+15	repetitividade	repetitividade	NOUN	_	Gender=Fem|Number=Sing	4	conj	O	_
 16-17	das	_	_	_	_	_	_	O	_
 16	de	de	ADP	_	_	18	case	O	_
 17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
@@ -23187,11 +23187,11 @@
 4	validação	validação	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
 5	parcial	parcial	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
 6-7	constatou-se	_	_	_	_	_	_	O	_
-6	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+6	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 7	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	expl	O	_
 8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 9	boa	bom	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
-10	repetitividade	repetitividade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
+10	repetitividade	repetitividade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	O	_
 11-12	dos	_	_	_	_	_	_	O	_
 11	de	de	ADP	_	_	13	case	O	_
 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
@@ -23838,10 +23838,10 @@
 3	simulações	simulação	NOUN	_	Gender=Fem|Number=Plur	5	obl	O	SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	O	_
 5-6	apresenta-se	_	_	_	_	_	_	O	_
-5	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+5	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	O	_
 6	se	se	PRON	_	_	5	expl	O	Gender=Fem
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
-8	influência	influência	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
+8	influência	influência	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	O	_
 9-10	do	_	_	_	_	_	_	O	_
 9	de	de	ADP	_	_	11	case	O	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
@@ -23863,12 +23863,12 @@
 24	,	,	PUNCT	_	_	26	punct	O	_
 25	e	e	CCONJ	_	_	26	cc	O	_
 26-27	propõe-se	_	_	_	_	_	_	O	_
-26	propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	O	_
+26	propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	5	conj	O	_
 27	se	se	PRON	_	_	26	expl	O	Gender=Masc
-28	fluxograma	fluxograma	NOUN	_	Gender=Masc|Number=Sing	26	obj	O	_
+28	fluxograma	fluxograma	NOUN	_	Gender=Masc|Number=Sing	26	nsubj:pass	O	_
 29	simplificado	simplificado	ADJ	_	Gender=Masc|Number=Sing	28	amod	O	SpaceAfter=No
 30	,	,	PUNCT	_	_	31	punct	O	_
-31	simulado	simular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	29	conj	O	_
+31	simulado	simular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	28	acl	O	_
 32-33	no	_	_	_	_	_	_	O	_
 32	em	em	ADP	_	_	34	case	O	_
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
@@ -24001,17 +24001,17 @@
 12	de	de	ADP	_	_	13	case	O	_
 13	A.	A.	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
 14	parasiticus	parasiticus	ADJ	_	Gender=Masc|Number=Sing	13	compound	O	_
-15	presente	presente	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+15	presente	presente	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
 16-17	no	_	_	_	_	_	_	O	_
 16	em	em	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	extrato	extrato	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
 19	bruto	bruto	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
 20-21	investigou-se	_	_	_	_	_	_	O	_
-20	investigou	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+20	investigou	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 21	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	expl	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
-23	especificidade	especificidade	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	O	_
+23	especificidade	especificidade	NOUN	_	Gender=Fem|Number=Sing	20	nsubj:pass	O	_
 24-25	da	_	_	_	_	_	_	O	_
 24	de	de	ADP	_	_	26	case	O	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
@@ -24033,11 +24033,11 @@
 # text = Investigou-se também o efeito do pH e temperatura sobre atividade desta enzima.
 # sent_id = 48-20150126-MONOGRAFIA_0_resumo-12
 1-2	Investigou-se	_	_	_	_	_	_	O	_
-1	Investigou	Investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+1	Investigou	Investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
 3	também	também	ADV	_	_	1	advmod	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
-5	efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+5	efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	1	nsubj:pass	O	_
 6-7	do	_	_	_	_	_	_	O	_
 6	de	de	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
@@ -25424,10 +25424,10 @@
 31	,	,	PUNCT	_	_	33	punct	O	_
 32	e	e	CCONJ	_	_	33	cc	O	_
 33-34	aplicou-se	_	_	_	_	_	_	O	_
-33	aplicou	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	conj	O	_
+33	aplicou	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	20	conj	O	_
 34	se	se	PRON	_	_	33	expl	O	Gender=Fem
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
-36	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	O	_
+36	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	33	nsubj:pass	O	_
 37	de	de	ADP	_	_	38	case	O	_
 38	Análise	análise	PROPN	_	Gender=Masc|Number=Sing	36	nmod	O	_
 39	Fatorial	Fatorial	PROPN	_	Gender=Fem|Number=Sing	38	flat:name	O	SpaceAfter=No
