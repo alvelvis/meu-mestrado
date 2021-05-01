@@ -819,7 +819,7 @@
 6	de	de	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B_BACIA_TIPO	start_char=30|end_char=35
-9	,	,	PUNCT	_	_	41	punct	O	start_char=35|end_char=36
+9	,	,	PUNCT	_	_	3	punct	O	start_char=35|end_char=36
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	O	start_char=37|end_char=40
 11	espessa	espesso	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	start_char=41|end_char=48
 12	cunha	cunha	NOUN	_	Gender=Fem|Number=Sing	41	nsubj	B_LOCAL_MUNICIPIO	start_char=49|end_char=54
@@ -1352,11 +1352,11 @@
 # sent_id = 20-20140904-TESEDSC_0-50
 1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	start_char=0|end_char=4
 2	área	área	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	start_char=5|end_char=9
-3	,	,	PUNCT	_	_	2	punct	O	start_char=9|end_char=10
+3	,	,	PUNCT	_	_	4	punct	O	start_char=9|end_char=10
 4	por	por	CCONJ	_	_	8	cc	O	MWEPOS=CCONJ|start_char=11|end_char=14
 5	sua	sua	ADP	_	_	4	fixed	O	start_char=15|end_char=18
 6	vez	vez	NOUN	_	Gender=Masc|Number=Sing	4	fixed	O	start_char=19|end_char=22
-7	,	,	PUNCT	_	_	8	punct	O	start_char=22|end_char=23
+7	,	,	PUNCT	_	_	4	punct	O	start_char=22|end_char=23
 8	corresponde	corresponder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	start_char=24|end_char=35
 9	a	a	ADP	_	_	11	case	O	start_char=36|end_char=37
 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	O	start_char=38|end_char=41
@@ -6089,7 +6089,7 @@
 # sent_id = 20-20140904-TESEDSC_0-560
 1	Figura	figura	NOUN	_	Number=Sing	0	root	O	start_char=4|end_char=10
 2	6.2	6.2	NUM	_	Number=Sing	1	nummod	O	start_char=11|end_char=14
-3	Perfil	Perfil	PROPN	_	Number=Sing	1	nmod	O	start_char=15|end_char=21
+3	Perfil	Perfil	PROPN	_	Number=Sing	1	appos	O	start_char=15|end_char=21
 4	AA’	AA’	PROPN	_	Number=Sing	3	flat:name	O	start_char=22|end_char=24
 5	sobre	sobre	ADP	_	_	7	case	O	start_char=26|end_char=31
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	start_char=32|end_char=33
