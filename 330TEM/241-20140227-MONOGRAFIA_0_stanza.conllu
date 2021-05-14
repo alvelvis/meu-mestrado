@@ -58,7 +58,7 @@
 15	,	,	PUNCT	_	_	12	punct	O	_
 16	pois	pois	SCONJ	_	_	28	mark	O	_
 17	,	,	PUNCT	_	_	20	punct	O	_
-18-19	na	_	_	_	_	_	_	O	_
+18-19	na	_	_	_	_	_	_	_	_
 18	em	em	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	produção	produção	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
@@ -73,12 +73,12 @@
 29	que	que	SCONJ	_	_	40	mark	O	_
 30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	O	_
 31	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	40	nsubj	O	_
-32-33	à	_	_	_	_	_	_	O	_
+32-33	à	_	_	_	_	_	_	_	_
 32	a	a	ADP	_	_	35	mark	O	_
 33	a	a	SCONJ	_	_	35	mark	O	_
 34	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	35	aux:pass	O	_
 35	misturados	misturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	31	acl	O	_
-36-37	ao	_	_	_	_	_	_	O	_
+36-37	ao	_	_	_	_	_	_	_	_
 36	a	a	ADP	_	_	38	case	O	_
 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	O	_
 38	CAP	CAP	PROPN	_	Gender=Masc|Number=Sing	35	obl	O	_
@@ -94,7 +94,7 @@
 48	e	e	CCONJ	_	_	49	cc	O	_
 49	oferecendo	oferecer	VERB	_	VerbForm=Ger	42	conj	O	_
 50	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	49	obj	O	_
-51-52	aos	_	_	_	_	_	_	O	_
+51-52	aos	_	_	_	_	_	_	_	_
 51	a	a	ADP	_	_	53	case	O	_
 52	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	O	_
 53	operários	operário	NOUN	_	Gender=Masc|Number=Plur	49	obl	O	_
@@ -119,11 +119,11 @@
 10	água	água	NOUN	_	Gender=Fem|Number=Sing	8	obj	B=FLUIDO	_
 11	,	,	PUNCT	_	_	12	punct	O	_
 12	resultando	resultar	VERB	_	VerbForm=Ger	8	advcl	O	_
-13-14	na	_	_	_	_	_	_	O	_
+13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	solidificação	solidificação	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
-16-17	do	_	_	_	_	_	_	O	_
+16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
@@ -144,12 +144,12 @@
 1	Com	com	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	avanço	avanço	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
 7	,	,	PUNCT	_	_	3	punct	O	_
-8-9	procura-se	_	_	_	_	_	_	O	_
+8-9	procura-se	_	_	_	_	_	_	_	_
 8	procura	procurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 9	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	expl	O	_
 10	,	,	PUNCT	_	_	8	punct	O	_
@@ -167,13 +167,13 @@
 22	e	e	CCONJ	_	_	24	cc	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	durabilidade	durabilidade	NOUN	_	Gender=Fem|Number=Sing	21	conj	O	_
-25-26	das	_	_	_	_	_	_	O	_
+25-26	das	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	O	_
 27	misturas	mistura	NOUN	_	Gender=Fem|Number=Plur	24	nmod	O	_
 28	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	27	amod	B=LITOLOGIA	_
 29	e/ou	e/ou	CCONJ	_	_	32	punct	O	_
-30-31	do	_	_	_	_	_	_	O	_
+30-31	do	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	32	case	O	_
 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
 32	ligante	ligante	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
@@ -195,25 +195,25 @@
 10	,	,	PUNCT	_	_	3	punct	O	_
 11	cada	cada	DET	_	Gender=Fem|Number=Sing|PronType=Tot	12	det	O	_
 12	uma	um	NUM	_	NumType=Card	3	nsubj:pass	O	_
-13-14	delas	_	_	_	_	_	_	O	_
+13-14	delas	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	14	case	O	_
 14	elas	ele	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	12	nmod	O	_
 15	oferecendo	oferecer	VERB	_	VerbForm=Ger	3	advcl	O	_
 16	vantagens	vantagem	NOUN	_	Gender=Fem|Number=Plur	15	obj	O	_
-17-18	na	_	_	_	_	_	_	O	_
+17-18	na	_	_	_	_	_	_	_	_
 17	em	em	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	mitigação	mitigação	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
-20-21	dos	_	_	_	_	_	_	O	_
+20-21	dos	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	O	_
 22	efeitos	efeito	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
-23-24	das	_	_	_	_	_	_	O	_
+23-24	das	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
 25	patologias	patologia	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
 26	apresentadas	apresentar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	acl	O	_
-27-28	pelos	_	_	_	_	_	_	O	_
+27-28	pelos	_	_	_	_	_	_	_	_
 27	por	por	ADP	_	_	29	case	O	_
 28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	O	_
 29	pavimentos	pavimento	NOUN	_	Gender=Masc|Number=Plur	26	obl:agent	O	_
@@ -230,7 +230,7 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	nanotecnologia	nanotecnologia	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
 3	visa	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-4-5	à	_	_	_	_	_	_	O	_
+4-5	à	_	_	_	_	_	_	_	_
 4	a	a	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	criação	criação	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
@@ -242,11 +242,11 @@
 12	e	e	CCONJ	_	_	13	cc	O	_
 13	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	9	conj	O	_
 14	através	através	ADV	_	_	3	advmod	O	_
-15-16	do	_	_	_	_	_	_	O	_
+15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
 17	controle	controle	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
-18-19	da	_	_	_	_	_	_	O	_
+18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
@@ -269,7 +269,7 @@
 37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	O	_
 38	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	36	obj	O	_
 39	macroscópicas	macroscópico	ADJ	_	Gender=Fem|Number=Plur	38	amod	O	_
-40-41	do	_	_	_	_	_	_	O	_
+40-41	do	_	_	_	_	_	_	_	_
 40	de	de	ADP	_	_	42	case	O	_
 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	O	_
 42	material	material	NOUN	_	Gender=Masc|Number=Sing	38	nmod	O	_
@@ -319,7 +319,7 @@
 3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	O	_
 4	adicionada	adicionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 5	diretamente	diretamente	ADV	_	_	4	advmod	O	_
-6-7	na	_	_	_	_	_	_	O	_
+6-7	na	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	4	obl	B=QUÍMICA	_
@@ -369,7 +369,7 @@
 2	principais	principal	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
 3	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	O	_
 4	específicos	específico	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
-5-6	do	_	_	_	_	_	_	O	_
+5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	_	_	8	case	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 7	presente	presente	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
@@ -381,11 +381,11 @@
 # text = Formação do aluno na área de asfaltos;
 # sent_id = 241-20140227-MONOGRAFIA_0-17
 1	Formação	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2-3	do	_	_	_	_	_	_	O	_
+2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 4	aluno	aluno	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
-5-6	na	_	_	_	_	_	_	O	_
+5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	área	área	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
@@ -416,7 +416,7 @@
 32	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	31	acl	O	_
 33	fazendo	fazer	VERB	_	VerbForm=Ger	29	advcl	O	_
 34	uso	uso	NOUN	_	Gender=Masc|Number=Sing	33	obj	O	_
-35-36	dos	_	_	_	_	_	_	O	_
+35-36	dos	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	38	case	O	_
 36	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	O	_
 37	seguintes	seguinte	ADJ	_	Gender=Masc|Number=Plur	38	amod	O	_
@@ -481,7 +481,7 @@
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 9	principal	principal	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
 10	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	7	xcomp	O	_
-11-12	da	_	_	_	_	_	_	O	_
+11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	10	nmod	B=QUÍMICA	_
@@ -517,7 +517,7 @@
 14	sua	sua	ADP	_	_	15	case	O	_
 15	vez	vez	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
 16	,	,	PUNCT	_	_	13	punct	O	_
-17-18	dividem-se	_	_	_	_	_	_	O	_
+17-18	dividem-se	_	_	_	_	_	_	_	_
 17	dividem	dividir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
 18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	expl	O	_
 19	em	em	ADP	_	_	20	case	O	_
@@ -545,7 +545,7 @@
 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
 6	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 7	através	através	ADV	_	_	6	advmod	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	destilação	destilação	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
@@ -555,7 +555,7 @@
 14	de	de	ADP	_	_	15	case	O	_
 15	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=FLUIDO	_
 16	,	,	PUNCT	_	_	6	punct	O	_
-17-18	na	_	_	_	_	_	_	O	_
+17-18	na	_	_	_	_	_	_	_	_
 17	em	em	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	qual	qual	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	31	obl	O	_
@@ -571,7 +571,7 @@
 29	)	)	PUNCT	_	_	24	punct	O	_
 30	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	aux:pass	O	_
 31	retiradas	retirar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	10	acl:relcl	O	_
-32-33	no	_	_	_	_	_	_	O	_
+32-33	no	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
 34	refino	refino	NOUN	_	Gender=Masc|Number=Sing	31	obl	O	_
@@ -583,7 +583,7 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	produto	produto	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	O	_
 3	resultante	resultante	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
-4-5	deste	_	_	_	_	_	_	O	_
+4-5	deste	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	O	_
 6	processo	processo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
@@ -640,7 +640,7 @@
 31	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	29	nmod	O	_
 32	,	,	PUNCT	_	_	33	punct	O	_
 33	conveniente	conveniente	ADJ	_	Gender=Masc|Number=Sing	29	amod	O	_
-34-35	ao	_	_	_	_	_	_	O	_
+34-35	ao	_	_	_	_	_	_	_	_
 34	a	a	ADP	_	_	37	case	O	_
 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
 36	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	37	det	O	_
@@ -739,7 +739,7 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	presença	presença	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	O	_
 3	,	,	PUNCT	_	_	7	punct	O	_
-4-5	na	_	_	_	_	_	_	O	_
+4-5	na	_	_	_	_	_	_	_	_
 4	em	em	ADP	_	_	7	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 6	mesma	mesmo	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
@@ -769,7 +769,7 @@
 2	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	3	det	O	_
 3	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	5	obl	O	_
 4	,	,	PUNCT	_	_	3	punct	O	_
-5-6	destacam-se	_	_	_	_	_	_	O	_
+5-6	destacam-se	_	_	_	_	_	_	_	_
 5	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	5	expl	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
@@ -778,7 +778,7 @@
 10	bolhas	bolha	NOUN	_	Gender=Fem|Number=Plur	8	nmod	O	_
 11	e	e	CCONJ	_	_	12	cc	O	_
 12	espumas	espuma	NOUN	_	Gender=Fem|Number=Plur	10	conj	O	_
-13-14	na	_	_	_	_	_	_	O	_
+13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
@@ -788,7 +788,7 @@
 19	e	e	CCONJ	_	_	21	cc	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	adsorção	adsorção	NOUN	_	Gender=Fem|Number=Sing	18	conj	O	_
-22-23	nas	_	_	_	_	_	_	O	_
+22-23	nas	_	_	_	_	_	_	_	_
 22	em	em	ADP	_	_	24	case	O	_
 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
 24	superfícies	superfície	NOUN	_	Gender=Fem|Number=Plur	21	nmod	O	_
@@ -796,7 +796,7 @@
 26	interfaces	interface	NOUN	_	Gender=Fem|Number=Plur	24	conj	O	_
 27	líquido-líquido	líquido-líquido	ADJ	_	Gender=Masc|Number=Sing	26	amod	O	_
 28	,	,	PUNCT	_	_	30	punct	O	_
-29-30	líquido-gás	_	_	_	_	_	_	O	_
+29-30	líquido-gás	_	_	_	_	_	_	_	_
 29	laquido	laquido	ADJ	_	Gender=Masc|Number=Sing	30	amod	O	_
 30	ís	ís	NOUN	_	Gender=Masc|Number=Sing	24	conj	O	_
 31	e	e	CCONJ	_	_	32	cc	O	_
@@ -805,7 +805,7 @@
 34	promovendo	promover	VERB	_	VerbForm=Ger	5	advcl	O	_
 35	redução	redução	NOUN	_	Gender=Fem|Number=Sing	34	obj	O	_
 36	significativa	significativo	ADJ	_	Gender=Fem|Number=Sing	35	amod	O	_
-37-38	da	_	_	_	_	_	_	O	_
+37-38	da	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	39	case	O	_
 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
 39	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
@@ -818,7 +818,7 @@
 # text = 3-2-1-Classificação dos tensoativos
 # sent_id = 241-20140227-MONOGRAFIA_0-34
 1	3-2-1-Classificação	3-2-1-classificação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2-3	dos	_	_	_	_	_	_	O	_
+2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
 4	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
@@ -876,7 +876,7 @@
 16	íons	íom	NOUN	_	Gender=Masc|Number=Plur	15	obj	O	_
 17	carregados	carregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	O	_
 18	positivamente	positivamente	ADV	_	_	17	advmod	O	_
-19-20	na	_	_	_	_	_	_	O	_
+19-20	na	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
@@ -931,7 +931,7 @@
 16	íons	íom	NOUN	_	Gender=Masc|Number=Plur	15	obj	O	_
 17	carregados	carregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	O	_
 18	negativamente	negativamente	ADV	_	_	17	advmod	O	_
-19-20	na	_	_	_	_	_	_	O	_
+19-20	na	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
@@ -945,7 +945,7 @@
 2	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	O	_
 3	mais	mais	ADV	_	_	4	advmod	O	_
 4	difundidos	difundir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
-5-6	deste	_	_	_	_	_	_	O	_
+5-6	deste	_	_	_	_	_	_	_	_
 5	de	de	ADP	_	_	7	case	O	_
 6	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	O	_
 7	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
@@ -991,7 +991,7 @@
 8	com	com	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	pH	ph	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	meio	meio	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
@@ -1029,7 +1029,7 @@
 7	de	de	ADP	_	_	8	case	O	_
 8	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	6	obj	O	_
 9	polares	polar	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
-10-11	do	_	_	_	_	_	_	O	_
+10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
@@ -1060,14 +1060,14 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-44
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	O	_
-3-4	desses	_	_	_	_	_	_	O	_
+3-4	desses	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
 5	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	O	_
 7	obtida	obter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 8	através	através	ADV	_	_	7	advmod	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	policondensação	policondensação	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -1113,7 +1113,7 @@
 12	de	de	ADP	_	_	13	case	O	_
 13	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	B=FLUIDO	_
 14	dispersos	dispersar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	10	acl	O	_
-15-16	na	_	_	_	_	_	_	O	_
+15-16	na	_	_	_	_	_	_	_	_
 15	em	em	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	fase	fase	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
@@ -1188,7 +1188,7 @@
 # text = Além dos componentes básicos que constituem a emulsão asfáltica (asfalto, água e agente emulsificante), em algumas situações a emulsão pode conter aditivos, tais como: estabilizantes, agentes melhoradores de adesão e controladores de quebra (AEMA, 2007)..
 # sent_id = 241-20140227-MONOGRAFIA_0-48
 1	Além	além	ADV	_	_	4	cc	O	_
-2-3	dos	_	_	_	_	_	_	O	_
+2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	1	fixed	O	_
 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
 4	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	25	obl	O	_
@@ -1251,10 +1251,10 @@
 10	asfáltico	asfáltico	ADJ	_	Gender=Masc|Number=Sing	9	amod	B=LITOLOGIA	_
 11	de	de	ADP	_	_	12	case	O	_
 12	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	B=FLUIDO	_
-13-14	deve-se	_	_	_	_	_	_	O	_
+13-14	deve-se	_	_	_	_	_	_	_	_
 13	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 14	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	O	_
-15-16	dividi-lo	_	_	_	_	_	_	O	_
+15-16	dividi-lo	_	_	_	_	_	_	_	_
 15	dividi	dividir	VERB	_	VerbForm=Inf	13	xcomp	O	_
 16	lo	ele	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	O	_
 17	em	em	ADP	_	_	18	case	O	_
@@ -1262,7 +1262,7 @@
 19	muito	muito	ADV	_	_	20	advmod	O	_
 20	pequenas	pequeno	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
 21	e	e	CCONJ	_	_	22	cc	O	_
-22-23	envolvê-las	_	_	_	_	_	_	O	_
+22-23	envolvê-las	_	_	_	_	_	_	_	_
 22	envolvê	envolver	VERB	_	VerbForm=Inf	15	conj	O	_
 23	las	elas	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	22	obj	O	_
 24	com	com	ADP	_	_	26	case	O	_
@@ -1276,12 +1276,12 @@
 32	impedir	impedir	VERB	_	VerbForm=Inf	30	acl	O	_
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	união	união	NOUN	_	Gender=Fem|Number=Sing	32	obj	O	_
-35-36	dessas	_	_	_	_	_	_	O	_
+35-36	dessas	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	37	case	O	_
 36	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	37	det	O	_
 37	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	34	nmod	O	_
 38	dispersas	dispersar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	37	acl	O	_
-39-40	na	_	_	_	_	_	_	O	_
+39-40	na	_	_	_	_	_	_	_	_
 39	em	em	ADP	_	_	41	case	O	_
 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
 41	fase	fase	NOUN	_	Gender=Fem|Number=Sing	38	obl	O	_
@@ -1293,7 +1293,7 @@
 47	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	O	_
 48	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	34	conj	O	_
 49	prematura	prematuro	ADJ	_	Gender=Fem|Number=Sing	48	amod	O	_
-50-51	da	_	_	_	_	_	_	O	_
+50-51	da	_	_	_	_	_	_	_	_
 50	de	de	ADP	_	_	52	case	O	_
 51	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	O	_
 52	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	48	nmod	B=QUÍMICA	_
@@ -1310,7 +1310,7 @@
 5	para	para	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	produção	produção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=QUÍMICA	_
@@ -1366,15 +1366,15 @@
 2	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	B=QUÍMICA	_
 3	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	2	amod	B=LITOLOGIA	_
 4	surgiram	surgir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
-5-6	no	_	_	_	_	_	_	O	_
+5-6	no	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
-8-9	no	_	_	_	_	_	_	O	_
+8-9	no	_	_	_	_	_	_	_	_
 8	em	em	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	início	início	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	século	século	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
@@ -1392,7 +1392,7 @@
 
 # text = No início de 1900 se empregou, pela primeira vez, uma emulsão asfáltica do tipo aniônica na construção de estradas na cidade de Nova York..
 # sent_id = 241-20140227-MONOGRAFIA_0-54
-1-2	No	_	_	_	_	_	_	O	_
+1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	início	início	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
@@ -1401,7 +1401,7 @@
 6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	O	_
 7	empregou	empregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
 8	,	,	PUNCT	_	_	7	punct	O	_
-9-10	pela	_	_	_	_	_	_	O	_
+9-10	pela	_	_	_	_	_	_	_	_
 9	por	por	ADP	_	_	7	cc	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	fixed	O	_
 11	primeira	primeira	ADP	_	_	9	fixed	O	_
@@ -1410,18 +1410,18 @@
 14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	obj	B=QUÍMICA	_
 16	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	15	amod	B=LITOLOGIA	_
-17-18	do	_	_	_	_	_	_	O	_
+17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	_	_	19	case	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
 19	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
 20	aniônica	aniônico	ADJ	_	Gender=Masc|Number=Sing	19	amod	O	_
-21-22	na	_	_	_	_	_	_	O	_
+21-22	na	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	construção	construção	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
 24	de	de	ADP	_	_	25	case	O	_
 25	estradas	estrada	NOUN	_	Gender=Fem|Number=Plur	23	nmod	O	_
-26-27	na	_	_	_	_	_	_	O	_
+26-27	na	_	_	_	_	_	_	_	_
 26	em	em	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
@@ -1502,7 +1502,7 @@
 34	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	36	nsubj:pass	O	_
 35	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	aux:pass	O	_
 36	misturados	misturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	33	acl:relcl	O	_
-37-38	ao	_	_	_	_	_	_	O	_
+37-38	ao	_	_	_	_	_	_	_	_
 37	a	a	ADP	_	_	39	case	O	_
 38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
 39	CAP	CAP	PROPN	_	Gender=Masc|Number=Sing	36	obl	O	_
@@ -1518,7 +1518,7 @@
 49	e	e	CCONJ	_	_	50	cc	O	_
 50	oferecendo	oferecer	VERB	_	VerbForm=Ger	43	conj	O	_
 51	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	50	obj	O	_
-52-53	aos	_	_	_	_	_	_	O	_
+52-53	aos	_	_	_	_	_	_	_	_
 52	a	a	ADP	_	_	54	case	O	_
 53	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	54	det	O	_
 54	operários	operário	NOUN	_	Gender=Masc|Number=Plur	50	obl	O	_
@@ -1555,7 +1555,7 @@
 17	CAP	CAP	PROPN	_	Gender=Fem|Number=Sing	12	appos	O	_
 18	)	)	PUNCT	_	_	17	punct	O	_
 19	dispersos	dispersar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
-20-21	na	_	_	_	_	_	_	O	_
+20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	fase	fase	NOUN	_	Gender=Fem|Number=Sing	19	obl	O	_
@@ -1576,7 +1576,7 @@
 9	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	6	nmod	B=QUÍMICA	_
 10	óleo-em-água	óleo-em-água	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
 11	,	,	PUNCT	_	_	4	punct	O	_
-12-13	na	_	_	_	_	_	_	O	_
+12-13	na	_	_	_	_	_	_	_	_
 12	em	em	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	qual	qual	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	18	obl	O	_
@@ -1604,7 +1604,7 @@
 10	por	por	ADP	_	_	12	case	O	_
 11	simples	simples	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	_
 12	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
-13-14	dos	_	_	_	_	_	_	O	_
+13-14	dos	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	16	case	O	_
 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
 15	dois	dois	NUM	_	NumType=Card	16	nummod	O	_
@@ -1629,7 +1629,7 @@
 # text = Além disso, o asfalto precisa ser disperso por ação mecânica que o transforme em pequenas partículas ou glóbulos (IBP, 1999; Hunter, 2000; ABEDA, 2001; Shell, 2003)..
 # sent_id = 241-20140227-MONOGRAFIA_0-60
 1	Além	além	ADV	_	_	3	cc	O	_
-2-3	disso	_	_	_	_	_	_	O	_
+2-3	disso	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	1	fixed	O	_
 3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	conj	O	_
 4	,	,	PUNCT	_	_	3	punct	O	_
@@ -1730,7 +1730,7 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-63
 1	Quando	quando	SCONJ	_	_	2	mark	O	_
 2	comparadas	comparar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	7	advcl	O	_
-3-4	ao	_	_	_	_	_	_	O	_
+3-4	ao	_	_	_	_	_	_	_	_
 3	a	a	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	2	obj	O	_
@@ -1772,7 +1772,7 @@
 16	soda	soda	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
 17	,	,	PUNCT	_	_	18	punct	O	_
 18	provenientes	proveniente	ADJ	_	Gender=Fem|Number=Plur	14	amod	O	_
-19-20	do	_	_	_	_	_	_	O	_
+19-20	do	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	18	obl	B=QUÍMICA	_
@@ -1826,7 +1826,7 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	B=QUÍMICA	_
 3	,	,	PUNCT	_	_	6	punct	O	_
-4-5	à	_	_	_	_	_	_	O	_
+4-5	à	_	_	_	_	_	_	_	_
 4	a	a	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
@@ -1843,11 +1843,11 @@
 17	água	água	NOUN	_	Gender=Fem|Number=Sing	15	obj	B=FLUIDO	_
 18	,	,	PUNCT	_	_	19	punct	O	_
 19	resultando	resultar	VERB	_	VerbForm=Ger	15	advcl	O	_
-20-21	na	_	_	_	_	_	_	O	_
+20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	solidificação	solidificação	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
@@ -1880,7 +1880,7 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	equipamento	equipamento	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	B=INSTRUMENTO	_
 3	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
-4-5	neste	_	_	_	_	_	_	O	_
+4-5	neste	_	_	_	_	_	_	_	_
 4	em	em	ADP	_	_	6	case	O	_
 5	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	O	_
 6	processo	processo	NOUN	_	Gender=Masc|Number=Sing	3	obl	O	_
@@ -1897,11 +1897,11 @@
 17	,	,	PUNCT	_	_	19	punct	O	_
 18	quase	quase	ADV	_	_	19	advmod	O	_
 19	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Tot	14	appos	O	_
-20-21	na	_	_	_	_	_	_	O	_
+20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	gama	gama	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
@@ -1928,16 +1928,16 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-69
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	endurecimento	endurecimento	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
-3-4	das	_	_	_	_	_	_	O	_
+3-4	das	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
 5	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	2	nmod	B=QUÍMICA	_
 6	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	5	amod	B=LITOLOGIA	_
-7-8	dá-se	_	_	_	_	_	_	O	_
+7-8	dá-se	_	_	_	_	_	_	_	_
 7	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 8	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	O	_
 9	devido	devido	ADV	_	_	7	advmod	O	_
-10-11	à	_	_	_	_	_	_	O	_
+10-11	à	_	_	_	_	_	_	_	_
 10	a	a	ADP	_	_	12	case	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	perda	perda	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
@@ -1948,11 +1948,11 @@
 17	aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
 18	,	,	PUNCT	_	_	19	punct	O	_
 19	resultando	resultar	VERB	_	VerbForm=Ger	7	advcl	O	_
-20-21	na	_	_	_	_	_	_	O	_
+20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	deposição	deposição	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
@@ -1987,7 +1987,7 @@
 5	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
 6	mantidos	manter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
 7	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	xcomp	O	_
-8-9	pelo	_	_	_	_	_	_	O	_
+8-9	pelo	_	_	_	_	_	_	_	_
 8	por	por	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	agente	agente	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	O	_
@@ -1998,16 +1998,16 @@
 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	B=QUÍMICA	_
 16	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	expl	O	_
 17	deposite	depositar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	O	_
-18-19	na	_	_	_	_	_	_	O	_
+18-19	na	_	_	_	_	_	_	_	_
 18	em	em	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	17	obj	O	_
-21-22	do	_	_	_	_	_	_	O	_
+21-22	do	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	terreno	terreno	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
 24	,	,	PUNCT	_	_	27	punct	O	_
-25-26	do	_	_	_	_	_	_	O	_
+25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
 27	pavimento	pavimento	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
@@ -2040,16 +2040,16 @@
 15	fase	fase	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	O	_
 16	aquosa	aquoso	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
 17	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-18-19	separar-se	_	_	_	_	_	_	O	_
+18-19	separar-se	_	_	_	_	_	_	_	_
 18	separar	separar	VERB	_	VerbForm=Inf	17	xcomp	O	_
 19	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	expl	O	_
-20-21	do	_	_	_	_	_	_	O	_
+20-21	do	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
 22	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	18	obj	O	_
 23	(	(	PUNCT	_	_	24	punct	O	_
 24	quebra	quebra	NOUN	_	Gender=Fem|Number=Sing	22	appos	O	_
-25-26	da	_	_	_	_	_	_	O	_
+25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	24	nmod	B=QUÍMICA	_
@@ -2059,11 +2059,11 @@
 31	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	32	nsubj	O	_
 32	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	O	_
 33	devido	devido	ADV	_	_	32	advmod	O	_
-34-35	à	_	_	_	_	_	_	O	_
+34-35	à	_	_	_	_	_	_	_	_
 34	a	a	ADP	_	_	36	case	O	_
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
 36	neutralização	neutralização	NOUN	_	Gender=Fem|Number=Sing	32	obj	O	_
-37-38	das	_	_	_	_	_	_	O	_
+37-38	das	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	39	case	O	_
 38	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	O	_
 39	cargas	carga	NOUN	_	Gender=Fem|Number=Plur	36	nmod	O	_
@@ -2071,7 +2071,7 @@
 41	e	e	CCONJ	_	_	43	cc	O	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
 43	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	39	conj	O	_
-44-45	da	_	_	_	_	_	_	O	_
+44-45	da	_	_	_	_	_	_	_	_
 44	de	de	ADP	_	_	46	case	O	_
 45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
 46	água	água	NOUN	_	Gender=Fem|Number=Sing	43	nmod	B=FLUIDO	_
@@ -2082,7 +2082,7 @@
 51	ocorra	ocorrer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	ccomp	O	_
 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
 53	coalescência	coalescência	NOUN	_	Gender=Fem|Number=Sing	51	obj	O	_
-54-55	das	_	_	_	_	_	_	O	_
+54-55	das	_	_	_	_	_	_	_	_
 54	de	de	ADP	_	_	56	case	O	_
 55	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	56	det	O	_
 56	gotículas	gotícula	NOUN	_	Gender=Fem|Number=Plur	53	nmod	O	_
@@ -2119,7 +2119,7 @@
 7	objeto	objeto	NOUN	_	Gender=Masc|Number=Sing	2	acl:relcl	O	_
 8	de	de	ADP	_	_	9	case	O	_
 9	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
-10-11	desta	_	_	_	_	_	_	O	_
+10-11	desta	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	O	_
 12	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
@@ -2134,7 +2134,7 @@
 21	poliaminas	poliamina	NOUN	_	Gender=Fem|Number=Plur	19	conj	O	_
 22	graxas	graxo	ADJ	_	Gender=Fem|Number=Plur	21	amod	O	_
 23	,	,	PUNCT	_	_	24	punct	O	_
-24-25	conferindo-lhes	_	_	_	_	_	_	O	_
+24-25	conferindo-lhes	_	_	_	_	_	_	_	_
 24	conferindo	conferir	VERB	_	VerbForm=Ger	14	advcl	O	_
 25	lhes	eles	PRON	_	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	24	iobj	O	_
 26	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	24	obj	O	_
@@ -2225,7 +2225,7 @@
 
 # text = Denomina-se ruptura ou quebra de uma emulsão o fenômeno de separação das fases constituintes da emulsão..
 # sent_id = 241-20140227-MONOGRAFIA_0-77
-1-2	Denomina-se	_	_	_	_	_	_	O	_
+1-2	Denomina-se	_	_	_	_	_	_	_	_
 1	Denomina	denominar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
 3	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
@@ -2238,12 +2238,12 @@
 10	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
 11	de	de	ADP	_	_	12	case	O	_
 12	separação	separação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
-13-14	das	_	_	_	_	_	_	O	_
+13-14	das	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
 15	fases	fase	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
 16	constituintes	constituinte	ADJ	_	Gender=Fem|Number=Plur	15	amod	O	_
-17-18	da	_	_	_	_	_	_	O	_
+17-18	da	_	_	_	_	_	_	_	_
 17	de	de	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	15	nmod	B=QUÍMICA	_
@@ -2258,7 +2258,7 @@
 4	ocorrer	ocorrer	VERB	_	VerbForm=Inf	3	xcomp	O	_
 5	por	por	ADP	_	_	6	case	O	_
 6	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
-7-8	da	_	_	_	_	_	_	O	_
+7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	água	água	NOUN	_	Gender=Fem|Number=Sing	6	nmod	B=FLUIDO	_
@@ -2271,7 +2271,7 @@
 16	provocado	provocar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	O	_
 17	por	por	ADP	_	_	18	case	O	_
 18	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	16	obl:agent	O	_
-19-20	da	_	_	_	_	_	_	O	_
+19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	acidez	acidez	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
@@ -2279,11 +2279,11 @@
 23	alcalinidade	alcalinidade	NOUN	_	Gender=Fem|Number=Sing	21	conj	O	_
 24	)	)	PUNCT	_	_	16	punct	O	_
 25	ou	ou	CCONJ	_	_	28	cc	O	_
-26-27	pela	_	_	_	_	_	_	O	_
+26-27	pela	_	_	_	_	_	_	_	_
 26	por	por	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	ação	ação	NOUN	_	Gender=Fem|Number=Sing	13	conj	O	_
-29-30	do	_	_	_	_	_	_	O	_
+29-30	do	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	31	case	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	agregado	agregado	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
@@ -2315,16 +2315,16 @@
 8	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
 9	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
 10	,	,	PUNCT	_	_	5	punct	O	_
-11-12	da	_	_	_	_	_	_	O	_
+11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
 14	e	e	CCONJ	_	_	17	cc	O	_
-15-16	do	_	_	_	_	_	_	O	_
+15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
 17	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	13	conj	O	_
-18-19	do	_	_	_	_	_	_	O	_
+18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	agente	agente	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
@@ -2339,7 +2339,7 @@
 3	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	2	amod	B=LITOLOGIA	_
 4	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 5	ser	ser	AUX	_	VerbForm=Inf	8	cop	O	_
-6-7	do	_	_	_	_	_	_	O	_
+6-7	do	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	4	obj	O	_
@@ -2355,7 +2355,7 @@
 18	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	O	_
 19	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	O	_
 20	em	em	ADP	_	_	23	case	O	_
-21-22	no	_	_	_	_	_	_	O	_
+21-22	no	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	19	obl	O	_
@@ -2404,17 +2404,17 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-81
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	determinação	determinação	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	O	_
-3-4	da	_	_	_	_	_	_	O	_
+3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
 5	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
-6-7	nas	_	_	_	_	_	_	O	_
+6-7	nas	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
 8	RR	RR	PROPN	_	Gender=Fem|Number=Plur	5	nmod	O	_
 9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	O	_
 10	regulada	regular	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-11-12	pelo	_	_	_	_	_	_	O	_
+11-12	pelo	_	_	_	_	_	_	_	_
 11	por	por	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	MB	MB	PROPN	_	Gender=Masc|Number=Sing	10	obl:agent	O	_
@@ -2427,11 +2427,11 @@
 20	6569/2000	6569/2000	PROPN	_	Number=Sing	19	nummod	O	_
 21	)	)	PUNCT	_	_	17	punct	O	_
 22	e	e	CCONJ	_	_	25	cc	O	_
-23-24	da	_	_	_	_	_	_	O	_
+23-24	da	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 25	RL	RL	PROPN	_	Gender=Fem|Number=Sing	13	conj	O	_
-26-27	pela	_	_	_	_	_	_	O	_
+26-27	pela	_	_	_	_	_	_	_	_
 26	por	por	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	MB	MB	PROPN	_	Gender=Fem|Number=Sing	25	nmod	O	_
@@ -2448,7 +2448,7 @@
 # text = Dependendo da quantidade de cimento asfáltico envolvida na fabricação das emulsões, elas podem ser classificadas em 1C e 2C..
 # sent_id = 241-20140227-MONOGRAFIA_0-82
 1	Dependendo	depender	VERB	_	VerbForm=Ger	17	advcl	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
@@ -2456,11 +2456,11 @@
 6	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
 7	asfáltico	asfáltico	ADJ	_	Gender=Masc|Number=Sing	6	amod	B=LITOLOGIA	_
 8	envolvida	envolver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	O	_
-9-10	na	_	_	_	_	_	_	O	_
+9-10	na	_	_	_	_	_	_	_	_
 9	em	em	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	fabricação	fabricação	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
-12-13	das	_	_	_	_	_	_	O	_
+12-13	das	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
 14	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	11	nmod	B=QUÍMICA	_
@@ -2484,7 +2484,7 @@
 1	C	C	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
 2	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 3	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	2	obj	B=QUÍMICA	_
-4-5	do	_	_	_	_	_	_	O	_
+4-5	do	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
@@ -2497,7 +2497,7 @@
 13	2	2	NUM	_	NumType=Card	11	conj	O	_
 14	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
 15	associados	associado	ADJ	_	Gender=Masc|Number=Plur	2	conj	O	_
-16-17	à	_	_	_	_	_	_	O	_
+16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
@@ -2509,11 +2509,11 @@
 24	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
 25	asfáltico	asfáltico	ADJ	_	Gender=Masc|Number=Sing	24	amod	B=LITOLOGIA	_
 26	empregada	empregar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	22	acl	O	_
-27-28	na	_	_	_	_	_	_	O	_
+27-28	na	_	_	_	_	_	_	_	_
 27	em	em	ADP	_	_	29	case	O	_
 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
 29	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
-30-31	da	_	_	_	_	_	_	O	_
+30-31	da	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	32	case	O	_
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 32	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	29	nmod	B=QUÍMICA	_
@@ -2542,7 +2542,7 @@
 12	ainda	ainda	ADV	_	_	11	advmod	O	_
 13	mais	mais	DET	_	Gender=Fem|Number=Sing|PronType=Ind	14	det	O	_
 14	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
-15-16	na	_	_	_	_	_	_	O	_
+15-16	na	_	_	_	_	_	_	_	_
 15	em	em	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	execução	execução	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
@@ -2558,7 +2558,7 @@
 1	Com	com	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	surgimento	surgimento	NOUN	_	Gender=Masc|Number=Sing	33	obl	O	_
-4-5	dos	_	_	_	_	_	_	O	_
+4-5	dos	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
 6	asfaltos	asfalto	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
@@ -2570,7 +2570,7 @@
 12	por	por	ADP	_	_	13	case	O	_
 13	conseqüência	conseqüência	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
 14	,	,	PUNCT	_	_	13	punct	O	_
-15-16	das	_	_	_	_	_	_	O	_
+15-16	das	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	O	_
 17	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	9	conj	B=QUÍMICA	_
@@ -2634,7 +2634,7 @@
 17	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	cop	O	_
 18	restritas	restrito	ADJ	_	Gender=Fem|Number=Plur	15	acl:relcl	O	_
 19	apenas	apenas	ADV	_	_	22	advmod	O	_
-20-21	às	_	_	_	_	_	_	O	_
+20-21	às	_	_	_	_	_	_	_	_
 20	a	a	ADP	_	_	22	case	O	_
 21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	O	_
 22	misturas	mistura	NOUN	_	Gender=Fem|Number=Plur	18	obl	O	_
@@ -2674,7 +2674,7 @@
 20	afetam	afetar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	O	_
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
 22	desempenho	desempenho	NOUN	_	Gender=Masc|Number=Sing	20	obj	O	_
-23-24	dos	_	_	_	_	_	_	O	_
+23-24	dos	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
 25	pavimentos	pavimento	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
@@ -2687,7 +2687,7 @@
 2	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
 3	elástica	elástica	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
 4	fornece	fornecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-5-6	ao	_	_	_	_	_	_	O	_
+5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	ADP	_	_	7	case	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	ligante	ligante	NOUN	_	Gender=Masc|Number=Sing	4	iobj	O	_
@@ -2695,7 +2695,7 @@
 9	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
 10	de	de	SCONJ	_	_	11	mark	O	_
 11	retornar	retornar	VERB	_	VerbForm=Inf	9	acl	O	_
-12-13	ao	_	_	_	_	_	_	O	_
+12-13	ao	_	_	_	_	_	_	_	_
 12	a	a	ADP	_	_	15	case	O	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 14	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	15	det	O	_
@@ -2708,7 +2708,7 @@
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	solicitação	solicitação	NOUN	_	Gender=Fem|Number=Sing	20	obj	O	_
 23	provocada	provocar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	acl	O	_
-24-25	pelo	_	_	_	_	_	_	O	_
+24-25	pelo	_	_	_	_	_	_	_	_
 24	por	por	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	tráfego	tráfego	NOUN	_	Gender=Masc|Number=Sing	23	obl:agent	O	_
@@ -2720,26 +2720,26 @@
 1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	_
 2	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
 3	interfere	interferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-4-5	na	_	_	_	_	_	_	O	_
+4-5	na	_	_	_	_	_	_	_	_
 4	em	em	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
-7-8	à	_	_	_	_	_	_	O	_
+7-8	à	_	_	_	_	_	_	_	_
 7	a	a	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	fadiga	fadiga	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
-10-11	das	_	_	_	_	_	_	O	_
+10-11	das	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
 12	misturas	mistura	NOUN	_	Gender=Fem|Number=Plur	9	nmod	O	_
 13	betuminosas	betuminoso	ADJ	_	Gender=Fem|Number=Plur	12	amod	B=LITOLOGIA	_
 14	e	e	CCONJ	_	_	18	cc	O	_
-15-16	na	_	_	_	_	_	_	O	_
+15-16	na	_	_	_	_	_	_	_	_
 15	em	em	ADP	_	_	18	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 17	maior	grande	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
 18	flexibilidade	flexibilidade	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
-19-20	nos	_	_	_	_	_	_	O	_
+19-20	nos	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
 21	tratamentos	tratamento	NOUN	_	Gender=Masc|Number=Plur	18	nmod	O	_
@@ -2755,7 +2755,7 @@
 4	amolecimento	amolecimento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
 5	maior	grande	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
 6	proporciona	proporcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-7-8	ao	_	_	_	_	_	_	O	_
+7-8	ao	_	_	_	_	_	_	_	_
 7	a	a	ADP	_	_	9	case	O	_
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
 9	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	6	obj	O	_
@@ -2790,18 +2790,18 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-93
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	adição	adição	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
-3-4	do	_	_	_	_	_	_	O	_
+3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
-6-7	ao	_	_	_	_	_	_	O	_
+6-7	ao	_	_	_	_	_	_	_	_
 6	a	a	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	ligante	ligante	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
 9	reduz	reduzir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	oxidação	oxidação	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
-12-13	do	_	_	_	_	_	_	O	_
+12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
 14	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
@@ -2811,7 +2811,7 @@
 18	surgimento	surgimento	NOUN	_	Gender=Masc|Number=Sing	16	obj	O	_
 19	de	de	ADP	_	_	20	case	O	_
 20	defeitos	defeito	NOUN	_	Gender=Masc|Number=Plur	18	nmod	O	_
-21-22	no	_	_	_	_	_	_	O	_
+21-22	no	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	pavimento	pavimento	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
@@ -2831,7 +2831,7 @@
 # text = Dependendo do polímero adicionado, se este apresentar propriedades elásticas, sua adição também melhora a adesividade do ligante ao agregado, permitindo que este seja submetido a maiores esforços sem ser arrancado da pista..
 # sent_id = 241-20140227-MONOGRAFIA_0-94
 1	Dependendo	depender	VERB	_	VerbForm=Ger	16	advcl	O	_
-2-3	do	_	_	_	_	_	_	O	_
+2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 4	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
@@ -2849,11 +2849,11 @@
 16	melhora	melhora	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	adesividade	adesividade	NOUN	_	Gender=Fem|Number=Sing	16	obj	O	_
-19-20	do	_	_	_	_	_	_	O	_
+19-20	do	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	ligante	ligante	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
-22-23	ao	_	_	_	_	_	_	O	_
+22-23	ao	_	_	_	_	_	_	_	_
 22	a	a	ADP	_	_	24	case	O	_
 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
 24	agregado	agregado	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
@@ -2869,7 +2869,7 @@
 34	sem	sem	SCONJ	_	_	36	mark	O	_
 35	ser	ser	AUX	_	VerbForm=Inf	36	aux:pass	O	_
 36	arrancado	arrancar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	30	advcl	O	_
-37-38	da	_	_	_	_	_	_	O	_
+37-38	da	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	39	case	O	_
 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
 39	pista	pista	NOUN	_	Gender=Fem|Number=Sing	36	obl	O	_
@@ -2881,14 +2881,14 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 2	maior	grande	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
 3	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B=QUÍMICA	_
 7	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	6	amod	B=LITOLOGIA	_
 8	,	,	PUNCT	_	_	9	punct	O	_
 9	fornecida	fornecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	O	_
-10-11	pelo	_	_	_	_	_	_	O	_
+10-11	pelo	_	_	_	_	_	_	_	_
 10	por	por	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	O	_
@@ -2896,7 +2896,7 @@
 14	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	envolvimento	envolvimento	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
-17-18	do	_	_	_	_	_	_	O	_
+17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	_	_	19	case	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
 19	agregado	agregado	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
@@ -2919,7 +2919,7 @@
 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	desprendimento	desprendimento	NOUN	_	Gender=Masc|Number=Sing	4	obj	O	_
 7	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
-8-9	dos	_	_	_	_	_	_	O	_
+8-9	dos	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
 10	agregados	agregado	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
@@ -2929,7 +2929,7 @@
 14	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
 15	mais	mais	ADV	_	_	16	advmod	O	_
 16	rápida	rápido	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
-17-18	ao	_	_	_	_	_	_	O	_
+17-18	ao	_	_	_	_	_	_	_	_
 17	a	a	ADP	_	_	19	case	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
 19	tráfego	tráfego	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
@@ -2988,7 +2988,7 @@
 11	sobre	sobre	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	peso	peso	NOUN	_	Gender=Masc|Number=Sing	3	obl	O	_
-14-15	da	_	_	_	_	_	_	O	_
+14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	13	nmod	B=QUÍMICA	_
@@ -3000,7 +3000,7 @@
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 2	principal	principal	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
 3	desvantagem	desvantagem	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	O	_
-4-5	do	_	_	_	_	_	_	O	_
+4-5	do	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	uso	uso	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
@@ -3044,7 +3044,7 @@
 10	,	,	PUNCT	_	_	11	punct	O	_
 11	causando	causar	VERB	_	VerbForm=Ger	6	advcl	O	_
 12	danos	dano	NOUN	_	Gender=Masc|Number=Plur	11	obj	O	_
-13-14	ao	_	_	_	_	_	_	O	_
+13-14	ao	_	_	_	_	_	_	_	_
 13	a	a	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	pavimento	pavimento	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
@@ -3070,7 +3070,7 @@
 # text = 3-3-3-Benefícios das Emulsões Asfálticas
 # sent_id = 241-20140227-MONOGRAFIA_0-101
 1	3-3-3-Benefícios	3-3-3-benefícios	NUM	_	NumType=Card	0	root	O	_
-2-3	das	_	_	_	_	_	_	O	_
+2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	O	_
 4	Emulsões	Emulsões	PROPN	_	Number=Sing	1	nmod	B=QUÍMICA	_
@@ -3105,7 +3105,7 @@
 25	inferior	inferior	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
-28-29	do	_	_	_	_	_	_	O	_
+28-29	do	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	30	case	O	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
 30	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
@@ -3152,11 +3152,11 @@
 71	e	e	CCONJ	_	_	72	cc	O	_
 72	acidentes	acidente	NOUN	_	Gender=Masc|Number=Plur	70	conj	O	_
 73	devido	devido	ADV	_	_	67	advmod	O	_
-74-75	à	_	_	_	_	_	_	O	_
+74-75	à	_	_	_	_	_	_	_	_
 74	a	a	ADP	_	_	76	case	O	_
 75	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	76	det	O	_
 76	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	73	obl	O	_
-77-78	das	_	_	_	_	_	_	O	_
+77-78	das	_	_	_	_	_	_	_	_
 77	de	de	SCONJ	_	_	81	mark	O	_
 78	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	79	det	O	_
 79	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	81	nsubj:pass	B=QUÍMICA	_
@@ -3169,7 +3169,7 @@
 86	oferecendo	oferecer	VERB	_	VerbForm=Ger	81	advcl	O	_
 87	maior	grande	ADJ	_	Gender=Fem|Number=Sing	88	amod	O	_
 88	segurança	segurança	NOUN	_	Gender=Fem|Number=Sing	86	obj	O	_
-89-90	aos	_	_	_	_	_	_	O	_
+89-90	aos	_	_	_	_	_	_	_	_
 89	a	a	ADP	_	_	91	case	O	_
 90	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	91	det	O	_
 91	operários	operário	NOUN	_	Gender=Masc|Number=Plur	88	nmod	O	_
@@ -3186,7 +3186,7 @@
 102	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	96	advcl	O	_
 103	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	104	det	O	_
 104	redução	redução	NOUN	_	Gender=Fem|Number=Sing	102	obj	O	_
-105-106	da	_	_	_	_	_	_	O	_
+105-106	da	_	_	_	_	_	_	_	_
 105	de	de	ADP	_	_	107	case	O	_
 106	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	107	det	O	_
 107	poluição	poluição	NOUN	_	Gender=Fem|Number=Sing	104	nmod	O	_
@@ -3203,7 +3203,7 @@
 118	evitam	evitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	111	conj	O	_
 119	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	120	det	O	_
 120	oxidação	oxidação	NOUN	_	Gender=Fem|Number=Sing	118	obj	O	_
-121-122	do	_	_	_	_	_	_	O	_
+121-122	do	_	_	_	_	_	_	_	_
 121	de	de	ADP	_	_	123	case	O	_
 122	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	123	det	O	_
 123	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	120	nmod	O	_
@@ -3232,7 +3232,7 @@
 7	biológicos	biológico	ADJ	_	Gender=Masc|Number=Plur	3	conj	O	_
 8	nanoestruturados	nanoestruturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
 9	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-10-11	na	_	_	_	_	_	_	O	_
+10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	_	_	12	case	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
@@ -3240,11 +3240,11 @@
 14	que	que	SCONJ	_	_	13	fixed	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	O	_
-17-18	da	_	_	_	_	_	_	O	_
+17-18	da	_	_	_	_	_	_	_	_
 17	de	de	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	vida	vida	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
-20-21	na	_	_	_	_	_	_	O	_
+20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	Terra	terra	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
@@ -3264,7 +3264,7 @@
 9	de	de	ADP	_	_	10	case	O	_
 10	granulometria	granulometria	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
 11	fina	fino	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
-12-13	nas	_	_	_	_	_	_	O	_
+12-13	nas	_	_	_	_	_	_	_	_
 12	em	em	ADP	_	_	14	case	O	_
 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
 14	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	8	nmod	B=LITOLOGIA	_
@@ -3274,7 +3274,7 @@
 18	de	de	ADP	_	_	19	case	O	_
 19	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
 20	nanométrico	nanométrico	ADJ	_	Gender=Masc|Number=Sing	19	amod	O	_
-21-22	nas	_	_	_	_	_	_	O	_
+21-22	nas	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
 23	bactérias	bactéria	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	_
@@ -3300,7 +3300,7 @@
 8	com	com	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	utilização	utilização	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
-11-12	da	_	_	_	_	_	_	O	_
+11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	nanotecnologia	nanotecnologia	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
@@ -3355,7 +3355,7 @@
 10	100	100	NUM	_	NumType=Card	11	nummod	O	_
 11	nm	nm	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
 12	em	em	ADP	_	_	15	case	O	_
-13-14	pelo	_	_	_	_	_	_	O	_
+13-14	pelo	_	_	_	_	_	_	_	_
 13	por	por	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	menos	menos	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
@@ -3371,7 +3371,7 @@
 25	e	e	CCONJ	_	_	27	cc	O	_
 26	novos	novo	ADJ	_	Gender=Masc|Number=Plur	27	amod	O	_
 27	comportamentos	comportamento	NOUN	_	Gender=Masc|Number=Plur	24	conj	O	_
-28-29	às	_	_	_	_	_	_	O	_
+28-29	às	_	_	_	_	_	_	_	_
 28	a	a	ADP	_	_	30	case	O	_
 29	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	O	_
 30	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	27	nmod	O	_
@@ -3430,13 +3430,13 @@
 14	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	15	det	O	_
 15	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
 16	expandida	expandido	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	O	_
-17-18	na	_	_	_	_	_	_	O	_
+17-18	na	_	_	_	_	_	_	_	_
 17	em	em	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	construção	construção	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
 20	civil	civil	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
 21	e	e	CCONJ	_	_	24	cc	O	_
-22-23	na	_	_	_	_	_	_	O	_
+22-23	na	_	_	_	_	_	_	_	_
 22	em	em	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	agricultura	agricultura	NOUN	_	Gender=Fem|Number=Sing	19	conj	O	_
@@ -3451,7 +3451,7 @@
 4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	mineral	mineral	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
 6	semelhante	semelhante	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	_
-7-8	à	_	_	_	_	_	_	O	_
+7-8	à	_	_	_	_	_	_	_	_
 7	a	a	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	mica	mica	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -3519,7 +3519,7 @@
 11	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	appos	O	_
 12	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	O	_
 13	confere	conferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	O	_
-14-15	ao	_	_	_	_	_	_	O	_
+14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	material	material	NOUN	_	Gender=Masc|Number=Sing	13	obj	O	_
@@ -3577,7 +3577,7 @@
 43	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux:pass	O	_
 44	somente	somente	ADV	_	_	45	advmod	O	_
 45	atacado	atacar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	38	conj	O	_
-46-47	pelo	_	_	_	_	_	_	O	_
+46-47	pelo	_	_	_	_	_	_	_	_
 46	por	por	ADP	_	_	48	case	O	_
 47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	O	_
 48	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	45	obl:agent	O	_
@@ -3603,7 +3603,7 @@
 68	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	69	det	O	_
 69	características	característica	NOUN	_	Gender=Fem|Number=Plur	67	obj	O	_
 70	necessárias	necessário	ADJ	_	Gender=Fem|Number=Plur	69	amod	O	_
-71-72	aos	_	_	_	_	_	_	O	_
+71-72	aos	_	_	_	_	_	_	_	_
 71	a	a	ADP	_	_	73	case	O	_
 72	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	73	det	O	_
 73	materiais	material	NOUN	_	Gender=Masc|Number=Plur	70	obl	O	_
@@ -3624,7 +3624,7 @@
 9	de	de	ADP	_	_	11	case	O	_
 10	larga	largo	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
 11	aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
-12-13	nos	_	_	_	_	_	_	O	_
+12-13	nos	_	_	_	_	_	_	_	_
 12	em	em	ADP	_	_	15	case	O	_
 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
 14	seguintes	seguinte	ADJ	_	Gender=Masc|Number=Plur	15	amod	O	_
@@ -3684,7 +3684,7 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-116
 1	Proteção	Proteção	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
 2	interna	interno	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
-3-4	dos	_	_	_	_	_	_	O	_
+3-4	dos	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
 5	recuperadores	recuperador	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
@@ -3710,7 +3710,7 @@
 25	•	•	PUNCT	_	_	26	punct	O	_
 26	Proteção	Proteção	NOUN	_	Gender=Fem|Number=Sing	15	appos	O	_
 27	interna	interno	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
-28-29	dos	_	_	_	_	_	_	O	_
+28-29	dos	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	30	case	O	_
 29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
 30	recuperadores	recuperador	NOUN	_	Gender=Masc|Number=Plur	26	nmod	O	_
@@ -3750,7 +3750,7 @@
 64	naval	naval	ADJ	_	Gender=Fem|Number=Sing	63	amod	O	_
 65	;	;	PUNCT	_	_	66	punct	O	_
 66	Embalagens	embalagem	NOUN	_	Gender=Fem|Number=Plur	1	conj	O	_
-67-68	à	_	_	_	_	_	_	O	_
+67-68	à	_	_	_	_	_	_	_	_
 67	a	a	ADP	_	_	69	case	O	_
 68	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	69	det	O	_
 69	prova	prova	NOUN	_	Gender=Fem|Number=Sing	66	nmod	O	_
@@ -3799,11 +3799,11 @@
 112	)	)	PUNCT	_	_	111	punct	O	_
 113	;	;	PUNCT	_	_	114	punct	O	_
 114	Isolamento	isolamento	NOUN	_	Gender=Masc|Number=Sing	1	conj	O	_
-115-116	da	_	_	_	_	_	_	O	_
+115-116	da	_	_	_	_	_	_	_	_
 115	de	de	ADP	_	_	117	case	O	_
 116	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	117	det	O	_
 117	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	114	nmod	O	_
-118-119	do	_	_	_	_	_	_	O	_
+118-119	do	_	_	_	_	_	_	_	_
 118	de	de	ADP	_	_	120	case	O	_
 119	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	120	det	O	_
 120	solo	solo	NOUN	_	Gender=Masc|Number=Sing	117	nmod	O	_
@@ -3828,7 +3828,7 @@
 
 # text = Nesta seção, será descrita a metodologia utilizada para a obtenção das emulsões asfálticas convencionais e modificadas com nanomateriais, constituintes dessas emulsões, equipamentos necessários para obtenção e metodologia de caracterização das mesmas..
 # sent_id = 241-20140227-MONOGRAFIA_0-119
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	seção	seção	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -3841,7 +3841,7 @@
 10	para	para	ADP	_	_	12	case	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
-13-14	das	_	_	_	_	_	_	O	_
+13-14	das	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
 15	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	12	nmod	B=QUÍMICA	_
@@ -3853,7 +3853,7 @@
 21	nanomateriais	nanomaterial	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
 22	,	,	PUNCT	_	_	23	punct	O	_
 23	constituintes	constituinte	NOUN	_	Gender=Masc|Number=Plur	21	conj	O	_
-24-25	dessas	_	_	_	_	_	_	O	_
+24-25	dessas	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	26	det	O	_
 26	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	23	nmod	B=QUÍMICA	_
@@ -3866,7 +3866,7 @@
 33	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	21	conj	O	_
 34	de	de	ADP	_	_	35	case	O	_
 35	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
-36-37	das	_	_	_	_	_	_	O	_
+36-37	das	_	_	_	_	_	_	_	_
 36	de	de	ADP	_	_	38	case	O	_
 37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	O	_
 38	mesmas	mesmo	ADJ	_	Gender=Fem|Number=Plur	35	nmod	O	_
@@ -3897,7 +3897,7 @@
 2	Para	para	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
-5-6	da	_	_	_	_	_	_	O	_
+5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	4	nmod	B=QUÍMICA	_
@@ -3935,11 +3935,11 @@
 4	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	3	amod	B=LITOLOGIA	_
 5	modificada	modificar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	O	_
 6	,	,	PUNCT	_	_	5	punct	O	_
-7-8	inclui-se	_	_	_	_	_	_	O	_
+7-8	inclui-se	_	_	_	_	_	_	_	_
 7	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 8	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	O	_
 9	,	,	PUNCT	_	_	7	punct	O	_
-10-11	nesse	_	_	_	_	_	_	O	_
+10-11	nesse	_	_	_	_	_	_	_	_
 10	em	em	ADP	_	_	12	case	O	_
 11	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	O	_
 12	caso	caso	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
@@ -3961,7 +3961,7 @@
 9	cada	cada	DET	_	Gender=Masc|Number=Sing|PronType=Tot	10	det	O	_
 10	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
 11	presente	presente	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
-12-13	na	_	_	_	_	_	_	O	_
+12-13	na	_	_	_	_	_	_	_	_
 12	em	em	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	11	obl	B=QUÍMICA	_
@@ -3977,7 +3977,7 @@
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 25	principal	principal	ADJ	_	Gender=Masc|Number=Sing	26	amod	O	_
 26	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	23	xcomp	O	_
-27-28	da	_	_	_	_	_	_	O	_
+27-28	da	_	_	_	_	_	_	_	_
 27	de	de	ADP	_	_	29	case	O	_
 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
 29	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	26	nmod	B=QUÍMICA	_
@@ -3985,7 +3985,7 @@
 31	,	,	PUNCT	_	_	33	punct	O	_
 32	podendo	poder	VERB	_	VerbForm=Ger	23	advcl	O	_
 33	variar	variar	VERB	_	VerbForm=Inf	32	xcomp	O	_
-34-35	na	_	_	_	_	_	_	O	_
+34-35	na	_	_	_	_	_	_	_	_
 34	em	em	ADP	_	_	36	case	O	_
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
 36	proporção	proporção	NOUN	_	Gender=Fem|Number=Sing	33	obj	O	_
@@ -4004,11 +4004,11 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
 3	empregado	empregado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
-4-5	no	_	_	_	_	_	_	O	_
+4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	_	_	6	case	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	3	obl	O	_
-7-8	desta	_	_	_	_	_	_	O	_
+7-8	desta	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	O	_
 9	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
@@ -4024,7 +4024,7 @@
 19	)	)	PUNCT	_	_	17	punct	O	_
 20	,	,	PUNCT	_	_	21	punct	O	_
 21	cedido	cedir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	acl	O	_
-22-23	pela	_	_	_	_	_	_	O	_
+22-23	pela	_	_	_	_	_	_	_	_
 22	por	por	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	Lubrificantes	Lubrificantes	PROPN	_	Gender=Fem|Number=Sing	21	obl:agent	O	_
@@ -4032,7 +4032,7 @@
 26	Derivados	Derivados	PROPN	_	Number=Sing	24	flat:name	O	_
 27	de	de	ADP	_	_	24	flat:name	O	_
 28	Petróleo	Petróleo	PROPN	_	Number=Sing	24	flat:name	B=FLUIDO	_
-29-30	do	_	_	_	_	_	_	O	_
+29-30	do	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	24	flat:name	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	flat:name	O	_
 31	Nordeste	nordeste	PROPN	_	Number=Sing	24	flat:name	O	_
@@ -4049,11 +4049,11 @@
 42	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	44	nsubj:pass	O	_
 43	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	aux:pass	O	_
 44	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	39	acl:relcl	O	_
-45-46	na	_	_	_	_	_	_	O	_
+45-46	na	_	_	_	_	_	_	_	_
 45	em	em	ADP	_	_	47	case	O	_
 46	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	O	_
 47	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	44	obl	O	_
-48-49	da	_	_	_	_	_	_	O	_
+48-49	da	_	_	_	_	_	_	_	_
 48	de	de	ADP	_	_	50	case	O	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
 50	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	47	nmod	B=QUÍMICA	_
@@ -4061,7 +4061,7 @@
 52	diminuir	diminuir	VERB	_	VerbForm=Inf	44	advcl	O	_
 53	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	O	_
 54	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	52	obj	O	_
-55-56	do	_	_	_	_	_	_	O	_
+55-56	do	_	_	_	_	_	_	_	_
 55	de	de	ADP	_	_	57	case	O	_
 56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	O	_
 57	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	54	nmod	O	_
@@ -4117,7 +4117,7 @@
 38	não	não	ADV	_	Polarity=Neg	39	advmod	O	_
 39	deixar	deixar	VERB	_	VerbForm=Inf	36	advcl	O	_
 40	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	39	obj	O	_
-41-42	no	_	_	_	_	_	_	O	_
+41-42	no	_	_	_	_	_	_	_	_
 41	em	em	ADP	_	_	43	case	O	_
 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
 43	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	39	obl	O	_
@@ -4162,7 +4162,7 @@
 21	segundo	segundo	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	23	amod	O	_
 22	principal	principal	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	_
 23	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	19	xcomp	O	_
-24-25	da	_	_	_	_	_	_	O	_
+24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
 26	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	23	nmod	B=QUÍMICA	_
@@ -4177,14 +4177,14 @@
 3	de	de	ADP	_	_	4	case	O	_
 4	água	água	NOUN	_	Gender=Fem|Number=Sing	2	nmod	B=FLUIDO	_
 5	presente	presente	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
-6-7	na	_	_	_	_	_	_	O	_
+6-7	na	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	2	nmod	B=QUÍMICA	_
 9	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	8	amod	B=LITOLOGIA	_
 10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 11	variar	variar	VERB	_	VerbForm=Inf	10	xcomp	O	_
-12-13	na	_	_	_	_	_	_	O	_
+12-13	na	_	_	_	_	_	_	_	_
 12	em	em	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	proporção	proporção	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
@@ -4207,7 +4207,7 @@
 31	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
 32	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	40	nsubj	B=QUÍMICA	_
 33	presente	presente	ADJ	_	Gender=Masc|Number=Sing	32	amod	O	_
-34-35	na	_	_	_	_	_	_	O	_
+34-35	na	_	_	_	_	_	_	_	_
 34	em	em	ADP	_	_	36	case	O	_
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
 36	fase	fase	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	_
@@ -4220,7 +4220,7 @@
 43	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
 44	dispersão	dispersão	NOUN	_	Gender=Fem|Number=Sing	42	obj	O	_
 45	estável	estável	ADJ	_	Gender=Fem|Number=Sing	44	amod	O	_
-46-47	das	_	_	_	_	_	_	O	_
+46-47	das	_	_	_	_	_	_	_	_
 46	de	de	ADP	_	_	48	case	O	_
 47	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	O	_
 48	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	44	nmod	O	_
@@ -4262,7 +4262,7 @@
 
 # text = Nesta pesquisa serão utilizados apenas emulsificantes catiônicos. • Ácido: Os ácidos utilizados na emulsão asfáltica têm a função de formar sais solúveis com o emulsificante e reduzir o potencial hidrogeniônico (pH) até o nível desejado..
 # sent_id = 241-20140227-MONOGRAFIA_0-130
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
@@ -4278,7 +4278,7 @@
 13	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
 14	ácidos	ácido	NOUN	_	Gender=Masc|Number=Plur	20	nsubj	O	_
 15	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	O	_
-16-17	na	_	_	_	_	_	_	O	_
+16-17	na	_	_	_	_	_	_	_	_
 16	em	em	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	15	obl	B=QUÍMICA	_
@@ -4312,7 +4312,7 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-131
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	adição	adição	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
-3-4	do	_	_	_	_	_	_	O	_
+3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
@@ -4331,16 +4331,16 @@
 18	,	,	PUNCT	_	_	20	punct	O	_
 19	sendo	ser	AUX	_	VerbForm=Ger	20	cop	O	_
 20	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	7	advcl	O	_
-21-22	convertê-los	_	_	_	_	_	_	O	_
+21-22	convertê-los	_	_	_	_	_	_	_	_
 21	convertê	converter	VERB	_	VerbForm=Inf	20	csubj	O	_
 22	los	eles	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	obj	O	_
 23	em	em	ADP	_	_	24	case	O	_
 24	sais	sai	NOUN	_	Gender=Masc|Number=Plur	21	obl	O	_
 25	para	para	SCONJ	_	_	26	mark	O	_
-26-27	dissolvê-los	_	_	_	_	_	_	O	_
+26-27	dissolvê-los	_	_	_	_	_	_	_	_
 26	disosolvê	disosolver	VERB	_	VerbForm=Inf	21	advcl	O	_
 27	los	eles	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	26	obj	O	_
-28-29	na	_	_	_	_	_	_	O	_
+28-29	na	_	_	_	_	_	_	_	_
 28	em	em	ADP	_	_	30	case	O	_
 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
 30	fase	fase	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
@@ -4376,7 +4376,7 @@
 24	aditivos	aditivo	NOUN	_	Gender=Masc|Number=Plur	33	nsubj	B=QUÍMICA	_
 25	mais	mais	ADV	_	_	26	advmod	O	_
 26	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	24	acl	O	_
-27-28	nas	_	_	_	_	_	_	O	_
+27-28	nas	_	_	_	_	_	_	_	_
 27	em	em	ADP	_	_	29	case	O	_
 28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	O	_
 29	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	26	obl	B=QUÍMICA	_
@@ -4410,12 +4410,12 @@
 12	cálcio	cálcio	NOUN	_	Gender=Masc|Number=Sing	10	nmod	B=QUÍMICA	_
 13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	O	_
 14	adicionado	adicionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-15-16	à	_	_	_	_	_	_	O	_
+15-16	à	_	_	_	_	_	_	_	_
 15	a	a	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	fase	fase	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
 18	aquosa	aquoso	ADJ	_	Gender=Fem|Number=Sing	17	amod	O	_
-19-20	da	_	_	_	_	_	_	O	_
+19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=QUÍMICA	_
@@ -4428,7 +4428,7 @@
 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
 29	gravidade	gravidade	NOUN	_	Gender=Fem|Number=Sing	27	obj	O	_
 30	específica	específico	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
-31-32	desta	_	_	_	_	_	_	O	_
+31-32	desta	_	_	_	_	_	_	_	_
 31	de	de	ADP	_	_	33	case	O	_
 32	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	33	det	O	_
 33	fase	fase	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
@@ -4441,7 +4441,7 @@
 40	específica	específico	ADJ	_	Gender=Fem|Number=Sing	39	amod	O	_
 41	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	39	amod	O	_
 42	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	39	nmod	O	_
-43-44	da	_	_	_	_	_	_	O	_
+43-44	da	_	_	_	_	_	_	_	_
 43	de	de	ADP	_	_	45	case	O	_
 44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	O	_
 45	fase	fase	NOUN	_	Gender=Fem|Number=Sing	42	nmod	O	_
@@ -4452,7 +4452,7 @@
 50	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	48	obj	O	_
 51	de	de	ADP	_	_	52	case	O	_
 52	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	50	nmod	O	_
-53-54	da	_	_	_	_	_	_	O	_
+53-54	da	_	_	_	_	_	_	_	_
 53	de	de	ADP	_	_	55	case	O	_
 54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	O	_
 55	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	52	nmod	B=QUÍMICA	_
@@ -4460,7 +4460,7 @@
 57	aumentando	aumentar	VERB	_	VerbForm=Ger	48	advcl	O	_
 58	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	59	det	O	_
 59	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	57	obj	O	_
-60-61	ao	_	_	_	_	_	_	O	_
+60-61	ao	_	_	_	_	_	_	_	_
 60	a	a	ADP	_	_	62	case	O	_
 61	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	62	det	O	_
 62	armazenamento	armazenamento	NOUN	_	Gender=Masc|Number=Sing	59	nmod	O	_
@@ -4488,7 +4488,7 @@
 17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	agente	agente	NOUN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
 19	modificador	modificador	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
-20-21	da	_	_	_	_	_	_	O	_
+20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	18	nmod	B=QUÍMICA	_
@@ -4513,18 +4513,18 @@
 3	a	a	SCONJ	_	_	5	mark	O	_
 4	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	5	aux:pass	O	_
 5	modificadas	modificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	_
-6-7	na	_	_	_	_	_	_	O	_
+6-7	na	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	5	obl	B=QUÍMICA	_
 9	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	8	amod	B=LITOLOGIA	_
 10	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
 14	e	e	CCONJ	_	_	17	cc	O	_
-15-16	da	_	_	_	_	_	_	O	_
+15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	13	conj	O	_
@@ -4536,7 +4536,7 @@
 
 # text = Nessa pesquisa, a vermiculita foi utilizada como agente modificador..
 # sent_id = 241-20140227-MONOGRAFIA_0-136
-1-2	Nessa	_	_	_	_	_	_	O	_
+1-2	Nessa	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -4554,7 +4554,7 @@
 # text = 4-2-Obtenção da vermiculita modificada
 # sent_id = 241-20140227-MONOGRAFIA_0-137
 1	4-2-Obtenção	4-2-Obtenção	NUM	_	NumType=Card	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=LITOLOGIA	_
@@ -4562,7 +4562,7 @@
 
 # text = Nessa pesquisa, a vermiculita, nanomaterial escolhido, foi utilizada de três formas distintas: em sua forma bruta, tratada com solução de emulsificante catiônico e tratada com solução de emulsificante catiônico em meio ácido..
 # sent_id = 241-20140227-MONOGRAFIA_0-138
-1-2	Nessa	_	_	_	_	_	_	O	_
+1-2	Nessa	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
@@ -4609,13 +4609,13 @@
 1	Para	para	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B=LITOLOGIA	_
 7	modificada	modificar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	O	_
 8	,	,	PUNCT	_	_	7	punct	O	_
-9-10	utilizou-se	_	_	_	_	_	_	O	_
+9-10	utilizou-se	_	_	_	_	_	_	_	_
 9	utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
 10	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	expl	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
@@ -4625,7 +4625,7 @@
 15	LL.	LL.	PROPN	_	Gender=Fem|Number=Sing	13	appos	O	_
 16	1.	1.	PROPN	_	Number=Sing	15	flat:name	O	_
 17	-	-	PUNCT	_	_	18	punct	O	_
-18-19	Preparou-se	_	_	_	_	_	_	O	_
+18-19	Preparou-se	_	_	_	_	_	_	_	_
 18	Preparou	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	parataxis	O	_
 19	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	expl	O	_
 20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
@@ -4645,7 +4645,7 @@
 2	solução	solução	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	_
 3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	O	_
 4	preparada	preparar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-5-6	pesando-se	_	_	_	_	_	_	O	_
+5-6	pesando-se	_	_	_	_	_	_	_	_
 5	pesando	pesar	VERB	_	VerbForm=Ger	4	advcl	O	_
 6	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	5	expl	O	_
 7	30g	30g	NUM	_	NumType=Card	5	obj	O	_
@@ -4660,7 +4660,7 @@
 16	introduzindo	introduzir	VERB	_	VerbForm=Ger	5	conj	O	_
 17	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	18	det	O	_
 18	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	16	obj	O	_
-19-20	no	_	_	_	_	_	_	O	_
+19-20	no	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	moinho	moinho	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
@@ -4681,7 +4681,7 @@
 1	2	2	NUM	_	NumType=Card	12	parataxis	O	_
 2	.	.	PUNCT	_	_	1	punct	O	_
 3	-	-	PUNCT	_	_	6	punct	O	_
-4-5	Ao	_	_	_	_	_	_	O	_
+4-5	Ao	_	_	_	_	_	_	_	_
 4	A	a	SCONJ	_	_	6	mark	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	obter	obter	VERB	_	VerbForm=Inf	12	advcl	O	_
@@ -4690,14 +4690,14 @@
 9	de	de	ADP	_	_	10	case	O	_
 10	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	8	nmod	B=QUÍMICA	_
 11	,	,	PUNCT	_	_	6	punct	O	_
-12-13	pesa-se	_	_	_	_	_	_	O	_
+12-13	pesa-se	_	_	_	_	_	_	_	_
 12	pesa	pesar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 13	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	12	expl	O	_
 14	50g	50g	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
 15	de	de	ADP	_	_	16	case	O	_
 16	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	14	nmod	B=LITOLOGIA	_
 17	e	e	CCONJ	_	_	18	cc	O	_
-18-19	coloca-se	_	_	_	_	_	_	O	_
+18-19	coloca-se	_	_	_	_	_	_	_	_
 18	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	O	_
 19	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	expl	O	_
 20	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	21	det	O	_
@@ -4706,7 +4706,7 @@
 23	contato	contato	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
 24	com	com	ADP	_	_	25	case	O	_
 25	0,5L	0,5L	NUM	_	NumType=Card	23	nummod	O	_
-26-27	dessa	_	_	_	_	_	_	O	_
+26-27	dessa	_	_	_	_	_	_	_	_
 26	de	de	ADP	_	_	28	case	O	_
 27	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	O	_
 28	solução	solução	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
@@ -4732,17 +4732,17 @@
 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
 6	24hrs	24hrs	NOUN	_	Gender=Fem|Number=Plur	8	obl	O	_
 7	,	,	PUNCT	_	_	6	punct	O	_
-8-9	filtra-se	_	_	_	_	_	_	O	_
+8-9	filtra-se	_	_	_	_	_	_	_	_
 8	filtra	filtrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 9	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	expl	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	solução	solução	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
-12-13	da	_	_	_	_	_	_	O	_
+12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=LITOLOGIA	_
 15	e	e	CCONJ	_	_	16	cc	O	_
-16-17	coloca-se	_	_	_	_	_	_	O	_
+16-17	coloca-se	_	_	_	_	_	_	_	_
 16	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	O	_
 17	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
@@ -4766,7 +4766,7 @@
 5	procedimento	procedimento	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	O	_
 6	de	de	ADP	_	_	7	case	O	_
 7	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=LITOLOGIA	_
@@ -4782,15 +4782,15 @@
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	O	_
 22	,	,	PUNCT	_	_	21	punct	O	_
-23-24	no	_	_	_	_	_	_	O	_
+23-24	no	_	_	_	_	_	_	_	_
 23	em	em	ADP	_	_	21	cc	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	fixed	O	_
 25	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	23	fixed	O	_
 26	,	,	PUNCT	_	_	29	punct	O	_
-27-28	ao	_	_	_	_	_	_	O	_
+27-28	ao	_	_	_	_	_	_	_	_
 27	a	a	SCONJ	_	_	29	mark	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
-29-30	obter-se	_	_	_	_	_	_	O	_
+29-30	obter-se	_	_	_	_	_	_	_	_
 29	obter	obter	VERB	_	VerbForm=Inf	36	advcl	O	_
 30	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	29	expl	O	_
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
@@ -4798,7 +4798,7 @@
 33	de	de	ADP	_	_	34	case	O	_
 34	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	32	nmod	O	_
 35	,	,	PUNCT	_	_	36	punct	O	_
-36-37	adiciona-se	_	_	_	_	_	_	O	_
+36-37	adiciona-se	_	_	_	_	_	_	_	_
 36	adiciona	adicionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	O	_
 37	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	expl	O	_
 38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
@@ -4811,7 +4811,7 @@
 45	de	de	ADP	_	_	46	case	O	_
 46	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	44	nmod	O	_
 47	clorídrico	clorídrico	ADJ	_	Gender=Masc|Number=Sing	46	amod	O	_
-48-49	na	_	_	_	_	_	_	O	_
+48-49	na	_	_	_	_	_	_	_	_
 48	em	em	ADP	_	_	50	case	O	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
 50	solução	solução	NOUN	_	Gender=Fem|Number=Sing	44	nmod	O	_
@@ -4826,7 +4826,7 @@
 4	tal	tal	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	O	_
 5	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
 6	,	,	PUNCT	_	_	3	punct	O	_
-7-8	pesa-se	_	_	_	_	_	_	O	_
+7-8	pesa-se	_	_	_	_	_	_	_	_
 7	pesa	pesar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 8	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	7	expl	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
@@ -4846,7 +4846,7 @@
 # text = 4-3-Obtenção da emulsão asfáltica modificada
 # sent_id = 241-20140227-MONOGRAFIA_0-145
 1	4-3-Obtenção	4-3-Obtenção	NUM	_	NumType=Card	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=QUÍMICA	_
@@ -4858,14 +4858,14 @@
 1	Para	para	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B=QUÍMICA	_
 7	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	6	amod	B=LITOLOGIA	_
 8	catiônica	catiônico	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
 9	convencional	convencional	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
-10-11	faz-se	_	_	_	_	_	_	O	_
+10-11	faz-se	_	_	_	_	_	_	_	_
 10	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 11	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	10	expl	O	_
 12	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	10	xcomp	O	_
@@ -4884,7 +4884,7 @@
 # text = Somente ao misturar as duas fases é que se adiciona o agente modificador..
 # sent_id = 241-20140227-MONOGRAFIA_0-147
 1	Somente	somente	ADV	_	_	4	advmod	O	_
-2-3	ao	_	_	_	_	_	_	O	_
+2-3	ao	_	_	_	_	_	_	_	_
 2	a	a	SCONJ	_	_	4	mark	O	_
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 4	misturar	misturar	VERB	_	VerbForm=Inf	11	advcl	O	_
@@ -4909,14 +4909,14 @@
 4	para	para	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
-7-8	destas	_	_	_	_	_	_	O	_
+7-8	destas	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	estas	este	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	O	_
 9	fases	fase	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
 10	e	e	CCONJ	_	_	12	cc	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
-13-14	da	_	_	_	_	_	_	O	_
+13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=QUÍMICA	_
@@ -4931,7 +4931,7 @@
 # text = 4-3-1-Obtenção da fase óleo
 # sent_id = 241-20140227-MONOGRAFIA_0-149
 1	4-3-1-Obtenção	4-3-1-Obtenção	NUM	_	NumType=Card	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	fase	fase	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
@@ -4944,7 +4944,7 @@
 3	asfalto	asfalto	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
 5	composta	compor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-6-7	do	_	_	_	_	_	_	O	_
+6-7	do	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
@@ -4953,7 +4953,7 @@
 11	50-70	50-70	PROPN	_	Number=Sing	10	flat:name	O	_
 12	)	)	PUNCT	_	_	10	punct	O	_
 13	e	e	CCONJ	_	_	16	cc	O	_
-14-15	do	_	_	_	_	_	_	O	_
+14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	8	conj	O	_
@@ -4981,10 +4981,10 @@
 17	°	°	NOUN	_	Gender=Masc|Number=Plur	14	nmod	O	_
 18	C	c	NOUN	_	Gender=Masc|Number=Sing	17	compound	O	_
 19	e	e	CCONJ	_	_	20	cc	O	_
-20-21	mantê-lo	_	_	_	_	_	_	O	_
+20-21	mantê-lo	_	_	_	_	_	_	_	_
 20	mantê	manter	VERB	_	VerbForm=Inf	9	conj	O	_
 21	lo	ele	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	O	_
-22-23	no	_	_	_	_	_	_	O	_
+22-23	no	_	_	_	_	_	_	_	_
 22	em	em	ADP	_	_	24	case	O	_
 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
 24	estado	estado	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
@@ -5001,7 +5001,7 @@
 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
 36	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	43	nsubj	O	_
 37	,	,	PUNCT	_	_	40	punct	O	_
-38-39	na	_	_	_	_	_	_	O	_
+38-39	na	_	_	_	_	_	_	_	_
 38	em	em	ADP	_	_	40	case	O	_
 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
 40	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	43	obl	O	_
@@ -5020,11 +5020,11 @@
 3	50-70	50-70	PROPN	_	Number=Sing	2	flat:name	O	_
 4	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	O	_
 5	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-6-7	neste	_	_	_	_	_	_	O	_
+6-7	neste	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	O	_
 8	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
-9-10	na	_	_	_	_	_	_	O	_
+9-10	na	_	_	_	_	_	_	_	_
 9	em	em	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	proporção	proporção	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
@@ -5044,7 +5044,7 @@
 5	adicionado	adicionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
-8-9	ao	_	_	_	_	_	_	O	_
+8-9	ao	_	_	_	_	_	_	_	_
 8	a	a	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
@@ -5071,7 +5071,7 @@
 # text = 4-3-2-Obtenção da fase aquosa
 # sent_id = 241-20140227-MONOGRAFIA_0-154
 1	4-3-2-Obtenção	4-3-2-Obtenção	NUM	_	NumType=Card	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	fase	fase	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
@@ -5107,7 +5107,7 @@
 5	,	,	PUNCT	_	_	2	punct	O	_
 6	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	O	_
 7	adicionados	adicionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-8-9	à	_	_	_	_	_	_	O	_
+8-9	à	_	_	_	_	_	_	_	_
 8	a	a	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	água	água	NOUN	_	Gender=Fem|Number=Sing	7	obl	B=FLUIDO	_
@@ -5152,7 +5152,7 @@
 49	60	60	NUM	_	NumType=Card	50	nummod	O	_
 50	°C).	°c).	ADP	_	_	46	appos	O	_
 51	4-3-3-Obtenção	4-3-3-Obtenção	NUM	_	NumType=Card	50	nummod	O	_
-52-53	da	_	_	_	_	_	_	O	_
+52-53	da	_	_	_	_	_	_	_	_
 52	de	de	ADP	_	_	54	case	O	_
 53	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	O	_
 54	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	50	nmod	B=QUÍMICA	_
@@ -5174,10 +5174,10 @@
 11	asfáltico	asfáltico	ADJ	_	Gender=Masc|Number=Sing	10	amod	B=LITOLOGIA	_
 12	de	de	ADP	_	_	13	case	O	_
 13	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	B=FLUIDO	_
-14-15	deve-se	_	_	_	_	_	_	O	_
+14-15	deve-se	_	_	_	_	_	_	_	_
 14	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 15	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	O	_
-16-17	dividi-lo	_	_	_	_	_	_	O	_
+16-17	dividi-lo	_	_	_	_	_	_	_	_
 16	dividi	dividir	VERB	_	VerbForm=Inf	14	xcomp	O	_
 17	lo	ele	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	O	_
 18	em	em	ADP	_	_	19	case	O	_
@@ -5185,7 +5185,7 @@
 20	muito	muito	ADV	_	_	21	advmod	O	_
 21	pequenas	pequeno	ADJ	_	Gender=Fem|Number=Plur	19	amod	O	_
 22	e	e	CCONJ	_	_	23	cc	O	_
-23-24	envolvê-las	_	_	_	_	_	_	O	_
+23-24	envolvê-las	_	_	_	_	_	_	_	_
 23	envolvê	envolver	VERB	_	VerbForm=Inf	16	conj	O	_
 24	las	elas	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	obj	O	_
 25	com	com	ADP	_	_	27	case	O	_
@@ -5199,12 +5199,12 @@
 33	impedir	impedir	VERB	_	VerbForm=Inf	31	acl	O	_
 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
 35	união	união	NOUN	_	Gender=Fem|Number=Sing	33	obj	O	_
-36-37	dessas	_	_	_	_	_	_	O	_
+36-37	dessas	_	_	_	_	_	_	_	_
 36	de	de	ADP	_	_	38	case	O	_
 37	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	38	det	O	_
 38	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	35	nmod	O	_
 39	dispersas	dispersar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	38	acl	O	_
-40-41	na	_	_	_	_	_	_	O	_
+40-41	na	_	_	_	_	_	_	_	_
 40	em	em	ADP	_	_	42	case	O	_
 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
 42	fase	fase	NOUN	_	Gender=Fem|Number=Sing	39	obl	O	_
@@ -5216,7 +5216,7 @@
 48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	O	_
 49	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	35	conj	O	_
 50	prematura	prematuro	ADJ	_	Gender=Fem|Number=Sing	49	amod	O	_
-51-52	da	_	_	_	_	_	_	O	_
+51-52	da	_	_	_	_	_	_	_	_
 51	de	de	ADP	_	_	53	case	O	_
 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
 53	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	49	nmod	B=QUÍMICA	_
@@ -5233,7 +5233,7 @@
 5	para	para	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	produção	produção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=QUÍMICA	_
@@ -5273,7 +5273,7 @@
 
 # text = Nesta etapa, as fases anteriormente desenvolvidas serão adicionadas ao moinho coloidal, com temperatura de 95oC e, após 5 minutos de emulsificação, adiciona-se o agente modificador, em proporções mássicas de 1% e 4% em relação a quantidade de CAP na emulsão..
 # sent_id = 241-20140227-MONOGRAFIA_0-160
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
@@ -5284,7 +5284,7 @@
 8	desenvolvidas	desenvolver	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	6	acl	O	_
 9	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	10	aux:pass	O	_
 10	adicionadas	adicionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-11-12	ao	_	_	_	_	_	_	O	_
+11-12	ao	_	_	_	_	_	_	_	_
 11	a	a	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	moinho	moinho	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
@@ -5302,7 +5302,7 @@
 25	de	de	ADP	_	_	26	case	O	_
 26	emulsificação	emulsificação	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
 27	,	,	PUNCT	_	_	24	punct	O	_
-28-29	adiciona-se	_	_	_	_	_	_	O	_
+28-29	adiciona-se	_	_	_	_	_	_	_	_
 28	adiciona	adicionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	O	_
 29	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	expl	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
@@ -5324,7 +5324,7 @@
 46	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
 47	de	de	ADP	_	_	48	case	O	_
 48	CAP	CAP	PROPN	_	Gender=Masc|Number=Sing	46	nmod	O	_
-49-50	na	_	_	_	_	_	_	O	_
+49-50	na	_	_	_	_	_	_	_	_
 49	em	em	ADP	_	_	51	case	O	_
 50	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	O	_
 51	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	46	nmod	B=QUÍMICA	_
@@ -5343,7 +5343,7 @@
 8	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	2	conj	O	_
 9	de	de	ADP	_	_	10	case	O	_
 10	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	agente	agente	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
@@ -5355,7 +5355,7 @@
 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
 20	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	18	obj	O	_
 21	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	20	amod	O	_
-22-23	das	_	_	_	_	_	_	O	_
+22-23	das	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	_	24	case	O	_
 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
 24	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	20	nmod	B=QUÍMICA	_
@@ -5365,7 +5365,7 @@
 # text = 4-4-Caracterização da emulsão asfáltica modificada
 # sent_id = 241-20140227-MONOGRAFIA_0-162
 1	4-4-Caracterização	4-4-caracterização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=QUÍMICA	_
@@ -5380,7 +5380,7 @@
 4	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	2	obj	B=QUÍMICA	_
 5	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	4	amod	B=LITOLOGIA	_
 6	,	,	PUNCT	_	_	2	punct	O	_
-7-8	pode-se	_	_	_	_	_	_	O	_
+7-8	pode-se	_	_	_	_	_	_	_	_
 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
 9	realizar	realizar	VERB	_	VerbForm=Inf	7	xcomp	O	_
@@ -5396,11 +5396,11 @@
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	10	conj	O	_
 21	resultante	resultante	ADJ	_	Gender=Masc|Number=Sing	20	amod	O	_
-22-23	da	_	_	_	_	_	_	O	_
+22-23	da	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
-25-26	da	_	_	_	_	_	_	O	_
+25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	água	água	NOUN	_	Gender=Fem|Number=Sing	24	nmod	B=FLUIDO	_
@@ -5438,7 +5438,7 @@
 23	analisam	analisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	O	_
 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
 25	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	23	obj	O	_
-26-27	da	_	_	_	_	_	_	O	_
+26-27	da	_	_	_	_	_	_	_	_
 26	de	de	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	25	nmod	B=QUÍMICA	_
@@ -5455,7 +5455,7 @@
 39	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	35	conj	O	_
 40	,	,	PUNCT	_	_	41	punct	O	_
 41	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	35	conj	O	_
-42-43	ao	_	_	_	_	_	_	O	_
+42-43	ao	_	_	_	_	_	_	_	_
 42	a	a	ADP	_	_	44	case	O	_
 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
 44	armazenamento	armazenamento	NOUN	_	Gender=Masc|Number=Sing	41	nmod	O	_
@@ -5510,7 +5510,7 @@
 93	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	94	det	O	_
 94	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	91	nmod	O	_
 95	recuperado	recuperar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	94	acl	O	_
-96-97	pela	_	_	_	_	_	_	O	_
+96-97	pela	_	_	_	_	_	_	_	_
 96	por	por	ADP	_	_	98	case	O	_
 97	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	98	det	O	_
 98	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	95	obl:agent	O	_
@@ -5533,7 +5533,7 @@
 2	ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	O	_
 3	para	para	ADP	_	_	4	case	O	_
 4	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
-5-6	das	_	_	_	_	_	_	O	_
+5-6	das	_	_	_	_	_	_	_	_
 5	de	de	ADP	_	_	7	case	O	_
 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
 7	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	4	nmod	B=QUÍMICA	_
@@ -5542,7 +5542,7 @@
 10	e	e	CCONJ	_	_	11	cc	O	_
 11	modificadas	modificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	9	conj	O	_
 12	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
-13-14	nesta	_	_	_	_	_	_	O	_
+13-14	nesta	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	O	_
 15	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
@@ -5611,7 +5611,7 @@
 16	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	17	nsubj	O	_
 17	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	O	_
 18	retido	retido	ADJ	_	Gender=Masc|Number=Sing	17	xcomp	O	_
-19-20	na	_	_	_	_	_	_	O	_
+19-20	na	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	peneira	peneira	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
@@ -5631,7 +5631,7 @@
 35	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	34	amod	B=LITOLOGIA	_
 36	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux:pass	O	_
 37	vertida	verter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	advcl	O	_
-38-39	nesta	_	_	_	_	_	_	O	_
+38-39	nesta	_	_	_	_	_	_	_	_
 38	em	em	ADP	_	_	40	case	O	_
 39	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	40	det	O	_
 40	peneira	peneira	NOUN	_	Gender=Fem|Number=Sing	37	obl	O	_
@@ -5642,7 +5642,7 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-168
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	O	_
-3-4	da	_	_	_	_	_	_	O	_
+3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
 5	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
@@ -5670,14 +5670,14 @@
 6	determinar	determinar	VERB	_	VerbForm=Inf	3	xcomp	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	consistência	consistência	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
 12	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	11	amod	B=LITOLOGIA	_
 13	,	,	PUNCT	_	_	6	punct	O	_
 14	através	através	ADV	_	_	6	advmod	O	_
-15-16	do	_	_	_	_	_	_	O	_
+15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
 17	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
@@ -5693,7 +5693,7 @@
 # text = mL da amostra em fluxo contínuo, através do orifício Furol, sob condições específicas..
 # sent_id = 241-20140227-MONOGRAFIA_0-170
 1	mL	ml	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
@@ -5702,7 +5702,7 @@
 7	contínuo	contínuo	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
 8	,	,	PUNCT	_	_	9	punct	O	_
 9	através	através	ADV	_	_	1	advmod	O	_
-10-11	do	_	_	_	_	_	_	O	_
+10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	orifício	orifício	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
@@ -5739,7 +5739,7 @@
 21	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	14	conj	O	_
 22	indicadas	indicar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	21	acl	O	_
 23	,	,	PUNCT	_	_	22	punct	O	_
-24-25	pela	_	_	_	_	_	_	O	_
+24-25	pela	_	_	_	_	_	_	_	_
 24	por	por	ADP	_	_	26	case	O	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
 26	norma	norma	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
@@ -5748,7 +5748,7 @@
 29	para	para	ADP	_	_	31	case	O	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
 31	realização	realização	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
-32-33	deste	_	_	_	_	_	_	O	_
+32-33	deste	_	_	_	_	_	_	_	_
 32	de	de	ADP	_	_	34	case	O	_
 33	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	34	det	O	_
 34	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	31	nmod	O	_
@@ -5804,16 +5804,16 @@
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	viscosímetro	viscosímetro	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
 11	,	,	PUNCT	_	_	12	punct	O	_
-12-13	verificando-se	_	_	_	_	_	_	O	_
+12-13	verificando-se	_	_	_	_	_	_	_	_
 12	verificando	verificar	VERB	_	VerbForm=Ger	7	advcl	O	_
 13	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
-16-17	da	_	_	_	_	_	_	O	_
+16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
-19-20	no	_	_	_	_	_	_	O	_
+19-20	no	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	aparelho	aparelho	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
@@ -5825,21 +5825,21 @@
 1	Em	em	ADP	_	_	2	case	O	_
 2	sequencia	sequencia	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
 3	,	,	PUNCT	_	_	2	punct	O	_
-4-5	retira-se	_	_	_	_	_	_	O	_
+4-5	retira-se	_	_	_	_	_	_	_	_
 4	retira	retirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 5	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	expl	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	rolha	rolha	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
-8-9	do	_	_	_	_	_	_	O	_
+8-9	do	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	orifício	orifício	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
 11	Furol	Furol	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
 12	,	,	PUNCT	_	_	13	punct	O	_
-13-14	acionando-se	_	_	_	_	_	_	O	_
+13-14	acionando-se	_	_	_	_	_	_	_	_
 13	acionando	acionar	VERB	_	VerbForm=Ger	4	advcl	O	_
 14	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	O	_
-15-16	ao	_	_	_	_	_	_	O	_
+15-16	ao	_	_	_	_	_	_	_	_
 15	a	a	ADP	_	_	18	case	O	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 17	mesmo	mesmo	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
@@ -5850,13 +5850,13 @@
 22	sendo	ser	AUX	_	VerbForm=Ger	24	cop	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	13	advcl	O	_
-25-26	da	_	_	_	_	_	_	O	_
+25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	24	nmod	B=QUÍMICA	_
 28	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	27	amod	B=LITOLOGIA	_
 29	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	O	_
-30-31	pelo	_	_	_	_	_	_	O	_
+30-31	pelo	_	_	_	_	_	_	_	_
 30	por	por	ADP	_	_	32	case	O	_
 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
 32	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	29	obl:agent	O	_
@@ -5874,7 +5874,7 @@
 
 # text = Nesta pesquisa, os ensaios foram realizados a 50°C e o equipamento utilizado foi um viscosímetro Saybolt-Furol Pavitest Novus N480D..
 # sent_id = 241-20140227-MONOGRAFIA_0-175
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -5935,7 +5935,7 @@
 6	determinar	determinar	VERB	_	VerbForm=Inf	3	xcomp	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	pH	ph	NOUN	_	Gender=Masc|Number=Sing	6	obj	O	_
-9-10	das	_	_	_	_	_	_	O	_
+9-10	das	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
 11	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	8	nmod	B=QUÍMICA	_
@@ -5969,7 +5969,7 @@
 4	para	para	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	realização	realização	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
-7-8	deste	_	_	_	_	_	_	O	_
+7-8	deste	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	O	_
 9	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
@@ -5984,7 +5984,7 @@
 18	de	de	ADP	_	_	19	case	O	_
 19	vidro	vidro	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
 20	,	,	PUNCT	_	_	19	punct	O	_
-21-22	do	_	_	_	_	_	_	O	_
+21-22	do	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	14	conj	O	_
@@ -6013,7 +6013,7 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	potenciômetro	potenciômetro	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	B=INSTRUMENTO	_
 3	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
-4-5	na	_	_	_	_	_	_	O	_
+4-5	na	_	_	_	_	_	_	_	_
 4	em	em	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
@@ -6059,25 +6059,25 @@
 6	determinar	determinar	VERB	_	VerbForm=Inf	3	xcomp	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
-9-10	à	_	_	_	_	_	_	O	_
+9-10	à	_	_	_	_	_	_	_	_
 9	a	a	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	água	água	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=FLUIDO	_
 12	(	(	PUNCT	_	_	13	punct	O	_
 13	adesividade	adesividade	NOUN	_	Gender=Fem|Number=Sing	11	appos	O	_
 14	)	)	PUNCT	_	_	13	punct	O	_
-15-16	do	_	_	_	_	_	_	O	_
+15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
 17	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
 18	residual	residual	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
 19	,	,	PUNCT	_	_	20	punct	O	_
 20	proveniente	proveniente	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
-21-22	da	_	_	_	_	_	_	O	_
+21-22	da	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	20	obl	O	_
-24-25	das	_	_	_	_	_	_	O	_
+24-25	das	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
 26	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	23	nmod	B=QUÍMICA	_
@@ -6097,22 +6097,22 @@
 3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	O	_
 4	obtido	obter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
 5	através	através	ADV	_	_	4	advmod	O	_
-6-7	da	_	_	_	_	_	_	O	_
+6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	análise	análise	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
 9	visual	visual	ADJ	_	Gender=Fem|Number=Sing	8	amod	O	_
-10-11	do	_	_	_	_	_	_	O	_
+10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	agregado	agregado	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
 13	,	,	PUNCT	_	_	14	punct	O	_
-14-15	estimando-se	_	_	_	_	_	_	O	_
+14-15	estimando-se	_	_	_	_	_	_	_	_
 14	estimando	estimar	VERB	_	VerbForm=Ger	4	advcl	O	_
 15	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	porcentagem	porcentagem	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
-18-19	da	_	_	_	_	_	_	O	_
+18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	área	área	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
@@ -6161,7 +6161,7 @@
 6	verificar	verificar	VERB	_	VerbForm=Inf	3	xcomp	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	susceptibilidade	susceptibilidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
@@ -6183,7 +6183,7 @@
 27	não	não	ADV	_	Polarity=Neg	28	advmod	O	_
 28	haver	haver	VERB	_	VerbForm=Inf	21	advcl	O	_
 29	separação	separação	NOUN	_	Gender=Fem|Number=Sing	28	obj	O	_
-30-31	das	_	_	_	_	_	_	O	_
+30-31	das	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	32	case	O	_
 31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	O	_
 32	fases	fase	NOUN	_	Gender=Fem|Number=Plur	29	nmod	O	_
@@ -6209,12 +6209,12 @@
 13	com	com	ADP	_	_	14	case	O	_
 14	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
 15	lateral	lateral	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
-16-17	no	_	_	_	_	_	_	O	_
+16-17	no	_	_	_	_	_	_	_	_
 16	em	em	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
 19	e	e	CCONJ	_	_	22	cc	O	_
-20-21	no	_	_	_	_	_	_	O	_
+20-21	no	_	_	_	_	_	_	_	_
 20	em	em	ADP	_	_	22	case	O	_
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
 22	topo	topo	NOUN	_	Gender=Masc|Number=Sing	18	conj	O	_
@@ -6232,21 +6232,21 @@
 34	asfálticos	asfáltico	ADJ	_	Gender=Masc|Number=Plur	33	amod	B=LITOLOGIA	_
 35	de	de	ADP	_	_	36	case	O	_
 36	porções	porção	NOUN	_	Gender=Fem|Number=Plur	33	nmod	O	_
-37-38	da	_	_	_	_	_	_	O	_
+37-38	da	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	39	case	O	_
 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
 39	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	36	nmod	O	_
 40	retiradas	retirar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	39	acl	O	_
-41-42	do	_	_	_	_	_	_	O	_
+41-42	do	_	_	_	_	_	_	_	_
 41	de	de	ADP	_	_	43	case	O	_
 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
 43	topo	topo	NOUN	_	Gender=Masc|Number=Sing	39	nmod	O	_
 44	e	e	CCONJ	_	_	47	cc	O	_
-45-46	do	_	_	_	_	_	_	O	_
+45-46	do	_	_	_	_	_	_	_	_
 45	de	de	ADP	_	_	47	case	O	_
 46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	O	_
 47	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	43	conj	O	_
-48-49	da	_	_	_	_	_	_	O	_
+48-49	da	_	_	_	_	_	_	_	_
 48	de	de	ADP	_	_	50	case	O	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
 50	proveta	proveta	NOUN	_	Gender=Fem|Number=Sing	47	nmod	O	_
@@ -6329,12 +6329,12 @@
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 24	total	total	ADJ	_	Gender=Fem|Number=Sing	25	amod	O	_
 25	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
-26-27	da	_	_	_	_	_	_	O	_
+26-27	da	_	_	_	_	_	_	_	_
 26	de	de	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	água	água	NOUN	_	Gender=Fem|Number=Sing	25	nmod	B=FLUIDO	_
 29	ou	ou	CCONJ	_	_	32	cc	O	_
-30-31	da	_	_	_	_	_	_	O	_
+30-31	da	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	32	case	O	_
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 32	água	água	NOUN	_	Gender=Fem|Number=Sing	28	conj	B=FLUIDO	_
@@ -6347,11 +6347,11 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-193
 1	No	no	ADP	_	_	2	mark	O	_
 2	decorrer	decorrer	VERB	_	VerbForm=Inf	6	advcl	O	_
-3-4	do	_	_	_	_	_	_	O	_
+3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
-6-7	observa-se	_	_	_	_	_	_	O	_
+6-7	observa-se	_	_	_	_	_	_	_	_
 6	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 7	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	expl	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
@@ -6361,11 +6361,11 @@
 12	fase	fase	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
 13	pastosa	pastoso	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	_
 14	devido	devido	ADV	_	_	6	advmod	O	_
-15-16	à	_	_	_	_	_	_	O	_
+15-16	à	_	_	_	_	_	_	_	_
 15	a	a	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
-18-19	da	_	_	_	_	_	_	O	_
+18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	água	água	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=FLUIDO	_
@@ -6381,7 +6381,7 @@
 3	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	O	_
 5	interrompido	interromper	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	O	_
-6-7	no	_	_	_	_	_	_	O	_
+6-7	no	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	momento	momento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
@@ -6400,7 +6400,7 @@
 21	espelhada	espelhar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	20	acl	O	_
 22	,	,	PUNCT	_	_	23	punct	O	_
 23	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	O	_
-24-25	pelo	_	_	_	_	_	_	O	_
+24-25	pelo	_	_	_	_	_	_	_	_
 24	por	por	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	23	obl:agent	O	_
@@ -6438,7 +6438,7 @@
 
 # text = Nesta seção, são apresentados e discutidos os resultados referentes à caracterização das emulsões asfálticas modificadas com vermiculita, nanomaterial utilizado como agente modificador..
 # sent_id = 241-20140227-MONOGRAFIA_0-198
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	seção	seção	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -6450,11 +6450,11 @@
 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
 10	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
 11	referentes	referente	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
-12-13	à	_	_	_	_	_	_	O	_
+12-13	à	_	_	_	_	_	_	_	_
 12	a	a	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
-15-16	das	_	_	_	_	_	_	O	_
+15-16	das	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	O	_
 17	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	14	nmod	B=QUÍMICA	_
@@ -6478,7 +6478,7 @@
 3	seis	seis	NUM	_	NumType=Card	4	nummod	O	_
 4	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	B=QUÍMICA	_
 5	,	,	PUNCT	_	_	6	punct	O	_
-6-7	variando-se	_	_	_	_	_	_	O	_
+6-7	variando-se	_	_	_	_	_	_	_	_
 6	variando	variar	VERB	_	VerbForm=Ger	2	advcl	O	_
 7	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	6	expl	O	_
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
@@ -6488,11 +6488,11 @@
 12	de	de	ADP	_	_	13	case	O	_
 13	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=LITOLOGIA	_
 14	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
-15-16	na	_	_	_	_	_	_	O	_
+15-16	na	_	_	_	_	_	_	_	_
 15	em	em	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	composição	composição	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
-18-19	da	_	_	_	_	_	_	O	_
+18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=QUÍMICA	_
@@ -6504,13 +6504,13 @@
 26	encontrar	encontrar	VERB	_	VerbForm=Inf	24	acl	O	_
 27	,	,	PUNCT	_	_	26	punct	O	_
 28	através	através	ADV	_	_	26	advmod	O	_
-29-30	da	_	_	_	_	_	_	O	_
+29-30	da	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	31	case	O	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
 31	análise	análise	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
 32	de	de	ADP	_	_	33	case	O	_
 33	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	31	nmod	O	_
-34-35	da	_	_	_	_	_	_	O	_
+34-35	da	_	_	_	_	_	_	_	_
 34	de	de	ADP	_	_	36	case	O	_
 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
 36	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
@@ -6525,7 +6525,7 @@
 45	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	O	_
 46	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	43	nmod	O	_
 47	exigidos	exigir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	46	acl	O	_
-48-49	pela	_	_	_	_	_	_	O	_
+48-49	pela	_	_	_	_	_	_	_	_
 48	por	por	ADP	_	_	50	case	O	_
 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
 50	norma	norma	NOUN	_	Gender=Fem|Number=Sing	47	obl:agent	O	_
@@ -6540,7 +6540,7 @@
 1	Após	após	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
-4-5	das	_	_	_	_	_	_	O	_
+4-5	das	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
 6	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	3	nmod	B=QUÍMICA	_
@@ -6559,7 +6559,7 @@
 # text = Devido à falta de uma especificação técnica para emulsões modificadas com os resíduos utilizados neste trabalho, as propriedades físicas das emulsões modificadas foram analisadas tendo como parâmetro a especificação para emulsões asfálticas catiônicas (DNER-EM 369/97)..
 # sent_id = 241-20140227-MONOGRAFIA_0-201
 1	Devido	devido	ADV	_	_	28	advmod	O	_
-2-3	à	_	_	_	_	_	_	O	_
+2-3	à	_	_	_	_	_	_	_	_
 2	a	a	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	falta	falta	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
@@ -6574,7 +6574,7 @@
 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
 14	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
 15	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	O	_
-16-17	neste	_	_	_	_	_	_	O	_
+16-17	neste	_	_	_	_	_	_	_	_
 16	em	em	ADP	_	_	18	case	O	_
 17	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	O	_
 18	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
@@ -6582,7 +6582,7 @@
 20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	O	_
 21	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	28	nsubj:pass	O	_
 22	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	21	amod	O	_
-23-24	das	_	_	_	_	_	_	O	_
+23-24	das	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
 25	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	21	nmod	B=QUÍMICA	_
@@ -6608,7 +6608,7 @@
 # text = 5-1-Caracterização da emulsão asfáltica modificada
 # sent_id = 241-20140227-MONOGRAFIA_0-202
 1	5-1-Caracterização	5-1-caracterização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-2-3	da	_	_	_	_	_	_	O	_
+2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=QUÍMICA	_
@@ -6617,7 +6617,7 @@
 
 # text = Nesta etapa, foram realizados os ensaios de caracterização das emulsões asfálticas modificadas..
 # sent_id = 241-20140227-MONOGRAFIA_0-203
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -6628,7 +6628,7 @@
 8	ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	O	_
 9	de	de	ADP	_	_	10	case	O	_
 10	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
-11-12	das	_	_	_	_	_	_	O	_
+11-12	das	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
 13	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	10	nmod	B=QUÍMICA	_
@@ -6646,7 +6646,7 @@
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	composição	composição	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
 7	detalhada	detalhar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	O	_
-8-9	das	_	_	_	_	_	_	O	_
+8-9	das	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
 10	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	6	nmod	B=QUÍMICA	_
@@ -6663,7 +6663,7 @@
 21	ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	18	obl	O	_
 22	de	de	ADP	_	_	23	case	O	_
 23	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
-24-25	das	_	_	_	_	_	_	O	_
+24-25	das	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
 26	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	23	nmod	B=QUÍMICA	_
@@ -6674,7 +6674,7 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-205
 1	Tabela	Tabela	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
 2	01-Composição	01-Composição	PROPN	_	Number=Sing	1	flat:name	O	_
-3-4	das	_	_	_	_	_	_	O	_
+3-4	das	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	1	flat:name	O	_
 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	flat:name	O	_
 5	Emulsões	Emulsões	PROPN	_	Number=Sing	1	flat:name	B=QUÍMICA	_
@@ -6684,7 +6684,7 @@
 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
 2	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	19	nsubj:pass	O	_
 3	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
-4-5	das	_	_	_	_	_	_	O	_
+4-5	das	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
 6	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	2	nmod	B=QUÍMICA	_
@@ -6712,7 +6712,7 @@
 
 # text = Observa-se que as emulsões asfálticas modificadas com vermiculita não apresentaram partículas retidas na peneira ASTM 20, mostrando a eficiência do processo de moagem realizado no moinho coloidal durante a obtenção da emulsão asfáltica..
 # sent_id = 241-20140227-MONOGRAFIA_0-208
-1-2	Observa-se	_	_	_	_	_	_	O	_
+1-2	Observa-se	_	_	_	_	_	_	_	_
 1	Abserva	abservar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
 3	que	que	SCONJ	_	_	11	mark	O	_
@@ -6726,7 +6726,7 @@
 11	apresentaram	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	1	ccomp	O	_
 12	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	11	obj	O	_
 13	retidas	reter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	12	acl	O	_
-14-15	na	_	_	_	_	_	_	O	_
+14-15	na	_	_	_	_	_	_	_	_
 14	em	em	ADP	_	_	16	case	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	peneira	peneira	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
@@ -6736,14 +6736,14 @@
 20	mostrando	mostrar	VERB	_	VerbForm=Ger	11	advcl	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	20	obj	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	processo	processo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
 26	de	de	ADP	_	_	27	case	O	_
 27	moagem	moagem	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
 28	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	25	acl	O	_
-29-30	no	_	_	_	_	_	_	O	_
+29-30	no	_	_	_	_	_	_	_	_
 29	em	em	ADP	_	_	31	case	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	moinho	moinho	NOUN	_	Gender=Masc|Number=Sing	28	obl	O	_
@@ -6751,7 +6751,7 @@
 33	durante	durante	ADP	_	_	35	case	O	_
 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
 35	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
-36-37	da	_	_	_	_	_	_	O	_
+36-37	da	_	_	_	_	_	_	_	_
 36	de	de	ADP	_	_	38	case	O	_
 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
 38	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	35	nmod	B=QUÍMICA	_
@@ -6773,7 +6773,7 @@
 10	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
 11	e	e	CCONJ	_	_	12	cc	O	_
 12	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	10	conj	O	_
-13-14	da	_	_	_	_	_	_	O	_
+13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=QUÍMICA	_
@@ -6801,10 +6801,10 @@
 
 # text = Salienta-se no entanto, que esse ensaio nos fornece apenas uma indicação..
 # sent_id = 241-20140227-MONOGRAFIA_0-210
-1-2	Salienta-se	_	_	_	_	_	_	O	_
+1-2	Salienta-se	_	_	_	_	_	_	_	_
 1	Salienta	salientar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
-3-4	no	_	_	_	_	_	_	O	_
+3-4	no	_	_	_	_	_	_	_	_
 3	em	em	ADP	_	_	1	cc	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	O	_
 5	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	3	fixed	O	_
@@ -6812,7 +6812,7 @@
 7	que	que	SCONJ	_	_	12	mark	O	_
 8	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	O	_
 9	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
-10-11	nos	_	_	_	_	_	_	O	_
+10-11	nos	_	_	_	_	_	_	_	_
 10	em	em	ADP	_	_	11	case	O	_
 11	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	nmod	O	_
 12	fornece	fornecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
@@ -6832,7 +6832,7 @@
 6	caracterizar	caracterizar	VERB	_	VerbForm=Inf	4	advcl	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
@@ -6856,7 +6856,7 @@
 5	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
 6	02	02	NUM	_	NumType=Card	5	nummod	O	_
 7	,	,	PUNCT	_	_	2	punct	O	_
-8-9	observa-se	_	_	_	_	_	_	O	_
+8-9	observa-se	_	_	_	_	_	_	_	_
 8	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
 10	que	que	SCONJ	_	_	17	mark	O	_
@@ -6868,7 +6868,7 @@
 16	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	14	obl	B=LITOLOGIA	_
 17	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	O	_
 18	pH	ph	NOUN	_	Gender=Masc|Number=Sing	17	obj	O	_
-19-20	no	_	_	_	_	_	_	O	_
+19-20	no	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	intervalo	intervalo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
@@ -6880,11 +6880,11 @@
 27	com	com	ADP	_	_	28	case	O	_
 28	valores	valor	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
 29	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
-30-31	ao	_	_	_	_	_	_	O	_
+30-31	ao	_	_	_	_	_	_	_	_
 30	a	a	ADP	_	_	32	case	O	_
 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
 32	pH	ph	NOUN	_	Gender=Masc|Number=Sing	29	obl	O	_
-33-34	das	_	_	_	_	_	_	O	_
+33-34	das	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	35	case	O	_
 34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	O	_
 35	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	32	nmod	B=QUÍMICA	_
@@ -6910,7 +6910,7 @@
 13	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 14	apresentar	apresentar	VERB	_	VerbForm=Inf	13	xcomp	O	_
 15	pH	ph	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
-16-17	na	_	_	_	_	_	_	O	_
+16-17	na	_	_	_	_	_	_	_	_
 16	em	em	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	faixa	faixa	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
@@ -6946,16 +6946,16 @@
 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
 17	fator	fator	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
 18	determinante	determinante	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
-19-20	no	_	_	_	_	_	_	O	_
+19-20	no	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	valor	valor	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
 22	final	final	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	pH	ph	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
-26-27	da	_	_	_	_	_	_	O	_
+26-27	da	_	_	_	_	_	_	_	_
 26	de	de	ADP	_	_	28	case	O	_
 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
 28	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	25	nmod	B=QUÍMICA	_
@@ -6978,10 +6978,10 @@
 5	apresentaram	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
 6	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
 7	semelhante	semelhante	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
-8-9	ao	_	_	_	_	_	_	O	_
+8-9	ao	_	_	_	_	_	_	_	_
 8	a	a	ADP	_	_	9	case	O	_
 9	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obl	O	_
-10-11	das	_	_	_	_	_	_	O	_
+10-11	das	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	8	fixed	O	_
 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
 12	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	9	nmod	B=QUÍMICA	_
@@ -6993,7 +6993,7 @@
 18	,	,	PUNCT	_	_	16	punct	O	_
 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
 20	valores	valor	NOUN	_	Gender=Masc|Number=Plur	27	nsubj	O	_
-21-22	dos	_	_	_	_	_	_	O	_
+21-22	dos	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
 23	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
@@ -7001,7 +7001,7 @@
 25	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	O	_
 26	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	27	cop	O	_
 27	superiores	alto	ADJ	_	Gender=Masc|Number=Plur	5	conj	O	_
-28-29	ao	_	_	_	_	_	_	O	_
+28-29	ao	_	_	_	_	_	_	_	_
 28	a	a	ADP	_	_	30	case	O	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
 30	teor	teor	NOUN	_	Gender=Masc|Number=Sing	27	obl	O	_
@@ -7013,12 +7013,12 @@
 
 # text = Atribui-se este aumento no percentual de resíduo por evaporação, quando comparado à massa inicial de asfalto utilizado, a traços do nanomaterial, do solvente, do emulsificante ou do aditivo que podem ter permanecido na amostra..
 # sent_id = 241-20140227-MONOGRAFIA_0-218
-1-2	Atribui-se	_	_	_	_	_	_	O	_
+1-2	Atribui-se	_	_	_	_	_	_	_	_
 1	Atribui	atribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
 3	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	O	_
 4	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
-5-6	no	_	_	_	_	_	_	O	_
+5-6	no	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	percentual	percentual	NOUN	_	Gender=Masc|Number=Sing	1	obl	O	_
@@ -7029,7 +7029,7 @@
 12	,	,	PUNCT	_	_	1	punct	O	_
 13	quando	quando	SCONJ	_	_	14	mark	O	_
 14	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	advcl	O	_
-15-16	à	_	_	_	_	_	_	O	_
+15-16	à	_	_	_	_	_	_	_	_
 15	a	a	ADP	_	_	17	case	O	_
 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
 17	massa	massa	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
@@ -7040,22 +7040,22 @@
 22	,	,	PUNCT	_	_	21	punct	O	_
 23	a	a	ADP	_	_	24	case	O	_
 24	traços	traço	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
-25-26	do	_	_	_	_	_	_	O	_
+25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
 27	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
 28	,	,	PUNCT	_	_	31	punct	O	_
-29-30	do	_	_	_	_	_	_	O	_
+29-30	do	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	31	case	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
 32	,	,	PUNCT	_	_	35	punct	O	_
-33-34	do	_	_	_	_	_	_	O	_
+33-34	do	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	35	case	O	_
 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
 35	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	27	conj	B=QUÍMICA	_
 36	ou	ou	CCONJ	_	_	39	cc	O	_
-37-38	do	_	_	_	_	_	_	O	_
+37-38	do	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	39	case	O	_
 38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
 39	aditivo	aditivo	NOUN	_	Gender=Masc|Number=Sing	35	conj	B=QUÍMICA	_
@@ -7063,7 +7063,7 @@
 41	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	acl:relcl	O	_
 42	ter	ter	AUX	_	VerbForm=Inf	43	aux	O	_
 43	permanecido	permanecer	VERB	_	VerbForm=Part	41	xcomp	O	_
-44-45	na	_	_	_	_	_	_	O	_
+44-45	na	_	_	_	_	_	_	_	_
 44	em	em	ADP	_	_	46	case	O	_
 45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
 46	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	43	obl	O	_
@@ -7084,7 +7084,7 @@
 10	,	,	PUNCT	_	_	12	punct	O	_
 11	com	com	ADP	_	_	12	case	O	_
 12	base	base	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
-13-14	no	_	_	_	_	_	_	O	_
+13-14	no	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	“	“	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
@@ -7096,13 +7096,13 @@
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 22	principal	principal	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	_
 23	propósito	propósito	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	O	_
-24-25	do	_	_	_	_	_	_	O	_
+24-25	do	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	processo	processo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
 27	de	de	ADP	_	_	28	case	O	_
 28	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
-29-30	do	_	_	_	_	_	_	O	_
+29-30	do	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	31	case	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
@@ -7115,7 +7115,7 @@
 38	fase	fase	NOUN	_	Gender=Fem|Number=Sing	36	nmod	O	_
 39	não	não	ADV	_	Polarity=Neg	40	advmod	O	_
 40	aquosa	aquoso	ADJ	_	Gender=Fem|Number=Sing	38	amod	O	_
-41-42	na	_	_	_	_	_	_	O	_
+41-42	na	_	_	_	_	_	_	_	_
 41	em	em	ADP	_	_	43	case	O	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
 43	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	40	obl	B=QUÍMICA	_
@@ -7139,13 +7139,13 @@
 5	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	O	_
 6	de	de	ADP	_	_	7	case	O	_
 7	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
-8-9	do	_	_	_	_	_	_	O	_
+8-9	do	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
 11	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	O	_
 12	baseadas	basear	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-13-14	na	_	_	_	_	_	_	O	_
+13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	destilação	destilação	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
@@ -7162,7 +7162,7 @@
 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
 5	protocolos	protocolo	NOUN	_	Gender=Masc|Number=Plur	3	obj	O	_
 6	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	acl	O	_
-7-8	pelos	_	_	_	_	_	_	O	_
+7-8	pelos	_	_	_	_	_	_	_	_
 7	por	por	ADP	_	_	9	case	O	_
 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
 9	Estados	Estados	PROPN	_	Gender=Masc|Number=Plur	6	obl:agent	O	_
@@ -7170,13 +7170,13 @@
 11	e	e	CCONJ	_	_	13	cc	O	_
 12	diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
 13	países	país	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
-14-15	da	_	_	_	_	_	_	O	_
+14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	Europa	Europa	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
 17	para	para	ADP	_	_	18	case	O	_
 18	realização	realização	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
-19-20	deste	_	_	_	_	_	_	O	_
+19-20	deste	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	21	det	O	_
 21	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
@@ -7207,7 +7207,7 @@
 20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	O	_
 21	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	19	obj	O	_
 22	reológicas	reológico	ADJ	_	Gender=Fem|Number=Plur	21	amod	O	_
-23-24	do	_	_	_	_	_	_	O	_
+23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
@@ -7217,11 +7217,11 @@
 29	em	em	ADP	_	_	30	mark	O	_
 30	vista	ver	VERB	_	VerbForm=Part	19	advcl	O	_
 31	variações	variação	NOUN	_	Gender=Fem|Number=Plur	30	obj	O	_
-32-33	na	_	_	_	_	_	_	O	_
+32-33	na	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
-35-36	do	_	_	_	_	_	_	O	_
+35-36	do	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	37	case	O	_
 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
 37	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	34	nmod	O	_
@@ -7231,7 +7231,7 @@
 41	modificar	modificar	VERB	_	VerbForm=Inf	40	xcomp	O	_
 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
 43	morfologia	morfologia	NOUN	_	Gender=Fem|Number=Sing	41	obj	O	_
-44-45	do	_	_	_	_	_	_	O	_
+44-45	do	_	_	_	_	_	_	_	_
 44	de	de	ADP	_	_	46	case	O	_
 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
 46	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	43	nmod	O	_
@@ -7240,13 +7240,13 @@
 49	,	,	PUNCT	_	_	50	punct	O	_
 50	consequentemente	consequentemente	ADV	_	_	54	advmod	O	_
 51	,	,	PUNCT	_	_	50	punct	O	_
-52-53	da	_	_	_	_	_	_	O	_
+52-53	da	_	_	_	_	_	_	_	_
 52	de	de	ADP	_	_	54	case	O	_
 53	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	O	_
 54	rede	rede	NOUN	_	Gender=Fem|Number=Sing	43	conj	O	_
 55	polimérica	polimérico	ADJ	_	Gender=Fem|Number=Sing	54	amod	O	_
 56	existente	existente	ADJ	_	Gender=Fem|Number=Sing	54	amod	O	_
-57-58	na	_	_	_	_	_	_	O	_
+57-58	na	_	_	_	_	_	_	_	_
 57	em	em	ADP	_	_	59	case	O	_
 58	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	O	_
 59	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	54	nmod	B=QUÍMICA	_
@@ -7278,7 +7278,7 @@
 21	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	23	nsubj:pass	B=QUÍMICA	_
 22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:pass	O	_
 23	aplicada	aplicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	advcl	O	_
-24-25	no	_	_	_	_	_	_	O	_
+24-25	no	_	_	_	_	_	_	_	_
 24	em	em	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	campo	campo	NOUN	_	Gender=Masc|Number=Sing	23	obl	B=CAMPO:TIPO	_
@@ -7293,18 +7293,18 @@
 
 # text = Na literatura, nota-se que a viscosidade da emulsão asfáltica tende a aumentar de acordo com o aumento da interação do nanomaterial ou polímero com o asfalto e de acordo com o aumento da quantidade de nanomaterial ou polímero inserida na emulsão..
 # sent_id = 241-20140227-MONOGRAFIA_0-225
-1-2	Na	_	_	_	_	_	_	O	_
+1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
 4	,	,	PUNCT	_	_	3	punct	O	_
-5-6	nota-se	_	_	_	_	_	_	O	_
+5-6	nota-se	_	_	_	_	_	_	_	_
 5	nota	nota	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
 7	que	que	SCONJ	_	_	14	mark	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
-10-11	da	_	_	_	_	_	_	O	_
+10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	9	nmod	B=QUÍMICA	_
@@ -7317,11 +7317,11 @@
 19	com	com	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
-22-23	da	_	_	_	_	_	_	O	_
+22-23	da	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	interação	interação	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
-25-26	do	_	_	_	_	_	_	O	_
+25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
 27	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
@@ -7336,7 +7336,7 @@
 36	com	com	ADP	_	_	38	case	O	_
 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	O	_
 38	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	35	nmod	O	_
-39-40	da	_	_	_	_	_	_	O	_
+39-40	da	_	_	_	_	_	_	_	_
 39	de	de	ADP	_	_	41	case	O	_
 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
 41	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	38	nmod	O	_
@@ -7345,7 +7345,7 @@
 44	ou	ou	CCONJ	_	_	45	cc	O	_
 45	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	43	conj	O	_
 46	inserida	inserir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	45	acl	O	_
-47-48	na	_	_	_	_	_	_	O	_
+47-48	na	_	_	_	_	_	_	_	_
 47	em	em	ADP	_	_	49	case	O	_
 48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	O	_
 49	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	46	obl	B=QUÍMICA	_
@@ -7361,7 +7361,7 @@
 5	de	de	ADP	_	_	6	case	O	_
 6	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	4	nmod	B=LITOLOGIA	_
 7	inserida	inserir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	O	_
-8-9	na	_	_	_	_	_	_	O	_
+8-9	na	_	_	_	_	_	_	_	_
 8	em	em	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	obl	B=QUÍMICA	_
@@ -7375,7 +7375,7 @@
 18	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	cop	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	homogeneidade	homogeneidade	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-21-22	dessa	_	_	_	_	_	_	O	_
+21-22	dessa	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	O	_
 23	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	20	nmod	B=QUÍMICA	_
@@ -7393,11 +7393,11 @@
 7	mais	mais	ADV	_	_	8	advmod	O	_
 8	bem	bem	ADV	_	_	9	advmod	O	_
 9	distribuída	distribuir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	xcomp	O	_
-10-11	na	_	_	_	_	_	_	O	_
+10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	_	_	12	case	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
-13-14	da	_	_	_	_	_	_	O	_
+13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=QUÍMICA	_
@@ -7414,7 +7414,7 @@
 6	,	,	PUNCT	_	_	1	punct	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
@@ -7429,19 +7429,19 @@
 1	No	no	ADP	_	_	4	cc	O	_
 2	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
 3	,	,	PUNCT	_	_	2	punct	O	_
-4-5	esperava-se	_	_	_	_	_	_	O	_
+4-5	esperava-se	_	_	_	_	_	_	_	_
 4	esperava	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	O	_
 5	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl	O	_
 6	,	,	PUNCT	_	_	4	punct	O	_
 7	devido	devido	ADV	_	_	4	advmod	O	_
-8-9	aos	_	_	_	_	_	_	O	_
+8-9	aos	_	_	_	_	_	_	_	_
 8	a	a	ADP	_	_	10	case	O	_
 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
 10	dados	dado	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
 11	e	e	CCONJ	_	_	12	cc	O	_
 12	informações	informação	NOUN	_	Gender=Fem|Number=Plur	10	conj	O	_
 13	encontrados	encontrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
-14-15	na	_	_	_	_	_	_	O	_
+14-15	na	_	_	_	_	_	_	_	_
 14	em	em	ADP	_	_	16	case	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
@@ -7449,7 +7449,7 @@
 18	que	que	SCONJ	_	_	36	mark	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	36	nsubj	O	_
-21-22	da	_	_	_	_	_	_	O	_
+21-22	da	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	20	nmod	B=LITOLOGIA	_
@@ -7470,7 +7470,7 @@
 38	aumentar	aumentar	VERB	_	VerbForm=Inf	36	xcomp	O	_
 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
 40	interação	interação	NOUN	_	Gender=Fem|Number=Sing	38	obj	O	_
-41-42	do	_	_	_	_	_	_	O	_
+41-42	do	_	_	_	_	_	_	_	_
 41	de	de	ADP	_	_	43	case	O	_
 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
 43	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	40	nmod	O	_
@@ -7485,11 +7485,11 @@
 52	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	54	cop	O	_
 53	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	54	det	O	_
 54	diminuição	diminuição	NOUN	_	Gender=Fem|Number=Sing	36	conj	O	_
-55-56	na	_	_	_	_	_	_	O	_
+55-56	na	_	_	_	_	_	_	_	_
 55	em	em	ADP	_	_	57	case	O	_
 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
 57	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	54	nmod	O	_
-58-59	das	_	_	_	_	_	_	O	_
+58-59	das	_	_	_	_	_	_	_	_
 58	de	de	ADP	_	_	60	case	O	_
 59	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	60	det	O	_
 60	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	57	nmod	B=QUÍMICA	_
@@ -7501,12 +7501,12 @@
 
 # text = Acredita-se que, ao tratar a vermiculita com solução de emulsificante e solução de emulsificante em meio ácido, não só houve a expansão do nanomaterial, mas também a deterioração do mesmo, impedindo a formação de uma rede homogênea, diminuindo a interação nanomaterial-asfalto e, conseqüentemente, a viscosidade das emulsões..
 # sent_id = 241-20140227-MONOGRAFIA_0-230
-1-2	Acredita-se	_	_	_	_	_	_	O	_
+1-2	Acredita-se	_	_	_	_	_	_	_	_
 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
 3	que	que	SCONJ	_	_	24	mark	O	_
 4	,	,	PUNCT	_	_	7	punct	O	_
-5-6	ao	_	_	_	_	_	_	O	_
+5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	SCONJ	_	_	7	mark	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	tratar	tratar	VERB	_	VerbForm=Inf	24	advcl	O	_
@@ -7529,7 +7529,7 @@
 24	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	ccomp	O	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
 26	expansão	expansão	NOUN	_	Gender=Fem|Number=Sing	24	obj	O	_
-27-28	do	_	_	_	_	_	_	O	_
+27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	_	_	29	case	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
 29	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
@@ -7538,7 +7538,7 @@
 32	também	também	ADV	_	_	34	advmod	O	_
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	deterioração	deterioração	NOUN	_	Gender=Fem|Number=Sing	24	conj	O	_
-35-36	do	_	_	_	_	_	_	O	_
+35-36	do	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	37	case	O	_
 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
 37	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	34	nmod	O	_
@@ -7561,7 +7561,7 @@
 54	,	,	PUNCT	_	_	53	punct	O	_
 55	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	O	_
 56	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	49	conj	O	_
-57-58	das	_	_	_	_	_	_	O	_
+57-58	das	_	_	_	_	_	_	_	_
 57	de	de	ADP	_	_	59	case	O	_
 58	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	59	det	O	_
 59	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	56	nmod	B=QUÍMICA	_
@@ -7591,11 +7591,11 @@
 19	averiguar	averiguar	VERB	_	VerbForm=Inf	8	advcl	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	mudança	mudança	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
-22-23	na	_	_	_	_	_	_	O	_
+22-23	na	_	_	_	_	_	_	_	_
 22	em	em	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	19	obl	O	_
-25-26	da	_	_	_	_	_	_	O	_
+25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	24	nmod	B=LITOLOGIA	_
@@ -7631,26 +7631,26 @@
 17	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	27	nsubj	O	_
 18	calculados	calcular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	_
 19	correspondentes	correspondente	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
-20-21	ao	_	_	_	_	_	_	O	_
+20-21	ao	_	_	_	_	_	_	_	_
 20	a	a	ADP	_	_	22	case	O	_
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
 22	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	19	obl	O	_
-23-24	da	_	_	_	_	_	_	O	_
+23-24	da	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 25	proveta	proveta	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
 26	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	27	cop	O	_
 27	inferiores	inferior	ADJ	_	Gender=Masc|Number=Plur	10	advcl	O	_
-28-29	aos	_	_	_	_	_	_	O	_
+28-29	aos	_	_	_	_	_	_	_	_
 28	a	a	ADP	_	_	30	case	O	_
 29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
 30	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	27	obl	O	_
 31	calculados	calcular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	30	acl	O	_
-32-33	no	_	_	_	_	_	_	O	_
+32-33	no	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
 34	topo	topo	NOUN	_	Gender=Masc|Number=Sing	31	obl	O	_
-35-36	da	_	_	_	_	_	_	O	_
+35-36	da	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	37	case	O	_
 36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
 37	proveta	proveta	NOUN	_	Gender=Fem|Number=Sing	34	nmod	O	_
@@ -7659,7 +7659,7 @@
 
 # text = Acredita-se que o tempo de emulsificação não tenha sido o bastante para homogeneizar a mistura 100%, fazendo com que a sedimentação tenha sido fora do padrão..
 # sent_id = 241-20140227-MONOGRAFIA_0-234
-1-2	Acredita-se	_	_	_	_	_	_	O	_
+1-2	Acredita-se	_	_	_	_	_	_	_	_
 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
 3	que	que	SCONJ	_	_	11	mark	O	_
@@ -7687,7 +7687,7 @@
 25	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	O	_
 26	sido	ser	AUX	_	VerbForm=Part	27	cop	O	_
 27	fora	fora	ADV	_	_	20	ccomp	O	_
-28-29	do	_	_	_	_	_	_	O	_
+28-29	do	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	30	case	O	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
 30	padrão	padrão	NOUN	_	Gender=Masc|Number=Sing	27	obl	O	_
@@ -7712,7 +7712,7 @@
 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
 15	padrões	padrão	NOUN	_	Gender=Masc|Number=Plur	12	obj	O	_
 16	estabelecidos	estabelecer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	O	_
-17-18	pela	_	_	_	_	_	_	O	_
+17-18	pela	_	_	_	_	_	_	_	_
 17	por	por	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	norma	norma	NOUN	_	Gender=Fem|Number=Sing	16	obl:agent	O	_
@@ -7747,11 +7747,11 @@
 24	de	de	ADP	_	_	26	case	O	_
 25	tais	tal	DET	_	Gender=Masc|Number=Plur|PronType=Dem	26	det	O	_
 26	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	23	nmod	O	_
-27-28	no	_	_	_	_	_	_	O	_
+27-28	no	_	_	_	_	_	_	_	_
 27	em	em	ADP	_	_	29	case	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
 29	topo	topo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
-30-31	da	_	_	_	_	_	_	O	_
+30-31	da	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	32	case	O	_
 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 32	proveta	proveta	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
@@ -7760,7 +7760,7 @@
 
 # text = Neste trabalho, a vermiculita foi adicionada durante o processo de moagem da emulsão..
 # sent_id = 241-20140227-MONOGRAFIA_0-237
-1-2	Neste	_	_	_	_	_	_	O	_
+1-2	Neste	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
@@ -7774,7 +7774,7 @@
 11	processo	processo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
 12	de	de	ADP	_	_	13	case	O	_
 13	moagem	moagem	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
-14-15	da	_	_	_	_	_	_	O	_
+14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
 16	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	13	nmod	B=QUÍMICA	_
@@ -7787,11 +7787,11 @@
 2	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	_
 3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	O	_
 4	baseada	basear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
-5-6	na	_	_	_	_	_	_	O	_
+5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
-8-9	do	_	_	_	_	_	_	O	_
+8-9	do	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
@@ -7816,7 +7816,7 @@
 14	,	,	PUNCT	_	_	12	punct	O	_
 15	quando	quando	ADV	_	_	16	advmod	O	_
 16	submetido	submeter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	acl	O	_
-17-18	ao	_	_	_	_	_	_	O	_
+17-18	ao	_	_	_	_	_	_	_	_
 17	a	a	ADP	_	_	19	case	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
 19	aquecimento	aquecimento	NOUN	_	Gender=Masc|Number=Sing	16	obj	O	_
@@ -7871,7 +7871,7 @@
 30	penetração	penetração	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
 31	,	,	PUNCT	_	_	24	punct	O	_
 32	proporcionalmente	proporcionalmente	ADV	_	_	24	advmod	O	_
-33-34	ao	_	_	_	_	_	_	O	_
+33-34	ao	_	_	_	_	_	_	_	_
 33	a	a	ADP	_	_	35	case	O	_
 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
 35	teor	teor	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
@@ -7907,7 +7907,7 @@
 22	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 23	apresentar	apresentar	VERB	_	VerbForm=Inf	22	xcomp	O	_
 24	penetração	penetração	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
-25-26	no	_	_	_	_	_	_	O	_
+25-26	no	_	_	_	_	_	_	_	_
 25	em	em	ADP	_	_	27	case	O	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
 27	intervalo	intervalo	NOUN	_	Gender=Masc|Number=Sing	23	obl	O	_
@@ -7930,7 +7930,7 @@
 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
 5	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	16	obl	O	_
 6	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	O	_
-7-8	na	_	_	_	_	_	_	O	_
+7-8	na	_	_	_	_	_	_	_	_
 7	em	em	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	Tabela	Tabela	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -7940,11 +7940,11 @@
 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
 14	valores	valor	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	O	_
 15	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	O	_
-16-17	encontram-se	_	_	_	_	_	_	O	_
+16-17	encontram-se	_	_	_	_	_	_	_	_
 16	encontram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 17	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	expl	O	_
 18	dentro	dentro	ADV	_	_	16	advmod	O	_
-19-20	da	_	_	_	_	_	_	O	_
+19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	faixa	faixa	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
@@ -7965,7 +7965,7 @@
 9	,	,	PUNCT	_	_	6	punct	O	_
 10	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 11	fornecer	fornecer	VERB	_	VerbForm=Inf	10	xcomp	O	_
-12-13	ao	_	_	_	_	_	_	O	_
+12-13	ao	_	_	_	_	_	_	_	_
 12	a	a	ADP	_	_	14	case	O	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
 14	pavimento	pavimento	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
@@ -7980,18 +7980,18 @@
 # sent_id = 241-20140227-MONOGRAFIA_0-245
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	diminuição	diminuição	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
-3-4	da	_	_	_	_	_	_	O	_
+3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
 5	penetração	penetração	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
 7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	indicação	indicação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-9-10	do	_	_	_	_	_	_	O	_
+9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
 11	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
-12-13	da	_	_	_	_	_	_	O	_
+12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	rigidez	rigidez	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
@@ -8008,7 +8008,7 @@
 6	,	,	PUNCT	_	_	2	punct	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
-9-10	da	_	_	_	_	_	_	O	_
+9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	penetração	penetração	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
@@ -8025,7 +8025,7 @@
 22	durante	durante	ADP	_	_	24	case	O	_
 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
 24	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
-25-26	do	_	_	_	_	_	_	O	_
+25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
 27	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
@@ -8044,7 +8044,7 @@
 
 # text = Deve-se ressaltar que a metodologia utilizada para a obtenção dos resíduos asfálticos obedeceu rigorosamente à norma ABNT NBR 14376 (2007), ensaio este utilizado em campo para determinação do resíduo asfáltico..
 # sent_id = 241-20140227-MONOGRAFIA_0-247
-1-2	Deve-se	_	_	_	_	_	_	O	_
+1-2	Deve-se	_	_	_	_	_	_	_	_
 1	Deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
 3	ressaltar	ressaltar	VERB	_	VerbForm=Inf	1	xcomp	O	_
@@ -8055,14 +8055,14 @@
 8	para	para	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
-11-12	dos	_	_	_	_	_	_	O	_
+11-12	dos	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
 13	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
 14	asfálticos	asfáltico	ADJ	_	Gender=Masc|Number=Plur	13	amod	B=LITOLOGIA	_
 15	obedeceu	obedecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	O	_
 16	rigorosamente	rigorosamente	ADV	_	_	15	advmod	O	_
-17-18	à	_	_	_	_	_	_	O	_
+17-18	à	_	_	_	_	_	_	_	_
 17	a	a	ADP	_	_	19	case	O	_
 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
 19	norma	norma	NOUN	_	Gender=Fem|Number=Sing	15	obj	O	_
@@ -8080,7 +8080,7 @@
 31	campo	campo	NOUN	_	Gender=Masc|Number=Sing	29	obl	B=CAMPO:TIPO	_
 32	para	para	ADP	_	_	33	case	O	_
 33	determinação	determinação	NOUN	_	Gender=Fem|Number=Sing	29	obl	O	_
-34-35	do	_	_	_	_	_	_	O	_
+34-35	do	_	_	_	_	_	_	_	_
 34	de	de	ADP	_	_	36	case	O	_
 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
 36	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	33	nmod	O	_
@@ -8103,7 +8103,7 @@
 
 # text = Nesta seção, são apresentadas as conclusões relacionadas ao desenvolvimento da pesquisa. •
 # sent_id = 241-20140227-MONOGRAFIA_0-251
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	seção	seção	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -8113,11 +8113,11 @@
 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
 8	conclusões	conclusão	NOUN	_	Gender=Fem|Number=Plur	6	nsubj:pass	O	_
 9	relacionadas	relacionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	8	acl	O	_
-10-11	ao	_	_	_	_	_	_	O	_
+10-11	ao	_	_	_	_	_	_	_	_
 10	a	a	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
-13-14	da	_	_	_	_	_	_	O	_
+13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
@@ -8131,7 +8131,7 @@
 3	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
 4	para	para	ADP	_	_	5	case	O	_
 5	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
-6-7	das	_	_	_	_	_	_	O	_
+6-7	das	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
 8	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	5	nmod	B=QUÍMICA	_
@@ -8146,7 +8146,7 @@
 17	adicionado	adicionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	O	_
 18	/	/	PUNCT	_	_	19	punct	O	_
 19	incorporado	incorporar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	conj	O	_
-20-21	à	_	_	_	_	_	_	O	_
+20-21	à	_	_	_	_	_	_	_	_
 20	a	a	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	19	obj	B=QUÍMICA	_
@@ -8161,14 +8161,14 @@
 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
 5	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	13	obl	O	_
 6	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
-7-8	das	_	_	_	_	_	_	O	_
+7-8	das	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
 9	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	5	nmod	B=QUÍMICA	_
 10	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	9	amod	B=LITOLOGIA	_
 11	modificadas	modificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	9	acl	O	_
 12	,	,	PUNCT	_	_	11	punct	O	_
-13-14	conclui-se	_	_	_	_	_	_	O	_
+13-14	conclui-se	_	_	_	_	_	_	_	_
 13	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 14	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
 15	que	que	SCONJ	_	_	18	mark	O	_
@@ -8177,11 +8177,11 @@
 18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	O	_
 19	ocasionar	ocasionar	VERB	_	VerbForm=Inf	18	xcomp	O	_
 20	melhorias	melhoria	NOUN	_	Gender=Fem|Number=Plur	19	obj	O	_
-21-22	nas	_	_	_	_	_	_	O	_
+21-22	nas	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
 23	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	19	obl	O	_
-24-25	da	_	_	_	_	_	_	O	_
+24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
 26	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	23	nmod	B=QUÍMICA	_
@@ -8190,7 +8190,7 @@
 29	por	por	ADP	_	_	30	case	O	_
 30	consequência	consequência	NOUN	_	Gender=Fem|Number=Sing	34	nmod	O	_
 31	,	,	PUNCT	_	_	30	punct	O	_
-32-33	do	_	_	_	_	_	_	O	_
+32-33	do	_	_	_	_	_	_	_	_
 32	de	de	ADP	_	_	34	case	O	_
 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
 34	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	23	conj	O	_
@@ -8203,7 +8203,7 @@
 41	desenvolvidas	desenvolver	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	39	acl	O	_
 42	apresentaram	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	34	acl:relcl	O	_
 43	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	42	obj	O	_
-44-45	no	_	_	_	_	_	_	O	_
+44-45	no	_	_	_	_	_	_	_	_
 44	em	em	ADP	_	_	46	case	O	_
 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
 46	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	42	obl	O	_
@@ -8217,7 +8217,7 @@
 54	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	O	_
 55	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	52	nmod	O	_
 56	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	55	amod	O	_
-57-58	na	_	_	_	_	_	_	O	_
+57-58	na	_	_	_	_	_	_	_	_
 57	em	em	ADP	_	_	59	case	O	_
 58	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	O	_
 59	especificação	especificação	NOUN	_	Gender=Fem|Number=Sing	55	nmod	O	_
@@ -8238,15 +8238,15 @@
 74	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	77	nsubj	O	_
 75	de	de	ADP	_	_	76	case	O	_
 76	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	74	nmod	O	_
-77-78	mostraram-se	_	_	_	_	_	_	O	_
+77-78	mostraram-se	_	_	_	_	_	_	_	_
 77	mostraram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	65	conj	O	_
 78	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	77	expl	O	_
 79	contra	contra	ADP	_	_	82	case	O	_
-80-81	ao	_	_	_	_	_	_	O	_
+80-81	ao	_	_	_	_	_	_	_	_
 80	a	a	ADP	_	_	82	case	O	_
 81	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	82	det	O	_
 82	presente	presente	NOUN	_	Gender=Masc|Number=Sing	77	obl	O	_
-83-84	na	_	_	_	_	_	_	O	_
+83-84	na	_	_	_	_	_	_	_	_
 83	em	em	ADP	_	_	85	case	O	_
 84	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	85	det	O	_
 85	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	82	nmod	O	_
@@ -8255,7 +8255,7 @@
 
 # text = Acredita-se, então, que o nanomaterial, ao ser tratado, tenha se deteriorado, ocasionando uma menor interação com o asfalto e conseqüente menor viscosidade..
 # sent_id = 241-20140227-MONOGRAFIA_0-254
-1-2	Acredita-se	_	_	_	_	_	_	O	_
+1-2	Acredita-se	_	_	_	_	_	_	_	_
 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
 3	,	,	PUNCT	_	_	1	punct	O	_
@@ -8265,7 +8265,7 @@
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
 9	,	,	PUNCT	_	_	13	punct	O	_
-10-11	ao	_	_	_	_	_	_	O	_
+10-11	ao	_	_	_	_	_	_	_	_
 10	a	a	ADP	_	_	13	mark	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 12	ser	ser	AUX	_	VerbForm=Inf	13	aux	O	_
@@ -8298,4 +8298,3 @@
 # text = BIBLIOGRÁFICAS
 # sent_id = 241-20140227-MONOGRAFIA_0-256
 1	BIBLIOGRÁFICAS	bibliogrofico	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
-

@@ -19,7 +19,7 @@
 13	tar	tar	AUX	_	Number=Sing|Person=3|VerbForm=Inf	14	cop	O	_
 14	sandstones	sandstone	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
 15	,	,	PUNCT	_	_	14	punct	O	_
-16-17	no	_	_	_	_	_	_	O	_
+16-17	no	_	_	_	_	_	_	_	_
 16	em	em	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	inglês	inglês	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
@@ -36,7 +36,7 @@
 29	ou	ou	CCONJ	_	_	30	cc	O	_
 30	carbonáticos	carbonático	ADJ	_	Gender=Masc|Number=Plur	28	conj	O	_
 31	impregnados	impregnar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	O	_
-32-33	nos	_	_	_	_	_	_	O	_
+32-33	nos	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	O	_
 34	poros	poro	NOUN	_	Gender=Masc|Number=Plur	31	obl	O	_
@@ -47,7 +47,7 @@
 39	pesado	pesar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	37	acl	I=FLUIDO	_
 40	,	,	PUNCT	_	_	41	punct	O	_
 41	semelhante	semelhante	ADJ	_	Gender=Masc|Number=Sing	37	amod	O	_
-42-43	ao	_	_	_	_	_	_	O	_
+42-43	ao	_	_	_	_	_	_	_	_
 42	a	a	ADP	_	_	44	case	O	_
 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
 44	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	41	obl	O	_
@@ -96,7 +96,7 @@
 # text = Diferentemente do petróleo e gás convencionalmente extraídos através de poços profundos, a exploração deste material requer processos de mineração e de extração total da rocha e não somente dos fluidos intersticiais (Suguio, 2003)..
 # sent_id = 125-20141210-MONOGRAFIA_0-5
 1	Diferentemente	diferentemente	ADV	_	_	19	advmod	O	_
-2-3	do	_	_	_	_	_	_	O	_
+2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 4	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	1	obl	B=FLUIDO	_
@@ -111,7 +111,7 @@
 13	,	,	PUNCT	_	_	8	punct	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	O	_
-16-17	deste	_	_	_	_	_	_	O	_
+16-17	deste	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	O	_
 18	material	material	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
@@ -123,14 +123,14 @@
 24	de	de	ADP	_	_	25	case	O	_
 25	extração	extração	NOUN	_	Gender=Fem|Number=Sing	22	conj	O	_
 26	total	total	ADJ	_	Gender=Fem|Number=Sing	25	amod	O	_
-27-28	da	_	_	_	_	_	_	O	_
+27-28	da	_	_	_	_	_	_	_	_
 27	de	de	ADP	_	_	29	case	O	_
 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
 29	rocha	rocha	NOUN	_	Gender=Fem|Number=Sing	25	nmod	B=LITOLOGIA	_
 30	e	e	CCONJ	_	_	35	cc	O	_
 31	não	não	ADV	_	Polarity=Neg	35	advmod	O	_
 32	somente	somente	ADV	_	_	35	advmod	O	_
-33-34	dos	_	_	_	_	_	_	O	_
+33-34	dos	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	35	case	O	_
 34	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	O	_
 35	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
@@ -151,7 +151,7 @@
 4	porcentagem	porcentagem	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	O	_
 5	de	de	ADP	_	_	6	case	O	_
 6	betume	betume	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
-7-8	nos	_	_	_	_	_	_	O	_
+7-8	nos	_	_	_	_	_	_	_	_
 7	em	em	ADP	_	_	9	case	O	_
 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
 9	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	4	nmod	B=LITOLOGIA	_
@@ -229,7 +229,7 @@
 9	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	19	nsubj:pass	O	_
 10	mais	mais	ADV	_	_	11	advmod	O	_
 11	leves	leve	ADJ	_	Gender=Masc|Number=Plur	9	amod	O	_
-12-13	dos	_	_	_	_	_	_	O	_
+12-13	dos	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
 14	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
@@ -241,7 +241,7 @@
 20	por	por	ADP	_	_	21	case	O	_
 21	biodegradação	biodegradação	NOUN	_	Gender=Fem|Number=Sing	19	obl:agent	O	_
 22	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	21	amod	O	_
-23-24	à	_	_	_	_	_	_	O	_
+23-24	à	_	_	_	_	_	_	_	_
 23	a	a	ADP	_	_	25	case	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 25	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	22	obl	O	_
@@ -254,11 +254,11 @@
 2	presença	presença	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	O	_
 3	de	de	ADP	_	_	4	case	O	_
 4	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=FLUIDO	_
-5-6	nos	_	_	_	_	_	_	O	_
+5-6	nos	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	O	_
 7	poros	poro	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
-8-9	do	_	_	_	_	_	_	O	_
+8-9	do	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	sedimento	sedimento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
@@ -284,7 +284,7 @@
 30	mantêm	manter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	O	_
 31	coesos	coeso	ADJ	_	Gender=Masc|Number=Plur	30	xcomp	O	_
 32	apenas	apenas	ADV	_	_	35	advmod	O	_
-33-34	pelo	_	_	_	_	_	_	O	_
+33-34	pelo	_	_	_	_	_	_	_	_
 33	por	por	ADP	_	_	35	case	O	_
 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
 35	betume	betume	NOUN	_	Gender=Masc|Number=Sing	30	obl	O	_
@@ -303,7 +303,7 @@
 1	Em	em	ADP	_	_	2	case	O	_
 2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	26	obl	O	_
 3	adaptados	adaptar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	USGS	USGS	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
@@ -326,7 +326,7 @@
 23	Geologists	Geologists	PROPN	_	Number=Sing	19	flat:name	O	_
 24	)	)	PUNCT	_	_	19	punct	O	_
 25	,	,	PUNCT	_	_	3	punct	O	_
-26-27	estipula-se	_	_	_	_	_	_	O	_
+26-27	estipula-se	_	_	_	_	_	_	_	_
 26	estipula	estipular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 27	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	expl	O	_
 28	354	354	NUM	_	NumType=Card	26	nsubj	O	_
@@ -337,7 +337,7 @@
 33	de	de	ADP	_	_	34	case	O	_
 34	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	31	nmod	B=LITOLOGIA	_
 35	asfálticos	asfáltico	ADJ	_	Gender=Masc|Number=Plur	34	amod	B=LITOLOGIA	_
-36-37	no	_	_	_	_	_	_	O	_
+36-37	no	_	_	_	_	_	_	_	_
 36	em	em	ADP	_	_	38	case	O	_
 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	O	_
 38	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	34	nmod	O	_
@@ -362,14 +362,14 @@
 57	ocorrência	ocorrência	NOUN	_	Gender=Fem|Number=Sing	60	nsubj	O	_
 58	desde	desde	ADP	_	_	59	case	O	_
 59	material	material	NOUN	_	Gender=Masc|Number=Sing	57	nmod	O	_
-60-61	situa-se	_	_	_	_	_	_	O	_
+60-61	situa-se	_	_	_	_	_	_	_	_
 60	situa	situar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	acl:relcl	O	_
 61	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	60	expl	O	_
-62-63	na	_	_	_	_	_	_	O	_
+62-63	na	_	_	_	_	_	_	_	_
 62	em	em	ADP	_	_	64	case	O	_
 63	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	O	_
 64	América	América	PROPN	_	Gender=Fem|Number=Sing	60	obl	O	_
-65-66	do	_	_	_	_	_	_	O	_
+65-66	do	_	_	_	_	_	_	_	_
 65	de	de	ADP	_	_	64	flat:name	O	_
 66	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	64	flat:name	O	_
 67	Norte	Norte	PROPN	_	Number=Sing	64	flat:name	O	_
@@ -402,7 +402,7 @@
 94	Dados	dado	NOUN	_	Gender=Masc|Number=Plur	102	nsubj	O	_
 95	de	de	ADP	_	_	96	case	O	_
 96	2012	2012	NOUN	_	Gender=Fem|Number=Plur	94	nmod	O	_
-97-98	do	_	_	_	_	_	_	O	_
+97-98	do	_	_	_	_	_	_	_	_
 97	de	de	ADP	_	_	99	case	O	_
 98	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	99	det	O	_
 99	governo	governo	NOUN	_	Gender=Masc|Number=Sing	94	nmod	O	_
@@ -454,16 +454,16 @@
 145	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	143	nmod	B=FLUIDO	_
 146	comprovada	comprovar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	145	acl	O	_
 147	bruto	bruto	ADJ	_	Gender=Masc|Number=Sing	145	amod	O	_
-148-149	do	_	_	_	_	_	_	O	_
+148-149	do	_	_	_	_	_	_	_	_
 148	de	de	ADP	_	_	150	case	O	_
 149	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	150	det	O	_
 150	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	143	nmod	O	_
 151	,	,	PUNCT	_	_	154	punct	O	_
-152-153	ao	_	_	_	_	_	_	O	_
+152-153	ao	_	_	_	_	_	_	_	_
 152	a	a	ADP	_	_	154	case	O	_
 153	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	154	det	O	_
 154	lado	lado	NOUN	_	Gender=Masc|Number=Sing	139	obl	O	_
-155-156	da	_	_	_	_	_	_	O	_
+155-156	da	_	_	_	_	_	_	_	_
 155	de	de	ADP	_	_	157	case	O	_
 156	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	157	det	O	_
 157	Arábia	Arábia	PROPN	_	Gender=Fem|Number=Sing	154	nmod	B=LOCAL:POL	_
@@ -477,14 +477,14 @@
 165	suficiente	suficiente	ADJ	_	Gender=Masc|Number=Sing	143	acl:relcl	O	_
 166	para	para	SCONJ	_	_	167	mark	O	_
 167	atender	atender	VERB	_	VerbForm=Inf	165	advcl	O	_
-168-169	à	_	_	_	_	_	_	O	_
+168-169	à	_	_	_	_	_	_	_	_
 168	a	a	ADP	_	_	170	case	O	_
 169	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	170	det	O	_
 170	demanda	demanda	NOUN	_	Gender=Fem|Number=Sing	167	obj	O	_
 171	atual	atual	ADJ	_	Gender=Fem|Number=Sing	170	amod	O	_
 172	de	de	ADP	_	_	173	case	O	_
 173	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	170	nmod	B=FLUIDO	_
-174-175	no	_	_	_	_	_	_	O	_
+174-175	no	_	_	_	_	_	_	_	_
 174	em	em	ADP	_	_	176	case	O	_
 175	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	176	det	O	_
 176	Canadá	Canadá	PROPN	_	Gender=Masc|Number=Sing	170	nmod	O	_
@@ -497,12 +497,12 @@
 183	de	de	ADP	_	_	184	case	O	_
 184	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	182	nmod	B=LITOLOGIA	_
 185	asfálticos	asfáltico	ADJ	_	Gender=Masc|Number=Plur	184	amod	B=LITOLOGIA	_
-186-187	da	_	_	_	_	_	_	O	_
+186-187	da	_	_	_	_	_	_	_	_
 186	de	de	ADP	_	_	189	case	O	_
 187	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	189	det	O	_
 188	mesma	mesmo	ADJ	_	Gender=Fem|Number=Sing	189	amod	O	_
 189	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	182	nmod	O	_
-190-191	dos	_	_	_	_	_	_	O	_
+190-191	dos	_	_	_	_	_	_	_	_
 190	de	de	ADP	_	_	191	case	O	_
 191	os	o	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	189	nmod	O	_
 192	de	de	ADP	_	_	193	case	O	_
@@ -510,12 +510,12 @@
 194	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	196	aux:pass	O	_
 195	também	também	ADV	_	_	196	advmod	O	_
 196	encontrados	encontrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	165	advcl	O	_
-197-198	na	_	_	_	_	_	_	O	_
+197-198	na	_	_	_	_	_	_	_	_
 197	em	em	ADP	_	_	199	case	O	_
 198	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	199	det	O	_
 199	Venezuela	Venezuela	PROPN	_	Gender=Fem|Number=Sing	196	obl	B=LOCAL:POL	_
 200	e	e	CCONJ	_	_	203	cc	O	_
-201-202	na	_	_	_	_	_	_	O	_
+201-202	na	_	_	_	_	_	_	_	_
 201	em	em	ADP	_	_	203	case	O	_
 202	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	203	det	O	_
 203	Rússia	Rússia	PROPN	_	Gender=Fem|Number=Sing	199	conj	B=LOCAL:POL	_
@@ -523,7 +523,7 @@
 205	tendo	ter	AUX	_	VerbForm=Ger	212	aux	O	_
 206	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	207	det	O	_
 207	reserva	reserva	NOUN	_	Gender=Fem|Number=Sing	212	nsubj:pass	O	_
-208-209	da	_	_	_	_	_	_	O	_
+208-209	da	_	_	_	_	_	_	_	_
 208	de	de	ADP	_	_	210	case	O	_
 209	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	210	det	O	_
 210	Venezuela	Venezuela	PROPN	_	Gender=Fem|Number=Sing	207	nmod	B=LOCAL:POL	_
@@ -536,4 +536,3 @@
 217	barris	barri	NOUN	_	Gender=Masc|Number=Plur	215	nmod	O	_
 218	.	.	PUNCT	_	_	196	punct	O	_
 219	.	.	PUNCT	_	_	26	punct	O	_
-
