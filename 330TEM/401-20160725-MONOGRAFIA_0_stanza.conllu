@@ -10,7 +10,7 @@
 3	de	de	ADP	_	_	4	case	O	_
 4	estimulação	estimulação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
 5	através	através	ADV	_	_	2	advmod	O	_
-6-7	do	_	_	_	_	_	_	O	_
+6-7	do	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	fraturamento	fraturamento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
@@ -32,7 +32,7 @@
 
 # text = Nesta técnica, um fluido viscoso é bombeado para o fundo do poço a uma pressão suficientemente elevada, visando à criação de uma fratura de alta condutividade na formação de interesse (GROTHE, 2000)..
 # sent_id = 401-20160725-MONOGRAFIA_0-3
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
@@ -45,7 +45,7 @@
 10	para	para	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
-13-14	do	_	_	_	_	_	_	O	_
+13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	poço	poço	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
@@ -56,7 +56,7 @@
 20	elevada	elevar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	acl	O	_
 21	,	,	PUNCT	_	_	22	punct	O	_
 22	visando	visar	VERB	_	VerbForm=Ger	9	advcl	O	_
-23-24	à	_	_	_	_	_	_	O	_
+23-24	à	_	_	_	_	_	_	_	_
 23	a	a	ADP	_	_	25	case	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 25	criação	criação	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
@@ -66,7 +66,7 @@
 29	de	de	ADP	_	_	31	case	O	_
 30	alta	alto	ADJ	_	Gender=Fem|Number=Sing	31	amod	O	_
 31	condutividade	condutividade	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
-32-33	na	_	_	_	_	_	_	O	_
+32-33	na	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	formação	formação	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
@@ -84,33 +84,33 @@
 # sent_id = 401-20160725-MONOGRAFIA_0-4
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	fratura	fratura	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	B=LITOLOGIA	_
-3-4	inicia-se	_	_	_	_	_	_	O	_
+3-4	inicia-se	_	_	_	_	_	_	_	_
 3	inicia	iniciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	O	_
 5	junto	junto	ADV	_	_	3	advmod	O	_
-6-7	à	_	_	_	_	_	_	O	_
+6-7	à	_	_	_	_	_	_	_	_
 6	a	a	ADP	_	_	8	case	O	_
 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
 8	parede	parede	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
-9-10	do	_	_	_	_	_	_	O	_
+9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	11	case	O	_
 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
 11	poço	poço	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
 12	e	e	CCONJ	_	_	13	cc	O	_
-13-14	propaga-se	_	_	_	_	_	_	O	_
+13-14	propaga-se	_	_	_	_	_	_	_	_
 13	propaga	propagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
 14	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	expl	O	_
 15	em	em	ADP	_	_	16	case	O	_
 16	direção	direção	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
-17-18	ao	_	_	_	_	_	_	O	_
+17-18	ao	_	_	_	_	_	_	_	_
 17	a	a	ADP	_	_	19	case	O	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
 19	interior	interior	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
-20-21	da	_	_	_	_	_	_	O	_
+20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	formação	formação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
-23-24	à	_	_	_	_	_	_	O	_
+23-24	à	_	_	_	_	_	_	_	_
 23	a	a	ADP	_	_	30	mark	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	fixed	O	_
 25	medida	medida	ADP	_	_	23	fixed	O	_
@@ -131,11 +131,11 @@
 5	transporta	transportar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	sólidos	sólido	NOUN	_	Gender=Masc|Number=Plur	5	obj	O	_
 7	responsáveis	responsável	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
-8-9	pela	_	_	_	_	_	_	O	_
+8-9	pela	_	_	_	_	_	_	_	_
 8	por	por	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	sustentação	sustentação	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
-11-12	da	_	_	_	_	_	_	O	_
+11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	fratura	fratura	NOUN	_	Gender=Fem|Number=Sing	10	nmod	B=LITOLOGIA	_
@@ -159,7 +159,7 @@
 31	e	e	CCONJ	_	_	33	cc	O	_
 32	permanentemente	permanentemente	ADV	_	_	33	advmod	O	_
 33	aberto	abrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	conj	O	_
-34-35	ao	_	_	_	_	_	_	O	_
+34-35	ao	_	_	_	_	_	_	_	_
 34	a	a	ADP	_	_	36	case	O	_
 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
 36	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	33	obj	O	_
@@ -168,7 +168,7 @@
 39	após	após	ADP	_	_	41	case	O	_
 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	O	_
 41	fim	fim	NOUN	_	Gender=Masc|Number=Sing	33	obl	O	_
-42-43	do	_	_	_	_	_	_	O	_
+42-43	do	_	_	_	_	_	_	_	_
 42	de	de	ADP	_	_	44	case	O	_
 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
 44	bombeio	bombeio	NOUN	_	Gender=Masc|Number=Sing	41	nmod	O	_
@@ -188,7 +188,7 @@
 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
 5	extensivamente	extensivamente	ADV	_	_	6	advmod	O	_
 6	utilizadas	utilizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-7-8	na	_	_	_	_	_	_	O	_
+7-8	na	_	_	_	_	_	_	_	_
 7	em	em	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	preparação	preparação	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -213,7 +213,7 @@
 # sent_id = 401-20160725-MONOGRAFIA_0-7
 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 2	composição	composição	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	O	_
-3-4	do	_	_	_	_	_	_	O	_
+3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	gel	gel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
@@ -233,7 +233,7 @@
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	condutividade	condutividade	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
 21	hidráulica	hidráulico	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
-22-23	do	_	_	_	_	_	_	O	_
+22-23	do	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	_	24	case	O	_
 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
 24	poço	poço	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
@@ -251,14 +251,14 @@
 7	desafio-chave	desafio-chave	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
 9	entendimento	entendimento	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
-10-11	do	_	_	_	_	_	_	O	_
+10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	12	case	O	_
 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
 12	sinergismo	sinergismo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
 13	entre	entre	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	composição	composição	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
-16-17	do	_	_	_	_	_	_	O	_
+16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	gel	gel	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
@@ -287,7 +287,7 @@
 
 # text = Nesse contexto, o objetivo principal desse trabalho consiste em avaliar o efeito da concentração de hidroxipropilguar (HPG), e cloreto de potássio (KCl) na estabilidade térmica de géis reticulados, de forma a associar o comportamento viscoelástico ao processo de histerese e degradação sofrida pelo gel de fraturamento em diferentes temperaturas..
 # sent_id = 401-20160725-MONOGRAFIA_0-9
-1-2	Nesse	_	_	_	_	_	_	O	_
+1-2	Nesse	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
 3	contexto	contexto	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
@@ -295,7 +295,7 @@
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
 7	principal	principal	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
-8-9	desse	_	_	_	_	_	_	O	_
+8-9	desse	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	O	_
 10	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
@@ -304,7 +304,7 @@
 13	avaliar	avaliar	VERB	_	VerbForm=Inf	11	xcomp	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	13	obj	O	_
-16-17	da	_	_	_	_	_	_	O	_
+16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
@@ -321,7 +321,7 @@
 29	(	(	PUNCT	_	_	30	punct	O	_
 30	KCl	KCl	PROPN	_	Gender=Masc|Number=Sing	26	appos	O	_
 31	)	)	PUNCT	_	_	30	punct	O	_
-32-33	na	_	_	_	_	_	_	O	_
+32-33	na	_	_	_	_	_	_	_	_
 32	em	em	ADP	_	_	34	case	O	_
 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
 34	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
@@ -337,7 +337,7 @@
 44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	O	_
 45	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	43	obj	O	_
 46	viscoelástico	viscoelástico	ADJ	_	Gender=Masc|Number=Sing	45	amod	O	_
-47-48	ao	_	_	_	_	_	_	O	_
+47-48	ao	_	_	_	_	_	_	_	_
 47	a	a	ADP	_	_	49	case	O	_
 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	O	_
 49	processo	processo	NOUN	_	Gender=Masc|Number=Sing	43	obl	O	_
@@ -346,7 +346,7 @@
 52	e	e	CCONJ	_	_	53	cc	O	_
 53	degradação	degradação	NOUN	_	Gender=Fem|Number=Sing	51	conj	O	_
 54	sofrida	sofrer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	45	acl	O	_
-55-56	pelo	_	_	_	_	_	_	O	_
+55-56	pelo	_	_	_	_	_	_	_	_
 55	por	por	ADP	_	_	57	case	O	_
 56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	O	_
 57	gel	gel	NOUN	_	Gender=Masc|Number=Sing	54	obl:agent	O	_
@@ -357,4 +357,3 @@
 62	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	57	nmod	O	_
 63	.	.	PUNCT	_	_	11	punct	O	_
 64	.	.	PUNCT	_	_	11	punct	O	_
-

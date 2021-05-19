@@ -26,26 +26,26 @@
 12	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
 13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	O	_
 14	uma	um	NUM	_	NumType=Card	0	root	O	_
-15-16	das	_	_	_	_	_	_	O	_
+15-16	das	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	17	case	O	_
 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	O	_
 17	formas	forma	NOUN	_	Gender=Fem|Number=Plur	14	nmod	O	_
 18	para	para	ADP	_	_	19	case	O	_
 19	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
-20-21	da	_	_	_	_	_	_	O	_
+20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
 23	energética	energético	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
 24	,	,	PUNCT	_	_	27	punct	O	_
-25-26	da	_	_	_	_	_	_	O	_
+25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	redução	redução	NOUN	_	Gender=Fem|Number=Sing	19	conj	O	_
 28	de	de	ADP	_	_	29	case	O	_
 29	custos	custo	NOUN	_	Gender=Masc|Number=Plur	27	nmod	O	_
 30	e	e	CCONJ	_	_	33	cc	O	_
-31-32	da	_	_	_	_	_	_	O	_
+31-32	da	_	_	_	_	_	_	_	_
 31	de	de	ADP	_	_	33	case	O	_
 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
 33	diminuição	diminuição	NOUN	_	Gender=Fem|Number=Sing	29	conj	O	_
@@ -57,11 +57,11 @@
 39	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	40	det	O	_
 40	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	27	nmod	O	_
 41	exercidas	exercer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	40	acl	O	_
-42-43	pelo	_	_	_	_	_	_	O	_
+42-43	pelo	_	_	_	_	_	_	_	_
 42	por	por	ADP	_	_	44	case	O	_
 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
 44	homem	homem	NOUN	_	Gender=Masc|Number=Sing	41	obl:agent	O	_
-45-46	no	_	_	_	_	_	_	O	_
+45-46	no	_	_	_	_	_	_	_	_
 45	em	em	ADP	_	_	47	case	O	_
 46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	O	_
 47	planeta	planeta	NOUN	_	Gender=Masc|Number=Sing	44	nmod	O	_
@@ -71,7 +71,7 @@
 # text = Um dos caminhos possíveis para atingir esse objetivo é a minimização da geração de entropia do sistema, i.e., das irreversibilidades que ocorrem em todos os sistemas reais..
 # sent_id = 98-20140331-TESEDSC_0-4
 1	Um	um	NUM	_	NumType=Card	12	nsubj	O	_
-2-3	dos	_	_	_	_	_	_	O	_
+2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	4	case	O	_
 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
 4	caminhos	caminho	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
@@ -83,20 +83,20 @@
 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	O	_
 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
 12	minimização	minimização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
-13-14	da	_	_	_	_	_	_	O	_
+13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
 15	geração	geração	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
 16	de	de	ADP	_	_	17	case	O	_
 17	entropia	entropia	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
-18-19	do	_	_	_	_	_	_	O	_
+18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
 21	,	,	PUNCT	_	_	22	punct	O	_
 22	i.e.	i.e.	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	_
 23	,	,	PUNCT	_	_	22	punct	O	_
-24-25	das	_	_	_	_	_	_	O	_
+24-25	das	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
 26	irreversibilidades	irreversibilidade	NOUN	_	Gender=Fem|Number=Plur	15	conj	O	_
@@ -166,7 +166,7 @@
 3	desde	desde	ADP	_	_	5	case	O	_
 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
 5	início	início	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
-6-7	desta	_	_	_	_	_	_	O	_
+6-7	desta	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	8	case	O	_
 7	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	O	_
 8	Tese	tese	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
@@ -176,7 +176,7 @@
 12	apresentar	apresentar	VERB	_	VerbForm=Inf	11	csubj	O	_
 13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
 14	definição	definição	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
-15-16	do	_	_	_	_	_	_	O	_
+15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	16	case	O	_
 16	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	14	nmod	O	_
 17	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	15	fixed	O	_
@@ -202,13 +202,13 @@
 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	campo	campo	NOUN	_	Gender=Masc|Number=Sing	0	root	B=CAMPO:TIPO	_
 7	interdisciplinar	interdisciplinar	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
 11	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	12	nsubj	O	_
 12	foca	focar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	O	_
-13-14	no	_	_	_	_	_	_	O	_
+13-14	no	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
@@ -239,7 +239,7 @@
 5	de	de	ADP	_	_	4	flat:name	O	_
 6	Sistemas	Sistemas	PROPN	_	Number=Sing	4	flat:name	O	_
 7	provém	provar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
-8-9	do	_	_	_	_	_	_	O	_
+8-9	do	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	INCOSE	INCOSE	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
@@ -253,7 +253,7 @@
 18	e	e	CCONJ	_	_	19	cc	O	_
 19	conceitua	conceituar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	O	_
 20	que	que	SCONJ	_	_	28	mark	O	_
-21-22	"a	_	_	_	_	_	_	O	_
+21-22	"a	_	_	_	_	_	_	_	_
 21	em	em	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	Engenharia	Engenharia	PROPN	_	Gender=Fem|Number=Sing	28	nmod	O	_
@@ -283,13 +283,13 @@
 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 2	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	3	det	O	_
 3	foco	foco	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
-4-5	encontra-se	_	_	_	_	_	_	O	_
+4-5	encontra-se	_	_	_	_	_	_	_	_
 4	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 5	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl	O	_
 6	em	em	SCONJ	_	_	7	mark	O	_
 7	definir	definir	VERB	_	VerbForm=Inf	4	xcomp	O	_
 8	,	,	PUNCT	_	_	7	punct	O	_
-9-10	na	_	_	_	_	_	_	O	_
+9-10	na	_	_	_	_	_	_	_	_
 9	em	em	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	fase	fase	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
@@ -302,7 +302,7 @@
 18	,	,	PUNCT	_	_	7	punct	O	_
 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
 20	necessidades	necessidade	NOUN	_	Gender=Fem|Number=Plur	7	obj	O	_
-21-22	do	_	_	_	_	_	_	O	_
+21-22	do	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	usuário	usuário	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
@@ -317,7 +317,7 @@
 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
 33	documentação	documentação	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
 34	sistemática	sistemática	ADJ	_	Gender=Fem|Number=Sing	33	amod	O	_
-35-36	dos	_	_	_	_	_	_	O	_
+35-36	dos	_	_	_	_	_	_	_	_
 35	de	de	ADP	_	_	37	case	O	_
 36	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	O	_
 37	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	33	nmod	O	_
@@ -363,18 +363,18 @@
 11	complexos	complexo	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
 12	de	de	ADP	_	_	13	case	O	_
 13	espaçonaves	espaçonave	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
-14-15	ao	_	_	_	_	_	_	O	_
+14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
 17	de	de	ADP	_	_	18	case	O	_
 18	chips	chip	NOUN	_	Gender=Masc|Number=Plur	16	nmod	O	_
 19	,	,	PUNCT	_	_	22	punct	O	_
-20-21	da	_	_	_	_	_	_	O	_
+20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
 22	robótica	robótica	NOUN	_	Gender=Fem|Number=Sing	10	conj	O	_
-23-24	à	_	_	_	_	_	_	O	_
+23-24	à	_	_	_	_	_	_	_	_
 23	a	a	ADP	_	_	25	case	O	_
 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
 25	criação	criação	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
@@ -482,7 +482,7 @@
 5	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	evidente	evidente	ADJ	_	Gender=Masc|Number=Sing	5	xcomp	O	_
 7	que	que	SCONJ	_	_	20	mark	O	_
-8-9	à	_	_	_	_	_	_	O	_
+8-9	à	_	_	_	_	_	_	_	_
 8	a	a	ADP	_	_	16	mark	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	fixed	O	_
 10	medida	medida	ADP	_	_	8	fixed	O	_
@@ -522,7 +522,7 @@
 # text = Além disso, os custos de construção de protótipos que podem não ser funcionais se tornam proibitivos..
 # sent_id = 98-20140331-TESEDSC_0-16
 1	Além	além	ADV	_	_	3	cc	O	_
-2-3	disso	_	_	_	_	_	_	O	_
+2-3	disso	_	_	_	_	_	_	_	_
 2	de	de	ADP	_	_	1	fixed	O	_
 3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	17	conj	O	_
 4	,	,	PUNCT	_	_	3	punct	O	_
@@ -547,7 +547,7 @@
 # sent_id = 98-20140331-TESEDSC_0-17
 1	Portanto	portanto	ADV	_	_	6	advmod	O	_
 2	,	,	PUNCT	_	_	1	punct	O	_
-3-4	deste	_	_	_	_	_	_	O	_
+3-4	deste	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	O	_
 5	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
@@ -565,12 +565,12 @@
 17	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	15	obj	O	_
 18	e	e	CCONJ	_	_	19	cc	O	_
 19	análise	análise	NOUN	_	Gender=Fem|Number=Sing	17	conj	O	_
-20-21	desses	_	_	_	_	_	_	O	_
+20-21	desses	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	22	case	O	_
 21	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	22	det	O	_
 22	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
 23	antes	antes	ADV	_	_	15	advmod	O	_
-24-25	do	_	_	_	_	_	_	O	_
+24-25	do	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	23	obl	O	_
@@ -600,7 +600,7 @@
 18	restringe	restringir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	18	obj	O	_
-21-22	da	_	_	_	_	_	_	O	_
+21-22	da	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	ferramenta	ferramenta	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
@@ -615,7 +615,7 @@
 2	,	,	PUNCT	_	_	1	punct	O	_
 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
 4	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	O	_
-5-6	do	_	_	_	_	_	_	O	_
+5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	_	_	7	case	O	_
 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
 7	grau	grau	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
@@ -646,7 +646,7 @@
 
 # text = Ao nível de componentes, em particular, as técnicas de modelagem matemática são maduras, precisas e robustas..
 # sent_id = 98-20140331-TESEDSC_0-20
-1-2	Ao	_	_	_	_	_	_	O	_
+1-2	Ao	_	_	_	_	_	_	_	_
 1	A	a	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	nível	nível	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
@@ -675,7 +675,7 @@
 1	No	no	ADP	_	_	14	cc	O	_
 2	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
 3	,	,	PUNCT	_	_	2	punct	O	_
-4-5	ao	_	_	_	_	_	_	O	_
+4-5	ao	_	_	_	_	_	_	_	_
 4	a	a	ADP	_	_	6	case	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	nível	nível	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
@@ -699,7 +699,7 @@
 24	igualmente	igualmente	ADV	_	_	25	advmod	O	_
 25	avançado	avançar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	conj	O	_
 26	comparativamente	comparativamente	ADV	_	_	25	advmod	O	_
-27-28	ao	_	_	_	_	_	_	O	_
+27-28	ao	_	_	_	_	_	_	_	_
 27	a	a	ADP	_	_	29	case	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
 29	nível	nível	NOUN	_	Gender=Masc|Number=Sing	25	obl	O	_
@@ -723,7 +723,7 @@
 11	e	e	CCONJ	_	_	12	cc	O	_
 12	otimização	otimização	NOUN	_	Gender=Fem|Number=Sing	8	conj	O	_
 13	,	,	PUNCT	_	_	1	punct	O	_
-14-15	ao	_	_	_	_	_	_	O	_
+14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	nível	nível	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
@@ -744,7 +744,7 @@
 # text = Mesmo ao nível de componente, com a modelagem do sistema, o aumento de complexidade dos problemas abordados demanda o uso de computadores de alta velocidade de cálculo, arquitetura de hardware e geradores de malha sofisticados para simulação de fenômenos específicos..
 # sent_id = 98-20140331-TESEDSC_0-23
 1	Mesmo	mesmo	ADV	_	_	23	advmod	O	_
-2-3	ao	_	_	_	_	_	_	O	_
+2-3	ao	_	_	_	_	_	_	_	_
 2	a	a	ADP	_	_	4	case	O	_
 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 4	nível	nível	NOUN	_	Gender=Masc|Number=Sing	23	obl	O	_
@@ -754,7 +754,7 @@
 8	com	com	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	modelagem	modelagem	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
@@ -763,7 +763,7 @@
 16	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	O	_
 17	de	de	ADP	_	_	18	case	O	_
 18	complexidade	complexidade	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
-19-20	dos	_	_	_	_	_	_	O	_
+19-20	dos	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
 21	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	18	nmod	O	_
@@ -808,7 +808,7 @@
 9	para	para	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	solução	solução	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
-12-13	do	_	_	_	_	_	_	O	_
+12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	14	case	O	_
 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
 14	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
@@ -823,7 +823,7 @@
 
 # text = Ao nível de engenharia de sistemas, verifica-se atualmente a necessidade de otimização com vários componentes interagindo entre si, cuja simulação numérica, por meio da completa discretização do seu domínio, requer tempos computacionais elevados, para análise de apenas um conjunto de parâmetros..
 # sent_id = 98-20140331-TESEDSC_0-25
-1-2	Ao	_	_	_	_	_	_	O	_
+1-2	Ao	_	_	_	_	_	_	_	_
 1	A	a	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	nível	nível	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
@@ -832,7 +832,7 @@
 6	de	de	ADP	_	_	7	case	O	_
 7	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
 8	,	,	PUNCT	_	_	3	punct	O	_
-9-10	verifica-se	_	_	_	_	_	_	O	_
+9-10	verifica-se	_	_	_	_	_	_	_	_
 9	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 10	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	9	expl	O	_
 11	atualmente	atualmente	ADV	_	_	9	advmod	O	_
@@ -853,12 +853,12 @@
 26	,	,	PUNCT	_	_	28	punct	O	_
 27	por	por	ADP	_	_	28	case	O	_
 28	meio	meio	NOUN	_	Gender=Masc|Number=Sing	38	obl	O	_
-29-30	da	_	_	_	_	_	_	O	_
+29-30	da	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	32	case	O	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
 31	completa	completo	ADJ	_	Gender=Fem|Number=Sing	32	amod	O	_
 32	discretização	discretização	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
-33-34	do	_	_	_	_	_	_	O	_
+33-34	do	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	36	case	O	_
 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
 35	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	36	det	O	_
@@ -921,7 +921,7 @@
 
 # text = Pelo exposto, fica clara a necessidade de desenvolvimento de ferramentas matemáticas e computacionais simplificadas até para viabilizar a solução de modelos matemáticos complexos..
 # sent_id = 98-20140331-TESEDSC_0-27
-1-2	Pelo	_	_	_	_	_	_	O	_
+1-2	Pelo	_	_	_	_	_	_	_	_
 1	Por	por	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	exposto	expor	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
@@ -1000,7 +1000,7 @@
 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
 5	definição	definição	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
 6	apresentada	apresentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	O	_
-7-8	na	_	_	_	_	_	_	O	_
+7-8	na	_	_	_	_	_	_	_	_
 7	em	em	ADP	_	_	9	case	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	seção	seção	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
@@ -1040,7 +1040,7 @@
 43	de	de	ADP	_	_	44	case	O	_
 44	energia	energia	NOUN	_	Gender=Fem|Number=Sing	42	nmod	O	_
 45	interligados	interligar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	40	acl	O	_
-46-47	à	_	_	_	_	_	_	O	_
+46-47	à	_	_	_	_	_	_	_	_
 46	a	a	ADP	_	_	48	case	O	_
 47	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	O	_
 48	propulsão	propulsão	NOUN	_	Gender=Fem|Number=Sing	45	obj	O	_
@@ -1221,26 +1221,26 @@
 15	último	último	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	16	amod	O	_
 16	caso	caso	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
 17	,	,	PUNCT	_	_	16	punct	O	_
-18-19	à	_	_	_	_	_	_	O	_
+18-19	à	_	_	_	_	_	_	_	_
 18	a	a	ADP	_	_	20	case	O	_
 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
 20	falha	falha	NOUN	_	Gender=Fem|Number=Sing	7	obj	B=LITOLOGIA	_
 21	mecânica	mecânico	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
 22	ou	ou	CCONJ	_	_	23	cc	O	_
 23	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	21	conj	O	_
-24-25	dos	_	_	_	_	_	_	O	_
+24-25	dos	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	O	_
 26	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
 27	em	em	ADP	_	_	28	case	O	_
 28	detrimento	detrimento	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
-29-30	da	_	_	_	_	_	_	O	_
+29-30	da	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	31	case	O	_
 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
 31	missão	missão	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
 32	de	de	ADP	_	_	33	case	O	_
 33	combate	combate	NOUN	_	Gender=Masc|Number=Sing	31	nmod	O	_
-34-35	do	_	_	_	_	_	_	O	_
+34-35	do	_	_	_	_	_	_	_	_
 34	de	de	ADP	_	_	36	case	O	_
 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
 36	navio	navio	NOUN	_	Gender=Masc|Number=Sing	33	nmod	B=TRANSPORTE	_
@@ -1279,7 +1279,7 @@
 3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
 4	em	em	ADP	_	_	5	case	O	_
 5	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
-6-7	no	_	_	_	_	_	_	O	_
+6-7	no	_	_	_	_	_	_	_	_
 6	em	em	ADP	_	_	8	case	O	_
 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
 8	Núcleo	Núcleo	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
@@ -1290,12 +1290,12 @@
 13	de	de	ADP	_	_	8	flat:name	O	_
 14	Energia	Energia	PROPN	_	Number=Sing	8	flat:name	O	_
 15	autossustentável	autossustentável	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
-16-17	da	_	_	_	_	_	_	O	_
+16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
 18	Universidade	Universidade	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
 19	Federal	Federal	PROPN	_	Number=Sing	18	flat:name	O	_
-20-21	do	_	_	_	_	_	_	O	_
+20-21	do	_	_	_	_	_	_	_	_
 20	de	de	ADP	_	_	18	flat:name	O	_
 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	flat:name	O	_
 22	Paraná	Paraná	PROPN	_	Number=Sing	18	flat:name	B=BACIA	_
@@ -1312,7 +1312,7 @@
 33	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	31	obj	O	_
 34	autossutentável	autossutentável	ADJ	_	Gender=Masc|Number=Sing	33	amod	O	_
 35	,	,	PUNCT	_	_	31	punct	O	_
-36-37	no	_	_	_	_	_	_	O	_
+36-37	no	_	_	_	_	_	_	_	_
 36	em	em	ADP	_	_	38	case	O	_
 37	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	38	det	O	_
 38	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	43	obl	O	_
@@ -1321,12 +1321,12 @@
 41	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	40	acl	O	_
 42	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	43	cop	O	_
 43	oriunda	oriundo	ADJ	_	Gender=Fem|Number=Sing	33	acl:relcl	O	_
-44-45	do	_	_	_	_	_	_	O	_
+44-45	do	_	_	_	_	_	_	_	_
 44	de	de	ADP	_	_	46	case	O	_
 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
 46	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	43	obl	B=PRODUTO	_
 47	produzido	produzir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	46	acl	O	_
-48-49	pelo	_	_	_	_	_	_	O	_
+48-49	pelo	_	_	_	_	_	_	_	_
 48	por	por	ADP	_	_	51	case	O	_
 49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	O	_
 50	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Emp	51	det	O	_
@@ -1335,7 +1335,7 @@
 
 # text = Na figura, a linha roxa representa os gases da queima do biodiesel sendo injetado no fotobiorreator empregado no cultivo de microalgas..
 # sent_id = 98-20140331-TESEDSC_0-36
-1-2	Na	_	_	_	_	_	_	O	_
+1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	figura	figura	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -1346,22 +1346,22 @@
 8	representa	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
 10	gases	gase	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
-11-12	da	_	_	_	_	_	_	O	_
+11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	queima	queima	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
-14-15	do	_	_	_	_	_	_	O	_
+14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=PRODUTO	_
 17	sendo	ser	AUX	_	VerbForm=Ger	18	aux:pass	O	_
 18	injetado	injetar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	advcl	O	_
-19-20	no	_	_	_	_	_	_	O	_
+19-20	no	_	_	_	_	_	_	_	_
 19	em	em	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	fotobiorreator	fotobiorreator	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
 22	empregado	empregado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	O	_
-23-24	no	_	_	_	_	_	_	O	_
+23-24	no	_	_	_	_	_	_	_	_
 23	em	em	ADP	_	_	25	case	O	_
 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
 25	cultivo	cultivo	NOUN	_	Gender=Masc|Number=Sing	22	obl	O	_
@@ -1372,12 +1372,12 @@
 
 # text = Pela linha verde observa-se que a biomassa de microalgas é coletada do fotobiorreator, e o restante do meio de cultivo é novamente utilizado nos próximos cultivos como mostra a linha cinza..
 # sent_id = 98-20140331-TESEDSC_0-37
-1-2	Pela	_	_	_	_	_	_	O	_
+1-2	Pela	_	_	_	_	_	_	_	_
 1	Por	por	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	linha	linha	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
 4	verde	verde	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
-5-6	observa-se	_	_	_	_	_	_	O	_
+5-6	observa-se	_	_	_	_	_	_	_	_
 5	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
 7	que	que	SCONJ	_	_	13	mark	O	_
@@ -1387,7 +1387,7 @@
 11	microalgas	microalga	NOUN	_	Gender=Fem|Number=Plur	9	nmod	O	_
 12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	O	_
 13	coletada	coletar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	ccomp	O	_
-14-15	do	_	_	_	_	_	_	O	_
+14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	fotobiorreator	fotobiorreator	NOUN	_	Gender=Masc|Number=Sing	13	obj	O	_
@@ -1395,7 +1395,7 @@
 18	e	e	CCONJ	_	_	28	cc	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	restante	restante	NOUN	_	Gender=Masc|Number=Sing	28	nsubj:pass	O	_
-21-22	do	_	_	_	_	_	_	O	_
+21-22	do	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	23	case	O	_
 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
 23	meio	meio	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
@@ -1404,7 +1404,7 @@
 26	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	O	_
 27	novamente	novamente	ADV	_	_	28	advmod	O	_
 28	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	O	_
-29-30	nos	_	_	_	_	_	_	O	_
+29-30	nos	_	_	_	_	_	_	_	_
 29	em	em	ADP	_	_	32	case	O	_
 30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
 31	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	32	amod	O	_
@@ -1426,7 +1426,7 @@
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	obj	B=FLUIDO	_
 7	extraído	extrair	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	O	_
-8-9	da	_	_	_	_	_	_	O	_
+8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	10	case	O	_
 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	biomassa	biomassa	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
@@ -1448,7 +1448,7 @@
 26	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	21	obl	O	_
 27	trigerador	trigerador	ADJ	_	Gender=Masc|Number=Sing	26	amod	O	_
 28	instalado	instalar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	26	acl	O	_
-29-30	no	_	_	_	_	_	_	O	_
+29-30	no	_	_	_	_	_	_	_	_
 29	em	em	ADP	_	_	31	case	O	_
 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
 31	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	28	obl	O	_
@@ -1467,11 +1467,11 @@
 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
 2	restos	resto	NOUN	_	Gender=Masc|Number=Plur	12	nsubj:pass	O	_
 3	sólidos	sólido	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
-4-5	da	_	_	_	_	_	_	O	_
+4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
 6	extração	extração	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
-7-8	do	_	_	_	_	_	_	O	_
+7-8	do	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	9	case	O	_
 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
 9	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	B=FLUIDO	_
@@ -1486,7 +1486,7 @@
 18	,	,	PUNCT	_	_	20	punct	O	_
 19	como	como	SCONJ	_	_	20	mark	O	_
 20	mostrado	mostrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	advcl	O	_
-21-22	pela	_	_	_	_	_	_	O	_
+21-22	pela	_	_	_	_	_	_	_	_
 21	por	por	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	linha	linha	NOUN	_	Gender=Fem|Number=Sing	20	obl:agent	O	_
@@ -1528,11 +1528,11 @@
 8	requer	requerer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
 10	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
-11-12	à	_	_	_	_	_	_	O	_
+11-12	à	_	_	_	_	_	_	_	_
 11	a	a	ADP	_	_	13	case	O	_
 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
 13	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
-14-15	do	_	_	_	_	_	_	O	_
+14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
@@ -1564,7 +1564,7 @@
 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
 16	primeiros	primeiro	ADJ	_	Gender=Masc|NumType=Ord|Number=Plur	17	amod	O	_
 17	estágios	estágio	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
-18-19	do	_	_	_	_	_	_	O	_
+18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	_	_	20	case	O	_
 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
 20	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
@@ -1575,7 +1575,7 @@
 
 # text = Dessa forma, a viabilidade física pode ser demonstrada através de modelagem e simulação em nível global do sistema..
 # sent_id = 98-20140331-TESEDSC_0-42
-1-2	Dessa	_	_	_	_	_	_	O	_
+1-2	Dessa	_	_	_	_	_	_	_	_
 1	de	de	ADP	_	_	3	case	O	_
 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -1594,7 +1594,7 @@
 16	em	em	ADP	_	_	17	case	O	_
 17	nível	nível	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
 18	global	global	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
-19-20	do	_	_	_	_	_	_	O	_
+19-20	do	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
@@ -1621,7 +1621,7 @@
 16	térmicos	térmico	ADJ	_	Gender=Masc|Number=Plur	10	conj	O	_
 17	e	e	CCONJ	_	_	18	cc	O	_
 18	mecânicos	mecânico	ADJ	_	Gender=Masc|Number=Plur	10	conj	O	_
-19-20	do	_	_	_	_	_	_	O	_
+19-20	do	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
 21	problema	problema	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
@@ -1632,11 +1632,11 @@
 
 # text = No desenvolvimento do modelo matemático é necessário identificar os componentes do sistema e determinar as suas características individuais..
 # sent_id = 98-20140331-TESEDSC_0-44
-1-2	No	_	_	_	_	_	_	O	_
+1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
 3	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
-4-5	do	_	_	_	_	_	_	O	_
+4-5	do	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	6	case	O	_
 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
 6	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
@@ -1646,7 +1646,7 @@
 10	identificar	identificar	VERB	_	VerbForm=Inf	9	csubj	O	_
 11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	O	_
 12	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	10	obj	O	_
-13-14	do	_	_	_	_	_	_	O	_
+13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
@@ -1684,7 +1684,7 @@
 21	conforme	conforme	ADP	_	_	23	case	O	_
 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
 23	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
-24-25	do	_	_	_	_	_	_	O	_
+24-25	do	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	26	case	O	_
 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
 26	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
@@ -1694,7 +1694,7 @@
 30	descritas	descrever	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	conj	O	_
 31	em	em	ADP	_	_	32	case	O	_
 32	termos	termos	NOUN	_	Gender=Masc|Number=Plur	30	obl	O	_
-33-34	dos	_	_	_	_	_	_	O	_
+33-34	dos	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	36	case	O	_
 34	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	O	_
 35	chamados	chamar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	36	acl	O	_
@@ -1705,7 +1705,7 @@
 40	)	)	PUNCT	_	_	39	punct	O	_
 41	e	e	CCONJ	_	_	42	cc	O	_
 42	variáveis	variável	ADJ	_	Gender=Fem|Number=Plur	36	conj	O	_
-43-44	do	_	_	_	_	_	_	O	_
+43-44	do	_	_	_	_	_	_	_	_
 43	de	de	ADP	_	_	45	case	O	_
 44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	O	_
 45	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	42	obl	O	_
@@ -1736,7 +1736,7 @@
 20	variáveis	variável	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	O	_
 21	não	não	ADV	_	Polarity=Neg	22	advmod	O	_
 22	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	O	_
-23-24	das	_	_	_	_	_	_	O	_
+23-24	das	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	25	case	O	_
 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
 25	coordenadas	coordenada	NOUN	_	Gender=Fem|Number=Plur	22	obj	O	_
@@ -1753,7 +1753,7 @@
 36	e	e	CCONJ	_	_	38	cc	O	_
 37	aqueles	aquele	DET	_	Gender=Masc|Number=Plur|PronType=Dem	38	det	O	_
 38	dependentes	dependente	NOUN	_	Gender=Masc|Number=Plur	25	conj	O	_
-39-40	das	_	_	_	_	_	_	O	_
+39-40	das	_	_	_	_	_	_	_	_
 39	de	de	ADP	_	_	41	case	O	_
 40	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	41	det	O	_
 41	coordenadas	coordenada	NOUN	_	Gender=Fem|Number=Plur	38	nmod	O	_
@@ -1771,7 +1771,7 @@
 
 # text = No primeiro caso, a excitação e a resposta dependem apenas do tempo, logo são descritos por equações diferenciais ordinárias; sendo que no caso de parâmetros distribuídos, a excitação e a resposta dependem do tempo e das coordenadas espaciais, logo são descritos por equações diferenciais parciais (mais de uma variável independente)..
 # sent_id = 98-20140331-TESEDSC_0-47
-1-2	No	_	_	_	_	_	_	O	_
+1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	4	case	O	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
 3	primeiro	primeiro	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	4	amod	O	_
@@ -1784,7 +1784,7 @@
 10	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
 11	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 12	apenas	apenas	ADV	_	_	11	advmod	O	_
-13-14	do	_	_	_	_	_	_	O	_
+13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	_	_	15	case	O	_
 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
 15	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
@@ -1799,7 +1799,7 @@
 24	;	;	PUNCT	_	_	11	punct	O	_
 25	sendo	ser	AUX	_	VerbForm=Ger	39	mark	O	_
 26	que	que	SCONJ	_	_	25	fixed	O	_
-27-28	no	_	_	_	_	_	_	O	_
+27-28	no	_	_	_	_	_	_	_	_
 27	em	em	ADP	_	_	29	case	O	_
 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
 29	caso	caso	NOUN	_	Gender=Masc|Number=Sing	39	obl	O	_
@@ -1813,12 +1813,12 @@
 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
 38	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	35	conj	O	_
 39	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	conj	O	_
-40-41	do	_	_	_	_	_	_	O	_
+40-41	do	_	_	_	_	_	_	_	_
 40	de	de	ADP	_	_	42	case	O	_
 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	O	_
 42	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	39	obj	O	_
 43	e	e	CCONJ	_	_	46	cc	O	_
-44-45	das	_	_	_	_	_	_	O	_
+44-45	das	_	_	_	_	_	_	_	_
 44	de	de	ADP	_	_	46	case	O	_
 45	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	46	det	O	_
 46	coordenadas	coordenada	NOUN	_	Gender=Fem|Number=Plur	42	conj	O	_
@@ -1856,7 +1856,7 @@
 11	modelagens	modelagem	NOUN	_	Gender=Fem|Number=Plur	9	nmod	O	_
 12	matemáticas	matemático	ADJ	_	Gender=Fem|Number=Plur	11	amod	O	_
 13	quanto	quanto	ADV	_	_	16	case	O	_
-14-15	ao	_	_	_	_	_	_	O	_
+14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	_	_	16	case	O	_
 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
 16	nível	nível	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
@@ -1882,7 +1882,7 @@
 2	denominações	denominação	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	O	_
 3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	O	_
 4	apresentadas	apresentar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
-5-6	na	_	_	_	_	_	_	O	_
+5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	_	_	7	case	O	_
 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
 7	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
@@ -1920,7 +1920,7 @@
 39	absolutos	absoluto	ADJ	_	Gender=Masc|Number=Plur	38	amod	O	_
 40	ou	ou	CCONJ	_	_	41	cc	O	_
 41	locais	local	ADJ	_	Gender=Masc|Number=Plur	39	conj	O	_
-42-43	das	_	_	_	_	_	_	O	_
+42-43	das	_	_	_	_	_	_	_	_
 42	de	de	ADP	_	_	44	case	O	_
 43	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	O	_
 44	variáveis	variável	NOUN	_	Gender=Fem|Number=Plur	38	nmod	O	_
@@ -1941,7 +1941,7 @@
 59	de	de	ADP	_	_	60	case	O	_
 60	valores	valor	NOUN	_	Gender=Masc|Number=Plur	55	conj	O	_
 61	locais	local	ADJ	_	Gender=Masc|Number=Plur	60	amod	O	_
-62-63	das	_	_	_	_	_	_	O	_
+62-63	das	_	_	_	_	_	_	_	_
 62	de	de	ADP	_	_	64	case	O	_
 63	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	64	det	O	_
 64	variáveis	variável	NOUN	_	Gender=Fem|Number=Plur	60	nmod	O	_
@@ -2014,14 +2014,14 @@
 # sent_id = 98-20140331-TESEDSC_0-52
 1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
 2	resumo	resumo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	O	_
-3-4	destas	_	_	_	_	_	_	O	_
+3-4	destas	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	5	case	O	_
 4	estas	este	DET	_	Gender=Fem|Number=Plur|PronType=Dem	5	det	O	_
 5	classificações	classificação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	O	_
 6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	O	_
 8	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	O	_
-9-10	na	_	_	_	_	_	_	O	_
+9-10	na	_	_	_	_	_	_	_	_
 9	em	em	ADP	_	_	11	case	O	_
 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
 11	TABELA	TABELA	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
@@ -2030,7 +2030,7 @@
 
 # text = Na modelagem matemática quantitativa, ordem alta ou distribuída, é requerida a solução de equações diferenciais parciais, onde o esforço computacional para a solução do equacionamento é elevado..
 # sent_id = 98-20140331-TESEDSC_0-53
-1-2	Na	_	_	_	_	_	_	O	_
+1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	modelagem	modelagem	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
@@ -2058,7 +2058,7 @@
 25	para	para	ADP	_	_	27	case	O	_
 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
 27	solução	solução	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
-28-29	do	_	_	_	_	_	_	O	_
+28-29	do	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	30	case	O	_
 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
 30	equacionamento	equacionamento	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
@@ -2069,7 +2069,7 @@
 
 # text = Na modelagem matemática qualitativa, ordem baixa ou concentrada, é requerida apenas a solução de equações diferenciais ordinárias..
 # sent_id = 98-20140331-TESEDSC_0-54
-1-2	Na	_	_	_	_	_	_	O	_
+1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
 3	modelagem	modelagem	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
@@ -2110,11 +2110,11 @@
 13	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
 14	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	O	_
 15	depende	depender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	O	_
-16-17	do	_	_	_	_	_	_	O	_
+16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	18	case	O	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
 18	escopo	escopo	NOUN	_	Gender=Masc|Number=Sing	15	obj	O	_
-19-20	da	_	_	_	_	_	_	O	_
+19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	21	case	O	_
 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
 21	análise	análise	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
@@ -2124,11 +2124,11 @@
 25	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:pass	O	_
 26	detalhadamente	detalhadamente	ADV	_	_	27	advmod	O	_
 27	discutida	discutir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	conj	O	_
-28-29	nesta	_	_	_	_	_	_	O	_
+28-29	nesta	_	_	_	_	_	_	_	_
 28	em	em	ADP	_	_	30	case	O	_
 29	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	30	det	O	_
 30	Tese	tese	NOUN	_	Gender=Fem|Number=Sing	27	obl	O	_
-31-32	nas	_	_	_	_	_	_	O	_
+31-32	nas	_	_	_	_	_	_	_	_
 31	em	em	ADP	_	_	33	case	O	_
 32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	O	_
 33	seções	seção	NOUN	_	Gender=Fem|Number=Plur	27	obl	O	_
@@ -2143,19 +2143,19 @@
 
 # text = Nesta Tese, adota-se simplesmente como uma escolha do autor a denominação de modelagem matemática de ordem baixa e alta..
 # sent_id = 98-20140331-TESEDSC_0-56
-1-2	Nesta	_	_	_	_	_	_	O	_
+1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	_	_	3	case	O	_
 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
 3	Tese	tese	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
 4	,	,	PUNCT	_	_	3	punct	O	_
-5-6	adota-se	_	_	_	_	_	_	O	_
+5-6	adota-se	_	_	_	_	_	_	_	_
 5	adota	adotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
 6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	O	_
 7	simplesmente	simplesmente	ADV	_	_	5	advmod	O	_
 8	como	como	ADP	_	_	10	case	O	_
 9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
 10	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	O	_
-11-12	do	_	_	_	_	_	_	O	_
+11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	13	case	O	_
 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
 13	autor	autor	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
@@ -2176,7 +2176,7 @@
 # sent_id = 98-20140331-TESEDSC_0-57
 1	1.3	1.3	NUM	_	NumType=Card	2	parataxis	O	_
 2	ORGANIZAÇÃO	ORGANIZAÇÃO	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
-3-4	DA	_	_	_	_	_	_	O	_
+3-4	DA	_	_	_	_	_	_	_	_
 3	DE	de	ADP	_	_	2	flat:name	O	_
 4	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	flat:name	O	_
 5	TESE	TESE	PROPN	_	Number=Sing	2	flat:name	O	_
@@ -2189,14 +2189,14 @@
 4	organizada	organizar	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
 5	a	a	ADP	_	_	9	case	O	_
 6	partir	partir	NOUN	_	_	5	fixed	O	_
-7-8	da	_	_	_	_	_	_	O	_
+7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	5	fixed	O	_
 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
 9	contextualização	contextualização	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
 10	e	e	CCONJ	_	_	11	cc	O	_
 11	motivações	motivação	NOUN	_	Gender=Fem|Number=Plur	9	conj	O	_
 12	descritas	descrever	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	11	acl	O	_
-13-14	neste	_	_	_	_	_	_	O	_
+13-14	neste	_	_	_	_	_	_	_	_
 13	em	em	ADP	_	_	15	case	O	_
 14	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	15	det	O	_
 15	Capítulo	Capítulo	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
@@ -2261,12 +2261,12 @@
 74	modelado	modelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	71	acl	O	_
 75	sem	sem	ADP	_	_	76	case	O	_
 76	malha	malha	NOUN	_	Gender=Fem|Number=Sing	74	obl	O	_
-77-78	num	_	_	_	_	_	_	O	_
+77-78	num	_	_	_	_	_	_	_	_
 77	em	em	ADP	_	_	79	case	O	_
 78	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	79	det	O	_
 79	estágio	estágio	NOUN	_	Gender=Masc|Number=Sing	74	obl	O	_
 80	inicial	inicial	ADJ	_	Gender=Masc|Number=Sing	79	amod	O	_
-81-82	do	_	_	_	_	_	_	O	_
+81-82	do	_	_	_	_	_	_	_	_
 81	de	de	ADP	_	_	83	case	O	_
 82	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	83	det	O	_
 83	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	79	nmod	O	_
@@ -2282,7 +2282,7 @@
 93	de	de	ADP	_	_	94	case	O	_
 94	malha	malha	NOUN	_	Gender=Fem|Number=Sing	92	nmod	O	_
 95	desenvolvido	desenvolver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	92	acl	O	_
-96-97	neste	_	_	_	_	_	_	O	_
+96-97	neste	_	_	_	_	_	_	_	_
 96	em	em	ADP	_	_	98	case	O	_
 97	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	98	det	O	_
 98	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	95	obl	O	_
@@ -2301,7 +2301,7 @@
 111	de	de	ADP	_	_	112	case	O	_
 112	potência	potência	NOUN	_	Gender=Fem|Number=Sing	110	nmod	O	_
 113	eletrônicos	eletrônico	ADJ	_	Gender=Masc|Number=Plur	112	amod	O	_
-114-115	do	_	_	_	_	_	_	O	_
+114-115	do	_	_	_	_	_	_	_	_
 114	de	de	ADP	_	_	116	case	O	_
 115	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	116	det	O	_
 116	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	110	nmod	O	_
@@ -2349,12 +2349,12 @@
 158	e	e	CCONJ	_	_	159	cc	O	_
 159	validação	validação	NOUN	_	Gender=Fem|Number=Sing	157	conj	O	_
 160	experimental	experimental	ADJ	_	Gender=Fem|Number=Sing	159	amod	O	_
-161-162	do	_	_	_	_	_	_	O	_
+161-162	do	_	_	_	_	_	_	_	_
 161	de	de	ADP	_	_	163	case	O	_
 162	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	163	det	O	_
 163	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	159	nmod	O	_
 164	matemático	matemático	ADJ	_	Gender=Masc|Number=Sing	163	amod	O	_
-165-166	do	_	_	_	_	_	_	O	_
+165-166	do	_	_	_	_	_	_	_	_
 165	de	de	ADP	_	_	167	case	O	_
 166	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	167	det	O	_
 167	conversor	conversor	NOUN	_	Gender=Masc|Number=Sing	163	nmod	B=INSTRUMENTO	_
@@ -2373,7 +2373,7 @@
 180	de	de	ADP	_	_	181	case	O	_
 181	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	179	nmod	O	_
 182	analisados	analisar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	179	acl	O	_
-183-184	nesta	_	_	_	_	_	_	O	_
+183-184	nesta	_	_	_	_	_	_	_	_
 183	em	em	ADP	_	_	185	case	O	_
 184	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	185	det	O	_
 185	tese	tese	NOUN	_	Gender=Fem|Number=Sing	182	obl	O	_
@@ -2397,7 +2397,7 @@
 203	trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	201	nmod	O	_
 204	futuros	futuro	ADJ	_	Gender=Masc|Number=Plur	203	amod	O	_
 205	.	.	PUNCT	_	_	206	punct	O	_
-206-207	Apresentam-se	_	_	_	_	_	_	O	_
+206-207	Apresentam-se	_	_	_	_	_	_	_	_
 206	Apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	196	conj	O	_
 207	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	206	expl	O	_
 208	separadamente	separadamente	ADV	_	_	206	advmod	O	_
@@ -2413,23 +2413,23 @@
 218	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	219	det	O	_
 219	análise	análise	NOUN	_	Gender=Fem|Number=Sing	206	obl	O	_
 220	conjunta	conjunto	ADJ	_	Gender=Fem|Number=Sing	219	amod	O	_
-221-222	da	_	_	_	_	_	_	O	_
+221-222	da	_	_	_	_	_	_	_	_
 221	de	de	ADP	_	_	223	case	O	_
 222	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	223	det	O	_
 223	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	219	nmod	O	_
 224	científica	científico	ADJ	_	Gender=Fem|Number=Sing	223	amod	O	_
-225-226	da	_	_	_	_	_	_	O	_
+225-226	da	_	_	_	_	_	_	_	_
 225	de	de	ADP	_	_	227	case	O	_
 226	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	227	det	O	_
 227	tese	tese	NOUN	_	Gender=Fem|Number=Sing	223	nmod	O	_
 228	para	para	ADP	_	_	230	case	O	_
 229	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	230	det	O	_
 230	avanço	avanço	NOUN	_	Gender=Masc|Number=Sing	219	nmod	O	_
-231-232	do	_	_	_	_	_	_	O	_
+231-232	do	_	_	_	_	_	_	_	_
 231	de	de	ADP	_	_	233	case	O	_
 232	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	233	det	O	_
 233	estado-da-arte	estado-da-arte	NOUN	_	Gender=Masc|Number=Sing	230	nmod	O	_
-234-235	no	_	_	_	_	_	_	O	_
+234-235	no	_	_	_	_	_	_	_	_
 234	em	em	ADP	_	_	236	case	O	_
 235	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	236	det	O	_
 236	assunto	assunto	NOUN	_	Gender=Masc|Number=Sing	230	nmod	O	_
@@ -2442,4 +2442,3 @@
 243	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	241	nmod	O	_
 244	.	.	PUNCT	_	_	4	punct	O	_
 245	.	.	PUNCT	_	_	4	punct	O	_
-
