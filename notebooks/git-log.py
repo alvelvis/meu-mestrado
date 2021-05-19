@@ -59,8 +59,7 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.minute,
     now_date.second)
 changelog = "# Changelog ({})".format(now_date.replace("_", " "))
-changelog_filename = "changelog-{}-{}.md".format(
-    len(list(filter(lambda x: x.endswith(".md"), os.listdir(folder_to_save_changelog)))) + 1,
+changelog_filename = "changelog-{}.md".format(
     now_date)
 
 months = {
