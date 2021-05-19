@@ -58,24 +58,14 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.hour,
     now_date.minute,
     now_date.second)
-changelog = "## Changelog ({})".format(now_date.replace("_", " "))
+changelog = "# Changelog ({})".format(now_date.replace("_", " "))
 changelog_filename = "changelog-{}-{}.md".format(
     len(list(filter(lambda x: x.endswith(".md"), os.listdir(folder_to_save_changelog)))) + 1,
     now_date)
 
 months = {
-    'Jan': 1,
-    'Feb': 2,
-    'Mar': 3,
-    'Apr': 4,
-    'May': 5,
-    'Jun': 6,
-    'Jul': 7,
-    'Aug': 8,
-    'Sep': 9,
-    'Oct': 10,
-    'Nov': 11,
-    'Dec': 12}
+    'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
+    'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
 
 for commit in commits:
     author = ""
