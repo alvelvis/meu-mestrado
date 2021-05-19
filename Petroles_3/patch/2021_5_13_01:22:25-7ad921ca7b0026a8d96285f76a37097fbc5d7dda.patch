@@ -1,0 +1,1046 @@
+commit 7ad921ca7b0026a8d96285f76a37097fbc5d7dda
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu May 13 01:22:25 2021 -0300
+
+    lemma 'diferentes' is not correct
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index b4203c4..55bfb51 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -1326,7 +1326,7 @@
+ 5	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
+ 6	sobre	sobre	ADP	_	_	9	case	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+-8	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	O	_
+ 9	distribuições	distribuição	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+@@ -2275,7 +2275,7 @@
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	integração	integração	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
+ 18	de	de	ADP	_	_	20	case	O	_
+-19	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
++19	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+ 20	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	dados	dado	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
+@@ -2341,7 +2341,7 @@
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	integração	integração	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
+ 32	de	de	ADP	_	_	34	case	O	_
+-33	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
++33	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+ 34	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	31	nmod	B=INSTRUMENTO	_
+ 35	temáticos	temático	ADJ	_	Gender=Masc|Number=Plur	34	amod	O	_
+ 36	e	e	CCONJ	_	_	37	cc	O	_
+@@ -7548,7 +7548,7 @@
+ 40	e	e	CCONJ	_	_	41	cc	O	_
+ 41	intrusivas	intrusivo	ADJ	_	Gender=Fem|Number=Plur	39	conj	O	_
+ 42	de	de	ADP	_	_	44	case	O	_
+-43	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	44	det	O	_
++43	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	44	det	O	_
+ 44	idades	idade	NOUN	_	Gender=Fem|Number=Plur	38	nmod	O	_
+ 45	.	.	PUNCT	_	_	14	punct	O	_
+ 46	.	.	PUNCT	_	_	14	punct	O	_
+@@ -16253,7 +16253,7 @@
+ 4	diferentes	diferente	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 5	e	e	CCONJ	_	_	8	cc	O	_
+ 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	2	conj	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+@@ -19260,7 +19260,7 @@
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	O	_
+ 8	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 9	por	por	ADP	_	_	11	case	O	_
+-10	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	O	_
++10	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	O	_
+ 11	sequências	sequência	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	O	_
+ 12	estratigráficas	estratigráfico	ADJ	_	Gender=Fem|Number=Plur	11	amod	O	_
+ 13	,	,	PUNCT	_	_	8	punct	O	_
+@@ -21102,7 +21102,7 @@
+ 9	fácies	fácie	NOUN	_	Gender=Fem|Number=Plur	6	nmod	B=LITOLOGIA	_
+ 10	sedimentares	sedimentar	ADJ	_	Gender=Fem|Number=Plur	9	amod	I=LITOLOGIA	_
+ 11	em	em	ADP	_	_	13	case	O	_
+-12	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
++12	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
+ 13	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+@@ -22763,7 +22763,7 @@
+ 8-9	das	_	_	_	_	_	_	O	_
+ 8	de	de	ADP	_	_	11	case	O	_
+ 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+-10	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	11	det	O	_
++10	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	11	det	O	_
+ 11	sequências	sequência	NOUN	_	Gender=Fem|Number=Plur	7	nmod	O	_
+ 12	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	O	_
+ 13	mais	mais	ADV	_	_	14	advmod	O	_
+@@ -36661,7 +36661,7 @@
+ 3	:	:	PUNCT	_	_	4	punct	O	_
+ 4	Comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
+ 5	entre	entre	ADP	_	_	7	case	O	_
+-6	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
+ 7	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	4	nmod	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	aquecimento	aquecimento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+@@ -36709,7 +36709,7 @@
+ 18-19	das	_	_	_	_	_	_	O	_
+ 18	de	de	ADP	_	_	21	case	O	_
+ 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	O	_
+-20	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	O	_
++20	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	O	_
+ 21	partes	parte	NOUN	_	Gender=Fem|Number=Plur	16	nmod	O	_
+ 22-23	do	_	_	_	_	_	_	O	_
+ 22	de	de	ADP	_	_	24	case	O	_
+@@ -38321,13 +38321,13 @@
+ 24	modo	modo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 25	a	a	ADP	_	_	26	case	O	_
+ 26	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	31	obl	O	_
+-27	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
++27	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
+ 28	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	31	nsubj	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	campo	campo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 31	prevalecem	prevalecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+ 32	em	em	ADP	_	_	34	case	O	_
+-33	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
++33	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+ 34	partes	parte	NOUN	_	Gender=Fem|Number=Plur	31	obj	O	_
+ 35-36	da	_	_	_	_	_	_	O	_
+ 35	de	de	ADP	_	_	37	case	O	_
+@@ -38351,7 +38351,7 @@
+ 52	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	47	nmod	O	_
+ 53	diferente	diferente	ADJ	_	Gender=Masc|Number=Sing	52	amod	O	_
+ 54	para	para	ADP	_	_	56	case	O	_
+-55	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	56	det	O	_
++55	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	56	det	O	_
+ 56	direções	direção	NOUN	_	Gender=Fem|Number=Plur	52	nmod	O	_
+ 57	de	de	ADP	_	_	58	case	O	_
+ 58	propagação	propagação	NOUN	_	Gender=Fem|Number=Sing	56	nmod	O	_
+@@ -40192,10 +40192,10 @@
+ 3	como	como	ADP	_	_	4	case	O	_
+ 4	consequência	consequência	NOUN	_	Gender=Fem|Number=Sing	2	xcomp	O	_
+ 5	de	de	ADP	_	_	7	case	O	_
+-6	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
+ 7	mecanismos	mecanismo	NOUN	_	Gender=Masc|Number=Plur	4	nmod	O	_
+ 8	em	em	ADP	_	_	10	case	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	meios	meio	NOUN	_	Gender=Masc|Number=Plur	7	nmod	O	_
+ 11	e	e	CCONJ	_	_	13	cc	O	_
+ 12	segundo	segundo	ADP	_	_	13	case	O	_
+@@ -40637,7 +40637,7 @@
+ 18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	O	_
+ 19	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl:relcl	O	_
+ 20	em	em	ADP	_	_	22	case	O	_
+-21	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	O	_
++21	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	O	_
+ 22	partes	parte	NOUN	_	Gender=Fem|Number=Plur	19	obl	O	_
+ 23-24	do	_	_	_	_	_	_	O	_
+ 23	de	de	ADP	_	_	25	case	O	_
+@@ -45684,7 +45684,7 @@
+ 16	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	17	det	O	_
+ 17	interações	interação	NOUN	_	Gender=Fem|Number=Plur	9	conj	O	_
+ 18	com	com	ADP	_	_	20	case	O	_
+-19	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
++19	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+ 20	polímeros	polímero	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+ 21	.	.	PUNCT	_	_	2	punct	O	_
+ 22	.	.	PUNCT	_	_	2	punct	O	_
+@@ -45706,7 +45706,7 @@
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	O	_
+ 14	para	para	ADP	_	_	16	case	O	_
+-15	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
+ 16	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
+ 17	poliméricos	polimérico	ADJ	_	Gender=Masc|Number=Plur	16	amod	O	_
+ 18	.	.	PUNCT	_	_	3	punct	O	_
+@@ -55561,7 +55561,7 @@
+ 4	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	5	aux:pass	O	_
+ 5	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 6	três	três	NUM	_	NumType=Card	8	nummod	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	polímeros	polímero	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	O	_
+ 9	e	e	CCONJ	_	_	10	cc	O	_
+ 10	cloreto	cloreto	NOUN	_	Gender=Masc|Number=Sing	8	conj	B=QUÍMICA	_
+@@ -56828,7 +56828,7 @@
+ # text = As diferentes soluções de azul de metileno usadas no processo de troca de cátions das sete argilas, foram analisadas no mesmo espectrofotômetro onde foram analisadas as soluções para o preparo da curva de calibração..
+ # sent_id = 24-20150122-MONOGRAFIA_0-369
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	O	_
+-2	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
++2	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
+ 3	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	22	nsubj:pass	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	azul	azul	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+@@ -57158,7 +57158,7 @@
+ 17-18	utilizando-se	_	_	_	_	_	_	O	_
+ 17	utilizando	utilizar	VERB	_	VerbForm=Ger	1	advcl	O	_
+ 18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl	O	_
+-19	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
++19	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+ 20	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	17	obj	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	20	nmod	B=QUÍMICA	_
+@@ -57316,7 +57316,7 @@
+ 6	,	,	PUNCT	_	_	7	punct	O	_
+ 7	tratadas	tratar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	O	_
+ 8	com	com	ADP	_	_	10	case	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
+@@ -58793,7 +58793,7 @@
+ 21	rolamento	rolamento	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 22	com	com	ADP	_	_	25	case	O	_
+ 23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+-24	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	25	det	O	_
++24	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	25	det	O	_
+ 25	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	25	nmod	O	_
+@@ -61691,7 +61691,7 @@
+ 19	,	,	PUNCT	_	_	23	punct	O	_
+ 20	mas	mas	CCONJ	_	_	23	cc	O	_
+ 21	em	em	ADP	_	_	23	case	O	_
+-22	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
++22	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
+ 23	percentuais	percentual	NOUN	_	Gender=Masc|Number=Plur	12	conj	O	_
+ 24	.	.	PUNCT	_	_	1	punct	O	_
+ 25	.	.	PUNCT	_	_	1	punct	O	_
+@@ -61958,7 +61958,7 @@
+ 15	,	,	PUNCT	_	_	19	punct	O	_
+ 16	mas	mas	CCONJ	_	_	19	cc	O	_
+ 17	em	em	ADP	_	_	19	case	O	_
+-18	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	O	_
++18	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	O	_
+ 19	percentuais	percentual	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
+ 20	.	.	PUNCT	_	_	1	punct	O	_
+ 21	.	.	PUNCT	_	_	1	punct	O	_
+@@ -69057,7 +69057,7 @@
+ 13	por	por	ADP	_	_	14	case	O	_
+ 14	clastos	clasto	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	O	_
+ 15	de	de	ADP	_	_	17	case	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	dimensões	dimensão	NOUN	_	Gender=Fem|Number=Plur	14	nmod	O	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+ 19	variando	variar	VERB	_	VerbForm=Ger	12	advcl	O	_
+@@ -81321,7 +81321,7 @@
+ # text = As diferentes tecnologias de adsorção se diferenciam entre si pelo modo como são regenerados os sólidos adsorventes, as tecnologias estão descritas a seguir (Gupta, 2003):
+ # sent_id = 161-20150810-MONOGRAFIA_0-103
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	O	_
+-2	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
++2	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
+ 3	tecnologias	tecnologia	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	adsorção	adsorção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+@@ -81455,7 +81455,7 @@
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	membrana	membrana	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 6	para	para	ADP	_	_	8	case	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	gases	gase	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	O	_
+ 10	intimamente	intimamente	ADV	_	_	11	advmod	O	_
+@@ -82640,7 +82640,7 @@
+ 31	um	um	NUM	_	NumType=Card	32	nsubj	O	_
+ 32	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
+ 33	apresentar	apresentar	VERB	_	VerbForm=Inf	32	xcomp	O	_
+-34	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	35	det	O	_
++34	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	35	det	O	_
+ 35	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	33	obj	O	_
+ 36	de	de	ADP	_	_	37	case	O	_
+ 37	mecanismos	mecanismo	NOUN	_	Gender=Masc|Number=Plur	35	nmod	O	_
+@@ -110115,7 +110115,7 @@
+ 13	camada	camada	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 14	,	,	PUNCT	_	_	1	punct	O	_
+ 15	com	com	ADP	_	_	17	case	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	deformação	deformação	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
+@@ -115063,7 +115063,7 @@
+ 112	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	110	conj	O	_
+ 113	e	e	CCONJ	_	_	116	cc	O	_
+ 114	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	116	det	O	_
+-115	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	116	det	O	_
++115	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	116	det	O	_
+ 116	fases	fase	NOUN	_	Gender=Fem|Number=Plur	110	conj	O	_
+ 117-118	nas	_	_	_	_	_	_	O	_
+ 117	em	em	ADP	_	_	119	case	O	_
+@@ -116440,7 +116440,7 @@
+ 11	vez	vez	NOUN	_	Gender=Fem|Number=Sing	10	fixed	O	_
+ 12	que	que	SCONJ	_	_	10	fixed	O	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+-14	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	15	det	O	_
++14	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	15	det	O	_
+ 15	frações	fração	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+@@ -126175,7 +126175,7 @@
+ 11-12	dos	_	_	_	_	_	_	O	_
+ 11	de	de	ADP	_	_	14	case	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	polímeros	polímero	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
+ 15	com	com	ADP	_	_	17	case	O	_
+ 16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
+@@ -129351,7 +129351,7 @@
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	partindo	partir	VERB	_	VerbForm=Ger	1	advcl	O	_
+ 14	de	de	ADP	_	_	16	case	O	_
+-15	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
+ 16	princípios	princípio	NOUN	_	Gender=Masc|Number=Plur	13	obj	O	_
+ 17	:	:	PUNCT	_	_	18	punct	O	_
+ 18	químicos	químico	NOUN	_	Gender=Masc|Number=Plur	16	appos	O	_
+@@ -132781,7 +132781,7 @@
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	uso	uso	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+ 6	de	de	ADP	_	_	8	case	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
+ 9	ambiente	ambiente	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 10	para	para	ADP	_	_	11	case	O	_
+@@ -137384,7 +137384,7 @@
+ 12	e	e	CCONJ	_	_	13	cc	O	_
+ 13	tensoativos	tensoativo	ADJ	_	Gender=Masc|Number=Plur	10	conj	O	_
+ 14	com	com	ADP	_	_	16	case	O	_
+-15	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
+ 16	características	característica	NOUN	_	Gender=Fem|Number=Plur	13	obl	O	_
+ 17	.	.	PUNCT	_	_	1	punct	O	_
+ 18	.	.	PUNCT	_	_	1	punct	O	_
+@@ -137588,7 +137588,7 @@
+ 26	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	25	amod	O	_
+ 27	,	,	PUNCT	_	_	28	punct	O	_
+ 28	utilizando	utilizar	VERB	_	VerbForm=Ger	17	advcl	O	_
+-29	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	30	det	O	_
++29	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	30	det	O	_
+ 30	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	28	obj	O	_
+ 31	e	e	CCONJ	_	_	32	cc	O	_
+ 32	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	30	conj	O	_
+@@ -141296,7 +141296,7 @@
+ 5-6	destas	_	_	_	_	_	_	O	_
+ 5	de	de	ADP	_	_	8	case	O	_
+ 6	estas	este	DET	_	Gender=Fem|Number=Plur|PronType=Dem	8	det	O	_
+-7	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	O	_
+ 8	proporções	proporção	NOUN	_	Gender=Fem|Number=Plur	4	nmod	O	_
+ 9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	aux:pass	O	_
+ 10	avaliadas	avaliar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -141584,7 +141584,7 @@
+ 5	de	de	ADP	_	_	6	case	O	_
+ 6	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	4	nmod	O	_
+ 7	de	de	ADP	_	_	9	case	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	características	característica	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+ 10	(	(	PUNCT	_	_	12	punct	O	_
+ 11	1	1	NUM	_	NumType=Card	12	nummod	O	_
+@@ -141949,7 +141949,7 @@
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	B=FLUIDO	_
+ 13	em	em	ADP	_	_	15	case	O	_
+-14	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
++14	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
+ 15	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
+ 16	de	de	ADP	_	_	18	mark	O	_
+ 17	Como	como	ADV	_	_	18	advmod	O	_
+@@ -142264,7 +142264,7 @@
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 18	para	para	ADP	_	_	20	case	O	_
+-19	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
++19	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+ 20	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
+ 21	volumétricas	volumétrico	ADJ	_	Gender=Fem|Number=Plur	20	amod	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+@@ -146710,7 +146710,7 @@
+ 13	sísmicos	sísmico	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 14	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
+ 15	para	para	ADP	_	_	17	case	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	regiões	região	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 18-19	do	_	_	_	_	_	_	O	_
+ 18	de	de	ADP	_	_	20	case	O	_
+@@ -147799,7 +147799,7 @@
+ 27	bem	bem	ADV	_	_	28	advmod	O	_
+ 28	registrado	registrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 29	por	por	ADP	_	_	31	case	O	_
+-30	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	31	det	O	_
++30	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	31	det	O	_
+ 31	estações	estação	NOUN	_	Gender=Fem|Number=Plur	28	obl:agent	O	_
+ 32	sismográficas	sismográfico	ADJ	_	Gender=Fem|Number=Plur	31	amod	O	_
+ 33-34	do	_	_	_	_	_	_	O	_
+@@ -148028,7 +148028,7 @@
+ 12-13	nos	_	_	_	_	_	_	O	_
+ 12	em	em	ADP	_	_	15	case	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
+-14	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
++14	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
+ 15	quadrantes	quadrante	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
+ 16	,	,	PUNCT	_	_	11	punct	O	_
+ 17	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -154064,7 +154064,7 @@
+ 3	fases	fase	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 4	marcadas	marcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	3	acl	O	_
+ 5	por	por	ADP	_	_	7	case	O	_
+-6	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
+ 7	padrões	padrão	NOUN	_	Gender=Masc|Number=Plur	4	obl:agent	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	tectônica	tectônica	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+@@ -154881,7 +154881,7 @@
+ 30	separam	separar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	acl:relcl	O	_
+ 31	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	30	obj	B=LITOLOGIA	_
+ 32	de	de	ADP	_	_	34	case	O	_
+-33	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
++33	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+ 34	constituições	constituição	NOUN	_	Gender=Fem|Number=Plur	31	nmod	O	_
+ 35	petrofísicas	petrofísico	ADJ	_	Gender=Fem|Number=Plur	34	amod	O	_
+ 36	,	,	PUNCT	_	_	38	punct	O	_
+@@ -154901,7 +154901,7 @@
+ 50	de	de	ADP	_	_	51	case	O	_
+ 51	chegada	chegada	NOUN	_	Gender=Fem|Number=Sing	49	nmod	O	_
+ 52	a	a	ADP	_	_	54	case	O	_
+-53	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	54	det	O	_
++53	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	54	det	O	_
+ 54	afastamentos	afastamento	NOUN	_	Gender=Masc|Number=Plur	51	nmod	O	_
+ 55	em	em	ADP	_	_	59	case	O	_
+ 56	relação	relação	NOUN	_	Gender=Fem|Number=Sing	55	fixed	O	_
+@@ -155503,7 +155503,7 @@
+ 10-11	dos	_	_	_	_	_	_	O	_
+ 10	de	de	ADP	_	_	13	case	O	_
+ 11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+-12	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
++12	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
+ 13	horizontes	horizonte	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+ 14	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	13	acl	O	_
+ 15	,	,	PUNCT	_	_	18	punct	O	_
+@@ -166239,19 +166239,19 @@
+ 4	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 5	experimentos	experimento	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	_
+ 6	em	em	ADP	_	_	8	case	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	condições	condição	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 9	,	,	PUNCT	_	_	4	punct	O	_
+ 10	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	15	cc	O	_
+ 11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	fixed	O	_
+ 12	,	,	PUNCT	_	_	15	punct	O	_
+ 13	com	com	ADP	_	_	15	case	O	_
+-14	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
++14	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
+ 15	holdups	holdup	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	B=FLUIDO	_
+ 18	,	,	PUNCT	_	_	15	punct	O	_
+-19	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
++19	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+ 20	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	15	appos	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+ 22	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	29	obl	O	_
+@@ -166264,7 +166264,7 @@
+ 29	permanecem	permanecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+ 30	paradas	parada	NOUN	_	Gender=Fem|Number=Plur	29	obj	O	_
+ 31	e	e	CCONJ	_	_	33	cc	O	_
+-32	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	33	det	O	_
++32	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	33	det	O	_
+ 33	vazões	vazão	NOUN	_	Gender=Fem|Number=Plur	30	conj	O	_
+ 34	de	de	ADP	_	_	35	case	O	_
+ 35	água	água	NOUN	_	Gender=Fem|Number=Sing	33	nmod	B=FLUIDO	_
+@@ -166907,7 +166907,7 @@
+ 35	compostos	compor	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	conj	O	_
+ 36	,	,	PUNCT	_	_	35	punct	O	_
+ 37	em	em	ADP	_	_	39	case	O	_
+-38	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	39	det	O	_
++38	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	39	det	O	_
+ 39	quantidades	quantidade	NOUN	_	Gender=Fem|Number=Plur	35	obl	O	_
+ 40	,	,	PUNCT	_	_	35	punct	O	_
+ 41	por	por	ADP	_	_	44	case	O	_
+@@ -166958,7 +166958,7 @@
+ 5	estas	este	DET	_	Gender=Fem|Number=Plur|PronType=Dem	6	det	O	_
+ 6	quantidades	quantidade	NOUN	_	Gender=Fem|Number=Plur	11	nmod	O	_
+ 7	,	,	PUNCT	_	_	6	punct	O	_
+-8	diferentes	diferentes	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	11	nsubj	O	_
++8	diferentes	diferente	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	11	nsubj	O	_
+ 9	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	cop	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+ 11	características	característica	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+@@ -170719,7 +170719,7 @@
+ 23	observados	observar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	conj	O	_
+ 24	para	para	ADP	_	_	27	case	O	_
+ 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	O	_
+-26	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	27	det	O	_
++26	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	27	det	O	_
+ 27	superfícies	superfície	NOUN	_	Gender=Fem|Number=Plur	23	obl	O	_
+ 28	.	.	PUNCT	_	_	23	punct	O	_
+ 29	.	.	PUNCT	_	_	23	punct	O	_
+@@ -171973,7 +171973,7 @@
+ 5	de	de	ADP	_	_	6	case	O	_
+ 6	desemulsificantes	desemulsificante	NOUN	_	Gender=Masc|Number=Plur	4	nmod	B=QUÍMICA	_
+ 7	com	com	ADP	_	_	9	case	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	HLB	HLB	PROPN	_	Gender=Masc|Number=Plur	2	obl	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+ 11	peso	peso	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	_
+@@ -177326,7 +177326,7 @@
+ 7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	expl	O	_
+ 8	considerar	considerar	VERB	_	VerbForm=Inf	6	xcomp	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+-10	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	O	_
++10	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	O	_
+ 11	aspectos	aspecto	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
+ 12-13	da	_	_	_	_	_	_	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+@@ -179015,7 +179015,7 @@
+ 28	%	%	SYM	_	_	26	compound	O	_
+ 29	,	,	PUNCT	_	_	18	punct	O	_
+ 30	para	para	ADP	_	_	32	case	O	_
+-31	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	32	det	O	_
++31	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	32	det	O	_
+ 32	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
+ 33	de	de	ADP	_	_	34	case	O	_
+ 34	parada	parada	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	_
+@@ -181705,7 +181705,7 @@
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	repartida	repartir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	O	_
+ 28	para	para	ADP	_	_	30	case	O	_
+-29	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	30	det	O	_
++29	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	30	det	O	_
+ 30	comprimentos	comprimento	NOUN	_	Gender=Masc|Number=Plur	27	obl	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+ 32	entupimento	entupimento	NOUN	_	Gender=Masc|Number=Sing	30	nmod	O	_
+@@ -181863,7 +181863,7 @@
+ 17	em	em	ADP	_	_	18	case	O	_
+ 18	consideração	consideração	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
+-20	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	21	det	O	_
++20	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	21	det	O	_
+ 21	transientes	transiente	NOUN	_	Gender=Masc|Number=Plur	16	obj	O	_
+ 22	observados	observar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	O	_
+ 23	;	;	PUNCT	_	_	27	punct	O	_
+@@ -181876,7 +181876,7 @@
+ 30	de	de	ADP	_	_	31	case	O	_
+ 31	desemulsificantes	desemulsificante	NOUN	_	Gender=Masc|Number=Plur	29	nmod	B=QUÍMICA	_
+ 32	de	de	ADP	_	_	34	case	O	_
+-33	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
++33	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+ 34	composições	composição	NOUN	_	Gender=Fem|Number=Plur	31	nmod	O	_
+ 35-36	no	_	_	_	_	_	_	O	_
+ 35	em	em	ADP	_	_	37	case	O	_
+@@ -183476,7 +183476,7 @@
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	uso	uso	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 6	de	de	ADP	_	_	8	case	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	combustíveis	combustível	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+@@ -190750,7 +190750,7 @@
+ 24	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	O	_
+ 25	processo	processo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 26	em	em	ADP	_	_	28	case	O	_
+-27	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
++27	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
+ 28	cenários	cenário	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
+ 29	.	.	PUNCT	_	_	3	punct	O	_
+ 30	.	.	PUNCT	_	_	3	punct	O	_
+@@ -191331,7 +191331,7 @@
+ 3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	triglicerídeo	triglicerídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
+ 5	contém	conter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	O	_
+ 7	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	5	obj	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	ácidos	ácido	NOUN	_	Gender=Masc|Number=Plur	7	nmod	O	_
+@@ -191356,11 +191356,11 @@
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+ 3	fato	fato	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+ 4	de	de	SCONJ	_	_	8	mark	O	_
+-5	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
++5	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
+ 6	ácidos	ácido	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	O	_
+ 7	graxos	graxo	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 8	possuírem	possuir	VERB	_	Number=Plur|Person=3|VerbForm=Inf	3	acl	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	8	obj	O	_
+ 11	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	10	amod	O	_
+ 12	e	e	CCONJ	_	_	13	cc	O	_
+@@ -195062,7 +195062,7 @@
+ 11	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 12	testes	teste	NOUN	_	Gender=Masc|Number=Plur	11	nsubj:pass	B=MÉTODO	_
+ 13	sob	sob	ADP	_	_	15	case	O	_
+-14	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
++14	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
+ 15	condições	condição	NOUN	_	Gender=Fem|Number=Plur	11	obl	O	_
+ 16	como	como	ADV	_	_	18	cc	O	_
+ 17	:	:	PUNCT	_	_	18	punct	O	_
+@@ -195084,7 +195084,7 @@
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+ 33	testados	testar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	O	_
+ 34	em	em	ADP	_	_	36	case	O	_
+-35	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	36	det	O	_
++35	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	36	det	O	_
+ 36	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	33	obl	B=FLUIDO	_
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+ 38	comercial	comercial	ADJ	_	Gender=Masc|Number=Sing	36	nmod:appos	O	_
+@@ -198149,7 +198149,7 @@
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+ 14	simulação	simulação	NOUN	_	Gender=Fem|Number=Sing	8	conj	O	_
+ 15	de	de	ADP	_	_	17	case	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	situações	situação	NOUN	_	Gender=Fem|Number=Plur	14	nmod	O	_
+ 18	,	,	PUNCT	_	_	6	punct	O	_
+ 19	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux:pass	O	_
+@@ -198676,7 +198676,7 @@
+ 6	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	aux:pass	O	_
+ 7	coletados	coletar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 8	em	em	ADP	_	_	10	case	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	7	obl	O	_
+ 11	e	e	CCONJ	_	_	13	cc	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -198869,7 +198869,7 @@
+ 13	,	,	PUNCT	_	_	3	punct	O	_
+ 14	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	15	aux:pass	O	_
+ 15	simuladas	simular	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-16	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	O	_
+ 17	situações	situação	NOUN	_	Gender=Fem|Number=Plur	15	nsubj:pass	O	_
+ 18	,	,	PUNCT	_	_	21	punct	O	_
+ 19	como	como	ADV	_	_	21	cc	O	_
+@@ -199279,7 +199279,7 @@
+ 21	estar	estar	AUX	_	VerbForm=Inf	22	cop	O	_
+ 22	supordados	supordado	ADJ	_	Gender=Masc|Number=Plur	20	xcomp	O	_
+ 23	em	em	ADP	_	_	25	case	O	_
+-24	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	25	det	O	_
++24	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	25	det	O	_
+ 25	suportes	suporte	NOUN	_	Gender=Masc|Number=Plur	22	obl	O	_
+ 26	,	,	PUNCT	_	_	22	punct	O	_
+ 27	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	31	nsubj	O	_
+@@ -200998,7 +200998,7 @@
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=QUÍMICA	_
+ 8	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	parataxis	O	_
+@@ -201085,7 +201085,7 @@
+ 
+ # text = Diferentes tempos de calcinação do catalisador em forno mufla a 900 ºC
+ # sent_id = 271-20150810-MONOGRAFIA_0-360
+-1	Diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
++1	Diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
+ 2	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	calcinação	calcinação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+@@ -201480,7 +201480,7 @@
+ 11-12	variou-se	_	_	_	_	_	_	O	_
+ 11	variou	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	O	_
+ 12	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	teores	teor	NOUN	_	Gender=Masc|Number=Plur	11	obj	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=QUÍMICA	_
+@@ -202284,7 +202284,7 @@
+ 27	comercial	comercial	ADJ	_	Gender=Masc|Number=Sing	26	amod	I=PRODUTO	_
+ 28	,	,	PUNCT	_	_	20	punct	O	_
+ 29	com	com	ADP	_	_	31	case	O	_
+-30	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	31	det	O	_
++30	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	31	det	O	_
+ 31	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	reação	reação	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+@@ -205019,7 +205019,7 @@
+ 12	diferentes	diferente	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	para	para	ADP	_	_	16	case	O	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+-15	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
+ 16	elos	elo	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
+ 17-18	da	_	_	_	_	_	_	O	_
+ 17	de	de	ADP	_	_	19	case	O	_
+@@ -205642,7 +205642,7 @@
+ 30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	O	_
+ 31	simulações	simulação	NOUN	_	Gender=Fem|Number=Plur	15	obl	O	_
+ 32	de	de	ADP	_	_	34	case	O	_
+-33	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
++33	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+ 34	cenários	cenário	NOUN	_	Gender=Masc|Number=Plur	31	nmod	O	_
+ 35	.	.	PUNCT	_	_	15	punct	O	_
+ 36	.	.	PUNCT	_	_	15	punct	O	_
+@@ -206621,7 +206621,7 @@
+ 5	metílicos	metílico	ADJ	_	Gender=Masc|Number=Plur	4	amod	O	_
+ 6	para	para	ADP	_	_	9	case	O	_
+ 7	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	9	det	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	B=FLUIDO	_
+ 10	,	,	PUNCT	_	_	2	punct	O	_
+ 11	requer	requerer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -206979,7 +206979,7 @@
+ 14-15	dos	_	_	_	_	_	_	O	_
+ 14	de	de	ADP	_	_	17	case	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	álcoois	álcool	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+ 19	metanol	metanol	NOUN	_	Gender=Masc|Number=Sing	17	appos	O	_
+@@ -208435,7 +208435,7 @@
+ # text = Existem diferentes métodos para a determinação do teor de óleos e graxas, mas ao longo deste trabalho usaremos o método de espectrofotometria, sendo um dos mais utilizados dentre as análises quantitativa para se determinar concentrações de substâncias em soluções..
+ # sent_id = 391-20160914-MONOGRAFIA_0-16
+ 1	Existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
++2	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
+ 3	métodos	método	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	B=MÉTODO	_
+ 4	para	para	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -211707,7 +211707,7 @@
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+-5	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
++5	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
+ 6	processos	processo	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	O	_
+ 7	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	O	_
+ 8	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -212666,7 +212666,7 @@
+ 10	por	por	ADP	_	_	11	case	O	_
+ 11	fótons	fótom	NOUN	_	Gender=Masc|Number=Plur	8	obl:agent	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	comprimentos	comprimento	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	onda	onda	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+@@ -214910,7 +214910,7 @@
+ 14-15	dos	_	_	_	_	_	_	O	_
+ 14	de	de	ADP	_	_	17	case	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	padrões	padrão	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
+ 18	preparados	preparar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	_
+ 19	com	com	ADP	_	_	20	case	O	_
+@@ -215095,13 +215095,13 @@
+ # text = Os diferentes tensoativos nonilfenol etoxilados com os diferentes graus de etoxilação (40, 60, 100 e 110), possibilitou a elaboração de quatro diferentes diagramas ternários permanecendo constante a fase oleosa (óleo diesel) e a fase aquosa (água)..
+ # sent_id = 391-20160914-MONOGRAFIA_0-230
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+-2	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
++2	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
+ 3	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	O	_
+ 4	nonilfenol	nonilfenol	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+ 5	etoxilados	etoxilar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 6	com	com	ADP	_	_	9	case	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	graus	grau	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	etoxilação	etoxilação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+@@ -215120,7 +215120,7 @@
+ 24	elaboração	elaboração	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
+ 25	de	de	ADP	_	_	28	case	O	_
+ 26	quatro	quatro	NUM	_	NumType=Card	28	nummod	O	_
+-27	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
++27	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
+ 28	diagramas	diagrama	NOUN	_	Gender=Masc|Number=Plur	24	nmod	O	_
+ 29	ternários	ternário	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
+ 30	permanecendo	permanecer	VERB	_	VerbForm=Ger	22	advcl	O	_
+@@ -216908,7 +216908,7 @@
+ 13	características	característica	NOUN	_	Gender=Fem|Number=Plur	11	obj	O	_
+ 14	de	de	ADP	_	_	17	case	O	_
+ 15	três	três	NUM	_	NumType=Card	17	nummod	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	classes	classe	NOUN	_	Gender=Fem|Number=Plur	13	nmod	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	materiais	material	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+@@ -217486,7 +217486,7 @@
+ 5	]	]	PUNCT	_	_	4	punct	O	_
+ 6	,	,	PUNCT	_	_	7	punct	O	_
+ 7	utilizando	utilizar	VERB	_	VerbForm=Ger	0	root	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	composições	composição	NOUN	_	Gender=Fem|Number=Plur	7	obj	O	_
+ 10-11	da	_	_	_	_	_	_	O	_
+ 10	de	de	ADP	_	_	12	case	O	_
+@@ -219755,7 +219755,7 @@
+ 96	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	98	nsubj	O	_
+ 97	lhes	eles	PRON	_	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	98	iobj	O	_
+ 98	confere	conferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	93	acl:relcl	O	_
+-99	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	100	det	O	_
++99	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	100	det	O	_
+ 100	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	98	obj	O	_
+ 101	de	de	ADP	_	_	102	case	O	_
+ 102	seletividade	seletividade	NOUN	_	Gender=Fem|Number=Sing	100	nmod	O	_
+@@ -219874,7 +219874,7 @@
+ 18	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	O	_
+ 19	correspondem	corresponder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	O	_
+ 20	a	a	ADP	_	_	22	case	O	_
+-21	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	O	_
++21	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	O	_
+ 22	arranjos	arranjo	NOUN	_	Gender=Masc|Number=Plur	19	obj	O	_
+ 23-24	das	_	_	_	_	_	_	O	_
+ 23	de	de	ADP	_	_	25	case	O	_
+@@ -219995,7 +219995,7 @@
+ 12	ligações	ligação	NOUN	_	Gender=Fem|Number=Plur	10	obj	O	_
+ 13	entre	entre	ADP	_	_	16	case	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	O	_
+-15	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	16	det	O	_
+ 16	cavidades	cavidade	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18-19	podendo-se	_	_	_	_	_	_	O	_
+@@ -222545,7 +222545,7 @@
+ 4	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	O	_
+ 5	,	,	PUNCT	_	_	8	punct	O	_
+ 6	com	com	ADP	_	_	8	case	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	2	obl	O	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+ 10	utilizando	utilizar	VERB	_	VerbForm=Ger	2	advcl	O	_
+@@ -224155,7 +224155,7 @@
+ 4-5	das	_	_	_	_	_	_	O	_
+ 4	de	de	ADP	_	_	7	case	O	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
+-6	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	O	_
+ 7	substâncias	substância	NOUN	_	Gender=Fem|Number=Plur	3	nmod	O	_
+ 8	relativos	relativo	ADJ	_	Gender=Fem|Number=Plur	7	amod	O	_
+ 9-10	ao	_	_	_	_	_	_	O	_
+@@ -226759,7 +226759,7 @@
+ 21-22	nas	_	_	_	_	_	_	O	_
+ 21	em	em	ADP	_	_	24	case	O	_
+ 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
+-23	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	O	_
++23	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	O	_
+ 24	zeólitas	zeólita	NOUN	_	Gender=Fem|Number=Plur	14	obl	B=LITOLOGIA	_
+ 25	com	com	ADP	_	_	26	case	O	_
+ 26	teor	teor	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+@@ -228111,7 +228111,7 @@
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	silício	silício	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 11	em	em	ADP	_	_	13	case	O	_
+-12	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
++12	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	O	_
+ 13	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	3	obl	O	_
+ 14	químicos	químico	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	_
+ 15	,	,	PUNCT	_	_	3	punct	O	_
+@@ -229259,7 +229259,7 @@
+ 44	obtidas	obter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	43	acl	O	_
+ 45	para	para	ADP	_	_	48	case	O	_
+ 46	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	O	_
+-47	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	48	det	O	_
++47	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	48	det	O	_
+ 48	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	44	obl	B=QUÍMICA	_
+ 49-50	nos	_	_	_	_	_	_	O	_
+ 49	em	em	ADP	_	_	51	case	O	_
+@@ -247438,7 +247438,7 @@
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	inversão	inversão	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 6	emprega	empregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
++7	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	O	_
+ 8	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	6	obj	O	_
+ 9	matemáticas	matemático	ADJ	_	Gender=Fem|Number=Plur	8	amod	O	_
+ 10	para	para	ADP	_	_	13	case	O	_
+@@ -250399,7 +250399,7 @@
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+ 21	situados	situar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	10	acl	O	_
+ 22	em	em	ADP	_	_	24	case	O	_
+-23	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	24	det	O	_
++23	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	24	det	O	_
+ 24	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	21	obl	O	_
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+@@ -277010,7 +277010,7 @@
+ 10	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	11	aux	O	_
+ 11	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	pulsos	pulso	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 15	magmáticos	magmático	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+ 16	como	como	ADV	_	_	17	advmod	O	_
+@@ -291982,7 +291982,7 @@
+ 12	ser	ser	AUX	_	VerbForm=Inf	13	aux:pass	O	_
+ 13	escolhidos	escolher	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	xcomp	O	_
+ 14	sob	sob	ADP	_	_	16	case	O	_
+-15	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
++15	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	O	_
+ 16	critérios	critério	NOUN	_	Gender=Masc|Number=Plur	13	obl	O	_
+ 17	:	:	PUNCT	_	_	11	punct	O	_
+ 18	ter	ter	VERB	_	VerbForm=Inf	16	appos	O	_
+@@ -292823,7 +292823,7 @@
+ 6	passar	passar	VERB	_	VerbForm=Inf	5	xcomp	O	_
+ 7	15	15	NUM	_	NumType=Card	6	obj	O	_
+ 8	por	por	ADP	_	_	10	case	O	_
+-9	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
++9	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	O	_
+ 10	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
+@@ -292843,7 +292843,7 @@
+ 25	para	para	SCONJ	_	_	26	mark	O	_
+ 26	compensar	compensar	VERB	_	VerbForm=Inf	24	advcl	O	_
+ 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	O	_
+-28	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	29	det	O	_
++28	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	29	det	O	_
+ 29	condições	condição	NOUN	_	Gender=Fem|Number=Plur	26	obj	O	_
+ 30	encontradas	encontrar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	29	acl	O	_
+ 31-32	à	_	_	_	_	_	_	O	_
+@@ -293540,7 +293540,7 @@
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	bentonita	bentonita	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=LITOLOGIA	_
+ 12	para	para	ADP	_	_	14	case	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	condições	condição	NOUN	_	Gender=Fem|Number=Plur	9	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	14	nmod	B=LITOLOGIA	_
+@@ -315139,7 +315139,7 @@
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	filtrado	filtrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	23	acl	O	_
+ 27	,	,	PUNCT	_	_	29	punct	O	_
+-28	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	29	det	O	_
++28	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	29	det	O	_
+ 29	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	23	conj	O	_
+ 30	de	de	ADP	_	_	31	case	O	_
+ 31	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	29	nmod	O	_
+@@ -315595,7 +315595,7 @@
+ # text = Existem diferentes tipos de fluidos de perfuração, estes podem ser classificados conforme sua base principal, água, óleo ou gás..
+ # sent_id = 240-20140220-MONOGRAFIA_0-6
+ 1	Existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
++2	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	O	_
+ 3	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	3	nmod	B=FLUIDO	_
+@@ -324436,7 +324436,7 @@
+ 2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	20	obl	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
+-5	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
++5	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
+ 6	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	20	nsubj:pass	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+ 8	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+@@ -330444,7 +330444,7 @@
+ 39	,	,	PUNCT	_	_	48	punct	O	_
+ 40	e	e	CCONJ	_	_	48	cc	O	_
+ 41	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	O	_
+-42	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	43	det	O	_
++42	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	43	det	O	_
+ 43	estratégias	estratégia	NOUN	_	Gender=Fem|Number=Plur	48	nsubj	O	_
+ 44	de	de	ADP	_	_	45	case	O	_
+ 45	contenção	contenção	NOUN	_	Gender=Fem|Number=Sing	43	nmod	O	_
+@@ -332558,7 +332558,7 @@
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 14	acumulo	acumulo	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	O	_
+ 15	de	de	ADP	_	_	17	case	O	_
+-16	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
++16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	O	_
+ 17	seres	seres	NOUN	_	Gender=Masc|Number=Plur	14	nmod	O	_
+ 18	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
+ 19	como	como	ADP	_	_	21	case	O	_
+@@ -333040,7 +333040,7 @@
+ 3	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	4	obl	B=FLUIDO	_
+ 4	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	O	_
+-6	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	O	_
++6	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	O	_
+ 7	substâncias	substância	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	O	_
+ 8	químicas	químico	ADJ	_	Gender=Fem|Number=Plur	7	amod	O	_
+ 9	,	,	PUNCT	_	_	4	punct	O	_
+@@ -337445,7 +337445,7 @@
+ 10	grande	grande	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 11	produtividade	produtividade	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+-13	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
++13	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+ 14	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+@@ -339346,7 +339346,7 @@
+ 19	em	em	ADP	_	_	20	case	O	_
+ 20	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	25	obl	O	_
+ 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
+-22	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
++22	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
+ 23	fenômenos	fenômeno	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	O	_
+ 24	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	25	expl	O	_
+ 25	comportam	comportar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	O	_
+@@ -339400,7 +339400,7 @@
+ 42	,	,	PUNCT	_	_	46	punct	O	_
+ 43	bem	bem	ADP	_	_	46	case	O	_
+ 44	como	como	ADP	_	_	43	fixed	O	_
+-45	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	46	det	O	_
++45	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	46	det	O	_
+ 46	graus	grau	NOUN	_	Gender=Masc|Number=Plur	33	conj	O	_
+ 47	de	de	ADP	_	_	48	case	O	_
+ 48	solubilidade	solubilidade	NOUN	_	Gender=Fem|Number=Sing	46	nmod	O	_
+@@ -345635,7 +345635,7 @@
+ 24	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux:pass	O	_
+ 25	permeadas	permear	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	18	acl:relcl	O	_
+ 26	por	por	ADP	_	_	28	case	O	_
+-27	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
++27	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	O	_
+ 28	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	25	obl:agent	O	_
+ 29	,	,	PUNCT	_	_	32	punct	O	_
+ 30	tais	tal	DET	_	Gender=Masc|Number=Plur|PronType=Dem	32	case	O	_
+@@ -345895,7 +345895,7 @@
+ 
+ # text = Diferentes fatores podem influenciar na quantidade de óleo presente nas águas de produção..
+ # sent_id = 243-20141015-MONOGRAFIA_1-33
+-1	Diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
++1	Diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
+ 2	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	O	_
+ 3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	influenciar	influenciar	VERB	_	VerbForm=Inf	3	xcomp	O	_
+@@ -346280,7 +346280,7 @@
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	7	det	O	_
+ 7	constituição	constituição	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+-8	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	cátions	cátion	NOUN	_	Gender=Masc|Number=Plur	9	nmod	B=QUÍMICA	_
+@@ -346849,7 +346849,7 @@
+ 19	,	,	PUNCT	_	_	14	punct	O	_
+ 20	efluentes	efluente	NOUN	_	Gender=Masc|Number=Plur	14	obj	O	_
+ 21	com	com	ADP	_	_	23	case	O	_
+-22	diferentes	diferentes	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
++22	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
+ 23	características	característica	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 24	físico-químicas	físico-químico	ADJ	_	Gender=Fem|Number=Plur	23	amod	O	_
+ 25	.	.	PUNCT	_	_	5	punct	O	_
