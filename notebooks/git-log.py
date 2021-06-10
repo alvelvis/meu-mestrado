@@ -58,7 +58,7 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.hour,
     now_date.minute,
     now_date.second)
-changelog = "# Changelog ({})".format(now_date.replace("_", " "))
+changelog = "# Changelog ({})".format(now_date.replace("_", "-"))
 changelog_filename = "changelog-{}.md".format(
     now_date)
 
@@ -98,7 +98,7 @@ for commit in commits:
         date,
         commit,
         author,
-        log.count("\n+"),
+        log.count("\n+")-1,
         patch_filename,
         message,
         "\n".join([x for x in log.split("@@")[2].splitlines() if x.strip()]),
