@@ -1,0 +1,3120 @@
+commit 33a378890a443a91b16d48593bbd231a92bd7890
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Sun Jul 11 07:18:10 2021 -0300
+
+    "se" não pode ser nsubj
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index fb1c24d..a5d1aaf 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -10198,7 +10198,7 @@
+ 5	campo	campo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	B=CAMPO:TIPO	_
+ 6-7	constatou-se	_	_	_	_	_	_	_	_
+ 6	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	16	mark	O	_
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+@@ -15007,7 +15007,7 @@
+ 14	,	,	PUNCT	_	_	8	punct	O	_
+ 15	para	para	SCONJ	_	_	18	mark	O	_
+ 16	que	que	SCONJ	_	_	15	fixed	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++17	se	se	PRON	_	_	18	expl	O	_
+ 18	produza	produzir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	O	_
+ 19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
+@@ -15807,7 +15807,7 @@
+ 7	fases	fase	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+ 8	é	ser	AUX	_	_	11	discourse	O	_
+ 9	que	que	SCONJ	_	_	8	fixed	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++10	se	se	PRON	_	_	11	expl	O	_
+ 11	adiciona	adicionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	agente	agente	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
+@@ -16090,7 +16090,7 @@
+ 13	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	B=FLUIDO	_
+ 14-15	deve-se	_	_	_	_	_	_	_	_
+ 14	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	O	_
++15	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl	O	_
+ 16-17	dividi-lo	_	_	_	_	_	_	_	_
+ 16	dividi	dividir	VERB	_	VerbForm=Inf	14	xcomp	O	_
+ 17	lo	ele	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	O	_
+@@ -16296,19 +16296,19 @@
+ 6	,	,	PUNCT	_	_	2	punct	O	_
+ 7-8	pode-se	_	_	_	_	_	_	_	_
+ 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	7	expl	O	_
+ 9	realizar	realizar	VERB	_	VerbForm=Inf	7	xcomp	O	_
+ 10	ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	9	obj	O	_
+ 11	com	com	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	10	nmod	B=QUÍMICA	_
++13	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	9	nmod	B=QUÍMICA	_
+ 14	e	e	CCONJ	_	_	20	cc	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	também	também	ADV	_	_	20	advmod	O	_
+ 17	,	,	PUNCT	_	_	16	punct	O	_
+ 18	com	com	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	10	conj	O	_
++20	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 21	resultante	resultante	ADJ	_	Gender=Masc|Number=Sing	20	amod	O	_
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+@@ -16321,7 +16321,7 @@
+ 28	ou	ou	CCONJ	_	_	29	cc	O	_
+ 29	água	água	NOUN	_	Gender=Fem|Number=Sing	27	conj	B=FLUIDO	_
+ 30	e	e	CCONJ	_	_	31	cc	O	_
+-31	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	27	conj	O	_
++31	solvente	solvente	NOUN	_	Gender=Masc|Number=Sing	29	conj	O	_
+ 32	.	.	PUNCT	_	_	7	punct	O	_
+ 33	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -17628,7 +17628,7 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-208
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	11	mark	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+ 5	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	B=QUÍMICA	_
+@@ -17772,7 +17772,7 @@
+ 7	,	,	PUNCT	_	_	2	punct	O	_
+ 8-9	observa-se	_	_	_	_	_	_	_	_
+ 8	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	que	que	SCONJ	_	_	17	mark	O	_
+ 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
+ 12	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	B=QUÍMICA	_
+@@ -17929,7 +17929,7 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-218
+ 1-2	Atribui-se	_	_	_	_	_	_	_	_
+ 1	Atribui	atribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	O	_
+ 4	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 5-6	no	_	_	_	_	_	_	_	_
+@@ -18214,7 +18214,7 @@
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	nota-se	_	_	_	_	_	_	_	_
+ 5	nota	nota	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	14	mark	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+@@ -18417,7 +18417,7 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-230
+ 1-2	Acredita-se	_	_	_	_	_	_	_	_
+ 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	24	mark	O	_
+ 4	,	,	PUNCT	_	_	7	punct	O	_
+ 5-6	ao	_	_	_	_	_	_	_	_
+@@ -18575,25 +18575,25 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-234
+ 1-2	Acredita-se	_	_	_	_	_	_	_	_
+ 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	11	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	emulsificação	emulsificação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+ 8	não	não	ADV	_	Polarity=Neg	11	advmod	O	_
+-9	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	O	_
+-10	sido	ser	AUX	_	VerbForm=Part	14	aux	O	_
+-11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-12	bastante	bastante	ADV	_	_	14	advmod	O	_
++9	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	O	_
++10	sido	ser	AUX	_	VerbForm=Part	11	aux	O	_
++11	o	o	PRON	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Dem	1	ccomp	O	_
++12	bastante	bastante	ADJ	_	_	11	amod	O	_
+ 13	para	para	SCONJ	_	_	14	mark	O	_
+-14	homogeneizar	homogeneizar	VERB	_	VerbForm=Inf	1	advcl	O	_
++14	homogeneizar	homogeneizar	VERB	_	VerbForm=Inf	12	advcl	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 17	100	100	NUM	_	NumType=Card	18	nummod	O	_
+ 18	%	%	SYM	_	_	16	nmod	O	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+-20	fazendo	fazer	VERB	_	VerbForm=Ger	14	advcl	O	_
++20	fazendo	fazer	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 21	com	com	SCONJ	_	_	27	mark	O	_
+ 22	que	que	SCONJ	_	_	27	mark	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+@@ -19069,7 +19069,7 @@
+ 
+ # text = De acordo com as propriedades físicas das emulsões asfálticas modificadas, conclui-se que esta argila pode ocasionar melhorias nas propriedades da emulsão e, por consequência, do asfalto. • Todas as emulsões convencionais desenvolvidas apresentaram resultados no ensaio de peneiramento e sedimentação de acordo com os requisitos presentes na especificação (DNER-EM 369/97), comprovando a obtenção de emulsões estáveis. • Os resultados de viscosidade mostraram-se contra ao presente na literatura..
+ # sent_id = 241-20140227-MONOGRAFIA_0-253
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	sentenciação
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -19081,10 +19081,10 @@
+ 9	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	5	nmod	B=QUÍMICA	_
+ 10	asfálticas	asfáltico	ADJ	_	Gender=Fem|Number=Plur	9	amod	B=LITOLOGIA	_
+ 11	modificadas	modificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	9	acl	O	_
+-12	,	,	PUNCT	_	_	11	punct	O	_
++12	,	,	PUNCT	_	_	5	punct	O	_
+ 13-14	conclui-se	_	_	_	_	_	_	_	_
+ 13	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-14	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
++14	se	se	PRON	_	_	13	expl	O	_
+ 15	que	que	SCONJ	_	_	18	mark	O	_
+ 16	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	O	_
+ 17	argila	argila	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	B=LITOLOGIA	_
+@@ -19171,10 +19171,10 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-254
+ 1-2	Acredita-se	_	_	_	_	_	_	_	_
+ 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+-3	,	,	PUNCT	_	_	1	punct	O	_
++2	se	se	PRON	_	_	1	expl	O	_
++3	,	,	PUNCT	_	_	4	punct	O	_
+ 4	então	então	ADV	_	_	1	advmod	O	_
+-5	,	,	PUNCT	_	_	1	punct	O	_
++5	,	,	PUNCT	_	_	4	punct	O	_
+ 6	que	que	SCONJ	_	_	17	mark	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	nanomaterial	nanomaterial	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
+@@ -19197,7 +19197,7 @@
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+ 25	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 26	e	e	CCONJ	_	_	29	cc	O	_
+-27	conseqüente	conseqüente	ADJ	_	Gender=Fem|Number=Sing	25	conj	O	_
++27	conseqüente	conseqüente	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+ 28	menor	pequeno	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+ 29	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	25	conj	O	_
+ 30	.	.	PUNCT	_	_	1	punct	O	_
+@@ -24432,7 +24432,7 @@
+ 15	,	,	PUNCT	_	_	5	punct	O	_
+ 16-17	tem-se	_	_	_	_	_	_	_	_
+ 16	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	expl	O	_
++17	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	O	_
+ 18	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	Beurlen	Beurlen	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+@@ -28633,7 +28633,7 @@
+ 79	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	77	obj	O	_
+ 80-81	têm-se	_	_	_	_	_	_	_	_
+ 80	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	O	_
+-81	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	77	expl	O	_
++81	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	80	expl	O	_
+ 82	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	83	det	O	_
+ 83	limite	limite	NOUN	_	Gender=Masc|Number=Sing	77	obj	O	_
+ 84	de	de	ADP	_	_	85	case	O	_
+@@ -33406,7 +33406,7 @@
+ 8	,	,	PUNCT	_	_	2	punct	O	_
+ 9-10	concluiu-se	_	_	_	_	_	_	_	_
+ 9	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	19	mark	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	área	área	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	O	_
+@@ -34887,7 +34887,7 @@
+ # text = Para se obter sucesso na produção de petróleo, são necessárias informações sobre o tipo de petróleo, do reservatório, a quantidade, a pressão, a temperatura, além de outras..
+ # sent_id = 398-20160721-MONOGRAFIA_0-44
+ 1	Para	para	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	obter	obter	VERB	_	VerbForm=Inf	13	advcl	O	_
+ 4	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+ 5-6	na	_	_	_	_	_	_	_	_
+@@ -36899,7 +36899,7 @@
+ # sent_id = 398-20160721-MONOGRAFIA_0-116
+ 1-2	Sabe-se	_	_	_	_	_	_	_	_
+ 1	Sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	14	mark	O	_
+ 4	em	em	ADP	_	_	6	case	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -41111,7 +41111,7 @@
+ # sent_id = 398-20160721-MONOGRAFIA_0-266
+ 1-2	Espera-se	_	_	_	_	_	_	_	_
+ 1	Espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	O	_
+ 5	região	região	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
+@@ -41732,7 +41732,7 @@
+ # sent_id = 398-20160721-MONOGRAFIA_0-286
+ 1-2	Espera-se	_	_	_	_	_	_	_	_
+ 1	Espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	11	mark	O	_
+ 4-5	ao	_	_	_	_	_	_	_	_
+ 4	a	a	SCONJ	_	_	6	mark	O	_
+@@ -42944,7 +42944,7 @@
+ # sent_id = 398-20160721-MONOGRAFIA_0-341
+ 1-2	Acredita-se	_	_	_	_	_	_	_	_
+ 1	Acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -45421,7 +45421,7 @@
+ 12	grande	grande	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 13	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	O	_
+ 14	em	em	SCONJ	_	_	16	mark	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	16	nsubj	O	_
++15	se	se	PRON	_	_	16	expl	O	_
+ 16	desenvolver	desenvolver	VERB	_	VerbForm=Inf	9	advcl	O	_
+ 17	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	16	obj	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+@@ -45450,7 +45450,7 @@
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+ 6	de	de	SCONJ	_	_	8	mark	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	8	expl	O	_
+ 8	desenvolver	desenvolver	VERB	_	VerbForm=Inf	5	acl	O	_
+ 9	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
+ 10-11	da	_	_	_	_	_	_	_	_
+@@ -45563,7 +45563,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-22
+ 1-2	Objetivou-se	_	_	_	_	_	_	_	_
+ 1	Objetivou	objetivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	4	advmod	O	_
+ 4	estabelecer	estabelecer	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 5	correlações	correlação	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+@@ -46327,7 +46327,7 @@
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+ 38-39	Chama-se	_	_	_	_	_	_	_	_
+ 38	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	parataxis	O	_
+-39	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	38	nsubj	O	_
++39	se	se	PRON	_	_	38	expl	O	_
+ 40	Silte	Silte	PROPN	_	Gender=Masc|Number=Sing	38	obj	O	_
+ 41	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Tot	40	det	O	_
+ 42	e	e	CCONJ	_	_	44	cc	O	_
+@@ -47438,7 +47438,7 @@
+ 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	O	_
+ 7	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 8	quando	quando	SCONJ	_	_	10	mark	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	O	_
++9	se	se	PRON	_	_	10	expl	O	_
+ 10	perfura	perfurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	O	_
+ 11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	rocha	rocha	NOUN	_	Gender=Fem|Number=Sing	10	obj	B=LITOLOGIA	_
+@@ -48614,7 +48614,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-117
+ 1-2	Tem-se	_	_	_	_	_	_	_	_
+ 1	Tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	tentado	tentar	VERB	_	VerbForm=Part	0	root	O	_
+ 4	entender	entender	VERB	_	VerbForm=Inf	3	xcomp	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -48648,7 +48648,7 @@
+ 6	broca	broca	NOUN	_	Gender=Fem|Number=Sing	4	nmod	B=INSTRUMENTO	_
+ 7-8	pode-se	_	_	_	_	_	_	_	_
+ 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	7	expl	O	_
+ 9	maximizar	maximizar	VERB	_	VerbForm=Inf	7	xcomp	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+@@ -48872,7 +48872,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-128
+ 1-2	Designa-se	_	_	_	_	_	_	_	_
+ 1	Designa	designar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	ainda	ainda	ADV	_	_	1	advmod	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	nome	nome	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+@@ -53407,7 +53407,7 @@
+ 10	mais	mais	ADV	_	_	11	advmod	O	_
+ 11	usual	usual	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+ 12	para	para	SCONJ	_	_	14	mark	O	_
+-13	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	14	nsubj	O	_
++13	se	se	PRON	_	_	14	expl	O	_
+ 14	caracterizar	caracterizar	VERB	_	VerbForm=Inf	9	advcl	O	_
+ 15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	O	_
+ 16	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	14	obj	O	_
+@@ -54050,7 +54050,7 @@
+ # text = Ao se aliviar essa tensão, o êmbolo é suspenso e o instrumento mede o valor da força máxima necessária para desprendê-lo da massa de argila contida no recipiente..
+ # sent_id = 24-20150122-MONOGRAFIA_0-261
+ 1	Ao	ao	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	aliviar	aliviar	VERB	_	VerbForm=Inf	10	advcl	O	_
+ 4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	O	_
+ 5	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
+@@ -54298,7 +54298,7 @@
+ 26	força	força	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
+ 27	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+ 28	para	para	SCONJ	_	_	30	mark	O	_
+-29	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	30	nsubj	O	_
++29	se	se	PRON	_	_	30	expl	O	_
+ 30	desprender	desprender	VERB	_	VerbForm=Inf	23	advcl	O	_
+ 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
+ 32	êmbolo	êmbolo	NOUN	_	Gender=Masc|Number=Sing	30	obj	O	_
+@@ -56877,7 +56877,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-370
+ 1-2	Fez-se	_	_	_	_	_	_	_	_
+ 1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	leitura	leitura	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -57140,7 +57140,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-384
+ 1-2	Realizou-se	_	_	_	_	_	_	_	_
+ 1	Realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+@@ -61493,7 +61493,7 @@
+ 12	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	13	obl	O	_
+ 13-14	pode-se	_	_	_	_	_	_	_	_
+ 13	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	O	_
+-14	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	15	nsubj	O	_
++14	se	se	PRON	_	_	13	expl	O	_
+ 15	observar	observar	VERB	_	VerbForm=Inf	13	xcomp	O	_
+ 16	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	18	det	O	_
+ 17	total	total	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+@@ -61545,7 +61545,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-548
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	9	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	Argila	Argila	PROPN	_	Gender=Fem|Number=Sing	1	nsubj	B=LITOLOGIA	_
+@@ -61670,7 +61670,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-553
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	poli	poli	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	B=QUÍMICA	_
+@@ -61834,7 +61834,7 @@
+ 14	,	,	PUNCT	_	_	5	punct	O	_
+ 15-16	nota-se	_	_	_	_	_	_	_	_
+ 15	nota	nota	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	15	nsubj	O	_
++16	se	se	PRON	_	_	15	expl	O	_
+ 17	que	que	SCONJ	_	_	39	mark	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	argila	argila	NOUN	_	Gender=Fem|Number=Sing	39	nsubj	B=LITOLOGIA	_
+@@ -61941,7 +61941,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-563
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	N,N,N-trimetilquitosana	N,N,N-trimetilquitosana	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+ 5	(	(	PUNCT	_	_	6	punct	O	_
+@@ -62120,7 +62120,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-569
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	O	_
+@@ -62245,7 +62245,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-575
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	10	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	solução	solução	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+@@ -62492,7 +62492,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-587
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+ 1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -62719,7 +62719,7 @@
+ 24	como	como	SCONJ	_	_	25	mark	O	_
+ 25-26	pode-se	_	_	_	_	_	_	_	_
+ 25	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	O	_
+-26	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	27	expl	O	_
++26	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	25	expl	O	_
+ 27	observar	observar	VERB	_	VerbForm=Inf	25	xcomp	O	_
+ 28-29	na	_	_	_	_	_	_	_	_
+ 28	em	em	ADP	_	_	30	case	O	_
+@@ -62787,7 +62787,7 @@
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4-5	observou-se	_	_	_	_	_	_	_	_
+ 4	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	14	mark	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	O	_
+@@ -62884,7 +62884,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-599
+ 1-2	Pode-se	_	_	_	_	_	_	_	_
+ 1	Pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	observar	observar	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4-5	na	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+@@ -63472,17 +63472,17 @@
+ 2	Figuras	Figuras	PROPN	_	Gender=Fem|Number=Plur	17	nsubj	O	_
+ 3	V.18	V.18	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	,	,	PUNCT	_	_	5	punct	O	_
+-5	V.19	V.19	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++5	V.19	V.19	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 6	,	,	PUNCT	_	_	7	punct	O	_
+-7	V.20	V.20	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++7	V.20	V.20	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 8	,	,	PUNCT	_	_	9	punct	O	_
+-9	V.21	V.21	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++9	V.21	V.21	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+-11	V.22	V.22	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++11	V.22	V.22	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+-13	V.23	V.23	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++13	V.23	V.23	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 14	,	,	PUNCT	_	_	15	punct	O	_
+-15	V.24	V.24	PROPN	_	Gender=Fem|Number=Sing	2	conj	O	_
++15	V.24	V.24	PROPN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 16	,	,	PUNCT	_	_	15	punct	O	_
+ 17	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	O	_
+@@ -63523,22 +63523,22 @@
+ 47	ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	44	obl	O	_
+ 48	de	de	ADP	_	_	49	case	O	_
+ 49	rolamento	rolamento	NOUN	_	Gender=Masc|Number=Sing	47	nmod	O	_
+-50	,	,	PUNCT	_	_	44	punct	O	_
++50	,	,	PUNCT	_	_	41	punct	O	_
+ 51	aonde	aonde	ADV	_	_	53	advmod	O	_
+ 52	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	53	cop	O	_
+ 53	possível	possível	ADJ	_	Gender=Masc|Number=Sing	17	advcl	O	_
+-54	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	53	nsubj	O	_
+-55	observar	observar	VERB	_	VerbForm=Inf	53	csubj	O	_
++54	se	se	PRON	_	_	55	expl	O	_
++55	observar	observar	VERB	_	VerbForm=Inf|Voice=Pass	53	ccomp	O	_
+ 56	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
+-57	tendência	tendência	NOUN	_	Gender=Fem|Number=Sing	55	obj	O	_
++57	tendência	tendência	NOUN	_	Gender=Fem|Number=Sing	55	nsubj:pass	O	_
+ 58	,	,	PUNCT	_	_	59	punct	O	_
+ 59-60	observa-se	_	_	_	_	_	_	_	_
+-59	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	53	advcl	O	_
+-60	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	59	nsubj	O	_
++59	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	57	appos	O	_
++60	se	se	PRON	_	_	59	expl	O	_
+ 61	que	que	SCONJ	_	_	90	mark	O	_
+ 62	para	para	ADP	_	_	64	case	O	_
+ 63	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	64	det	O	_
+-64	argilas	argila	NOUN	_	Gender=Fem|Number=Plur	53	obl	B=LITOLOGIA	_
++64	argilas	argila	NOUN	_	Gender=Fem|Number=Plur	90	obl	B=LITOLOGIA	_
+ 65	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	66	det	O	_
+ 66	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	90	nsubj	O	_
+ 67	mais	mais	ADV	_	_	68	advmod	O	_
+@@ -63567,12 +63567,12 @@
+ 86	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	87	det	O	_
+ 87	êmbolo	êmbolo	NOUN	_	Gender=Masc|Number=Sing	85	obj	O	_
+ 88	)	)	PUNCT	_	_	83	punct	O	_
+-89	,	,	PUNCT	_	_	90	punct	O	_
++89	,	,	PUNCT	_	_	71	punct	O	_
+ 90	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	59	ccomp	O	_
+-91	,	,	PUNCT	_	_	90	punct	O	_
++91	,	,	PUNCT	_	_	93	punct	O	_
+ 92	em	em	ADP	_	_	93	case	O	_
+ 93	geral	geral	ADJ	_	Gender=Masc|Number=Sing	90	obl	O	_
+-94	,	,	PUNCT	_	_	90	punct	O	_
++94	,	,	PUNCT	_	_	93	punct	O	_
+ 95	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	97	det	O	_
+ 96	maior	grande	ADJ	_	Gender=Fem|Number=Sing	97	amod	O	_
+ 97	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	90	obj	O	_
+@@ -63624,7 +63624,7 @@
+ 25	,	,	PUNCT	_	_	18	punct	O	_
+ 26-27	pode-se	_	_	_	_	_	_	_	_
+ 26	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	O	_
+-27	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	28	nsubj	O	_
++27	se	se	PRON	_	_	26	expl	O	_
+ 28	inibir	inibir	VERB	_	VerbForm=Inf	26	xcomp	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+ 30	afinidade	afinidade	NOUN	_	Gender=Fem|Number=Sing	28	obj	O	_
+@@ -63636,7 +63636,7 @@
+ 35-36	pelo	_	_	_	_	_	_	_	_
+ 35	por	por	ADP	_	_	37	case	O	_
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+-37	metal	metal	NOUN	_	Gender=Masc|Number=Sing	28	obl	O	_
++37	metal	metal	NOUN	_	Gender=Masc|Number=Sing	30	obl	O	_
+ 38	.	.	PUNCT	_	_	2	punct	O	_
+ 39	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -63819,7 +63819,7 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-626
+ 1-2	Usando-se	_	_	_	_	_	_	_	_
+ 1	Usando	usar	VERB	_	VerbForm=Ger	10	advcl	O	_
+-2	se	se	SCONJ	_	_	10	mark	O	_
++2	se	se	SCONJ	_	_	1	mark	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+ 5	proposta	propor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	O	_
+@@ -63904,7 +63904,7 @@
+ 
+ # text = Uma outra vantagem que a TMQ possui é de ser derivada da quitosana, que é um biopolímero derivado da quitina, que é encontrada na carapaça e exoesqueleto de crustáceos e outras fontes.  Observou-se que há uma certa relação entre a reatividade natural das argilas e a afinidade das mesmas (quando hidratadas) pelo metal..
+ # sent_id = 24-20150122-MONOGRAFIA_0-629
+-1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
++1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	O	sentenciação
+ 2	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	3	det	O	_
+ 3	vantagem	vantagem	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+ 4	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	7	obj	O	_
+@@ -63948,7 +63948,7 @@
+ 39			CCONJ	_	_	40	punct	O	_
+ 40-41	Observou-se	_	_	_	_	_	_	_	_
+ 40	Abservou	Abservou	PROPN	_	Gender=Masc|Number=Sing	43	nsubj	O	sentenciação
+-41	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	43	nsubj	O	_
++41	se	se	PRON	_	_	40	expl	O	_
+ 42	que	que	SCONJ	_	_	43	mark	O	_
+ 43	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	O	_
+ 44	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
+@@ -64031,7 +64031,7 @@
+ 
+ # text = As argilas A6 e A7, por exemplo, são muito reativas, mas, no entanto, possuem pouca afinidade pelo metal.  Observou-se que um bom inibidor para a reatividade natural das argilas poderá ser também um bom inibidor da afinidade das argilas pelo metal..
+ # sent_id = 24-20150122-MONOGRAFIA_0-632
+-1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
++1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	argilas	argila	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	B=LITOLOGIA	_
+ 3	A6	A6	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 4	e	e	CCONJ	_	_	5	cc	O	_
+@@ -64062,7 +64062,7 @@
+ 27			CCONJ	_	_	28	punct	O	_
+ 28-29	Observou-se	_	_	_	_	_	_	_	_
+ 28	Abservou	Abservou	PROPN	_	Gender=Masc|Number=Sing	20	nsubj	O	_
+-29	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	28	nsubj	O	_
++29	se	se	PRON	_	_	28	expl	O	_
+ 30	que	que	SCONJ	_	_	41	mark	O	_
+ 31	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
+ 32	bom	bom	ADJ	_	Gender=Masc|Number=Sing	33	amod	O	_
+@@ -65961,18 +65961,18 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-52
+ 1-2	Considera-se	_	_	_	_	_	_	_	_
+ 1	Considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	O	_
+ 5	lago	lago	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	O	_
+ 6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	O	_
+ 7	assoreado	assorear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	ccomp	O	_
+-8	,	,	PUNCT	_	_	7	punct	O	_
++8	,	,	PUNCT	_	_	11	punct	O	_
+ 9-10	no	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	Eocretáceo	Eocretáceo	PROPN	_	Gender=Masc|Number=Sing	7	obl	B=GEOCRONOLOGIA	_
+-12	,	,	PUNCT	_	_	7	punct	O	_
++12	,	,	PUNCT	_	_	11	punct	O	_
+ 13	por	por	ADP	_	_	14	case	O	_
+ 14	deltas	delta	NOUN	_	Gender=Masc|Number=Plur	7	obl:agent	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+@@ -65997,7 +65997,7 @@
+ 32	dunas	duna	NOUN	_	Gender=Fem|Number=Plur	30	nmod	O	_
+ 33	eólicas	eólico	ADJ	_	Gender=Fem|Number=Plur	32	amod	O	_
+ 34	(	(	PUNCT	_	_	35	punct	O	_
+-35	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
++35	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	30	parataxis	O	_
+ 36	e	e	CCONJ	_	_	35	flat:name	O	_
+ 37	Dardenne	Dardenne	PROPN	_	Gender=Masc|Number=Sing	35	flat:name	O	_
+ 38	,	,	PUNCT	_	_	35	flat:name	O	_
+@@ -66506,7 +66506,7 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-68
+ 1-2	Sabe-se	_	_	_	_	_	_	_	_
+ 1	Sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	10	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -66521,7 +66521,7 @@
+ 14	,	,	PUNCT	_	_	17	punct	O	_
+ 15	mas	mas	CCONJ	_	_	17	cc	O	_
+ 16	não	não	ADV	_	Polarity=Neg	17	advmod	O	_
+-17	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	O	_
++17	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	O	_
+ 18	informações	informação	NOUN	_	Gender=Fem|Number=Plur	17	obj	O	_
+ 19	suficientes	suficiente	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+ 20	para	para	SCONJ	_	_	21	mark	O	_
+@@ -70255,7 +70255,7 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-204
+ 1-2	Depreende-se	_	_	_	_	_	_	_	_
+ 1	Depreende	depreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	14	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -71343,7 +71343,7 @@
+ 5	em	em	ADP	_	_	6	case	O	_
+ 6	ela	ela	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	conj	O	_
+ 7	não	não	ADV	_	Polarity=Neg	9	advmod	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	9	expl	O	_
+ 9	observar	observar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	20	advcl	O	_
+ 10	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Neg	11	det	O	_
+ 11	contato	contato	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
+@@ -71437,7 +71437,7 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-255
+ 1-2	Notou-se	_	_	_	_	_	_	_	_
+ 1	Notou	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4	quando	quando	SCONJ	_	_	5	mark	O	_
+ 5	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	O	_
+@@ -76683,7 +76683,7 @@
+ 4	faciológica	faciológico	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+ 5-6	notou-se	_	_	_	_	_	_	_	_
+ 5	notou	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	13	mark	O	_
+ 8	diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	processos	processo	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	O	_
+@@ -81508,7 +81508,7 @@
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+ 3-4	recomenda-se	_	_	_	_	_	_	_	_
+ 3	recomenda	recomendar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++4	se	se	PRON	_	_	3	expl	O	_
+ 5	que	que	SCONJ	_	_	9	mark	O	_
+ 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
+ 7	membranas	membrana	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	O	_
+@@ -82662,7 +82662,7 @@
+ 9	,	,	PUNCT	_	_	8	punct	O	_
+ 10-11	considera-se	_	_	_	_	_	_	_	_
+ 10	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-11	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	O	_
++11	se	se	PRON	_	_	10	expl	O	_
+ 12	que	que	SCONJ	_	_	23	mark	O	_
+ 13	99	99	NUM	_	NumType=Card	14	nummod	O	_
+ 14	%	%	SYM	_	_	23	nsubj	O	_
+@@ -83218,7 +83218,7 @@
+ 13	mais	mais	ADV	_	_	14	advmod	O	_
+ 14	favoráveis	favorável	ADJ	_	Gender=Fem|Number=Plur	12	amod	O	_
+ 15	para	para	SCONJ	_	_	17	mark	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	17	nsubj	O	_
++16	se	se	PRON	_	_	17	expl	O	_
+ 17	injetar	injetar	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+ 19	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	17	obj	B=QUÍMICA	_
+@@ -83923,7 +83923,7 @@
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 10	de	de	SCONJ	_	_	12	mark	O	_
+-11	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	O	_
++11	se	se	PRON	_	_	12	expl	O	_
+ 12	retirar	retirar	VERB	_	VerbForm=Inf	9	acl	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 14	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	12	obj	B=QUÍMICA	_
+@@ -92182,7 +92182,7 @@
+ 36	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	25	conj	O	_
+ 37	técnica	técnico	ADJ	_	Gender=Fem|Number=Sing	36	amod	O	_
+ 38	de	de	SCONJ	_	_	40	mark	O	_
+-39	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	40	nsubj	O	_
++39	se	se	PRON	_	_	40	expl	O	_
+ 40	construir	construir	VERB	_	VerbForm=Inf	36	acl	O	_
+ 41	dutos	duto	NOUN	_	Gender=Masc|Number=Plur	40	obj	B=LOCAL:GEO	_
+ 42	submersos	submerso	ADJ	_	Gender=Masc|Number=Plur	41	amod	O	_
+@@ -92898,7 +92898,7 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-476
+ 1-2	Assume-se	_	_	_	_	_	_	_	_
+ 1	Assume	assumir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	7	nsubj:pass	B=QUÍMICA	_
+@@ -93437,7 +93437,7 @@
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	O	_
+ 3	de	de	SCONJ	_	_	5	mark	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	5	nsubj	O	_
++4	se	se	PRON	_	_	5	expl	O	_
+ 5	injetar	injetar	VERB	_	VerbForm=Inf	2	acl	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	5	obj	B=QUÍMICA	_
+@@ -96522,7 +96522,7 @@
+ 16	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	cop	O	_
+ 17	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+ 18	que	que	SCONJ	_	_	20	mark	O	_
+-19	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	20	nsubj	O	_
++19	se	se	PRON	_	_	20	expl	O	_
+ 20	injete	injetir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	csubj	O	_
+ 21	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	20	obj	B=QUÍMICA	_
+ 22	a	a	ADP	_	_	23	case	O	_
+@@ -98728,7 +98728,7 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-635
+ 1-2	Assume-se	_	_	_	_	_	_	_	_
+ 1	Assume	assumir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	5	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	O	_
+@@ -99404,7 +99404,7 @@
+ 50	,	,	PUNCT	_	_	46	punct	O	_
+ 51-52	pode-se	_	_	_	_	_	_	_	_
+ 51	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	conj	O	_
+-52	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	53	nsubj	O	_
++52	se	se	PRON	_	_	51	expl	O	_
+ 53	calcular	calcular	VERB	_	VerbForm=Inf	51	xcomp	O	_
+ 54	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	O	_
+ 55	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	53	obj	O	_
+@@ -100286,7 +100286,7 @@
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 20	de	de	SCONJ	_	_	22	mark	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	22	expl	O	_
+ 22	instalar	instalar	VERB	_	VerbForm=Inf	19	acl	O	_
+ 23	plataformas	plataforma	NOUN	_	Gender=Fem|Number=Plur	22	obj	O	_
+ 24	e	e	CCONJ	_	_	25	cc	O	_
+@@ -105110,7 +105110,7 @@
+ 80	,	,	PUNCT	_	_	68	punct	O	_
+ 81-82	pode-se	_	_	_	_	_	_	_	_
+ 81	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-82	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	83	nsubj	O	_
++82	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	81	expl	O	_
+ 83	calcular	calcular	VERB	_	VerbForm=Inf	81	xcomp	O	_
+ 84	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	85	det	O	_
+ 85	emissões	emissão	NOUN	_	Gender=Fem|Number=Plur	83	obj	O	_
+@@ -105545,7 +105545,7 @@
+ 7	,	,	PUNCT	_	_	3	punct	O	_
+ 8-9	considerou-se	_	_	_	_	_	_	_	_
+ 8	considerou	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	que	que	SCONJ	_	_	16	mark	O	_
+ 11	apenas	apenas	ADV	_	_	16	advmod	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -107680,7 +107680,7 @@
+ 5	gráficos	gráfico	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
+ 6-7	verifica-se	_	_	_	_	_	_	_	_
+ 6	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	12	mark	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+@@ -107721,7 +107721,7 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-908
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	14	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+@@ -111072,7 +111072,7 @@
+ # text = Ao se comparar o período de tempo necessário para se atingir tal produção no Brasil (8 anos) com o período de tempo para que grandes regiões produtores offshore mundiais, Golfo do México (20 anos) e Mar do Norte (10 anos), alcançassem também esta marca, percebe-se que o Brasil atingiu tal desenvolvimento mais rapidamente, conforme mostrado na Figura 9 (Formigli, 2014)..
+ # sent_id = 334-20150521-MONOGRAFIA_0-62
+ 1	Ao	ao	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	comparar	comparar	VERB	_	VerbForm=Inf	57	advcl	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	período	período	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+@@ -111080,7 +111080,7 @@
+ 7	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+ 8	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	7	amod	O	_
+ 9	para	para	SCONJ	_	_	11	mark	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++10	se	se	PRON	_	_	11	expl	O	_
+ 11	atingir	atingir	VERB	_	VerbForm=Inf	3	advcl	O	_
+ 12	tal	tal	DET	_	Gender=Fem|Number=Sing|PronType=Ind	13	det	O	_
+ 13	produção	produção	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
+@@ -112156,7 +112156,7 @@
+ 6	dados	dado	NOUN	_	Gender=Masc|Number=Plur	5	obj	O	_
+ 7	técnicos	técnico	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 8	para	para	SCONJ	_	_	10	mark	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	O	_
++9	se	se	PRON	_	_	10	expl	O	_
+ 10	estimar	estimar	VERB	_	VerbForm=Inf	5	advcl	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+ 12	volume	volume	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
+@@ -112785,7 +112785,7 @@
+ 15	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	29	nsubj	O	_
+ 16	possível	possível	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 17	para	para	SCONJ	_	_	19	mark	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	19	nsubj	O	_
++18	se	se	PRON	_	_	19	expl	O	_
+ 19	alcançar	alcançar	VERB	_	VerbForm=Inf	15	acl	O	_
+ 20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+@@ -113519,7 +113519,7 @@
+ 13	,	,	PUNCT	_	_	12	punct	O	_
+ 14-15	estima-se	_	_	_	_	_	_	_	_
+ 14	estima	estimar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	14	nsubj	O	_
++15	se	se	PRON	_	_	14	expl	O	_
+ 16	que	que	SCONJ	_	_	18	mark	O	_
+ 17	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	O	_
+ 18	compensados	compensar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	ccomp	O	_
+@@ -113548,7 +113548,7 @@
+ 38	)	)	PUNCT	_	_	29	punct	O	_
+ 39	além	além	ADV	_	_	42	cc	O	MWEPOS=CCONJ
+ 40	de	de	ADP	_	_	39	fixed	O	_
+-41	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	42	nsubj	O	_
++41	se	se	PRON	_	_	42	expl	O	_
+ 42	substituir	substituir	VERB	_	VerbForm=Inf	18	conj	O	_
+ 43	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+ 44	alternativa	alternativa	NOUN	_	Gender=Fem|Number=Sing	42	obj	O	_
+@@ -115093,7 +115093,7 @@
+ 13-14	ao	_	_	_	_	_	_	_	_
+ 13	a	a	SCONJ	_	_	16	mark	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	16	nsubj	O	_
++15	se	se	PRON	_	_	16	expl	O	_
+ 16	fazer	fazer	VERB	_	VerbForm=Inf	10	advcl	O	_
+ 17	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	O	_
+ 18	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	16	obj	O	_
+@@ -119578,7 +119578,7 @@
+ 68	suficientemente	suficientemente	ADV	_	_	69	advmod	O	_
+ 69	quente	quente	ADJ	_	Gender=Fem|Number=Sing	45	advcl	O	_
+ 70	para	para	SCONJ	_	_	72	mark	O	_
+-71	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	72	nsubj	O	_
++71	se	se	PRON	_	_	72	expl	O	_
+ 72	evitar	evitar	VERB	_	VerbForm=Inf	69	advcl	O	_
+ 73	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	det	O	_
+ 74	congelamento	congelamento	NOUN	_	Gender=Masc|Number=Sing	72	obj	O	_
+@@ -119720,7 +119720,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-283
+ 1-2	Pode-se	_	_	_	_	_	_	_	_
+ 1	Pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	destacar	destacar	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4	como	como	ADP	_	_	6	case	O	_
+ 5	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	6	det	O	_
+@@ -123255,7 +123255,7 @@
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+ 19	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+ 20	de	de	SCONJ	_	_	22	mark	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	22	expl	O	_
+ 22	aumentar	aumentar	VERB	_	VerbForm=Inf	19	acl	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
+@@ -123787,7 +123787,7 @@
+ 20	33	33	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	,	,	PUNCT	_	_	16	punct	O	_
+ 22	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	24	obl	O	_
+-23	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	24	nsubj	O	_
++23	se	se	PRON	_	_	24	expl	O	_
+ 24	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+ 26	gás	gás	NOUN	_	Gender=Masc|Number=Sing	24	obj	B=FLUIDO	_
+@@ -124664,7 +124664,7 @@
+ 16	,	,	PUNCT	_	_	14	punct	O	_
+ 17-18	tem-se	_	_	_	_	_	_	_	_
+ 17	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	21	nsubj	O	_
++18	se	se	PRON	_	_	17	expl	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 20	então	então	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+ 21	tampão	tampão	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
+@@ -126554,7 +126554,7 @@
+ 5	,	,	PUNCT	_	_	4	punct	O	_
+ 6-7	deve-se	_	_	_	_	_	_	_	_
+ 6	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	ter	ter	VERB	_	VerbForm=Inf	6	xcomp	O	_
+ 9	controle	controle	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 10	sobre	sobre	ADP	_	_	12	case	O	_
+@@ -129328,7 +129328,7 @@
+ 8	único	único	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+ 9	método	método	NOUN	_	Gender=Masc|Number=Sing	0	root	B=MÉTODO	_
+ 10	para	para	SCONJ	_	_	12	mark	O	_
+-11	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	O	_
++11	se	se	PRON	_	_	12	expl	O	_
+ 12	explorar	explorar	VERB	_	VerbForm=Inf	9	advcl	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 14	reservatório	reservatório	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
+@@ -130649,7 +130649,7 @@
+ 17	component	component	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 18	,	,	PUNCT	_	_	11	punct	O	_
+ 19	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	21	obl	O	_
+-20	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	O	_
++20	se	se	PRON	_	_	21	expl	O	_
+ 21	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	O	_
+ 22	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	21	xcomp	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+@@ -133160,7 +133160,7 @@
+ # text = Para se atender a especificação de 3% de CO2 no gás natural e se obter a menor perda possível de metano, foram utilizadas duas membranas em série..
+ # sent_id = 334-20150521-MONOGRAFIA_0-674
+ 1	Para	para	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	atender	atender	VERB	_	VerbForm=Inf	26	advcl	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	especificação	especificação	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
+@@ -136584,7 +136584,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-763
+ 1-2	Destaca-se	_	_	_	_	_	_	_	_
+ 1	Destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	15	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 5	grande	grande	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+@@ -139003,7 +139003,7 @@
+ 14	interfacial	interfacial	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+ 15	para	para	SCONJ	_	_	18	mark	O	_
+ 16	que	que	SCONJ	_	_	18	mark	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++17	se	se	PRON	_	_	18	expl	O	_
+ 18	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	O	_
+ 19	diminuir	diminuir	VERB	_	VerbForm=Inf	18	xcomp	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -139209,7 +139209,7 @@
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+ 27-28	incluindo-se	_	_	_	_	_	_	_	_
+ 27	incluindo	incluir	VERB	_	VerbForm=Ger	11	advcl	O	_
+-28	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	27	nsubj	O	_
++28	se	se	PRON	_	_	27	expl	O	_
+ 29	aí	aí	ADV	_	_	27	advmod	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	27	obj	O	_
+@@ -140886,7 +140886,7 @@
+ 21	,	,	PUNCT	_	_	19	punct	O	_
+ 22-23	pode-se	_	_	_	_	_	_	_	_
+ 22	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	O	_
+-23	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	24	nsubj	O	_
++23	se	se	PRON	_	_	22	expl	O	_
+ 24	notar	notar	VERB	_	VerbForm=Inf	22	xcomp	O	_
+ 25	que	que	SCONJ	_	_	40	mark	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+@@ -141359,7 +141359,7 @@
+ # sent_id = 202-20140404-MONOGRAFIA_0-125
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	16	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	O	_
+@@ -142285,7 +142285,7 @@
+ 6	7	7	PROPN	_	Number=Sing	3	flat:name	O	_
+ 7-8	pode-se	_	_	_	_	_	_	_	_
+ 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	7	expl	O	_
+ 9	observar	observar	VERB	_	VerbForm=Inf	7	xcomp	O	_
+ 10	comportamentos	comportamento	NOUN	_	Gender=Masc|Number=Plur	9	obj	O	_
+ 11	contrários	contrário	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+@@ -148334,7 +148334,7 @@
+ 23	35	35	PROPN	_	Number=Sing	11	flat:name	O	_
+ 24-25	Nota-se	_	_	_	_	_	_	_	_
+ 24	Nota	notar	PROPN	_	Number=Sing	23	flat:name	O	_
+-25	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	flat:name	O	_
++25	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	24	flat:name	O	_
+ 26	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	O	_
+ 27-28	nos	_	_	_	_	_	_	_	_
+ 27	em	em	ADP	_	_	29	case	O	_
+@@ -154925,7 +154925,7 @@
+ 9	processamento	processamento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 10	,	,	PUNCT	_	_	5	punct	O	_
+ 11	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	O	_
+-12	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
++12	se	se	PRON	_	_	13	expl	O	_
+ 13	conheça	conhecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	13	obj	O	_
+@@ -160312,7 +160312,7 @@
+ # sent_id = 258-20160602-TESEMSC_0-428
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4	partir	partir	NOUN	_	_	6	case	O	_
+ 5-6	dela	_	_	_	_	_	_	_	_
+@@ -164178,7 +164178,7 @@
+ # sent_id = 258-20160602-TESEMSC_0-504
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+ 1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4-5	na	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+@@ -165568,7 +165568,7 @@
+ 35	falha	falha	NOUN	_	Gender=Fem|Number=Sing	32	nmod	B=LITOLOGIA|B=LOCAL:GEO	_
+ 36	e	e	CCONJ	_	_	39	cc	O	_
+ 37	de	de	SCONJ	_	_	39	mark	O	_
+-38	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	39	nsubj	O	_
++38	se	se	PRON	_	_	39	expl	O	_
+ 39	realizar	realizar	VERB	_	VerbForm=Inf	30	conj	O	_
+ 40	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+ 41	análise	análise	NOUN	_	Gender=Fem|Number=Sing	39	obj	O	_
+@@ -167709,7 +167709,7 @@
+ # sent_id = 77-20141209-TESEMSC_0-64
+ 1-2	Define-se	_	_	_	_	_	_	_	_
+ 1	Define	definir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	1	obj	B=FLUIDO	_
+@@ -170450,7 +170450,7 @@
+ 5	°	°	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+ 6-7	diz-se	_	_	_	_	_	_	_	_
+ 6	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	12	mark	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	sólido	sólido	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+@@ -176368,7 +176368,7 @@
+ 1	Após	após	SCONJ	_	_	2	mark	O	_
+ 2-3	fechar-se	_	_	_	_	_	_	_	_
+ 2	fechar	fechar	VERB	_	VerbForm=Inf	11	advcl	O	_
+-3	se	se	SCONJ	_	_	11	mark	O	_
++3	se	se	SCONJ	_	_	2	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	tampa	tampa	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+@@ -178431,7 +178431,7 @@
+ 13	contrário	contrário	ADJ	_	Gender=Masc|Number=Sing	14	advcl	O	_
+ 14	seria	ser	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	advcl	O	_
+ 15	de	de	SCONJ	_	_	17	mark	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	17	nsubj	O	_
++16	se	se	PRON	_	_	17	expl	O	_
+ 17	esperar	esperar	VERB	_	VerbForm=Inf	14	xcomp	O	_
+ 18	que	que	SCONJ	_	_	27	mark	O	_
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
+@@ -178725,7 +178725,7 @@
+ # text = Como se verá adiante, uma possível solução para esse problema é o emprego de agente desemulsificante na fase aquosa..
+ # sent_id = 77-20141209-TESEMSC_0-391
+ 1	Como	como	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	verá	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	advcl	O	_
+ 4	adiante	adiante	ADV	_	_	3	advmod	O	_
+ 5	,	,	PUNCT	_	_	3	punct	O	_
+@@ -179415,7 +179415,7 @@
+ # sent_id = 77-20141209-TESEMSC_0-412
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	adição	adição	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+@@ -180450,7 +180450,7 @@
+ # sent_id = 77-20141209-TESEMSC_0-439
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+ 1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+ 5	discrepâncias	discrepância	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	O	_
+@@ -181742,7 +181742,7 @@
+ 62	dia	dia	NOUN	_	Gender=Masc|Number=Sing	59	obl	O	_
+ 63	em	em	ADP	_	_	64	case	O	_
+ 64	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	66	obl	O	_
+-65	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	66	nsubj	O	_
++65	se	se	PRON	_	_	66	expl	O	_
+ 66	realize	realizar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	62	acl:relcl	O	_
+ 67	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	68	det	O	_
+ 68	experimento	experimento	NOUN	_	Gender=Masc|Number=Sing	66	obj	O	_
+@@ -181962,7 +181962,7 @@
+ # sent_id = 279-20140530-MONOGRAFIA_0-4
+ 1-2	Considerando-se	_	_	_	_	_	_	_	_
+ 1	Considerando	considerar	VERB	_	VerbForm=Ger	41	advcl	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	4	mark	O	_
+ 4	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
+ 5	previsões	previsão	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+@@ -183981,7 +183981,7 @@
+ 14	8	8	NUM	_	NumType=Card	9	appos	O	_
+ 15	]	]	PUNCT	_	_	14	punct	O	_
+ 16	para	para	SCONJ	_	_	18	mark	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++17	se	se	PRON	_	_	18	expl	O	_
+ 18	produzir	produzir	VERB	_	VerbForm=Inf	7	advcl	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 20	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	18	obj	B=PRODUTO	_
+@@ -185944,7 +185944,7 @@
+ # sent_id = 279-20140530-MONOGRAFIA_0-123
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Tot	6	det	O	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
+@@ -186480,7 +186480,7 @@
+ # text = Para se ter referência de comparação foram utilizadas curvas do estudo de Souza Junior..
+ # sent_id = 279-20140530-MONOGRAFIA_0-138
+ 1	Para	para	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	ter	ter	VERB	_	VerbForm=Inf	8	advcl	O	_
+ 4	referência	referência	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+@@ -187321,7 +187321,7 @@
+ 16	,	,	PUNCT	_	_	1	punct	O	_
+ 17-18	espera-se	_	_	_	_	_	_	_	_
+ 17	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	17	nsubj	O	_
++18	se	se	PRON	_	_	17	expl	O	_
+ 19	que	que	SCONJ	_	_	33	mark	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	consumo	consumo	NOUN	_	Gender=Masc|Number=Sing	33	nsubj	O	_
+@@ -187501,7 +187501,7 @@
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	conclui-se	_	_	_	_	_	_	_	_
+ 5	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	8	mark	O	_
+ 8	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	O	_
+ 9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+@@ -187979,7 +187979,7 @@
+ 10	,	,	PUNCT	_	_	1	punct	O	_
+ 11-12	mostra-se	_	_	_	_	_	_	_	_
+ 11	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-12	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++12	se	se	PRON	_	_	11	expl	O	_
+ 13	que	que	SCONJ	_	_	21	mark	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	O	_
+@@ -188126,7 +188126,7 @@
+ 19	significativa	significativo	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+ 20-21	pode-se	_	_	_	_	_	_	_	_
+ 20	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	20	expl	O	_
+ 22	confirmar	confirmar	VERB	_	VerbForm=Inf	20	xcomp	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+ 24	fato	fato	NOUN	_	Gender=Masc|Number=Sing	22	obj	O	_
+@@ -188638,7 +188638,7 @@
+ 16	,	,	PUNCT	_	_	4	punct	O	_
+ 17-18	observou-se	_	_	_	_	_	_	_	_
+ 17	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	17	nsubj	O	_
++18	se	se	PRON	_	_	17	expl	O	_
+ 19	que	que	SCONJ	_	_	22	mark	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	22	nsubj	O	_
+@@ -188842,7 +188842,7 @@
+ 5	a	a	ADP	_	_	9	mark	O	_
+ 6	fim	fim	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
+ 7	de	de	ADP	_	_	5	fixed	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	9	expl	O	_
+ 9	obter	obter	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	análise	análise	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+@@ -188856,7 +188856,7 @@
+ 19	durabilidade	durabilidade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
+ 20	para	para	SCONJ	_	_	23	mark	O	_
+ 21	que	que	SCONJ	_	_	23	mark	O	_
+-22	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	23	nsubj	O	_
++22	se	se	PRON	_	_	23	expl	O	_
+ 23	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	O	_
+ 24	estudar	estudar	VERB	_	VerbForm=Inf	23	xcomp	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -192947,7 +192947,7 @@
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+ 22	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+ 23	de	de	SCONJ	_	_	25	mark	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	25	nsubj	O	_
++24	se	se	PRON	_	_	25	expl	O	_
+ 25	ter	ter	VERB	_	VerbForm=Inf	22	acl	O	_
+ 26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+ 27	processo	processo	NOUN	_	Gender=Masc|Number=Sing	25	obj	O	_
+@@ -194242,7 +194242,7 @@
+ 29	para	para	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+ 31	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	33	obl	O	_
+-32	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	33	nsubj	O	_
++32	se	se	PRON	_	_	33	expl	O	_
+ 33	projeta	projetar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	acl:relcl	O	_
+ 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
+ 35	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	33	obj	O	_
+@@ -194582,7 +194582,7 @@
+ 8-9	ao	_	_	_	_	_	_	_	_
+ 8	a	a	SCONJ	_	_	11	mark	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++10	se	se	PRON	_	_	11	expl	O	_
+ 11	calcular	calcular	VERB	_	VerbForm=Inf	7	advcl	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
+@@ -194679,7 +194679,7 @@
+ 17	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	cop	O	_
+ 18	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	13	ccomp	O	_
+ 19	para	para	SCONJ	_	_	21	mark	O	_
+-20	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	O	_
++20	se	se	PRON	_	_	21	expl	O	_
+ 21	obter	obter	VERB	_	VerbForm=Inf	18	advcl	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+ 23	capital	capital	NOUN	_	Gender=Masc|Number=Sing	21	obj	O	_
+@@ -195934,7 +195934,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-199
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+ 1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	1	obj	B=FLUIDO	_
+ 5	de	de	ADP	_	_	6	case	O	_
+@@ -198024,7 +198024,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-255
+ 1-2	Realizou-se	_	_	_	_	_	_	_	_
+ 1	Realizou	realizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 5-6	da	_	_	_	_	_	_	_	_
+@@ -199010,7 +199010,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-290
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	dopagem	dopagem	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
+@@ -199133,7 +199133,7 @@
+ 31	forma	forma	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+ 32	,	,	PUNCT	_	_	31	punct	O	_
+ 33	não	não	ADV	_	Polarity=Neg	35	advmod	O	_
+-34	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	35	nsubj	O	_
++34	se	se	PRON	_	_	35	expl	O	_
+ 35	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	O	_
+ 36	afirmar	afirmar	VERB	_	VerbForm=Inf	35	xcomp	O	_
+ 37	que	que	SCONJ	_	_	40	mark	O	_
+@@ -199256,7 +199256,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-298
+ 1-2	Sabe-se	_	_	_	_	_	_	_	_
+ 1	Sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -199466,7 +199466,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-305
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	resíduo	resíduo	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 5	de	de	ADP	_	_	8	case	O	_
+@@ -199509,7 +199509,7 @@
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16-17	observa-se	_	_	_	_	_	_	_	_
+ 16	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	16	nsubj	O	_
++17	se	se	PRON	_	_	16	expl	O	_
+ 18	que	que	SCONJ	_	_	26	mark	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 20	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	B=QUÍMICA	_
+@@ -200555,7 +200555,7 @@
+ 5	,	,	PUNCT	_	_	3	punct	O	_
+ 6-7	têm-se	_	_	_	_	_	_	_	_
+ 6	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+ 9	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+@@ -200581,7 +200581,7 @@
+ 8	,	,	PUNCT	_	_	7	punct	O	_
+ 9-10	percebe-se	_	_	_	_	_	_	_	_
+ 9	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	26	mark	O	_
+ 12	a	a	ADP	_	_	15	case	O	_
+ 13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+@@ -200634,7 +200634,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-343
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+@@ -201686,7 +201686,7 @@
+ 25	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	O	_
+ 26	maior	grande	ADJ	_	Gender=Masc|Number=Sing	25	amod	O	_
+ 27	para	para	SCONJ	_	_	29	mark	O	_
+-28	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	29	nsubj	O	_
++28	se	se	PRON	_	_	29	expl	O	_
+ 29	atingir	atingir	VERB	_	VerbForm=Inf	23	advcl	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+ 31	valor	valor	NOUN	_	Gender=Masc|Number=Sing	29	obj	O	_
+@@ -202157,7 +202157,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-392
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	9	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -202366,7 +202366,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-397
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	9	mark	O	_
+ 5	apenas	apenas	ADV	_	_	8	advmod	O	_
+@@ -203861,7 +203861,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-446
+ 1-2	Apurou-se	_	_	_	_	_	_	_	_
+ 1	Apurou	apurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	4	mark	O	_
+ 4	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -204162,7 +204162,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-460
+ 1-2	Ressalta-se	_	_	_	_	_	_	_	_
+ 1	Ressalta	ressaltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	aluno	aluno	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -205219,7 +205219,7 @@
+ 10	,	,	PUNCT	_	_	3	punct	O	_
+ 11-12	considerou-se	_	_	_	_	_	_	_	_
+ 11	considerou	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-12	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++12	se	se	PRON	_	_	11	expl	O	_
+ 13	que	que	SCONJ	_	_	22	mark	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	montante	montante	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	O	_
+@@ -206086,7 +206086,7 @@
+ 27-28	ao	_	_	_	_	_	_	_	_
+ 27	a	a	SCONJ	_	_	30	mark	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+-29	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	30	nsubj	O	_
++29	se	se	PRON	_	_	30	expl	O	_
+ 30	usar	usar	VERB	_	VerbForm=Inf	25	advcl	O	_
+ 31	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	30	obj	B=FLUIDO	_
+ 32	residual	residual	ADJ	_	Gender=Masc|Number=Sing	31	amod	I=FLUIDO	_
+@@ -206502,7 +206502,7 @@
+ # text = Quando se utiliza um óleo de soja bruto degomado, esta contribuição chega a atingir cerca de 72% do total..
+ # sent_id = 271-20150810-MONOGRAFIA_0-532
+ 1	Quando	quando	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	O	_
+ 4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	3	obj	B=FLUIDO	_
+@@ -207257,7 +207257,7 @@
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+ 37	álcool	álcool	NOUN	_	Gender=Masc|Number=Sing	34	nmod	O	_
+ 38	quando	quando	SCONJ	_	_	40	mark	O	_
+-39	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	40	nsubj	O	_
++39	se	se	PRON	_	_	40	expl	O	_
+ 40	reutiliza	reutilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	O	_
+ 41	,	,	PUNCT	_	_	40	punct	O	_
+ 42	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	O	_
+@@ -208476,7 +208476,7 @@
+ 36	análises	anális	NOUN	_	Gender=Fem|Number=Plur	33	obl	O	_
+ 37	quantitativa	quantitativo	ADJ	_	Gender=Fem|Number=Sing	36	amod	O	_
+ 38	para	para	SCONJ	_	_	40	mark	O	_
+-39	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	40	nsubj	O	_
++39	se	se	PRON	_	_	40	expl	O	_
+ 40	determinar	determinar	VERB	_	VerbForm=Inf	33	advcl	O	_
+ 41	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	40	obj	O	_
+ 42	de	de	ADP	_	_	43	case	O	_
+@@ -213471,7 +213471,7 @@
+ # sent_id = 391-20160914-MONOGRAFIA_0-170
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	14	mark	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -215531,7 +215531,7 @@
+ # sent_id = 391-20160914-MONOGRAFIA_0-241
+ 1-2	Percebeu-se	_	_	_	_	_	_	_	_
+ 1	Percebeu	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	ainda	ainda	ADV	_	_	1	advmod	O	_
+ 4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 5	grande	grande	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+@@ -215922,7 +215922,7 @@
+ 1	Ou	ou	CCONJ	_	_	16	cc	O	_
+ 2	para	para	SCONJ	_	_	5	mark	O	_
+ 3	que	que	SCONJ	_	_	5	mark	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++4	se	se	PRON	_	_	5	expl	O	_
+ 5	tivesse	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	advcl	O	_
+ 6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
+@@ -216489,7 +216489,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-40
+ 1-2	Propõe-se	_	_	_	_	_	_	_	_
+ 1	Propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+ 5	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	B=QUÍMICA	_
+@@ -217856,7 +217856,7 @@
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	considera-se	_	_	_	_	_	_	_	_
+ 5	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	12	mark	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	monóxido	monóxido	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+@@ -218521,7 +218521,7 @@
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
+ 6	de	de	SCONJ	_	_	8	mark	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	8	expl	O	_
+ 8	realizar	realizar	VERB	_	VerbForm=Inf	5	acl	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	adsorção	adsorção	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+@@ -220000,7 +220000,7 @@
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18-19	podendo-se	_	_	_	_	_	_	_	_
+ 18	podendo	poder	VERB	_	VerbForm=Ger	8	advcl	O	_
+-19	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++19	se	se	PRON	_	_	18	expl	O	_
+ 20	constatar	constatar	VERB	_	VerbForm=Inf	18	xcomp	O	_
+ 21	que	que	SCONJ	_	_	24	mark	O	_
+ 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
+@@ -220091,7 +220091,7 @@
+ 17	ou	ou	CCONJ	_	_	18	cc	O	_
+ 18-19	podem-se	_	_	_	_	_	_	_	_
+ 18	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	O	_
+-19	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	expl	O	_
++19	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	expl	O	_
+ 20	fazer	fazer	VERB	_	VerbForm=Inf	18	xcomp	O	_
+ 21	tratamentos	tratamento	NOUN	_	Gender=Masc|Number=Plur	20	obj	O	_
+ 22	para	para	ADP	_	_	23	case	O	_
+@@ -220370,7 +220370,7 @@
+ 37	,	,	PUNCT	_	_	38	punct	O	_
+ 38-39	utilizando-se	_	_	_	_	_	_	_	_
+ 38	utilizando	utilizar	VERB	_	VerbForm=Ger	23	advcl	O	_
+-39	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	nsubj	O	_
++39	se	se	PRON	_	_	38	expl	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+ 41	zeólita	zeólita	NOUN	_	Gender=Fem|Number=Sing	38	obj	B=LITOLOGIA	_
+ 42-43	na	_	_	_	_	_	_	_	_
+@@ -221362,8 +221362,8 @@
+ 3	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	supõe-se	_	_	_	_	_	_	_	_
+-5	supçe	supçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++5	supõe	supõe	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	11	mark	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	hexacarbonil	hexacarbonil	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
+@@ -221383,7 +221383,7 @@
+ 21-22	nas	_	_	_	_	_	_	_	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
+-23	supercavidades	supercavidade	NOUN	_	Gender=Fem|Number=Plur	19	obl	O	_
++23	supercavidades	supercavidade	NOUN	_	Gender=Fem|Number=Plur	20	obl	O	_
+ 24	,	,	PUNCT	_	_	27	punct	O	_
+ 25	para	para	ADP	_	_	27	case	O	_
+ 26	posterior	posterior	ADJ	_	Gender=Fem|Number=Sing	27	amod	O	_
+@@ -221921,7 +221921,7 @@
+ 14	,	,	PUNCT	_	_	15	punct	O	_
+ 15-16	utilizando-se	_	_	_	_	_	_	_	_
+ 15	utilizando	utilizar	VERB	_	VerbForm=Ger	8	advcl	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	15	nsubj	O	_
++16	se	se	PRON	_	_	15	expl	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+ 18	método	método	NOUN	_	Gender=Masc|Number=Sing	15	obj	B=MÉTODO	_
+ 19	BJH	BJH	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+@@ -223052,7 +223052,7 @@
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12-13	subtraindo-se	_	_	_	_	_	_	_	_
+ 12	subtraindo	subtrair	VERB	_	VerbForm=Ger	8	advcl	O	_
+-13	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	12	nsubj	O	_
++13	se	se	PRON	_	_	12	expl	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+@@ -224618,7 +224618,7 @@
+ # text = Quando se deseja obter catalisadores com elevados teores de molibdênio, é necessário realizar sucessivas adsorções alternadas pela decomposição do complexo [13]..
+ # sent_id = 25-20150123-MONOGRAFIA_0-289
+ 1	Quando	quando	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	deseja	desejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	O	_
+ 4	obter	obter	VERB	_	VerbForm=Inf	3	xcomp	O	_
+ 5	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	4	obj	B=QUÍMICA	_
+@@ -224845,7 +224845,7 @@
+ 1	Porém	porém	ADV	_	_	2	advmod	O	_
+ 2-3	verifica-se	_	_	_	_	_	_	_	_
+ 2	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-3	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	2	nsubj	O	_
++3	se	se	PRON	_	_	2	expl	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	2	obj	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+@@ -225609,7 +225609,7 @@
+ 5	,	,	PUNCT	_	_	3	punct	O	_
+ 6-7	pode-se	_	_	_	_	_	_	_	_
+ 6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	calcular	calcular	VERB	_	VerbForm=Inf	6	xcomp	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+@@ -225983,7 +225983,7 @@
+ 4	05	05	NUM	_	NumType=Card	3	nummod	O	_
+ 5-6	verifica-se	_	_	_	_	_	_	_	_
+ 5	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	18	mark	O	_
+ 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+ 9	valores	valor	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	O	_
+@@ -226573,7 +226573,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-353
+ 1-2	Verifica-se	_	_	_	_	_	_	_	_
+ 1	Verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	pico	pico	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -227139,7 +227139,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-370
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+ 1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	9	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	método	método	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	B=MÉTODO	_
+@@ -228333,7 +228333,7 @@
+ 67	,	,	PUNCT	_	_	68	punct	O	_
+ 68-69	fazendo-se	_	_	_	_	_	_	_	_
+ 68	fazendo	fazer	VERB	_	VerbForm=Ger	58	advcl	O	_
+-69	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	68	nsubj	O	_
++69	se	se	PRON	_	_	68	expl	O	_
+ 70	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	71	det	O	_
+ 71	decomposição	decomposição	NOUN	_	Gender=Fem|Number=Sing	68	obj	O	_
+ 72-73	do	_	_	_	_	_	_	_	_
+@@ -228856,7 +228856,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-421
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	claramente	claramente	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	6	mark	O	_
+ 5	não	não	ADV	_	Polarity=Neg	6	advmod	O	_
+@@ -230153,7 +230153,7 @@
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4-5	verifica-se	_	_	_	_	_	_	_	_
+ 4	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	13	mark	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	introdução	introdução	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	O	_
+@@ -230926,7 +230926,7 @@
+ 8	,	,	PUNCT	_	_	3	punct	O	_
+ 9-10	observa-se	_	_	_	_	_	_	_	_
+ 9	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+ 12	alinhamento	alinhamento	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+@@ -236013,7 +236013,7 @@
+ 36	como	como	SCONJ	_	_	37	mark	O	_
+ 37-38	pode-se	_	_	_	_	_	_	_	_
+ 37	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	advcl	O	_
+-38	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	expl	O	_
++38	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	37	expl	O	_
+ 39	observar	observar	VERB	_	VerbForm=Inf	37	xcomp	O	_
+ 40	através	através	ADV	_	_	43	case	O	MWEPOS=ADP
+ 41-42	dos	_	_	_	_	_	_	_	_
+@@ -239610,7 +239610,7 @@
+ 1	À	à	NOUN	_	Gender=Masc|Number=Sing	10	nsubj:pass	O	_
+ 2	medida	medida	ADP	_	_	3	case	O	_
+ 3	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++4	se	se	PRON	_	_	5	expl	O	_
+ 5	alçava	alçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	O	_
+ 6	,	,	PUNCT	_	_	5	punct	O	_
+ 7	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	8	det	O	_
+@@ -243808,7 +243808,7 @@
+ 5	variável	variável	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 6-7	pode-se	_	_	_	_	_	_	_	_
+ 6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	perceber	perceber	VERB	_	VerbForm=Inf	6	xcomp	O	_
+ 9	também	também	ADV	_	_	8	advmod	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+@@ -245326,7 +245326,7 @@
+ 35	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	39	obl	O	_
+ 36	nem	nem	CCONJ	_	_	39	cc	O	_
+ 37	sempre	sempre	ADV	_	_	39	advmod	O	_
+-38	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	39	nsubj	O	_
++38	se	se	PRON	_	_	39	expl	O	_
+ 39	aplica	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+ 41	consideração	consideração	NOUN	_	Gender=Fem|Number=Sing	39	obj	O	_
+@@ -246451,7 +246451,7 @@
+ 1	Como	como	SCONJ	_	_	5	mark	O	_
+ 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	O	_
+ 3	de	de	SCONJ	_	_	5	mark	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++4	se	se	PRON	_	_	5	expl	O	_
+ 5	esperar	esperar	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 6	,	,	PUNCT	_	_	5	punct	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+@@ -246523,7 +246523,7 @@
+ 36	,	,	PUNCT	_	_	23	punct	O	_
+ 37-38	pode-se	_	_	_	_	_	_	_	_
+ 37	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	O	_
+-38	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	39	nsubj	O	_
++38	se	se	PRON	_	_	37	expl	O	_
+ 39	observar	observar	VERB	_	VerbForm=Inf	37	xcomp	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+ 41	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	39	obj	O	_
+@@ -246660,7 +246660,7 @@
+ # text = Quando se observa este mapa isoladamente, é difícil distinguir a presença destes quatro corpos, que formam um alinhamento curvo aproximadamente N-S, muito bem delineado no mapa de amplitude do sinal analítico..
+ # sent_id = 20-20140904-TESEDSC_0-384
+ 1	Quando	quando	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	O	_
+ 4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	O	_
+ 5	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	3	obj	B=INSTRUMENTO	_
+@@ -247135,7 +247135,7 @@
+ 13	matemáticos	matemático	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 14	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
+ 15	para	para	SCONJ	_	_	17	mark	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	17	nsubj	O	_
++16	se	se	PRON	_	_	17	expl	O	_
+ 17	extrair	extrair	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 18	inferências	inferência	NOUN	_	Gender=Fem|Number=Plur	17	obj	O	_
+ 19	úteis	útil	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+@@ -248875,7 +248875,7 @@
+ 25	,	,	PUNCT	_	_	19	punct	O	_
+ 26-27	procurou-se	_	_	_	_	_	_	_	_
+ 26	procurou	procurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-27	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	expl	O	_
++27	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	expl	O	_
+ 28	interpretar	interpretar	VERB	_	VerbForm=Inf	26	xcomp	O	_
+ 29	,	,	PUNCT	_	_	28	punct	O	_
+ 30-31	nesta	_	_	_	_	_	_	_	_
+@@ -249289,7 +249289,7 @@
+ 14	,	,	PUNCT	_	_	2	punct	O	_
+ 15-16	sugere-se	_	_	_	_	_	_	_	_
+ 15	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	15	nsubj	O	_
++16	se	se	PRON	_	_	15	expl	O	_
+ 17	tomar	tomar	VERB	_	VerbForm=Inf	15	xcomp	O	_
+ 18	aquela	aquele	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	17	obj	O	_
+ 19	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	O	_
+@@ -249909,7 +249909,7 @@
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+ 6-7	constata-se	_	_	_	_	_	_	_	_
+ 6	constata	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	20	mark	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	método	método	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	B=MÉTODO	_
+@@ -250044,7 +250044,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-467
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+ 1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	19	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+@@ -250290,7 +250290,7 @@
+ 8	,	,	PUNCT	_	_	5	punct	O	_
+ 9-10	constata-se	_	_	_	_	_	_	_	_
+ 9	constata	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	17	mark	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
+ 13	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	O	_
+@@ -250730,7 +250730,7 @@
+ 9	momento	momento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 10	,	,	PUNCT	_	_	13	punct	O	_
+ 11	de	de	SCONJ	_	_	13	mark	O	_
+-12	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
++12	se	se	PRON	_	_	13	expl	O	_
+ 13	encontrar	encontrar	VERB	_	VerbForm=Inf	2	advcl	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	significado	significado	NOUN	_	Gender=Masc|Number=Sing	13	obj	O	_
+@@ -251130,7 +251130,7 @@
+ 33	medida	medida	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 34	em	em	ADP	_	_	35	case	O	_
+ 35	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	37	obl	O	_
+-36	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	37	nsubj	O	_
++36	se	se	PRON	_	_	37	expl	O	_
+ 37	diminui	diminuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	O	_
+ 38	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	O	_
+ 39	dimensões	dimensão	NOUN	_	Gender=Fem|Number=Plur	37	obj	O	_
+@@ -253659,7 +253659,7 @@
+ 5	bastante	bastante	ADV	_	_	6	advmod	O	_
+ 6	razoável	razoável	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+ 7	que	que	SCONJ	_	_	9	mark	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	9	expl	O	_
+ 9	considere	considerar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	csubj	O	_
+ 10	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	O	_
+ 11	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
+@@ -256128,7 +256128,7 @@
+ 28	,	,	PUNCT	_	_	13	punct	O	_
+ 29-30	pode-se	_	_	_	_	_	_	_	_
+ 29	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-30	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	31	nsubj	O	_
++30	se	se	PRON	_	_	29	expl	O	_
+ 31	observar	observar	VERB	_	VerbForm=Inf	29	xcomp	O	_
+ 32	que	que	SCONJ	_	_	34	mark	O	_
+ 33	não	não	ADV	_	Polarity=Neg	34	advmod	O	_
+@@ -259405,7 +259405,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-713
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	10	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	falha	falha	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	B=LITOLOGIA|B=LOCAL:GEO	_
+@@ -259442,7 +259442,7 @@
+ 35	,	,	PUNCT	_	_	36	punct	O	_
+ 36-37	utilizando-se	_	_	_	_	_	_	_	_
+ 36	utilizando	utilizar	VERB	_	VerbForm=Ger	22	advcl	O	_
+-37	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	nsubj	O	_
++37	se	se	PRON	_	_	36	expl	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+ 39	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	36	obj	O	_
+ 40	média	médio	ADJ	_	Gender=Fem|Number=Sing	39	amod	O	_
+@@ -259660,7 +259660,7 @@
+ 4	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	2	obj	O	_
+ 5-6	observa-se	_	_	_	_	_	_	_	_
+ 5	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	18	mark	O	_
+ 8	ambos	ambos	DET	_	Gender=Masc|Number=Plur|PronType=Tot	10	det	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
+@@ -261248,7 +261248,7 @@
+ 15	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	16	obl	O	_
+ 16-17	pode-se	_	_	_	_	_	_	_	_
+ 16	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++17	se	se	PRON	_	_	16	expl	O	_
+ 18	observar	observar	VERB	_	VerbForm=Inf	16	xcomp	O	_
+ 19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	região	região	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
+@@ -261476,7 +261476,7 @@
+ 9	,	,	PUNCT	_	_	6	punct	O	_
+ 10-11	pode-se	_	_	_	_	_	_	_	_
+ 10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
+-11	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	O	_
++11	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl	O	_
+ 12	observar	observar	VERB	_	VerbForm=Inf	10	xcomp	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+ 14	calha	calha	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
+@@ -262760,7 +262760,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-793
+ 1	Como	como	SCONJ	_	_	2	mark	O	_
+ 2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	O	_
+-3	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++3	se	se	PRON	_	_	4	expl	O	_
+ 4	observar	observar	VERB	_	VerbForm=Inf	2	xcomp	O	_
+ 5-6	na	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+@@ -263680,7 +263680,7 @@
+ 1	Como	como	SCONJ	_	_	2	mark	O	_
+ 2-3	pode-se	_	_	_	_	_	_	_	_
+ 2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	O	_
+-3	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++3	se	se	PRON	_	_	2	expl	O	_
+ 4	observar	observar	VERB	_	VerbForm=Inf	2	xcomp	O	_
+ 5-6	na	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+@@ -264654,7 +264654,7 @@
+ 28	,	,	PUNCT	_	_	26	punct	O	_
+ 29	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	O	_
+ 30	possível	possível	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+-31	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	30	nsubj	O	_
++31	se	se	PRON	_	_	32	expl	O	_
+ 32	observar	observar	VERB	_	VerbForm=Inf	30	csubj	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
+ 34	extenso	extenso	ADJ	_	Gender=Masc|Number=Sing	35	amod	O	_
+@@ -264791,7 +264791,7 @@
+ 22	,	,	PUNCT	_	_	9	punct	O	_
+ 23-24	pode-se	_	_	_	_	_	_	_	_
+ 23	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	25	nsubj	O	_
++24	se	se	PRON	_	_	23	expl	O	_
+ 25	observar	observar	VERB	_	VerbForm=Inf	23	xcomp	O	_
+ 26	com	com	ADP	_	_	27	case	O	_
+ 27	clareza	clareza	NOUN	_	Gender=Fem|Number=Sing	25	obl	O	_
+@@ -265181,7 +265181,7 @@
+ 4	impossibilidade	impossibilidade	NOUN	_	Gender=Fem|Number=Sing	2	obj	O	_
+ 5	geológica	geológico	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 6	de	de	SCONJ	_	_	8	mark	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	8	expl	O	_
+ 8	assumir	assumir	VERB	_	VerbForm=Inf	4	acl	O	_
+ 9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	magnetização	magnetização	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+@@ -265241,7 +265241,7 @@
+ 1	Como	como	SCONJ	_	_	2	mark	O	_
+ 2-3	pode-se	_	_	_	_	_	_	_	_
+ 2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	O	_
+-3	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++3	se	se	PRON	_	_	2	expl	O	_
+ 4	constatar	constatar	VERB	_	VerbForm=Inf	2	xcomp	O	_
+ 5	,	,	PUNCT	_	_	4	punct	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+@@ -267326,7 +267326,7 @@
+ 25	,	,	PUNCT	_	_	20	punct	O	_
+ 26-27	pode-se	_	_	_	_	_	_	_	_
+ 26	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-27	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	28	nsubj	O	_
++27	se	se	PRON	_	_	26	expl	O	_
+ 28	notar	notar	VERB	_	VerbForm=Inf	26	xcomp	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+ 30	semelhança	semelhança	NOUN	_	Gender=Fem|Number=Sing	28	obj	O	_
+@@ -270884,7 +270884,7 @@
+ # text = Ainda se observa nestas figuras que a extensão para o mar do terreno Ribeira é nitidamente diferenciada da porção emersa quanto ao padrão dos alinhamentos, apresentando o padrão curvo descrito acima para o domínio Rb. Nova abordagem sobre os diques básicos será feita adiante neste texto..
+ # sent_id = 20-20140904-TESEDSC_0-995
+ 1	Ainda	ainda	ADV	_	_	3	advmod	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4-5	nestas	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+@@ -273304,7 +273304,7 @@
+ 19	onde	onde	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	20	obl	O	_
+ 20-21	pode-se	_	_	_	_	_	_	_	_
+ 20	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	20	expl	O	_
+ 22	interpretar	interpretar	VERB	_	VerbForm=Inf	20	xcomp	O	_
+ 23	deslocamentos	deslocamento	NOUN	_	Gender=Masc|Number=Plur	22	obj	O	_
+ 24-25	no	_	_	_	_	_	_	_	_
+@@ -279688,7 +279688,7 @@
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+ 14	de	de	SCONJ	_	_	16	mark	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	16	nsubj	O	_
++15	se	se	PRON	_	_	16	expl	O	_
+ 16	delinear	delinear	VERB	_	VerbForm=Inf	13	acl	O	_
+ 17	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	16	obj	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+@@ -280667,7 +280667,7 @@
+ # text = Como se espera, a ampliação do conhecimento sobre as acumulações de petróleo nestas bacias é diretamente proporcional ao aprimoramento e refinamento de seu modelo geológico aplicado para fins exploratórios..
+ # sent_id = 20-20140904-TESEDSC_0-1218
+ 1	Como	como	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -281933,7 +281933,7 @@
+ 3-4	ao	_	_	_	_	_	_	_	_
+ 3	a	a	SCONJ	_	_	6	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++5	se	se	PRON	_	_	6	expl	O	_
+ 6	construir	construir	VERB	_	VerbForm=Inf	17	advcl	O	_
+ 7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	6	obj	O	_
+@@ -281948,7 +281948,7 @@
+ 16	,	,	PUNCT	_	_	12	punct	O	_
+ 17-18	deve-se	_	_	_	_	_	_	_	_
+ 17	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	19	nsubj	O	_
++18	se	se	PRON	_	_	17	expl	O	_
+ 19	ter	ter	VERB	_	VerbForm=Inf	17	xcomp	O	_
+ 20	sempre	sempre	ADV	_	_	19	advmod	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+@@ -286500,7 +286500,7 @@
+ 29	a	a	ADP	_	_	33	mark	O	_
+ 30	fim	fim	NOUN	_	Gender=Masc|Number=Sing	29	fixed	O	_
+ 31	de	de	ADP	_	_	29	fixed	O	_
+-32	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	33	nsubj	O	_
++32	se	se	PRON	_	_	33	expl	O	_
+ 33	obter	obter	VERB	_	VerbForm=Inf	19	advcl	O	_
+ 34	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+ 35	maior	grande	ADJ	_	Gender=Fem|Number=Sing	36	amod	O	_
+@@ -286569,7 +286569,7 @@
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+ 7-8	podem-se	_	_	_	_	_	_	_	_
+ 7	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	expl	O	_
++8	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	expl	O	_
+ 9	destacar	destacar	VERB	_	VerbForm=Inf	7	xcomp	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+ 11	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	9	obj	O	_
+@@ -287098,7 +287098,7 @@
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+ 5	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+ 6	que	que	SCONJ	_	_	8	mark	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	8	expl	O	_
+ 8	tenha	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	csubj	O	_
+ 9	controle	controle	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 10	tanto	tanto	ADV	_	_	8	advmod	O	_
+@@ -287267,7 +287267,7 @@
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+ 33-34	dilui-se	_	_	_	_	_	_	_	_
+ 33	dilui	diluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	5	conj	O	_
+-34	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	33	nsubj	O	_
++34	se	se	PRON	_	_	33	expl	O	_
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+ 36	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	33	nsubj:pass	O	_
+ 37	(	(	PUNCT	_	_	42	punct	O	_
+@@ -287446,7 +287446,7 @@
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	O	_
+ 3	de	de	SCONJ	_	_	5	mark	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++4	se	se	PRON	_	_	5	expl	O	_
+ 5	otimizar	otimizar	VERB	_	VerbForm=Inf	2	acl	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	5	obj	B=LITOLOGIA	_
+@@ -287836,7 +287836,7 @@
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	2	obl	O	_
+ 9	de	de	SCONJ	_	_	11	mark	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++10	se	se	PRON	_	_	11	expl	O	_
+ 11	monitorar	monitorar	VERB	_	VerbForm=Inf	8	acl	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
+@@ -288681,7 +288681,7 @@
+ 4	2.1	2.1	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+@@ -291263,7 +291263,7 @@
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
+ 10	de	de	SCONJ	_	_	12	mark	O	_
+-11	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	O	_
++11	se	se	PRON	_	_	12	expl	O	_
+ 12	obter	obter	VERB	_	VerbForm=Inf	9	acl	O	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
+ 14	vantagens	vantagem	NOUN	_	Gender=Fem|Number=Plur	12	obj	O	_
+@@ -291874,7 +291874,7 @@
+ 4	2.2	2.2	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 9	de	de	ADP	_	_	11	case	O	_
+@@ -291934,7 +291934,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-165
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	13	mark	O	_
+ 4	,	,	PUNCT	_	_	9	punct	O	_
+ 5	quando	quando	SCONJ	_	_	9	mark	O	_
+@@ -293060,7 +293060,7 @@
+ 4	2.3	2.3	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	ilustração	ilustração	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 9-10	do	_	_	_	_	_	_	_	_
+@@ -293081,7 +293081,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-196
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	14	mark	O	_
+ 4	com	com	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -293533,7 +293533,7 @@
+ 4	2.1	2.1	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 9	aproximada	aproximado	ADJ	_	Gender=Fem|Number=Sing	8	amod	O	_
+@@ -294110,7 +294110,7 @@
+ 4	2.5	2.5	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	expl	O	_
++6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	representação	representação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+@@ -294137,7 +294137,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-228
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	13	mark	O	_
+ 4-5	na	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+@@ -295265,7 +295265,7 @@
+ # text = Quando se fala em PHPA, fala-se na união da acrilamida e do acrilato de sódio através da copolimerização..
+ # sent_id = 119-20141209-TESEMSC_0-276
+ 1	Quando	quando	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	O	_
+ 4	em	em	ADP	_	_	5	case	O	_
+ 5	PHPA	PHPA	PROPN	_	Gender=Masc|Number=Sing	3	obl	B=QUÍMICA	_
+@@ -297116,7 +297116,7 @@
+ 4	2.9	2.9	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	observa-se	_	_	_	_	_	_	_	_
+ 5	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	16	mark	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+ 9	curvas	curva	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	O	_
+@@ -297746,7 +297746,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-358
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	10	mark	O	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
+@@ -297844,7 +297844,7 @@
+ 4	2.12	2.12	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+@@ -298222,7 +298222,7 @@
+ 4	2.14	2.14	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	têm-se	_	_	_	_	_	_	_	_
+ 5	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	expl	O	_
++6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	expl	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	mecanismos	mecanismo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+@@ -298905,7 +298905,7 @@
+ 43	reinício	reinício	NOUN	_	Gender=Masc|Number=Sing	39	conj	O	_
+ 44-45	tem-se	_	_	_	_	_	_	_	_
+ 44	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	aux	O	_
+-45	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	47	nsubj	O	_
++45	se	se	PRON	_	_	44	expl	O	_
+ 46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	O	_
+ 47	pico	pico	NOUN	_	Gender=Masc|Number=Sing	32	conj	O	_
+ 48	(	(	PUNCT	_	_	49	punct	O	_
+@@ -299567,7 +299567,7 @@
+ 4	2.16	2.16	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	têm-se	_	_	_	_	_	_	_	_
+ 5	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	mecanismos	mecanismo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+@@ -301280,7 +301280,7 @@
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	modo	modo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
+ 20	a	a	SCONJ	_	_	22	mark	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	22	expl	O	_
+ 22	obter	obter	VERB	_	VerbForm=Inf	17	advcl	O	_
+ 23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	O	_
+ 24	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	22	obj	O	_
+@@ -304012,7 +304012,7 @@
+ 7	,	,	PUNCT	_	_	3	punct	O	_
+ 8-9	observa-se	_	_	_	_	_	_	_	_
+ 8	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	que	que	SCONJ	_	_	13	mark	O	_
+ 11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	O	_
+ 12	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	O	_
+@@ -304171,7 +304171,7 @@
+ # text = Como se espera que dispersões de argilas com polímeros apresentem uma tensão inicial (Herschell-Buckley), a sequência utilizada durante o decorrer do trabalho foi: água destilada, bentonita, polímero e sal..
+ # sent_id = 119-20141209-TESEMSC_0-533
+ 1	Como	como	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	O	_
+ 4	que	que	SCONJ	_	_	10	mark	O	_
+ 5	dispersões	dispersão	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	O	_
+@@ -304284,7 +304284,7 @@
+ 3	figura	figura	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+ 4-5	percebe-se	_	_	_	_	_	_	_	_
+ 4	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	17	mark	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	redução	redução	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	O	_
+@@ -304893,7 +304893,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-553
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	15	mark	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	pontos	ponto	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	O	_
+@@ -305786,7 +305786,7 @@
+ # text = Ao se observar fluxo estabilizado do fluido injetado ou, em alguns casos, interrupção da produção de fluidos, obteve-se a saturação de óleo remanescente na amostra após a invasão ( ) conforme Equação 3.5: KH>LMNOPãQ (3.5)
+ # sent_id = 119-20141209-TESEMSC_0-578
+ 1	Ao	ao	SCONJ	_	_	3	mark	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	observar	observar	VERB	_	VerbForm=Inf	23	advcl	O	_
+ 4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+ 5	estabilizado	estabilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	O	_
+@@ -306669,7 +306669,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-609
+ 1-2	Sugere-se	_	_	_	_	_	_	_	_
+ 1	Sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	então	então	ADV	_	_	1	advmod	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	aferição	aferição	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -306899,7 +306899,7 @@
+ 2	esquerda	esquerdo	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ 3-4	tem-se	_	_	_	_	_	_	_	_
+ 3	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++4	se	se	PRON	_	_	3	expl	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 6	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 7	obtido	obter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	O	_
+@@ -306915,7 +306915,7 @@
+ 16	direita	direita	NOUN	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 17-18	têm-se	_	_	_	_	_	_	_	_
+ 17	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	expl	O	_
++18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	expl	O	_
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
+ 20	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	6	conj	O	_
+ 21	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	O	_
+@@ -306935,7 +306935,7 @@
+ 3	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 4-5	percebe-se	_	_	_	_	_	_	_	_
+ 4	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	16	mark	O	_
+ 7	,	,	PUNCT	_	_	10	punct	O	_
+ 8	para	para	ADP	_	_	10	case	O	_
+@@ -307048,7 +307048,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-619
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+ 5	que	que	SCONJ	_	_	11	mark	O	_
+@@ -307207,7 +307207,7 @@
+ 39	de	de	SCONJ	_	_	42	mark	O	_
+ 40-41	ter-se	_	_	_	_	_	_	_	_
+ 40	ter	ter	AUX	_	VerbForm=Inf	42	aux	O	_
+-41	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	42	expl	O	_
++41	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	expl	O	_
+ 42	obtido	obter	VERB	_	VerbForm=Part	38	acl	O	_
+ 43	,	,	PUNCT	_	_	42	punct	O	_
+ 44-45	neste	_	_	_	_	_	_	_	_
+@@ -307411,7 +307411,7 @@
+ 3	figura	figura	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+ 4-5	percebe-se	_	_	_	_	_	_	_	_
+ 4	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	15	mark	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	O	_
+@@ -307530,7 +307530,7 @@
+ 7	)	)	PUNCT	_	_	6	punct	O	_
+ 8-9	têm-se	_	_	_	_	_	_	_	_
+ 8	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	detalhamento	detalhamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 12-13	destas	_	_	_	_	_	_	_	_
+@@ -307539,7 +307539,7 @@
+ 14	curvas	curva	NOUN	_	Gender=Fem|Number=Plur	11	nmod	O	_
+ 15	para	para	SCONJ	_	_	18	mark	O	_
+ 16	que	que	SCONJ	_	_	18	mark	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	18	nsubj	O	_
++17	se	se	PRON	_	_	18	expl	O	_
+ 18	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	O	_
+ 19	observar	observar	VERB	_	VerbForm=Inf	18	xcomp	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -307571,7 +307571,7 @@
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	observa-se	_	_	_	_	_	_	_	_
+ 5	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	18	mark	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	O	_
+@@ -307857,7 +307857,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-636
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	9	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
+@@ -308028,7 +308028,7 @@
+ 4	4.7	4.7	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+@@ -308047,7 +308047,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-641
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	15	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	O	_
+@@ -308093,7 +308093,7 @@
+ 8	,	,	PUNCT	_	_	6	punct	O	_
+ 9-10	observa-se	_	_	_	_	_	_	_	_
+ 9	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	22	mark	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	22	nsubj:pass	O	_
+@@ -308269,7 +308269,7 @@
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5-6	percebe-se	_	_	_	_	_	_	_	_
+ 5	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	16	mark	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	O	_
+@@ -308520,7 +308520,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-653
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	13	mark	O	_
+ 4	para	para	ADP	_	_	7	case	O	_
+ 5	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	7	det	O	_
+@@ -308564,7 +308564,7 @@
+ 15	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	fixed	O	_
+ 16	,	,	PUNCT	_	_	14	punct	O	_
+ 17	primeiro	primeiro	ADV	_	_	19	advmod	O	_
+-18	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	19	nsubj	O	_
++18	se	se	PRON	_	_	19	expl	O	_
+ 19	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	O	_
+ 20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	queda	queda	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+@@ -308741,7 +308741,7 @@
+ 31	4.2	4.2	PROPN	_	Number=Sing	30	flat:name	O	_
+ 32-33	têm-se	_	_	_	_	_	_	_	_
+ 32	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	aux	O	_
+-33	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	expl	O	_
++33	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	32	expl	O	_
+ 34	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	O	_
+ 35	valores	valor	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 36	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	35	acl	O	_
+@@ -308895,7 +308895,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-660
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	4	mark	O	_
+ 4	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -309087,7 +309087,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-665
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	filtrados	filtrado	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	O	_
+@@ -309112,7 +309112,7 @@
+ 23	pois	pois	SCONJ	_	_	24	mark	O	_
+ 24-25	observa-se	_	_	_	_	_	_	_	_
+ 24	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	O	_
+-25	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	24	nsubj	O	_
++25	se	se	PRON	_	_	24	expl	O	_
+ 26	que	que	SCONJ	_	_	33	mark	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+ 28	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	O	_
+@@ -309161,7 +309161,7 @@
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+ 7-8	conclui-se	_	_	_	_	_	_	_	_
+ 7	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	7	nsubj	O	_
++8	se	se	PRON	_	_	7	expl	O	_
+ 9	que	que	SCONJ	_	_	23	mark	O	_
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	16	mark	O	_
+@@ -309281,7 +309281,7 @@
+ 45	)	)	PUNCT	_	_	44	punct	O	_
+ 46-47	Avaliando-se	_	_	_	_	_	_	_	_
+ 46	Avaliando	avaliar	VERB	_	VerbForm=Ger	14	advcl	O	_
+-47	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	46	nsubj	O	_
++47	se	se	PRON	_	_	46	expl	O	_
+ 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	O	_
+ 49	índice	índice	NOUN	_	Gender=Masc|Number=Sing	46	obj	O	_
+ 50	de	de	ADP	_	_	51	case	O	_
+@@ -309418,7 +309418,7 @@
+ 28	4.13	4.13	PROPN	_	Number=Sing	27	flat:name	O	_
+ 29-30	têm-se	_	_	_	_	_	_	_	_
+ 29	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	aux	O	_
+-30	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	33	expl	O	_
++30	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	29	expl	O	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	O	_
+ 32	mesmos	mesmo	ADJ	_	Gender=Masc|Number=Plur	33	amod	O	_
+ 33	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	8	conj	O	_
+@@ -309455,7 +309455,7 @@
+ 6	,	,	PUNCT	_	_	5	punct	O	_
+ 7-8	observa-se	_	_	_	_	_	_	_	_
+ 7	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	7	nsubj	O	_
++8	se	se	PRON	_	_	7	expl	O	_
+ 9	que	que	SCONJ	_	_	18	mark	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+@@ -309519,7 +309519,7 @@
+ 12	)	)	PUNCT	_	_	11	punct	O	_
+ 13-14	percebe-se	_	_	_	_	_	_	_	_
+ 13	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-14	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
++14	se	se	PRON	_	_	13	expl	O	_
+ 15	que	que	SCONJ	_	_	21	mark	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	O	_
+@@ -309601,7 +309601,7 @@
+ 12	)	)	PUNCT	_	_	11	punct	O	_
+ 13-14	observa-se	_	_	_	_	_	_	_	_
+ 13	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-14	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	O	_
++14	se	se	PRON	_	_	13	expl	O	_
+ 15	que	que	SCONJ	_	_	32	mark	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	curva	curva	NOUN	_	Gender=Fem|Number=Sing	32	nsubj	O	_
+@@ -309858,7 +309858,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-680
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	19	mark	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+ 5-6	à	_	_	_	_	_	_	_	_
+@@ -309975,7 +309975,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-684
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	23	mark	O	_
+ 4	,	,	PUNCT	_	_	8	punct	O	_
+ 5	apesar	apesar	ADV	_	_	8	case	O	_
+@@ -310013,7 +310013,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-685
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	também	também	ADV	_	_	1	advmod	O	_
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+@@ -310267,7 +310267,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-693
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	que	que	SCONJ	_	_	10	mark	O	_
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+@@ -310293,7 +310293,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-694
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	17	mark	O	_
+ 5	,	,	PUNCT	_	_	6	punct	O	_
+@@ -310533,7 +310533,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-700
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	também	também	ADV	_	_	1	advmod	O	_
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+@@ -310666,7 +310666,7 @@
+ 7	)	)	PUNCT	_	_	6	punct	O	_
+ 8-9	observa-se	_	_	_	_	_	_	_	_
+ 8	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	que	que	SCONJ	_	_	25	mark	O	_
+ 11	,	,	PUNCT	_	_	14	punct	O	_
+ 12-13	ao	_	_	_	_	_	_	_	_
+@@ -310933,7 +310933,7 @@
+ 23	,	,	PUNCT	_	_	18	punct	O	_
+ 24	para	para	SCONJ	_	_	27	mark	O	_
+ 25	que	que	SCONJ	_	_	27	mark	O	_
+-26	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	27	nsubj	O	_
++26	se	se	PRON	_	_	27	expl	O	_
+ 27	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	O	_
+ 28	analisar	analisar	VERB	_	VerbForm=Inf	27	xcomp	O	_
+ 29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
+@@ -310963,7 +310963,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-708
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	18	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	O	_
+@@ -310993,7 +310993,7 @@
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	figura	figura	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 4	também	também	ADV	_	_	6	advmod	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++5	se	se	PRON	_	_	6	expl	O	_
+ 6	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 7	que	que	SCONJ	_	_	35	mark	O	_
+ 8	,	,	PUNCT	_	_	9	punct	O	_
+@@ -311120,7 +311120,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-711
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	28	mark	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+ 5	assim	assim	ADV	_	_	9	cc	O	MWEPOS=CCONJ
+@@ -311291,7 +311291,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-715
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	10	mark	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+@@ -311442,7 +311442,7 @@
+ 4	4.21	4.21	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	8	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+@@ -311464,7 +311464,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-719
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	21	mark	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	retornos	retorno	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	O	_
+@@ -311952,7 +311952,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-731
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	21	mark	O	_
+ 4	,	,	PUNCT	_	_	9	punct	O	_
+ 5	para	para	ADP	_	_	8	case	O	_
+@@ -311989,7 +311989,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-732
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	16	mark	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	O	_
+@@ -312034,7 +312034,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-733
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+ 1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+ 5	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	O	_
+@@ -312150,7 +312150,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-736
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	30	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	valor	valor	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	O	_
+@@ -312305,7 +312305,7 @@
+ 4	4.25	4.25	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	têm-se	_	_	_	_	_	_	_	_
+ 5	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	expl	O	_
++6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	expl	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	gráficos	gráfico	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 9	com	com	ADP	_	_	11	case	O	_
+@@ -312541,7 +312541,7 @@
+ 4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obl	O	_
+ 5-6	conclui-se	_	_	_	_	_	_	_	_
+ 5	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	18	mark	O	_
+ 8	,	,	PUNCT	_	_	9	punct	O	_
+ 9	aqui	aqui	ADV	_	_	18	advmod	O	_
+@@ -312609,7 +312609,7 @@
+ 22	4.27	4.27	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23-24	têm-se	_	_	_	_	_	_	_	_
+ 23	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	aux	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	27	expl	O	_
++24	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	expl	O	_
+ 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	O	_
+ 26	mesmos	mesmo	ADJ	_	Gender=Masc|Number=Plur	27	amod	O	_
+ 27	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	8	conj	O	_
+@@ -312643,7 +312643,7 @@
+ 3	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 4-5	percebe-se	_	_	_	_	_	_	_	_
+ 4	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	24	mark	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	O	_
+@@ -312671,7 +312671,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-749
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	13	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
+@@ -312836,7 +312836,7 @@
+ 4	acima	acima	ADV	_	_	5	advmod	O	_
+ 5-6	observa-se	_	_	_	_	_	_	_	_
+ 5	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	O	_
++6	se	se	PRON	_	_	5	expl	O	_
+ 7	que	que	SCONJ	_	_	20	mark	O	_
+ 8	,	,	PUNCT	_	_	20	punct	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+@@ -312915,7 +312915,7 @@
+ 4	4.29	4.29	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+ 5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	expl	O	_
++6	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 9-10	dos	_	_	_	_	_	_	_	_
+@@ -312991,7 +312991,7 @@
+ 3	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 4-5	observa-se	_	_	_	_	_	_	_	_
+ 4	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	29	mark	O	_
+ 7	,	,	PUNCT	_	_	11	punct	O	_
+ 8	em	em	ADP	_	_	11	case	O	_
+@@ -313131,7 +313131,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-761
+ 1-2	Observa-se	_	_	_	_	_	_	_	_
+ 1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	24	mark	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	retornos	retorno	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	O	_
+@@ -313168,7 +313168,7 @@
+ 5	)	)	PUNCT	_	_	3	punct	O	_
+ 6-7	tem-se	_	_	_	_	_	_	_	_
+ 6	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	9	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 10	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+@@ -313191,7 +313191,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-763
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	21	mark	O	_
+ 4	,	,	PUNCT	_	_	7	punct	O	_
+ 5-6	nos	_	_	_	_	_	_	_	_
+@@ -313253,7 +313253,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-765
+ 1-2	Percebe-se	_	_	_	_	_	_	_	_
+ 1	Percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	27	mark	O	_
+ 4	,	,	PUNCT	_	_	7	punct	O	_
+ 5	para	para	ADP	_	_	6	case	O	_
+@@ -313642,7 +313642,7 @@
+ 11	)	)	PUNCT	_	_	10	punct	O	_
+ 12-13	observa-se	_	_	_	_	_	_	_	_
+ 12	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-13	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	O	_
++13	se	se	PRON	_	_	12	expl	O	_
+ 14	que	que	SCONJ	_	_	26	mark	O	_
+ 15	,	,	PUNCT	_	_	17	punct	O	_
+ 16	como	como	SCONJ	_	_	17	mark	O	_
+@@ -313963,7 +313963,7 @@
+ 7	)	)	PUNCT	_	_	6	punct	O	_
+ 8-9	pode-se	_	_	_	_	_	_	_	_
+ 8	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	observar	observar	VERB	_	VerbForm=Inf	8	xcomp	O	_
+ 11	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	O	_
+ 12	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
+@@ -314033,7 +314033,7 @@
+ 15	pois	pois	SCONJ	_	_	16	mark	O	_
+ 16-17	percebeu-se	_	_	_	_	_	_	_	_
+ 16	percebeu	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	O	_
+-17	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	16	nsubj	O	_
++17	se	se	PRON	_	_	16	expl	O	_
+ 18	que	que	SCONJ	_	_	32	mark	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	alteração	alteração	NOUN	_	Gender=Fem|Number=Sing	32	nsubj	O	_
+@@ -314072,7 +314072,7 @@
+ 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 4-5	comprovou-se	_	_	_	_	_	_	_	_
+ 4	comprovou	comprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	17	mark	O	_
+ 7	,	,	PUNCT	_	_	4	punct	O	_
+ 8	assim	assim	ADV	_	_	11	cc	O	MWEPOS=CCONJ
+@@ -314102,7 +314102,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-787
+ 1-2	Concluiu-se	_	_	_	_	_	_	_	_
+ 1	Concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	19	mark	O	_
+ 4	para	para	ADP	_	_	5	case	O	_
+ 5	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
+@@ -314315,7 +314315,7 @@
+ 40	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	41	obl	O	_
+ 41-42	percebeu-se	_	_	_	_	_	_	_	_
+ 41	percebeu	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	acl:relcl	O	_
+-42	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	41	nsubj	O	_
++42	se	se	PRON	_	_	41	expl	O	_
+ 43	que	que	SCONJ	_	_	50	mark	O	_
+ 44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	O	_
+ 45	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	50	nsubj	O	_
+@@ -319528,7 +319528,7 @@
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4-5	considera-se	_	_	_	_	_	_	_	_
+ 4	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	O	_
++5	se	se	PRON	_	_	4	expl	O	_
+ 6	que	que	SCONJ	_	_	10	mark	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	10	nsubj:pass	O	_
+@@ -323622,7 +323622,7 @@
+ 24	de	de	ADP	_	_	25	case	O	_
+ 25	forma	forma	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 26	a	a	SCONJ	_	_	28	mark	O	_
+-27	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	28	nsubj	O	_
++27	se	se	PRON	_	_	28	expl	O	_
+ 28	ter	ter	VERB	_	VerbForm=Inf	7	advcl	O	_
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	mínimo	pequeno	NOUN	_	Gender=Masc|Number=Sing	28	obj	O	_
+@@ -323759,7 +323759,7 @@
+ 9	experimental	experimental	ADJ	_	Gender=Fem|Number=Sing	8	amod	O	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	O	_
+ 11	possível	possível	ADJ	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+-12	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	O	_
++12	se	se	PRON	_	_	11	expl	O	_
+ 13	obter	obter	VERB	_	VerbForm=Inf	11	csubj	O	_
+ 14	microemulsões	microemulsão	NOUN	_	Gender=Fem|Number=Plur	13	obj	O	_
+ 15	e	e	CCONJ	_	_	17	cc	O	_
+@@ -324828,7 +324828,7 @@
+ # sent_id = 240-20140220-MONOGRAFIA_0-299
+ 1-2	Mediu-se	_	_	_	_	_	_	_	_
+ 1	Mediu	medir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -325138,7 +325138,7 @@
+ 18	volumétricas	volumétrico	ADJ	_	Gender=Fem|Number=Plur	17	amod	O	_
+ 19	,	,	PUNCT	_	_	22	punct	O	_
+ 20	para	para	SCONJ	_	_	22	mark	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	22	expl	O	_
+ 22	obter	obter	VERB	_	VerbForm=Inf	7	advcl	O	_
+ 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
+ 24	proporções	proporção	NOUN	_	Gender=Fem|Number=Plur	22	obj	O	_
+@@ -327313,7 +327313,7 @@
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+ 6-7	percebe-se	_	_	_	_	_	_	_	_
+ 6	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	14	mark	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+@@ -327658,7 +327658,7 @@
+ 8	,	,	PUNCT	_	_	5	punct	O	_
+ 9-10	percebe-se	_	_	_	_	_	_	_	_
+ 9	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	16	mark	O	_
+ 12	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	14	det	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+@@ -327738,7 +327738,7 @@
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+ 3-4	nota-se	_	_	_	_	_	_	_	_
+ 3	nota	nota	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++4	se	se	PRON	_	_	3	expl	O	_
+ 5	que	que	SCONJ	_	_	7	mark	O	_
+ 6	não	não	ADV	_	Polarity=Neg	7	advmod	O	_
+ 7	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	O	_
+@@ -327750,7 +327750,7 @@
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14-15	podendo-se	_	_	_	_	_	_	_	_
+ 14	podendo	poder	VERB	_	VerbForm=Ger	3	advcl	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	14	nsubj	O	_
++15	se	se	PRON	_	_	14	expl	O	_
+ 16	afirmar	afirmar	VERB	_	VerbForm=Inf	14	xcomp	O	_
+ 17	que	que	SCONJ	_	_	19	mark	O	_
+ 18	não	não	ADV	_	Polarity=Neg	19	advmod	O	_
+@@ -327906,14 +327906,14 @@
+ 14	,	,	PUNCT	_	_	6	punct	O	_
+ 15-16	percebe-se	_	_	_	_	_	_	_	_
+ 15	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	15	nsubj	O	_
++16	se	se	PRON	_	_	15	expl	O	_
+ 17	que	que	SCONJ	_	_	29	mark	O	_
+ 18-19	à	_	_	_	_	_	_	_	_
+ 18	a	a	ADP	_	_	23	mark	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	fixed	O	_
+ 20	medida	medida	ADP	_	_	18	fixed	O	_
+ 21	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	18	fixed	O	_
+-22	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	23	nsubj	O	_
++22	se	se	PRON	_	_	23	expl	O	_
+ 23	aumenta	aumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 25	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
+@@ -328195,7 +328195,7 @@
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+ 6-7	percebe-se	_	_	_	_	_	_	_	_
+ 6	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	14	mark	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+@@ -328514,7 +328514,7 @@
+ 8	,	,	PUNCT	_	_	5	punct	O	_
+ 9-10	percebe-se	_	_	_	_	_	_	_	_
+ 9	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++10	se	se	PRON	_	_	9	expl	O	_
+ 11	que	que	SCONJ	_	_	16	mark	O	_
+ 12	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	14	det	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+@@ -328778,7 +328778,7 @@
+ 5	,	,	PUNCT	_	_	1	punct	O	_
+ 6-7	percebe-se	_	_	_	_	_	_	_	_
+ 6	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	15	mark	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	magnitude	magnitude	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	O	_
+@@ -330841,7 +330841,7 @@
+ 71	,	,	PUNCT	_	_	72	punct	O	_
+ 72-73	levando-se	_	_	_	_	_	_	_	_
+ 72	levando	levar	VERB	_	VerbForm=Ger	62	advcl	O	_
+-73	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	72	nsubj	O	_
++73	se	se	PRON	_	_	72	expl	O	_
+ 74	em	em	ADP	_	_	75	case	O	_
+ 75	consideração	consideração	NOUN	_	Gender=Fem|Number=Sing	72	obl	O	_
+ 76	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	77	det	O	_
+@@ -332244,7 +332244,7 @@
+ 5	,	,	PUNCT	_	_	2	punct	O	_
+ 6	em	em	ADP	_	_	7	case	O	_
+ 7	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	9	obl	O	_
+-8	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	O	_
++8	se	se	PRON	_	_	9	expl	O	_
+ 9	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	O	_
+ 10	menção	menção	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+ 11-12	aos	_	_	_	_	_	_	_	_
+@@ -332543,7 +332543,7 @@
+ # sent_id = 411-20150702-MONOGRAFIA_0-55
+ 1-2	Admite-se	_	_	_	_	_	_	_	_
+ 1	Admite	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	B=FLUIDO	_
+@@ -335065,7 +335065,7 @@
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+ 25	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	21	nmod	B=INSTRUMENTO	_
+-26	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	27	nsubj	O	_
++26	se	se	PRON	_	_	27	expl	O	_
+ 27	ver	ver	VERB	_	VerbForm=Inf	17	xcomp	O	_
+ 28	todo	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	30	det	O	_
+ 29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
+@@ -336170,7 +336170,7 @@
+ # sent_id = 411-20150702-MONOGRAFIA_0-133
+ 1-2	Verificou-se	_	_	_	_	_	_	_	_
+ 1	Verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	também	também	ADV	_	_	6	advmod	O	_
+ 5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	O	_
+@@ -338760,7 +338760,7 @@
+ # text = Quando se tem um vazamento do petróleo, alguns fatores atuam no grau de impacto o trazendo consequências ainda maiores no local em que o óleo foi derramado.  Tipo e quantidade de petróleo: óleos leves apresentam uma quantidade maior de compostos aromáticos, fazendo que esses óleos leves sejam mais tóxicos que os demais (DEVIDS, 2008).  Oceanográfica e meteorológica: A oceanografia junto com meteorologia também pode favorecer o processo de emulsificação dificultando assim outro processo chamado de degradação..
+ # sent_id = 411-20150702-MONOGRAFIA_0-203
+ 1	Quando	quando	SCONJ	_	_	3	mark	O	sentenciação
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
++2	se	se	PRON	_	_	3	expl	O	_
+ 3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	O	_
+ 4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	vazamento	vazamento	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+@@ -341607,7 +341607,7 @@
+ 30	em	em	ADP	_	_	32	case	O	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
+ 32	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	34	obl	O	_
+-33	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	34	nsubj	O	_
++33	se	se	PRON	_	_	34	expl	O	_
+ 34	aplica	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	O	_
+ 35	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	36	det	O	_
+ 36	método	método	NOUN	_	Gender=Masc|Number=Sing	34	obj	B=MÉTODO	_
+@@ -346015,7 +346015,7 @@
+ 51	,	,	PUNCT	_	_	54	punct	O	_
+ 52-53	pode-se	_	_	_	_	_	_	_	_
+ 52	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	ccomp	O	_
+-53	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	54	nsubj	O	_
++53	se	se	PRON	_	_	52	expl	O	_
+ 54	classificar	classificar	VERB	_	VerbForm=Inf	52	xcomp	O	_
+ 55	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	O	_
+ 56	presença	presença	NOUN	_	Gender=Fem|Number=Sing	54	obj	O	_
+@@ -347564,7 +347564,7 @@
+ 20	,	,	PUNCT	_	_	11	punct	O	_
+ 21	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 22	de	de	SCONJ	_	_	24	mark	O	_
+-23	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	24	nsubj	O	_
++23	se	se	PRON	_	_	24	expl	O	_
+ 24	esperar	esperar	VERB	_	VerbForm=Inf	21	xcomp	O	_
+ 25	que	que	SCONJ	_	_	28	mark	O	_
+ 26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	O	_
+@@ -348870,7 +348870,7 @@
+ # sent_id = 243-20141015-MONOGRAFIA_1-134
+ 1-2	Consegue-se	_	_	_	_	_	_	_	_
+ 1	Consegue	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	teoricamente	teoricamente	ADV	_	_	1	advmod	O	_
+ 4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 5	boa	bom	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
+@@ -350603,7 +350603,7 @@
+ 7	,	,	PUNCT	_	_	2	punct	O	_
+ 8-9	verifica-se	_	_	_	_	_	_	_	_
+ 8	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++9	se	se	PRON	_	_	8	expl	O	_
+ 10	que	que	SCONJ	_	_	23	mark	O	_
+ 11	,	,	PUNCT	_	_	14	punct	O	_
+ 12	em	em	ADP	_	_	14	case	O	_
+@@ -350650,7 +350650,7 @@
+ 13	,	,	PUNCT	_	_	7	punct	O	_
+ 14-15	tem-se	_	_	_	_	_	_	_	_
+ 14	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	O	_
+-15	se	se	PRON	_	Case=Acc|Gender=Unsp|Person=3|PronType=Prs	17	nsubj	O	_
++15	se	se	PRON	_	_	14	expl	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+ 17	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 18	hidratado	hidratar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	O	_
+@@ -351757,7 +351757,7 @@
+ # sent_id = 243-20141015-MONOGRAFIA_1-225
+ 1-2	Adicionou-se	_	_	_	_	_	_	_	_
+ 1	Adicionou	adicionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
++2	se	se	PRON	_	_	1	expl	O	_
+ 3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	volume	volume	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 5-6	da	_	_	_	_	_	_	_	_
+@@ -351879,7 +351879,7 @@
+ 23	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	22	obj	O	_
+ 24	,	,	PUNCT	_	_	27	punct	O	_
+ 25	para	para	SCONJ	_	_	27	mark	O	_
+-26	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	27	nsubj	O	_
++26	se	se	PRON	_	_	27	expl	O	_
+ 27	observar	observar	VERB	_	VerbForm=Inf	22	advcl	O	_
+ 28	posteriormente	posteriormente	ADV	_	_	27	advmod	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+@@ -352028,7 +352028,7 @@
+ 4	planejamento	planejamento	NOUN	_	Gender=Masc|Number=Sing	2	nsubj:pass	O	_
+ 5	experimental	experimental	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
+ 6	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	8	obl	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
++7	se	se	PRON	_	_	8	expl	O	_
+ 8	pudesse	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	acl:relcl	O	_
+ 9	varrer	varrer	VERB	_	VerbForm=Inf	8	xcomp	O	_
+ 10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -352879,7 +352879,7 @@
+ 28	como	como	SCONJ	_	_	29	mark	O	_
+ 29-30	pode-se	_	_	_	_	_	_	_	_
+ 29	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	O	_
+-30	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	31	nsubj	O	_
++30	se	se	PRON	_	_	29	expl	O	_
+ 31	ver	ver	VERB	_	VerbForm=Inf	29	xcomp	O	_
+ 32-33	no	_	_	_	_	_	_	_	_
+ 32	em	em	ADP	_	_	34	case	O	_
+@@ -352897,7 +352897,7 @@
+ 44	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	42	nmod	O	_
+ 45	,	,	PUNCT	_	_	48	punct	O	_
+ 46	já	já	ADV	_	_	48	advmod	O	_
+-47	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	48	nsubj	O	_
++47	se	se	PRON	_	_	48	expl	O	_
+ 48	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	advcl	O	_
+ 49	ver	ver	VERB	_	VerbForm=Inf	48	xcomp	O	_
+ 50	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	52	det	O	_
+@@ -352909,7 +352909,7 @@
+ 55	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	52	nmod	B=FLUIDO	_
+ 56	,	,	PUNCT	_	_	59	punct	O	_
+ 57	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	59	nsubj	O	_
+-58	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	59	nsubj	O	_
++58	se	se	PRON	_	_	59	expl	O	_
+ 59	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	advcl	O	_
+ 60	a	a	ADP	_	_	61	case	O	_
+ 61	fato	fato	NOUN	_	Gender=Masc|Number=Sing	59	obj	O	_
+@@ -353056,7 +353056,7 @@
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+ 20-21	pode-se	_	_	_	_	_	_	_	_
+ 20	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	O	_
++21	se	se	PRON	_	_	20	expl	O	_
+ 22	variar	variar	VERB	_	VerbForm=Inf	20	xcomp	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
+@@ -354322,7 +354322,7 @@
+ 21	de	de	ADP	_	_	22	case	I=FLUIDO	_
+ 22	produção	produção	NOUN	_	Gender=Fem|Number=Sing	20	nmod	I=FLUIDO	_
+ 23	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	25	obl	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	25	nsubj	O	_
++24	se	se	PRON	_	_	25	expl	O	_
+ 25	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+ 26	metais	metal	NOUN	_	Gender=Masc|Number=Plur	25	obj	O	_
+ 27	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
