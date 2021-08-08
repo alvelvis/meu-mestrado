@@ -1,0 +1,1852 @@
+commit 84ac80a4e62ed96e5343069a819f7293c7398868
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Aug 5 13:19:45 2021 -0300
+
+    Correção do metadado text de algumas sentenças
+    
+    Sentenças que foram acopladas durante a fase de sentenciação não tiveram o metadado text atualizado. Com esse pós-processamento, todos os tokens aparecem separados por espaço no metadado text, como vírgulas e pontos finais, mas o problema do acoplamento foi resolvido.
+    
+    Sentenças modificadas:
+    
+    241-20140227-MONOGRAFIA_0-17|241-20140227-MONOGRAFIA_0-19|241-20140227-MONOGRAFIA_0-102|241-20140227-MONOGRAFIA_0-115|241-20140227-MONOGRAFIA_0-116|241-20140227-MONOGRAFIA_0-156|241-20140227-MONOGRAFIA_0-195|241-20140227-MONOGRAFIA_0-255|398-20160721-MONOGRAFIA_0-72|398-20160721-MONOGRAFIA_0-74|398-20160721-MONOGRAFIA_0-76|398-20160721-MONOGRAFIA_0-78|398-20160721-MONOGRAFIA_0-80|398-20160721-MONOGRAFIA_0-83|398-20160721-MONOGRAFIA_0-89|398-20160721-MONOGRAFIA_0-91|398-20160721-MONOGRAFIA_0-93|398-20160721-MONOGRAFIA_0-97|398-20160721-MONOGRAFIA_0-103|398-20160721-MONOGRAFIA_0-127|398-20160721-MONOGRAFIA_0-153|398-20160721-MONOGRAFIA_0-173|398-20160721-MONOGRAFIA_0-206|398-20160721-MONOGRAFIA_0-211|398-20160721-MONOGRAFIA_0-392|398-20160721-MONOGRAFIA_0-405|24-20150122-MONOGRAFIA_0-36|24-20150122-MONOGRAFIA_0-37|24-20150122-MONOGRAFIA_0-109|24-20150122-MONOGRAFIA_0-202|24-20150122-MONOGRAFIA_0-276|24-20150122-MONOGRAFIA_0-297|24-20150122-MONOGRAFIA_0-308|24-20150122-MONOGRAFIA_0-354|24-20150122-MONOGRAFIA_0-376|24-20150122-MONOGRAFIA_0-380|24-20150122-MONOGRAFIA_0-594|161-20150810-MONOGRAFIA_0-103|161-20150810-MONOGRAFIA_0-123|161-20150810-MONOGRAFIA_0-234|161-20150810-MONOGRAFIA_0-235|161-20150810-MONOGRAFIA_0-286|161-20150810-MONOGRAFIA_0-288|161-20150810-MONOGRAFIA_0-290|161-20150810-MONOGRAFIA_0-291|161-20150810-MONOGRAFIA_0-320|161-20150810-MONOGRAFIA_0-342|161-20150810-MONOGRAFIA_0-409|161-20150810-MONOGRAFIA_0-410|161-20150810-MONOGRAFIA_0-435|161-20150810-MONOGRAFIA_0-442|161-20150810-MONOGRAFIA_0-447|161-20150810-MONOGRAFIA_0-463|161-20150810-MONOGRAFIA_0-465|161-20150810-MONOGRAFIA_0-505|161-20150810-MONOGRAFIA_0-527|161-20150810-MONOGRAFIA_0-558|161-20150810-MONOGRAFIA_0-596|161-20150810-MONOGRAFIA_0-597|161-20150810-MONOGRAFIA_0-598|161-20150810-MONOGRAFIA_0-609|161-20150810-MONOGRAFIA_0-613|161-20150810-MONOGRAFIA_0-614|161-20150810-MONOGRAFIA_0-616|161-20150810-MONOGRAFIA_0-618|161-20150810-MONOGRAFIA_0-619|161-20150810-MONOGRAFIA_0-633|161-20150810-MONOGRAFIA_0-641|161-20150810-MONOGRAFIA_0-650|161-20150810-MONOGRAFIA_0-670|161-20150810-MONOGRAFIA_0-780|161-20150810-MONOGRAFIA_0-800|161-20150810-MONOGRAFIA_0-814|161-20150810-MONOGRAFIA_0-820|161-20150810-MONOGRAFIA_0-879|334-20150521-MONOGRAFIA_0-36|334-20150521-MONOGRAFIA_0-47|334-20150521-MONOGRAFIA_0-164|334-20150521-MONOGRAFIA_0-165|334-20150521-MONOGRAFIA_0-190|334-20150521-MONOGRAFIA_0-227|334-20150521-MONOGRAFIA_0-266|334-20150521-MONOGRAFIA_0-267|334-20150521-MONOGRAFIA_0-423|334-20150521-MONOGRAFIA_0-424|334-20150521-MONOGRAFIA_0-441|334-20150521-MONOGRAFIA_0-453|334-20150521-MONOGRAFIA_0-503|334-20150521-MONOGRAFIA_0-536|334-20150521-MONOGRAFIA_0-715|202-20140404-MONOGRAFIA_0-41|202-20140404-MONOGRAFIA_0-43|202-20140404-MONOGRAFIA_0-44|258-20160602-TESEMSC_0-26|258-20160602-TESEMSC_0-98|258-20160602-TESEMSC_0-336|258-20160602-TESEMSC_0-343|258-20160602-TESEMSC_0-346|258-20160602-TESEMSC_0-360|258-20160602-TESEMSC_0-362|77-20141209-TESEMSC_0-21|77-20141209-TESEMSC_0-22|77-20141209-TESEMSC_0-186|77-20141209-TESEMSC_0-336|77-20141209-TESEMSC_0-446|279-20140530-MONOGRAFIA_0-23|279-20140530-MONOGRAFIA_0-109|279-20140530-MONOGRAFIA_0-126|279-20140530-MONOGRAFIA_0-145|279-20140530-MONOGRAFIA_0-148|279-20140530-MONOGRAFIA_0-152|279-20140530-MONOGRAFIA_0-215|279-20140530-MONOGRAFIA_0-219|279-20140530-MONOGRAFIA_0-224|279-20140530-MONOGRAFIA_0-243|279-20140530-MONOGRAFIA_0-246|271-20150810-MONOGRAFIA_0-173|271-20150810-MONOGRAFIA_0-179|271-20150810-MONOGRAFIA_0-306|271-20150810-MONOGRAFIA_0-323|271-20150810-MONOGRAFIA_0-333|271-20150810-MONOGRAFIA_0-500|271-20150810-MONOGRAFIA_0-501|391-20160914-MONOGRAFIA_0-97|391-20160914-MONOGRAFIA_0-109|391-20160914-MONOGRAFIA_0-138|391-20160914-MONOGRAFIA_0-184|391-20160914-MONOGRAFIA_0-187|25-20150123-MONOGRAFIA_0-4|25-20150123-MONOGRAFIA_0-19|25-20150123-MONOGRAFIA_0-20|25-20150123-MONOGRAFIA_0-22|25-20150123-MONOGRAFIA_0-24|25-20150123-MONOGRAFIA_0-25|25-20150123-MONOGRAFIA_0-27|25-20150123-MONOGRAFIA_0-28|25-20150123-MONOGRAFIA_0-31|25-20150123-MONOGRAFIA_0-275|25-20150123-MONOGRAFIA_0-276|25-20150123-MONOGRAFIA_0-277|25-20150123-MONOGRAFIA_0-392|20-20140904-TESEDSC_0-42|20-20140904-TESEDSC_0-43|20-20140904-TESEDSC_0-45|20-20140904-TESEDSC_0-48|20-20140904-TESEDSC_0-56|20-20140904-TESEDSC_0-312|20-20140904-TESEDSC_0-380|20-20140904-TESEDSC_0-629|20-20140904-TESEDSC_0-635|20-20140904-TESEDSC_0-1225|20-20140904-TESEDSC_0-1321|119-20141209-TESEMSC_0-33|119-20141209-TESEMSC_0-89|119-20141209-TESEMSC_0-91|119-20141209-TESEMSC_0-116|119-20141209-TESEMSC_0-133|119-20141209-TESEMSC_0-169|119-20141209-TESEMSC_0-170|119-20141209-TESEMSC_0-171|119-20141209-TESEMSC_0-174|119-20141209-TESEMSC_0-290|119-20141209-TESEMSC_0-293|119-20141209-TESEMSC_0-314|119-20141209-TESEMSC_0-345|119-20141209-TESEMSC_0-382|119-20141209-TESEMSC_0-383|119-20141209-TESEMSC_0-389|119-20141209-TESEMSC_0-390|119-20141209-TESEMSC_0-391|119-20141209-TESEMSC_0-407|119-20141209-TESEMSC_0-409|119-20141209-TESEMSC_0-419|119-20141209-TESEMSC_0-424|119-20141209-TESEMSC_0-434|119-20141209-TESEMSC_0-438|119-20141209-TESEMSC_0-463|119-20141209-TESEMSC_0-476|119-20141209-TESEMSC_0-477|119-20141209-TESEMSC_0-478|119-20141209-TESEMSC_0-590|240-20140220-MONOGRAFIA_0-29|240-20140220-MONOGRAFIA_0-35|240-20140220-MONOGRAFIA_0-147|240-20140220-MONOGRAFIA_0-171|240-20140220-MONOGRAFIA_0-175|240-20140220-MONOGRAFIA_0-176|240-20140220-MONOGRAFIA_0-289|240-20140220-MONOGRAFIA_0-302|240-20140220-MONOGRAFIA_0-304|240-20140220-MONOGRAFIA_0-305|240-20140220-MONOGRAFIA_0-306|240-20140220-MONOGRAFIA_0-307|240-20140220-MONOGRAFIA_0-382|240-20140220-MONOGRAFIA_0-399|411-20150702-MONOGRAFIA_0-70|411-20150702-MONOGRAFIA_0-138|411-20150702-MONOGRAFIA_0-161|411-20150702-MONOGRAFIA_0-166|411-20150702-MONOGRAFIA_0-206|411-20150702-MONOGRAFIA_0-242|411-20150702-MONOGRAFIA_0-244|411-20150702-MONOGRAFIA_0-261|243-20141015-MONOGRAFIA_1-14
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index f362ff8..3cc028d 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -11292,7 +11292,7 @@
+ 10	:	:	PUNCT	_	_	11	punct	O	_
+ 11	1..	1..	NUM	_	NumType=Card	0	root	O	_
+ 
+-# text = Formação do aluno na área de asfaltos;
++# text = Formação do aluno na área de asfaltos ; 2. - Realizar revisão bibliográfica sobre asfaltos e emulsões ; 3. - Preparar asfaltos modificados por vermiculita e avaliar os produtos obtidos fazendo uso dos seguintes ensaios : penetração , ponto de fulgor , ponto de amolecimento , ductilidade e viscosidade Saybolt-Furol . .
+ # sent_id = 241-20140227-MONOGRAFIA_0-17
+ 1	Formação	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2-3	do	_	_	_	_	_	_	_	_
+@@ -11358,7 +11358,7 @@
+ 1	3	3	NUM	_	NumType=Card	0	root	O	_
+ 2	»	»	PUNCT	_	_	1	punct	O	_
+ 
+-# text = CAPÍTULO 3
++# text = CAPÍTULO 3 REVISÃO
+ # sent_id = 241-20140227-MONOGRAFIA_0-19
+ 1	CAPÍTULO	capítulo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	3	3	NUM	_	NumType=Card	1	nummod	O	_
+@@ -13990,7 +13990,7 @@
+ 4	Emulsões	Emulsões	PROPN	_	Gender=Fem|Number=Plur	1	nmod	B=QUÍMICA	_
+ 5	Asfálticas	Asfálticas	PROPN	_	Number=Sing	4	flat:name	O	_
+ 
+-# text = Segundo Petrucci (1998), qualquer que seja o tipo, as emulsões asfálticas apresentam os seguintes benefícios:
++# text = Segundo Petrucci ( 1998 ) , qualquer que seja o tipo , as emulsões asfálticas apresentam os seguintes benefícios : • Possuem viscosidade bastante inferior a viscosidade do asfalto ( CAP ) , permitindo sua utilização em temperaturas baixas ; • Possibilitam o uso de equipamentos simples , pois dispensam sistemas de aquecimento e secador de agregados , reduzindo o consumo de energia ; • Eliminam riscos de incêndios e acidentes devido à possibilidade das emulsões serem utilizadas em temperaturas baixas , oferecendo maior segurança aos operários ; • Por serem aplicadas sem necessidade de aquecimento , há uma redução da poluição atmosférica , por emitirem menos voláteis , e , também evitam a oxidação do asfalto ; • São fáceis de manusear , facilitando o trabalho em campo ..
+ # sent_id = 241-20140227-MONOGRAFIA_0-102
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	Petrucci	Petrucci	PROPN	_	Gender=Masc|Number=Sing	16	obl	O	_
+@@ -14525,7 +14525,7 @@
+ 75	.	.	PUNCT	_	_	65	punct	O	_
+ 76	.	.	PUNCT	_	_	65	punct	O	_
+ 
+-# text = Essas propriedades tornam a vermiculita expandida um produto de larga aplicação nos seguintes setores:
++# text = Essas propriedades tornam a vermiculita expandida um produto de larga aplicação nos seguintes setores : • Construção Civil • Isolante térmico para lajes e paredes ; Agregado leve para concreto estrutural ; Proteção de impermeabilização em lajes de cobertura ; Miolo de divisórias e portas "corta-fogo" ; Câmaras a prova de fogo ; Forro decorativo e acústico , a prova de fogo . .
+ # sent_id = 241-20140227-MONOGRAFIA_0-115
+ 1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	O	_
+ 2	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	O	_
+@@ -14594,7 +14594,7 @@
+ 64	.	.	PUNCT	_	_	3	punct	O	_
+ 65	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Proteção interna dos recuperadores de calor a lenha Isolamento, quando necessário em hottes de lareiras e recuperadores. •
++# text = Proteção interna dos recuperadores de calor a lenha Isolamento , quando necessário em hottes de lareiras e recuperadores . • • • • • Proteção interna dos recuperadores de calor a lenha Isolamento , quando necessário em hottes de lareiras e recuperadores . • • Indústria • Tijolos e argamassas isolantes ; Isolante térmico e anticorrosivo ; Isolante térmico para construção naval ; Embalagens à prova de choques e fogo ; Elemento filtrante . • • • • • • Agricultura Agricultura Condicionador de solos ; • Veículo e contentor para nutrientes , inseticidas , herbicidas , fungicidas ; • Retentor de água em solos permeáveis ( arenosos ) ; Isolamento da superfície do solo preparado com sementeiras . • • CAPÍTULO 4 METODOLOGIA
+ # sent_id = 241-20140227-MONOGRAFIA_0-116
+ 1	Proteção	Proteção	NOUN	_	Gender=Fem|Number=Sing	0	root	O	eliminar
+ 2	interna	interno	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+@@ -16012,7 +16012,7 @@
+ 17	.	.	PUNCT	_	_	5	punct	O	_
+ 18	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Para preparar esta fase, serão adicionados à água (26,4%) o emulsificante (3%), o ácido (0,3%) e o aditivo (0,3%) e, em seguida a solução aquosa será aquecida em uma chapa aquecedora (60 °C).
++# text = Para preparar esta fase , serão adicionados à água ( 26,4 % ) o emulsificante ( 3 % ) , o ácido ( 0,3 % ) e o aditivo ( 0,3 % ) e , em seguida a solução aquosa será aquecida em uma chapa aquecedora ( 60 °C). 4-3-3-Obtenção da emulsão asfáltica modificada
+ # sent_id = 241-20140227-MONOGRAFIA_0-156
+ 1	Para	para	SCONJ	_	_	2	mark	O	_
+ 2	preparar	preparar	VERB	_	VerbForm=Inf	7	advcl	O	_
+@@ -17333,7 +17333,7 @@
+ 39	.	.	PUNCT	_	_	3	punct	O	_
+ 40	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = CAPÍTULO 5
++# text = CAPÍTULO 5 RESULTADOS E
+ # sent_id = 241-20140227-MONOGRAFIA_0-195
+ 1	CAPÍTULO	capítulo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	5	5	NUM	_	NumType=Card	3	nummod	O	_
+@@ -19203,7 +19203,7 @@
+ 30	.	.	PUNCT	_	_	1	punct	O	_
+ 31	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = CAPÍTULO 7
++# text = CAPÍTULO 7 REFERÊNCIAS
+ # sent_id = 241-20140227-MONOGRAFIA_0-255
+ 1	CAPÍTULO	capítulo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	7	7	NUM	_	NumType=Card	1	nummod	O	_
+@@ -35761,7 +35761,7 @@
+ 15	.	.	PUNCT	_	_	5	punct	O	_
+ 16	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Atualmente encontram-se patentes registradas como as citadas abaixo:
++# text = Atualmente encontram-se patentes registradas como as citadas abaixo :  Electrical Heating of Mineral Well Deposits Using Downhole Impedance Transformation Networks . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-72
+ 1	Atualmente	atualmente	ADV	_	_	2	advmod	O	sentenciação
+ 2-3	encontram-se	_	_	_	_	_	_	_	_
+@@ -35794,7 +35794,7 @@
+ 1	US	US	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	5621844	5621844	NUM	_	NumType=Card	1	nummod	O	_
+ 
+-# text = A
++# text = A  Method And Apparatus For Recovery Of Minerals From Sub-Surface Formations Using Electricity . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-74
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2			PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -35818,7 +35818,7 @@
+ 1	US	US	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	3547193	3547193	NUM	_	NumType=Card	1	nummod	O	_
+ 
+-# text = A
++# text = A  RF Applicator For In Situ Heating . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-76
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2			PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -35836,7 +35836,7 @@
+ 1	US	US	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	4508168	4508168	NUM	_	NumType=Card	1	nummod	O	_
+ 
+-# text = A
++# text = A  Single Well Stimulation For The Recovery Of Liquid Hydrocarbons From Subsurface Formations . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-78
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2			PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -35860,7 +35860,7 @@
+ 1	US	US	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	4524827	4524827	NUM	_	NumType=Card	1	nummod	O	_
+ 
+-# text = A
++# text = A  Heating System For Rathole Oil Well. .
+ # sent_id = 398-20160721-MONOGRAFIA_0-80
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2			PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -35890,7 +35890,7 @@
+ 9	US	US	PROPN	_	Number=Sing	2	flat:name	O	_
+ 10	5099918	5099918	PROPN	_	Number=Sing	2	flat:name	O	_
+ 
+-# text = A
++# text = A  Radiofrequency Ground Heating System For Soil Remediation . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-83
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2			PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -36043,7 +36043,7 @@
+ 51	.	.	PUNCT	_	_	5	punct	O	_
+ 52	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Ainda conforme Manichand (2002), esta técnica pode se dar em três maneiras diferentes:
++# text = Ainda conforme Manichand ( 2002 ) , esta técnica pode se dar em três maneiras diferentes :  Por condução : é baseado pelo efeito Joule , conhecido também como resistivo , onde se relaciona diretamente com as partículas do meio em desequilíbrio elétrico . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-89
+ 1	Ainda	ainda	ADV	_	_	3	advmod	O	_
+ 2	conforme	conforme	ADP	_	_	3	case	O	_
+@@ -36122,7 +36122,7 @@
+ 21	.	.	PUNCT	_	_	4	punct	O	_
+ 22	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Fonte: Adaptado de Da Mata (1993)
++# text = Fonte : Adaptado de Da Mata ( 1993 ) 
+ # sent_id = 398-20160721-MONOGRAFIA_0-91
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -36185,7 +36185,7 @@
+ 45	.	.	PUNCT	_	_	11	punct	O	_
+ 46	.	.	PUNCT	_	_	11	punct	O	_
+ 
+-# text = Fonte: Adaptado de Da Mata (1993)
++# text = Fonte : Adaptado de Da Mata ( 1993 ) 
+ # sent_id = 398-20160721-MONOGRAFIA_0-93
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -36269,7 +36269,7 @@
+ 11	.	.	PUNCT	_	_	5	punct	O	_
+ 12	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Fonte: Adaptado de Da Mata (1993)
++# text = Fonte : Adaptado de Da Mata ( 1993 ) 
+ # sent_id = 398-20160721-MONOGRAFIA_0-97
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -36483,7 +36483,7 @@
+ 52	.	.	PUNCT	_	_	13	punct	O	_
+ 53	.	.	PUNCT	_	_	13	punct	O	_
+ 
+-# text = Segundo Manichand (2002), as vantagens do aquecimento eletromagnético em relação aos métodos convencionais de recuperação térmica são:
++# text = Segundo Manichand ( 2002 ) , as vantagens do aquecimento eletromagnético em relação aos métodos convencionais de recuperação térmica são :  É aplicado sem a injeção de qualquer outro fluido no reservatório , evitando o gasto energético e perda de fluido aquecido para zonas de falha ou de alta permeabilidade .  Aplica-se em reservatórios que apresentem problemas de inchamento de argilas em presença de água ou vapor . 
+ # sent_id = 398-20160721-MONOGRAFIA_0-103
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	Manichand	Manichand	PROPN	_	Gender=Masc|Number=Sing	26	obl	O	_
+@@ -37169,7 +37169,7 @@
+ # sent_id = 398-20160721-MONOGRAFIA_0-126
+ 1	Z=V+H+07+C+D+EYF+G	Z=V+H+07+C+D+EYF+G	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+-# text = (3) Onde:
++# text = ( 3 ) Onde : e São constantes em função da viscosidade do fluido . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-127
+ 1	(	(	PUNCT	_	_	2	punct	O	_
+ 2	3	3	NUM	_	NumType=Card	0	root	O	_
+@@ -37918,7 +37918,7 @@
+ 19	.	.	PUNCT	_	_	9	punct	O	_
+ 20	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = Outra equação fundamental é a equação da continuidade descrita pela Equação 8. (8)
++# text = Outra equação fundamental é a equação da continuidade descrita pela Equação 8 . ( 8 ) 2.5.2 Relações Constitutivas
+ # sent_id = 398-20160721-MONOGRAFIA_0-153
+ 1	Outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	O	_
+ 2	equação	equação	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
+@@ -38293,7 +38293,7 @@
+ 26	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	21	conj	O	_
+ 27	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Os grupos são:
++# text = Os grupos são :  Materiais não homogéneos : são aqueles em que os parâmetros constitutivos variam com o espaço de coordenadas de modo a que diferentes propriedades de campo prevalecem em diferentes partes da estrutura do material .  Materiais anisotrópicos : as relações de campo em qualquer ponto diferente para diferentes direções de propagação . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-173
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	O	_
+@@ -39301,7 +39301,7 @@
+ 62	.	.	PUNCT	_	_	7	punct	O	_
+ 63	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Para isto, este estudo foi dividido em duas partes:
++# text = Para isto , este estudo foi dividido em duas partes :  Teórica : Estudo teórico sobre o aquecimento eletromagnético , solo , poços de petróleo da região nordeste do Brasil , viscosidade , temperatura e dinâmica dos fluidos . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-206
+ 1	Para	para	ADP	_	_	2	case	O	_
+ 2	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obl	O	_
+@@ -39484,7 +39484,7 @@
+ 20	.	.	PUNCT	_	_	9	punct	O	_
+ 21	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = Esta seção apresenta dicas gerais sobre modelagem que levaram a decidir o que incluir neste estudo e que pode ser feito para minimizar o tamanho de um problema.  Qual é o propósito do modelo?
++# text = Esta seção apresenta dicas gerais sobre modelagem que levaram a decidir o que incluir neste estudo e que pode ser feito para minimizar o tamanho de um problema .  Qual é o propósito do modelo ?  Verificar lei da conservação da energia na transformação de energia magnética em energia térmica .  Quais as informações se deseja extrair a partir do modelo ?  Selecionar a dimensão espacial para a geometria do modelo .  Simplificar o geometria usando as condições de contorno .  Aplicar fontes eletromagnéticas  Selecionar um tipo de estudo
+ # sent_id = 398-20160721-MONOGRAFIA_0-211
+ 1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	sentenciação
+ 2	seção	seção	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+@@ -44007,7 +44007,7 @@
+ 8	1500	1500	NUM	_	NumType=Card	9	nummod	O	_
+ 9	Hz	hz	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 
+-# text = Para este teste, o sistema não é eficiente, é possível verificar no Gráfico 20 que houve crescimento de apenas 1,8 ºC.
++# text = Para este teste , o sistema não é eficiente , é possível verificar no Gráfico 20 que houve crescimento de apenas 1,8 ºC. Gráfico 20 : Água , óleo e parafina - Duto 3D 500
+ # sent_id = 398-20160721-MONOGRAFIA_0-392
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
+@@ -44253,7 +44253,7 @@
+ 8	500	500	NUM	_	NumType=Card	9	nummod	O	_
+ 9	Hz	hz	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 
+-# text = No Gráfico 23, o crescimento da temperatura da mistura alcançou os 40 ºC para o óleo, no entanto a parafina ainda está em torno dos 38 ºC.
++# text = No Gráfico 23 , o crescimento da temperatura da mistura alcançou os 40 ºC para o óleo , no entanto a parafina ainda está em torno dos 38 ºC. Gráfico 23 : Água , óleo e parafina - Duto 3D 2000
+ # sent_id = 398-20160721-MONOGRAFIA_0-405
+ 1-2	No	_	_	_	_	_	_	_	sentenciação
+ 1	Em	em	ADP	_	_	3	case	O	sentenciação
+@@ -45894,7 +45894,7 @@
+ 16	segura	seguro	ADJ	_	Gender=Fem|Number=Sing	14	conj	O	_
+ 17	..	..	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Assim é desejável que o fluido apresente as seguintes características:
++# text = Assim é desejável que o fluido apresente as seguintes características :  ser estável quimicamente ;  estabilizar as paredes do poço , mecânica e quimicamente ;  facilitar a separação dos cascalhos na superfície ;  manter os sólidos em suspensão durante a interrupção da perfuração ;  não provocar danos às rochas produtoras ;  apresentar baixo grau de corrosão e de abrasão em relação à coluna de perfuração e demais sistemas de circulação ;  facilitar as interpretações geológicas do material retirado do poço ;  apresentar custo compatível com a operação . .
+ # sent_id = 24-20150122-MONOGRAFIA_0-36
+ 1	Assim	assim	ADV	_	_	3	advmod	O	_
+ 2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	O	_
+@@ -46010,7 +46010,7 @@
+ 104	.	.	PUNCT	_	_	97	punct	O	_
+ 105	.	.	PUNCT	_	_	84	punct	O	_
+ 
+-# text = Os fluidos de perfuração possuem, basicamente, as seguintes funções (também representadas na figura II.1): limpar o fundo do poço dos cascalhos gerados pela broca e transporta-
++# text = Os fluidos de perfuração possuem , basicamente , as seguintes funções ( também representadas na figura II.1 ) : limpar o fundo do poço dos cascalhos gerados pela broca e transporta-  los até a superfície ;  exercer pressão hidrostática sobre as formações , de modo a evitar o influxo de fluidos indesejáveis como água e gás ( kick ) e estabilizar as paredes do poço ; resfriar e lubrificar a coluna de perfuração e a broca . 
+ # sent_id = 24-20150122-MONOGRAFIA_0-37
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	B=FLUIDO	_
+@@ -48383,7 +48383,7 @@
+ 13	.	.	PUNCT	_	_	1	punct	O	_
+ 14	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = - Pluma de descarte estreita
++# text = - Pluma de descarte estreita - Tendência ao acúmulo de cascalho ( dependendo da situação podem se formar pilhas submarinas )
+ # sent_id = 24-20150122-MONOGRAFIA_0-109
+ 1	-	-	PUNCT	_	_	2	punct	O	_
+ 2	Pluma	pluma	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -51639,7 +51639,7 @@
+ 60	.	.	PUNCT	_	_	9	punct	O	_
+ 61	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = A fórmula da cela unitária é Al4Si4O10(OH)8 e a composição percentual : SiO2 -
++# text = A fórmula da cela unitária é Al4Si4O10(OH )8 e a composição percentual : SiO2 - 46,54 % ; Al2O3 – 39,50 % ; H2O – 13,96 % ..
+ # sent_id = 24-20150122-MONOGRAFIA_0-202
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	fórmula	fórmula	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+@@ -54640,7 +54640,7 @@
+ 10	.	.	PUNCT	_	_	4	punct	O	_
+ 11	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = O valor médio foi determinado utilizando-se a Equação III.1, para o desvio padrão (s) utilizou-se a Equação III.2 e para o erro padrão (ε) a Equação III.3. (Σ de i=1 até n) / n
++# text = O valor médio foi determinado utilizando-se a Equação III.1 , para o desvio padrão ( s ) utilizou-se a Equação III.2 e para o erro padrão ( ε ) a Equação III.3 . ( Σ de i=1 até n ) / n ε = s/n1/2
+ # sent_id = 24-20150122-MONOGRAFIA_0-276
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	valor	valor	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
+@@ -55218,7 +55218,7 @@
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 25	250ºC..	250ºC..	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	22	obl	O	_
+ 
+-# text = O aparelho utilizado foi um difratômetro SIEMENS
++# text = O aparelho utilizado foi um difratômetro SIEMENS D5000 , usando-se radiação CuKα nas condições de 40kV e 30 mA de filamento . .
+ # sent_id = 24-20150122-MONOGRAFIA_0-297
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	aparelho	aparelho	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	O	_
+@@ -55485,7 +55485,7 @@
+ 28	.	.	PUNCT	_	_	4	punct	O	_
+ 29	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Essa análise foi realizada em um espectrofotômetro modelo 46
++# text = Essa análise foi realizada em um espectrofotômetro modelo 46 M350 Double Beam UV - Visivel Spectrophotometer ( Figura III.8 ) do Laboratório de Análise Ambiental e Mineral – LAM / IQ-UFRJ . .
+ # sent_id = 24-20150122-MONOGRAFIA_0-308
+ 1	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	_
+ 2	análise	análise	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	_
+@@ -56575,7 +56575,7 @@
+ 11	.	.	PUNCT	_	_	7	punct	O	_
+ 12	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = O modelo do
++# text = O modelo do aparelho usado foi PERKIN ELMER ATOMIC ABSORPTION SPECTROMETER
+ # sent_id = 24-20150122-MONOGRAFIA_0-354
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -56996,7 +56996,7 @@
+ 7	.	.	PUNCT	_	_	3	punct	O	_
+ 8	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = B = Absorbância C = Concentração (mol/100mL) da solução não diluída = [(A+0,0061)/70076]xB D = nº de mol trocado = 1,31.10-3 mol/L (branco) – C.
++# text = B = Absorbância C = Concentração ( mol/100mL ) da solução não diluída = [ (A+0,0061)/70076]xB D = nº de mol trocado = 1,31.10-3 mol/L ( branco ) – C. E = Capacidade de troca de cátions ( meq/100g ) = ( D x 40)*1000
+ # sent_id = 24-20150122-MONOGRAFIA_0-376
+ 1	B	B	PROPN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	=	=	PUNCT	_	_	3	punct	O	_
+@@ -57089,7 +57089,7 @@
+ 14	.	.	PUNCT	_	_	5	punct	O	_
+ 15	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Os
++# text = Os resultados estão na Tabela IV.7..
+ # sent_id = 24-20150122-MONOGRAFIA_0-380
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	O	_
+@@ -62742,7 +62742,7 @@
+ 10	5,46	5,46	NUM	_	NumType=Card	0	root	O	_
+ 11	..	..	PUNCT	_	_	10	punct	O	_
+ 
+-# text = Quadro V.1-Abreviaturas das Tabelas V.7 e V.8 .
++# text = Quadro V.1-Abreviaturas das Tabelas V.7 e V.8 . V.4.2 – Ensaio de aderência das argilas ao metal utilizando o parâmetro massa
+ # sent_id = 24-20150122-MONOGRAFIA_0-594
+ 1	Quadro	Quadro	PROPN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	V.1-Abreviaturas	V.1-Abreviaturas	NUM	_	NumType=Card	1	nummod	O	_
+@@ -81318,7 +81318,7 @@
+ 20	.	.	PUNCT	_	_	10	punct	O	_
+ 21	.	.	PUNCT	_	_	10	punct	O	_
+ 
+-# text = As diferentes tecnologias de adsorção se diferenciam entre si pelo modo como são regenerados os sólidos adsorventes, as tecnologias estão descritas a seguir (Gupta, 2003):
++# text = As diferentes tecnologias de adsorção se diferenciam entre si pelo modo como são regenerados os sólidos adsorventes , as tecnologias estão descritas a seguir ( Gupta , 2003 ) :  Pressure Swing Adsorption ( PSA ) – o adsorvente é regenerado pela redução de pressão  Temperature Swing Adsorption ( TSA ) - o adsorvente é regenerado pelo aumento da temperatura  Electrical Swing Adsorption ( ESA ) – o adsorvente é regenerado através utilizando uma corrente elétrica de baixa voltagem que passa pelos sólidos . .
+ # sent_id = 161-20150810-MONOGRAFIA_0-103
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	O	sentenciação
+ 2	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
+@@ -81914,7 +81914,7 @@
+ 30	.	.	PUNCT	_	_	7	punct	O	_
+ 31	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Os meios de transporte são basicamente:
++# text = Os meios de transporte são basicamente :  Dutos específicos , chamados de Carbodutos ou até mesmo Gasodutos
+ # sent_id = 161-20150810-MONOGRAFIA_0-123
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	meios	meio	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	O	_
+@@ -85224,7 +85224,7 @@
+ 27	.	.	PUNCT	_	_	12	punct	O	_
+ 28	.	.	PUNCT	_	_	12	punct	O	_
+ 
+-# text = Após uma pesquisa detalhada dos grandes complexos indústrias do Rio de Janeiro, foram escolhidos dois complexos com grandes emissões anuais de gás carbônico:
++# text = Após uma pesquisa detalhada dos grandes complexos indústrias do Rio de Janeiro , foram escolhidos dois complexos com grandes emissões anuais de gás carbônico : 
+ # sent_id = 161-20150810-MONOGRAFIA_0-234
+ 1	Após	após	ADP	_	_	3	case	O	_
+ 2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+@@ -85257,7 +85257,7 @@
+ 27	:	:	PUNCT	_	_	28	punct	O	_
+ 28			PROPN	_	Gender=Masc|Number=Sing	22	appos	O	_
+ 
+-# text = A usina siderúrgica Presidente Vargas da Companhia Siderúrgica Nacional (CSN), localizada no município de Volta Redonda
++# text = A usina siderúrgica Presidente Vargas da Companhia Siderúrgica Nacional ( CSN ) , localizada no município de Volta Redonda 
+ # sent_id = 161-20150810-MONOGRAFIA_0-235
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	usina	usina	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -86543,7 +86543,7 @@
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	flat:name	O	_
+ 6	Usinas	Usinas	PROPN	_	Number=Sing	3	flat:name	O	_
+ 
+-# text = As usinas de aço do mundo inteiro classificam-se segundo o seu processo produtivo: Integradas – operam as três fases básicas: redução, refino e laminação; participam de todo o processo produtivo e produzem aço. 
++# text = As usinas de aço do mundo inteiro classificam-se segundo o seu processo produtivo : Integradas – operam as três fases básicas : redução , refino e laminação ; participam de todo o processo produtivo e produzem aço .   Semi-integradas - operam duas fases : refino e laminação . .
+ # sent_id = 161-20150810-MONOGRAFIA_0-286
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	usinas	usina	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	O	_
+@@ -86635,7 +86635,7 @@
+ 29	.	.	PUNCT	_	_	3	punct	O	_
+ 30	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Além disso, em função dos produtos que preponderam em suas linhas de produção, as usinas também podem ser assim classificadas:
++# text = Além disso , em função dos produtos que preponderam em suas linhas de produção , as usinas também podem ser assim classificadas :  De semi-acabados ( placas , blocos e tarugos ) 
+ # sent_id = 161-20150810-MONOGRAFIA_0-288
+ 1	Além	além	ADV	_	_	21	advmod	O	MWEPOS=ADV
+ 2-3	disso	_	_	_	_	_	_	_	_
+@@ -86689,7 +86689,7 @@
+ 9	)	)	PUNCT	_	_	6	punct	O	_
+ 10			PUNCT	_	_	2	punct	O	_
+ 
+-# text = De planos aços especiais / ligados (chapas e bobinas)
++# text = De planos aços especiais / ligados ( chapas e bobinas ) 
+ # sent_id = 161-20150810-MONOGRAFIA_0-290
+ 1	De	de	ADP	_	_	2	case	O	_
+ 2	planos	plano	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+@@ -86704,7 +86704,7 @@
+ 11	)	)	PUNCT	_	_	8	punct	O	_
+ 12			PUNCT	_	_	2	punct	O	_
+ 
+-# text = De longos aços carbono (barras, perfis, fio máquina, vergalhões, arames e tubos sem costura)
++# text = De longos aços carbono ( barras , perfis , fio máquina , vergalhões , arames e tubos sem costura ) 
+ # sent_id = 161-20150810-MONOGRAFIA_0-291
+ 1	De	de	ADP	_	_	3	case	O	_
+ 2	longos	longo	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+@@ -87669,7 +87669,7 @@
+ 37	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	35	obj	B=QUÍMICA	_
+ 38	..	..	PUNCT	_	_	9	punct	O	_
+ 
+-# text = Outras opções que podem ser utilizadas para a captura do CO2, além da utilização de solventes físicos, são (Danloy et al., 2009):
++# text = Outras opções que podem ser utilizadas para a captura do CO2 , além da utilização de solventes físicos , são ( Danloy et al. , 2009 ) :  Adsorvente sólido específico do tipo vacuum pressure swing adsorption ( VPSA ) ;  Absorção química , utilizando o solvente químico MEA – não recomendável pela alta demanda de energia em forma de calor ;  Membranas seletivas
+ # sent_id = 161-20150810-MONOGRAFIA_0-320
+ 1	Outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	2	det	O	_
+ 2	opções	opção	NOUN	_	Gender=Fem|Number=Plur	24	nsubj	O	_
+@@ -88467,7 +88467,7 @@
+ 16	CO	CO	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=QUÍMICA	_
+ 17	,	,	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Emissão de CO, capturado = 8.371.066 t CO, x 0,9 = 7.533.960 t CO,
++# text = Emissão de CO , capturado = 8.371.066 t CO , x 0,9 = 7.533.960 t CO , 5.1.3 . Companhia Siderúrgica do Atlântico ( CSA )
+ # sent_id = 161-20150810-MONOGRAFIA_0-342
+ 1	Emissão	emissão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	eliminar
+ 2	de	de	ADP	_	_	3	case	O	_
+@@ -90741,7 +90741,7 @@
+ 13	:	:	PUNCT	_	_	14	punct	O	_
+ 14	Carbodutos	Carbodutos	PROPN	_	Gender=Masc|Number=Sing	12	appos	O	_
+ 
+-# text = Onshore:
++# text = Onshore :  Trecho da CSN até a estação de recompressão da REDUC ( CSN - REDUC )  Trecho da CSA até a estação de recompressão da REDUC ( CSA - REDUC )  Trecho da estação de recompressão da REDUC até o terminal Cabiúnas ( REDUC – Cabiúnas ) o C.  Trecho do terminal Cabiúnas até a Barra do Furado ( Cabiúnas - B. Furado )
+ # sent_id = 161-20150810-MONOGRAFIA_0-409
+ 1	Onshore	onshore	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	4	punct	O	_
+@@ -90829,7 +90829,7 @@
+ 76	Furado	Furado	PROPN	_	Number=Sing	73	flat:name	O	_
+ 77	)	)	PUNCT	_	_	73	punct	O	_
+ 
+-# text = Carbodutos Offshore:
++# text = Carbodutos Offshore :  Trecho da Barra do Furado até a plataforma fixa PNA-1 ( B. Furado – PNA 1 )  Trecho da plataforma fixa PNA-1 até a plataforma FPSO P-43 ( PNA-1 – P-43 )  Trecho da plataforma fixa PNA-1 até a plataforma FPSO P-35 ( PNA-1 – P-35 )  Trecho da plataforma do tipo FPSO P-35 até a plataforma semissubmersível P-19 ( P-35 – P-19 )  Trecho da plataforma do tipo FPSO P-35 até a plataforma semissubmersível P-26 ( P-35 – P-26 )  Trecho da plataforma do tipo FPSO P-35 até a plataforma FPSO P-37 ( P-35 – P-37 )
+ # sent_id = 161-20150810-MONOGRAFIA_0-410
+ 1	Carbodutos	Carbodutos	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	Offshore	Offshore	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -91583,7 +91583,7 @@
+ 12	:	:	PUNCT	_	_	13	punct	O	_
+ 13	Carbodutos	Carbodutos	PROPN	_	Gender=Masc|Number=Sing	10	appos	O	_
+ 
+-# text = Onshore:
++# text = Onshore :  CSN – REDUC : 90,33 km  CSA – REDUC : 66,25 km  REDUC – Cabíunas : 153,18 km  Cabiúnas - B. Furado : 87,84 km
+ # sent_id = 161-20150810-MONOGRAFIA_0-435
+ 1	Onshore	Onshore	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	4	punct	O	_
+@@ -91753,7 +91753,7 @@
+ 28	.	.	PUNCT	_	_	7	punct	O	_
+ 29	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Para o cálculo do diâmetro do carboduto, foi utilizada a seguinte equação (IEA, 2005): Onde:
++# text = Para o cálculo do diâmetro do carboduto , foi utilizada a seguinte equação ( IEA , 2005 ) : Onde :  D = diâmetro do carboduto em polegadas ( pol )  F = fluxo de massa que passa pelo carboduto ( kg/s )  V = velocidade do transporte ( m/s )  Ρ = densidade do CO2 ( kg/m3 )
+ # sent_id = 161-20150810-MONOGRAFIA_0-442
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+@@ -91968,7 +91968,7 @@
+ 13	:	:	PUNCT	_	_	14	punct	O	_
+ 14	Carbodutos	Carbodutos	PROPN	_	Gender=Masc|Number=Sing	12	appos	O	_
+ 
+-# text = Onshore: o C:
++# text = Onshore : o C:  Cabiúnas - B. Furado : 24 pol Carbodutos
+ # sent_id = 161-20150810-MONOGRAFIA_0-447
+ 1	Onshore	Onshore	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	4	punct	O	_
+@@ -92468,7 +92468,7 @@
+ 33	.	.	PUNCT	_	_	17	punct	O	_
+ 34	.	.	PUNCT	_	_	17	punct	O	_
+ 
+-# text = Portanto, os valores médios de instalação são:
++# text = Portanto , os valores médios de instalação são :  Onshore - 0,88 milhões de dólares/km(extensão ) / m( diâmetro )  Offshore - 1,15 milhões de dólares/km(extensão ) / m( diâmetro )
+ # sent_id = 161-20150810-MONOGRAFIA_0-463
+ 1	Portanto	portanto	ADV	_	_	10	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -92539,7 +92539,7 @@
+ 28	.	.	PUNCT	_	_	17	punct	O	_
+ 29	.	.	PUNCT	_	_	17	punct	O	_
+ 
+-# text = Para converter o valor foi utilizada a seguinte equação: O custo do investimento passa a ser:
++# text = Para converter o valor foi utilizada a seguinte equação : O custo do investimento passa a ser :  Onshore – 22.352 dólares/km(extensão ) / pol( diâmetro )  Offshore – 29.210 dólares/ km(extensão ) / pol( diâmetro )
+ # sent_id = 161-20150810-MONOGRAFIA_0-465
+ 1	Para	para	SCONJ	_	_	2	mark	O	eliminar
+ 2	converter	converter	VERB	_	VerbForm=Inf	6	advcl	O	_
+@@ -93979,7 +93979,7 @@
+ 31	.	.	PUNCT	_	_	12	punct	O	_
+ 32	.	.	PUNCT	_	_	12	punct	O	_
+ 
+-# text = Fonte: Elaboração própria com dados da ANP
++# text = Fonte : Elaboração própria com dados da ANP 5.3.1..
+ # sent_id = 161-20150810-MONOGRAFIA_0-505
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -94634,7 +94634,7 @@
+ 14	.	.	PUNCT	_	_	2	punct	O	_
+ 15	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = Fonte:adaptado de ANP, 2011
++# text = Fonte : adaptado de ANP , 2011 5.3.2..
+ # sent_id = 161-20150810-MONOGRAFIA_0-527
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	sentenciação
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -95779,7 +95779,7 @@
+ 16	por	por	ADP	_	_	17	case	O	_
+ 17	poço	poço	NOUN	_	Gender=Masc|Number=Sing	15	obl:agent	O	_
+ 
+-# text = Para calcular o número de poços necessários para injetar o gás carbônico dentro dos reservatórios de Barracuda e Marlim, serão necessários os seguintes dados iniciais:
++# text = Para calcular o número de poços necessários para injetar o gás carbônico dentro dos reservatórios de Barracuda e Marlim , serão necessários os seguintes dados iniciais :  Pressão atual do reservatório , dada em mega Pascal ( MPa )  Produção acumulada de óleo do reservatório , dada em milhões de barris ( MMboe )  Volume original de óleo no reservatório – Original Oil in Place , dada em milhões de barris ( MMboe )  Espessura do reservatório , dada em metros ( m )  Permeabilidade do reservatório , dada em miliDarcy ( mD )  Temperatura do reservatório , dada em graus Celsius ( °C )  Pressão de injeção , dada em mega Pascal ( MPa )  Fluxo de massa de CO2 que será injetado , dada em toneladas ( t )
+ # sent_id = 161-20150810-MONOGRAFIA_0-558
+ 1	Para	para	SCONJ	_	_	2	mark	O	eliminar
+ 2	calcular	calcular	VERB	_	VerbForm=Inf	23	advcl	O	_
+@@ -97340,7 +97340,7 @@
+ 70	em	em	ADP	_	_	71	case	O	_
+ 71	Marlim	Marlim	PROPN	_	Gender=Masc|Number=Sing	69	nmod	B=CAMPO	_
+ 
+-# text = Vazão mínima de ; = 11.658,71 + 5 =2.331,74tCO,/dia um poço em Barracuda
++# text = Vazão mínima de ; = 11.658,71 + 5 = 2.331,74tCO , / dia um poço em Barracuda ..
+ # sent_id = 161-20150810-MONOGRAFIA_0-596
+ 1	Vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	mínima	pequeno	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+@@ -97361,7 +97361,7 @@
+ 17	Barracuda	Barracuda	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=CAMPO	_
+ 18	..	..	PUNCT	_	_	1	punct	O	_
+ 
+-# text = , número de (tco2/dia) — poços fim
++# text = , número de ( tco2/dia ) — poços fim Vazão máxima dê = 22 0,909 + 10=3.894tCO , / dia um poço em Marlim
+ # sent_id = 161-20150810-MONOGRAFIA_0-597
+ 1	,	,	PUNCT	_	_	2	punct	O	sentenciação
+ 2	número	número	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+@@ -97388,7 +97388,7 @@
+ 23	em	em	ADP	_	_	24	case	O	_
+ 24	Marlim	Marlim	PROPN	_	Gender=Masc|Number=Sing	22	nmod	B=CAMPO	_
+ 
+-# text = Vazão máxima de :
++# text = Vazão máxima de : = 19.470,05 + 5 =3.894tCO , / dia
+ # sent_id = 161-20150810-MONOGRAFIA_0-598
+ 1	Vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	eliminar
+ 2	máxima	grande	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+@@ -97712,7 +97712,7 @@
+ 15	+	+	PUNCT	_	_	16	punct	O	_
+ 16	6,3	6,3	NUM	_	NumType=Card	1	appos	O	_
+ 
+-# text = Logo, o OOIP ,em metros cúbicos dos campos, será:
++# text = Logo , o OOIP , em metros cúbicos dos campos , será : OOIP de Marlim = 8100 + 6,3 = 1.287,77 ( 10º m? )
+ # sent_id = 161-20150810-MONOGRAFIA_0-609
+ 1	Logo	logo	ADV	_	_	15	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -97831,7 +97831,7 @@
+ 23	100	100	NUM	_	NumType=Card	19	conj	O	_
+ 24	)	)	PUNCT	_	_	19	punct	O	_
+ 
+-# text = Onde:
++# text = Onde :  Voil = Volume recuperável de óleo em condições padrões ( 106 m3 )  OOIP = Volume original de óleo in place ( 106 m3 )  API = Grau API do óleo ( 0 )
+ # sent_id = 161-20150810-MONOGRAFIA_0-613
+ 1	Onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	3	parataxis	O	sentenciação
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -97875,7 +97875,7 @@
+ 39	0	0	NUM	_	NumType=Card	33	appos	O	_
+ 40	)	)	PUNCT	_	_	39	punct	O	_
+ 
+-# text = Os volumes recuperáveis de óleo dos campos serão, respectivamente: É E 20+5
++# text = Os volumes recuperáveis de óleo dos campos serão , respectivamente : É E 20+5 Voil de Marlim = 1.287,77 x ( o ) = 321,94 ( 10º m ? ) | 25+5
+ # sent_id = 161-20150810-MONOGRAFIA_0-614
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	volumes	volume	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	O	_
+@@ -97931,7 +97931,7 @@
+ 15	?	?	PUNCT	_	_	1	punct	O	_
+ 16	)	)	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Com o Voil calculado, será possível calcular a quantidade de CO2 que pode ser armazenado nesse campo, utilizando o fator volume-formação de óleo e a densidade do CO2 nas condições do reservatório, demonstrado na equação (IEA, 2005): Onde:
++# text = Com o Voil calculado , será possível calcular a quantidade de CO2 que pode ser armazenado nesse campo , utilizando o fator volume-formação de óleo e a densidade do CO2 nas condições do reservatório , demonstrado na equação ( IEA , 2005 ) : Onde :  VCO2 = Capacidade de armazenamento de CO2 ( milhões de toneladas )  Voil = Volume recuperável de óleo em condições padrões ( 106 m3 )  Bo = Fator Volume-Formação do óleo  ρ CO2 = Densidade do CO2 nas condições do reservatório ( kg/m3 )
+ # sent_id = 161-20150810-MONOGRAFIA_0-616
+ 1	Com	com	ADP	_	_	3	case	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+@@ -98073,7 +98073,7 @@
+ 22	.	.	PUNCT	_	_	14	punct	O	_
+ 23	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = A densidade do CO2 no reservatório pode ser obtida através do seguinte gráfico: Através do gráfico e dos valores de pressão (calculados no item anterior) e temperatura, foi calculado a densidade do CO2 no reservatório:
++# text = A densidade do CO2 no reservatório pode ser obtida através do seguinte gráfico : Através do gráfico e dos valores de pressão ( calculados no item anterior ) e temperatura , foi calculado a densidade do CO2 no reservatório :  Pressão e temperatura de Marlim = 20,8 MPa e 650C ∴ ρ CO2 = 780 kg / m3  Pressão e temperatura de Barracuda = 23,8 MPa e 720C ∴ ρ CO2 = 800 kg / m3
+ # sent_id = 161-20150810-MONOGRAFIA_0-618
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
+@@ -98170,7 +98170,7 @@
+ 85	/	/	ADP	_	_	86	case	O	_
+ 86	m3	m3	NUM	_	NumType=Card	84	nummod	O	_
+ 
+-# text = Portanto, a capacidade total de cada campo em armazenar CO2 será:
++# text = Portanto , a capacidade total de cada campo em armazenar CO2 será : Vco2de Marlim = ( 321,94/1000 ) x 1,51 x 780 = 379,18 ( Mt )
+ # sent_id = 161-20150810-MONOGRAFIA_0-619
+ 1	Portanto	portanto	ADV	_	_	14	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -98644,7 +98644,7 @@
+ 23	x	x	PROPN	_	Number=Sing	22	flat:name	O	_
+ 24	C	C	PROPN	_	Gender=Masc|Number=Sing	22	flat:name	O	_
+ 
+-# text = Onde:
++# text = Onde :  EOR ( Enhanced Oil Recovery ) = quantidade de óleo que pode ser recuperado do reservatório ( milhões de barris )  % EXTRA = porcentagem extra de óleo recuperável em razão da injeção de CO2  OOIP = Volume original de óleo in place do campo ( milhões de barris ) 
+ # sent_id = 161-20150810-MONOGRAFIA_0-633
+ 1	Onde	onde	ADV	_	Gender=Masc|Number=Sing	4	advmod	O	_
+ 2	:	:	PUNCT	_	_	4	punct	O	_
+@@ -98911,7 +98911,7 @@
+ 26	.	.	PUNCT	_	_	1	punct	O	_
+ 27	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = A %EXTRA estimadas para os campos de Marlim e Barracuda foram:
++# text = A % EXTRA estimadas para os campos de Marlim e Barracuda foram :  Marlim = 6,5 %  Barracuda = 8,5 % Logo , a quantidade máxima de óleo que poderá ser produzido em função da injeção de CO2 nos campos de Marlim e Barracuda será de : EOR de Marlim = 0,065 x 8100 x 0,75 = 394 , 88
+ # sent_id = 161-20150810-MONOGRAFIA_0-641
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	eliminar
+ 2	%	%	SYM	_	_	12	obl	O	_
+@@ -99286,7 +99286,7 @@
+ 26	.	.	PUNCT	_	_	16	punct	O	_
+ 27	.	.	PUNCT	_	_	16	punct	O	_
+ 
+-# text = Logo, tomando como base o grau API do óleo, as taxas de produção extra para os campos de Marlim e Barracuda serão:
++# text = Logo , tomando como base o grau API do óleo , as taxas de produção extra para os campos de Marlim e Barracuda serão :  Marlim = 0,510 toneladas de CO2 para a produção de 1 barril de óleo  Barracuda = 0,460 toneladas de CO2 para a produção de 1 barril de óleo
+ # sent_id = 161-20150810-MONOGRAFIA_0-650
+ 1	Logo	logo	ADV	_	_	27	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -99975,7 +99975,7 @@
+ 35	.	.	PUNCT	_	_	14	punct	O	_
+ 36	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Os trechos de carbodutos auxiliares são:
++# text = Os trechos de carbodutos auxiliares são :  Trecho da plataforma do tipo FPSO P-48 até a plataforma FPSO P-43 ( P-48 – P-43 )  Trecho da plataforma do tipo FPSO P-33 até a plataforma semissubmersível P-19 ( P-33 – P-19 )  Trecho da plataforma semissubmersível P-18 até a plataforma semissubmersível P-26 ( P-20 – P-19 )
+ # sent_id = 161-20150810-MONOGRAFIA_0-670
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	trechos	trecho	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	O	_
+@@ -103606,7 +103606,7 @@
+ 26	.	.	PUNCT	_	_	3	punct	O	_
+ 27	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Para isso ela irá realizar os seguintes itens:
++# text = Para isso ela irá realizar os seguintes itens :  Revisar os resultados do monitoramento e verificar se as metodologias de monitoramento para estimar a redução de emissões de GEE  Determinar a redução de emissões de GEE ou remoções de CO2 , que não teriam ocorrido na ausência da atividade de projeto registrada Identificar e informar aos participantes do projeto qualquer suspeita com relação às conformidades da atividade de projeto 
+ # sent_id = 161-20150810-MONOGRAFIA_0-780
+ 1	Para	para	ADP	_	_	2	case	O	eliminar
+ 2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obl	O	_
+@@ -104337,7 +104337,7 @@
+ 28	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	25	nmod	B=QUÍMICA	_
+ 29	..	..	PUNCT	_	_	12	punct	O	_
+ 
+-# text = A redução nas emissões de gases de efeito estufa, para a quantificação das RCEs anuais passíveis de emissão, pode ser calculada através da equação abaixo:
++# text = A redução nas emissões de gases de efeito estufa , para a quantificação das RCEs anuais passíveis de emissão , pode ser calculada através da equação abaixo :  ER = Reduções na emissão de GEE  BE = Emissões da linha de base  PE = Emissões de projeto  LE = Emissões fugitivas
+ # sent_id = 161-20150810-MONOGRAFIA_0-800
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	redução	redução	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	O	_
+@@ -104725,7 +104725,7 @@
+ 26	.	.	PUNCT	_	_	3	punct	O	_
+ 27	.	.	PUNCT	_	_	15	punct	O	_
+ 
+-# text = A equação se encontra a seguir: Emissões
++# text = A equação se encontra a seguir : Emissões  ECaptura = Emissões resultantes do gasto energético adicional na etapa de captura de CO2  ETransporte = Emissões resultantes do gasto energético adicional na etapa de transporte de CO2  EArmazenamento = Emissões resultantes do gasto energético adicional na etapa de armazenamento de CO2  EReciclo = Emissões resultantes do gasto energético adicional na etapa de reiclo de CO2
+ # sent_id = 161-20150810-MONOGRAFIA_0-814
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	equação	equação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
+@@ -104958,7 +104958,7 @@
+ 20	.	.	PUNCT	_	_	5	punct	O	_
+ 21	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Os valores de oxigênio consumido nas siderúrgicas estão descritos a seguir:
++# text = Os valores de oxigênio consumido nas siderúrgicas estão descritos a seguir : 32
+ # sent_id = 161-20150810-MONOGRAFIA_0-820
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	valores	valor	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	O	_
+@@ -106891,7 +106891,7 @@
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	Manutenção	Manutenção	PROPN	_	Number=Sing	3	conj	O	_
+ 
+-# text = Quadro 11 - Resultados dos custos de operação e manutenção das plataformas
++# text = Quadro 11 - Resultados dos custos de operação e manutenção das plataformas * o valor corresponde também às plataformas de produção ligadas pelos carbodutos auxiliares às plataformas injetoras ; vide figura 31
+ # sent_id = 161-20150810-MONOGRAFIA_0-879
+ 1	Quadro	Quadro	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	11	11	NUM	_	NumType=Card	1	nummod	O	_
+@@ -109715,7 +109715,7 @@
+ 45	.	.	PUNCT	_	_	6	punct	O	_
+ 46	.	.	PUNCT	_	_	6	punct	O	_
+ 
+-# text = Os blocos são citados a seguir:
++# text = Os blocos são citados a seguir : - BM-S-8 : consórcio formado por Petrobras ( 66 % ) , Shell ( 20 % ) e Petrogal ( 14 % ) ; - BM-S-9 : consórcio formado por Petrobras ( 45 % ) , BG ( 30 % ) e Repsol ( 25 % ) ; - BM-S-10 : consórcio formado por Petrobras ( 65 % ) , BG ( 25 % ) e Partex ( 10 % ) ; - BM-S11 : consórcio formado por Petrobras ( 65 % ) , BG ( 25 % ) e Petrogal ( 10 % ) ; - BM-S-17 : Petrobras ; - BM-S-21 : consórcio formado por Petrobras ( 80 % ) e Petrogal ( 20 % ) ; - BM-S-22 : consórcio formado por Esso ( 40 % ) , Amerada ( 40 % ) e Petrobras ( 20 % ) ; - BM-S-24 : consorcio formado por Petrobras ( 80 % ) e Petrogal ( 20 % ) ; - BM-S-42 : Petrobras ; - BM-S-50 : consórcio formado por Petrobras ( 60 % ) , BG ( 20 % ) e Repsol ( 20 % ) ; - BM-S-52 : consórcio formado por Petrobras ( 60 % ) e BG ( 40 % ) ; A Tabela 1 apresenta um resumo das reservas do Pré-sal descobertas na Bacia de Santos , de 2006 a 2012 . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-36
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	blocos	bloco	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	_
+@@ -110330,7 +110330,7 @@
+ 17	2013	2013	NOUN	_	Gender=Masc|Number=Plur	14	flat:name	O	_
+ 18	)	)	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Dentre os pontos citados no diagrama da Figura 5, podem-se destacar os seguintes desafios (FERRO e TEIXEIRA, 2009):
++# text = Dentre os pontos citados no diagrama da Figura 5 , podem-se destacar os seguintes desafios ( FERRO e TEIXEIRA , 2009 ) : • RESERVATÓRIOS : Caracterização dos reservatórios e estudo da viabilidade da injeção de gás e água em poços para aumento de produção , assim como análise geomecânica das rochas adjacentes à área de exploração . • ENGENHARIA DE POÇOS : Os principais desafios estão relacionados à resistência dos poços à alta pressão , alta concentração de CO2 , assim como a resistência mecânica decorrente das camadas de sal e o risco de deposição de produtos nas longas tubulações . • ALTA RGO : Os grandes volumes de gás natural existentes nestas reservas exigem desenvolvimento de tecnologias de transporte ( tubulações de alto diâmetro a profundidades acima de 2000 metros e a longa distância da costa ) e no processamento de gás natural offshore . • UNIDADES DE PRODUÇÃO FLUTUANTES ( FPSO ) : os desafios estão relacionados ao atracamento em águas ultra-profundas , controle de sistemas de nivelamento e o novo cenário de acesso aos poços pelas plataformas . • ENGENHARIA SUBMARINA : São necessários aperfeiçoamentos nas tubulações de subida e descida ( riser ) , já que estas serão submetidas a altas pressões e concentrações de CO2 , além da longa extensão devido às profundidades . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-47
+ 1	Dentre	dentre	ADP	_	_	3	case	O	sentenciação
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+@@ -114872,7 +114872,7 @@
+ 19	.	.	PUNCT	_	_	7	punct	O	_
+ 20	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Essa ampla gama de possibilidades pode ser dividida, fundamentalmente, em dois grupos (BOTHAMLEY et al., 2004):
++# text = Essa ampla gama de possibilidades pode ser dividida , fundamentalmente , em dois grupos ( BOTHAMLEY et al. , 2004 ) : • Mínimo processamento offshore , sendo todos os fluidos produzidos destinados para um terminal onshore para o processamento final ; • Todo processamento é feito offshore , já se obtendo produtos enquadrados nas especificações de venda , sem necessidade de processamento onshore . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-164
+ 1	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	sentenciação
+ 2	ampla	amplo	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+@@ -114943,7 +114943,7 @@
+ 66	.	.	PUNCT	_	_	8	punct	O	_
+ 67	.	.	PUNCT	_	_	6	punct	O	_
+ 
+-# text = De acordo com Bothamley et al.(2004), a decisão por qual direção um projeto deve seguir depende de diversos fatores, dentre os quais se pode citar:
++# text = De acordo com Bothamley et al.(2004 ) , a decisão por qual direção um projeto deve seguir depende de diversos fatores , dentre os quais se pode citar : • Quanto ao porte e complexidade das plataformas - uma plataforma que realiza todo o processamento de óleo e gás exige muitas operações , sendo então , demasiadamente complexa , de alto custo e de grande porte ; • Para campos que já possuem terminal onshore próximos ao poço , o processamento no continente pode ser mais vantajoso ; • As condições a que são submetidos os gasodutos de exportação também devem ser analisadas : como pressão , temperatura e as diferentes fases nas condições do processo ; •
+ # sent_id = 334-20150521-MONOGRAFIA_0-165
+ 1	De	de	ADP	_	_	4	case	O	sentenciação
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+@@ -116175,7 +116175,7 @@
+ 21	.	.	PUNCT	_	_	3	punct	O	_
+ 22	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Tal aumento da necessidade de compressão pode ser observado no pré-sal brasileiro onde são necessárias as seguintes etapas de compressão: Compressão de CO2 (realizada em 4 estágios);
++# text = Tal aumento da necessidade de compressão pode ser observado no pré-sal brasileiro onde são necessárias as seguintes etapas de compressão : Compressão de CO2 ( realizada em 4 estágios ) ; • Compressão de CO2 ( realizada em 4 estágios ) ; Compressão de Exportação ( realizada em 2 estágios ) ; Compressão Principal ; Compressão de Injeção ; • • • Compressão da Unidade de Recuperação de Vapor – VRU ( realizada em 2 estágios ) . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-190
+ 1	Tal	tal	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	O	_
+ 2	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -117327,7 +117327,7 @@
+ 77	.	.	PUNCT	_	_	7	punct	O	_
+ 78	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Tal processo engloba as seguintes etapas (PETROBRAS, 2007):
++# text = Tal processo engloba as seguintes etapas ( PETROBRAS , 2007 ) : • Separação de óleo e gás ; • Após estas etapas o gás pode ser utilizado como gás combustível e gás lift nos poços , sendo o excedente exportado para a costa através de gasodutos ou navios aliviadores . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-227
+ 1	Tal	tal	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	O	_
+ 2	processo	processo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+@@ -118735,7 +118735,7 @@
+ 1	II.4.3	ii.4.3	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	0	root	O	_
+ 2	Brasil	Brasil	PROPN	_	Number=Sing	1	flat:name	O	_
+ 
+-# text = O processamento offshore no Brasil pode ser dividido em seis fases (MORAIS, 2013):
++# text = O processamento offshore no Brasil pode ser dividido em seis fases ( MORAIS , 2013 ) : • FASE I ( 1955-1973 ) : atividades pioneiras em P&D e na exploração de petróleo offshore ; • FASE II ( 1974-1985 ) : descobertas de petróleo na Bacia de Campos e foram iniciados os primeiros experimentos tecnológicos offshore ; • FASE III ( 1986-1991 ) : desenvolvimento de tecnologias para a produção de petróleo em águas marítimas com até 1000 metros de profundidade ; • FASE IV ( 1992-1999 ) : desenvolvimento de tecnologias e produção de petróleo em águas marítimas com profundidades entre 1000 a 2000 metros ; • FASE V ( 2000-2006 ) : desenvolvimento de tecnologias para a produção de petróleo em águas marítimas entre 2000 e 3000 metros de profundidade . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-266
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	processamento	processamento	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
+@@ -118879,7 +118879,7 @@
+ 137	.	.	PUNCT	_	_	119	punct	O	_
+ 138	.	.	PUNCT	_	_	119	punct	O	_
+ 
+-# text = Período marcado também pelo início das explorações no Pré-sal, assim como o alcance da auto-suficiência na produção de petróleo;
++# text = Período marcado também pelo início das explorações no Pré-sal , assim como o alcance da auto-suficiência na produção de petróleo ; • FASE VI ( 2006-2014 ) : Era do Pré-sal
+ # sent_id = 334-20150521-MONOGRAFIA_0-267
+ 1	Período	período	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	marcado	marcar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl	O	_
+@@ -125120,7 +125120,7 @@
+ 39	.	.	PUNCT	_	_	3	punct	O	_
+ 40	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Os inibidores termodinâmicos apresentam uma série de vantagens sobre outros inibidores:
++# text = Os inibidores termodinâmicos apresentam uma série de vantagens sobre outros inibidores : • Redução da temperatura de formação ; • Podem evitar formar hidratos em qualquer condição , a depender de quanto inibidor é usado ; • Alguns deles , como o metanol , inibem tanto na fase vapor como na fase líquida , tendo importância em operações transientes ; • Funcionam com qualquer mistura de hidrocarbonetos . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-423
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	O	_
+@@ -125200,7 +125200,7 @@
+ 72	.	.	PUNCT	_	_	4	punct	O	_
+ 73	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Porém também apresentam desvantagens consideráveis:
++# text = Porém também apresentam desvantagens consideráveis : • Necessitam de grandes quantidades ; • Requerem grandes estoques e sistemas de bombeamento , que aumentam o investimento a ser feito ; • Podem apresentar incompatibilidade com outros produtos químicos utilizados ( como inibidores de corrosão e parafina ) ; • Podem causar precipitação de sais da água produzida , gerando problemas de incrustação
+ # sent_id = 334-20150521-MONOGRAFIA_0-424
+ 1	Porém	porém	ADV	_	_	3	advmod	O	_
+ 2	também	também	ADV	_	_	3	advmod	O	_
+@@ -125804,7 +125804,7 @@
+ 12	.	.	PUNCT	_	_	3	punct	O	_
+ 13	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = INIBIDORES CINÉTICOS:
++# text = INIBIDORES CINÉTICOS : • Inibidores cinéticos atuam prevenindo tanto a nucleação quanto o crescimento de cristais de hidratos . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-441
+ 1	INIBIDORES	INIBIDORES	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	CINÉTICOS	CINÉTICOS	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -126215,7 +126215,7 @@
+ 28	.	.	PUNCT	_	_	8	punct	O	_
+ 29	.	.	PUNCT	_	_	8	punct	O	_
+ 
+-# text = Apesar de ter custo superior em 50% ao inibidor termodinâmico, este tipo de aditivo é utilizado em concentrações baixas, menos de 1% em peso (geralmente de
++# text = Apesar de ter custo superior em 50 % ao inibidor termodinâmico , este tipo de aditivo é utilizado em concentrações baixas , menos de 1 % em peso ( geralmente de 0,015 a 0,5 % ) ..
+ # sent_id = 334-20150521-MONOGRAFIA_0-453
+ 1	Apesar	apesar	ADV	_	_	3	mark	O	_
+ 2	de	de	ADP	_	_	1	fixed	O	_
+@@ -127766,7 +127766,7 @@
+ 64	2008	2008	NUM	_	NumType=Card	58	flat:name	O	_
+ 65	)	)	PUNCT	_	_	56	punct	O	_
+ 
+-# text = As reações de absorção por amina ocorrem através da formação de zwitterions (LITTEL et al, 1992), conforme mostrado a seguir (onde B representa um composto intermediário):
++# text = As reações de absorção por amina ocorrem através da formação de zwitterions ( LITTEL et al , 1992 ) , conforme mostrado a seguir ( onde B representa um composto intermediário ) : + =
+ # sent_id = 334-20150521-MONOGRAFIA_0-503
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	eliminar
+ 2	reações	reação	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	O	_
+@@ -128922,7 +128922,7 @@
+ 37	)	)	PUNCT	_	_	32	punct	O	_
+ 38	..	..	PUNCT	_	_	4	punct	O	_
+ 
+-# text = A recuperação de óleo pode ser classificada em três categorias:
++# text = A recuperação de óleo pode ser classificada em três categorias : • Recuperação Primária : No início da produção de um poço , a pressão no reservatório é maior que a pressão no interior do poço . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-536
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	O	_
+@@ -134894,7 +134894,7 @@
+ 36	.	.	PUNCT	_	_	19	punct	O	_
+ 37	.	.	PUNCT	_	_	19	punct	O	_
+ 
+-# text = Para esta análise, foram utilizadas a corrente de alimentação dimensionante do projeto (SS-UNIT) e as correntes finais da simulação, a saber:
++# text = Para esta análise , foram utilizadas a corrente de alimentação dimensionante do projeto ( SS-UNIT ) e as correntes finais da simulação , a saber : • ÓLEO TS : Corrente de óleo que deixa o segundo separador bifásico da plataforma ; • ÁGUA TOPSIDE : corrente de água separada do gás após este deixar o ejetor na plataforma ; • ÁGUA+CO2 to EOR : corrente rica em água proveniente do segundo separador subsea ; • TO FLARE : corrente de topo do VASO 2 localizado no continente ; • ÁGUA+CO2 : corrente de topo obtida na coluna de regeneração de MEG ; • RICA METANO_MEMB2 : corrente rica em metano separada na unidade de membranas , que será encaminhada para UPGN ; • CO2(3 ) : corrente de CO2 separado na unidade de membranas , após o duto de retorno para o poço . .
+ # sent_id = 334-20150521-MONOGRAFIA_0-715
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+@@ -138607,7 +138607,7 @@
+ 59	.	.	PUNCT	_	_	25	punct	O	_
+ 60	.	.	PUNCT	_	_	25	punct	O	_
+ 
+-# text = As principais propriedades que levam à separação de emulsões são apresentadas a seguir:
++# text = As principais propriedades que levam à separação de emulsões são apresentadas a seguir : 
+ # sent_id = 202-20140404-MONOGRAFIA_0-41
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	O	_
+ 2	principais	principal	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+@@ -138656,7 +138656,7 @@
+ 24	.	.	PUNCT	_	_	15	punct	O	_
+ 25	.	.	PUNCT	_	_	15	punct	O	_
+ 
+-# text = Assim, para uma emulsão de óleo em água, quanto menor a densidade do óleo, mais ele tende a se direcionar para a fase superior, impulsionando as gotículas de óleo para cima;
++# text = Assim , para uma emulsão de óleo em água , quanto menor a densidade do óleo , mais ele tende a se direcionar para a fase superior , impulsionando as gotículas de óleo para cima ;  A ascensão das gotículas de óleo em uma emulsão , decorrente da diferença de densidade entre as fases , pode ser retardada pela alta viscosidade da fase contínua . .
+ # sent_id = 202-20140404-MONOGRAFIA_0-43
+ 1	Assim	assim	ADV	_	_	21	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -138736,7 +138736,7 @@
+ 71	.	.	PUNCT	_	_	62	punct	O	_
+ 72	.	.	PUNCT	_	_	60	punct	O	_
+ 
+-# text = Altas viscosidades fazem com que a gota enfrente muito atrito das moléculas da fase contínua para poder subir pela emulsão, retardando o processo;
++# text = Altas viscosidades fazem com que a gota enfrente muito atrito das moléculas da fase contínua para poder subir pela emulsão , retardando o processo ;  Por fim , quanto maior a tensão interfacial dos dois líquidos que formam a emulsão , maior a energia necessária para a formação das superfícies entre as fases dessa emulsão , já que a formação de gotículas pequenas de óleo em água somente é alcançada com o aumento das superfícies . .
+ # sent_id = 202-20140404-MONOGRAFIA_0-44
+ 1	Altas	alto	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 2	viscosidades	viscosidade	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	O	_
+@@ -143521,7 +143521,7 @@
+ 32	.	.	PUNCT	_	_	22	punct	O	_
+ 33	.	.	PUNCT	_	_	22	punct	O	_
+ 
+-# text = C a p í t u l o 1 - I n t r o d u ç ã o | 16
++# text = C a p í t u l o 1 - I n t r o d u ç ã o | 16 1.2
+ # sent_id = 258-20160602-TESEMSC_0-26
+ 1	C	C	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	eliminar
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+@@ -146042,7 +146042,7 @@
+ 52	.	.	PUNCT	_	_	33	punct	O	_
+ 53	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = C a p í t u l o 2 - S i s m i c i d a d e | 26
++# text = C a p í t u l o 2 - S i s m i c i d a d e | 26 2.3.2
+ # sent_id = 258-20160602-TESEMSC_0-98
+ 1	C	C	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	eliminar
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+@@ -156492,7 +156492,7 @@
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+-# text = As etapas executadas durante o desenvolvimento desse trabalho foram compostas por:
++# text = As etapas executadas durante o desenvolvimento desse trabalho foram compostas por : 4.5.1
+ # sent_id = 258-20160602-TESEMSC_0-336
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	O	_
+@@ -156720,7 +156720,7 @@
+ 39	estrutural	estrutural	ADJ	_	Gender=Fem|Number=Sing	38	amod	O	_
+ 40	..	..	PUNCT	_	_	19	punct	O	_
+ 
+-# text = Em síntese as fases consistem de:
++# text = Em síntese as fases consistem de : 1 )
+ # sent_id = 258-20160602-TESEMSC_0-343
+ 1	Em	em	ADP	_	_	2	case	O	sentenciação
+ 2	síntese	síntese	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+@@ -156755,7 +156755,7 @@
+ 7	3	3	NUM	_	NumType=Card	6	nummod	O	_
+ 8	)	)	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Calibração dos dados
++# text = Calibração dos dados 4 )
+ # sent_id = 258-20160602-TESEMSC_0-346
+ 1	Calibração	calibração	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2-3	dos	_	_	_	_	_	_	_	_
+@@ -157299,7 +157299,7 @@
+ 11	rocha	rocha	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=LITOLOGIA	_
+ 12	..	..	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Com os valores de profundidade do poço () e velocidade () conhecidos, foi possível obter o tempo duplo de transito ou two way time (TWT) correspondente a cada ponto em profundidade do poço, através da equação 2:
++# text = Com os valores de profundidade do poço ( ) e velocidade ( ) conhecidos , foi possível obter o tempo duplo de transito ou two way time ( TWT ) correspondente a cada ponto em profundidade do poço , através da equação 2 : , ( 2 ) o que permitiu a correlação poço ( em profundidade ) com a sísmica ( em tempo ) ..
+ # sent_id = 258-20160602-TESEMSC_0-360
+ 1	Com	com	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+@@ -157420,7 +157420,7 @@
+ 39	.	.	PUNCT	_	_	5	punct	O	_
+ 40	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = C a p í t u l o 4 - M e t o d o l o g i a | 61
++# text = C a p í t u l o 4 - M e t o d o l o g i a | 61 4.5.3
+ # sent_id = 258-20160602-TESEMSC_0-362
+ 1	C	C	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	eliminar
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+@@ -166276,7 +166276,7 @@
+ 41	.	.	PUNCT	_	_	4	punct	O	_
+ 42	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Assim sendo, os principais objetivos deste trabalho são:
++# text = Assim sendo , os principais objetivos deste trabalho são : • Avaliar de que forma o holdup de óleo , o tempo em que a linha permanece parada antes da repartida e a vazão de água utilizada na repartida influenciam no tempo de limpeza de linha . • Verificar o comportamento de molhabilidade da tubulação em que os experimentos de repartida foram realizados , a partir de medidas de ângulo de contato estático realizadas no interior de uma secção da tubulação . • Verificar os efeitos da adição de um desemulsificante hidrofílico a água utilizada na repartida . .
+ # sent_id = 77-20141209-TESEMSC_0-21
+ 1	Assim	assim	ADV	_	_	10	cc	O	sentenciação
+ 2	sendo	ser	AUX	_	VerbForm=Ger	1	fixed	O	_
+@@ -166396,7 +166396,7 @@
+ 107	.	.	PUNCT	_	_	10	punct	O	_
+ 108	.	.	PUNCT	_	_	10	punct	O	_
+ 
+-# text = O trabalho foi dividido nos seguintes capítulos:
++# text = O trabalho foi dividido nos seguintes capítulos : • Capítulo 1 – Introdução • Capítulo 2 – Revisão da Literatura dos temas petróleo , óleo pesado , o método de core flow , repartida de linha , molhabilidade e desemulsificantes • Capítulo 3 – Análise Experimental , onde o procedimento experimental é descrito , assim como os equipamentos utilizados , a calibração dos instrumentos e o cálculo das incertezas experimentais . • Capítulo 4 – Resultados e Discussão , onde são apresentados e interpretados os dados experimentais obtidos . • Capítulo 5 – Conclusões e sugestões para trabalhos futuros . .
+ # sent_id = 77-20141209-TESEMSC_0-22
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	eliminar
+ 2	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	O	_
+@@ -172214,7 +172214,7 @@
+ 1	Análise	Análise	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	Experimental	Experimental	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ 
+-# text = O presente capítulo apresentará a descrição dos equipamentos e dos métodos utilizados na realização dos experimentos de:
++# text = O presente capítulo apresentará a descrição dos equipamentos e dos métodos utilizados na realização dos experimentos de : • Repartida assistida com água , após uma parada súbita das bombas de óleo e água de uma linha que escoava em padrão coreflow ; • Repartida assistida com água adicionada de desemulsificante , após uma parada súbita das bombas de óleo e água de uma linha que escoava em padrão coreflow ; • Medida de ângulo de contato estático . .
+ # sent_id = 77-20141209-TESEMSC_0-186
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	eliminar
+ 2	presente	presente	ADJ	_	Gender=Masc|Number=Sing	3	amod	O	_
+@@ -176673,7 +176673,7 @@
+ 8	.	.	PUNCT	_	_	5	punct	O	_
+ 9	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = As medidas de ângulo foram realizadas na água entre a parede da tubulação e o plugue de óleo, como pode ser observado no esquema da figura 3.8
++# text = As medidas de ângulo foram realizadas na água entre a parede da tubulação e o plugue de óleo , como pode ser observado no esquema da figura 3.8 Capítulo 4
+ # sent_id = 77-20141209-TESEMSC_0-336
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	6	nsubj:pass	O	_
+@@ -180765,7 +180765,7 @@
+ 25	.	.	PUNCT	_	_	1	punct	O	_
+ 26	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Levando em conta essas discrepâncias consideramos que apenas os ensaios a 7 GPM apresentam coerência entre os tempos de limpeza parcial e total, permitindo concluir o seguinte sobre os efeitos do holdup inicial de óleo e do tempo de parada:
++# text = Levando em conta essas discrepâncias consideramos que apenas os ensaios a 7 GPM apresentam coerência entre os tempos de limpeza parcial e total , permitindo concluir o seguinte sobre os efeitos do holdup inicial de óleo e do tempo de parada : - o aumento no holdup inicial de óleo , causa um aumento no tempo de limpeza ; - o aumento no tempo de parada da linha tende a causar um aumento no tempo de limpeza . .
+ # sent_id = 77-20141209-TESEMSC_0-446
+ 1	Levando	levar	VERB	_	VerbForm=Ger	6	advcl	O	_
+ 2	em	em	ADP	_	_	3	case	O	_
+@@ -182627,7 +182627,7 @@
+ 31	.	.	PUNCT	_	_	28	punct	O	_
+ 32	.	.	PUNCT	_	_	28	punct	O	_
+ 
+-# text = Além disso, algumas características conferem ao biodiesel importância técnica, ambiental e econômica, são elas [1]:
++# text = Além disso , algumas características conferem ao biodiesel importância técnica , ambiental e econômica , são elas [ 1 ] :  O biodiesel é energia renovável . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-23
+ 1	Além	além	ADV	_	_	7	advmod	O	MWEPOS=ADV
+ 2-3	disso	_	_	_	_	_	_	_	_
+@@ -185553,7 +185553,7 @@
+ 21	.	.	PUNCT	_	_	14	punct	O	_
+ 22	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Segundo KLINE & MCCLINTOCK et. al [13], a incerteza total (IyT) associada da variável y a ser medida é dada por: (5.1) onde:
++# text = Segundo KLINE & MCCLINTOCK et. al [ 13 ] , a incerteza total ( IyT ) associada da variável y a ser medida é dada por : ( 5.1 ) onde : incerteza associada ao erro de leitura : incerteza associada à resolução de leitura das medições : : desvio padrão das leituras realizadas
+ # sent_id = 279-20140530-MONOGRAFIA_0-109
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	KLINE	KLINE	PROPN	_	Gender=Masc|Number=Sing	26	obl	O	_
+@@ -185998,7 +185998,7 @@
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	Ensaio	Ensaio	PROPN	_	Number=Sing	14	flat:name	O	_
+ 
+-# text = Os testes foram realizados de acordo com a seguinte metodologia:  Preparação dos combustiveis com rede de alimentação para o motor
++# text = Os testes foram realizados de acordo com a seguinte metodologia :  Preparação dos combustiveis com rede de alimentação para o motor  Ensaios de desempenho do motor funcionando com cada um dos combustiveis , nos pontos de operação correspondentes a 100 % , 75 % , 50 % e 25 % da potência máxima continua do motor .  Determinação das curvas de Potência x RPM do motor  Determinação do consumo de combustível , nestes pontos de operação  Cálculo do consumo específico de combustível , nestes pontos de operação  Determinação das variaveis de operação do motor , como temperatura dos gases de descarga , de entrada do ar , do combustivel e etc  Ensaios de emissões , determinando-se nos pontos de operação o teor de NOX , CO , HC e O2 
+ # sent_id = 279-20140530-MONOGRAFIA_0-126
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	testes	teste	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	B=MÉTODO	_
+@@ -186635,7 +186635,7 @@
+ 25	B20	B20	PROPN	_	Gender=Masc|Number=Sing	23	conj	O	_
+ 26	..	..	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Figura 5-2 - Potência x RPM funcionando com B5 e B20 nos testes de Desempenho
++# text = Figura 5-2 - Potência x RPM funcionando com B5 e B20 nos testes de Desempenho 5.3..
+ # sent_id = 279-20140530-MONOGRAFIA_0-145
+ 1	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	5-2	5-2	NUM	_	NumType=Card	1	nummod	O	_
+@@ -186720,7 +186720,7 @@
+ 50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	O	_
+ 51	B20	B20	PROPN	_	Gender=Masc|Number=Sing	48	nmod	O	_
+ 
+-# text = As Tabela 5-7 e Tabela 5-8 abaixo apresentam os valores das variáveis medidas, com o combustível B20: As incertezas de medição para as varáveis medidas acima são apresentadas nas tabelas a seguir, utilizando as equações da seção 3.6:
++# text = As Tabela 5-7 e Tabela 5-8 abaixo apresentam os valores das variáveis medidas , com o combustível B20 : As incertezas de medição para as varáveis medidas acima são apresentadas nas tabelas a seguir , utilizando as equações da seção 3.6 : 5.5 . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-148
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	Tabela	Tabela	PROPN	_	Gender=Fem|Number=Plur	8	nsubj	O	_
+@@ -186842,7 +186842,7 @@
+ 41	.	.	PUNCT	_	_	5	punct	O	_
+ 42	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Figura 5-4-Torque x RPM funcionando com B5 e B20
++# text = Figura 5-4-Torque x RPM funcionando com B5 e B20 5.6..
+ # sent_id = 279-20140530-MONOGRAFIA_0-152
+ 1	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	5-4-Torque	5-4-Torque	NUM	_	NumType=Card	1	flat:name	O	_
+@@ -188615,7 +188615,7 @@
+ 14	.	.	PUNCT	_	_	13	punct	O	_
+ 15	.	.	PUNCT	_	_	13	punct	O	_
+ 
+-# text = - na utilização do biodiesel de 2a geração na proporção de B20, observou-se que o mesmo apresenta uma bom comportamento, conseguindo manter carga e rotação nos pontos de operação testados, sendo notado, devido ao seu poder calorífico mais baixo, um aumento em seu consumo
++# text = - na utilização do biodiesel de 2a geração na proporção de B20 , observou-se que o mesmo apresenta uma bom comportamento , conseguindo manter carga e rotação nos pontos de operação testados , sendo notado , devido ao seu poder calorífico mais baixo , um aumento em seu consumo - na análise da descarga de gases , notou-se uma redução significativa dos gases de descarga nocivos ao ambiente . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-215
+ 1	-	-	PUNCT	_	_	17	punct	O	sentenciação
+ 2-3	na	_	_	_	_	_	_	_	_
+@@ -188783,7 +188783,7 @@
+ 15	B20	B20	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 16	..	..	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Os níveis de NOx também reduziram sensivelmente
++# text = Os níveis de NOx também reduziram sensivelmente - devido a algum fator externo os resultados para os pontos de operação a 25 % da Potência da Nominal Máxima não representaram o esperado , mas para a análise proposta para este trabalho foi aceitável
+ # sent_id = 279-20140530-MONOGRAFIA_0-219
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	O	_
+@@ -188950,7 +188950,7 @@
+ 11	.	.	PUNCT	_	_	1	punct	O	_
+ 12	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = ufrj.br/
++# text = ufrj.br / [ 2 ] GRANDO , F. , 2005 , A força do combustível verde . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-224
+ 1	ufrj.br	ufrj.br	NOUN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	/	/	PUNCT	_	_	1	punct	O	_
+@@ -189347,7 +189347,7 @@
+ 17	profpc.	profpc.	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = com.br (acessado em 01/02/2014)
++# text = com.br ( acessado em 01/02/2014 ) [ 11 ] PAULILLO , S. C. L. Utilização da vinhaça e do bagaço de cana para a produção de biodiesel e antiespumante , visando a sustentabilidade ambiental através de um processo de biorefinaria integrada , 2013 , PIPE 1 – 15 [ 12 ] BNDES , CGEE , Bioetanol de Cana-de-açúcar – Energia para o desenvolvimento sustentável , 2008 , 70-80 . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-243
+ 1	com.br	com.br	NOUN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 2	(	(	PUNCT	_	_	3	punct	O	_
+@@ -189470,7 +189470,7 @@
+ 12	Motores	Motores	PROPN	_	Number=Sing	9	flat:name	O	_
+ 13	Diesel	Diesel	PROPN	_	Number=Sing	9	flat:name	B=PRODUTO	_
+ 
+-# text = Utilizando Óleo Diesel e Biodiesel para Verificação dos Parâmetros de Desempenho e Emissões, 2009, UFRJ/COPPE, 50-100, Dissertação Graduação
++# text = Utilizando Óleo Diesel e Biodiesel para Verificação dos Parâmetros de Desempenho e Emissões , 2009 , UFRJ/COPPE , 50-100 , Dissertação Graduação [ 15 ] HEYWOOD , J. B. , 1988 , Internal Combustion Engine Fundamentals , 1 ed, New York , USA , McGraw-Hill . .
+ # sent_id = 279-20140530-MONOGRAFIA_0-246
+ 1	Utilizando	utilizar	VERB	_	VerbForm=Ger	0	root	O	_
+ 2	Óleo	Óleo	PROPN	_	Gender=Masc|Number=Sing	1	obj	B=PRODUTO|B=FLUIDO	_
+@@ -195394,7 +195394,7 @@
+ 26	.	.	PUNCT	_	_	14	punct	O	_
+ 27	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = As curvas termogravimétricas foram obtidas em termo balança SHIMADZU, modelo TGA50, em que as amostras foram aquecidas da temperatura
++# text = As curvas termogravimétricas foram obtidas em termo balança SHIMADZU , modelo TGA50 , em que as amostras foram aquecidas da temperatura ambiente até 900 ºC , a uma razão de aquecimento de 10 ºC/min . .
+ # sent_id = 271-20150810-MONOGRAFIA_0-173
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	curvas	curva	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	O	_
+@@ -195495,7 +195495,7 @@
+ 15	.	.	PUNCT	_	_	2	punct	O	_
+ 16	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = As difratogramas foram obtidos em difratômetro SHIMADZU 6000, usando tubo de cobre e velocidade de varredura 1º grau por minuto, passo 0,02 e voltagem 30 kV e 30 mA.
++# text = As difratogramas foram obtidos em difratômetro SHIMADZU 6000 , usando tubo de cobre e velocidade de varredura 1º grau por minuto , passo 0,02 e voltagem 30 kV e 30 mA. 3.2.3 .3
+ # sent_id = 271-20150810-MONOGRAFIA_0-179
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	difratogramas	difratograma	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	O	_
+@@ -199489,7 +199489,7 @@
+ 22	.	.	PUNCT	_	_	1	punct	O	_
+ 23	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = A amostra calcinada mostrou-se estável até 900 °C.
++# text = A amostra calcinada mostrou-se estável até 900 ° C. Em ( b ) , observa-se que o catalisador dopado com lítio , TA-Li apresenta estabilidade depois de calcinar apenas por aproximadamente 550 ° C , devido a presença do lítio utilizado para dopagem do TA , a temperatura de decomposição de compostos contendo lítio são menores . ( a ) ( b)
+ # sent_id = 271-20150810-MONOGRAFIA_0-306
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
+@@ -199968,7 +199968,7 @@
+ 28	.	.	PUNCT	_	_	7	punct	O	_
+ 29	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = As fibras ainda foram observadas, mesmo após á calcinação provando serem resistentes a temperaturas superior à 900 °C.
++# text = As fibras ainda foram observadas , mesmo após á calcinação provando serem resistentes a temperaturas superior à 900 ° C. Figura 16 – Micrografia do catalisador TA-Li calcinado a 500 °C por 30 minutos
+ # sent_id = 271-20150810-MONOGRAFIA_0-323
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	fibras	fibra	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	O	_
+@@ -200274,7 +200274,7 @@
+ 5	energia	energia	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 6	dispersiva	dispersivo	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
+ 
+-# text = Na Figura 18 –(a) a micrografia do ponto de incidência do feixe de elétrons, utilizado para determinar quais elementos quimicos estão presentes naquele local e pela análise de EDS, Figura 18- (b), observa-se os picos referentes aos elementos, K, Si, Ca, O, Fe, Al, Mg.
++# text = Na Figura 18 –( a ) a micrografia do ponto de incidência do feixe de elétrons , utilizado para determinar quais elementos quimicos estão presentes naquele local e pela análise de EDS , Figura 18 - ( b ) , observa-se os picos referentes aos elementos , K , Si , Ca , O , Fe , Al , Mg. Figura 18 - ( a ) Micrografia do catalisador TA calcinado e ( b ) Espectro de EDS do catalisador TA calcinado
+ # sent_id = 271-20150810-MONOGRAFIA_0-333
+ 1-2	Na	_	_	_	_	_	_	_	eliminar
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -205304,7 +205304,7 @@
+ 43	.	.	PUNCT	_	_	5	punct	O	_
+ 44	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Tabela 14 - Valores considerados no cálculo do fluxo de caixa
++# text = Tabela 14 - Valores considerados no cálculo do fluxo de caixa Horizonte de Tempo ( anos )
+ # sent_id = 271-20150810-MONOGRAFIA_0-500
+ 1	Tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	14	14	NUM	_	NumType=Card	1	nummod	O	_
+@@ -205328,7 +205328,7 @@
+ 18	anos	ano	NOUN	_	Gender=Masc|Number=Plur	11	appos	O	_
+ 19	)	)	PUNCT	_	_	18	punct	O	_
+ 
+-# text = Taxa anual de Depreciação
++# text = Taxa anual de Depreciação 5 % Alíquota de Impostos Indiretos 0 % Alíquota de Impostos Diretos ( PIS/PASEP e 0 % COFINS )
+ # sent_id = 271-20150810-MONOGRAFIA_0-501
+ 1	Taxa	Taxa	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	anual	anual	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+@@ -210975,7 +210975,7 @@
+ 20	.	.	PUNCT	_	_	12	punct	O	_
+ 21	.	.	PUNCT	_	_	12	punct	O	_
+ 
+-# text = Os principais compostos da água produzida incluem (TELLEZ et al., 2002):
++# text = Os principais compostos da água produzida incluem ( TELLEZ et al. , 2002 ) :  Compostos do petróleo dispersos e dissolvidos ;  Minerais dissolvidos ;  Substâncias químicas ;  Sólidos ( incluindo a formação de sólidos , corrosão e produtos de escala , bactérias , ceras e asfaltenos ) ;  Gases dissolvidos . .
+ # sent_id = 391-20160914-MONOGRAFIA_0-97
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 2	principais	principal	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+@@ -211403,7 +211403,7 @@
+ 15	.	.	PUNCT	_	_	5	punct	O	_
+ 16	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Existem três fontes de água salina:
++# text = Existem três fontes de água salina :  Fluxo acima ou abaixo da zona de hidrocarboneto ;  Fluxo da zona onde se encontram os hidrocarbonetos ;  Fluxo a partir de fluidos injetados e aditivos , resultante das atividades de extração de petróleo . .
+ # sent_id = 391-20160914-MONOGRAFIA_0-109
+ 1	Existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	três	três	NUM	_	NumType=Card	3	nummod	O	_
+@@ -212437,7 +212437,7 @@
+ 34	:	:	PUNCT	_	_	35	punct	O	_
+ 35	T=1/Io	T=1/Io	PROPN	_	Gender=Masc|Number=Sing	21	appos	O	_
+ 
+-# text = A transmitância de uma solução depende dos seguintes fatores:  Natureza da substância;
++# text = A transmitância de uma solução depende dos seguintes fatores :  Natureza da substância ;  Espessura da solução . .
+ # sent_id = 391-20160914-MONOGRAFIA_0-138
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	transmitância	transmitância	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
+@@ -214069,7 +214069,7 @@
+ 4	MATERIAIS	material	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	UTILIZADOS	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	acl	O	_
+ 
+-# text = Neste trabalho, os principais materiais utilizados foram Óleo diesel, Tensoativos e Clorofórmio PA.  Espectrofotômetro, modelo Gehaka UV-340G;
++# text = Neste trabalho , os principais materiais utilizados foram Óleo diesel , Tensoativos e Clorofórmio PA .  Espectrofotômetro , modelo Gehaka UV-340G ;  Agitador magnético com aquecimento digital , modelo LS59D – 220 – 300 – PI da LOGEN ; 5. - METODOLOGIA
+ # sent_id = 391-20160914-MONOGRAFIA_0-184
+ 1-2	Neste	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -214155,7 +214155,7 @@
+ 20	.	.	PUNCT	_	_	3	punct	O	_
+ 21	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = - Branco: Clorofórmio puro
++# text = - Branco : Clorofórmio puro - 1º padrão ( 300 mg/L )
+ # sent_id = 391-20160914-MONOGRAFIA_0-187
+ 1	-	-	PUNCT	_	_	2	punct	O	_
+ 2	Branco	Branco	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -216021,7 +216021,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-3
+ 1	RESUMO	resumo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+-# text = LISTA DE ABREVIATURAS E SÍMBOLOS
++# text = LISTA DE ABREVIATURAS E SÍMBOLOS LISTA DE TABELAS LISTA DE FIGURAS SUMÁRIO
+ # sent_id = 25-20150123-MONOGRAFIA_0-4
+ 1	LISTA	lista	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	DE	de	ADP	_	_	3	case	O	_
+@@ -216165,7 +216165,7 @@
+ 6	17	17	NUM	_	NumType=Card	3	flat:name	O	_
+ 7	3.3.6..	3.3.6..	NUM	_	NumType=Card	3	nummod	O	_
+ 
+-# text = Espectroscopia no Infravermelho por Transformada de Fourier (FTIR) 18 x
++# text = Espectroscopia no Infravermelho por Transformada de Fourier ( FTIR ) 18 x 3.4..
+ # sent_id = 25-20150123-MONOGRAFIA_0-19
+ 1	Espectroscopia	espectroscopia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2-3	no	_	_	_	_	_	_	_	_
+@@ -216183,7 +216183,7 @@
+ 13	x	x	NOUN	_	Gender=Masc|Number=Plur	1	appos	O	_
+ 14	3.4..	3.4..	NUM	_	NumType=Card	13	nummod	O	_
+ 
+-# text = Avaliação dos Catalisadores 20
++# text = Avaliação dos Catalisadores 20 3.4.1..
+ # sent_id = 25-20150123-MONOGRAFIA_0-20
+ 1	Avaliação	avaliação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2-3	dos	_	_	_	_	_	_	_	_
+@@ -216205,7 +216205,7 @@
+ 8	20	20	PROPN	_	Number=Sing	7	flat:name	O	_
+ 9	4..	4..	PROPN	_	Number=Sing	7	flat:name	O	_
+ 
+-# text = RESULTADOS E DISCUSSÕES 25
++# text = RESULTADOS E DISCUSSÕES 25 4.2..
+ # sent_id = 25-20150123-MONOGRAFIA_0-22
+ 1	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 2	E	e	CCONJ	_	_	3	cc	O	_
+@@ -216221,7 +216221,7 @@
+ 4	4.3	4.3	NUM	_	NumType=Card	1	nummod	O	_
+ 5	..	..	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Espectroscopia no Infravermelho por Transformada de Fourier (FTIR) 31
++# text = Espectroscopia no Infravermelho por Transformada de Fourier ( FTIR ) 31 4.3.1..
+ # sent_id = 25-20150123-MONOGRAFIA_0-24
+ 1	Espectroscopia	espectroscopia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2-3	no	_	_	_	_	_	_	_	_
+@@ -216238,7 +216238,7 @@
+ 12	31	31	NUM	_	NumType=Card	6	flat:name	O	_
+ 13	4.3.1..	4.3.1..	NUM	_	NumType=Card	6	flat:name	O	_
+ 
+-# text = Infravermelho estrutural em KBr
++# text = Infravermelho estrutural em KBr 4.4 ..
+ # sent_id = 25-20150123-MONOGRAFIA_0-25
+ 1	Infravermelho	infravermelho	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	estrutural	estrutural	ADJ	_	Gender=Masc|Number=Sing	1	amod	O	_
+@@ -216262,7 +216262,7 @@
+ 11	4.5	4.5	NUM	_	NumType=Card	6	nummod	O	_
+ 12	..	..	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Ressonância Magnética Nuclear no Estado Sólido (RMN) 41
++# text = Ressonância Magnética Nuclear no Estado Sólido ( RMN ) 41 4.5.2..
+ # sent_id = 25-20150123-MONOGRAFIA_0-27
+ 1	Ressonância	Ressonância	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	Magnética	Magnética	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -216278,7 +216278,7 @@
+ 11	41	41	NUM	_	NumType=Card	1	flat:name	O	_
+ 12	4.5.2..	4.5.2..	NUM	_	NumType=Card	1	nummod	O	_
+ 
+-# text = RMN de PAI
++# text = RMN de PAI 4.6 . .
+ # sent_id = 25-20150123-MONOGRAFIA_0-28
+ 1	RMN	RMN	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	3	case	O	_
+@@ -216307,7 +216307,7 @@
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Recirculação	Recirculação	PROPN	_	Number=Sing	5	flat:name	O	_
+ 
+-# text = 47
++# text = 47 5 , CONCLUSÃO
+ # sent_id = 25-20150123-MONOGRAFIA_0-31
+ 1	47	47	NUM	_	NumType=Card	2	parataxis	O	_
+ 2	5	5	NUM	_	NumType=Card	0	root	O	_
+@@ -224236,7 +224236,7 @@
+ 17	.	.	PUNCT	_	_	4	punct	O	_
+ 18	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = A atividade inicial dos catalisadores (A) foi obtida pela seguinte expressão: A= (ti x n) / m
++# text = A atividade inicial dos catalisadores ( A ) foi obtida pela seguinte expressão : A= ( ti x n ) / m onde , ti é a taxa inicial de conversão ( min-1 ) ; n é a quantidade inicial de benzeno ( mol ) ; m é a massa de catalisador ( g ) .
+ # sent_id = 25-20150123-MONOGRAFIA_0-275
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	atividade	atividade	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
+@@ -224299,7 +224299,7 @@
+ 57	)	)	PUNCT	_	_	56	punct	O	_
+ 58	.	.	PUNCT	_	_	11	punct	O	_
+ 
+-# text = Resumidamente, as condições da reação de hidrogenação no sistema de recirculação foram:
++# text = Resumidamente , as condições da reação de hidrogenação no sistema de recirculação foram :  Taxa de recirculação : 5,0
+ # sent_id = 25-20150123-MONOGRAFIA_0-276
+ 1	Resumidamente	resumidamente	ADV	_	_	15	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+@@ -224326,7 +224326,7 @@
+ 21	:	:	PUNCT	_	_	22	punct	O	_
+ 22	5,0	5,0	NUM	_	NumType=Card	18	appos	O	_
+ 
+-# text = L min-1.  Temperatura: 90 °C.
++# text = L min-1 .  Temperatura : 90 ° C.  Massa de catalisador : 0,10 g..
+ # sent_id = 25-20150123-MONOGRAFIA_0-277
+ 1	L	L	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	min-1	min-1	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -227824,7 +227824,7 @@
+ 36	cristalina	cristalino	ADJ	_	Gender=Fem|Number=Sing	35	amod	B=LITOLOGIA	_
+ 37	..	..	PUNCT	_	_	1	punct	O	_
+ 
+-# text = O cálculo feito para encontrar o número de átomos de alumínio por massa de zeólita é mostrado abaixo:
++# text = O cálculo feito para encontrar o número de átomos de alumínio por massa de zeólita é mostrado abaixo : ( n SiO2/n Al2O3 ) = SAR n SiO2 = n Al2O3 x SAR massa = n SiO2 x 61 + n Al2O3 x 102 massa = ( 61 x n Al2O3 x SAR ) + ( 102 x n Al2O3 ) ( n Al2O3 / massa ) = [ 1/ ( 61x SAR + 102 ) ] ( n Al / massa ) = ( n Al2O3 / massa ) x 2
+ # sent_id = 25-20150123-MONOGRAFIA_0-392
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	cálculo	cálculo	NOUN	_	Gender=Masc|Number=Sing	17	nsubj:pass	O	_
+@@ -232058,7 +232058,7 @@
+ 20	.	.	PUNCT	_	_	7	punct	O	_
+ 21	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = Estruturais :
++# text = Estruturais : - o gráben da Barra do Rio São João resultante do tectonismo cenozóico que afetou o sudeste do Brasil ( Mohriak e Barros 1990 ) ( figura 1.2 ) ; - e o gráben da porção marginal nordeste da Bacia de Santos ( Zalán e Oliveira 2005 ) ( figura 1.2 ) . .
+ # sent_id = 20-20140904-TESEDSC_0-42
+ 1	Estruturais	estruturais	ADJ	_	Gender=Masc|Number=Plur	0	root	O	sentenciação
+ 2	:	:	PUNCT	_	_	1	punct	O	_
+@@ -232129,7 +232129,7 @@
+ 61	.	.	PUNCT	_	_	1	punct	O	_
+ 62	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Associadas a corpos magmáticos:
++# text = Associadas a corpos magmáticos : - intrusivas do Alto de Cabo Frio que incluem a Suíte Alcalina de Arraial do Cabo , que possui a anomalia mais intensa deste conjunto , situada parcialmente na área emersa ( figura 1.3 ) , e outras intrusões menores distribuídas na região submersa ( Almeida 1991 , Araújo 1995 ) ; - a intrusiva da porção proximal nordeste da Bacia de Santos ( figura 1.3 ) associada a um corpo alcalino de consideráveis dimensões ( Zalán e Oliveira 2005 ) ; - alguns dos inúmeros diques básicos , marcantes neste cenário magnético , correspondem ao dique da Marambaia , os diques formadores do padrão romboédrico próximo à entrada da Baía de Guanabara , o dique de Ponta Negra ( Ferrari e Riccomini 2000 ) e os enxames de diques NE/SW intrudindo o embasamento na porção SW da Bacia de Campos ( figura 1.2 ) . .
+ # sent_id = 20-20140904-TESEDSC_0-43
+ 1	Associadas	associar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	0	root	O	eliminar
+ 2	a	a	ADP	_	_	3	case	O	_
+@@ -232326,7 +232326,7 @@
+ 6	e	e	CCONJ	_	_	7	cc	O	_
+ 7	Programas	programa	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 
+-# text = Os mapas e programas obtidos a partir deste trabalho de pesquisa correspondem :
++# text = Os mapas e programas obtidos a partir deste trabalho de pesquisa correspondem : - mapa de interpretação da área integral na escala de 1:400000 que reúne os elementos da interpretação quantitativa e qualitativa obtidos a partir dos dados aeromagnetométricos ; - mapa em cores representando os níveis de intensidade do campo magnético total da área integral na escala de 1:400000 ; - mapa em cores representando os intervalos de valores da amplitude do sinal analítico da área integral na escala de 1:400000 ; - programa computacional para Inversão Magnética Compacta Generalizada ; - e programa para Deconvolução de Euler adaptada . .
+ # sent_id = 20-20140904-TESEDSC_0-45
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	B=INSTRUMENTO	_
+@@ -232504,7 +232504,7 @@
+ 2	Ferramentas	ferramenta	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 3	Computacionais	computacional	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 
+-# text = As ferramentas computacionais utilizadas neste estudo foram:
++# text = As ferramentas computacionais utilizadas neste estudo foram : - GMT para geração dos grids em coordenadas geográficas ; - GEOSOFT para geração dos mapas de campo total , derivadas e de interpretação e filtragen de perfis ; - MATLAB 6.5 utilizado na codificação dos programas referidos no item anterior para interpretação quantitativa . .
+ # sent_id = 20-20140904-TESEDSC_0-48
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	ferramentas	ferramenta	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	O	_
+@@ -232832,7 +232832,7 @@
+ 27	.	.	PUNCT	_	_	7	punct	O	_
+ 28	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = A seguir estão relacionadas algumas destas estruturas, conforme descrição do referido autor, que podem apresentar eventual efeito magnético observado na área desta pesquisa:
++# text = A seguir estão relacionadas algumas destas estruturas , conforme descrição do referido autor , que podem apresentar eventual efeito magnético observado na área desta pesquisa : 1 )
+ # sent_id = 20-20140904-TESEDSC_0-56
+ 1	A	a	SCONJ	_	_	4	obl	O	MWEPOS=ADV
+ 2	seguir	seguir	VERB	_	VerbForm=Inf	1	fixed	O	sentenciação
+@@ -243360,7 +243360,7 @@
+ 26	.	.	PUNCT	_	_	4	punct	O	_
+ 27	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Os parâmetros deste levantamento estão relacionados a seguir :
++# text = Os parâmetros deste levantamento estão relacionados a seguir : - Total de Perfis : 41.595 km As figuras 3.3 e 3.4 apresentam mapas mostrando a junção entre os aerolevantamentos da área marinha ( Fugro ) e da área emersa ( CPRM ) . .
+ # sent_id = 20-20140904-TESEDSC_0-312
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	parâmetros	parâmetro	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	O	_
+@@ -246477,7 +246477,7 @@
+ 26	.	.	PUNCT	_	_	14	punct	O	_
+ 27	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Como exemplo da aplicação desta metodologia na interpretação são descritos os dois casos a seguir:
++# text = Como exemplo da aplicação desta metodologia na interpretação são descritos os dois casos a seguir : - No mapa do campo magnético total da figura 1.3( alvo 4 ) , pode-se observar a anomalia magnética causada pelas intrusivas que constituem a província alcalina de Arraial do Cabo . .
+ # sent_id = 20-20140904-TESEDSC_0-380
+ 1	Como	como	ADP	_	_	5	case	O	_
+ 2	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+@@ -256575,7 +256575,7 @@
+ 2	Programas	programa	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 3	Computacionais	computacional	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 
+-# text = Neste trabalho de pesquisa foram desenvolvidos dois programas utilizando o código Matlab 6.5 para a interpretação quantitativa dos dados:
++# text = Neste trabalho de pesquisa foram desenvolvidos dois programas utilizando o código Matlab 6.5 para a interpretação quantitativa dos dados : - EulerDPSA .m e - CompacidadeM . m..
+ # sent_id = 20-20140904-TESEDSC_0-629
+ 1-2	Neste	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -256776,7 +256776,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-634
+ 1	Processamento	Processamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+-# text = Algoritmo de inversão baseado no estimador padrão de mínimos quadrados (MQ) :
++# text = Algoritmo de inversão baseado no estimador padrão de mínimos quadrados ( MQ ) : т т
+ # sent_id = 20-20140904-TESEDSC_0-635
+ 1	Algoritmo	algoritmo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	3	case	O	_
+@@ -280904,7 +280904,7 @@
+ 57	capítulo	capítulo	NOUN	_	Gender=Masc|Number=Sing	54	obl	O	_
+ 58	4..	4..	NUM	_	NumType=Card	57	nummod	O	_
+ 
+-# text = A experiência adquirida na implementação e aplicação desta metodologia permite listar a seguir algumas conclusões:
++# text = A experiência adquirida na implementação e aplicação desta metodologia permite listar a seguir algumas conclusões : -
+ # sent_id = 20-20140904-TESEDSC_0-1225
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	experiência	experiência	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
+@@ -284474,7 +284474,7 @@
+ 51	.	.	PUNCT	_	_	21	punct	O	_
+ 52	.	.	PUNCT	_	_	21	punct	O	_
+ 
+-# text = Da mesma forma, a anomalia da área submersa (figura 6.9) parece estar associada a um pulso magmático ocorrido em um período de reversão do campo geomagnético
++# text = Da mesma forma , a anomalia da área submersa ( figura 6.9 ) parece estar associada a um pulso magmático ocorrido em um período de reversão do campo geomagnético -
+ # sent_id = 20-20140904-TESEDSC_0-1321
+ 1-2	Da	_	_	_	_	_	_	_	_
+ 1	De	de	ADP	_	_	4	case	O	_
+@@ -287539,7 +287539,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-32
+ 1	Objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+-# text = Os objetivos deste trabalho são identificados como:
++# text = Os objetivos deste trabalho são identificados como : • Analisar a alteração de comportamento do fluido de perfuração devido à adição de argila . • Avaliar os efeitos da concentração de argila ( bentonita ) associados ao dano de formação e sua posterior remoção natural . .
+ # sent_id = 119-20141209-TESEMSC_0-33
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	eliminar
+ 2	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	O	_
+@@ -289075,7 +289075,7 @@
+ 43	.	.	PUNCT	_	_	19	punct	O	_
+ 44	.	.	PUNCT	_	_	19	punct	O	_
+ 
+-# text = Chilingarian & Vorabutr, 1983, destacaram 14 funções do fluido de perfuração, em geral as principais são:
++# text = Chilingarian & Vorabutr , 1983 , destacaram 14 funções do fluido de perfuração , em geral as principais são : • Carrear os cascalhos do poço e permitir a sua separação na superfície ; • Estabilizar as paredes do poço , prevenindo o desmoronamento ; • Formar um reboco pouco permeável ; • Manter os sólidos em suspensão quando a circulação for interrompida ; • Evitar danos à formação produtora ; • Resfriar e lubrificar a broca e a coluna de perfuração ; • Reduzir o atrito entre a coluna de perfuração e a parede do poço ; • Exercer pressão hidrostática sobre as formações , mantendo a pressão dentro do poço maior que a pressão de poro , de modo a prevenir kicks ( chamamos de kick o influxo de fluidos indesejáveis da formação para dentro do poço ; quando esse influxo ocorre de forma descontrolada , chamamos de blowout ) . .
+ # sent_id = 119-20141209-TESEMSC_0-89
+ 1	Chilingarian	Chilingarian	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	O	sentenciação
+ 2	&	&	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -289271,7 +289271,7 @@
+ 16	.	.	PUNCT	_	_	2	punct	O	_
+ 17	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = Para que os fluidos de perfuração desenvolvam as funções citadas acima é necessário que eles apresentem algumas características (Thomas, 2001), entre elas:
++# text = Para que os fluidos de perfuração desenvolvam as funções citadas acima é necessário que eles apresentem algumas características ( Thomas , 2001 ) , entre elas : • Ser bombeável ; • Não reagir com as formações atravessadas ; • Apresentar baixo grau de corrosão e de abrasão ; • Apresentar massa específica suficiente para evitar influxos indesejados para dentro do poço . .
+ # sent_id = 119-20141209-TESEMSC_0-91
+ 1	Para	para	SCONJ	_	_	7	mark	O	_
+ 2	que	que	SCONJ	_	_	7	mark	O	_
+@@ -290142,7 +290142,7 @@
+ 21	.	.	PUNCT	_	_	3	punct	O	_
+ 22	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Tais efeitos podem ser:
++# text = Tais efeitos podem ser : • Dano à formação produtora devido à obstrução dos poros pelo carreamento de sólidos pelo filtrado , inchamento de argilas hidratáveis , formação de emulsão ; • Desmoronamento de folhelhos hidratáveis . .
+ # sent_id = 119-20141209-TESEMSC_0-116
+ 1	Tais	tais	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	O	sentenciação
+ 2	efeitos	efeito	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	O	_
+@@ -290671,7 +290671,7 @@
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	HCO3	HCO3	PROPN	_	Gender=Masc|Number=Sing	27	appos	O	_
+ 
+-# text = Nas sondas, são determinados três tipos de alcalinidades (Lima, 2002):
++# text = Nas sondas , são determinados três tipos de alcalinidades ( Lima , 2002 ) : • Alcalinidade parcial do filtrado ( Pf ) ; 2.2.3 . Classificação dos fluidos de perfuração
+ # sent_id = 119-20141209-TESEMSC_0-133
+ 1-2	Nas	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -292088,7 +292088,7 @@
+ 2	.	.	PUNCT	_	_	3	punct	O	_
+ 3	Características	característica	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 
+-# text = Soto, 2008, destacou 10 características de um fluido drill-in, entre elas podemos citar:
++# text = Soto , 2008 , destacou 10 características de um fluido drill-in , entre elas podemos citar : • Não deve conter argilas e materiais insolúveis em ácido que possam migrar para a formação e obstruir os poros ; • Deve ser formulado de forma a minimizar a perda de filtrado para a formação e obter uma remoção do reboco eficiente ; •
+ # sent_id = 119-20141209-TESEMSC_0-169
+ 1	Soto	Soto	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	sentenciação
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+@@ -292157,7 +292157,7 @@
+ 63	;	;	PUNCT	_	_	43	punct	O	_
+ 64	•	•	PUNCT	_	_	43	punct	O	_
+ 
+-# text = O filtrado deve ser formulado para prevenir hidratação e migração de argilas encontradas na zona produtora, evitando entupimento dos poros da formação;
++# text = O filtrado deve ser formulado para prevenir hidratação e migração de argilas encontradas na zona produtora , evitando entupimento dos poros da formação ; •
+ # sent_id = 119-20141209-TESEMSC_0-170
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	filtrado	filtrado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+@@ -292191,7 +292191,7 @@
+ 27	;	;	PUNCT	_	_	3	punct	O	_
+ 28	•	•	PUNCT	_	_	3	punct	O	_
+ 
+-# text = O filtrado deve ser compatível com os fluidos da formação;
++# text = O filtrado deve ser compatível com os fluidos da formação ; • O fluido e o filtrado não devem alterar a molhabilidade da formação ; • O fluido deve ser compatível com os equipamentos e processos da completação . .
+ # sent_id = 119-20141209-TESEMSC_0-171
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	filtrado	filtrado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+@@ -292248,7 +292248,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-173
+ 1	Funções	função	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 
+-# text = As principais funções de um fluido drill-in são (Soto, 2008):
++# text = As principais funções de um fluido drill-in são ( Soto , 2008 ) : • Maximizar o potencial de produtividade do poço ; • Oferecer um controle eficaz das perdas de filtrado para a formação ; • Proporcionar excelentes propriedades de limpeza , lubrificação e inibição durante a perfuração do poço . .
+ # sent_id = 119-20141209-TESEMSC_0-174
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	O	_
+ 2	principais	principal	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+@@ -295685,7 +295685,7 @@
+ 31	.	.	PUNCT	_	_	11	punct	O	_
+ 32	.	.	PUNCT	_	_	11	punct	O	_
+ 
+-# text = A tensão de cisalhamento, τ, corresponde à razão entre a força aplicada na direção do escoamento, para deformar o corpo, e a área da superfície exposta ao cisalhamento, conforme Equação 2.1: (2.1)
++# text = A tensão de cisalhamento , τ , corresponde à razão entre a força aplicada na direção do escoamento , para deformar o corpo , e a área da superfície exposta ao cisalhamento , conforme Equação 2.1 : ( 2.1 ) , é definida pela razão entre a diferença de velocidade entre duas
+ # sent_id = 119-20141209-TESEMSC_0-290
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+@@ -295826,7 +295826,7 @@
+ 43	2.3	2.3	NUM	_	NumType=Card	38	nummod	O	_
+ 44	)	)	PUNCT	_	_	43	punct	O	_
+ 
+-# text = Outra grandeza útil é a viscosidade cinemática, que é definida pela razão entre a viscosidade dinâmica do fluido e a sua massa específica, conforme Equação 2.4: (2.4)
++# text = Outra grandeza útil é a viscosidade cinemática , que é definida pela razão entre a viscosidade dinâmica do fluido e a sua massa específica , conforme Equação 2.4 : ( 2.4 ) 2.5.3 . Classificação dos fluidos viscosos
+ # sent_id = 119-20141209-TESEMSC_0-293
+ 1	Outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	O	_
+ 2	grandeza	grandeza	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
+@@ -296477,7 +296477,7 @@
+ 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	flat:name	O	_
+ 42	Potência	Potência	PROPN	_	Number=Sing	39	flat:name	O	_
+ 
+-# text = Este modelo é definido conforme Equação 2.7:
++# text = Este modelo é definido conforme Equação 2.7 : τ "#$ % ( 2.7 ) onde K é n são parâmetros reológicos deste tipo de fluido denominados , respectivamente , de índice de consistência e índice de comportamento . .
+ # sent_id = 119-20141209-TESEMSC_0-314
+ 1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	O	_
+ 2	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	O	_
+@@ -297393,7 +297393,7 @@
+ 24	poroso	poroso	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	_
+ 25	..	..	PUNCT	_	_	4	punct	O	_
+ 
+-# text = A viscosidade efetiva (ηeff) em um capilar é dada pela lei de Poiseuille conforme Equação
++# text = A viscosidade efetiva ( ηeff ) em um capilar é dada pela lei de Poiseuille conforme Equação 2.12 : ( 2.12 ) onde R é o raio da amostra e QNN é a vazão do fluido não-Newtoniano . .
+ # sent_id = 119-20141209-TESEMSC_0-345
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
+@@ -298340,7 +298340,7 @@
+ 33	.	.	PUNCT	_	_	5	punct	O	_
+ 34	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = O nível e a natureza da adsorção dos polímeros dependem principalmente:
++# text = O nível e a natureza da adsorção dos polímeros dependem principalmente : • Do tipo de polímero e suas propriedades , tais como : peso molecular , tamanho da molécula e densidade de carga ; • Do tipo de solvente e suas características , tais como : pH , salinidade ( Na+ , Cl- ) , dureza ( Ca2+ , Mg2+ ) e temperatura . .
+ # sent_id = 119-20141209-TESEMSC_0-382
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	nível	nível	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+@@ -298419,7 +298419,7 @@
+ 70	.	.	PUNCT	_	_	12	punct	O	_
+ 71	.	.	PUNCT	_	_	12	punct	O	_
+ 
+-# text = A presença de outras espécies em solução, como o álcool, pode afetar a qualidade do solvente e, portanto, o nível de adsorção;
++# text = A presença de outras espécies em solução , como o álcool , pode afetar a qualidade do solvente e , portanto , o nível de adsorção ; • Da área e do tipo de superfície ( sílica , carbonato , argila , arenito ) ..
+ # sent_id = 119-20141209-TESEMSC_0-383
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	presença	presença	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	O	_
+@@ -298577,7 +298577,7 @@
+ 14	.	.	PUNCT	_	_	3	punct	O	_
+ 15	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = As consequências esperadas são (Sorbie, 1991):
++# text = As consequências esperadas são ( Sorbie , 1991 ) : • A concentração no efluente do testemunho será menor que a concentração máxima na entrada ou será igual à da entrada somente depois da injeção de muitos volumes porosos do fluido polimérico . .
+ # sent_id = 119-20141209-TESEMSC_0-389
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	consequências	consequência	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	O	_
+@@ -298638,7 +298638,7 @@
+ 50	.	.	PUNCT	_	_	21	punct	O	_
+ 51	.	.	PUNCT	_	_	6	punct	O	_
+ 
+-# text = Esta situação ocorre quando existe um pequeno número de regiões de aprisionamentos que foram bloqueadas totalmente, fazendo com que o escoamento subsequente se dê através dos canais maiores onde não ocorrem aprisionamentos;
++# text = Esta situação ocorre quando existe um pequeno número de regiões de aprisionamentos que foram bloqueadas totalmente , fazendo com que o escoamento subsequente se dê através dos canais maiores onde não ocorrem aprisionamentos ; • A distribuição do polímero aprisionado mecanicamente ao longo do testemunho deve ser maior próxima à entrada e decrescer aproximadamente exponencialmente ao longo do testemunho . .
+ # sent_id = 119-20141209-TESEMSC_0-390
+ 1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	sentenciação
+ 2	situação	situação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+@@ -298716,7 +298716,7 @@
+ 67	.	.	PUNCT	_	_	3	punct	O	_
+ 68	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Na Figura 2.15 tem-se a distribuição do polímero (PHPA) retido em um testemunho após o influxo de um fluido polimérico;
++# text = Na Figura 2.15 tem-se a distribuição do polímero ( PHPA ) retido em um testemunho após o influxo de um fluido polimérico ; • Se existir um número de regiões de aprisionamento acima de um número crítico , o testemunho vai ser totalmente bloqueado e a permeabilidade vai cair para aproximadamente zero . .
+ # sent_id = 119-20141209-TESEMSC_0-391
+ 1-2	Na	_	_	_	_	_	_	_	sentenciação
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -299419,7 +299419,7 @@
+ 45	.	.	PUNCT	_	_	9	punct	O	_
+ 46	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = Amaefule et al., 1988, listaram as condições que afetam o dano de formação em quatro grupos:
++# text = Amaefule et al. , 1988 , listaram as condições que afetam o dano de formação em quatro grupos : • Tipo , morfologia e localização dos minerais residentes ; • Composição dos fluidos in-situ e externos ; • Condições de tensões e temperatura in-situ e propriedades da formação porosa ; • Práticas de desenvolvimento do poço e de explotação do reservatório . .
+ # sent_id = 119-20141209-TESEMSC_0-407
+ 1	Amaefule	Amaefule	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	O	eliminar
+ 2	et	et	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -299536,7 +299536,7 @@
+ 35	.	.	PUNCT	_	_	15	punct	O	_
+ 36	.	.	PUNCT	_	_	15	punct	O	_
+ 
+-# text = Bishop, 1997, destacou sete mecanismos de dano:
++# text = Bishop , 1997 , destacou sete mecanismos de dano : • • • • Migração de finos . .
+ # sent_id = 119-20141209-TESEMSC_0-409
+ 1	Bishop	Bishop	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+@@ -299821,7 +299821,7 @@
+ 19	consolidado	consolidar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	O	_
+ 20	homogêneo	homogêneo	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
+ 
+-# text = Os mecanismos com maior potencial de dano que tendem a prevalecer nesse tipo de reservatório incluem:
++# text = Os mecanismos com maior potencial de dano que tendem a prevalecer nesse tipo de reservatório incluem : • • • Invasão de sólidos , dependendo do tamanho e composição dos sólidos suspensos e diâmetro médio da garganta de poro da formação ; • Pressão altamente sobrebalanceada , principalmente em arenitos de alta permeabilidade ; • Aprisionamento de fase , importante causador de redução da permeabilidade em arenitos com baixas permeabilidades ; • Alteração da molhabilidade causados por adsorção química , particularmente arenitos que contêm alta concentração de argilas com grande área superficial ; • Migração de finos . .
+ # sent_id = 119-20141209-TESEMSC_0-419
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	mecanismos	mecanismo	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	O	_
+@@ -300070,7 +300070,7 @@
+ 44	fluido-rocha	fluido-rocha	NOUN	_	Gender=Fem|Number=Sing	41	nmod	O	_
+ 45	..	..	PUNCT	_	_	11	punct	O	_
+ 
+-# text = Arenitos laminados podem ser mais sensíveis à invasão de sólidos do que os arenitos homogêneos pelos seguintes fatos:
++# text = Arenitos laminados podem ser mais sensíveis à invasão de sólidos do que os arenitos homogêneos pelos seguintes fatos : • Os finos gerados pela penetração nessas lâminas tendem a ser menores e mais difíceis de serem removidos , sendo mais propícios a invadir e aprisionar-se na formação . •
+ # sent_id = 119-20141209-TESEMSC_0-424
+ 1	Arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	B=LITOLOGIA	_
+ 2	laminados	laminar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	O	_
+@@ -300496,7 +300496,7 @@
+ 1	Arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	0	root	B=LITOLOGIA	_
+ 2	fraturados	fraturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	O	_
+ 
+-# text = Os arenitos fraturados, basicamente, podem ser divididos em duas categorias:
++# text = Os arenitos fraturados , basicamente , podem ser divididos em duas categorias : • Arenitos fraturados onde a produção efetiva é obtida por um sistema de matriz de qualidade razoável e um sistema de fraturas interconectado de alta permeabilidade ; • Arenitos fraturados que apresentam permeabilidade da matriz e , possivelmente , porosidade extremamente baixa onde o sistema de fratura atua como principal condutor para a produção do fluido . .
+ # sent_id = 119-20141209-TESEMSC_0-434
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	B=LITOLOGIA	_
+@@ -300682,7 +300682,7 @@
+ 24	.	.	PUNCT	_	_	5	punct	O	_
+ 25	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = As fraturas dividem-se em:
++# text = As fraturas dividem-se em : • Micro-fraturas : diâmetros menores que 100 mícrons . • Macro-fraturas : diâmetros maiores que 100 mícrons . .
+ # sent_id = 119-20141209-TESEMSC_0-438
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	fraturas	fratura	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	B=LITOLOGIA	_
+@@ -301516,7 +301516,7 @@
+ 24	.	.	PUNCT	_	_	4	punct	O	_
+ 25	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Hillier, 1998 enumerou algumas razões para este fato:
++# text = Hillier , 1998 enumerou algumas razões para este fato : • Os fluidos de perfuração estão em contato com a formação produtora por maior tempo ; • A maioria dos poços horizontais é completada a poço aberto sem cimentação ; • Invasões de fluidos podem resultar no efeito de película ( skin ) que pode reduzir a produção ; • Zonas produtoras expostas por maior tempo podem dificultar a obtenção de levantamentos precisos com vistas à remoção do dano ; •
+ # sent_id = 119-20141209-TESEMSC_0-463
+ 1	Hillier	Hillier	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	eliminar
+ 2	,	,	PUNCT	_	_	1	flat:name	O	_
+@@ -302120,7 +302120,7 @@
+ 1	Avaliação	avaliação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	laboratorial	laboratorial	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ 
+-# text = De acordo com Porter, 1989, e Mungan, 1989, apud Civan, 2007, para uma boa caracterização do dano de formação, testes laboratoriais de fluxo em testemunho devem ser conduzidos seguindo algumas condições:
++# text = De acordo com Porter , 1989 , e Mungan , 1989 , apud Civan , 2007 , para uma boa caracterização do dano de formação , testes laboratoriais de fluxo em testemunho devem ser conduzidos seguindo algumas condições : • Amostras dos fluidos presentes e rochas da formação , de forma que todo potencial de interação rocha-fluido possa ser considerado ; • Testes laboratoriais devem ser projetados tendo em vista as condições de todas as operações de campo , incluindo perfuração , completação , estimulação , e técnicas e estratégias presentes e futuras de recuperação de óleo e gás ; •
+ # sent_id = 119-20141209-TESEMSC_0-476
+ 1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	sentenciação
+@@ -302230,7 +302230,7 @@
+ 103	;	;	PUNCT	_	_	70	punct	O	_
+ 104	•	•	PUNCT	_	_	70	punct	O	_
+ 
+-# text = A composição iônica das salmouras utilizadas em testes de laboratório deve ser a mesma das salmouras da formação e das salmouras de injeção envolvidas nas operações de campo;
++# text = A composição iônica das salmouras utilizadas em testes de laboratório deve ser a mesma das salmouras da formação e das salmouras de injeção envolvidas nas operações de campo ; • O óleo não deve ser extraído das amostras de reservatórios de petróleo a fim de preservar o seu estado nativo . .
+ # sent_id = 119-20141209-TESEMSC_0-477
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	composição	composição	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
+@@ -302297,7 +302297,7 @@
+ 57	.	.	PUNCT	_	_	12	punct	O	_
+ 58	.	.	PUNCT	_	_	12	punct	O	_
+ 
+-# text = Masikewich & Bennion, 1999, apud Civan, 2007, classificam os esforços necessários para testes de fluido em seis etapas: 1. - Identificação das características da rocha e do fluido; 2. - Especulação sobre os potenciais mecanismos de dano de formação; 3. - Verificação e quantificação, através de vários testes, dos mecanismos que dizem respeito ao dano de formação; 4. - Investigação de técnicas de atenuação do potencial de dano;
++# text = Masikewich & Bennion , 1999 , apud Civan , 2007 , classificam os esforços necessários para testes de fluido em seis etapas : 1. - Identificação das características da rocha e do fluido ; 2. - Especulação sobre os potenciais mecanismos de dano de formação ; 3. - Verificação e quantificação , através de vários testes , dos mecanismos que dizem respeito ao dano de formação ; 4. - Investigação de técnicas de atenuação do potencial de dano ; 3 ; 5. - Desenvolvimento de sistemas de reboco efetivos para minimizar e/ou evitar a invasão de fluidos e finos para dentro do meio poroso ; 6. - Teste de fluidos candidatos para uma seleção ótima . .
+ # sent_id = 119-20141209-TESEMSC_0-478
+ 1	Masikewich	Masikewich	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+ 2	&	&	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -306231,7 +306231,7 @@
+ 46	.	.	PUNCT	_	_	21	punct	O	_
+ 47	.	.	PUNCT	_	_	21	punct	O	_
+ 
+-# text = `H>LMNOPãQ
++# text = `H>Lmnopãq
+ # sent_id = 119-20141209-TESEMSC_0-590
+ 1	`H>Lmnopãq	`H>LMNOPãQ	PROPN	_	Gender=Masc|Number=Sing	0	root	O	eliminar
+ 
+@@ -316398,7 +316398,7 @@
+ 46	.	.	PUNCT	_	_	5	punct	O	_
+ 47	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Segundo THOMAS et al., (2001) para garantir uma perfuração rápida e segura, os fluidos de perfuração devem apresentar, sempre que possível, as seguintes características:
++# text = Segundo THOMAS et al. , ( 2001 ) para garantir uma perfuração rápida e segura , os fluidos de perfuração devem apresentar , sempre que possível , as seguintes características :  Ser quimicamente estável ;  Aceitar qualquer tratamento , químico e físico ;  Ser bombeável ;  Resfriar e lubrificar a coluna de perfuração e a broca ;  Apresentar baixo grau de corrosão e de abrasão em relação à coluna de perfuração e aos demais equipamentos do sistema de circulação ;  Estabilizar as paredes do poço , mecânica e quimicamente ;  Manter os sólidos em suspensão quando estiver em repouso ;  Ser inerte em relação às rochas produtoras ;  Facilitar as interpretações geológicas do material retirado ( ou testemunho ) do poço ;  Exercer pressão hidrostática sobre as formações , de modo a evitar o influxo de fluidos indesejáveis ( kick ) ;  Apresentar custo compatível com a produção ;  Facilitar o acesso e a separação dos cascalhos na superfície . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-29
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	THOMAS	THOMAS	PROPN	_	Gender=Masc|Number=Sing	21	obl	O	_
+@@ -316784,7 +316784,7 @@
+ 34	.	.	PUNCT	_	_	9	punct	O	_
+ 35	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = b,
++# text = b , 5. - Na superfície , a lama é transportada através da linha de retorno da lama , uma tubulação que leva ao batedor de xisto . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-35
+ 1	b	b	PROPN	_	Gender=Masc|Number=Sing	12	nsubj:pass	O	sentenciação
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+@@ -319887,7 +319887,7 @@
+ 30	.	.	PUNCT	_	_	3	punct	O	_
+ 31	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Na primeira classificação, os fluidos podem ser divididos em:
++# text = Na primeira classificação , os fluidos podem ser divididos em :  Reversíveis ou elásticos : são sistemas que não escoam ; sua deformação é reversível e o sistema obedece à Lei de Hooke .  Irreversíveis ou viscosos : são sistemas que escoam ; sua deformação é irreversível e o sistema obedece à Lei de Newton , de viscosidade constante . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-147
+ 1-2	Na	_	_	_	_	_	_	_	sentenciação
+ 1	Em	em	ADP	_	_	4	case	O	_
+@@ -320787,7 +320787,7 @@
+ 65	de	de	ADP	_	_	63	flat:name	O	_
+ 66	Bingham	Bingham	PROPN	_	Number=Sing	63	flat:name	O	_
+ 
+-# text = Neste modelo, a tensão de cisalhamento para um fluido de Bingham é definida pelas equações a seguir: Sendo:
++# text = Neste modelo , a tensão de cisalhamento para um fluido de Bingham é definida pelas equações a seguir : Sendo : 𝜇𝑝 – viscosidade plástica do fluido 𝜏0 – tensão limite de escoamento do fluido
+ # sent_id = 240-20140220-MONOGRAFIA_0-171
+ 1-2	Neste	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -320922,7 +320922,7 @@
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	potência	potência	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+ 
+-# text = A tensão de cisalhamento em um fluido de potência está relacionada à taxa de cisalhamento através da seguinte equação: (8) Sendo: 𝐾 - índice de consistência do fluido,
++# text = A tensão de cisalhamento em um fluido de potência está relacionada à taxa de cisalhamento através da seguinte equação : ( 8 ) Sendo : 𝐾 - índice de consistência do fluido , 𝛾̇ - taxa de deformação por cisalhamento do fluido n – índice de comportamento
+ # sent_id = 240-20140220-MONOGRAFIA_0-175
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	O	_
+@@ -320980,7 +320980,7 @@
+ 50	de	de	ADP	_	_	51	case	O	_
+ 51	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	49	nmod	O	_
+ 
+-# text = No qual, o índice de comportamento, pode ser dividido em:
++# text = No qual , o índice de comportamento , pode ser dividido em : 0 < 𝑛 < 1 , fluido Pseudoplástico 𝑛 𝑛 = 1 , fluido
+ # sent_id = 240-20140220-MONOGRAFIA_0-176
+ 1-2	No	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -324430,7 +324430,7 @@
+ 10	.	.	PUNCT	_	_	3	punct	O	_
+ 11	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Com isso, os diferentes tipos de equilíbrio existentes entre as microemulsões, fase aquosa e oleosa, foram classificados por Winsor em 1938, como:
++# text = Com isso , os diferentes tipos de equilíbrio existentes entre as microemulsões , fase aquosa e oleosa , foram classificados por Winsor em 1938 , como :  WINSOR I ( WI ) : Quando a fase microemulsionada está em equilíbrio com uma fase orgânica em excesso . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-289
+ 1	Com	com	ADP	_	_	2	case	O	sentenciação
+ 2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	20	obl	O	_
+@@ -324880,7 +324880,7 @@
+ 3	REAGENTES	reagente	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 4	UTILIZADOS	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 
+-# text = Para a realização deste trabalho, foram utilizados os seguintes reagentes:
++# text = Para a realização deste trabalho , foram utilizados os seguintes reagentes :  Água destilada , como fase aquosa ; /  NaCl , para transformar a água destilada em salmoura ; DÁ  n-Parafina , representando a fase óleo ; DÁ  Nonifenoletoxilado ( Ultranex 40 e Ultranex 80 ) , tensoativos não-iônicos , utilizados como agente emulsificante ; VV  Goma Xantana e Atapulgita , viscosificantes utilizados para modificar a viscosidade do fluido ; DÁ  Baritina , adensante , utilizado para dar peso ao fluido . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-302
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+@@ -324986,7 +324986,7 @@
+ 3	MATERIAIS	material	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 4	UTILIZADOS	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 
+-# text = Os principais materiais usados no desenvolvimento experimental foram: PÁ
++# text = Os principais materiais usados no desenvolvimento experimental foram : PÁ  Tubo de ensaio ;  Conta gotas ; 3.3 . EQUIPAMENTOS UTILIZADOS
+ # sent_id = 240-20140220-MONOGRAFIA_0-304
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 2	principais	principal	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+@@ -325014,7 +325014,7 @@
+ 23	EQUIPAMENTOS	equipamento	NOUN	_	Gender=Masc|Number=Plur	11	conj	B=INSTRUMENTO	_
+ 24	UTILIZADOS	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	O	_
+ 
+-# text = Os equipamentos utilizados no decorrer deste trabalho foram: DÁ
++# text = Os equipamentos utilizados no decorrer deste trabalho foram : DÁ  Balança analítica Tecnal , modelo B-TEC-W210A ;  Agitador Tecnal , modelo AP56 Phonenix ;  Centrífuga Quimis , microprocessada ;
+ # sent_id = 240-20140220-MONOGRAFIA_0-305
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	equipamentos	equipamento	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	B=INSTRUMENTO	_
+@@ -325053,7 +325053,7 @@
+ 33	microprocessada	microprocessar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	30	acl	O	_
+ 34	;	;	PUNCT	_	_	12	punct	O	_
+ 
+-# text = ÚV
++# text = ÚV ÚV  Reômetro Thermo Cientific – HAAKE MARS ( Modular Advanced Rheometer System ) . .
+ # sent_id = 240-20140220-MONOGRAFIA_0-306
+ 1	ÚV	ÚV	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	ÚV	ÚV	PROPN	_	Number=Sing	1	flat:name	O	_
+@@ -325073,7 +325073,7 @@
+ 16	.	.	PUNCT	_	_	1	punct	O	_
+ 17	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = DÁ
++# text = DÁ 3.4 OBTENÇÃO DOS SISTEMAS MICROEMULSIONADOS E CONSTRUÇÃO DOS
+ # sent_id = 240-20140220-MONOGRAFIA_0-307
+ 1	DÁ	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	3.4	3.4	NUM	_	NumType=Card	3	nummod	O	_
+@@ -327812,7 +327812,7 @@
+ 66	.	.	PUNCT	_	_	3	punct	O	_
+ 67	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = As Figuras que mostram o comportamento tixotrópico do fluido para as demais concentrações estão no ANEXO B.
++# text = As Figuras que mostram o comportamento tixotrópico do fluido para as demais concentrações estão no ANEXO B. Fonte : Autor..
+ # sent_id = 240-20140220-MONOGRAFIA_0-382
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	Figuras	figura	NOUN	_	Gender=Fem|Number=Plur	18	nsubj	O	_
+@@ -328351,7 +328351,7 @@
+ 25	.	.	PUNCT	_	_	10	punct	O	_
+ 26	.	.	PUNCT	_	_	10	punct	O	_
+ 
+-# text = As Figuras apresentando a curva de fluxo e viscosidade com aplicação dos modelos de Newton, Bingham e Ostwald de Waale para cada uma destas concentrações estão no ANEXO C.
++# text = As Figuras apresentando a curva de fluxo e viscosidade com aplicação dos modelos de Newton , Bingham e Ostwald de Waale para cada uma destas concentrações estão no ANEXO C. Fonte : Autor ..
+ # sent_id = 240-20140220-MONOGRAFIA_0-399
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	Figuras	figura	NOUN	_	Gender=Fem|Number=Plur	32	nsubj	O	_
+@@ -333305,7 +333305,7 @@
+ 23	.	.	PUNCT	_	_	14	punct	O	_
+ 24	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = o es ul
++# text = o es ul  Densidade Específica é a razão da massa de um dado material , por exemplo , o óleo em relação à massa da água doce , para o mesmo volume e a uma mesma temperatura . .
+ # sent_id = 411-20150702-MONOGRAFIA_0-70
+ 1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	es	e	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	O	_
+@@ -336337,7 +336337,7 @@
+ 33	.	.	PUNCT	_	_	6	punct	O	_
+ 34	.	.	PUNCT	_	_	6	punct	O	_
+ 
+-# text = Fonte: FUNCEME
++# text = Fonte : FUNCEME 2.2.6
+ # sent_id = 411-20150702-MONOGRAFIA_0-138
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+@@ -337145,7 +337145,7 @@
+ 14	.	.	PUNCT	_	_	3	punct	O	_
+ 15	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = c) Estuários formados por barras: apresentam uma redução da maré, e foram compostos pelo bloqueio natural de baías por restingas em eventos de recuo do mar;
++# text = c ) Estuários formados por barras : apresentam uma redução da maré , e foram compostos pelo bloqueio natural de baías por restingas em eventos de recuo do mar ; d )
+ # sent_id = 411-20150702-MONOGRAFIA_0-161
+ 1	c	c	NOUN	_	Gender=Masc|Number=Sing	3	parataxis	O	sentenciação
+ 2	)	)	PUNCT	_	_	1	punct	O	_
+@@ -337306,7 +337306,7 @@
+ 24	.	.	PUNCT	_	_	14	punct	O	_
+ 25	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Este autor divide o estuário em três trechos:
++# text = Este autor divide o estuário em três trechos : • Zona baixa ou marinha : com uma adesão direta com o oceano ; • Zona média : com complexo de água doce com a água marinha e ;
+ # sent_id = 411-20150702-MONOGRAFIA_0-166
+ 1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	O	_
+ 2	autor	autor	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+@@ -338968,7 +338968,7 @@
+ 25	.	.	PUNCT	_	_	11	punct	O	_
+ 26	.	.	PUNCT	_	_	11	punct	O	_
+ 
+-# text = o he de
++# text = o he de  Época do ano : De acordo com a época do ano , e com a época em que houve o derrame de petróleo , poderá ocorrer simultaneamente com a época de reprodução das espécies ( DEVIDS , 2008 ) .  Hidrodinamismo : É a intensidade , quantidade e força das correntes marítimas e ondas presente no ambiente , quanto maior o movimento das ondas e correntes maior será a dispersão desse petróleo ( DEVIDS , 2008 ) . .
+ # sent_id = 411-20150702-MONOGRAFIA_0-206
+ 1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	he	he	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	O	_
+@@ -340470,7 +340470,7 @@
+ 71	.	.	PUNCT	_	_	57	punct	O	_
+ 72	.	.	PUNCT	_	_	16	punct	O	_
+ 
+-# text = No ano de 2002 foi preparado um plano cartográfico para o Mapeamento de sensibilidade ambiental ao óleo da zona costeira e marinha dividida em três níveis: o de m
++# text = No ano de 2002 foi preparado um plano cartográfico para o Mapeamento de sensibilidade ambiental ao óleo da zona costeira e marinha dividida em três níveis : o de m  Estratégico ( em escala da ordem de 1:500.000 , abrangendo toda a área de uma determinada bacia , ou de bacias contíguas , em caso de bacias menores ) ; o o lo  Tático ( em escala de 1:150.000 , para todo o litoral da bacia mapeada ) ;  Operacional ou de detalhe ( em escalas de 1:10.000 a 1:50.000 , para locais de alto risco/sensibilidade ) . .
+ # sent_id = 411-20150702-MONOGRAFIA_0-242
+ 1-2	No	_	_	_	_	_	_	eliminar	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -340672,7 +340672,7 @@
+ 72	.	.	PUNCT	_	_	32	punct	O	_
+ 73	.	.	PUNCT	_	_	32	punct	O	_
+ 
+-# text = As cartas SAO incluem três tipos de informações principais:
++# text = As cartas SAO incluem três tipos de informações principais :  Sensibilidade ambiental do litoral ao óleo , definida por um Índice de Sensibilidade do Litoral ( ISL ) . .
+ # sent_id = 411-20150702-MONOGRAFIA_0-244
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	cartas	carta	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	O	_
+@@ -341545,7 +341545,7 @@
+ 45	.	.	PUNCT	_	_	14	punct	O	_
+ 46	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = São elas:
++# text = São elas :  Deflexão  Contenção e recolhimento  Dispersão química  Queima in situ  Limpeza da costa
+ # sent_id = 411-20150702-MONOGRAFIA_0-261
+ 1	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	O	_
+ 2	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	0	root	O	_
+@@ -345175,7 +345175,7 @@
+ 60	.	.	PUNCT	_	_	5	punct	O	_
+ 61	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Os objetivos específicos desse trabalho são:
++# text = Os objetivos específicos desse trabalho são : • Estudar a influência do tensoativo na redução do TOG da água produzida ; • Encontrar uma concentração ótima de tensoativo para que se tenha uma máxima eficiência na extração do óleo ; • Estudar a influência de remoção de óleo na água produzida através de um processo de extração utilizando tensoativo em conjunto com uma filtração . .
+ # sent_id = 243-20141015-MONOGRAFIA_1-14
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	O	_
