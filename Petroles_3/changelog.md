@@ -1,4 +1,1019 @@
-# Changelog (2021-8-8-11:16:6)
+# Changelog
+
+Last update: 2021-8-13-8:54:17
+
+## lemma 'diferentes' is not correct
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu May 13 01:22:25 2021 -0300
+* Lines changed: 117
+* Commit: [7ad921ca7b0026a8d96285f76a37097fbc5d7dda](https://github.com/alvelvis/meu-mestrado/commit/7ad921ca7b0026a8d96285f76a37097fbc5d7dda)
+* Patch file: [2021_5_13_01:22:25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch](patch/2021_5_13_01:22:25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch)
+
+lemma 'diferentes' is not correct
+
+```diff
+ 5	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
+ 6	sobre	sobre	ADP	_	_	9	case	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+-8	diferentes	diferentes	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	O	_
++8	diferentes	diferente	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	O	_
+ 9	distribuições	distribuição	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+```
+
+## lemmas cannot be fem plur
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu May 13 01:41:07 2021 -0300
+* Lines changed: 164
+* Commit: [3983c05dde4b414d6a7b400afeb89ad2a9e63603](https://github.com/alvelvis/meu-mestrado/commit/3983c05dde4b414d6a7b400afeb89ad2a9e63603)
+* Patch file: [2021_5_13_01:41:07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch](patch/2021_5_13_01:41:07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch)
+
+lemmas cannot be fem plur
+
+```diff
+ 23	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	15	conj	O	_
+ 24	estruturais	estrutural	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
+ 25	e	e	CCONJ	_	_	28	cc	O	_
+-26	várias	várias	DET	_	Gender=Fem|Number=Plur|PronType=Ind	28	det	O	_
++26	várias	vário	DET	_	Gender=Fem|Number=Plur|PronType=Ind	28	det	O	_
+ 27	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	28	det	O	_
+ 28	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	15	conj	O	_
+ 29-30	do	_	_	_	_	_	_	O	_
+```
+
+## det filho de nummod -- erro?
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu May 13 02:06:45 2021 -0300
+* Lines changed: 22
+* Commit: [cada8310640e99453c71506dac6c337a584fd1f5](https://github.com/alvelvis/meu-mestrado/commit/cada8310640e99453c71506dac6c337a584fd1f5)
+* Patch file: [2021_5_13_02:06:45-cada8310640e99453c71506dac6c337a584fd1f5.patch](patch/2021_5_13_02:06:45-cada8310640e99453c71506dac6c337a584fd1f5.patch)
+
+det filho de nummod -- erro?
+
+```diff
+ 47	,	,	PUNCT	_	_	40	punct	O	_
+ 48-49	destes	_	_	_	_	_	_	O	_
+ 48	de	de	ADP	_	_	50	case	O	_
+-49	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	50	det	O	_
++49	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	52	det	O	_
+ 50	278	278	NUM	_	NumType=Card	52	nummod	O	_
+ 51	048	048	NUM	_	NumType=Card	52	nummod	O	_
+ 52	Km²	Km²	PROPN	_	Gender=Masc|Number=Plur	54	nsubj	O	_
+```
+
+## fix det and its head gender and number
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu May 13 03:09:43 2021 -0300
+* Lines changed: 8
+* Commit: [53d707a5cf2507383795458666e33450730e6012](https://github.com/alvelvis/meu-mestrado/commit/53d707a5cf2507383795458666e33450730e6012)
+* Patch file: [2021_5_13_03:09:43-53d707a5cf2507383795458666e33450730e6012.patch](patch/2021_5_13_03:09:43-53d707a5cf2507383795458666e33450730e6012.patch)
+
+fix det and its head gender and number
+
+```diff
+ 3-4	do	_	_	_	_	_	_	O	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	Paraná	Paraná	PROPN	_	Number=Sing	2	nmod	B=BACIA	_
++5	Paraná	Paraná	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=BACIA	_
+ # text = A Bacia Sedimentar do Paraná (Figura 6) se localiza no Continente Sul-Americano nas porções territoriais do Brasil meridional, Paraguai oriental, nordeste da Argentina e norte do Uruguai, totalizando uma área próxima de 1,5 milhão de quilômetros quadrados..
+ # sent_id = 247-20140910-MONOGRAFIA_0-82
+```
+
+## "um de" indicates PRON PronType=Ind
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu May 13 06:35:52 2021 -0300
+* Lines changed: 132
+* Commit: [b7f3d42913ca7db33f3c2927609ba56ecc3efa5c](https://github.com/alvelvis/meu-mestrado/commit/b7f3d42913ca7db33f3c2927609ba56ecc3efa5c)
+* Patch file: [2021_5_13_06:35:52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch](patch/2021_5_13_06:35:52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch)
+
+"um de" indicates PRON PronType=Ind
+
+```diff
+ 27	Província	Província	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 28	Mantiqueira	Mantiqueira	PROPN	_	Number=Sing	27	flat:name	O	_
+ 29	e	e	CCONJ	_	_	30	cc	O	_
+-30	um	um	NUM	_	NumType=Card	27	conj	O	_
++30	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	22	conj	O	_
+ 31-32	dos	_	_	_	_	_	_	O	_
+ 31	de	de	ADP	_	_	34	case	O	_
+ 32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	O	_
+```
+
+## visto que, já que
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Mon May 17 00:41:34 2021 -0300
+* Lines changed: 222
+* Commit: [725b3da4d82a47ed5757524c3bb8fd4d2048b127](https://github.com/alvelvis/meu-mestrado/commit/725b3da4d82a47ed5757524c3bb8fd4d2048b127)
+* Patch file: [2021_5_17_00:41:34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch](patch/2021_5_17_00:41:34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch)
+
+visto que, já que
+
+```diff
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	geólogo	geólogo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 17	,	,	PUNCT	_	_	8	punct	O	_
+-18	já	já	SCONJ	_	_	20	mark	O	_
++18	já	já	ADV	_	_	20	mark	O	MWEPOS=SCONJ
+ 19	que	que	SCONJ	_	_	18	fixed	O	_
+ 20	proporciona	proporcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+```
+
+## abservar is not a word
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Mon May 17 03:45:07 2021 -0300
+* Lines changed: 45
+* Commit: [ad450c4185a5c03beff93a817b997a7963165059](https://github.com/alvelvis/meu-mestrado/commit/ad450c4185a5c03beff93a817b997a7963165059)
+* Patch file: [2021_5_17_03:45:07-ad450c4185a5c03beff93a817b997a7963165059.patch](patch/2021_5_17_03:45:07-ad450c4185a5c03beff93a817b997a7963165059.patch)
+
+abservar is not a word
+
+```diff
+ # text = Observa-se que as emulsões asfálticas modificadas com vermiculita não apresentaram partículas retidas na peneira ASTM 20, mostrando a eficiência do processo de moagem realizado no moinho coloidal durante a obtenção da emulsão asfáltica..
+ # sent_id = 241-20140227-MONOGRAFIA_0-208
+ 1-2	Observa-se	_	_	_	_	_	_	O	_
+-1	Abserva	abservar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	11	mark	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+```
+
+## a_partir_de MWEPOS=ADP, partir VERB
+
+* Maria Clara Castro
+* Date:   Mon May 17 23:24:14 2021 -0300
+* Lines changed: 481
+* Commit: [fd9f01fe910ed8a9b7d23f66181b65939a961906](https://github.com/alvelvis/meu-mestrado/commit/fd9f01fe910ed8a9b7d23f66181b65939a961906)
+* Patch file: [2021_5_17_23:24:14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch](patch/2021_5_17_23:24:14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch)
+
+a_partir_de MWEPOS=ADP, partir VERB
+
+```diff
+ 2	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	O	_
+ 3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	O	_
+ 4	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-5	a	a	ADP	_	_	9	case	O	_
++5	a	a	ADP	_	_	9	case	O	MWEPOS=ADP
+ 6	partir	partir	VERB	_	VerbForm=Inf	5	fixed	O	_
+ 7-8	da	_	_	_	_	_	_	O	_
+ 7	de	de	ADP	_	_	5	fixed	O	_
+```
+
+## fácies as NOUN, lemma fácies; DET with same features as its head or the other way round if PronType=Art or Dem
+
+* Tatiana Cavalcanti
+* Date:   Wed May 19 14:44:56 2021 -0300
+* Lines changed: 539
+* Commit: [4dfd6de383be7b49ffb7005907919a1096bf3855](https://github.com/alvelvis/meu-mestrado/commit/4dfd6de383be7b49ffb7005907919a1096bf3855)
+* Patch file: [2021_5_19_14:44:56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch](patch/2021_5_19_14:44:56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch)
+
+fácies as NOUN, lemma fácies; DET with same features as its head or the other way round if PronType=Art or Dem
+
+```diff
+ 49	–	–	PUNCT	_	_	50	punct	O	_
+ 50	composto	compor	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	47	acl	O	_
+ 51-52	pelas	_	_	_	_	_	_	O	_
+-51	por	por	ADP	_	_	54	case	O	_
+-52	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	O	_
+-53	fácies	fácie	ADJ	_	Gender=Fem|Number=Plur	54	amod	B=LITOLOGIA	_
+-54	siliciclásticas	siliciclástica	NOUN	_	Gender=Fem|Number=Plur	50	obl:agent	O	_
++51	por	por	ADP	_	_	53	case	O	_
++52	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	53	det	O	_
++53	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	50	obl:agent	B=LITOLOGIA	_
++54	siliciclásticas	siliciclástica	ADJ	_	Gender=Fem|Number=Plur	53	amod	O	_
+ 55-56	da	_	_	_	_	_	_	O	_
+ 55	de	de	ADP	_	_	57	case	O	_
+ 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
+-57	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	54	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++57	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	53	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 58	Cassino	Cassino	PROPN	_	Number=Sing	57	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 59	,	,	PUNCT	_	_	60	punct	O	_
+ 60	constituindo	constituir	VERB	_	VerbForm=Ger	50	advcl	O	_
+```
+
+## correções elvis petroles_3
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed May 19 18:39:28 2021 -0300
+* Lines changed: 71
+* Commit: [72ad91acb6b2dbcec9b8cc850ddda9fa39c36645](https://github.com/alvelvis/meu-mestrado/commit/72ad91acb6b2dbcec9b8cc850ddda9fa39c36645)
+* Patch file: [2021_5_19_18:39:28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch](patch/2021_5_19_18:39:28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch)
+
+correções elvis petroles_3
+
+```diff
+ 22	a	a	ADP	_	_	24	case	O	_
+ 23	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	24	det	O	_
+ 24	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	21	obj	O	_
+-25	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	26	expl	O	_
+-26	comparada	comparar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	20	acl	O	_
++25	se	se	SCONJ	_	_	26	mark	O	_
++26	comparada	comparar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	advcl	O	_
+ 27-28	às	_	_	_	_	_	_	O	_
+ 27	a	a	ADP	_	_	30	case	O	_
+ 28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	O	_
+```
+
+## correções mclara petroles_3
+
+* Maria Clara Castro
+* Date:   Wed May 19 18:40:27 2021 -0300
+* Lines changed: 73
+* Commit: [eb928fd2e4709a6df8385ab0e0b6b60a3b223564](https://github.com/alvelvis/meu-mestrado/commit/eb928fd2e4709a6df8385ab0e0b6b60a3b223564)
+* Patch file: [2021_5_19_18:40:27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch](patch/2021_5_19_18:40:27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch)
+
+correções mclara petroles_3
+
+```diff
+ 42	2000	2000	NUM	_	NumType=Card	38	nmod:appos	O	_
+ 43	)	)	PUNCT	_	_	42	punct	O	_
+ 44	,	,	PUNCT	_	_	47	punct	O	_
+-45	além	além	ADV	_	_	47	cc	O	_
++45	além	além	ADV	_	_	47	cc	O	MWE=além_de|MWEPOS=CCONJ
+ 46	de	de	ADP	_	_	45	fixed	O	_
+-47	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	24	conj	B=INSTRUMENTO	_
++47	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	11	conj	B=INSTRUMENTO	_
+ 48	gravimétrico	gravimétrico	ADJ	_	Gender=Masc|Number=Sing	47	amod	O	_
+ 49	e	e	CCONJ	_	_	50	cc	O	_
+ 50	aeromagnetométrico	aeromagnetométrico	ADJ	_	Gender=Masc|Number=Sing	48	conj	O	_
+-51	.	.	PUNCT	_	_	47	punct	O	_
++51	.	.	PUNCT	_	_	10	punct	O	_
+ 52	.	.	PUNCT	_	_	10	punct	O	_
+ # text = Figura 1: Localização da Bacia de Pelotas
+```
+
+## correções aline
+
+* Aline Silveira
+* Date:   Wed May 19 19:08:30 2021 -0300
+* Lines changed: 47
+* Commit: [50824b0432986749b03a99255f32e71da23d6d79](https://github.com/alvelvis/meu-mestrado/commit/50824b0432986749b03a99255f32e71da23d6d79)
+* Patch file: [2021_5_19_19:08:30-50824b0432986749b03a99255f32e71da23d6d79.patch](patch/2021_5_19_19:08:30-50824b0432986749b03a99255f32e71da23d6d79.patch)
+
+correções aline
+
+```diff
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	continente	continente	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 17	com	com	ADP	_	_	18	case	O	_
+-18	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
++18	dados	dado	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	subsuperfície	subsuperfície	NOUN	_	Gender=Fem|Number=Sing	18	nmod	B=LOCAL:GEO	_
+ 21	(	(	PUNCT	_	_	22	punct	O	_
+```
+
+## fácies sedimentar
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jun 9 13:20:48 2021 -0300
+* Lines changed: 16
+* Commit: [51713966b5603e3e4f2c04fc63f436788212b63d](https://github.com/alvelvis/meu-mestrado/commit/51713966b5603e3e4f2c04fc63f436788212b63d)
+* Patch file: [2021_6_9_13:20:48-51713966b5603e3e4f2c04fc63f436788212b63d.patch](patch/2021_6_9_13:20:48-51713966b5603e3e4f2c04fc63f436788212b63d.patch)
+
+fácies sedimentar
+
+```diff
+ 1	Análise	Análise	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	fácies	fácies	NOUN	_	Gender=Masc|Number=Plur	1	nmod	B=LITOLOGIA	_
+-4	sedimentares	sedimentar	ADJ	_	Gender=Masc|Number=Plur	3	compound	I=LITOLOGIA	_
++4	sedimentares	sedimentar	ADJ	_	Gender=Masc|Number=Plur	3	amod	I=LITOLOGIA	_
+ # text = A análise de fácies é um método fundamental de caracterização de rocha com atributos litológicos, físicos e biológicos singulares e distintos das demais..
+ # sent_id = 284-20150917-MONOGRAFIA_0-43
+```
+
+## feats de fácies
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jun 9 14:02:51 2021 -0300
+* Lines changed: 157
+* Commit: [7fc9bff36097f635effbfd32b37b8f46d6c5a792](https://github.com/alvelvis/meu-mestrado/commit/7fc9bff36097f635effbfd32b37b8f46d6c5a792)
+* Patch file: [2021_6_9_14:02:51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch](patch/2021_6_9_14:02:51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch)
+
+feats de fácies
+
+```diff
+ 3	em	em	ADP	_	_	5	case	O	_
+ 4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	O	_
+ 5	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
+-6	técnicas	técnico	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
++6	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	O	_
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+-8	métodos	método	NOUN	_	Gender=Masc|Number=Plur	5	conj	B=MÉTODO	_
++8	métodos	método	NOUN	_	Gender=Masc|Number=Plur	6	conj	B=MÉTODO	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	descrição	descrição	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+-12	fácies	fácies	NOUN	_	Gender=Masc|Number=Plur	10	nmod	B=LITOLOGIA	_
++12	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	10	nmod	B=LITOLOGIA	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+-14	análise	análise	NOUN	_	Gender=Fem|Number=Sing	12	conj	O	_
++14	análise	análise	NOUN	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+```
+
+## conglomerados e sustentados
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jun 9 14:34:53 2021 -0300
+* Lines changed: 27
+* Commit: [7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4](https://github.com/alvelvis/meu-mestrado/commit/7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4)
+* Patch file: [2021_6_9_14:34:53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch](patch/2021_6_9_14:34:53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch)
+
+conglomerados e sustentados
+
+```diff
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+ 3	siltitos	siltito	NOUN	_	Gender=Masc|Number=Plur	1	conj	B=LITOLOGIA	_
+ 4	e	e	CCONJ	_	_	5	cc	O	_
+-5	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	conj	O	_
++5	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	1	conj	O	_
+ 6	com	com	ADP	_	_	7	case	O	_
+ 7	seixos	seixo	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+```
+
+## abserva-se e outros erros de contrações iniciais
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jun 9 15:17:37 2021 -0300
+* Lines changed: 101
+* Commit: [c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf](https://github.com/alvelvis/meu-mestrado/commit/c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf)
+* Patch file: [2021_6_9_15:17:37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch](patch/2021_6_9_15:17:37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch)
+
+abserva-se e outros erros de contrações iniciais
+
+```diff
+ # text = Busca-se analisar as estruturas continentais que possam apresentar continuidade na bacia de Pelotas (“Lineamento Tibagi” e “Sinclinal de Torres”), verificando sua influência na evolução e deformação da mesma..
+ # sent_id = 247-20140910-MONOGRAFIA_0-11
+ 1-2	Busca-se	_	_	_	_	_	_	_	_
+-1	Dusca	doscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	analisar	analisar	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+```
+
+## sincronizar correções da tati atrasadas
+
+* Tatiana Cavalcanti
+* Date:   Wed Jun 9 21:03:18 2021 -0300
+* Lines changed: 679
+* Commit: [4ed0c6e32b75471d714d0ef81305b15c9979467a](https://github.com/alvelvis/meu-mestrado/commit/4ed0c6e32b75471d714d0ef81305b15c9979467a)
+* Patch file: [2021_6_9_21:03:18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch](patch/2021_6_9_21:03:18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch)
+
+sincronizar correções da tati atrasadas
+
+```diff
+ 39	poço	poço	NOUN	_	Gender=Masc|Number=Sing	37	nmod	O	_
+ 40	,	,	PUNCT	_	_	41	punct	O	_
+ 41	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	30	conj	O	_
+-42	composto	compor	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	41	acl	O	_
++42	composto	composto	ADJ	_	Gender=Masc|Number=Sing	41	amod	O	_
+ 43	,	,	PUNCT	_	_	44	punct	O	_
+ 44	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	30	conj	B=INSTRUMENTO	_
+ 45	gravimétrico	gravimétrico	ADJ	_	Gender=Masc|Number=Sing	44	amod	O	_
+```
+
+## aspas não podem ser head
+
+* Aline Silveira
+* Date:   Tue Jun 15 20:00:31 2021 -0300
+* Lines changed: 192
+* Commit: [8f088149d87aa346b817a9360f5bc4b03e25cdad](https://github.com/alvelvis/meu-mestrado/commit/8f088149d87aa346b817a9360f5bc4b03e25cdad)
+* Patch file: [2021_6_15_20:00:31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch](patch/2021_6_15_20:00:31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch)
+
+aspas não podem ser head
+
+```diff
+ 27	(	(	PUNCT	_	_	28	punct	O	_
+ 28	2012	2012	NUM	_	NumType=Card	24	nmod:appos	O	_
+ 29	)	)	PUNCT	_	_	28	punct	O	_
+-30	e	e	CCONJ	_	_	31	cc	O	_
+-31	“	“	PROPN	_	Gender=Masc|Number=Sing	24	conj	O	_
+-32	Sinclinal	Sinclinal	PROPN	_	Number=Sing	31	flat:name	O	_
+-33	”	”	PROPN	_	Number=Sing	31	flat:name	O	_
+-34	de	de	ADP	_	_	31	flat:name	O	_
+-35	Torres	Torres	PROPN	_	Gender=Masc|Number=Sing	31	flat:name	O	_
+-36	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	O	_
++30	e	e	CCONJ	_	_	32	cc	O	_
++31	“	"	PUNCT	_	Gender=Masc|Number=Sing	32	punct	O	_
++32	Sinclinal	Sinclinal	PROPN	_	Number=Sing	24	conj	O	_
++33	”	"	PUNCT	_	Number=Sing	32	punct	O	_
++34	de	de	ADP	_	_	35	case	O	_
++35	Torres	Torres	PROPN	_	Gender=Masc|Number=Sing	32	nmod	O	_
++36	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	32	acl	O	_
+ 37	por	por	ADP	_	_	38	case	O	_
+ 38	Vitorello	Vitorello	PROPN	_	Gender=Masc|Number=Sing	36	obl:agent	O	_
+ 39	e	e	CCONJ	_	_	38	flat:name	O	_
+```
+
+## quando, como, enquanto
+
+* Maria Clara Castro
+* Date:   Fri Jun 18 00:27:44 2021 -0300
+* Lines changed: 505
+* Commit: [df297cc3dfdf90a23e54ad72c18e23d25833ff4d](https://github.com/alvelvis/meu-mestrado/commit/df297cc3dfdf90a23e54ad72c18e23d25833ff4d)
+* Patch file: [2021_6_18_00:27:44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch](patch/2021_6_18_00:27:44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch)
+
+quando, como, enquanto
+
+```diff
+ 37	pouco	pouco	ADV	_	_	38	advmod	O	_
+ 38	deformado	deformar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	35	conj	O	_
+ 39	,	,	PUNCT	_	_	41	punct	O	_
+-40	quando	quando	ADV	_	_	41	advmod	O	_
++40	quando	quando	SCONJ	_	_	41	mark	O	_
+ 41	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	32	advcl	O	_
+ 42-43	às	_	_	_	_	_	_	_	_
+ 42	a	a	ADP	_	_	45	case	O	_
+```
+
+## MWE a_seguir
+
+* Maria Clara Castro
+* Date:   Wed Jun 23 20:06:54 2021 -0300
+* Lines changed: 191
+* Commit: [a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8](https://github.com/alvelvis/meu-mestrado/commit/a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8)
+* Patch file: [2021_6_23_20:06:54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch](patch/2021_6_23_20:06:54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch)
+
+MWE a_seguir
+
+```diff
+ # text = A seguir, são apresentadas as etapas e a metodologia que foi adotada no trabalho..
+ # sent_id = 247-20140910-MONOGRAFIA_0-16
+-1	A	a	SCONJ	_	_	2	mark	O	_
+-2	seguir	seguir	VERB	_	VerbForm=Inf	5	advcl	O	_
++1	A	a	ADP	_	_	5	obl	O	MWEPOS=ADV
++2	seguir	seguir	VERB	_	VerbForm=Inf	1	fixed	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
+ 5	apresentadas	apresentar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+```
+
+## MWE como também
+
+* Maria Clara Castro
+* Date:   Wed Jun 23 20:07:51 2021 -0300
+* Lines changed: 48
+* Commit: [7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09](https://github.com/alvelvis/meu-mestrado/commit/7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09)
+* Patch file: [2021_6_23_20:07:51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch](patch/2021_6_23_20:07:51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch)
+
+MWE como também
+
+```diff
+ 13	vetor	vetor	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 14	resultante	resultante	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 15	,	,	PUNCT	_	_	19	punct	O	_
+-16	como	como	ADV	_	_	19	cc	O	_
+-17	também	também	ADV	_	_	19	advmod	O	_
++16	como	como	ADV	_	_	19	cc	O	MWEPOS=CCONJ
++17	também	também	ADV	_	_	16	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	dispersão	dispersão	NOUN	_	Gender=Fem|Number=Sing	10	conj	O	_
+ 20	original	original	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
+```
+
+## MWE devido a
+
+* Maria Clara Castro
+* Date:   Wed Jun 23 20:09:06 2021 -0300
+* Lines changed: 544
+* Commit: [ae013a1a98a4396f8021b29641810686f6184b95](https://github.com/alvelvis/meu-mestrado/commit/ae013a1a98a4396f8021b29641810686f6184b95)
+* Patch file: [2021_6_23_20:09:06-ae013a1a98a4396f8021b29641810686f6184b95.patch](patch/2021_6_23_20:09:06-ae013a1a98a4396f8021b29641810686f6184b95.patch)
+
+MWE devido a
+
+```diff
+ 6	direção	direção	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 7	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 8	,	,	PUNCT	_	_	3	punct	O	_
+-9	devido	devido	ADV	_	_	12	case	O	MWEPOS=ADP
++9	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	case	O	MWEPOS=ADP
+ 10-11	à	_	_	_	_	_	_	_	_
+-10	a	a	ADP	_	_	12	case	O	_
++10	a	a	ADP	_	_	9	fixed	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	colisão	colisão	NOUN	_	Gender=Fem|Number=Sing	1	obl	O	_
+ 13	continental	continental	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	_
+```
+
+## MWE bem como
+
+* Maria Clara Castro
+* Date:   Wed Jun 23 20:10:18 2021 -0300
+* Lines changed: 116
+* Commit: [ffd4df9f5ef3d04b08ab9d1a08fce31160931c34](https://github.com/alvelvis/meu-mestrado/commit/ffd4df9f5ef3d04b08ab9d1a08fce31160931c34)
+* Patch file: [2021_6_23_20:10:18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch](patch/2021_6_23_20:10:18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch)
+
+MWE bem como
+
+```diff
+ 19	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
+ 20	fossilífero	fossilífero	ADJ	_	Gender=Masc|Number=Sing	19	amod	O	_
+ 21	,	,	PUNCT	_	_	26	punct	O	_
+-22	bem	bem	ADP	_	_	26	cc	O	_
+-23	como	como	ADV	_	_	22	fixed	O	_
++22	bem	bem	ADV	_	_	26	cc	O	MWEPOS=CCONJ
++23	como	como	ADP	_	_	22	fixed	O	_
+ 24	por	por	ADP	_	_	26	case	O	_
+ 25	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	26	det	O	_
+ 26	complexidade	complexidade	NOUN	_	Gender=Fem|Number=Sing	19	conj	O	_
+```
+
+## Alterações pulverizadas de amod, punct, flat:name e com boa parte de appos, especialmente apposXconj
+
+* Aline Silveira
+* Date:   Fri Jun 25 02:15:03 2021 -0300
+* Lines changed: 364
+* Commit: [c29dfd7a6814c8974961e8777ad4b1af44ab13fb](https://github.com/alvelvis/meu-mestrado/commit/c29dfd7a6814c8974961e8777ad4b1af44ab13fb)
+* Patch file: [2021_6_25_02:15:03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch](patch/2021_6_25_02:15:03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch)
+
+Alterações pulverizadas de amod, punct, flat:name e com boa parte de appos, especialmente apposXconj
+
+```diff
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	porção	porção	NOUN	_	Gender=Fem|Number=Sing	13	conj	O	_
++24	porção	porção	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 25	norte	norte	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+```
+
+## features dos verbos bugados "abserva-se"
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jul 7 05:24:26 2021 -0300
+* Lines changed: 102
+* Commit: [c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2](https://github.com/alvelvis/meu-mestrado/commit/c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2)
+* Patch file: [2021_7_7_05:24:26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch](patch/2021_7_7_05:24:26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch)
+
+features dos verbos bugados "abserva-se"
+
+```diff
+ # text = Busca-se analisar as estruturas continentais que possam apresentar continuidade na bacia de Pelotas (“Lineamento Tibagi” e “Sinclinal de Torres”), verificando sua influência na evolução e deformação da mesma..
+ # sent_id = 247-20140910-MONOGRAFIA_0-11
+ 1-2	Busca-se	_	_	_	_	_	_	_	_
+-1	Dusca	doscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	analisar	analisar	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+```
+
+## Alterações nas duas direções
+
+* Aline Silveira
+* Date:   Thu Jul 8 01:26:46 2021 -0300
+* Lines changed: 353
+* Commit: [09a94714b7669dedf946d33d1b334eca352aef58](https://github.com/alvelvis/meu-mestrado/commit/09a94714b7669dedf946d33d1b334eca352aef58)
+* Patch file: [2021_7_8_01:26:46-09a94714b7669dedf946d33d1b334eca352aef58.patch](patch/2021_7_8_01:26:46-09a94714b7669dedf946d33d1b334eca352aef58.patch)
+
+Alterações nas duas direções
+apposXparataxis
+apposXnmod:appos
+apposXnsubj
+apposXnmod
+amodXxcomp
+
+```diff
+ # sent_id = 247-20140910-MONOGRAFIA_0-87
+ 1	Ordovício-Siluriana	Ordovício-Siluriana	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	(	(	PUNCT	_	_	3	punct	O	_
+-3	Supersequência	Supersequência	PROPN	_	Gender=Fem|Number=Sing	1	appos	O	_
++3	Supersequência	Supersequência	PROPN	_	Gender=Fem|Number=Sing	1	parataxis	O	_
+ 4	Rio	Rio	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5	Ivaí	Ivaí	PROPN	_	Number=Sing	3	flat:name	O	_
+ 6	)	)	PUNCT	_	_	3	flat:name	O	_
+```
+
+## alem_de
+
+* Maria Clara Castro
+* Date:   Thu Jul 8 01:29:09 2021 -0300
+* Lines changed: 221
+* Commit: [b4593ae3ca54af6ecaeb898481c8df332d902f84](https://github.com/alvelvis/meu-mestrado/commit/b4593ae3ca54af6ecaeb898481c8df332d902f84)
+* Patch file: [2021_7_8_01:29:09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch](patch/2021_7_8_01:29:09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch)
+
+alem_de
+
+```diff
+ 35	e	e	CCONJ	_	_	36	cc	O	_
+ 36	lístricas	lístrico	ADJ	_	Gender=Fem|Number=Plur	32	conj	O	_
+ 37	,	,	PUNCT	_	_	41	punct	O	_
+-38	além	além	ADV	_	_	41	cc	O	_
++38	além	além	ADV	_	_	41	cc	O	MWEPOS=CCONJ
+ 39-40	da	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	38	fixed	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+```
+
+## assim_como
+
+* Maria Clara Castro
+* Date:   Thu Jul 8 01:29:46 2021 -0300
+* Lines changed: 98
+* Commit: [3bedc0e8d1dcc3f29a5fcc9a598359310eafc495](https://github.com/alvelvis/meu-mestrado/commit/3bedc0e8d1dcc3f29a5fcc9a598359310eafc495)
+* Patch file: [2021_7_8_01:29:46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch](patch/2021_7_8_01:29:46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch)
+
+assim_como
+
+```diff
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	,	,	PUNCT	_	_	10	punct	O	_
+-6	assim	assim	ADV	_	_	10	advmod	O	_
++6	assim	assim	ADV	_	_	10	cc	O	MWEPOS=CCONJ
+ 7	como	como	ADP	_	_	6	fixed	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
+ 9	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	10	det	O	_
+-10	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	2	nmod:appos	B=BACIA:TIPO	_
++10	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	2	conj	B=BACIA:TIPO	_
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+```
+
+## através_de
+
+* Maria Clara Castro
+* Date:   Thu Jul 8 01:30:43 2021 -0300
+* Lines changed: 882
+* Commit: [a0647e49f63d8c9b7e6b38449c89c07ea9457f1a](https://github.com/alvelvis/meu-mestrado/commit/a0647e49f63d8c9b7e6b38449c89c07ea9457f1a)
+* Patch file: [2021_7_8_01:30:43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch](patch/2021_7_8_01:30:43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch)
+
+através_de
+
+```diff
+ 12	Pelotas	Pelotas	PROPN	_	Number=Sing	10	flat:name	B=BACIA	_
+ 13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	O	_
+ 14	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-15	através	através	ADV	_	_	14	advmod	O	_
+-16	de	de	ADP	_	_	18	case	O	_
++15	através	através	ADV	_	_	18	case	O	MWEPOS=ADP
++16	de	de	ADP	_	_	15	fixed	O	_
+ 17	17	17	NUM	_	NumType=Card	18	nummod	O	_
+-18	seções	seção	NOUN	_	Gender=Fem|Number=Plur	15	obl	O	_
++18	seções	seção	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 19	sísmicas	sísmico	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+ 20	,	,	PUNCT	_	_	14	punct	O	_
+ 21	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	23	obl	O	_
+```
+
+## com_vistas_a
+
+* Maria Clara Castro
+* Date:   Thu Jul 8 01:34:29 2021 -0300
+* Lines changed: 72
+* Commit: [d05c5a8ed8190af9b716fc202aa29970e5fb40c7](https://github.com/alvelvis/meu-mestrado/commit/d05c5a8ed8190af9b716fc202aa29970e5fb40c7)
+* Patch file: [2021_7_8_01:34:29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch](patch/2021_7_8_01:34:29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch)
+
+com_vistas_a
+
+```diff
+ 32-33	à	_	_	_	_	_	_	_	_
+ 32	a	a	ADP	_	_	30	fixed	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	valoração	valoração	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++34	valoração	valoração	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 35-36	dos	_	_	_	_	_	_	_	_
+ 35	de	de	ADP	_	_	37	case	O	_
+ 36	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	O	_
+```
+
+## quanto_a
+
+* Maria Clara Castro
+* Date:   Thu Jul 8 01:34:53 2021 -0300
+* Lines changed: 93
+* Commit: [c16ee551855c7a24ef2da56120afc3d947ca2b3b](https://github.com/alvelvis/meu-mestrado/commit/c16ee551855c7a24ef2da56120afc3d947ca2b3b)
+* Patch file: [2021_7_8_01:34:53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch](patch/2021_7_8_01:34:53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch)
+
+quanto_a
+
+```diff
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
+ 12	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	11	amod	B=LITOLOGIA	_
+-13	quanto	quanto	ADP	_	_	15	case	O	MWE=quanto_a|MWEPOS=ADP
++13	quanto	quanto	ADV	_	_	15	case	O	MWE=quanto_a|MWEPOS=ADP
+ 14	a	a	ADP	_	_	13	fixed	O	_
+ 15	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+```
+
+## acl deve ter mesmo gênero de seu pai
+
+* Tatiana Cavalcanti
+* Date:   Thu Jul 8 01:37:00 2021 -0300
+* Lines changed: 530
+* Commit: [b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef](https://github.com/alvelvis/meu-mestrado/commit/b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef)
+* Patch file: [2021_7_8_01:37:00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch](patch/2021_7_8_01:37:00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch)
+
+acl deve ter mesmo gênero de seu pai
+
+```diff
+ 34	)	)	PUNCT	_	_	32	punct	O	_
+ 35	,	,	PUNCT	_	_	36	punct	O	_
+ 36	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	30	conj	O	_
+-37	sustentados	sustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	36	acl	O	_
++37	sustentados	sustentado	ADJ	_	Gender=Masc|Number=Plur	36	compound	O	_
+ 38	a	a	ADP	_	_	39	case	O	_
+ 39	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	37	obl	B=LITOLOGIA	_
+ 40	muito	muito	ADV	_	_	41	advmod	O	_
+```
+
+## obl_nmod .*nte e .*vel
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jul 7 04:24:14 2021 -0300
+* Lines changed: 236
+* Commit: [112e3457b2d37aeb9c27d320698c8a960ac0a997](https://github.com/alvelvis/meu-mestrado/commit/112e3457b2d37aeb9c27d320698c8a960ac0a997)
+* Patch file: [2021_7_7_04:24:14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch](patch/2021_7_7_04:24:14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch)
+
+obl_nmod .*nte e .*vel
+NOUN filho de NOUN, caso haja amod .*nte ou .*vel, provavelmente deverá ser obl desse adjetivo
+partial obl_nmod elvis
+squash
+
+```diff
+ 4-5	no	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=INSTRUMENTO	_
++6	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	3	obl	B=INSTRUMENTO	_
+ 7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	O	_
+ 8	interpretadas	interpretar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 9	com	com	ADP	_	_	11	case	O	_
+```
+
+## correções de "referente"
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Jul 8 04:23:29 2021 -0300
+* Lines changed: 73
+* Commit: [977fa059d86f22188023c1a360045b2380c54cd0](https://github.com/alvelvis/meu-mestrado/commit/977fa059d86f22188023c1a360045b2380c54cd0)
+* Patch file: [2021_7_8_04:23:29-977fa059d86f22188023c1a360045b2380c54cd0.patch](patch/2021_7_8_04:23:29-977fa059d86f22188023c1a360045b2380c54cd0.patch)
+
+correções de "referente"
+
+```diff
+ 8	banco	banco	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	dados	dado	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+-11	referente	referente	ADV	_	_	4	advmod	O	_
++11	referente	referente	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 12-13	ao	_	_	_	_	_	_	_	_
+ 12	a	a	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+```
+
+## correções de obl e nmod
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sat Jul 10 05:21:23 2021 -0300
+* Lines changed: 57
+* Commit: [dfa248aeea78409c6418689d1168a49fe42efd8c](https://github.com/alvelvis/meu-mestrado/commit/dfa248aeea78409c6418689d1168a49fe42efd8c)
+* Patch file: [2021_7_10_05:21:23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch](patch/2021_7_10_05:21:23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch)
+
+correções de obl e nmod
+
+```diff
+ # sent_id = 247-20140910-MONOGRAFIA_0-50
+ 1	Onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	3	parataxis	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+-3	V=	V=	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	V=	V=	PROPN	_	Gender=Masc|Number=Sing	0	root	O	tokenização
+ 4	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	3	flat:name	O	_
+ 5	,	,	PUNCT	_	_	6	punct	O	_
+-6	∆	∆	NOUN	_	Gender=Masc|Number=Sing	3	appos	O	_
++6	∆	∆	NOUN	_	Gender=Masc|Number=Sing	3	conj	O	_
+ 7	S=	S=	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	espessura	espessura	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+```
+
+## cunha(s) NOUN
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sun Jul 11 02:32:30 2021 -0300
+* Lines changed: 9
+* Commit: [2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc](https://github.com/alvelvis/meu-mestrado/commit/2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc)
+* Patch file: [2021_7_11_02:32:30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch](patch/2021_7_11_02:32:30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch)
+
+cunha(s) NOUN
+
+```diff
+ 11	identificar	identificar	VERB	_	VerbForm=Inf	10	csubj	O	_
+ 12	com	com	ADP	_	_	14	case	O	_
+ 13	maior	grande	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+-14	facilidade	facilidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
+-15	cunhas	cunho	ADJ	_	Gender=Fem|Number=Plur	14	amod	O	_
+-16	clásticas	clástico	ADJ	_	Gender=Fem|Number=Plur	14	amod	O	_
+-17	progradantes	progradante	ADJ	_	Gender=Fem|Number=Plur	14	amod	O	_
++14	facilidade	facilidade	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
++15	cunhas	cunha	NOUN	_	Gender=Fem|Number=Plur	11	obj	O	_
++16	clásticas	clástico	ADJ	_	Gender=Fem|Number=Plur	15	amod	O	_
++17	progradantes	progradante	ADJ	_	Gender=Fem|Number=Plur	15	amod	O	_
+ 18	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	O	_
+-19	passaram	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	14	acl:relcl	O	_
++19	passaram	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	15	acl:relcl	O	_
+ 20	por	por	ADP	_	_	21	case	O	_
+ 21	períodos	período	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
+ 22	retrogradacionais	retrogradacional	ADJ	_	Gender=Masc|Number=Plur	21	amod	O	_
+```
+
+## "se" não pode ser nsubj
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sun Jul 11 07:18:10 2021 -0300
+* Lines changed: 361
+* Commit: [33a378890a443a91b16d48593bbd231a92bd7890](https://github.com/alvelvis/meu-mestrado/commit/33a378890a443a91b16d48593bbd231a92bd7890)
+* Patch file: [2021_7_11_07:18:10-33a378890a443a91b16d48593bbd231a92bd7890.patch](patch/2021_7_11_07:18:10-33a378890a443a91b16d48593bbd231a92bd7890.patch)
+
+"se" não pode ser nsubj
+
+```diff
+ 5	campo	campo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	B=CAMPO:TIPO	_
+ 6-7	constatou-se	_	_	_	_	_	_	_	_
+ 6	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	O	_
++7	se	se	PRON	_	_	6	expl	O	_
+ 8	que	que	SCONJ	_	_	16	mark	O	_
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+```
+
+## "se" seguido de particípio
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Jul 13 19:50:12 2021 -0300
+* Lines changed: 121
+* Commit: [0c8a30478e21598b6445c174024deb210bde8628](https://github.com/alvelvis/meu-mestrado/commit/0c8a30478e21598b6445c174024deb210bde8628)
+* Patch file: [2021_7_13_19:50:12-0c8a30478e21598b6445c174024deb210bde8628.patch](patch/2021_7_13_19:50:12-0c8a30478e21598b6445c174024deb210bde8628.patch)
+
+"se" seguido de particípio
+"se" SCONJ/mark
+"se" provavelmente será SCONJ/mark se dependente de token não verbal (e não auxiliar) ou se VerbForm=Part
+
+```diff
+ 13	tratado	tratar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	advcl	O	_
+ 14	,	,	PUNCT	_	_	13	punct	O	_
+ 15	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	O	_
+-16	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl	O	_
++16	se	se	PRON	_	_	17	expl	O	_
+ 17	deteriorado	deteriorar	VERB	_	VerbForm=Part	1	ccomp	O	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+ 19	ocasionando	ocasionar	VERB	_	VerbForm=Ger	17	advcl	O	_
+```
+
+## Segundo_ADP
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jul 14 09:28:27 2021 -0300
+* Lines changed: 78
+* Commit: [36c40d555e50791ebc581305f64bd676347bb7ef](https://github.com/alvelvis/meu-mestrado/commit/36c40d555e50791ebc581305f64bd676347bb7ef)
+* Patch file: [2021_7_14_09:28:27-36c40d555e50791ebc581305f64bd676347bb7ef.patch](patch/2021_7_14_09:28:27-36c40d555e50791ebc581305f64bd676347bb7ef.patch)
+
+Segundo_ADP
+
+```diff
+ # text = Segundo Bauer (1999), a emulsão asfáltica é uma dispersão composta de 50 a 70% de cimento asfáltico, pequenas frações de emulsificante (1 a 2%) e o restante de água..
+ # sent_id = 241-20140227-MONOGRAFIA_0-65
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Bauer	Bauer	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++2	Bauer	Bauer	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	1999	1999	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+```
+
+## de acordo com
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Jul 14 16:05:27 2021 -0300
+* Lines changed: 416
+* Commit: [77a9e25ebef1a6752374b9f1e5f71cf2c309d379](https://github.com/alvelvis/meu-mestrado/commit/77a9e25ebef1a6752374b9f1e5f71cf2c309d379)
+* Patch file: [2021_7_14_16:05:27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch](patch/2021_7_14_16:05:27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch)
+
+de acordo com
+
+```diff
+ # text = De acordo com Luiz & Silva (1995), frequentemente os lineamentos observados nos mapas magnéticos são paralelos às direções estruturais como zonas de cisalhamento, falhas, fraturas e dobras..
+ # sent_id = 247-20140910-MONOGRAFIA_0-32
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	20	obl	O	_
+```
+
+## acl concordância de número
+
+* Maria Clara Castro
+* Date:   Sat Jul 10 05:37:02 2021 -0300
+* Lines changed: 298
+* Commit: [2becf77d15758fc6e768f12011e4506c558af0d0](https://github.com/alvelvis/meu-mestrado/commit/2becf77d15758fc6e768f12011e4506c558af0d0)
+* Patch file: [2021_7_10_05:37:02-2becf77d15758fc6e768f12011e4506c558af0d0.patch](patch/2021_7_10_05:37:02-2becf77d15758fc6e768f12011e4506c558af0d0.patch)
+
+acl concordância de número
+
+```diff
+ 31	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	poço	poço	NOUN	_	Gender=Masc|Number=Sing	31	nmod	O	_
+-34	perfurado	perfurar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	O	_
++34	perfurado	perfurar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	33	acl	O	_
+ 35-36	pela	_	_	_	_	_	_	_	_
+ 35	por	por	ADP	_	_	37	case	O	_
+ 36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
+```
+
+## amod concordância de gênero
+
+* Maria Clara Castro
+* Date:   Tue Jul 13 20:18:34 2021 -0300
+* Lines changed: 440
+* Commit: [61d2b9897427c345e4c23f1269293b2037de336a](https://github.com/alvelvis/meu-mestrado/commit/61d2b9897427c345e4c23f1269293b2037de336a)
+* Patch file: [2021_7_13_20:18:34-61d2b9897427c345e4c23f1269293b2037de336a.patch](patch/2021_7_13_20:18:34-61d2b9897427c345e4c23f1269293b2037de336a.patch)
+
+amod concordância de gênero
+
+```diff
+ 15	formações	formação	NOUN	_	Gender=Fem|Number=Plur	13	obj	O	_
+ 16	Furnas	Furnas	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 17	(	(	PUNCT	_	_	18	punct	O	_
+-18	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	15	amod	B=LITOLOGIA	_
++18	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	B=LITOLOGIA	_
+ 19	branco-amarelados	branco-amarelado	ADJ	_	Gender=Masc|Number=Plur	18	amod	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+ 21	cauliníticos	caulinítico	ADJ	_	Gender=Masc|Number=Plur	18	conj	O	_
+```
+
+## erros de concordância envolvendo acl:relcl
+
+* Tatiana Cavalcanti
+* Date:   Wed Jul 14 19:01:04 2021 -0300
+* Lines changed: 264
+* Commit: [4f870471a1989745f7ac65405c047a954b82cc5c](https://github.com/alvelvis/meu-mestrado/commit/4f870471a1989745f7ac65405c047a954b82cc5c)
+* Patch file: [2021_7_14_19:01:04-4f870471a1989745f7ac65405c047a954b82cc5c.patch](patch/2021_7_14_19:01:04-4f870471a1989745f7ac65405c047a954b82cc5c.patch)
+
+erros de concordância envolvendo acl:relcl
+
+```diff
+ 56	formação	formação	NOUN	_	Gender=Fem|Number=Sing	53	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 57	Atlântida	Atlântida	PROPN	_	Gender=Fem|Number=Sing	56	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 58	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	59	nsubj	O	_
+-59	recobrem	recobrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	56	acl:relcl	O	_
++59	recobrem	recobrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	53	acl:relcl	O	_
+ 60	em	em	ADP	_	_	61	case	O	_
+ 61	discordância	discordância	NOUN	_	Gender=Fem|Number=Sing	59	obl	B=LITOLOGIA	_
+ 62	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	63	det	O	_
+```
+
+## Matriz de confusão
+
+* Aline Silveira
+* Date:   Wed Jul 14 21:03:40 2021 -0300
+* Lines changed: 539
+* Commit: [2e56e7e11881c62b3f388221c512713416a8ef0e](https://github.com/alvelvis/meu-mestrado/commit/2e56e7e11881c62b3f388221c512713416a8ef0e)
+* Patch file: [2021_7_14_21:03:40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch](patch/2021_7_14_21:03:40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch)
+
+Matriz de confusão
+Normas ABNT flat:name
+sigla de estados brasileiros como nmod:appos
+amodXnmod
+caseXflat:name
+detXflat:name
+caseXfixed
+caseXadvmod(um lado só)
+caseXmark(um lado só)
+
+```diff
+ 52	a	a	ADP	_	_	54	case	O	_
+ 53	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	O	_
+ 54	porção	porção	NOUN	_	Gender=Fem|Number=Sing	50	nmod	O	_
+-55	Sul	Sul	ADJ	_	Gender=Fem|Number=Sing	54	amod	O	_
++55	Sul	Sul	NOUN	_	Gender=Fem|Number=Sing	54	nmod	O	_
+ 56-57	do	_	_	_	_	_	_	_	_
+ 56	de	de	ADP	_	_	58	case	O	_
+ 57	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	O	_
+```
 
 ## Modificações de obl com base no sema e preposições
 
@@ -654,29 +1669,6 @@ Sentenças modificadas:
  # sent_id = 241-20140227-MONOGRAFIA_0-17
  1	Formação	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
  2-3	do	_	_	_	_	_	_	_	_
-```
-
-## Removendo nmod:appos para release
-
-* Author: Elvis de Souza <elvis.desouza99@gmail.com>
-* Date:   Thu Aug 5 13:57:49 2021 -0300
-* Lines changed: 782
-* Commit: [950568c6dc243ba26e8b18921498d0f217209165](https://github.com/alvelvis/meu-mestrado/commit/950568c6dc243ba26e8b18921498d0f217209165)
-* Patch file: [2021_8_5_13:57:49-950568c6dc243ba26e8b18921498d0f217209165.patch](patch/2021_8_5_13:57:49-950568c6dc243ba26e8b18921498d0f217209165.patch)
-
-Removendo nmod:appos para release
-Lista de sentenças e tokens com nmod:appos:
-247-20140910-MONOGRAFIA_0-4,46|247-20140910-MONOGRAFIA_0-4,68|247-20140910-MONOGRAFIA_0-5,3|247-20140910-MONOGRAFIA_0-6,28|247-20140910-MONOGRAFIA_0-6,42|247-20140910-MONOGRAFIA_0-19,28|247-20140910-MONOGRAFIA_0-19,45|247-20140910-MONOGRAFIA_0-19,57|247-20140910-MONOGRAFIA_0-24,14|247-20140910-MONOGRAFIA_0-31,37|247-20140910-MONOGRAFIA_0-32,26|247-20140910-MONOGRAFIA_0-33,17|247-20140910-MONOGRAFIA_0-34,23|247-20140910-MONOGRAFIA_0-38,27|247-20140910-MONOGRAFIA_0-58,11|247-20140910-MONOGRAFIA_0-78,70|247-20140910-MONOGRAFIA_0-78,75|247-20140910-MONOGRAFIA_0-80,16|247-20140910-MONOGRAFIA_0-89,18|247-20140910-MONOGRAFIA_0-89,30|247-20140910-MONOGRAFIA_0-107,44|247-20140910-MONOGRAFIA_0-134,22|247-20140910-MONOGRAFIA_0-142,22|247-20140910-MONOGRAFIA_0-144,16|247-20140910-MONOGRAFIA_0-164,21|247-20140910-MONOGRAFIA_0-197,34|247-20140910-MONOGRAFIA_0-230,30|247-20140910-MONOGRAFIA_0-243,10|247-20140910-MONOGRAFIA_0-243,30|247-20140910-MONOGRAFIA_0-243,78|247-20140910-MONOGRAFIA_0-262,10|247-20140910-MONOGRAFIA_0-276,52|247-20140910-MONOGRAFIA_0-278,70|247-20140910-MONOGRAFIA_0-292,12|247-20140910-MONOGRAFIA_0-295,9|241-20140227-MONOGRAFIA_0-29,12|241-20140227-MONOGRAFIA_0-35,20|241-20140227-MONOGRAFIA_0-47,33|241-20140227-MONOGRAFIA_0-67,9|241-20140227-MONOGRAFIA_0-93,27|241-20140227-MONOGRAFIA_0-116,48|241-20140227-MONOGRAFIA_0-116,111|241-20140227-MONOGRAFIA_0-133,6|241-20140227-MONOGRAFIA_0-164,102|284-20150917-MONOGRAFIA_0-19,27|284-20150917-MONOGRAFIA_0-20,15|284-20150917-MONOGRAFIA_0-26,14|284-20150917-MONOGRAFIA_0-48,17|284-20150917-MONOGRAFIA_0-53,17|284-20150917-MONOGRAFIA_0-79,40|284-20150917-MONOGRAFIA_0-85,25|284-20150917-MONOGRAFIA_0-89,23|284-20150917-MONOGRAFIA_0-101,25|284-20150917-MONOGRAFIA_0-101,35|284-20150917-MONOGRAFIA_0-110,17|284-20150917-MONOGRAFIA_0-144,17|284-20150917-MONOGRAFIA_0-151,22|284-20150917-MONOGRAFIA_0-152,34|284-20150917-MONOGRAFIA_0-152,42|284-20150917-MONOGRAFIA_0-155,8|284-20150917-MONOGRAFIA_0-162,18|284-20150917-MONOGRAFIA_0-164,52|284-20150917-MONOGRAFIA_0-168,3|284-20150917-MONOGRAFIA_0-169,16|284-20150917-MONOGRAFIA_0-176,31|284-20150917-MONOGRAFIA_0-177,21|284-20150917-MONOGRAFIA_0-178,15|284-20150917-MONOGRAFIA_0-181,17|284-20150917-MONOGRAFIA_0-189,15|284-20150917-MONOGRAFIA_0-218,17|284-20150917-MONOGRAFIA_0-228,29|284-20150917-MONOGRAFIA_0-263,28|284-20150917-MONOGRAFIA_0-296,63|284-20150917-MONOGRAFIA_0-296,114|284-20150917-MONOGRAFIA_0-302,22|284-20150917-MONOGRAFIA_0-306,20|284-20150917-MONOGRAFIA_0-306,40|284-20150917-MONOGRAFIA_0-308,35|284-20150917-MONOGRAFIA_0-321,27|284-20150917-MONOGRAFIA_0-327,42|284-20150917-MONOGRAFIA_0-328,39|284-20150917-MONOGRAFIA_0-337,33|284-20150917-MONOGRAFIA_0-343,24|284-20150917-MONOGRAFIA_0-345,23|284-20150917-MONOGRAFIA_0-349,13|284-20150917-MONOGRAFIA_0-349,44|284-20150917-MONOGRAFIA_0-353,31|284-20150917-MONOGRAFIA_0-360,29|284-20150917-MONOGRAFIA_0-361,33|284-20150917-MONOGRAFIA_0-361,42|284-20150917-MONOGRAFIA_0-363,10|284-20150917-MONOGRAFIA_0-373,19|284-20150917-MONOGRAFIA_0-376,9|284-20150917-MONOGRAFIA_0-379,11|284-20150917-MONOGRAFIA_0-382,35|284-20150917-MONOGRAFIA_0-384,3|284-20150917-MONOGRAFIA_0-385,24|284-20150917-MONOGRAFIA_0-388,37|284-20150917-MONOGRAFIA_0-391,12|284-20150917-MONOGRAFIA_0-397,29|284-20150917-MONOGRAFIA_0-400,23|284-20150917-MONOGRAFIA_0-402,24|284-20150917-MONOGRAFIA_0-423,15|398-20160721-MONOGRAFIA_0-6,16|398-20160721-MONOGRAFIA_0-12,18|398-20160721-MONOGRAFIA_0-49,13|398-20160721-MONOGRAFIA_0-100,8|398-20160721-MONOGRAFIA_0-119,17|398-20160721-MONOGRAFIA_0-131,28|398-20160721-MONOGRAFIA_0-136,24|398-20160721-MONOGRAFIA_0-151,26|398-20160721-MONOGRAFIA_0-151,32|398-20160721-MONOGRAFIA_0-155,17|398-20160721-MONOGRAFIA_0-179,24|398-20160721-MONOGRAFIA_0-184,14|398-20160721-MONOGRAFIA_0-197,19|398-20160721-MONOGRAFIA_0-199,19|398-20160721-MONOGRAFIA_0-248,9|398-20160721-MONOGRAFIA_0-276,18|398-20160721-MONOGRAFIA_0-276,25|398-20160721-MONOGRAFIA_0-276,38|398-20160721-MONOGRAFIA_0-277,32|398-20160721-MONOGRAFIA_0-361,14|398-20160721-MONOGRAFIA_0-368,14|398-20160721-MONOGRAFIA_0-377,14|24-20150122-MONOGRAFIA_0-40,27|24-20150122-MONOGRAFIA_0-68,22|24-20150122-MONOGRAFIA_0-68,37|24-20150122-MONOGRAFIA_0-70,4|24-20150122-MONOGRAFIA_0-71,7|24-20150122-MONOGRAFIA_0-77,12|24-20150122-MONOGRAFIA_0-80,5|24-20150122-MONOGRAFIA_0-91,16|24-20150122-MONOGRAFIA_0-92,8|24-20150122-MONOGRAFIA_0-112,21|24-20150122-MONOGRAFIA_0-135,42|24-20150122-MONOGRAFIA_0-140,18|24-20150122-MONOGRAFIA_0-152,26|24-20150122-MONOGRAFIA_0-158,12|24-20150122-MONOGRAFIA_0-160,42|24-20150122-MONOGRAFIA_0-173,31|24-20150122-MONOGRAFIA_0-219,45|24-20150122-MONOGRAFIA_0-253,11|24-20150122-MONOGRAFIA_0-258,23|24-20150122-MONOGRAFIA_0-276,30|24-20150122-MONOGRAFIA_0-282,13|24-20150122-MONOGRAFIA_0-284,14|24-20150122-MONOGRAFIA_0-318,16|24-20150122-MONOGRAFIA_0-322,20|24-20150122-MONOGRAFIA_0-341,14|24-20150122-MONOGRAFIA_0-470,27|24-20150122-MONOGRAFIA_0-475,27|24-20150122-MONOGRAFIA_0-481,27|24-20150122-MONOGRAFIA_0-490,21|24-20150122-MONOGRAFIA_0-496,27|24-20150122-MONOGRAFIA_0-502,27|24-20150122-MONOGRAFIA_0-508,27|24-20150122-MONOGRAFIA_0-561,9|24-20150122-MONOGRAFIA_0-589,53|24-20150122-MONOGRAFIA_0-590,18|24-20150122-MONOGRAFIA_0-627,26|283-20150917-MONOGRAFIA_0-6,10|283-20150917-MONOGRAFIA_0-6,15|283-20150917-MONOGRAFIA_0-6,20|283-20150917-MONOGRAFIA_0-6,27|283-20150917-MONOGRAFIA_0-6,34|283-20150917-MONOGRAFIA_0-6,41|283-20150917-MONOGRAFIA_0-6,46|283-20150917-MONOGRAFIA_0-6,51|283-20150917-MONOGRAFIA_0-6,56|283-20150917-MONOGRAFIA_0-29,10|283-20150917-MONOGRAFIA_0-29,18|283-20150917-MONOGRAFIA_0-29,23|283-20150917-MONOGRAFIA_0-33,42|283-20150917-MONOGRAFIA_0-35,16|283-20150917-MONOGRAFIA_0-36,9|283-20150917-MONOGRAFIA_0-46,21|283-20150917-MONOGRAFIA_0-56,3|283-20150917-MONOGRAFIA_0-72,18|283-20150917-MONOGRAFIA_0-77,19|283-20150917-MONOGRAFIA_0-77,27|283-20150917-MONOGRAFIA_0-82,28|283-20150917-MONOGRAFIA_0-83,8|283-20150917-MONOGRAFIA_0-126,17|283-20150917-MONOGRAFIA_0-127,6|283-20150917-MONOGRAFIA_0-127,20|283-20150917-MONOGRAFIA_0-161,8|283-20150917-MONOGRAFIA_0-168,15|283-20150917-MONOGRAFIA_0-177,50|283-20150917-MONOGRAFIA_0-177,55|283-20150917-MONOGRAFIA_0-187,12|283-20150917-MONOGRAFIA_0-188,33|283-20150917-MONOGRAFIA_0-194,3|283-20150917-MONOGRAFIA_0-194,20|283-20150917-MONOGRAFIA_0-207,23|283-20150917-MONOGRAFIA_0-212,21|283-20150917-MONOGRAFIA_0-221,23|283-20150917-MONOGRAFIA_0-247,20|283-20150917-MONOGRAFIA_0-247,25|283-20150917-MONOGRAFIA_0-269,13|283-20150917-MONOGRAFIA_0-271,11|283-20150917-MONOGRAFIA_0-281,24|283-20150917-MONOGRAFIA_0-290,25|283-20150917-MONOGRAFIA_0-294,19|283-20150917-MONOGRAFIA_0-294,32|283-20150917-MONOGRAFIA_0-302,13|283-20150917-MONOGRAFIA_0-326,9|283-20150917-MONOGRAFIA_0-327,11|283-20150917-MONOGRAFIA_0-327,19|283-20150917-MONOGRAFIA_0-328,15|283-20150917-MONOGRAFIA_0-340,12|283-20150917-MONOGRAFIA_0-354,21|283-20150917-MONOGRAFIA_0-357,28|283-20150917-MONOGRAFIA_0-361,17|283-20150917-MONOGRAFIA_0-371,4|283-20150917-MONOGRAFIA_0-398,19|283-20150917-MONOGRAFIA_0-440,3|283-20150917-MONOGRAFIA_0-451,17|283-20150917-MONOGRAFIA_0-479,369|161-20150810-MONOGRAFIA_0-5,7|161-20150810-MONOGRAFIA_0-10,26|161-20150810-MONOGRAFIA_0-59,17|161-20150810-MONOGRAFIA_0-138,7|161-20150810-MONOGRAFIA_0-183,26|161-20150810-MONOGRAFIA_0-187,45|161-20150810-MONOGRAFIA_0-207,11|161-20150810-MONOGRAFIA_0-243,21|161-20150810-MONOGRAFIA_0-260,19|161-20150810-MONOGRAFIA_0-271,20|161-20150810-MONOGRAFIA_0-282,35|161-20150810-MONOGRAFIA_0-290,8|161-20150810-MONOGRAFIA_0-293,29|161-20150810-MONOGRAFIA_0-301,17|161-20150810-MONOGRAFIA_0-347,44|161-20150810-MONOGRAFIA_0-359,16|161-20150810-MONOGRAFIA_0-381,25|161-20150810-MONOGRAFIA_0-409,73|161-20150810-MONOGRAFIA_0-442,68|161-20150810-MONOGRAFIA_0-451,8|161-20150810-MONOGRAFIA_0-456,49|161-20150810-MONOGRAFIA_0-458,7|161-20150810-MONOGRAFIA_0-475,20|161-20150810-MONOGRAFIA_0-493,45|161-20150810-MONOGRAFIA_0-513,29|161-20150810-MONOGRAFIA_0-519,8|161-20150810-MONOGRAFIA_0-537,8|161-20150810-MONOGRAFIA_0-558,104|161-20150810-MONOGRAFIA_0-561,50|161-20150810-MONOGRAFIA_0-565,13|161-20150810-MONOGRAFIA_0-565,15|161-20150810-MONOGRAFIA_0-570,14|161-20150810-MONOGRAFIA_0-575,56|161-20150810-MONOGRAFIA_0-584,55|161-20150810-MONOGRAFIA_0-592,9|161-20150810-MONOGRAFIA_0-600,50|161-20150810-MONOGRAFIA_0-610,5|161-20150810-MONOGRAFIA_0-610,7|161-20150810-MONOGRAFIA_0-628,13|161-20150810-MONOGRAFIA_0-628,41|161-20150810-MONOGRAFIA_0-666,16|161-20150810-MONOGRAFIA_0-670,61|161-20150810-MONOGRAFIA_0-676,12|161-20150810-MONOGRAFIA_0-677,35|161-20150810-MONOGRAFIA_0-682,41|161-20150810-MONOGRAFIA_0-689,45|161-20150810-MONOGRAFIA_0-692,23|161-20150810-MONOGRAFIA_0-693,43|161-20150810-MONOGRAFIA_0-700,15|161-20150810-MONOGRAFIA_0-725,64|161-20150810-MONOGRAFIA_0-787,11|161-20150810-MONOGRAFIA_0-789,17|161-20150810-MONOGRAFIA_0-838,11|161-20150810-MONOGRAFIA_0-866,26|161-20150810-MONOGRAFIA_0-910,41|334-20150521-MONOGRAFIA_0-18,13|334-20150521-MONOGRAFIA_0-18,23|334-20150521-MONOGRAFIA_0-36,17|334-20150521-MONOGRAFIA_0-36,41|334-20150521-MONOGRAFIA_0-36,53|334-20150521-MONOGRAFIA_0-36,65|334-20150521-MONOGRAFIA_0-36,71|334-20150521-MONOGRAFIA_0-36,77|334-20150521-MONOGRAFIA_0-36,89|334-20150521-MONOGRAFIA_0-36,95|334-20150521-MONOGRAFIA_0-36,101|334-20150521-MONOGRAFIA_0-36,118|334-20150521-MONOGRAFIA_0-36,124|334-20150521-MONOGRAFIA_0-36,136|334-20150521-MONOGRAFIA_0-36,142|334-20150521-MONOGRAFIA_0-36,148|334-20150521-MONOGRAFIA_0-36,160|334-20150521-MONOGRAFIA_0-36,166|334-20150521-MONOGRAFIA_0-36,183|334-20150521-MONOGRAFIA_0-36,189|334-20150521-MONOGRAFIA_0-36,195|334-20150521-MONOGRAFIA_0-36,207|334-20150521-MONOGRAFIA_0-36,213|334-20150521-MONOGRAFIA_0-61,3|334-20150521-MONOGRAFIA_0-69,29|334-20150521-MONOGRAFIA_0-87,34|334-20150521-MONOGRAFIA_0-90,23|334-20150521-MONOGRAFIA_0-94,26|334-20150521-MONOGRAFIA_0-100,71|334-20150521-MONOGRAFIA_0-116,35|334-20150521-MONOGRAFIA_0-122,50|334-20150521-MONOGRAFIA_0-139,42|334-20150521-MONOGRAFIA_0-169,46|334-20150521-MONOGRAFIA_0-181,14|334-20150521-MONOGRAFIA_0-185,28|334-20150521-MONOGRAFIA_0-185,33|334-20150521-MONOGRAFIA_0-190,65|334-20150521-MONOGRAFIA_0-226,71|334-20150521-MONOGRAFIA_0-233,26|334-20150521-MONOGRAFIA_0-266,16|334-20150521-MONOGRAFIA_0-266,42|334-20150521-MONOGRAFIA_0-266,116|334-20150521-MONOGRAFIA_0-267,31|334-20150521-MONOGRAFIA_0-267,37|334-20150521-MONOGRAFIA_0-270,18|334-20150521-MONOGRAFIA_0-273,40|334-20150521-MONOGRAFIA_0-294,46|334-20150521-MONOGRAFIA_0-319,19|334-20150521-MONOGRAFIA_0-319,31|334-20150521-MONOGRAFIA_0-384,30|334-20150521-MONOGRAFIA_0-387,24|334-20150521-MONOGRAFIA_0-399,42|334-20150521-MONOGRAFIA_0-423,45|334-20150521-MONOGRAFIA_0-424,41|334-20150521-MONOGRAFIA_0-436,57|334-20150521-MONOGRAFIA_0-521,8|334-20150521-MONOGRAFIA_0-521,32|334-20150521-MONOGRAFIA_0-523,9|334-20150521-MONOGRAFIA_0-569,8|334-20150521-MONOGRAFIA_0-578,3|334-20150521-MONOGRAFIA_0-578,35|334-20150521-MONOGRAFIA_0-578,41|334-20150521-MONOGRAFIA_0-578,43|334-20150521-MONOGRAFIA_0-578,46|334-20150521-MONOGRAFIA_0-578,58|334-20150521-MONOGRAFIA_0-580,7|334-20150521-MONOGRAFIA_0-580,25|334-20150521-MONOGRAFIA_0-590,16|334-20150521-MONOGRAFIA_0-726,49|202-20140404-MONOGRAFIA_0-3,25|202-20140404-MONOGRAFIA_0-5,38|202-20140404-MONOGRAFIA_0-19,11|202-20140404-MONOGRAFIA_0-23,42|202-20140404-MONOGRAFIA_0-64,12|202-20140404-MONOGRAFIA_0-74,13|202-20140404-MONOGRAFIA_0-77,15|202-20140404-MONOGRAFIA_0-104,19|202-20140404-MONOGRAFIA_0-142,7|202-20140404-MONOGRAFIA_0-142,9|202-20140404-MONOGRAFIA_0-142,14|258-20160602-TESEMSC_0-8,27|258-20160602-TESEMSC_0-9,9|258-20160602-TESEMSC_0-9,21|258-20160602-TESEMSC_0-10,12|258-20160602-TESEMSC_0-20,24|258-20160602-TESEMSC_0-20,32|258-20160602-TESEMSC_0-24,10|258-20160602-TESEMSC_0-53,16|258-20160602-TESEMSC_0-58,15|258-20160602-TESEMSC_0-62,31|258-20160602-TESEMSC_0-64,10|258-20160602-TESEMSC_0-75,19|258-20160602-TESEMSC_0-79,10|258-20160602-TESEMSC_0-80,8|258-20160602-TESEMSC_0-82,24|258-20160602-TESEMSC_0-101,26|258-20160602-TESEMSC_0-101,31|258-20160602-TESEMSC_0-101,38|258-20160602-TESEMSC_0-101,43|258-20160602-TESEMSC_0-101,50|258-20160602-TESEMSC_0-101,65|258-20160602-TESEMSC_0-111,11|258-20160602-TESEMSC_0-114,6|258-20160602-TESEMSC_0-116,12|258-20160602-TESEMSC_0-116,49|258-20160602-TESEMSC_0-120,38|258-20160602-TESEMSC_0-124,28|258-20160602-TESEMSC_0-129,86|258-20160602-TESEMSC_0-168,3|258-20160602-TESEMSC_0-168,26|258-20160602-TESEMSC_0-173,7|258-20160602-TESEMSC_0-178,34|258-20160602-TESEMSC_0-190,35|258-20160602-TESEMSC_0-191,108|258-20160602-TESEMSC_0-199,23|258-20160602-TESEMSC_0-200,50|258-20160602-TESEMSC_0-202,15|258-20160602-TESEMSC_0-263,59|258-20160602-TESEMSC_0-266,12|258-20160602-TESEMSC_0-272,50|258-20160602-TESEMSC_0-277,50|258-20160602-TESEMSC_0-285,52|258-20160602-TESEMSC_0-286,23|258-20160602-TESEMSC_0-294,39|258-20160602-TESEMSC_0-315,33|258-20160602-TESEMSC_0-318,19|258-20160602-TESEMSC_0-321,23|258-20160602-TESEMSC_0-325,33|258-20160602-TESEMSC_0-329,23|258-20160602-TESEMSC_0-334,23|258-20160602-TESEMSC_0-338,52|258-20160602-TESEMSC_0-342,33|258-20160602-TESEMSC_0-349,29|258-20160602-TESEMSC_0-351,20|258-20160602-TESEMSC_0-351,27|258-20160602-TESEMSC_0-360,67|258-20160602-TESEMSC_0-370,57|258-20160602-TESEMSC_0-370,67|258-20160602-TESEMSC_0-370,69|258-20160602-TESEMSC_0-373,15|258-20160602-TESEMSC_0-396,15|258-20160602-TESEMSC_0-408,34|258-20160602-TESEMSC_0-444,12|258-20160602-TESEMSC_0-447,25|258-20160602-TESEMSC_0-462,10|258-20160602-TESEMSC_0-473,14|258-20160602-TESEMSC_0-492,147|258-20160602-TESEMSC_0-492,216|258-20160602-TESEMSC_0-503,147|258-20160602-TESEMSC_0-503,156|258-20160602-TESEMSC_0-509,38|258-20160602-TESEMSC_0-513,11|77-20141209-TESEMSC_0-28,10|77-20141209-TESEMSC_0-28,21|77-20141209-TESEMSC_0-28,24|77-20141209-TESEMSC_0-28,30|77-20141209-TESEMSC_0-28,40|77-20141209-TESEMSC_0-40,23|77-20141209-TESEMSC_0-47,24|77-20141209-TESEMSC_0-66,38|77-20141209-TESEMSC_0-91,26|77-20141209-TESEMSC_0-94,10|77-20141209-TESEMSC_0-94,17|77-20141209-TESEMSC_0-94,30|77-20141209-TESEMSC_0-104,13|77-20141209-TESEMSC_0-109,3|77-20141209-TESEMSC_0-123,13|77-20141209-TESEMSC_0-136,6|77-20141209-TESEMSC_0-141,3|77-20141209-TESEMSC_0-149,38|77-20141209-TESEMSC_0-157,35|77-20141209-TESEMSC_0-170,15|77-20141209-TESEMSC_0-171,29|77-20141209-TESEMSC_0-205,43|77-20141209-TESEMSC_0-294,9|77-20141209-TESEMSC_0-302,10|77-20141209-TESEMSC_0-377,38|77-20141209-TESEMSC_0-379,26|77-20141209-TESEMSC_0-419,3|77-20141209-TESEMSC_0-433,3|77-20141209-TESEMSC_0-435,13|77-20141209-TESEMSC_0-455,120|279-20140530-MONOGRAFIA_0-3,28|279-20140530-MONOGRAFIA_0-4,68|279-20140530-MONOGRAFIA_0-7,5|279-20140530-MONOGRAFIA_0-10,17|279-20140530-MONOGRAFIA_0-39,16|279-20140530-MONOGRAFIA_0-51,27|279-20140530-MONOGRAFIA_0-51,53|279-20140530-MONOGRAFIA_0-51,67|279-20140530-MONOGRAFIA_0-59,20|279-20140530-MONOGRAFIA_0-60,16|279-20140530-MONOGRAFIA_0-62,36|279-20140530-MONOGRAFIA_0-98,28|279-20140530-MONOGRAFIA_0-99,24|279-20140530-MONOGRAFIA_0-104,50|279-20140530-MONOGRAFIA_0-126,117|279-20140530-MONOGRAFIA_0-196,43|279-20140530-MONOGRAFIA_0-207,8|279-20140530-MONOGRAFIA_0-231,4|279-20140530-MONOGRAFIA_0-237,17|279-20140530-MONOGRAFIA_0-242,4|279-20140530-MONOGRAFIA_0-243,8|279-20140530-MONOGRAFIA_0-243,50|279-20140530-MONOGRAFIA_0-246,25|271-20150810-MONOGRAFIA_0-10,15|271-20150810-MONOGRAFIA_0-37,13|271-20150810-MONOGRAFIA_0-49,11|271-20150810-MONOGRAFIA_0-53,17|271-20150810-MONOGRAFIA_0-74,29|271-20150810-MONOGRAFIA_0-76,15|271-20150810-MONOGRAFIA_0-77,28|271-20150810-MONOGRAFIA_0-148,23|271-20150810-MONOGRAFIA_0-149,22|271-20150810-MONOGRAFIA_0-161,38|271-20150810-MONOGRAFIA_0-194,35|271-20150810-MONOGRAFIA_0-200,71|271-20150810-MONOGRAFIA_0-201,18|271-20150810-MONOGRAFIA_0-227,146|271-20150810-MONOGRAFIA_0-227,148|271-20150810-MONOGRAFIA_0-227,155|271-20150810-MONOGRAFIA_0-227,183|271-20150810-MONOGRAFIA_0-230,23|271-20150810-MONOGRAFIA_0-272,13|271-20150810-MONOGRAFIA_0-295,22|271-20150810-MONOGRAFIA_0-329,11|271-20150810-MONOGRAFIA_0-352,11|271-20150810-MONOGRAFIA_0-354,3|271-20150810-MONOGRAFIA_0-373,20|271-20150810-MONOGRAFIA_0-378,41|271-20150810-MONOGRAFIA_0-391,14|271-20150810-MONOGRAFIA_0-441,31|271-20150810-MONOGRAFIA_0-442,46|271-20150810-MONOGRAFIA_0-446,32|271-20150810-MONOGRAFIA_0-491,8|391-20160914-MONOGRAFIA_0-19,20|391-20160914-MONOGRAFIA_0-48,20|391-20160914-MONOGRAFIA_0-65,31|391-20160914-MONOGRAFIA_0-77,19|391-20160914-MONOGRAFIA_0-77,29|391-20160914-MONOGRAFIA_0-94,4|391-20160914-MONOGRAFIA_0-105,23|391-20160914-MONOGRAFIA_0-121,20|391-20160914-MONOGRAFIA_0-124,55|391-20160914-MONOGRAFIA_0-124,96|391-20160914-MONOGRAFIA_0-164,3|391-20160914-MONOGRAFIA_0-166,30|391-20160914-MONOGRAFIA_0-175,17|391-20160914-MONOGRAFIA_0-176,3|391-20160914-MONOGRAFIA_0-184,44|391-20160914-MONOGRAFIA_0-200,22|391-20160914-MONOGRAFIA_0-232,6|391-20160914-MONOGRAFIA_0-239,25|25-20150123-MONOGRAFIA_0-7,5|25-20150123-MONOGRAFIA_0-24,10|25-20150123-MONOGRAFIA_0-27,9|25-20150123-MONOGRAFIA_0-43,39|25-20150123-MONOGRAFIA_0-47,34|25-20150123-MONOGRAFIA_0-54,7|25-20150123-MONOGRAFIA_0-57,18|25-20150123-MONOGRAFIA_0-58,22|25-20150123-MONOGRAFIA_0-59,14|25-20150123-MONOGRAFIA_0-62,25|25-20150123-MONOGRAFIA_0-72,25|25-20150123-MONOGRAFIA_0-74,25|25-20150123-MONOGRAFIA_0-79,30|25-20150123-MONOGRAFIA_0-80,19|25-20150123-MONOGRAFIA_0-84,28|25-20150123-MONOGRAFIA_0-90,7|25-20150123-MONOGRAFIA_0-94,5|25-20150123-MONOGRAFIA_0-99,8|25-20150123-MONOGRAFIA_0-102,24|25-20150123-MONOGRAFIA_0-117,24|25-20150123-MONOGRAFIA_0-121,36|25-20150123-MONOGRAFIA_0-125,48|25-20150123-MONOGRAFIA_0-138,44|25-20150123-MONOGRAFIA_0-141,14|25-20150123-MONOGRAFIA_0-142,19|25-20150123-MONOGRAFIA_0-143,22|25-20150123-MONOGRAFIA_0-151,29|25-20150123-MONOGRAFIA_0-167,18|25-20150123-MONOGRAFIA_0-212,25|25-20150123-MONOGRAFIA_0-219,15|25-20150123-MONOGRAFIA_0-230,28|25-20150123-MONOGRAFIA_0-295,9|25-20150123-MONOGRAFIA_0-322,35|25-20150123-MONOGRAFIA_0-344,21|25-20150123-MONOGRAFIA_0-348,11|25-20150123-MONOGRAFIA_0-363,17|25-20150123-MONOGRAFIA_0-392,39|25-20150123-MONOGRAFIA_0-392,53|25-20150123-MONOGRAFIA_0-401,22|25-20150123-MONOGRAFIA_0-401,73|25-20150123-MONOGRAFIA_0-404,36|25-20150123-MONOGRAFIA_0-426,9|25-20150123-MONOGRAFIA_0-431,36|25-20150123-MONOGRAFIA_0-437,9|25-20150123-MONOGRAFIA_0-451,28|20-20140904-TESEDSC_0-4,11|20-20140904-TESEDSC_0-5,17|20-20140904-TESEDSC_0-5,33|20-20140904-TESEDSC_0-37,10|20-20140904-TESEDSC_0-46,27|20-20140904-TESEDSC_0-54,3|20-20140904-TESEDSC_0-57,32|20-20140904-TESEDSC_0-82,23|20-20140904-TESEDSC_0-125,3|20-20140904-TESEDSC_0-136,18|20-20140904-TESEDSC_0-144,12|20-20140904-TESEDSC_0-146,19|20-20140904-TESEDSC_0-148,11|20-20140904-TESEDSC_0-153,14|20-20140904-TESEDSC_0-162,22|20-20140904-TESEDSC_0-166,20|20-20140904-TESEDSC_0-179,38|20-20140904-TESEDSC_0-192,7|20-20140904-TESEDSC_0-196,27|20-20140904-TESEDSC_0-198,51|20-20140904-TESEDSC_0-201,7|20-20140904-TESEDSC_0-204,22|20-20140904-TESEDSC_0-204,32|20-20140904-TESEDSC_0-207,6|20-20140904-TESEDSC_0-210,3|20-20140904-TESEDSC_0-210,7|20-20140904-TESEDSC_0-210,14|20-20140904-TESEDSC_0-219,13|20-20140904-TESEDSC_0-231,9|20-20140904-TESEDSC_0-233,67|20-20140904-TESEDSC_0-238,37|20-20140904-TESEDSC_0-240,32|20-20140904-TESEDSC_0-243,34|20-20140904-TESEDSC_0-244,3|20-20140904-TESEDSC_0-246,22|20-20140904-TESEDSC_0-246,31|20-20140904-TESEDSC_0-252,93|20-20140904-TESEDSC_0-263,8|20-20140904-TESEDSC_0-269,40|20-20140904-TESEDSC_0-275,25|20-20140904-TESEDSC_0-335,54|20-20140904-TESEDSC_0-369,8|20-20140904-TESEDSC_0-373,4|20-20140904-TESEDSC_0-409,41|20-20140904-TESEDSC_0-412,34|20-20140904-TESEDSC_0-412,73|20-20140904-TESEDSC_0-458,35|20-20140904-TESEDSC_0-489,22|20-20140904-TESEDSC_0-490,10|20-20140904-TESEDSC_0-495,11|20-20140904-TESEDSC_0-498,14|20-20140904-TESEDSC_0-513,15|20-20140904-TESEDSC_0-527,41|20-20140904-TESEDSC_0-538,9|20-20140904-TESEDSC_0-545,14|20-20140904-TESEDSC_0-546,8|20-20140904-TESEDSC_0-559,26|20-20140904-TESEDSC_0-685,22|20-20140904-TESEDSC_0-710,18|20-20140904-TESEDSC_0-716,37|20-20140904-TESEDSC_0-727,30|20-20140904-TESEDSC_0-748,13|20-20140904-TESEDSC_0-797,54|20-20140904-TESEDSC_0-807,16|20-20140904-TESEDSC_0-864,40|20-20140904-TESEDSC_0-871,45|20-20140904-TESEDSC_0-879,23|20-20140904-TESEDSC_0-948,15|20-20140904-TESEDSC_0-1045,9|20-20140904-TESEDSC_0-1061,3|20-20140904-TESEDSC_0-1087,38|20-20140904-TESEDSC_0-1121,14|20-20140904-TESEDSC_0-1144,30|20-20140904-TESEDSC_0-1162,38|20-20140904-TESEDSC_0-1181,14|20-20140904-TESEDSC_0-1206,59|20-20140904-TESEDSC_0-1248,18|20-20140904-TESEDSC_0-1256,20|20-20140904-TESEDSC_0-1305,44|20-20140904-TESEDSC_0-1328,47|20-20140904-TESEDSC_0-1339,13|20-20140904-TESEDSC_0-1361,27|119-20141209-TESEMSC_0-11,37|119-20141209-TESEMSC_0-14,10|119-20141209-TESEMSC_0-20,24|119-20141209-TESEMSC_0-25,74|119-20141209-TESEMSC_0-89,5|119-20141209-TESEMSC_0-91,30|119-20141209-TESEMSC_0-169,3|119-20141209-TESEMSC_0-187,21|119-20141209-TESEMSC_0-207,4|119-20141209-TESEMSC_0-216,5|119-20141209-TESEMSC_0-216,23|119-20141209-TESEMSC_0-220,5|119-20141209-TESEMSC_0-271,33|119-20141209-TESEMSC_0-290,44|119-20141209-TESEMSC_0-291,21|119-20141209-TESEMSC_0-293,35|119-20141209-TESEMSC_0-295,23|119-20141209-TESEMSC_0-299,7|119-20141209-TESEMSC_0-345,22|119-20141209-TESEMSC_0-346,6|119-20141209-TESEMSC_0-347,26|119-20141209-TESEMSC_0-349,10|119-20141209-TESEMSC_0-366,23|119-20141209-TESEMSC_0-382,53|119-20141209-TESEMSC_0-383,11|119-20141209-TESEMSC_0-409,3|119-20141209-TESEMSC_0-419,22|119-20141209-TESEMSC_0-460,5|119-20141209-TESEMSC_0-463,3|119-20141209-TESEMSC_0-470,34|119-20141209-TESEMSC_0-471,38|119-20141209-TESEMSC_0-476,16|119-20141209-TESEMSC_0-482,4|119-20141209-TESEMSC_0-538,19|119-20141209-TESEMSC_0-589,29|119-20141209-TESEMSC_0-605,11|119-20141209-TESEMSC_0-605,29|119-20141209-TESEMSC_0-611,6|119-20141209-TESEMSC_0-634,23|119-20141209-TESEMSC_0-657,26|119-20141209-TESEMSC_0-659,25|119-20141209-TESEMSC_0-675,6|119-20141209-TESEMSC_0-677,39|119-20141209-TESEMSC_0-702,6|119-20141209-TESEMSC_0-713,18|119-20141209-TESEMSC_0-730,23|119-20141209-TESEMSC_0-734,17|119-20141209-TESEMSC_0-769,17|119-20141209-TESEMSC_0-774,46|119-20141209-TESEMSC_0-775,11|119-20141209-TESEMSC_0-776,40|119-20141209-TESEMSC_0-780,66|240-20140220-MONOGRAFIA_0-35,3|240-20140220-MONOGRAFIA_0-49,7|240-20140220-MONOGRAFIA_0-59,41|240-20140220-MONOGRAFIA_0-73,8|240-20140220-MONOGRAFIA_0-110,3|240-20140220-MONOGRAFIA_0-136,9|240-20140220-MONOGRAFIA_0-152,6|240-20140220-MONOGRAFIA_0-164,42|240-20140220-MONOGRAFIA_0-164,45|240-20140220-MONOGRAFIA_0-178,3|240-20140220-MONOGRAFIA_0-192,8|240-20140220-MONOGRAFIA_0-211,33|240-20140220-MONOGRAFIA_0-291,22|240-20140220-MONOGRAFIA_0-302,19|240-20140220-MONOGRAFIA_0-354,12|240-20140220-MONOGRAFIA_0-371,7|240-20140220-MONOGRAFIA_0-374,23|240-20140220-MONOGRAFIA_0-398,23|240-20140220-MONOGRAFIA_0-424,27|411-20150702-MONOGRAFIA_0-6,37|411-20150702-MONOGRAFIA_0-8,14|411-20150702-MONOGRAFIA_0-15,10|411-20150702-MONOGRAFIA_0-17,3|411-20150702-MONOGRAFIA_0-19,27|411-20150702-MONOGRAFIA_0-30,29|411-20150702-MONOGRAFIA_0-35,46|411-20150702-MONOGRAFIA_0-63,10|411-20150702-MONOGRAFIA_0-65,50|411-20150702-MONOGRAFIA_0-65,58|411-20150702-MONOGRAFIA_0-65,67|411-20150702-MONOGRAFIA_0-65,70|411-20150702-MONOGRAFIA_0-65,77|411-20150702-MONOGRAFIA_0-65,91|411-20150702-MONOGRAFIA_0-87,38|411-20150702-MONOGRAFIA_0-101,29|411-20150702-MONOGRAFIA_0-106,19|411-20150702-MONOGRAFIA_0-113,6|411-20150702-MONOGRAFIA_0-143,59|411-20150702-MONOGRAFIA_0-144,39|411-20150702-MONOGRAFIA_0-145,10|411-20150702-MONOGRAFIA_0-146,61|411-20150702-MONOGRAFIA_0-157,11|411-20150702-MONOGRAFIA_0-164,36|411-20150702-MONOGRAFIA_0-170,35|411-20150702-MONOGRAFIA_0-182,17|411-20150702-MONOGRAFIA_0-185,6|411-20150702-MONOGRAFIA_0-186,22|411-20150702-MONOGRAFIA_0-187,6|411-20150702-MONOGRAFIA_0-191,11|411-20150702-MONOGRAFIA_0-212,36|411-20150702-MONOGRAFIA_0-215,5|411-20150702-MONOGRAFIA_0-216,12|411-20150702-MONOGRAFIA_0-238,7|411-20150702-MONOGRAFIA_0-262,49|411-20150702-MONOGRAFIA_0-264,5|411-20150702-MONOGRAFIA_0-269,66|411-20150702-MONOGRAFIA_0-285,29|411-20150702-MONOGRAFIA_0-324,36|243-20141015-MONOGRAFIA_1-22,3|243-20141015-MONOGRAFIA_1-25,3|243-20141015-MONOGRAFIA_1-41,27|243-20141015-MONOGRAFIA_1-53,5|243-20141015-MONOGRAFIA_1-56,7|243-20141015-MONOGRAFIA_1-58,7|243-20141015-MONOGRAFIA_1-66,3|243-20141015-MONOGRAFIA_1-69,3|243-20141015-MONOGRAFIA_1-72,3|243-20141015-MONOGRAFIA_1-120,41|243-20141015-MONOGRAFIA_1-134,19|243-20141015-MONOGRAFIA_1-162,12|243-20141015-MONOGRAFIA_1-189,17|243-20141015-MONOGRAFIA_1-208,5|243-20141015-MONOGRAFIA_1-213,52|243-20141015-MONOGRAFIA_1-279,16|243-20141015-MONOGRAFIA_1-285,16|243-20141015-MONOGRAFIA_1-287,15
-
-```diff
- 43	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	41	nmod	O	_
- 44	como	como	ADP	_	_	46	case	O	_
- 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
--46	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	43	nmod:appos	O	_
-+46	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	43	nmod	O	_
- 47	de	de	ADP	_	_	46	flat:name	O	_
- 48	Torres	Torres	PROPN	_	Number=Sing	46	flat:name	O	_
- 49	(	(	PUNCT	_	_	50	punct	O	_
 ```
 
 ## Remoção de pontos finais duplicados -- ponto final seguido de ponto final
