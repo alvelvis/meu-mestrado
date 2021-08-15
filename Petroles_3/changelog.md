@@ -1,6 +1,6 @@
 # Changelog
 
-Last update: 2021-8-14-11:7:0
+Last update: 2021-8-15-15:13:10
 
 ## lemma 'diferentes' is not correct
 
@@ -1798,8 +1798,8 @@ Remoção de frases mal sentenciadas ou tokenizadas
 * Tatiana Cavalcanti
 * Date:   Thu Aug 12 14:25:41 2021 -0300
 * Lines changed: 161
-* Commit: [160f8b576f8eccc6994b01f832d533a4701b24fc](https://github.com/alvelvis/meu-mestrado/commit/160f8b576f8eccc6994b01f832d533a4701b24fc)
-* Patch file: [2021_8_12_14:25:41-160f8b576f8eccc6994b01f832d533a4701b24fc.patch](patch/2021_8_12_14:25:41-160f8b576f8eccc6994b01f832d533a4701b24fc.patch)
+* Commit: [0e7a93944177473b2c7d125f75b632bf89022a25](https://github.com/alvelvis/meu-mestrado/commit/0e7a93944177473b2c7d125f75b632bf89022a25)
+* Patch file: [2021_8_12_14:25:41-0e7a93944177473b2c7d125f75b632bf89022a25.patch](patch/2021_8_12_14:25:41-0e7a93944177473b2c7d125f75b632bf89022a25.patch)
 
 Modificações de particípio e de conj com POS diferentes
 
@@ -1819,8 +1819,8 @@ Modificações de particípio e de conj com POS diferentes
 * Maria Clara Castro
 * Date:   Thu Aug 12 14:44:23 2021 -0300
 * Lines changed: 211
-* Commit: [8e3aa5b57e576dcc7379ed88775fff6ad6f39a19](https://github.com/alvelvis/meu-mestrado/commit/8e3aa5b57e576dcc7379ed88775fff6ad6f39a19)
-* Patch file: [2021_8_12_14:44:23-8e3aa5b57e576dcc7379ed88775fff6ad6f39a19.patch](patch/2021_8_12_14:44:23-8e3aa5b57e576dcc7379ed88775fff6ad6f39a19.patch)
+* Commit: [f33779ff7b8fa9dc221f2d62c414ef871741f153](https://github.com/alvelvis/meu-mestrado/commit/f33779ff7b8fa9dc221f2d62c414ef871741f153)
+* Patch file: [2021_8_12_14:44:23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch](patch/2021_8_12_14:44:23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch)
 
 Correções de lema
 Lemmas que não terminam em ".r" e estavam como verbos (feats diferente de part, porque os particípios ficaram com a Tati), tokens cujo lemma termina em ".*s" e para ocorrências da palavra "sal" no plural que estavam com o lemma "sai".
@@ -1840,8 +1840,8 @@ Lemmas que não terminam em ".r" e estavam como verbos (feats diferente de part,
 * Aline Silveira
 * Date:   Fri Aug 13 09:39:16 2021 -0300
 * Lines changed: 106
-* Commit: [adc46ebea935335e0fcda53573d5aab093c85f66](https://github.com/alvelvis/meu-mestrado/commit/adc46ebea935335e0fcda53573d5aab093c85f66)
-* Patch file: [2021_8_13_09:39:16-adc46ebea935335e0fcda53573d5aab093c85f66.patch](patch/2021_8_13_09:39:16-adc46ebea935335e0fcda53573d5aab093c85f66.patch)
+* Commit: [d1754a735059ef556d814b41f2a8283da9373755](https://github.com/alvelvis/meu-mestrado/commit/d1754a735059ef556d814b41f2a8283da9373755)
+* Patch file: [2021_8_13_09:39:16-d1754a735059ef556d814b41f2a8283da9373755.patch](patch/2021_8_13_09:39:16-d1754a735059ef556d814b41f2a8283da9373755.patch)
 
 Três correções
 Terminações do domínio como ADJ ou VERB
