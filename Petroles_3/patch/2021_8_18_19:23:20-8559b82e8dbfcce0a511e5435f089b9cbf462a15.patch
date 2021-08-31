@@ -1,0 +1,1378 @@
+commit 8559b82e8dbfcce0a511e5435f089b9cbf462a15
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Aug 18 19:23:20 2021 -0300
+
+    Regras para B=UNIDADE_LITOESTRATIGRÁFICA
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 529be08..16285ad 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -8,7 +8,7 @@
+ # text = A Bacia de Pelotas é a mais meridional na costa brasileira (Figura 1) e apresenta poucos trabalhos publicados a seu respeito se comparada às outras bacias de margem continental brasileiras.
+ # sent_id = 247-20140910-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+@@ -76,7 +76,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Pelotas	Pelotas	PROPN	_	Number=Sing	26	flat:name	B=BACIA	_
+ 29	verificando	verificar	VERB	_	VerbForm=Ger	5	advcl	O	_
+@@ -109,7 +109,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	Pelotas	Pelotas	PROPN	_	Number=Sing	10	flat:name	B=BACIA	_
+ 13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	O	_
+@@ -212,7 +212,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=BACIA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Pelotas	Pelotas	PROPN	_	Number=Sing	19	flat:name	B=BACIA	_
+ 22	.	.	PUNCT	_	_	5	punct	O	_
+@@ -281,7 +281,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	4	flat:name	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	flat:name	O	_
+-7	Bacia	bacia	PROPN	_	Number=Sing	4	flat:name	O	_
++7	Bacia	Bacia	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+ 8	de	de	ADP	_	_	4	flat:name	O	_
+ 9	Pelotas	Pelotas	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+ 
+@@ -318,7 +318,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	17	nmod	O	_
++21	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	17	nmod	B=BACIA	_
+ 22	de	de	ADP	_	_	21	flat:name	O	_
+ 23	Pelotas	Pelotas	PROPN	_	Number=Sing	21	flat:name	B=BACIA	_
+ 24	e	e	CCONJ	_	_	26	cc	O	_
+@@ -429,7 +429,7 @@
+ 29	emersa	emerso	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
+ 30	e	e	CCONJ	_	_	32	cc	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+-32	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	28	conj	O	_
++32	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	28	conj	B=BACIA	_
+ 33	de	de	ADP	_	_	32	flat:name	O	_
+ 34	Pelotas	Pelotas	PROPN	_	Number=Sing	32	flat:name	B=BACIA	_
+ 35-36	na	_	_	_	_	_	_	_	_
+@@ -517,7 +517,7 @@
+ 27	sísmicas	sísmico	ADJ	_	Gender=Fem|Number=Plur	26	amod	O	_
+ 28	referente	referente	ADV	_	_	30	advmod	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+-30	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++30	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	26	nmod	B=BACIA	_
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Pelotas	Pelotas	PROPN	_	Number=Sing	30	flat:name	B=BACIA	_
+ 33	,	,	PUNCT	_	_	34	punct	O	_
+@@ -1432,7 +1432,7 @@
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++28	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=BACIA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Pelotas	Pelotas	PROPN	_	Number=Sing	28	flat:name	B=BACIA	_
+ 31	,	,	PUNCT	_	_	24	punct	O	_
+@@ -2715,7 +2715,7 @@
+ # text = A Bacia Sedimentar do Paraná (Figura 6) se localiza no Continente Sul-Americano nas porções territoriais do Brasil meridional, Paraguai oriental, nordeste da Argentina e norte do Uruguai, totalizando uma área próxima de 1,5 milhão de quilômetros quadrados.
+ # sent_id = 247-20140910-MONOGRAFIA_0-82
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	nsubj	B=BACIA	_
+ 3	Sedimentar	Sedimentar	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	2	flat:name	O	_
+@@ -2780,7 +2780,7 @@
+ 5	DE	de	ADP	_	_	7	case	O	_
+ 6	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	BACIA	bacia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-8	DO	DO	PROPN	_	Number=Sing	7	flat:name	O	_
++8	DO	DO	PROPN	_	Number=Sing	7	flat:name	O	sentenciação
+ 
+ # text = PARANÁ
+ # sent_id = 247-20140910-MONOGRAFIA_0-85
+@@ -2799,14 +2799,14 @@
+ 9-10	pelo	_	_	_	_	_	_	_	_
+ 9	por	por	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	8	obl:agent	O	_
++11	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	8	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Rio	Rio	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	Ivaí	Ivaí	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	,	,	PUNCT	_	_	8	punct	O	_
+ 15	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	O	_
+ 17	formações	formação	NOUN	_	Gender=Fem|Number=Plur	15	obj	O	_
+-18	Alto	Alto	PROPN	_	Gender=Fem|Number=Sing	17	nmod	O	_
++18	Alto	Alto	PROPN	_	Gender=Fem|Number=Sing	17	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Garças	Garças	PROPN	_	Number=Sing	18	flat:name	O	_
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	18	parataxis	O	_
+@@ -2865,13 +2865,13 @@
+ 8-9	pelo	_	_	_	_	_	_	_	_
+ 8	por	por	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	7	obl:agent	O	_
++10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	7	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Paraná	Paraná	PROPN	_	Number=Sing	10	flat:name	B=BACIA	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	apresentando	apresentar	VERB	_	VerbForm=Ger	7	advcl	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+ 15	formações	formação	NOUN	_	Gender=Fem|Number=Plur	13	obj	O	_
+-16	Furnas	Furnas	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++16	Furnas	Furnas	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	(	(	PUNCT	_	_	18	punct	O	_
+ 18	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	O	_
+ 19	branco-amarelados	branco-amarelado	ADJ	_	Gender=Masc|Number=Plur	18	amod	O	_
+@@ -2918,7 +2918,7 @@
+ 9	por	por	ADP	_	_	11	case	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+ 11	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	8	obl:agent	O	_
+-12	Itararé	Itararé	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++12	Itararé	Itararé	PROPN	_	Gender=Masc|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14	Guatá	Guatá	PROPN	_	Gender=Masc|Number=Sing	12	conj	O	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+@@ -2947,7 +2947,7 @@
+ # text = O Grupo Itararé e a Formação Aquidauana interdigitam-se.
+ # sent_id = 247-20140910-MONOGRAFIA_0-92
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Itararé	Itararé	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	e	e	CCONJ	_	_	6	cc	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -2981,7 +2981,7 @@
+ # text = O Grupo Guatá é constituído pelas formações Rio Bonito e Palermo (no estado de São Paulo estas formações se equivalem à Formação Tatuí).
+ # sent_id = 247-20140910-MONOGRAFIA_0-94
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Guatá	Guatá	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
+ 5	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -2989,7 +2989,7 @@
+ 6	por	por	ADP	_	_	8	case	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+ 8	formações	formação	NOUN	_	Gender=Fem|Number=Plur	5	obl:agent	O	_
+-9	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++9	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 10	Bonito	Bonito	PROPN	_	Number=Sing	9	flat:name	B=CAMPO	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	Palermo	Palermo	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
+@@ -3008,7 +3008,7 @@
+ 24-25	à	_	_	_	_	_	_	_	_
+ 24	a	a	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	23	obl:arg	O	_
++26	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	23	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	Tatuí	Tatuí	PROPN	_	Number=Sing	26	flat:name	B=CAMPO	_
+ 28	)	)	PUNCT	_	_	23	punct	O	_
+ 29	.	.	PUNCT	_	_	5	punct	O	_
+@@ -3016,7 +3016,7 @@
+ # text = O Grupo Passa Dois é constituído pelas formações Irati, Serra Alta, Teresina e Rio do Rasto (no estado de São Paulo, a Formação Corumbataí se equivale às formações Serra Alta, Teresina e parte da Formação Rio do Rasto, interdigitando-se com estas).
+ # sent_id = 247-20140910-MONOGRAFIA_0-95
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nsubj:pass	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Passa	Passa	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	Dois	Dois	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
+@@ -3025,7 +3025,7 @@
+ 7	por	por	ADP	_	_	9	case	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+ 9	formações	formação	NOUN	_	Gender=Fem|Number=Plur	6	obl:agent	O	_
+-10	Irati	Irati	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++10	Irati	Irati	PROPN	_	Gender=Fem|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	10	conj	B=CAMPO	_
+ 13	Alta	Alta	PROPN	_	Number=Sing	12	flat:name	O	_
+@@ -3055,7 +3055,7 @@
+ 34	a	a	ADP	_	_	36	case	O	_
+ 35	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	O	_
+ 36	formações	formação	NOUN	_	Gender=Fem|Number=Plur	33	obl:arg	O	_
+-37	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	36	nmod	B=CAMPO	_
++37	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	36	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 38	Alta	Alta	PROPN	_	Number=Sing	37	flat:name	O	_
+ 39	,	,	PUNCT	_	_	40	punct	O	_
+ 40	Teresina	Teresina	PROPN	_	Gender=Fem|Number=Sing	37	conj	O	_
+@@ -3093,7 +3093,7 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+ 11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	nmod	O	_
+-12	Pirambóia	Pirambóia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++12	Pirambóia	Pirambóia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+ 14	Rosário	Rosário	PROPN	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+@@ -3129,8 +3129,8 @@
+ 9-10	pelas	_	_	_	_	_	_	_	_
+ 9	por	por	ADP	_	_	11	case	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+-11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	Botucatu	Botucatu	PROPN	_	Gender=Fem|Number=Sing	11	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	O	_
++12	Botucatu	Botucatu	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	(	(	PUNCT	_	_	15	punct	O	_
+ 14	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	12	parataxis	O	_
+ 15	eólicos	eólico	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+@@ -3158,7 +3158,7 @@
+ 7	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	O	_
+ 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+ 9	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	7	obj	O	_
+-10	Caiuá	Caiuá	PROPN	_	Gender=Masc|Number=Sing	9	nmod	O	_
++10	Caiuá	Caiuá	PROPN	_	Gender=Masc|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	Bauru	Bauru	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+ 13	.	.	PUNCT	_	_	1	punct	O	_
+@@ -3278,7 +3278,7 @@
+ 10	Grande	Grande	PROPN	_	Number=Sing	7	flat:name	O	_
+ 11	até	até	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Florianópolis	Florianópolis	PROPN	_	Number=Sing	13	flat:name	O	_
+ 16	e	e	CCONJ	_	_	18	cc	O	_
+@@ -3293,7 +3293,7 @@
+ 24-25	ao	_	_	_	_	_	_	_	_
+ 24	a	a	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	23	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Polônio	Polônio	PROPN	_	Number=Sing	26	flat:name	O	_
+ 29	.	.	PUNCT	_	_	2	punct	O	_
+@@ -3462,7 +3462,7 @@
+ 11	Permo-Triássica	Permo-Triássica	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+ 13	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	9	parataxis	O	_
+-14	Guatá	Guatá	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
++14	Guatá	Guatá	PROPN	_	Gender=Masc|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+ 16	Passa	Passa	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+ 17	Dois	Dois	PROPN	_	Number=Sing	16	flat:name	O	_
+@@ -3472,8 +3472,8 @@
+ 21	vulcanosedimentares	vulcanosedimentar	NOUN	_	Gender=Fem|Number=Plur	9	conj	O	_
+ 22	Juro-Cretácea	Juro-Cretácea	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+-24	formações	formação	NOUN	_	Gender=Fem|Number=Plur	21	parataxis	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-25	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=CAMPO|I=UNIDADE_LITOESTRATIGRÁFICA	_
++24	formações	formação	NOUN	_	Gender=Fem|Number=Plur	21	parataxis	O	_
++25	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	Geral	Geral	PROPN	_	Number=Sing	25	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+ 28	Botucatu	Botucatu	PROPN	_	Gender=Fem|Number=Sing	25	conj	O	_
+@@ -3565,7 +3565,7 @@
+ 11	por	por	ADP	_	_	13	case	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
+ 13	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	obl:agent	O	_
+-14	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
++14	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	Bonito	Bonito	PROPN	_	Number=Sing	14	flat:name	B=CAMPO	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	Palermo	Palermo	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+@@ -3914,7 +3914,7 @@
+ 73-74	da	_	_	_	_	_	_	_	_
+ 73	de	de	ADP	_	_	75	case	O	_
+ 74	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	75	det	O	_
+-75	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	71	nmod	O	_
++75	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	71	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 76	Porto	Porto	PROPN	_	Number=Sing	75	flat:name	O	_
+ 77	Belo	Belo	PROPN	_	Number=Sing	75	flat:name	O	_
+ 78	.	.	PUNCT	_	_	2	punct	O	_
+@@ -4025,7 +4025,7 @@
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+ 30	formação	formação	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+-31	Porto	Porto	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
++31	Porto	Porto	PROPN	_	Gender=Masc|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Belo	Belo	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	;	;	PUNCT	_	_	35	punct	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+@@ -4054,8 +4054,8 @@
+ 54-55	da	_	_	_	_	_	_	_	_
+ 54	de	de	ADP	_	_	56	case	O	_
+ 55	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	O	_
+-56	formação	formação	NOUN	_	Gender=Fem|Number=Sing	53	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-57	Atlântida	Atlântida	PROPN	_	Gender=Fem|Number=Sing	56	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++56	formação	formação	NOUN	_	Gender=Fem|Number=Sing	53	nmod	O	_
++57	Atlântida	Atlântida	PROPN	_	Gender=Fem|Number=Sing	56	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 58	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	59	nsubj	O	_
+ 59	recobrem	recobrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	53	acl:relcl	O	_
+ 60	em	em	ADP	_	_	61	case	O	_
+@@ -4065,7 +4065,7 @@
+ 64-65	da	_	_	_	_	_	_	_	_
+ 64	de	de	ADP	_	_	66	case	O	_
+ 65	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	66	det	O	_
+-66	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	63	nmod	O	_
++66	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	63	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 67	Porto	Porto	PROPN	_	Number=Sing	66	flat:name	O	_
+ 68	Belo	Belo	PROPN	_	Number=Sing	66	flat:name	O	_
+ 69	e	e	CCONJ	_	_	72	cc	O	_
+@@ -4094,8 +4094,8 @@
+ 90-91	da	_	_	_	_	_	_	_	_
+ 90	de	de	ADP	_	_	92	case	O	_
+ 91	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	92	det	O	_
+-92	formação	formação	NOUN	_	Gender=Fem|Number=Sing	86	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-93	Cidreira	Cidreira	PROPN	_	Gender=Fem|Number=Sing	92	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++92	formação	formação	NOUN	_	Gender=Fem|Number=Sing	86	nmod	O	_
++93	Cidreira	Cidreira	PROPN	_	Gender=Fem|Number=Sing	92	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 94	progradam	progradar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	83	acl:relcl	O	_
+ 95	sobre	sobre	ADP	_	_	97	case	O	_
+ 96	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	97	det	O	_
+@@ -4652,7 +4652,7 @@
+ # text = O Alto de Florianópolis apresentou um comportamento como um alto até o Aptiano, de modo a receber poucos sedimentos e esta característica proporcionou à Bacia de Pelotas certo contraste em relação às demais bacias evaporíticas situadas ao norte.
+ # sent_id = 247-20140910-MONOGRAFIA_0-139
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
++2	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Florianópolis	Florianópolis	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -4889,7 +4889,7 @@
+ 13	,	,	PUNCT	_	_	16	punct	O	_
+ 14	como	como	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	9	nmod:appos	O	_
++16	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	9	nmod:appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	de	de	ADP	_	_	16	flat:name	O	_
+ 18	Torres	Torres	PROPN	_	Number=Sing	16	flat:name	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+@@ -5469,8 +5469,8 @@
+ 18	a	a	ADP	_	_	19	case	O	_
+ 19	grossos	grosso	ADJ	_	Gender=Masc|Number=Plur	17	conj	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+-21	formações	formação	NOUN	_	Gender=Fem|Number=Plur	13	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-22	Imbituba	Imbituba	PROPN	_	Gender=Fem|Number=Sing	21	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++21	formações	formação	NOUN	_	Gender=Fem|Number=Plur	13	conj	O	_
++22	Imbituba	Imbituba	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 23	e	e	CCONJ	_	_	24	cc	O	_
+ 24	Cassino	Cassino	PROPN	_	Gender=Masc|Number=Sing	22	conj	O	_
+ 25	respectivamente	respectivamente	ADV	_	_	29	advmod	O	_
+@@ -7262,14 +7262,14 @@
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
++13	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Brusque	Brusque	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	siltitos	siltito	NOUN	_	Gender=Masc|Number=Plur	10	conj	O	_
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++19	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Rio	Rio	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21-22	do	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	19	flat:name	O	_
+@@ -7283,7 +7283,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
++31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Itararé	Itararé	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -8061,7 +8061,7 @@
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
+ 14	formações	formação	NOUN	_	Gender=Fem|Number=Plur	11	nmod	O	_
+-15	Curumin	Curumin	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++15	Curumin	Curumin	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	Ariri	Ariri	PROPN	_	Gender=Masc|Number=Sing	15	conj	O	_
+ 18	e	e	CCONJ	_	_	19	cc	O	_
+@@ -8094,8 +8094,8 @@
+ 11-12	das	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
+-13	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Atlântida	Atlântida	PROPN	_	Gender=Fem|Number=Sing	13	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++13	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
++14	Atlântida	Atlântida	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	Imbé	Imbé	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+@@ -8122,8 +8122,8 @@
+ 9-10	pelas	_	_	_	_	_	_	_	_
+ 9	por	por	ADP	_	_	11	case	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+-11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	Imbé	Imbé	PROPN	_	Gender=Fem|Number=Sing	11	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	O	_
++12	Imbé	Imbé	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+ 14	Cidreira	Cidreira	PROPN	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 15	,	,	PUNCT	_	_	21	punct	O	_
+@@ -8212,8 +8212,8 @@
+ 11-12	das	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
+-13	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Imbé	Imbé	PROPN	_	Gender=Fem|Number=Sing	13	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++13	formações	formação	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
++14	Imbé	Imbé	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+ 16	Cidreira	Cidreira	PROPN	_	Gender=Fem|Number=Sing	14	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+@@ -21024,8 +21024,8 @@
+ 20-21	pelas	_	_	_	_	_	_	_	_
+ 20	por	por	ADP	_	_	22	case	O	_
+ 21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	O	_
+-22	formações	formação	NOUN	_	Gender=Fem|Number=Plur	19	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-23	Brejo	Brejo	PROPN	_	Gender=Fem|Number=Sing	22	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++22	formações	formação	NOUN	_	Gender=Fem|Number=Plur	19	obl:agent	O	_
++23	Brejo	Brejo	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	Santo	Santo	PROPN	_	Number=Sing	23	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	Missão	Missão	PROPN	_	Gender=Fem|Number=Sing	23	conj	O	_
+@@ -21444,7 +21444,7 @@
+ 24	e	e	CCONJ	_	_	25	cc	O	_
+ 25	Santana	Santana	PROPN	_	Gender=Masc|Number=Sing	22	conj	B=CAMPO	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+-27	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	22	appos	O	_
++27	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	22	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 28	Araripe	Araripe	PROPN	_	Number=Sing	27	flat:name	B=BACIA	_
+ 29	)	)	PUNCT	_	_	27	punct	O	_
+ 30	.	.	PUNCT	_	_	10	punct	O	_
+@@ -22107,7 +22107,7 @@
+ 17	1999	1999	NUM	_	NumType=Card	15	nmod:appos	O	_
+ 18	)	)	PUNCT	_	_	17	punct	O	_
+ 19	para	para	ADP	_	_	20	case	O	_
+-20	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	11	obl	O	_
++20	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	11	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 21	Santana	Santana	PROPN	_	Number=Sing	20	flat:name	B=CAMPO	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	englobando	englobar	VERB	_	VerbForm=Ger	11	advcl	O	_
+@@ -23257,7 +23257,7 @@
+ 25-26	da	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++27	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 28	Romualdo	Romualdo	PROPN	_	Number=Sing	27	flat:name	O	_
+ 29	por	por	ADP	_	_	30	case	O	_
+ 30	meio	meio	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
+@@ -25990,7 +25990,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++10	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Romualdo	Romualdo	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	,	,	PUNCT	_	_	14	punct	O	_
+ 13	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+@@ -27389,7 +27389,7 @@
+ 32-33	da	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++34	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 35	Romualdo	Romualdo	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	,	,	PUNCT	_	_	30	punct	O	_
+ 37	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp	O	_
+@@ -30563,7 +30563,7 @@
+ 67	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	flat:name	O	_
+ 68	Araripe	Araripe	PROPN	_	Number=Sing	65	flat:name	B=BACIA	_
+ 69	(	(	PUNCT	_	_	70	punct	O	_
+-70	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	65	appos	O	_
++70	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	65	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 71	Romualdo	Romualdo	PROPN	_	Number=Sing	70	flat:name	O	_
+ 72	)	)	PUNCT	_	_	70	punct	O	_
+ 73-74	no	_	_	_	_	_	_	_	_
+@@ -58902,7 +58902,7 @@
+ # text = O Grupo Areado, objeto deste estudo, é o representante eocretácico desta bacia e divide-se nas Formações Abaeté, Quiricó e Três Barras, da base para o topo respectivamente.
+ # sent_id = 283-20150917-MONOGRAFIA_0-3
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Areado	Areado	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	,	,	PUNCT	_	_	5	punct	O	_
+ 5	objeto	objeto	NOUN	_	Gender=Masc|Number=Sing	2	appos	O	_
+@@ -59085,7 +59085,7 @@
+ # text = O Grupo Areado está compreendido entre o Barremiano Inferior e o Albiano Médio (Campos e Dardenne, 1997).
+ # sent_id = 283-20150917-MONOGRAFIA_0-9
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Areado	Areado	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+ 5	compreendido	compreender	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -59528,7 +59528,7 @@
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++18	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Areado	Areado	PROPN	_	Number=Sing	18	flat:name	O	_
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	18	flat:name	O	_
+@@ -59573,7 +59573,7 @@
+ 17-18	do	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Areado	Areado	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	;	;	PUNCT	_	_	25	punct	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+@@ -59639,12 +59639,12 @@
+ # text = CONTEXTUALIZAÇÃO GEOLÓGICA DO GRUPO AREADO
+ # sent_id = 283-20150917-MONOGRAFIA_0-24
+ 1	CONTEXTUALIZAÇÃO	contextualização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-2	GEOLÓGICA	geolãico	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
++2	GEOLÓGICA	geológico	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ 3-4	DO	_	_	_	_	_	_	_	_
+ 3	DE	de	ADP	_	_	5	case	O	_
+ 4	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	GRUPO	grupo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+-6	AREADO	AREADO	PROPN	_	Number=Sing	5	flat:name	O	_
++5	GRUPO	Grupo	PROPN	_	Gender=Masc|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++6	AREADO	Areado	PROPN	_	Number=Sing	5	flat:name	O	_
+ 
+ # text = A Bacia Sanfranciscana é uma bacia intracratônica e fanerozoica.
+ # sent_id = 283-20150917-MONOGRAFIA_0-25
+@@ -59721,7 +59721,7 @@
+ 12-13	pelo	_	_	_	_	_	_	_	_
+ 12	por	por	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	1	obl	O	_
++14	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	1	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	O	_
+@@ -59733,7 +59733,7 @@
+ 22-23	pelo	_	_	_	_	_	_	_	_
+ 22	por	por	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
++24	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	flat:name	O	_
+@@ -59824,7 +59824,7 @@
+ 28-29	pelo	_	_	_	_	_	_	_	_
+ 28	por	por	ADP	_	_	30	case	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+-30	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	27	obl:agent	O	_
++30	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	27	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Paracatu	Paracatu	PROPN	_	Number=Sing	30	flat:name	O	_
+ 33	.	.	PUNCT	_	_	4	punct	O	_
+@@ -59861,7 +59861,7 @@
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++27	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	23	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 28	Bambuí	Bambuí	PROPN	_	Number=Sing	27	flat:name	O	_
+ 29	,	,	PUNCT	_	_	30	punct	O	_
+ 30	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	17	conj	O	_
+@@ -59869,7 +59869,7 @@
+ 32-33	do	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
+-34	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
++34	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 35	Natividade	Natividade	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	e	e	CCONJ	_	_	38	cc	O	_
+ 37	sobre	sobre	ADP	_	_	38	case	O	_
+@@ -59907,7 +59907,7 @@
+ 13	:	:	PUNCT	_	_	14	punct	O	_
+ 14	1º	1º	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	16	parataxis	O	_
+ 15	-	-	PUNCT	_	_	16	punct	O	_
+-16	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	11	appos	O	_
++16	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	11	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	Santa	Santa	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	Fé	Fé	PROPN	_	Number=Sing	16	flat:name	O	_
+ 19	(	(	PUNCT	_	_	22	punct	O	_
+@@ -59918,7 +59918,7 @@
+ 23	)	)	PUNCT	_	_	22	punct	O	_
+ 24	;	;	PUNCT	_	_	25	punct	O	_
+ 25	2º	2º	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	26	parataxis	O	_
+-26	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	O	_
++26	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	Areado	Areado	PROPN	_	Number=Sing	26	flat:name	O	_
+ 28	(	(	PUNCT	_	_	31	punct	O	_
+ 29-30	do	_	_	_	_	_	_	_	_
+@@ -59928,7 +59928,7 @@
+ 32	)	)	PUNCT	_	_	31	punct	O	_
+ 33	;	;	PUNCT	_	_	34	punct	O	_
+ 34	3º	3º	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	35	parataxis	O	_
+-35	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	O	_
++35	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 36	Mata	Mata	PROPN	_	Number=Sing	35	flat:name	O	_
+ 37-38	da	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	35	flat:name	O	_
+@@ -59942,7 +59942,7 @@
+ 44	)	)	PUNCT	_	_	43	punct	O	_
+ 45	;	;	PUNCT	_	_	46	punct	O	_
+ 46	4º	4º	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	47	parataxis	O	_
+-47	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	O	_
++47	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 48	Urucuia	Urucuia	PROPN	_	Number=Sing	47	flat:name	O	_
+ 49	(	(	PUNCT	_	_	52	punct	O	_
+ 50-51	do	_	_	_	_	_	_	_	_
+@@ -59955,7 +59955,7 @@
+ # text = O Grupo Areado (Figura 3), compreendido entre o Barremiano Inferior e o Albiano Médio (Campos e Dardenne, 1997), foi o objeto de estudo neste projeto.
+ # sent_id = 283-20150917-MONOGRAFIA_0-32
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Areado	Areado	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	(	(	PUNCT	_	_	5	punct	O	_
+ 5	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	2	appos	O	_
+@@ -60022,7 +60022,7 @@
+ 27-28	do	_	_	_	_	_	_	_	_
+ 27	de	de	ADP	_	_	29	case	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+-29	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++29	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	26	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 30	Areado	Areado	PROPN	_	Number=Sing	29	flat:name	O	_
+ 31	,	,	PUNCT	_	_	36	punct	O	_
+ 32	sendo	ser	AUX	_	VerbForm=Ger	34	cop	O	_
+@@ -60061,7 +60061,7 @@
+ 14	de	de	ADP	_	_	17	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 16	então	então	ADJ	_	Gender=Fem|Number=Sing	17	amod	O	_
+-17	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++17	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	Areado	Areado	PROPN	_	Number=Sing	17	flat:name	O	_
+ 19	:	:	PUNCT	_	_	20	punct	O	_
+ 20	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	17	appos	O	_
+@@ -60083,9 +60083,9 @@
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	categoria	categoria	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+-9	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-10	por	por	ADP	_	_	9	flat:name	O	_
+-11	Costa	Costa	PROPN	_	Number=Sing	9	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
++9	Grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++10	por	por	ADP	_	_	11	case	O	_
++11	Costa	Costa	PROPN	_	Number=Sing	4	obl:agent	O	_
+ 12	e	e	CCONJ	_	_	13	cc	O	_
+ 13	Grossi	Grossi	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
+ 14	Sad	Sad	PROPN	_	Number=Sing	13	flat:name	O	_
+@@ -60151,7 +60151,7 @@
+ 16	em	em	SCONJ	_	_	17	mark	O	_
+ 17	considerar	considerar	VERB	_	VerbForm=Inf	13	advcl	O	_
+ 18	como	como	ADP	_	_	19	case	O	_
+-19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	17	xcomp	O	_
++19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	17	xcomp	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Areado	Areado	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	.	.	PUNCT	_	_	13	punct	O	_
+ 
+@@ -60204,7 +60204,7 @@
+ # text = O Grupo Areado divide-se nas Formações Abaeté, Quiricó e Três Barras, da base para o topo respectivamente.
+ # sent_id = 283-20150917-MONOGRAFIA_0-39
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Areado	Areado	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4-5	divide-se	_	_	_	_	_	_	_	_
+ 4	divide	dividir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -60294,7 +60294,7 @@
+ 4-5	ao	_	_	_	_	_	_	_	_
+ 4	a	a	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	3	obl	O	_
++6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	3	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Santa	Santa	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	Fé	Fé	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+@@ -60683,7 +60683,7 @@
+ 11	ampla	amplo	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	_
+ 12	ocorrência	ocorrência	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	4	appos	O	_
++14	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 15	e	e	CCONJ	_	_	14	flat:name	O	_
+ 16	Dardenne	Dardenne	PROPN	_	Gender=Masc|Number=Sing	14	flat:name	O	_
+ 17	,	,	PUNCT	_	_	14	flat:name	O	_
+@@ -60803,7 +60803,7 @@
+ 6-7	do	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
++8	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	Areado	Areado	PROPN	_	Number=Sing	8	flat:name	O	_
+ 10	dominava	dominar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	O	_
+ 11	esforços	esforço	NOUN	_	Gender=Masc|Number=Plur	10	obj	O	_
+@@ -60865,7 +60865,7 @@
+ 31-32	do	_	_	_	_	_	_	_	_
+ 31	de	de	ADP	_	_	33	case	O	_
+ 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
+-33	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
++33	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 34	Paranaíba	Paranaíba	PROPN	_	Number=Sing	33	flat:name	O	_
+ 35	e	e	CCONJ	_	_	38	cc	O	_
+ 36-37	pela	_	_	_	_	_	_	_	_
+@@ -60935,7 +60935,7 @@
+ # text = O Grupo Areado adquiriu ênfase, inicialmente, devido à prospecção de diamantes nos conglomerados da Formação Abaeté.
+ # sent_id = 283-20150917-MONOGRAFIA_0-61
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Areado	Areado	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	adquiriu	adquirir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 5	ênfase	ênfase	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
+@@ -61057,7 +61057,7 @@
+ 4	DE	de	ADP	_	_	6	case	O	_
+ 5	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 6	GRUPO	grupo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+-7	AREADO	AREADO	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++7	AREADO	Areado	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 
+ # text = Não existem datações absolutas para o Grupo Areado.
+ # sent_id = 283-20150917-MONOGRAFIA_0-66
+@@ -61067,7 +61067,7 @@
+ 4	absolutas	absoluto	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+ 5	para	para	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	obl	O	_
++7	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	Areado	Areado	PROPN	_	Number=Sing	7	flat:name	O	_
+ 9	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -61089,7 +61089,7 @@
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
++14	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	Mata	Mata	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16-17	da	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	14	flat:name	O	_
+@@ -61100,7 +61100,7 @@
+ 21-22	ao	_	_	_	_	_	_	_	_
+ 21	a	a	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	20	obl	O	_
++23	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	20	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	Areado	Areado	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	,	,	PUNCT	_	_	20	punct	O	_
+ 26	forneceram	fornecer	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+@@ -61127,7 +61127,7 @@
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	10	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	O	_
++6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Areado	Areado	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	O	_
+ 9	mais	mais	ADV	_	_	10	advmod	O	_
+@@ -61174,7 +61174,7 @@
+ 17-18	do	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
++19	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Areado	Areado	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -61677,8 +61677,8 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	formação	formação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-7	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	6	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++6	formação	formação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++7	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	convergem	convergir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	para	para	ADP	_	_	10	case	O	_
+ 10	deposição	deposição	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+@@ -61709,7 +61709,7 @@
+ 2	sendo	ser	AUX	_	VerbForm=Ger	1	fixed	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	9	nsubj:pass	O	_
++5	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	9	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 6	Areado	Areado	PROPN	_	Number=Sing	5	flat:name	O	_
+ 7	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	aux	O	_
+ 8	sido	ser	AUX	_	VerbForm=Part	9	aux:pass	O	_
+@@ -61763,7 +61763,7 @@
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++15	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	12	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	Areado	Areado	PROPN	_	Number=Sing	15	flat:name	O	_
+ 17	,	,	PUNCT	_	_	7	punct	O	_
+ 18	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	O	_
+@@ -61971,7 +61971,7 @@
+ 29-30	ao	_	_	_	_	_	_	_	_
+ 29	a	a	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	26	obl	O	_
++31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	26	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Areado	Areado	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -62596,8 +62596,8 @@
+ 
+ # text = FORMAÇÃO ABAETÉ
+ # sent_id = 283-20150917-MONOGRAFIA_0-122
+-1	FORMAÇÃO	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-2	ABAETÉ	ABAETA	PROPN	_	Gender=Fem|Number=Sing	1	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++1	FORMAÇÃO	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	ABAETÉ	Abaeté	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 
+ # text = A Formação Abaeté, unidade basal do Grupo Areado, é composta predominantemente por conglomerados e arenitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-123
+@@ -62610,7 +62610,7 @@
+ 7-8	do	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
++9	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	5	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 10	Areado	Areado	PROPN	_	Number=Sing	9	flat:name	O	_
+ 11	,	,	PUNCT	_	_	5	punct	O	_
+ 12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	O	_
+@@ -62635,7 +62635,7 @@
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Bambuí	Bambuí	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	,	,	PUNCT	_	_	14	punct	O	_
+ 13	com	com	ADP	_	_	14	case	O	_
+@@ -62658,7 +62658,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
++31	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	27	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Santa	Santa	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	Fé	Fé	PROPN	_	Number=Sing	31	flat:name	O	_
+ 34	.	.	PUNCT	_	_	3	punct	O	_
+@@ -64292,7 +64292,7 @@
+ 3	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	4	nsubj	O	_
+ 4	estudaram	estudar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	acl:relcl	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	obj	O	_
++6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Areado	Areado	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	reconheceram	reconhecer	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+ 9	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+@@ -64874,8 +64874,8 @@
+ 
+ # text = FORMAÇÃO QUIRICÓ
+ # sent_id = 283-20150917-MONOGRAFIA_0-216
+-1	FORMAÇÃO	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-2	QUIRICÓ	QUIRICÓ	PROPN	_	Gender=Fem|Number=Sing	1	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++1	FORMAÇÃO	formação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	QUIRICÓ	Quiricó	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 
+ # text = A Formação Quiricó é a unidade intermediária do Grupo Areado, e diferentemente das demais formações descritas neste trabalho, nesta formação predominam os sedimentos pelíticos sobre os psamíticos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-217
+@@ -64889,7 +64889,7 @@
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Areado	Areado	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	,	,	PUNCT	_	_	27	punct	O	_
+ 13	e	e	CCONJ	_	_	27	cc	O	_
+@@ -65202,7 +65202,7 @@
+ 5	formação	formação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 6	e	e	CCONJ	_	_	8	cc	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	conj	O	_
++8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	.	.	PUNCT	_	_	2	punct	O	_
+ 
+ # text = Quiricó não foi observada na Seção São José Romão.
+@@ -66814,7 +66814,7 @@
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Areado	Areado	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	,	,	PUNCT	_	_	6	punct	O	_
+ 13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
+@@ -68225,8 +68225,8 @@
+ 8	transição	transição	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 9	entre	entre	ADP	_	_	11	case	O	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+-11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	11	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++11	formações	formação	NOUN	_	Gender=Fem|Number=Plur	8	nmod	O	_
++12	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 15	Barras	Barras	PROPN	_	Number=Sing	14	flat:name	O	_
+@@ -69283,7 +69283,7 @@
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Areado	Areado	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	compreende	compreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+@@ -69371,7 +69371,7 @@
+ 4	média	médio	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
+ 5	para	para	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++7	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	Areado	Areado	PROPN	_	Number=Sing	7	flat:name	O	_
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+@@ -69467,7 +69467,7 @@
+ 8	completa	completo	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
+ 9	para	para	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	obl	O	_
++11	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Areado	Areado	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+@@ -69701,7 +69701,7 @@
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	O	_
+-17	Alto	Alto	PROPN	_	Number=Sing	14	flat:name	O	_
++17	Alto	Alto	PROPN	_	Number=Sing	14	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	Paranaíba	Paranaíba	PROPN	_	Number=Sing	14	flat:name	O	_
+ 19	e	e	CCONJ	_	_	21	cc	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+@@ -69994,7 +69994,7 @@
+ 37-38	do	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
+-39	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	36	nmod	O	_
++39	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	36	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 40	Areado	Areado	PROPN	_	Number=Sing	39	flat:name	O	_
+ 41	(	(	PUNCT	_	_	42	punct	O	_
+ 42	Fragoso	Fragoso	PROPN	_	Gender=Masc|Number=Sing	53	parataxis	O	_
+@@ -70265,7 +70265,7 @@
+ 9	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+ 10	para	para	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	1	nmod	O	_
++12	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	Areado	Areado	PROPN	_	Number=Sing	12	flat:name	O	_
+ 14	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -70849,7 +70849,7 @@
+ 7	paleogeográfico	paleogeográfico	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+ 8	para	para	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++10	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Areado	Areado	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -85940,8 +85940,8 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	formação	formação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Carapebus	Carapebus	PROPN	_	Gender=Fem|Number=Sing	13	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++13	formação	formação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++14	Carapebus	Carapebus	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	formado	formar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	O	_
+ 17-18	no	_	_	_	_	_	_	_	_
+@@ -85974,14 +85974,14 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	formação	formação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-11	Macabu	Macabu	PROPN	_	Gender=Fem|Number=Sing	10	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++10	formação	formação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++11	Macabu	Macabu	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	,	,	PUNCT	_	_	15	punct	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+-16	Lagoa	Lagoa	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++16	Lagoa	Lagoa	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	Feia	Feia	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	,	,	PUNCT	_	_	15	punct	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+@@ -86384,8 +86384,8 @@
+ 12-13	da	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-15	Carapebus	Carapebus	PROPN	_	Gender=Fem|Number=Sing	14	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++15	Carapebus	Carapebus	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	,	,	PUNCT	_	_	18	punct	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+ 18	idades	idade	NOUN	_	Gender=Fem|Number=Plur	10	nmod	O	_
+@@ -86401,8 +86401,8 @@
+ 28-29	da	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+-30	formação	formação	NOUN	_	Gender=Fem|Number=Sing	27	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-31	Macabu	Macabu	PROPN	_	Gender=Fem|Number=Sing	30	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++30	formação	formação	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
++31	Macabu	Macabu	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	,	,	PUNCT	_	_	34	punct	O	_
+ 33	de	de	ADP	_	_	34	case	O	_
+ 34	idade	idade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+@@ -186512,7 +186512,7 @@
+ 32-33	pelo	_	_	_	_	_	_	_	_
+ 32	por	por	ADP	_	_	34	case	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
+-34	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	31	obl:agent	O	_
++34	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	31	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	Cabo	Cabo	PROPN	_	Number=Sing	34	flat:name	O	_
+ 37	Frio	Frio	PROPN	_	Number=Sing	34	flat:name	O	_
+@@ -186601,7 +186601,7 @@
+ 3-4	pelo	_	_	_	_	_	_	_	_
+ 3	por	por	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	obl:agent	O	_
++5	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	obl:agent	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Cabo	Cabo	PROPN	_	Number=Sing	5	flat:name	O	_
+ 8	Frio	Frio	PROPN	_	Number=Sing	5	flat:name	O	_
+@@ -187083,7 +187083,7 @@
+ 18	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	14	nmod	O	_
+ 19	incluindo	incluir	VERB	_	VerbForm=Ger	12	advcl	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	19	obj	O	_
++21	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	19	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	de	de	ADP	_	_	21	flat:name	O	_
+ 23	Cabo	Cabo	PROPN	_	Number=Sing	21	flat:name	O	_
+ 24	Frio	Frio	PROPN	_	Number=Sing	21	flat:name	O	_
+@@ -188217,7 +188217,7 @@
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
++17	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	Cabo	Cabo	PROPN	_	Number=Sing	17	flat:name	O	_
+ 20	Frio	Frio	PROPN	_	Number=Sing	17	flat:name	O	_
+@@ -188265,7 +188265,7 @@
+ 23-24	do	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+-25	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
++25	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	de	de	ADP	_	_	25	flat:name	O	_
+ 27	Cabo	Cabo	PROPN	_	Number=Sing	25	flat:name	O	_
+ 28	Frio	Frio	PROPN	_	Number=Sing	25	flat:name	O	_
+@@ -188416,7 +188416,7 @@
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+-28	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	25	nmod	O	_
++28	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	25	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Cabo	Cabo	PROPN	_	Number=Sing	28	flat:name	O	_
+ 31	Frio	Frio	PROPN	_	Number=Sing	28	flat:name	O	_
+@@ -189270,7 +189270,7 @@
+ 23-24	da	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++25	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	Guaratiba	Guaratiba	PROPN	_	Number=Sing	25	flat:name	O	_
+ 27	,	,	PUNCT	_	_	29	punct	O	_
+ 28	escassamente	escassamente	ADV	_	_	29	advmod	O	_
+@@ -189432,7 +189432,7 @@
+ 5	conhecida	conhecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	_
+ 6	como	como	ADP	_	_	7	case	O	_
+ 7	formações	formação	NOUN	_	Gender=Fem|Number=Plur	5	xcomp	O	_
+-8	Florianópolis	Florianópolis	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++8	Florianópolis	Florianópolis	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+ 10	Guarujá	Guarujá	PROPN	_	Gender=Masc|Number=Sing	8	conj	O	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+@@ -189671,7 +189671,7 @@
+ 24-25	pelo	_	_	_	_	_	_	_	_
+ 24	por	por	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	8	obl	O	_
++26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Vitória	Vitória	PROPN	_	Number=Sing	26	flat:name	O	_
+ 29	,	,	PUNCT	_	_	31	punct	O	_
+@@ -189771,7 +189771,7 @@
+ 3	sul	sul	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	20	nsubj	O	_
++6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	20	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Cabo	Cabo	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	Frio	Frio	PROPN	_	Number=Sing	6	flat:name	O	_
+@@ -189875,7 +189875,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Lagoa	Lagoa	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	Feia	Feia	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -189973,7 +189973,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Lagoa	Lagoa	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	Feia	Feia	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+@@ -190071,7 +190071,7 @@
+ # text = A Formação Macaé consiste em carbonatos clásticos e oolíticos (Membro Quissamã) que, localmente, aparecem completamente dolomitizados.
+ # sent_id = 20-20140904-TESEDSC_0-116
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
++2	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Macaé	Macaé	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	consiste	consistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	em	em	ADP	_	_	6	case	O	_
+@@ -190126,7 +190126,7 @@
+ 5	proximais	proximal	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
++8	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	11	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	Macaé	Macaé	PROPN	_	Number=Sing	8	flat:name	O	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	constituída	constituir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -190145,12 +190145,12 @@
+ # text = O Grupo Campos recobre discordantemente a Formação Macaé, e representa o preenchimento desta bacia marginal durante a fase final de subsidência térmica e basculamento do substrato para leste.
+ # sent_id = 20-20140904-TESEDSC_0-119
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
++2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	recobre	recobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	discordantemente	discordantemente	ADV	_	_	4	advmod	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	4	obj	O	_
++7	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	4	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	Macaé	Macaé	PROPN	_	Number=Sing	7	flat:name	O	_
+ 9	,	,	PUNCT	_	_	11	punct	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+@@ -190848,7 +190848,7 @@
+ 34-35	pelo	_	_	_	_	_	_	_	_
+ 34	por	por	ADP	_	_	36	case	O	_
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+-36	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	31	obl	O	_
++36	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	31	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 37	de	de	ADP	_	_	36	flat:name	O	_
+ 38	Cabo	Cabo	PROPN	_	Number=Sing	36	flat:name	O	_
+ 39	Frio	Frio	PROPN	_	Number=Sing	36	flat:name	O	_
+@@ -192676,7 +192676,7 @@
+ 52	magnetometria	magnetometria	NOUN	_	Gender=Fem|Number=Sing	50	obl:agent	O	_
+ 53	sob	sob	ADP	_	_	55	case	O	_
+ 54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	O	_
+-55	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	50	obl	O	_
++55	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	50	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 56	Macacu	Macacu	PROPN	_	Number=Sing	55	flat:name	O	_
+ 57	e	e	CCONJ	_	_	59	cc	O	_
+ 58	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	59	det	O	_
+@@ -195242,7 +195242,7 @@
+ 3	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
+ 4	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 5	como	como	ADP	_	_	6	case	O	_
+-6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	xcomp	O	_
++6	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	xcomp	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Barreiras	Barreiras	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	restritos	restringir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 9-10	à	_	_	_	_	_	_	_	_
+@@ -195728,7 +195728,7 @@
+ 43-44	do	_	_	_	_	_	_	_	_
+ 43	de	de	ADP	_	_	45	case	O	_
+ 44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	O	_
+-45	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	42	nmod	O	_
++45	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	42	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 46	Brusque	Brusque	PROPN	_	Number=Sing	45	flat:name	O	_
+ 47	,	,	PUNCT	_	_	48	punct	O	_
+ 48	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	45	conj	O	_
+@@ -196424,7 +196424,7 @@
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	Cabo	Cabo	PROPN	_	Number=Sing	18	flat:name	O	_
+ 21	Frio	Frio	PROPN	_	Number=Sing	18	flat:name	O	_
+@@ -196755,7 +196755,7 @@
+ 10-11	no	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	9	obl	O	_
++12	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Cabo	Cabo	PROPN	_	Number=Sing	12	flat:name	O	_
+ 15	Frio	Frio	PROPN	_	Number=Sing	12	flat:name	O	_
+@@ -214861,7 +214861,7 @@
+ 5-6	no	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++7	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Cabo	Cabo	PROPN	_	Number=Sing	7	flat:name	O	_
+ 10	Frio	Frio	PROPN	_	Number=Sing	7	flat:name	O	_
+@@ -214889,7 +214889,7 @@
+ 17-18	do	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
++19	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Cabo	Cabo	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	Frio	Frio	PROPN	_	Number=Sing	19	flat:name	O	_
+@@ -215201,7 +215201,7 @@
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++15	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	12	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Cabo	Cabo	PROPN	_	Number=Sing	15	flat:name	O	_
+ 18	Frio	Frio	PROPN	_	Number=Sing	15	flat:name	O	_
+@@ -219689,7 +219689,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++11	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Cabo	Cabo	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	Frio	Frio	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -223423,7 +223423,7 @@
+ 49-50	do	_	_	_	_	_	_	_	_
+ 49	de	de	ADP	_	_	51	case	O	_
+ 50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	O	_
+-51	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	48	nmod	O	_
++51	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	48	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 52	de	de	ADP	_	_	51	flat:name	O	_
+ 53	Cabo	Cabo	PROPN	_	Number=Sing	51	flat:name	O	_
+ 54	Frio	Frio	PROPN	_	Number=Sing	51	flat:name	O	_
+@@ -225008,7 +225008,7 @@
+ 13-14	no	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++15	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Cabo	Cabo	PROPN	_	Number=Sing	15	flat:name	O	_
+ 
+@@ -225082,7 +225082,7 @@
+ 10	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	O	_
+ 11	atravessa	atravessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	11	obj	O	_
++13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	11	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Cabo	Cabo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 16	Frio	Frio	PROPN	_	Number=Sing	13	flat:name	O	_
+@@ -225218,7 +225218,7 @@
+ 17-18	do	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
++19	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Cabo	Cabo	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	Frio	Frio	PROPN	_	Number=Sing	19	flat:name	O	_
+@@ -227679,7 +227679,7 @@
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
++6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	3	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Cabo	Cabo	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	Frio	Frio	PROPN	_	Number=Sing	6	flat:name	O	_
+@@ -228400,7 +228400,7 @@
+ 20-21	no	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+-22	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
++22	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	18	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	Cabo	Cabo	PROPN	_	Number=Sing	22	flat:name	O	_
+ 25	Frio	Frio	PROPN	_	Number=Sing	22	flat:name	O	_
+@@ -232097,7 +232097,7 @@
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++6	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Cabo	Cabo	PROPN	_	Number=Sing	6	flat:name	O	_
+ 9	Frio	Frio	PROPN	_	Number=Sing	6	flat:name	O	_
+@@ -236030,7 +236030,7 @@
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++26	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	23	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Cabo	Cabo	PROPN	_	Number=Sing	26	flat:name	O	_
+ 29	Frio	Frio	PROPN	_	Number=Sing	26	flat:name	O	_
+@@ -236206,7 +236206,7 @@
+ 16-17	ao	_	_	_	_	_	_	_	_
+ 16	a	a	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	obl:arg	O	_
++18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	Cabo	Cabo	PROPN	_	Number=Sing	18	flat:name	O	_
+ 21	Frio	Frio	PROPN	_	Number=Sing	18	flat:name	O	_
+@@ -236271,7 +236271,7 @@
+ 21-22	do	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
++23	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	20	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Cabo	Cabo	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	Frio	Frio	PROPN	_	Number=Sing	23	flat:name	O	_
+@@ -236320,7 +236320,7 @@
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++18	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	Cabo	Cabo	PROPN	_	Number=Sing	18	flat:name	O	_
+ 21	Frio	Frio	PROPN	_	Number=Sing	18	flat:name	O	_
+@@ -236420,7 +236420,7 @@
+ 21-22	no	_	_	_	_	_	_	_	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	19	nmod	O	_
++23	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	19	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Cabo	Cabo	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	Frio	Frio	PROPN	_	Number=Sing	23	flat:name	O	_

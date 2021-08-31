@@ -1,0 +1,81 @@
+commit 4a4aa82216f1d360758dd3bce77553100e0de996
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Aug 25 19:23:23 2021 -0300
+
+    Regras para B=GEOCRONOLOGIA
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index f3f7465..79d4d6a 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -4797,7 +4797,7 @@
+ 3-4	desta	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	O	_
+-5	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=GEOCRONOLOGIA	_
+ 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+ 7	possivelmente	possivelmente	ADV	_	_	8	advmod	O	_
+ 8	pré-neógeno	pré-neógeno	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -8524,7 +8524,7 @@
+ 3	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	idade	idade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-6	Albiana	Albiana	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++6	Albiana	Albiana	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B=GEOCRONOLOGIA	_
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	O	_
+ 8	mais	mais	ADV	_	_	9	advmod	O	_
+ 9	espessa	espesso	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -21542,7 +21542,7 @@
+ 20	datados	datar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	idade	idade	NOUN	_	Gender=Fem|Number=Sing	20	obl	O	_
+-23	Alagoas	Alagoas	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=BACIA	_
++23	Alagoas	Alagoas	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=GEOCRONOLOGIA	_
+ 24-25	pela	_	_	_	_	_	_	_	_
+ 24	por	por	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -27817,14 +27817,14 @@
+ 21	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 22	lacustre	lacustre	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+-24	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	21	appos	O	_
++24	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	21	appos	B=GEOCRONOLOGIA	_
+ 25	Crato	Crato	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	)	)	PUNCT	_	_	24	punct	O	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+ 28	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 29	evaporítico	evaporítico	ADJ	_	Gender=Masc|Number=Sing	28	amod	O	_
+ 30	(	(	PUNCT	_	_	31	punct	O	_
+-31	Camadas	Camadas	PROPN	_	Gender=Fem|Number=Sing	28	appos	O	_
++31	Camadas	Camadas	PROPN	_	Gender=Fem|Number=Sing	28	appos	B=GEOCRONOLOGIA	_
+ 32	Ipubi	Ipubi	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	)	)	PUNCT	_	_	31	punct	O	_
+ 34	para	para	ADP	_	_	36	case	O	_
+@@ -85986,7 +85986,7 @@
+ 18	,	,	PUNCT	_	_	15	punct	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	idade	idade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+-21	Aptiana	Aptiana	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++21	Aptiana	Aptiana	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=GEOCRONOLOGIA	_
+ 22	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = O reservatório apresenta uma série de lobos submarinos coalescentes, não-confinados, resultando em vasto corpo arenoso maciço e relativamente homogêneo, de granulometria média a fina e porosidade da ordem de 25%, com espessura média de 47 m, praticamente inconsolidados. (Milani e Araujo, 2003).
+@@ -86406,7 +86406,7 @@
+ 32	,	,	PUNCT	_	_	34	punct	O	_
+ 33	de	de	ADP	_	_	34	case	O	_
+ 34	idade	idade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+-35	Aptiana	Aptiana	PROPN	_	Gender=Fem|Number=Sing	34	nmod	O	_
++35	Aptiana	Aptiana	PROPN	_	Gender=Fem|Number=Sing	34	nmod	B=GEOCRONOLOGIA	_
+ 36	(	(	PUNCT	_	_	37	punct	O	_
+ 37	reservatório	reservatório	NOUN	_	Gender=Masc|Number=Sing	34	appos	O	_
+ 38-39	da	_	_	_	_	_	_	_	_
+@@ -192506,7 +192506,7 @@
+ 39	idades	idade	NOUN	_	Gender=Fem|Number=Plur	31	nmod	O	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	137-127	137-127	NUM	_	NumType=Card	42	nummod	O	_
+-42	Ma	Ma	PROPN	_	Gender=Masc|Number=Sing	39	nmod	O	_
++42	Ma	Ma	PROPN	_	Gender=Masc|Number=Sing	39	nmod	B=GEOCRONOLOGIA	_
+ 43	(	(	PUNCT	_	_	44	punct	O	_
+ 44	Turner	Turner	PROPN	_	Gender=Masc|Number=Sing	42	appos	O	_
+ 45	et	et	PROPN	_	Number=Sing	44	flat:name	O	_

@@ -1,6 +1,6 @@
 # Changelog
 
-Last update: 2021-8-15-15:13:10
+Last update: 2021-8-31-0:1:33
 
 ## lemma 'diferentes' is not correct
 
@@ -1859,4 +1859,138 @@ NUM seguido de NUM que não era flat
 +35	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	30	conj	_	_
  36	)	)	PUNCT	_	_	30	punct	_	_
  37	.	.	PUNCT	_	_	1	punct	_	_
+```
+
+## Regras para B=CAMPO
+
+* Aline Silveira
+* Date:   Wed Aug 18 19:22:06 2021 -0300
+* Lines changed: 99
+* Commit: [226aa79550f0842f205240d0c43935cfd428d81f](https://github.com/alvelvis/meu-mestrado/commit/226aa79550f0842f205240d0c43935cfd428d81f)
+* Patch file: [2021_8_18_19:22:06-226aa79550f0842f205240d0c43935cfd428d81f.patch](patch/2021_8_18_19:22:06-226aa79550f0842f205240d0c43935cfd428d81f.patch)
+
+Regras para B=CAMPO
+
+```diff
+ # text = A Bacia de Pelotas é a mais meridional na costa brasileira (Figura 1) e apresenta poucos trabalhos publicados a seu respeito se comparada às outras bacias de margem continental brasileiras.
+ # sent_id = 247-20140910-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+```
+
+## Regras para B=UNIDADE_LITOESTRATIGRÁFICA
+
+* Maria Clara Castro
+* Date:   Wed Aug 18 19:23:20 2021 -0300
+* Lines changed: 169
+* Commit: [8559b82e8dbfcce0a511e5435f089b9cbf462a15](https://github.com/alvelvis/meu-mestrado/commit/8559b82e8dbfcce0a511e5435f089b9cbf462a15)
+* Patch file: [2021_8_18_19:23:20-8559b82e8dbfcce0a511e5435f089b9cbf462a15.patch](patch/2021_8_18_19:23:20-8559b82e8dbfcce0a511e5435f089b9cbf462a15.patch)
+
+Regras para B=UNIDADE_LITOESTRATIGRÁFICA
+
+```diff
+ # text = A Bacia de Pelotas é a mais meridional na costa brasileira (Figura 1) e apresenta poucos trabalhos publicados a seu respeito se comparada às outras bacias de margem continental brasileiras.
+ # sent_id = 247-20140910-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+```
+
+## Regras para B=BACIA
+
+* Tatiana Cavalcanti
+* Date:   Thu Aug 19 11:40:12 2021 -0300
+* Lines changed: 223
+* Commit: [b4ce4f35cba57636d3e032f30cc8e865b2b099ad](https://github.com/alvelvis/meu-mestrado/commit/b4ce4f35cba57636d3e032f30cc8e865b2b099ad)
+* Patch file: [2021_8_19_11:40:12-b4ce4f35cba57636d3e032f30cc8e865b2b099ad.patch](patch/2021_8_19_11:40:12-b4ce4f35cba57636d3e032f30cc8e865b2b099ad.patch)
+
+Regras para B=BACIA
+
+```diff
+ # text = A Bacia de Pelotas é a mais meridional na costa brasileira (Figura 1) e apresenta poucos trabalhos publicados a seu respeito se comparada às outras bacias de margem continental brasileiras.
+ # sent_id = 247-20140910-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+```
+
+## Figura, tabela, quadro etc.
+
+* Aline Silveira
+* Date:   Wed Aug 25 19:21:31 2021 -0300
+* Lines changed: 928
+* Commit: [8d418fdffb04a527db48464dad5aa1a3364b3c2f](https://github.com/alvelvis/meu-mestrado/commit/8d418fdffb04a527db48464dad5aa1a3364b3c2f)
+* Patch file: [2021_8_25_19:21:31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch](patch/2021_8_25_19:21:31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch)
+
+Figura, tabela, quadro etc.
+Se não forem flat:name, viram NOUN, com lema minúsculo, e são parataxis quando entre parênteses
+
+```diff
+ 11	costa	costa	NOUN	_	Gender=Fem|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	11	appos	O	_
++14	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	8	parataxis	O	_
+ 15	1	1	NUM	_	NumType=Card	14	nummod	O	_
+ 16	)	)	PUNCT	_	_	14	punct	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+```
+
+## Regras para B=GEOCRONOLOGIA
+
+* Aline Silveira
+* Date:   Wed Aug 25 19:23:23 2021 -0300
+* Lines changed: 8
+* Commit: [4a4aa82216f1d360758dd3bce77553100e0de996](https://github.com/alvelvis/meu-mestrado/commit/4a4aa82216f1d360758dd3bce77553100e0de996)
+* Patch file: [2021_8_25_19:23:23-4a4aa82216f1d360758dd3bce77553100e0de996.patch](patch/2021_8_25_19:23:23-4a4aa82216f1d360758dd3bce77553100e0de996.patch)
+
+Regras para B=GEOCRONOLOGIA
+
+```diff
+ 3-4	desta	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	O	_
+-5	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=GEOCRONOLOGIA	_
+ 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+ 7	possivelmente	possivelmente	ADV	_	_	8	advmod	O	_
+ 8	pré-neógeno	pré-neógeno	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+```
+
+## regras para juntar os flat:name com gap
+
+* Tatiana Cavalcanti
+* Date:   Mon Aug 30 23:22:34 2021 -0300
+* Lines changed: 520
+* Commit: [c306455a1bc9030090c0fcf9bae663647ddf5699](https://github.com/alvelvis/meu-mestrado/commit/c306455a1bc9030090c0fcf9bae663647ddf5699)
+* Patch file: [2021_8_30_23:22:34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch](patch/2021_8_30_23:22:34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch)
+
+regras para juntar os flat:name com gap
+
+```diff
+ 15	doutorado	doutorado	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 16	)	)	PUNCT	_	_	13	punct	O	_
+ 17	Villwock	Villwock	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+-18	e	e	CCONJ	_	_	19	flat:name	O	_
++18	e	e	CCONJ	_	_	17	flat:name	O	_
+ 19	Tomazelli	Tomazelli	PROPN	_	Gender=Masc|Number=Sing	17	flat:name	O	_
+-20	(	(	PUNCT	_	_	19	flat:name	O	_
+-21	1995	1995	NUM	_	NumType=Card	19	flat:name	O	_
+-22	)	)	PUNCT	_	_	13	punct	O	_
++20	(	(	PUNCT	_	_	21	punct	O	_
++21	1995	1995	NUM	_	NumType=Card	19	nmod:appos	O	_
++22	)	)	PUNCT	_	_	21	punct	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+ 24	Bueno	Bueno	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+ 25	et	et	PROPN	_	Number=Sing	24	flat:name	O	_
 ```
