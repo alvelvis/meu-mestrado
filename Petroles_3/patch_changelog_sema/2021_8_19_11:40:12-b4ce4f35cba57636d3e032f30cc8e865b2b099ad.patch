@@ -1,0 +1,2014 @@
+commit b4ce4f35cba57636d3e032f30cc8e865b2b099ad
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Aug 19 11:40:12 2021 -0300
+
+    Regras para B=BACIA
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 529be08..b45b38b 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -8,7 +8,7 @@
+ # text = A Bacia de Pelotas é a mais meridional na costa brasileira (Figura 1) e apresenta poucos trabalhos publicados a seu respeito se comparada às outras bacias de margem continental brasileiras.
+ # sent_id = 247-20140910-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+@@ -76,7 +76,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Pelotas	Pelotas	PROPN	_	Number=Sing	26	flat:name	B=BACIA	_
+ 29	verificando	verificar	VERB	_	VerbForm=Ger	5	advcl	O	_
+@@ -109,7 +109,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	Pelotas	Pelotas	PROPN	_	Number=Sing	10	flat:name	B=BACIA	_
+ 13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	O	_
+@@ -212,7 +212,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=BACIA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Pelotas	Pelotas	PROPN	_	Number=Sing	19	flat:name	B=BACIA	_
+ 22	.	.	PUNCT	_	_	5	punct	O	_
+@@ -281,7 +281,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	4	flat:name	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	flat:name	O	_
+-7	Bacia	bacia	PROPN	_	Number=Sing	4	flat:name	O	_
++7	Bacia	Bacia	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+ 8	de	de	ADP	_	_	4	flat:name	O	_
+ 9	Pelotas	Pelotas	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+ 
+@@ -318,7 +318,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	17	nmod	O	_
++21	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	17	nmod	B=BACIA	_
+ 22	de	de	ADP	_	_	21	flat:name	O	_
+ 23	Pelotas	Pelotas	PROPN	_	Number=Sing	21	flat:name	B=BACIA	_
+ 24	e	e	CCONJ	_	_	26	cc	O	_
+@@ -429,7 +429,7 @@
+ 29	emersa	emerso	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
+ 30	e	e	CCONJ	_	_	32	cc	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+-32	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	28	conj	O	_
++32	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	28	conj	B=BACIA	_
+ 33	de	de	ADP	_	_	32	flat:name	O	_
+ 34	Pelotas	Pelotas	PROPN	_	Number=Sing	32	flat:name	B=BACIA	_
+ 35-36	na	_	_	_	_	_	_	_	_
+@@ -517,7 +517,7 @@
+ 27	sísmicas	sísmico	ADJ	_	Gender=Fem|Number=Plur	26	amod	O	_
+ 28	referente	referente	ADV	_	_	30	advmod	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+-30	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++30	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	26	nmod	B=BACIA	_
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Pelotas	Pelotas	PROPN	_	Number=Sing	30	flat:name	B=BACIA	_
+ 33	,	,	PUNCT	_	_	34	punct	O	_
+@@ -1432,7 +1432,7 @@
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++28	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=BACIA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Pelotas	Pelotas	PROPN	_	Number=Sing	28	flat:name	B=BACIA	_
+ 31	,	,	PUNCT	_	_	24	punct	O	_
+@@ -2715,7 +2715,7 @@
+ # text = A Bacia Sedimentar do Paraná (Figura 6) se localiza no Continente Sul-Americano nas porções territoriais do Brasil meridional, Paraguai oriental, nordeste da Argentina e norte do Uruguai, totalizando uma área próxima de 1,5 milhão de quilômetros quadrados.
+ # sent_id = 247-20140910-MONOGRAFIA_0-82
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	nsubj	B=BACIA	_
+ 3	Sedimentar	Sedimentar	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	2	flat:name	O	_
+@@ -2780,7 +2780,7 @@
+ 5	DE	de	ADP	_	_	7	case	O	_
+ 6	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	BACIA	bacia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-8	DO	DO	PROPN	_	Number=Sing	7	flat:name	O	_
++8	DO	DO	PROPN	_	Number=Sing	7	flat:name	O	sentenciação
+ 
+ # text = PARANÁ
+ # sent_id = 247-20140910-MONOGRAFIA_0-85
+@@ -2846,7 +2846,7 @@
+ 12-13	da	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++14	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=BACIA	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	O	_
+@@ -2933,7 +2933,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=BACIA	_
+ 27-28	do	_	_	_	_	_	_	_	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	flat:name	O	_
+@@ -3197,14 +3197,14 @@
+ # text = 5.3 Bacia de Pelotas
+ # sent_id = 247-20140910-MONOGRAFIA_0-100
+ 1	5.3	5.3	NUM	_	NumType=Card	2	parataxis	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 
+ # text = A Bacia de Pelotas, assim como as demais bacias da margem continental brasileira, tem sua origem atrelada ao rompimento do Supercontinente Gondwana e formação do Oceano Atlântico Sul.
+ # sent_id = 247-20140910-MONOGRAFIA_0-101
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	17	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	17	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	,	,	PUNCT	_	_	10	punct	O	_
+@@ -3310,7 +3310,7 @@
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Pelotas	Pelotas	PROPN	_	Number=Sing	9	flat:name	B=BACIA	_
+ 12-13	restringe-se	_	_	_	_	_	_	_	_
+@@ -3401,7 +3401,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Pelotas	Pelotas	PROPN	_	Number=Sing	5	flat:name	B=BACIA	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	O	_
+@@ -3439,7 +3439,7 @@
+ 37-38	da	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	35	nmod	O	_
++39	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	35	nmod	B=BACIA	_
+ 40-41	do	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	39	flat:name	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	flat:name	O	_
+@@ -3511,7 +3511,7 @@
+ 2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	O	_
+ 3	autor	autor	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Pelotas	Pelotas	PROPN	_	Number=Sing	5	flat:name	B=BACIA	_
+ 8	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -3679,7 +3679,7 @@
+ 32-33	da	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++34	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=BACIA	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	Pelotas	Pelotas	PROPN	_	Number=Sing	34	flat:name	B=BACIA	_
+ 37	.	.	PUNCT	_	_	2	punct	O	_
+@@ -3787,7 +3787,7 @@
+ 12	molde	molde	NOUN	_	Gender=Masc|Number=Sing	10	xcomp	O	_
+ 13	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	18	obj	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	nsubj	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	18	nsubj	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Pelotas	Pelotas	PROPN	_	Number=Sing	15	flat:name	B=BACIA	_
+ 18	herdou	herdar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	O	_
+@@ -3814,7 +3814,7 @@
+ 36-37	da	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	38	case	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+-38	Namíbia	Namíbia	PROPN	_	Gender=Fem|Number=Sing	34	nmod	O	_
++38	Namíbia	Namíbia	PROPN	_	Gender=Fem|Number=Sing	34	nmod	B=BACIA	_
+ 39	,	,	PUNCT	_	_	42	punct	O	_
+ 40-41	na	_	_	_	_	_	_	_	_
+ 40	em	em	ADP	_	_	42	case	O	_
+@@ -3935,7 +3935,7 @@
+ 12	dizer	dizer	VERB	_	VerbForm=Inf	11	csubj	O	_
+ 13	que	que	SCONJ	_	_	27	mark	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Sub-bacia	Sub-bacia	PROPN	_	Gender=Fem|Number=Sing	27	nsubj	O	_
++15	Sub-bacia	Sub-bacia	PROPN	_	Gender=Fem|Number=Sing	27	nsubj	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Torres	Torres	PROPN	_	Number=Sing	15	flat:name	O	_
+ 18	(	(	PUNCT	_	_	19	punct	O	_
+@@ -3943,7 +3943,7 @@
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	flat:name	O	_
+-22	Bacia	bacia	PROPN	_	Number=Sing	19	flat:name	O	_
++22	Bacia	Bacia	PROPN	_	Number=Sing	19	nmod	B=BACIA	_
+ 23	de	de	ADP	_	_	19	flat:name	O	_
+ 24	Pelotas	Pelotas	PROPN	_	Number=Sing	19	flat:name	B=BACIA	_
+ 25	)	)	PUNCT	_	_	19	punct	O	_
+@@ -4135,7 +4135,7 @@
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Pelotas	Pelotas	PROPN	_	Number=Sing	9	flat:name	B=BACIA	_
+ 12	.	.	PUNCT	_	_	6	punct	O	_
+@@ -4180,7 +4180,7 @@
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Florianópolis	Florianópolis	PROPN	_	Number=Sing	30	flat:name	O	_
+ 33	e	e	CCONJ	_	_	34	cc	O	_
+-34	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	conj	O	_
++34	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	conj	B=BACIA	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	Pelotas	Pelotas	PROPN	_	Number=Sing	34	flat:name	B=BACIA	_
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+@@ -4194,7 +4194,7 @@
+ # text = A Bacia de Pelotas apresenta embasamento aplainado, cortado por falhas antitéticas e recoberto por estratos que mergulham suavemente em direção ao mar formando cunhas (Gonçalves et al. 1979).
+ # sent_id = 247-20140910-MONOGRAFIA_0-127
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Pelotas	Pelotas	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -4678,7 +4678,7 @@
+ 25-26	à	_	_	_	_	_	_	_	_
+ 25	a	a	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	24	obl	O	_
++27	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	24	obl	B=BACIA	_
+ 28	de	de	ADP	_	_	27	flat:name	O	_
+ 29	Pelotas	Pelotas	PROPN	_	Number=Sing	27	flat:name	B=BACIA	_
+ 30	certo	certo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	31	det	O	_
+@@ -4807,7 +4807,7 @@
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	separando	separar	VERB	_	VerbForm=Ger	8	advcl	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	obj	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	13	obj	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Pelotas	Pelotas	PROPN	_	Number=Sing	15	flat:name	B=BACIA	_
+ 18	rasa	raso	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+@@ -4999,7 +4999,7 @@
+ 22-23	à	_	_	_	_	_	_	_	_
+ 22	a	a	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	21	obl	O	_
++24	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	21	obl	B=BACIA	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	Pelotas	Pelotas	PROPN	_	Number=Sing	24	flat:name	B=BACIA	_
+ 27	e	e	CCONJ	_	_	29	cc	O	_
+@@ -5087,7 +5087,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=BACIA	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
+@@ -5159,7 +5159,7 @@
+ 44-45	da	_	_	_	_	_	_	_	_
+ 44	de	de	ADP	_	_	46	case	O	_
+ 45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
+-46	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	O	_
++46	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	B=BACIA	_
+ 47-48	do	_	_	_	_	_	_	_	_
+ 47	de	de	ADP	_	_	46	flat:name	O	_
+ 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	flat:name	O	_
+@@ -5339,7 +5339,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Pelotas	Pelotas	PROPN	_	Number=Sing	6	flat:name	B=BACIA	_
+ 9	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -5671,7 +5671,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Pelotas	Pelotas	PROPN	_	Number=Sing	6	flat:name	B=BACIA	_
+ 9	e	e	CCONJ	_	_	12	cc	O	_
+@@ -5906,7 +5906,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++13	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=BACIA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Pelotas	Pelotas	PROPN	_	Number=Sing	13	flat:name	B=BACIA	_
+ 16	e	e	CCONJ	_	_	17	cc	O	_
+@@ -6102,7 +6102,7 @@
+ 18-19	à	_	_	_	_	_	_	_	_
+ 18	a	a	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	17	obl	O	_
++20	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	17	obl	B=BACIA	_
+ 21	de	de	ADP	_	_	20	flat:name	O	_
+ 22	Pelotas	Pelotas	PROPN	_	Number=Sing	20	flat:name	B=BACIA	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+@@ -6345,7 +6345,7 @@
+ 11-12	à	_	_	_	_	_	_	_	_
+ 11	a	a	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	obl	O	_
++13	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	obl	B=BACIA	_
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	flat:name	O	_
+@@ -6419,7 +6419,7 @@
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	B=BACIA	_
+ 10-11	do	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	flat:name	O	_
+@@ -7653,7 +7653,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++24	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=BACIA	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	Pelotas	Pelotas	PROPN	_	Number=Sing	24	flat:name	B=BACIA	_
+ 27	,	,	PUNCT	_	_	18	punct	O	_
+@@ -8379,7 +8379,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Pelotas	Pelotas	PROPN	_	Number=Sing	12	flat:name	B=BACIA	_
+ 15	.	.	PUNCT	_	_	5	punct	O	_
+@@ -8634,7 +8634,7 @@
+ 40-41	da	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
+-42	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	39	nmod	O	_
++42	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	39	nmod	B=BACIA	_
+ 43	de	de	ADP	_	_	42	flat:name	O	_
+ 44	Pelotas	Pelotas	PROPN	_	Number=Sing	42	flat:name	B=BACIA	_
+ 45	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	O	_
+@@ -8917,7 +8917,7 @@
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	obl	O	_
++22	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	obl	B=BACIA	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	Pelotas	Pelotas	PROPN	_	Number=Sing	22	flat:name	B=BACIA	_
+ 25	.	.	PUNCT	_	_	7	punct	O	_
+@@ -9079,7 +9079,7 @@
+ 37-38	na	_	_	_	_	_	_	_	_
+ 37	em	em	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	28	obl	O	_
++39	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	28	obl	B=BACIA	_
+ 40	de	de	ADP	_	_	39	flat:name	O	_
+ 41	Pelotas	Pelotas	PROPN	_	Number=Sing	39	flat:name	B=BACIA	_
+ 42	,	,	PUNCT	_	_	43	punct	O	_
+@@ -9559,7 +9559,7 @@
+ 6	Tibagi	Tibagi	PROPN	_	Number=Sing	5	flat:name	O	_
+ 7	para	para	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Pelotas	Pelotas	PROPN	_	Number=Sing	9	flat:name	B=BACIA	_
+ 12	corresponde	corresponder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -17519,7 +17519,7 @@
+ # text = A Bacia do Araripe é uma bacia interior poli-histórica do Nordeste do Brasil (Figura 1).
+ # sent_id = 284-20150917-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	flat:name	O	_
+@@ -17532,7 +17532,7 @@
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Nordeste	nordeste	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++13	Nordeste	Nordeste	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+@@ -17599,7 +17599,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	flat:name	O	_
+@@ -17770,7 +17770,7 @@
+ 20-21	na	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++22	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=BACIA	_
+ 23-24	do	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	flat:name	O	_
+@@ -17977,7 +17977,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=BACIA	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
+@@ -18436,13 +18436,13 @@
+ 28-29	do	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+-30	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	O	_
++30	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 31	Romualdo	Romualdo	PROPN	_	Number=Sing	30	flat:name	O	_
+ 32	e	e	CCONJ	_	_	35	cc	O	_
+ 33-34	da	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	conj	O	_
++35	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	conj	B=BACIA	_
+ 36-37	do	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	35	flat:name	O	_
+ 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	flat:name	O	_
+@@ -18496,7 +18496,7 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	B=BACIA	_
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	flat:name	O	_
+@@ -20266,7 +20266,7 @@
+ # sent_id = 284-20150917-MONOGRAFIA_0-94
+ 1	5.1	5.1	NUM	_	NumType=Card	3	parataxis	O	_
+ 2	.	.	PUNCT	_	_	3	punct	O	_
+-3	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
++3	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	B=BACIA	_
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	3	flat:name	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	flat:name	O	_
+@@ -20275,7 +20275,7 @@
+ # text = A Bacia do Araripe é uma bacia interior, poligenética, de forma alongada, com o maior eixo na direção E-W, compreendendo uma área aproximada de 9.000 km² (Assine 1992), sendo uma das maiores bacias do interior do Nordeste.
+ # sent_id = 284-20150917-MONOGRAFIA_0-95
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	B=BACIA	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	flat:name	O	_
+@@ -20361,7 +20361,7 @@
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	Nordeste	nordeste	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++27	Nordeste	Nordeste	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+ 28	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29	,	,	PUNCT	_	_	31	punct	O	_
+ 30	como	como	ADP	_	_	31	case	O	_
+@@ -20389,7 +20389,7 @@
+ # text = A Bacia do Araripe é a mais extensa das bacias interiores do Nordeste e a que apresenta, dentre todas, história geológica mais complexa e empilhamento estratigráfico mais completo (Assine 2007), estando implantada em terrenos pré-cambrianos da Zona Transversal da Província Borborema (Brito Neves et al. 2000), a sul do Lineamento de Patos.
+ # sent_id = 284-20150917-MONOGRAFIA_0-98
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj	B=BACIA	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	flat:name	O	_
+@@ -20406,7 +20406,7 @@
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	Nordeste	nordeste	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++16	Nordeste	Nordeste	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+ 18	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	9	conj	O	_
+ 19	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	O	_
+@@ -20538,7 +20538,7 @@
+ 71-72	do	_	_	_	_	_	_	_	_
+ 71	de	de	ADP	_	_	73	case	O	_
+ 72	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	O	_
+-73	Nordeste	nordeste	PROPN	_	Gender=Masc|Number=Sing	69	nmod	O	_
++73	Nordeste	Nordeste	PROPN	_	Gender=Masc|Number=Sing	69	nmod	O	_
+ 74	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	73	amod	O	_
+ 75	.	.	PUNCT	_	_	15	punct	O	_
+ 
+@@ -20557,7 +20557,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Nordeste	nordeste	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++11	Nordeste	Nordeste	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 12	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+ 13	,	,	PUNCT	_	_	3	punct	O	_
+ 14	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	15	aux:pass	O	_
+@@ -20706,7 +20706,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	flat:name	O	_
+@@ -20839,7 +20839,7 @@
+ 37-38	na	_	_	_	_	_	_	_	_
+ 37	em	em	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	conj	O	_
++39	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	conj	B=BACIA	_
+ 40-41	do	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	39	flat:name	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	flat:name	O	_
+@@ -20976,7 +20976,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	flat:name	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	flat:name	B=BACIA	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
+@@ -21187,7 +21187,7 @@
+ 15-16	na	_	_	_	_	_	_	_	_
+ 15	em	em	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=BACIA	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
+@@ -21305,7 +21305,7 @@
+ 15-16	na	_	_	_	_	_	_	_	_
+ 15	em	em	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	obl	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	obl	B=BACIA	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
+@@ -21379,7 +21379,7 @@
+ 1-2	Na	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+-3	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	obl	O	_
++3	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	obl	B=BACIA	_
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	3	flat:name	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	flat:name	O	_
+@@ -21420,7 +21420,7 @@
+ 4-5	na	_	_	_	_	_	_	_	_
+ 4	em	em	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 7-8	do	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	flat:name	O	_
+@@ -21655,7 +21655,7 @@
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	5	obl	O	_
++8	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	obl	B=BACIA	_
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	8	flat:name	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	flat:name	O	_
+@@ -22132,7 +22132,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	B=BACIA	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	flat:name	O	_
+@@ -22192,7 +22192,7 @@
+ 19	estratigráfica	estratigráfico	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+ 20	,	,	PUNCT	_	_	14	punct	O	_
+ 21	como	como	ADP	_	_	22	case	O	_
+-22	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	14	xcomp	O	_
++22	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	14	xcomp	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 23	Romualdo	Romualdo	PROPN	_	Number=Sing	22	flat:name	O	_
+ 24	pertencente	pertencente	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 25-26	à	_	_	_	_	_	_	_	_
+@@ -22311,7 +22311,7 @@
+ 27-28	na	_	_	_	_	_	_	_	_
+ 27	em	em	ADP	_	_	29	case	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+-29	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	26	obl	O	_
++29	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	26	obl	B=BACIA	_
+ 30-31	do	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	29	flat:name	O	_
+ 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	flat:name	O	_
+@@ -22383,7 +22383,7 @@
+ 12-13	na	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++14	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=BACIA	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	O	_
+@@ -22394,7 +22394,7 @@
+ 21-22	pela	_	_	_	_	_	_	_	_
+ 21	por	por	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	obl	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	18	obl	B=BACIA	_
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	flat:name	O	_
+@@ -22507,7 +22507,7 @@
+ 76-77	da	_	_	_	_	_	_	_	_
+ 76	de	de	ADP	_	_	75	fixed	O	_
+ 77	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	78	det	O	_
+-78	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	63	nmod	O	_
++78	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	63	nmod	B=BACIA	_
+ 79-80	do	_	_	_	_	_	_	_	_
+ 79	de	de	ADP	_	_	78	flat:name	O	_
+ 80	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	78	flat:name	O	_
+@@ -23368,7 +23368,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=BACIA	_
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	flat:name	O	_
+@@ -28228,7 +28228,7 @@
+ 36-37	na	_	_	_	_	_	_	_	_
+ 36	em	em	ADP	_	_	38	case	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+-38	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	obl	O	_
++38	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	obl	B=BACIA	_
+ 39-40	do	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	38	flat:name	O	_
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	flat:name	O	_
+@@ -30448,7 +30448,7 @@
+ 9	propostas	propor	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 10	:	:	PUNCT	_	_	11	punct	O	_
+ 11	via	via	NOUN	_	Gender=Fem|Number=Sing	9	appos	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=BACIA	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	flat:name	O	_
+@@ -30462,7 +30462,7 @@
+ 22	)	)	PUNCT	_	_	20	punct	O	_
+ 23	;	;	PUNCT	_	_	24	punct	O	_
+ 24	via	via	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+-25	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++25	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=BACIA	_
+ 26	de	de	ADP	_	_	25	flat:name	O	_
+ 27	Sergipe	Sergipe	PROPN	_	Number=Sing	25	flat:name	B=BACIA	_
+ 28	(	(	PUNCT	_	_	29	punct	O	_
+@@ -30473,7 +30473,7 @@
+ 33-34	pela	_	_	_	_	_	_	_	_
+ 33	por	por	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	11	conj	O	_
++35	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	11	conj	B=BACIA	_
+ 36	de	de	ADP	_	_	35	flat:name	O	_
+ 37	Potiguar	Potiguar	PROPN	_	Number=Sing	35	flat:name	B=BACIA	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+@@ -30512,7 +30512,7 @@
+ 23-24	da	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++25	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=BACIA	_
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	25	flat:name	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	flat:name	O	_
+@@ -30557,7 +30557,7 @@
+ 63-64	na	_	_	_	_	_	_	_	_
+ 63	em	em	ADP	_	_	65	case	O	_
+ 64	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	O	_
+-65	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	62	obl	O	_
++65	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	62	obl	B=BACIA	_
+ 66-67	do	_	_	_	_	_	_	_	_
+ 66	de	de	ADP	_	_	65	flat:name	O	_
+ 67	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	flat:name	O	_
+@@ -58875,7 +58875,7 @@
+ # text = A Bacia Sanfranciscana é uma bacia intracratônica e corresponde ao registro fanerozoico do Cráton do São Francisco.
+ # sent_id = 283-20150917-MONOGRAFIA_0-2
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	B=BACIA	_
+ 3	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	O	_
+ 5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -59078,7 +59078,7 @@
+ 30-31	da	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+-32	Bacia	bacia	PROPN	_	Number=Sing	28	nmod	O	_
++32	Bacia	Bacia	PROPN	_	Number=Sing	28	nmod	B=BACIA	_
+ 33	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -59167,7 +59167,7 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=BACIA	_
+ 16	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	15	flat:name	O	_
+ 17	contribuirá	contribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	O	_
+ 18	para	para	ADP	_	_	20	case	O	_
+@@ -59533,7 +59533,7 @@
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	18	flat:name	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	flat:name	O	_
+-22	Bacia	bacia	PROPN	_	Number=Sing	18	flat:name	O	_
++22	Bacia	Bacia	PROPN	_	Number=Sing	18	flat:name	B=BACIA	_
+ 23	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	18	flat:name	O	_
+ 24	,	,	PUNCT	_	_	25	punct	O	_
+ 25	visando	visar	VERB	_	VerbForm=Ger	3	advcl	O	_
+@@ -59649,7 +59649,7 @@
+ # text = A Bacia Sanfranciscana é uma bacia intracratônica e fanerozoica.
+ # sent_id = 283-20150917-MONOGRAFIA_0-25
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	B=BACIA	_
+ 3	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	O	_
+ 5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -59712,7 +59712,7 @@
+ 4	sul	sul	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	O	_
+ 5	com	com	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	1	obl	O	_
++7	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	1	obl	B=BACIA	_
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	flat:name	O	_
+@@ -59746,7 +59746,7 @@
+ 33-34	da	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	32	obl	O	_
++35	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	32	obl	B=BACIA	_
+ 36-37	do	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	35	flat:name	O	_
+ 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	flat:name	O	_
+@@ -59781,7 +59781,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=BACIA	_
+ 20	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	(	(	PUNCT	_	_	22	punct	O	_
+ 22	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+@@ -59836,7 +59836,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 6	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	5	flat:name	O	_
+ 7-8	assentam-se	_	_	_	_	_	_	_	_
+ 7	assentam	assentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -59878,7 +59878,7 @@
+ 40-41	da	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
+-42	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	38	nmod	O	_
++42	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	38	nmod	B=BACIA	_
+ 43-44	do	_	_	_	_	_	_	_	_
+ 43	de	de	ADP	_	_	42	flat:name	O	_
+ 44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	flat:name	O	_
+@@ -59898,7 +59898,7 @@
+ 4	)	)	PUNCT	_	_	1	flat:name	O	_
+ 5	dividiu	dividir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	5	obj	O	_
++7	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	obj	B=BACIA	_
+ 8	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	7	flat:name	O	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	quatro	quatro	NUM	_	NumType=Card	11	nummod	O	_
+@@ -60275,7 +60275,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=BACIA	_
+ 12	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+ 14	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+@@ -61962,7 +61962,7 @@
+ 21-22	à	_	_	_	_	_	_	_	_
+ 21	a	a	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	20	obl	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	20	obl	B=BACIA	_
+ 24	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+ 26	enfocando	enfocar	VERB	_	VerbForm=Ger	4	advcl	O	_
+@@ -67074,7 +67074,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++21	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=BACIA	_
+ 22	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	.	.	PUNCT	_	_	13	punct	O	_
+ 
+@@ -69548,7 +69548,7 @@
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++20	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=BACIA	_
+ 21	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	,	,	PUNCT	_	_	13	punct	O	_
+ 23	com	com	ADP	_	_	24	case	O	_
+@@ -81999,7 +81999,7 @@
+ 8	carbodutos	carboduto	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 9	entre	entre	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Campos	Campos	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	e	e	CCONJ	_	_	16	cc	O	_
+@@ -83302,7 +83302,7 @@
+ 28-29	da	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+-30	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++30	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=BACIA	_
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Campos	Campos	PROPN	_	Number=Sing	30	flat:name	O	_
+ 33	passam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	O	_
+@@ -84932,7 +84932,7 @@
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++22	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=BACIA	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	Campos	Campos	PROPN	_	Number=Sing	22	flat:name	O	_
+ 25	.	.	PUNCT	_	_	13	punct	O	_
+@@ -84940,7 +84940,7 @@
+ # text = A Bacia de Campos é a bacia petrolífera que mais produz na margem continental brasileira, respondendo atualmente por mais de 80% da produção nacional de petróleo.
+ # sent_id = 161-20150810-MONOGRAFIA_0-488
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	O	_
+@@ -84980,7 +84980,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Campos	Campos	PROPN	_	Number=Sing	5	flat:name	O	_
+ 8	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -85114,7 +85114,7 @@
+ 12-13	na	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++14	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=BACIA	_
+ 15	de	de	ADP	_	_	14	flat:name	O	_
+ 16	Campos	Campos	PROPN	_	Number=Sing	14	flat:name	O	_
+ 17	,	,	PUNCT	_	_	20	punct	O	_
+@@ -85222,7 +85222,7 @@
+ 11-12	na	_	_	_	_	_	_	_	_
+ 11	em	em	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	4	obl	O	_
++13	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	4	obl	B=BACIA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Campos	Campos	PROPN	_	Number=Sing	13	flat:name	O	_
+ 16	,	,	PUNCT	_	_	4	punct	O	_
+@@ -85274,7 +85274,7 @@
+ 7-8	da	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Campos	Campos	PROPN	_	Number=Sing	9	flat:name	O	_
+ 12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	O	_
+@@ -85347,7 +85347,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Campos	Campos	PROPN	_	Number=Sing	5	flat:name	O	_
+ 8	com	com	ADP	_	_	10	case	O	_
+@@ -85366,7 +85366,7 @@
+ 20-21	da	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++22	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=BACIA	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	Santos	Santos	PROPN	_	Number=Sing	22	flat:name	B=BACIA	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+@@ -85388,7 +85388,7 @@
+ 10-11	na	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	B=BACIA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Campos	Campos	PROPN	_	Number=Sing	12	flat:name	O	_
+ 15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	O	_
+@@ -85603,7 +85603,7 @@
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	25	nmod	O	_
++28	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	25	nmod	B=BACIA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Campos	Campos	PROPN	_	Number=Sing	28	flat:name	O	_
+ 31	.	.	PUNCT	_	_	12	punct	O	_
+@@ -90977,7 +90977,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=BACIA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Campos	Campos	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	O	_
+@@ -95118,7 +95118,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=BACIA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Campos	Campos	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	utilizam	utilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+@@ -97729,7 +97729,7 @@
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Jubarte	Jubarte	PROPN	_	Number=Sing	23	flat:name	B=CAMPO	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+-27	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	appos	O	_
++27	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	appos	B=BACIA	_
+ 28	de	de	ADP	_	_	27	flat:name	O	_
+ 29	Campos	Campos	PROPN	_	Number=Sing	27	flat:name	O	_
+ 30	)	)	PUNCT	_	_	27	punct	O	_
+@@ -97767,7 +97767,7 @@
+ 19-20	na	_	_	_	_	_	_	_	_
+ 19	em	em	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	15	obl	O	_
++21	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	15	obl	B=BACIA	_
+ 22	de	de	ADP	_	_	21	flat:name	O	_
+ 23	Campos	Campos	PROPN	_	Number=Sing	21	flat:name	O	_
+ 24	para	para	ADP	_	_	25	case	O	_
+@@ -97849,7 +97849,7 @@
+ 48-49	na	_	_	_	_	_	_	_	_
+ 48	em	em	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	37	obl	O	_
++50	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	37	obl	B=BACIA	_
+ 51	de	de	ADP	_	_	50	flat:name	O	_
+ 52	Santos	Santos	PROPN	_	Number=Sing	50	flat:name	B=BACIA	_
+ 53	)	)	PUNCT	_	_	60	punct	O	_
+@@ -97875,7 +97875,7 @@
+ 72-73	na	_	_	_	_	_	_	_	_
+ 72	em	em	ADP	_	_	74	case	O	_
+ 73	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	74	det	O	_
+-74	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	60	obl	O	_
++74	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	60	obl	B=BACIA	_
+ 75	de	de	ADP	_	_	74	flat:name	O	_
+ 76	Campos	Campos	PROPN	_	Number=Sing	74	flat:name	O	_
+ 77	)	)	PUNCT	_	_	85	punct	O	_
+@@ -97901,7 +97901,7 @@
+ 96-97	na	_	_	_	_	_	_	_	_
+ 96	em	em	ADP	_	_	98	case	O	_
+ 97	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	98	det	O	_
+-98	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	85	obl	O	_
++98	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	85	obl	B=BACIA	_
+ 99	de	de	ADP	_	_	98	flat:name	O	_
+ 100	Santos	Santos	PROPN	_	Number=Sing	98	flat:name	B=BACIA	_
+ 101	)	)	PUNCT	_	_	85	punct	O	_
+@@ -98529,7 +98529,7 @@
+ # text = A Bacia de Campos, que se estende por mais de 100 mil quilômetros quadrados do estado do Espírito Santo até Arraial do Cabo (litoral norte do estado do Rio de Janeiro), é a bacia petrolífera que mais produz na margem continental brasileira.
+ # sent_id = 334-20150521-MONOGRAFIA_0-25
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	43	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	43	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Campos	Campos	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	,	,	PUNCT	_	_	2	punct	O	_
+@@ -98598,7 +98598,7 @@
+ 6	importância	importância	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+ 7	para	para	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Santos	Santos	PROPN	_	Number=Sing	9	flat:name	B=BACIA	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+@@ -98650,7 +98650,7 @@
+ 25-26	na	_	_	_	_	_	_	_	_
+ 25	em	em	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	17	obl	O	_
++27	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	17	obl	B=BACIA	_
+ 28	de	de	ADP	_	_	27	flat:name	O	_
+ 29	Campos	Campos	PROPN	_	Number=Sing	27	flat:name	O	_
+ 30	.	.	PUNCT	_	_	17	punct	O	_
+@@ -98698,7 +98698,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-29
+ 1	Já	já	ADV	_	_	6	advmod	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+-3	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
++3	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	B=BACIA	_
+ 4	de	de	ADP	_	_	3	flat:name	O	_
+ 5	Santos	Santos	PROPN	_	Number=Sing	3	flat:name	B=BACIA	_
+ 6	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -98760,7 +98760,7 @@
+ 25	anos	ano	NOUN	_	Gender=Masc|Number=Plur	13	conj	O	_
+ 26	que	que	SCONJ	_	_	31	mark	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	31	nsubj	O	_
++28	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	31	nsubj	B=BACIA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Santos	Santos	PROPN	_	Number=Sing	28	flat:name	B=BACIA	_
+ 31	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	csubj	O	_
+@@ -98830,7 +98830,7 @@
+ 14-15	na	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
++16	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	obl	B=BACIA	_
+ 17	de	de	ADP	_	_	16	flat:name	O	_
+ 18	Santos	Santos	PROPN	_	Number=Sing	16	flat:name	B=BACIA	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+@@ -98878,7 +98878,7 @@
+ 8-9	na	_	_	_	_	_	_	_	_
+ 8	em	em	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	B=BACIA	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	Santos	Santos	PROPN	_	Number=Sing	10	flat:name	B=BACIA	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+@@ -99226,7 +99226,7 @@
+ 229-230	na	_	_	_	_	_	_	_	_
+ 229	em	em	ADP	_	_	231	case	O	_
+ 230	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	231	det	O	_
+-231	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	228	obl	O	_
++231	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	228	obl	B=BACIA	_
+ 232	de	de	ADP	_	_	231	flat:name	O	_
+ 233	Santos	Santos	PROPN	_	Number=Sing	231	flat:name	B=BACIA	_
+ 234	,	,	PUNCT	_	_	236	punct	O	_
+@@ -99826,7 +99826,7 @@
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++9	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=BACIA	_
+ 10	de	de	ADP	_	_	9	flat:name	O	_
+ 11	Campos	Campos	PROPN	_	Number=Sing	9	flat:name	O	_
+ 12	,	,	PUNCT	_	_	9	punct	O	_
+@@ -100214,7 +100214,7 @@
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++20	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=BACIA	_
+ 21	de	de	ADP	_	_	20	flat:name	O	_
+ 22	Santos	Santos	PROPN	_	Number=Sing	20	flat:name	B=BACIA	_
+ 23	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	aux:pass	O	_
+@@ -100882,7 +100882,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=BACIA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Santos	Santos	PROPN	_	Number=Sing	23	flat:name	B=BACIA	_
+ 26	.	.	PUNCT	_	_	5	punct	O	_
+@@ -107044,7 +107044,7 @@
+ 48-49	na	_	_	_	_	_	_	_	_
+ 48	em	em	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	45	nmod	O	_
++50	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	45	nmod	B=BACIA	_
+ 51	de	de	ADP	_	_	50	flat:name	O	_
+ 52	Campos	Campos	PROPN	_	Number=Sing	50	flat:name	O	_
+ 53	e	e	CCONJ	_	_	55	cc	O	_
+@@ -108213,7 +108213,7 @@
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Campos	Campos	PROPN	_	Number=Sing	15	flat:name	O	_
+ 18	.	.	PUNCT	_	_	6	punct	O	_
+@@ -134173,7 +134173,7 @@
+ 27-28	da	_	_	_	_	_	_	_	_
+ 27	de	de	ADP	_	_	29	case	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+-29	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	26	obl	O	_
++29	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	26	obl	B=BACIA	_
+ 30	de	de	ADP	_	_	29	flat:name	O	_
+ 31	Campos	Campos	PROPN	_	Number=Sing	29	flat:name	O	_
+ 32	e	e	CCONJ	_	_	33	cc	O	_
+@@ -186299,7 +186299,7 @@
+ 36	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	O	_
+ 37	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	34	nmod	O	_
+ 38	de	de	ADP	_	_	39	case	O	_
+-39	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	37	nmod	O	_
++39	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	37	nmod	B=BACIA	_
+ 40	e	e	CCONJ	_	_	41	cc	O	_
+ 41	Santos	Santos	PROPN	_	Number=Sing	39	conj	B=BACIA	_
+ 42	.	.	PUNCT	_	_	6	punct	O	_
+@@ -186501,7 +186501,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++24	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=BACIA	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	Santos	Santos	PROPN	_	Number=Sing	24	flat:name	B=BACIA	_
+ 27	,	,	PUNCT	_	_	31	punct	O	_
+@@ -186541,7 +186541,7 @@
+ 59-60	da	_	_	_	_	_	_	_	_
+ 59	de	de	ADP	_	_	61	case	O	_
+ 60	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	61	det	O	_
+-61	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	57	nmod	O	_
++61	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	57	nmod	B=BACIA	_
+ 62	de	de	ADP	_	_	61	flat:name	O	_
+ 63	Campos	Campos	PROPN	_	Number=Sing	61	flat:name	O	_
+ 64	.	.	PUNCT	_	_	14	punct	O	_
+@@ -186556,7 +186556,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++7	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	3	nmod	B=BACIA	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Santos	Santos	PROPN	_	Number=Sing	7	flat:name	B=BACIA	_
+ 10	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl	O	_
+@@ -186622,7 +186622,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++24	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=BACIA	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	Campos	Campos	PROPN	_	Number=Sing	24	flat:name	O	_
+ 27	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	28	obl	O	_
+@@ -186716,7 +186716,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++13	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	9	nmod	B=BACIA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Santos	Santos	PROPN	_	Number=Sing	13	flat:name	B=BACIA	_
+ 16	,	,	PUNCT	_	_	9	punct	O	_
+@@ -186746,7 +186746,7 @@
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++8	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	4	nmod	B=BACIA	_
+ 9	de	de	ADP	_	_	8	flat:name	O	_
+ 10	Campos	Campos	PROPN	_	Number=Sing	8	flat:name	O	_
+ 11	,	,	PUNCT	_	_	4	punct	O	_
+@@ -186897,7 +186897,7 @@
+ 25-26	da	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++27	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+ 28	de	de	ADP	_	_	27	flat:name	O	_
+ 29	Campos	Campos	PROPN	_	Number=Sing	27	flat:name	O	_
+ 30	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	32	nsubj	O	_
+@@ -187334,7 +187334,7 @@
+ 15	de	de	ADP	_	_	18	case	O	_
+ 16	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Tot	18	det	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++18	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=BACIA	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	Santos	Santos	PROPN	_	Number=Sing	18	flat:name	B=BACIA	_
+ 21	(	(	PUNCT	_	_	23	punct	O	_
+@@ -188275,7 +188275,7 @@
+ 32-33	na	_	_	_	_	_	_	_	_
+ 32	em	em	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	31	obl	O	_
++34	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	31	obl	B=BACIA	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	Santos	Santos	PROPN	_	Number=Sing	34	flat:name	B=BACIA	_
+ 37	por	por	SCONJ	_	_	38	mark	O	_
+@@ -188868,7 +188868,7 @@
+ 48-49	da	_	_	_	_	_	_	_	_
+ 48	de	de	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	46	nmod	O	_
++50	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	46	nmod	B=BACIA	_
+ 51	de	de	ADP	_	_	50	flat:name	O	_
+ 52	Santos	Santos	PROPN	_	Number=Sing	50	flat:name	B=BACIA	_
+ 53	(	(	PUNCT	_	_	54	punct	O	_
+@@ -188923,7 +188923,7 @@
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+-4	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++4	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=BACIA	_
+ 5	e	e	CCONJ	_	_	6	cc	O	_
+ 6	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	4	conj	B=BACIA	_
+ 7	constituem	constituir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -189038,7 +189038,7 @@
+ # text = - Bacia de Santos : é uma vasta porção da margem leste, com orientação geral SW-NE e geometria côncava, abrangendo cerca de 200.000 km² do sudeste brasileiro.
+ # sent_id = 20-20140904-TESEDSC_0-83
+ 1	-	-	PUNCT	_	_	2	punct	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Santos	Santos	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	:	:	PUNCT	_	_	2	punct	O	_
+@@ -189132,7 +189132,7 @@
+ 2	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj:pass	O	_
++5	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj:pass	B=BACIA	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	Santos	Santos	PROPN	_	Number=Sing	5	flat:name	B=BACIA	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	O	_
+@@ -189418,7 +189418,7 @@
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++20	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=BACIA	_
+ 21	de	de	ADP	_	_	20	flat:name	O	_
+ 22	Santos	Santos	PROPN	_	Number=Sing	20	flat:name	B=BACIA	_
+ 23	.	.	PUNCT	_	_	7	punct	O	_
+@@ -189600,7 +189600,7 @@
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++8	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B=BACIA	_
+ 9	de	de	ADP	_	_	8	flat:name	O	_
+ 10	Santos	Santos	PROPN	_	Number=Sing	8	flat:name	B=BACIA	_
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+@@ -189653,7 +189653,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	obl	B=BACIA	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
+@@ -189717,7 +189717,7 @@
+ 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
+ 12	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	8	nmod	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+-14	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++14	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	12	nmod	B=BACIA	_
+ 15	e	e	CCONJ	_	_	18	cc	O	_
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+@@ -189781,7 +189781,7 @@
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
+ 14	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	12	obj	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+-16	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
++16	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	14	nmod	B=BACIA	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+ 18	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	16	conj	B=BACIA	_
+ 19	,	,	PUNCT	_	_	12	punct	O	_
+@@ -190464,7 +190464,7 @@
+ 29-30	da	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+-31	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	27	nmod	O	_
++31	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	27	nmod	B=BACIA	_
+ 32	de	de	ADP	_	_	31	flat:name	O	_
+ 33	Campos	Campos	PROPN	_	Number=Sing	31	flat:name	O	_
+ 34	,	,	PUNCT	_	_	35	punct	O	_
+@@ -190622,7 +190622,7 @@
+ 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
+ 10	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+-12	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
++12	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	10	nmod	B=BACIA	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+ 14	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	12	conj	B=BACIA	_
+ 15	,	,	PUNCT	_	_	2	punct	O	_
+@@ -190837,7 +190837,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=BACIA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Santos	Santos	PROPN	_	Number=Sing	26	flat:name	B=BACIA	_
+ 29	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	31	nsubj	O	_
+@@ -190871,7 +190871,7 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Campos	Campos	PROPN	_	Number=Sing	15	flat:name	O	_
+ 18	.	.	PUNCT	_	_	8	punct	O	_
+@@ -191685,7 +191685,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++24	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=BACIA	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	Santos	Santos	PROPN	_	Number=Sing	24	flat:name	B=BACIA	_
+ 27	e	e	CCONJ	_	_	30	cc	O	_
+@@ -191774,7 +191774,7 @@
+ 17-18	na	_	_	_	_	_	_	_	_
+ 17	em	em	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=BACIA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Itaboraí	Itaboraí	PROPN	_	Number=Sing	19	flat:name	B=BACIA	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+@@ -192033,7 +192033,7 @@
+ 39-40	da	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	41	case	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+-41	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	O	_
++41	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	B=BACIA	_
+ 42	de	de	ADP	_	_	41	flat:name	O	_
+ 43	Campos	Campos	PROPN	_	Number=Sing	41	flat:name	O	_
+ 44	)	)	PUNCT	_	_	34	punct	O	_
+@@ -192497,7 +192497,7 @@
+ 32-33	da	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	31	nmod	O	_
++34	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	31	nmod	B=BACIA	_
+ 35-36	do	_	_	_	_	_	_	_	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	flat:name	O	_
+@@ -194039,7 +194039,7 @@
+ 8	adquirido	adquirir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	acl	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	obl	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Santos	Santos	PROPN	_	Number=Sing	11	flat:name	B=BACIA	_
+ 14-15	nos	_	_	_	_	_	_	_	_
+@@ -194928,7 +194928,7 @@
+ 107-108	da	_	_	_	_	_	_	_	_
+ 107	de	de	ADP	_	_	109	case	O	_
+ 108	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	109	det	O	_
+-109	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	105	nmod	O	_
++109	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	105	nmod	B=BACIA	_
+ 110	de	de	ADP	_	_	109	flat:name	O	_
+ 111	Santos	Santos	PROPN	_	Number=Sing	109	flat:name	B=BACIA	_
+ 112	;	;	PUNCT	_	_	116	punct	O	_
+@@ -195052,7 +195052,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Santos	Santos	PROPN	_	Number=Sing	12	flat:name	B=BACIA	_
+ 15	através	através	ADV	_	_	19	case	O	MWEPOS=ADP
+@@ -195486,7 +195486,7 @@
+ 40	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	41	det	O	_
+ 41	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	38	obl	O	_
+ 42	de	de	ADP	_	_	43	case	O	_
+-43	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	41	nmod	O	_
++43	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	41	nmod	B=BACIA	_
+ 44	e	e	CCONJ	_	_	45	cc	O	_
+ 45	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	43	conj	B=BACIA	_
+ 46	.	.	PUNCT	_	_	24	punct	O	_
+@@ -196089,7 +196089,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Santos	Santos	PROPN	_	Number=Sing	6	flat:name	B=BACIA	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+@@ -196274,7 +196274,7 @@
+ 56-57	da	_	_	_	_	_	_	_	_
+ 56	de	de	ADP	_	_	58	case	O	_
+ 57	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	O	_
+-58	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	54	nmod	O	_
++58	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	54	nmod	B=BACIA	_
+ 59	de	de	ADP	_	_	58	flat:name	O	_
+ 60	Santos	Santos	PROPN	_	Number=Sing	58	flat:name	B=BACIA	_
+ 61	,	,	PUNCT	_	_	62	punct	O	_
+@@ -197441,7 +197441,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	13	nmod	B=BACIA	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	Santos	Santos	PROPN	_	Number=Sing	17	flat:name	B=BACIA	_
+ 20	e	e	CCONJ	_	_	23	cc	O	_
+@@ -197452,7 +197452,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Campos	Campos	PROPN	_	Number=Sing	26	flat:name	O	_
+ 29	.	.	PUNCT	_	_	4	punct	O	_
+@@ -198179,7 +198179,7 @@
+ 36-37	da	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	38	case	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+-38	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	34	nmod	O	_
++38	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	34	nmod	B=BACIA	_
+ 39	de	de	ADP	_	_	38	flat:name	O	_
+ 40	Santos	Santos	PROPN	_	Number=Sing	38	flat:name	B=BACIA	_
+ 41	contida	conter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	34	acl	O	_
+@@ -201159,7 +201159,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=BACIA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Santos	Santos	PROPN	_	Number=Sing	23	flat:name	B=BACIA	_
+ 26	.	.	PUNCT	_	_	5	punct	O	_
+@@ -211343,7 +211343,7 @@
+ 6	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	3	obl	O	_
+ 7	que	que	SCONJ	_	_	11	mark	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	campo	campo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	B=BACIA	_
++9	campo	campo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	B=CAMPO	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	caracterizado	caracterizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	O	_
+ 12-13	pela	_	_	_	_	_	_	_	_
+@@ -211371,7 +211371,7 @@
+ 31-32	da	_	_	_	_	_	_	_	_
+ 31	de	de	ADP	_	_	33	case	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+-33	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	29	nmod	O	_
++33	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	29	nmod	B=BACIA	_
+ 34	de	de	ADP	_	_	33	flat:name	O	_
+ 35	Campos	Campos	PROPN	_	Number=Sing	33	flat:name	O	_
+ 36	)	)	PUNCT	_	_	29	punct	O	_
+@@ -211593,7 +211593,7 @@
+ 38	,	,	PUNCT	_	_	41	punct	O	_
+ 39	sobre	sobre	ADP	_	_	41	case	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+-41	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	obl	O	_
++41	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	obl	B=BACIA	_
+ 42	de	de	ADP	_	_	41	flat:name	O	_
+ 43	Campos	Campos	PROPN	_	Number=Sing	41	flat:name	O	_
+ 44	.	.	PUNCT	_	_	6	punct	O	_
+@@ -212545,7 +212545,7 @@
+ 48-49	da	_	_	_	_	_	_	_	_
+ 48	de	de	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	47	nmod	O	_
++50	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	47	nmod	B=BACIA	_
+ 51	de	de	ADP	_	_	50	flat:name	O	_
+ 52	Campos	Campos	PROPN	_	Number=Sing	50	flat:name	O	_
+ 53	.	.	PUNCT	_	_	12	punct	O	_
+@@ -214012,7 +214012,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	3	flat:name	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	flat:name	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	3	flat:name	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	3	flat:name	B=BACIA	_
+ 12	de	de	ADP	_	_	3	flat:name	O	_
+ 13	Santos	Santos	PROPN	_	Number=Sing	3	flat:name	B=BACIA	_
+ 
+@@ -214025,7 +214025,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++7	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Santos	Santos	PROPN	_	Number=Sing	7	flat:name	B=BACIA	_
+ 10	compreendida	compreender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	_
+@@ -214139,7 +214139,7 @@
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=BACIA	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	Santos	Santos	PROPN	_	Number=Sing	26	flat:name	B=BACIA	_
+ 29	integrado	integrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	O	_
+@@ -214961,7 +214961,7 @@
+ 42-43	da	_	_	_	_	_	_	_	_
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+-44	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	41	nmod	O	_
++44	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	41	nmod	B=BACIA	_
+ 45	de	de	ADP	_	_	44	flat:name	O	_
+ 46	Campos	Campos	PROPN	_	Number=Sing	44	flat:name	O	_
+ 47	.	.	PUNCT	_	_	20	punct	O	_
+@@ -216432,7 +216432,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Santos	Santos	PROPN	_	Number=Sing	11	flat:name	B=BACIA	_
+ 
+@@ -216478,7 +216478,7 @@
+ 35-36	da	_	_	_	_	_	_	_	_
+ 35	de	de	ADP	_	_	37	case	O	_
+ 36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
+-37	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	33	nmod	O	_
++37	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	33	nmod	B=BACIA	_
+ 38	de	de	ADP	_	_	37	flat:name	O	_
+ 39	Santos	Santos	PROPN	_	Number=Sing	37	flat:name	B=BACIA	_
+ 40	)	)	PUNCT	_	_	33	punct	O	_
+@@ -217302,7 +217302,7 @@
+ 32-33	da	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++34	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=BACIA	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	Campos	Campos	PROPN	_	Number=Sing	34	flat:name	O	_
+ 37	,	,	PUNCT	_	_	27	punct	O	_
+@@ -217588,7 +217588,7 @@
+ 14-15	da	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++16	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	B=BACIA	_
+ 17	de	de	ADP	_	_	16	flat:name	O	_
+ 18	Campos	Campos	PROPN	_	Number=Sing	16	flat:name	O	_
+ 19	(	(	PUNCT	_	_	21	punct	O	_
+@@ -219054,7 +219054,7 @@
+ 39-40	da	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	41	case	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+-41	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	O	_
++41	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	B=BACIA	_
+ 42	de	de	ADP	_	_	41	flat:name	O	_
+ 43	Santos	Santos	PROPN	_	Number=Sing	41	flat:name	B=BACIA	_
+ 44	(	(	PUNCT	_	_	45	punct	O	_
+@@ -219480,7 +219480,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	flat:name	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	flat:name	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Campos	Campos	PROPN	_	Number=Sing	11	flat:name	O	_
+ 
+@@ -219497,7 +219497,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++10	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	Campos	Campos	PROPN	_	Number=Sing	10	flat:name	O	_
+ 13	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -222331,7 +222331,7 @@
+ 36-37	da	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	38	case	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+-38	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	32	nmod	O	_
++38	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	32	nmod	B=BACIA	_
+ 39	de	de	ADP	_	_	38	flat:name	O	_
+ 40	Santos	Santos	PROPN	_	Number=Sing	38	flat:name	B=BACIA	_
+ 41	,	,	PUNCT	_	_	29	punct	O	_
+@@ -222631,7 +222631,7 @@
+ 38-39	da	_	_	_	_	_	_	_	_
+ 38	de	de	ADP	_	_	40	case	O	_
+ 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
+-40	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	O	_
++40	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	B=BACIA	_
+ 41	de	de	ADP	_	_	40	flat:name	O	_
+ 42	Santos	Santos	PROPN	_	Number=Sing	40	flat:name	B=BACIA	_
+ 43-44	ao	_	_	_	_	_	_	_	_
+@@ -223436,7 +223436,7 @@
+ 61-62	da	_	_	_	_	_	_	_	_
+ 61	de	de	ADP	_	_	63	case	O	_
+ 62	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	O	_
+-63	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	58	nmod	O	_
++63	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	58	nmod	B=BACIA	_
+ 64	de	de	ADP	_	_	63	flat:name	O	_
+ 65	Campos	Campos	PROPN	_	Number=Sing	63	flat:name	O	_
+ 66	.	.	PUNCT	_	_	5	punct	O	_
+@@ -224090,7 +224090,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=BACIA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Santos	Santos	PROPN	_	Number=Sing	23	flat:name	B=BACIA	_
+ 26	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	28	nsubj	O	_
+@@ -224262,7 +224262,7 @@
+ 16-17	na	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
++18	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	obl	B=BACIA	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	flat:name	O	_
+@@ -224634,7 +224634,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++7	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	3	nmod	B=BACIA	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Campos	Campos	PROPN	_	Number=Sing	7	flat:name	O	_
+ 10	,	,	PUNCT	_	_	3	punct	O	_
+@@ -225022,7 +225022,7 @@
+ 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
+ 7	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	5	obj	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+-9	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++9	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=BACIA	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+ 11	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	9	conj	B=BACIA	_
+ 12	,	,	PUNCT	_	_	5	punct	O	_
+@@ -225441,7 +225441,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++12	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Santos	Santos	PROPN	_	Number=Sing	12	flat:name	B=BACIA	_
+ 15	,	,	PUNCT	_	_	8	punct	O	_
+@@ -225497,7 +225497,7 @@
+ 64-65	da	_	_	_	_	_	_	_	_
+ 64	de	de	ADP	_	_	66	case	O	_
+ 65	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	66	det	O	_
+-66	Bacia	bacia	PROPN	_	Number=Sing	62	nmod	O	_
++66	Bacia	Bacia	PROPN	_	Number=Sing	62	nmod	B=BACIA	_
+ 67-68	do	_	_	_	_	_	_	_	_
+ 67	de	de	ADP	_	_	66	flat:name	O	_
+ 68	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	66	flat:name	O	_
+@@ -225746,7 +225746,7 @@
+ 59-60	da	_	_	_	_	_	_	_	_
+ 59	de	de	ADP	_	_	61	case	O	_
+ 60	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	61	det	O	_
+-61	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	56	nmod	O	_
++61	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	56	nmod	B=BACIA	_
+ 62	de	de	ADP	_	_	61	flat:name	O	_
+ 63	Santos	Santos	PROPN	_	Number=Sing	61	flat:name	B=BACIA	_
+ 64	,	,	PUNCT	_	_	65	punct	O	_
+@@ -225929,7 +225929,7 @@
+ 8	estrutural	estrutural	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Campos	Campos	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+@@ -226268,7 +226268,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=BACIA	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	Campos	Campos	PROPN	_	Number=Sing	17	flat:name	O	_
+ 20	,	,	PUNCT	_	_	3	punct	O	_
+@@ -226544,7 +226544,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++19	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=BACIA	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	Campos	Campos	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	.	.	PUNCT	_	_	1	punct	O	_
+@@ -226864,7 +226864,7 @@
+ 44-45	da	_	_	_	_	_	_	_	_
+ 44	de	de	ADP	_	_	46	case	O	_
+ 45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
+-46	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	O	_
++46	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	B=BACIA	_
+ 47	de	de	ADP	_	_	46	flat:name	O	_
+ 48	Santos	Santos	PROPN	_	Number=Sing	46	flat:name	B=BACIA	_
+ 49	mencionada	mencionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	43	acl	O	_
+@@ -226920,7 +226920,7 @@
+ 42-43	da	_	_	_	_	_	_	_	_
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+-44	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	41	nmod	O	_
++44	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	41	nmod	B=BACIA	_
+ 45	de	de	ADP	_	_	44	flat:name	O	_
+ 46	Santos	Santos	PROPN	_	Number=Sing	44	flat:name	B=BACIA	_
+ 47	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	advcl	O	_
+@@ -227087,7 +227087,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++17	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	B=BACIA	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	Campos	Campos	PROPN	_	Number=Sing	17	flat:name	O	_
+ 20	,	,	PUNCT	_	_	10	punct	O	_
+@@ -227614,7 +227614,7 @@
+ 40-41	da	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
+-42	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	O	_
++42	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	37	nmod	B=BACIA	_
+ 43	de	de	ADP	_	_	42	flat:name	O	_
+ 44	Santos	Santos	PROPN	_	Number=Sing	42	flat:name	B=BACIA	_
+ 45	.	.	PUNCT	_	_	3	punct	O	_
+@@ -228674,7 +228674,7 @@
+ 28-29	da	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+-30	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	27	nmod	O	_
++30	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	27	nmod	B=BACIA	_
+ 31	de	de	ADP	_	_	30	flat:name	O	_
+ 32	Santos	Santos	PROPN	_	Number=Sing	30	flat:name	B=BACIA	_
+ 33	(	(	PUNCT	_	_	34	punct	O	_
+@@ -229133,7 +229133,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++13	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Campos	Campos	PROPN	_	Number=Sing	13	flat:name	O	_
+ 16	e	e	CCONJ	_	_	18	cc	O	_
+@@ -229194,7 +229194,7 @@
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Bacia	bacia	PROPN	_	Number=Sing	24	nmod	O	_
++28	Bacia	Bacia	PROPN	_	Number=Sing	24	nmod	B=BACIA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	Santos	Santos	PROPN	_	Number=Sing	28	flat:name	B=BACIA	_
+ 31	.	.	PUNCT	_	_	11	punct	O	_
+@@ -229903,7 +229903,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++23	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=BACIA	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	Santos	Santos	PROPN	_	Number=Sing	23	flat:name	B=BACIA	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+@@ -230298,7 +230298,7 @@
+ 23-24	da	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++25	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=BACIA	_
+ 26	de	de	ADP	_	_	25	flat:name	O	_
+ 27	Santos	Santos	PROPN	_	Number=Sing	25	flat:name	B=BACIA	_
+ 28	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	cop	O	_
+@@ -230355,7 +230355,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Santos	Santos	PROPN	_	Number=Sing	11	flat:name	B=BACIA	_
+ 14	,	,	PUNCT	_	_	3	punct	O	_
+@@ -230441,7 +230441,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=BACIA	_
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Santos	Santos	PROPN	_	Number=Sing	6	flat:name	B=BACIA	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+@@ -230516,7 +230516,7 @@
+ 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
+ 23	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	19	nmod	O	_
+ 24	de	de	ADP	_	_	25	case	O	_
+-25	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++25	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	23	nmod	B=BACIA	_
+ 26	e	e	CCONJ	_	_	27	cc	O	_
+ 27	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	25	conj	B=BACIA	_
+ 28	,	,	PUNCT	_	_	29	punct	O	_
+@@ -231051,7 +231051,7 @@
+ # text = A Bacia de Santos, por exemplo, tem seu embasamento ainda em grande parte desconhecido devido à sua profundidade e dificuldade de obtenção de dados sísmicos.
+ # sent_id = 20-20140904-TESEDSC_0-1187
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	9	nsubj	B=BACIA	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Santos	Santos	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 5	,	,	PUNCT	_	_	6	punct	O	_
+@@ -231209,7 +231209,7 @@
+ 29-30	da	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+-31	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	28	nmod	O	_
++31	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	28	nmod	B=BACIA	_
+ 32	de	de	ADP	_	_	31	flat:name	O	_
+ 33	Santos	Santos	PROPN	_	Number=Sing	31	flat:name	B=BACIA	_
+ 34	,	,	PUNCT	_	_	37	punct	O	_
+@@ -231311,7 +231311,7 @@
+ 2-3	do	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+-4	campo	campo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	B=BACIA	_
++4	campo	campo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 5	magnético	magnético	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
+ 6	total	total	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+@@ -231321,7 +231321,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Bacia	bacia	PROPN	_	Number=Sing	10	nmod	O	_
++13	Bacia	Bacia	PROPN	_	Number=Sing	10	nmod	B=BACIA	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Santos	Santos	PROPN	_	Number=Sing	13	flat:name	B=BACIA	_
+ 16	mostrando	mostrar	VERB	_	VerbForm=Ger	1	advcl	O	_
+@@ -231937,7 +231937,7 @@
+ 1-2	Na	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+-3	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	10	obl	O	_
++3	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	10	obl	B=BACIA	_
+ 4	de	de	ADP	_	_	3	flat:name	O	_
+ 5	Campos	Campos	PROPN	_	Number=Sing	3	flat:name	O	_
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+@@ -235171,7 +235171,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++11	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=BACIA	_
+ 12	de	de	ADP	_	_	11	flat:name	O	_
+ 13	Campos	Campos	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+@@ -235602,7 +235602,7 @@
+ 51-52	da	_	_	_	_	_	_	_	_
+ 51	de	de	ADP	_	_	53	case	O	_
+ 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
+-53	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	49	nmod	O	_
++53	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	49	nmod	B=BACIA	_
+ 54	de	de	ADP	_	_	53	flat:name	O	_
+ 55	Santos	Santos	PROPN	_	Number=Sing	53	flat:name	B=BACIA	_
+ 56	.	.	PUNCT	_	_	12	punct	O	_
+@@ -236078,7 +236078,7 @@
+ 34-35	da	_	_	_	_	_	_	_	_
+ 34	de	de	ADP	_	_	36	case	O	_
+ 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+-36	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	33	nmod	O	_
++36	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	33	nmod	B=BACIA	_
+ 37	de	de	ADP	_	_	36	flat:name	O	_
+ 38	Santos	Santos	PROPN	_	Number=Sing	36	flat:name	B=BACIA	_
+ 39	(	(	PUNCT	_	_	40	punct	O	_
+@@ -236261,7 +236261,7 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++15	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=BACIA	_
+ 16	de	de	ADP	_	_	15	flat:name	O	_
+ 17	Campos	Campos	PROPN	_	Number=Sing	15	flat:name	O	_
+ 18-19	na	_	_	_	_	_	_	_	_
+@@ -236452,7 +236452,7 @@
+ 50-51	da	_	_	_	_	_	_	_	_
+ 50	de	de	ADP	_	_	52	case	O	_
+ 51	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	O	_
+-52	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	48	nmod	O	_
++52	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	48	nmod	B=BACIA	_
+ 53	de	de	ADP	_	_	52	flat:name	O	_
+ 54	Santos	Santos	PROPN	_	Number=Sing	52	flat:name	B=BACIA	_
+ 55	(	(	PUNCT	_	_	56	punct	O	_
+@@ -236580,7 +236580,7 @@
+ 44-45	à	_	_	_	_	_	_	_	_
+ 44	a	a	ADP	_	_	46	case	O	_
+ 45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
+-46	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	O	_
++46	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	43	nmod	B=BACIA	_
+ 47-48	do	_	_	_	_	_	_	_	_
+ 47	de	de	ADP	_	_	46	flat:name	O	_
+ 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	flat:name	O	_
+@@ -236706,7 +236706,7 @@
+ 25-26	da	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++27	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+ 28	de	de	ADP	_	_	27	flat:name	O	_
+ 29	Santos	Santos	PROPN	_	Number=Sing	27	flat:name	B=BACIA	_
+ 30	.	.	PUNCT	_	_	9	punct	O	_
+@@ -237610,7 +237610,7 @@
+ 46-47	da	_	_	_	_	_	_	_	_
+ 46	de	de	ADP	_	_	48	case	O	_
+ 47	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	O	_
+-48	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	44	nmod	O	_
++48	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	44	nmod	B=BACIA	_
+ 49	de	de	ADP	_	_	48	flat:name	O	_
+ 50	Santos	Santos	PROPN	_	Number=Sing	48	flat:name	B=BACIA	_
+ 51	.	.	PUNCT	_	_	18	punct	O	_
+@@ -278680,7 +278680,7 @@
+ 102-103	da	_	_	_	_	_	_	_	_
+ 102	de	de	ADP	_	_	104	case	O	_
+ 103	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	104	det	O	_
+-104	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	101	nmod	O	_
++104	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	101	nmod	B=BACIA	_
+ 105	Potiguar-Ceará	Potiguar-Ceará	PROPN	_	Number=Sing	104	flat:name	O	_
+ 106	e	e	CCONJ	_	_	107	cc	O	_
+ 107	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	94	conj	O	_
+@@ -279202,7 +279202,7 @@
+ 109	de	de	ADP	_	_	111	case	O	_
+ 110	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	111	det	O	_
+ 111	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	108	nmod	O	_
+-112	Ceará-Potiguar	Ceará-Potiguar	PROPN	_	Gender=Fem|Number=Sing	111	nmod	O	_
++112	Ceará-Potiguar	Ceará-Potiguar	PROPN	_	Gender=Fem|Number=Sing	111	nmod	B=BACIA	_
+ 113	e	e	CCONJ	_	_	115	cc	O	_
+ 114	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	115	det	O	_
+ 115	forma	forma	NOUN	_	Gender=Fem|Number=Sing	49	conj	O	_
+@@ -281406,7 +281406,7 @@
+ # text = 2.2.1 Bacia Potiguar - Ceará
+ # sent_id = 411-20150702-MONOGRAFIA_0-97
+ 1	2.2.1	2.2.1	NUM	_	NumType=Card	2	parataxis	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	0	root	B=BACIA	_
+ 3	Potiguar	Potiguar	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 4	-	-	PUNCT	_	_	2	flat:name	O	_
+ 5	Ceará	Ceará	PROPN	_	Gender=Masc|Number=Sing	2	flat:name	B=BACIA	_
+@@ -281464,7 +281464,7 @@
+ # text = A Bacia Potiguar é a segunda região produtora do país, são 8 blocos (3 em terra e 5 no mar), totalizando 7.657 km².
+ # sent_id = 411-20150702-MONOGRAFIA_0-99
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
++2	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	B=BACIA	_
+ 3	Potiguar	Potiguar	PROPN	_	Number=Sing	2	flat:name	B=BACIA	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+@@ -281673,7 +281673,7 @@
+ 2-3	da	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	1	obl	O	_
++4	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	1	obl	B=BACIA	_
+ 5	Potiguar	Potiguar	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+ 6	–	–	PUNCT	_	_	1	punct	O	_
+ 7	Ceará	Ceará	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	B=BACIA	_

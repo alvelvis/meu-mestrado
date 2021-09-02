@@ -1,0 +1,1769 @@
+commit f33779ff7b8fa9dc221f2d62c414ef871741f153
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Aug 12 14:44:23 2021 -0300
+
+    Correções de lema
+    
+    Lemmas que não terminam em ".r" e estavam como verbos (feats diferente de part, porque os particípios ficaram com a Tati), tokens cujo lemma termina em ".*s" e para ocorrências da palavra "sal" no plural que estavam com o lemma "sai".
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index f3ddfce..030ecbd 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -2767,7 +2767,7 @@
+ 45	milhão	milhão	NUM	_	NumType=Card	44	flat	_	_
+ 46	de	de	ADP	_	_	47	case	_	_
+ 47	quilômetros	quilômetro	NOUN	_	Gender=Masc|Number=Plur	44	nmod	_	_
+-48	quadrados	quadrados	ADJ	_	Gender=Masc|Number=Plur	47	amod	_	_
++48	quadrados	quadrado	ADJ	_	Gender=Masc|Number=Plur	47	amod	_	_
+ 49	.	.	PUNCT	_	_	12	punct	_	_
+ 
+ # text = 5.2.1 EMPILHAMENTO ESTRATIGRÁFICO REGIONAL DA BACIA DO
+@@ -2973,7 +2973,7 @@
+ 10	a	a	ADP	_	_	11	case	_	_
+ 11	grossas	grosso	ADJ	_	Gender=Fem|Number=Plur	9	obl	_	_
+ 12	,	,	PUNCT	_	_	13	punct	_	_
+-13	glácio-marinhas	glácio-marinhas	ADJ	_	Gender=Fem|Number=Plur	11	conj	_	_
++13	glácio-marinhas	glácio-marinha	ADJ	_	Gender=Fem|Number=Plur	11	conj	_	_
+ 14	e	e	CCONJ	_	_	15	cc	_	_
+ 15	continentais	continental	ADJ	_	Gender=Fem|Number=Plur	11	conj	_	_
+ 16	.	.	PUNCT	_	_	5	punct	_	_
+@@ -6742,7 +6742,7 @@
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+ 24	presença	presença	NOUN	_	Gender=Fem|Number=Sing	21	obl	_	_
+ 25	de	de	ADP	_	_	26	case	_	_
+-26	diques	diques	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_
++26	diques	dique	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_
+ 27	.	.	PUNCT	_	_	19	punct	_	_
+ 
+ # text = Como é possível visualizar na Figura 19.
+@@ -9147,7 +9147,7 @@
+ 18	em	em	ADP	_	_	20	case	_	_
+ 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+ 20	cores	cor	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	_
+-21	verdes	verdes	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_
++21	verdes	verde	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_
+ 22	para	para	ADP	_	_	24	case	_	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+ 24	mapa	mapa	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_
+@@ -12867,7 +12867,7 @@
+ 13	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	14	det	_	_
+ 14	adição	adição	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_
+ 15	também	também	ADV	_	_	16	advmod	_	_
+-16	melhora	melhora	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
++16	melhora	melhorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+ 18	adesividade	adesividade	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_
+ 19-20	do	_	_	_	_	_	_	_	_
+@@ -13838,7 +13838,7 @@
+ 22	função	função	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_
+ 23	de	de	SCONJ	_	_	24	mark	_	_
+ 24	formar	formar	VERB	_	VerbForm=Inf	22	acl	_	_
+-25	sais	sai	NOUN	_	Gender=Masc|Number=Plur	24	obj	_	_
++25	sais	sal	NOUN	_	Gender=Masc|Number=Plur	24	obj	_	_
+ 26	solúveis	solúvel	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_
+ 27	com	com	ADP	_	_	29	case	_	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+@@ -13884,7 +13884,7 @@
+ 21	convertê	converter	VERB	_	VerbForm=Inf	20	csubj	_	_
+ 22	los	eles	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	obj	_	_
+ 23	em	em	ADP	_	_	24	case	_	_
+-24	sais	sai	NOUN	_	Gender=Masc|Number=Plur	21	obl	_	_
++24	sais	sal	NOUN	_	Gender=Masc|Number=Plur	21	obl	_	_
+ 25	para	para	SCONJ	_	_	26	mark	_	_
+ 26-27	dissolvê-los	_	_	_	_	_	_	_	_
+ 26	dissolvê	dissolver	VERB	_	VerbForm=Inf	21	advcl	_	_
+@@ -20076,7 +20076,7 @@
+ 
+ # text = Superfícies de ravinamento são superfícies de erosão marinha, formadas pela ação de ondas durante transgressões (Van Wagoner et al. 1987).
+ # sent_id = 284-20150917-MONOGRAFIA_0-87
+-1	Superfícies	superfícies	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_
++1	Superfícies	superfície	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	ravinamento	ravinamento	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+@@ -20091,7 +20091,7 @@
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+ 13	ação	ação	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	_	_
+ 14	de	de	ADP	_	_	15	case	_	_
+-15	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_
++15	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_
+ 16	durante	durante	ADP	_	_	17	case	_	_
+ 17	transgressões	transgressão	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_
+ 18	(	(	PUNCT	_	_	19	punct	_	_
+@@ -20127,7 +20127,7 @@
+ 17-18	das	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	_	_
+ 18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+-19	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_
++19	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_
+ 20	,	,	PUNCT	_	_	22	punct	_	_
+ 21	especialmente	especialmente	ADV	_	_	22	advmod	_	_
+ 22	as	o	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	6	obl	_	_
+@@ -21511,7 +21511,7 @@
+ 16	grossos	grosso	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_
+ 17	a	a	ADP	_	_	18	case	_	_
+ 18	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_
+-19	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_
++19	escuros	escuro	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_
+ 20	,	,	PUNCT	_	_	22	punct	_	_
+ 21	por	por	ADP	_	_	22	case	_	_
+ 22	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	13	obl	_	_
+@@ -21763,7 +21763,7 @@
+ 17	lateralmente	lateralmente	ADV	_	_	16	advmod	_	_
+ 18	com	com	ADP	_	_	19	case	_	_
+ 19	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	16	obl	_	_
+-20	verdes	verdes	ADJ	_	Gender=Masc|Number=Plur	19	amod	_	_
++20	verdes	verde	ADJ	_	Gender=Masc|Number=Plur	19	amod	_	_
+ 21	.	.	PUNCT	_	_	5	punct	_	_
+ 
+ # text = A rica associação fossilífera nos calcários laminados e folhelhos associados, caracterizada pela ausência de formas marinhas, indica ambiente de sedimentação lacustre (Neumann 1999).
+@@ -23155,7 +23155,7 @@
+ 31	tempestade	tempestade	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_
+ 32	,	,	PUNCT	_	_	33	punct	_	_
+ 33	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	29	conj	_	_
+-34	autóctones	autóctones	ADJ	_	Gender=Fem|Number=Plur	33	amod	_	_
++34	autóctones	autóctone	ADJ	_	Gender=Fem|Number=Plur	33	amod	_	_
+ 35	e	e	CCONJ	_	_	36	cc	_	_
+ 36	resíduos	resíduo	NOUN	_	Gender=Masc|Number=Plur	29	conj	_	_
+ 37	transgressivos	transgressivo	ADJ	_	Gender=Masc|Number=Plur	36	amod	_	_
+@@ -24014,7 +24014,7 @@
+ 17	com	com	ADP	_	_	18	case	_	_
+ 18	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_
+ 19	cinza	cinza	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_
+-20	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	19	compound	_	_
++20	escuros	escuro	ADJ	_	Gender=Masc|Number=Plur	19	compound	_	_
+ 21	onde	onde	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	22	obl	_	_
+ 22	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+ 23	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_
+@@ -24333,7 +24333,7 @@
+ 22	com	com	ADP	_	_	23	case	_	_
+ 23	tons	tom	NOUN	_	Gender=Masc|Number=Plur	21	obl	_	_
+ 24	cinza	cinza	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_
+-25	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_
++25	escuros	escuro	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_
+ 26	,	,	PUNCT	_	_	27	punct	_	_
+ 27	grãos	grão	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	_
+ 28	subarredondados	subarredondar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	_	_
+@@ -24492,7 +24492,7 @@
+ 
+ # text = Arenitos muito finos a médios, coloração creme com grãos arredondados moderadamente selecionados.
+ # sent_id = 284-20150917-MONOGRAFIA_0-224
+-1	Arenitos	arenitos	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_
++1	Arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 2	muito	muito	ADV	_	_	3	advmod	_	_
+ 3	finos	fino	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 4	a	a	ADP	_	_	5	case	_	_
+@@ -25213,7 +25213,7 @@
+ # text = Lamitos cinza-escuros intercalados entre arenitos muito finos a finos, bem selecionados, matriz siltosa, esbranquiçados a acinzentados, com laminações horizontal, ondulada ou cruzada por ondas (estratificação cruzada cavalgante – ripples).
+ # sent_id = 284-20150917-MONOGRAFIA_0-253
+ 1	Lamitos	lamito	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-2	cinza-escuros	cinza-escuros	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
++2	cinza-escuros	cinza-escuro	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 3	intercalados	intercalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	_	_
+ 4	entre	entre	ADP	_	_	5	case	_	_
+ 5	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_
+@@ -25240,7 +25240,7 @@
+ 26	ou	ou	CCONJ	_	_	27	cc	_	_
+ 27	cruzada	cruzar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	25	conj	_	_
+ 28	por	por	ADP	_	_	29	case	_	_
+-29	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	27	obl:agent	_	_
++29	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	27	obl:agent	_	_
+ 30	(	(	PUNCT	_	_	31	punct	_	_
+ 31	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	29	appos	_	_
+ 32	cruzada	cruzado	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_
+@@ -25575,7 +25575,7 @@
+ 3	Folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
+ 4	cinzas	cinza	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	,	,	PUNCT	_	_	6	punct	_	_
+-6	verdes	verdes	ADJ	_	Gender=Masc|Number=Plur	4	conj	_	_
++6	verdes	verde	ADJ	_	Gender=Masc|Number=Plur	4	conj	_	_
+ 7	e	e	CCONJ	_	_	8	cc	_	_
+ 8	pretos	preto	ADJ	_	Gender=Masc|Number=Plur	4	conj	_	_
+ 9	(	(	PUNCT	_	_	10	punct	_	_
+@@ -25618,7 +25618,7 @@
+ 16	de	de	ADP	_	_	17	case	_	_
+ 17	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_
+ 18	cinza	cinza	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_
+-19	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_
++19	escuros	escuro	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_
+ 20	e	e	CCONJ	_	_	21	cc	_	_
+ 21	pretos	preto	ADJ	_	Gender=Masc|Number=Plur	19	conj	_	_
+ 22	,	,	PUNCT	_	_	23	punct	_	_
+@@ -25742,7 +25742,7 @@
+ # sent_id = 284-20150917-MONOGRAFIA_0-274
+ 1	Interpretação	Interpretação	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_
+ 2	:	:	PUNCT	_	_	3	punct	_	_
+-3	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
++3	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
+ 4	de	de	ADP	_	_	5	case	_	_
+ 5	decantação	decantação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+@@ -26078,7 +26078,7 @@
+ 
+ # text = Processos de retrabalhamento por correntes que depositam as conchas em suspensão, sendo transportadas por correntes de maior energia, capazes de desarticular e fragmentar as conchas de bivalves.
+ # sent_id = 284-20150917-MONOGRAFIA_0-290
+-1	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:pass	_	_
++1	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:pass	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	retrabalhamento	retrabalhamento	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_
+ 4	por	por	ADP	_	_	5	case	_	_
+@@ -30972,7 +30972,7 @@
+ 26	de	de	ADP	_	_	27	case	_	_
+ 27	retrabalhamento	retrabalhamento	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_
+ 28	por	por	ADP	_	_	29	case	_	_
+-29	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	_
++29	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	_
+ 30	.	.	PUNCT	_	_	12	punct	_	_
+ 
+ # text = Os canais fluviais são sucedidos por ambiente costeiro sob condições parálicas, que favoreceram a deposição dos calcários e folhelhos, ricos em matéria orgânica.
+@@ -33639,7 +33639,7 @@
+ 1	Por	por	ADP	_	_	2	case	_	_
+ 2	rotação	rotação	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	_
+ 3	ou	ou	CCONJ	_	_	4	cc	_	_
+-4	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_
++4	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_
+ 5	eletromagnéticas	eletromagnético	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	_
+ 6	:	:	PUNCT	_	_	8	punct	_	_
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+@@ -43265,7 +43265,7 @@
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+ 9	presença	presença	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_
+ 10	de	de	ADP	_	_	11	case	_	_
+-11	sais	sai	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_
++11	sais	sal	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_
+ 12	de	de	ADP	_	_	13	case	_	_
+ 13	cálcio	cálcio	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_
+ 14	e	e	CCONJ	_	_	16	cc	_	_
+@@ -43325,7 +43325,7 @@
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+ 33	adição	adição	NOUN	_	Gender=Fem|Number=Sing	30	obl	_	_
+ 34	de	de	ADP	_	_	35	case	_	_
+-35	sais	sai	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	_
++35	sais	sal	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	_
+ 36	como	como	ADP	_	_	37	case	_	_
+ 37	NaCl	NaCl	PROPN	_	Gender=Masc|Number=Sing	33	nmod	_	_
+ 38	,	,	PUNCT	_	_	39	punct	_	_
+@@ -43414,7 +43414,7 @@
+ 
+ # text = Produtos químicos mais específicos, como anticorrosivos, traçadores químicos, antiespumantes, entre outros, também podem estar presentes.
+ # sent_id = 24-20150122-MONOGRAFIA_0-71
+-1	Produtos	Produtos	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_
++1	Produtos	produto	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_
+ 2	químicos	químico	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 3	mais	mais	ADV	_	_	4	advmod	_	_
+ 4	específicos	específico	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+@@ -43871,7 +43871,7 @@
+ 
+ # text = Pequenas gotículas de água o de solução aquosa constituem a fase descontínua desses fluidos.
+ # sent_id = 24-20150122-MONOGRAFIA_0-87
+-1	Pequenas	Pequenas	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
++1	Pequenas	pequeno	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
+ 2	gotículas	gotícula	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_
+ 3	de	de	ADP	_	_	4	case	_	_
+ 4	água	água	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+@@ -45282,7 +45282,7 @@
+ 18	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_
+ 19	orgânica	orgânico	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_
+ 20	,	,	PUNCT	_	_	21	punct	_	_
+-21	sais	sai	NOUN	_	Gender=Masc|Number=Plur	18	conj	_	_
++21	sais	sal	NOUN	_	Gender=Masc|Number=Plur	18	conj	_	_
+ 22	solúveis	solúvel	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_
+ 23	e	e	CCONJ	_	_	24	cc	_	_
+ 24	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	18	conj	_	_
+@@ -45711,7 +45711,7 @@
+ 13	,	,	PUNCT	_	_	14	punct	_	_
+ 14	quer	quer	CCONJ	_	_	16	cc	_	_
+ 15	de	de	ADP	_	_	16	case	_	_
+-16	sais	sai	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_
++16	sais	sal	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_
+ 17	solúveis	solúvel	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_
+ 18	,	,	PUNCT	_	_	19	punct	_	_
+ 19	qualitativa	qualitativo	ADJ	_	Gender=Fem|Number=Sing	17	conj	_	_
+@@ -52524,7 +52524,7 @@
+ 14-15	nas	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	_	_
+ 15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+-16	análises	anális	NOUN	_	Gender=Fem|Number=Plur	13	obl	_	_
++16	análises	análise	NOUN	_	Gender=Fem|Number=Plur	13	obl	_	_
+ 17	de	de	ADP	_	_	18	case	_	_
+ 18	aderência	aderência	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_
+ 19-20	da	_	_	_	_	_	_	_	_
+@@ -52657,7 +52657,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -52822,7 +52822,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53008,7 +53008,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53176,7 +53176,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53352,7 +53352,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53538,7 +53538,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53724,7 +53724,7 @@
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
+ 6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	_	_
+@@ -53920,7 +53920,7 @@
+ 16	,	,	PUNCT	_	_	19	punct	_	_
+ 17	e	e	CCONJ	_	_	19	cc	_	_
+ 18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+-19	análises	anális	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	_
++19	análises	análise	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	_
+ 20	de	de	ADP	_	_	21	case	_	_
+ 21	rolamento	rolamento	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_
+ 22	com	com	ADP	_	_	25	case	_	_
+@@ -56726,7 +56726,7 @@
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	_	_
+ 3	durante	durante	ADP	_	_	5	case	_	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+-5	análises	anális	NOUN	_	Gender=Fem|Number=Plur	1	obl	_	_
++5	análises	análise	NOUN	_	Gender=Fem|Number=Plur	1	obl	_	_
+ 6	que	que	SCONJ	_	_	14	mark	_	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+ 8	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_
+@@ -56808,7 +56808,7 @@
+ 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+ 9	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_
+ 10-11	nota-se	_	_	_	_	_	_	_	_
+-10	nota	nota	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
++10	nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 11	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	10	expl	_	_
+ 12	que	que	SCONJ	_	_	23	mark	_	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+@@ -57708,7 +57708,7 @@
+ 15-16	das	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	_	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+-17	análises	anális	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_
++17	análises	análise	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_
+ 18	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+ 19	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	_	_
+ 20	abaixo	abaixo	ADV	_	_	19	advmod	_	_
+@@ -68764,7 +68764,7 @@
+ 
+ # text = Sistemas eólicos úmidos são aqueles em que o lençol freático encontra-se próximo a superfície, e tendem a preservar maiores porções de interdunas, pois o lençol freático alto reduz a erosão destes sedimentos (Kocurek, 1996).
+ # sent_id = 283-20150917-MONOGRAFIA_0-397
+-1	Sistemas	Sistemas	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_
++1	Sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_
+ 2	eólicos	eólico	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 3	úmidos	úmido	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+@@ -72739,9 +72739,9 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-48
+ 1	4.1.1	4.1.1	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Rotas	Rotas	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
+-4	de	de	ADP	_	_	3	compound	_	_
+-5	Captura	Captura	PROPN	_	Number=Sing	3	flat:name	_	_
++3	Rotas	rota	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
++4	de	de	ADP	_	_	5	case	_	_
++5	Captura	captura	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
+ 
+ # text = Dependendo do processo industrial ou da usina de produção de energia onde será capturado o dióxido de carbono, será adotado uma das quatro rotas possíveis de captura.
+ # sent_id = 161-20150810-MONOGRAFIA_0-49
+@@ -72786,7 +72786,7 @@
+ 1	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
+ 2	1	1	NUM	_	NumType=Card	1	nummod	_	_
+ 3	-	-	PUNCT	_	_	4	punct	_	_
+-4	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
++4	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
+ 5	e	e	CCONJ	_	_	6	cc	_	_
+ 6	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_
+ 7	de	de	ADP	_	_	8	case	_	_
+@@ -73360,7 +73360,7 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-73
+ 1	4.1.1.4	4.1.1.4	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++3	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 4	Industriais	industrial	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 
+ # text = O dióxido de carbono tem sido capturado em processos industriais durante mais de 80 anos (IPCC, 2005), mas a maior parte do CO2 que é capturado é, posteriormente, emitido para a atmosfera, porque não havia a necessidade ou incentivo de armazenar o gás.
+@@ -73487,9 +73487,9 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-77
+ 1	4.1.2	4.1.2	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Tecnologias	Tecnologias	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
+-4	de	de	ADP	_	_	3	compound	_	_
+-5	Captura	Captura	PROPN	_	Number=Sing	3	flat:name	_	_
++3	Tecnologias	tecnologia	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
++4	de	de	ADP	_	_	5	case	_	_
++5	Captura	captura	NOUN	_	Number=Sing	3	nmod	_	_
+ 
+ # text = Os sistemas de captura utilizam diversas tecnologias conhecidas de separação de gases, estando integradas com a rota de captura, descrita anteriormente.
+ # sent_id = 161-20150810-MONOGRAFIA_0-78
+@@ -76801,7 +76801,7 @@
+ 12	alta	alto	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_
+ 13	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_
+ 14	de	de	ADP	_	_	15	case	_	_
+-15	sais	sai	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_
++15	sais	sal	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_
+ 16	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	15	acl	_	_
+ 17	e	e	CCONJ	_	_	18	cc	_	_
+ 18	salmouras	salmoura	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_
+@@ -77041,7 +77041,7 @@
+ 16	de	de	ADP	_	_	15	fixed	_	_
+ 17	25	25	NUM	_	NumType=Card	18	nummod	_	_
+ 18	metros	metro	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	_
+-19	cúbicos	cúbicos	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_
++19	cúbicos	cúbico	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_
+ 20	de	de	ADP	_	_	21	case	_	_
+ 21	metano	metano	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
+ 22	por	por	ADP	_	_	23	case	_	_
+@@ -77273,10 +77273,10 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-216
+ 1	4.4	4.4	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Sistemas	Sistemas	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	de	de	ADP	_	_	3	flat:name	_	_
+-5	Informação	Informação	PROPN	_	Number=Sing	3	flat:name	_	_
+-6	Geográfica	Geográfica	PROPN	_	Number=Sing	3	flat:name	_	_
++3	Sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++4	de	de	ADP	_	_	5	case	_	_
++5	Informação	informação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
++6	Geográfica	geográfico	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_
+ 
+ # text = Um Sistema de Informação Geográfica (SIG ou GIS - Geographic Information System) é um sistema de hardware, software, informação espacial e procedimentos computacionais que permite e facilita a análise, gestão ou representação do espaço e dos fenômenos que nele ocorrem.
+ # sent_id = 161-20150810-MONOGRAFIA_0-217
+@@ -77353,7 +77353,7 @@
+ 14	operações	operação	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_
+ 15	complexas	complexo	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	_
+ 16	de	de	ADP	_	_	17	case	_	_
+-17	análises	anális	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_
++17	análises	análise	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_
+ 18	sobre	sobre	ADP	_	_	19	case	_	_
+ 19	dados	dado	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_
+ 20	espaciais	espacial	ADJ	_	Gender=Masc|Number=Plur	19	amod	_	_
+@@ -79592,11 +79592,11 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-309
+ 1	5.1.1.4	5.1.1.4	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	de	de	ADP	_	_	3	flat:name	_	_
+-5	Captura	Captura	PROPN	_	Number=Sing	3	nmod	_	_
+-6	de	de	ADP	_	_	3	flat:name	_	_
+-7	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	_
++3	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++4	de	de	ADP	_	_	5	case	_	_
++5	Captura	captura	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
++6	de	de	ADP	_	_	7	case	_	_
++7	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+ 
+ # text = Um sistema de captura de pós-combustão utilizando absorventes químicos não é viável para captura na indústria siderúrgica devido à insuficiência de calor residual necessário para o processo.
+ # sent_id = 161-20150810-MONOGRAFIA_0-310
+@@ -80828,7 +80828,7 @@
+ 25	linha	linha	NOUN	_	Gender=Fem|Number=Sing	21	conj	_	_
+ 26	branca	branco	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_
+ 27	(	(	PUNCT	_	_	28	punct	_	_
+-28	eletrodomésticos	eletrodomésticos	NOUN	_	Gender=Masc|Number=Plur	25	appos	_	_
++28	eletrodomésticos	eletrodoméstico	NOUN	_	Gender=Masc|Number=Plur	25	appos	_	_
+ 29	)	)	PUNCT	_	_	28	punct	_	_
+ 30	,	,	PUNCT	_	_	31	punct	_	_
+ 31	dutos	duto	NOUN	_	Gender=Masc|Number=Plur	21	conj	_	_
+@@ -84171,7 +84171,7 @@
+ 2	valores	valor	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_
+ 3	máximos	grande	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
+ 4	e	e	CCONJ	_	_	5	cc	_	_
+-5	mínimos	mínimos	ADJ	_	Gender=Masc|Number=Plur	3	conj	_	_
++5	mínimos	mínimo	ADJ	_	Gender=Masc|Number=Plur	3	conj	_	_
+ 6	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	aux:pass	_	_
+ 7	baseados	basear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 8	em	em	ADP	_	_	9	case	_	_
+@@ -85056,7 +85056,7 @@
+ 6	100	100	NUM	_	NumType=Card	8	nummod	_	_
+ 7	mil	mil	NUM	_	NumType=Card	8	nummod	_	_
+ 8	quilômetros	quilômetro	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_
+-9	quadrados	quadrados	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
++9	quadrados	quadrado	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
+ 10-11	do	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	_	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+@@ -85217,7 +85217,7 @@
+ 46	,	,	PUNCT	_	_	47	punct	_	_
+ 47	dutos	duto	NOUN	_	Gender=Masc|Number=Plur	45	conj	_	_
+ 48	,	,	PUNCT	_	_	49	punct	_	_
+-49	manifolds	manifolds	NOUN	_	Gender=Masc|Number=Plur	45	conj	_	_
++49	manifolds	manifold	NOUN	_	Gender=Masc|Number=Plur	45	conj	_	_
+ 50	,	,	PUNCT	_	_	51	punct	_	_
+ 51	poços	poço	NOUN	_	Gender=Masc|Number=Plur	45	conj	_	_
+ 52	injetores	injetor	ADJ	_	Gender=Masc|Number=Plur	51	amod	_	_
+@@ -88416,7 +88416,7 @@
+ 20	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
+ 21	para	para	ADP	_	_	22	case	_	_
+ 22	metros	metro	NOUN	_	Gender=Masc|Number=Plur	16	obl	_	_
+-23	cúbicos	cúbicos	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	_
++23	cúbicos	cúbico	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	_
+ 24	.	.	PUNCT	_	_	4	punct	_	_
+ 
+ # text = De acordo com a Petrobras, um metro cúbico de óleo cru equivale a 6,3 barris.
+@@ -88467,7 +88467,7 @@
+ 5	,	,	PUNCT	_	_	7	punct	_	_
+ 6	em	em	ADP	_	_	7	case	_	_
+ 7	metros	metro	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_
+-8	cúbicos	cúbicos	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_
++8	cúbicos	cúbico	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_
+ 9-10	dos	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	_	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+@@ -96352,11 +96352,11 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-878
+ 1	8.3.3.2	8.3.3.2	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Custos	Custos	PROPN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	Operacionais	operacionais	ADJ	_	Gender=Masc|Number=Plur	3	flat:name	_	_
++3	Custos	custo	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++4	Operacionais	operacional	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	e	e	CCONJ	_	_	7	cc	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+-7	Manutenção	Manutenção	PROPN	_	Number=Sing	3	conj	_	_
++7	Manutenção	manutenção	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_
+ 
+ # text = Quadro 11 - Resultados dos custos de operação e manutenção das plataformas * o valor corresponde também às plataformas de produção ligadas pelos carbodutos auxiliares às plataformas injetoras ; vide figura 31
+ # sent_id = 161-20150810-MONOGRAFIA_0-879
+@@ -98562,7 +98562,7 @@
+ 12	100	100	NUM	_	NumType=Card	14	nummod	_	_
+ 13	mil	mil	NUM	_	NumType=Card	12	flat	_	_
+ 14	quilômetros	quilômetro	NOUN	_	Gender=Masc|Number=Plur	8	obl	_	_
+-15	quadrados	quadrados	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
++15	quadrados	quadrado	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	_	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+@@ -99620,7 +99620,7 @@
+ # text = I.2.2 Investimentos
+ # sent_id = 334-20150521-MONOGRAFIA_0-48
+ 1	I.2.2	i.2.2	NUM	_	NumType=Card	2	nummod	_	_
+-2	Investimentos	Investimentos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++2	Investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 
+ # text = Mas o desenvolvimento de tecnologias para a exploração dessa nova camada demandará grandes investimentos.
+ # sent_id = 334-20150521-MONOGRAFIA_0-50
+@@ -100675,7 +100675,7 @@
+ 1	Foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	aux:pass	_	_
+ 2	realizadas	realizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 3	então	então	ADV	_	_	2	advmod	_	_
+-4	análises	anális	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	_	_
++4	análises	análise	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	_	_
+ 5	químicas	químico	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	_
+ 6	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	7	nsubj	_	_
+ 7	indicaram	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	acl:relcl	_	_
+@@ -112619,7 +112619,7 @@
+ 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+ 6	casos	caso	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+-8	sais	sai	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_
++8	sais	sal	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_
+ 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
+ 10	exercem	exercer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 11	apenas	apenas	ADV	_	_	13	advmod	_	_
+@@ -112695,7 +112695,7 @@
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+ 19	precipitação	precipitação	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_
+ 20	de	de	ADP	_	_	21	case	_	_
+-21	sais	sai	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_
++21	sais	sal	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_
+ 22	inorgânicos	inorgânico	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_
+ 23	.	.	PUNCT	_	_	10	punct	_	_
+ 
+@@ -112918,7 +112918,7 @@
+ 50	causar	causar	VERB	_	VerbForm=Inf	49	xcomp	_	_
+ 51	precipitação	precipitação	NOUN	_	Gender=Fem|Number=Sing	50	obj	_	_
+ 52	de	de	ADP	_	_	53	case	_	_
+-53	sais	sai	NOUN	_	Gender=Masc|Number=Plur	51	nmod	_	_
++53	sais	sal	NOUN	_	Gender=Masc|Number=Plur	51	nmod	_	_
+ 54-55	da	_	_	_	_	_	_	_	_
+ 54	de	de	ADP	_	_	56	case	_	_
+ 55	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	_	_
+@@ -113319,7 +113319,7 @@
+ 37	milhões	milhão	NUM	_	NumType=Card	36	flat	_	_
+ 38	de	de	ADP	_	_	39	case	_	_
+ 39	metros	metro	NOUN	_	Gender=Masc|Number=Plur	36	nmod	_	_
+-40	cúbicos	cúbicos	ADJ	_	Gender=Masc|Number=Plur	39	amod	_	_
++40	cúbicos	cúbico	ADJ	_	Gender=Masc|Number=Plur	39	amod	_	_
+ 41	por	por	ADP	_	_	42	case	_	_
+ 42	dia	dia	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_
+ 43	)	)	PUNCT	_	_	45	punct	_	_
+@@ -114466,7 +114466,7 @@
+ 18	quantidades	quantidade	NOUN	_	Gender=Fem|Number=Plur	17	obj	_	_
+ 19	variáveis	variável	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	_
+ 20	de	de	ADP	_	_	21	case	_	_
+-21	sais	sai	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_
++21	sais	sal	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_
+ 22	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_
+ 23	(	(	PUNCT	_	_	25	punct	_	_
+ 24	principalmente	principalmente	ADV	_	_	25	advmod	_	_
+@@ -114614,7 +114614,7 @@
+ 8	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_
+ 9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+-11	sais	sai	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++11	sais	sal	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 12	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	_	_
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	_	_
+@@ -114727,7 +114727,7 @@
+ 9-10	dos	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	_	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+-11	sais	sai	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_
++11	sais	sal	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_
+ 12	(	(	PUNCT	_	_	14	punct	_	_
+ 13	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
+ 14	voláteis	volátel	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_
+@@ -114789,7 +114789,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-486
+ 1	II.8	II.8	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 2	–	–	PUNCT	_	_	3	punct	_	_
+-3	Processos	Processos	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
++3	Processos	processo	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_
+ 4	de	de	ADP	_	_	5	case	_	_
+ 5	captura	captura	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+@@ -123228,7 +123228,7 @@
+ 39	,	,	PUNCT	_	_	40	punct	_	_
+ 40	óxidos	óxido	NOUN	_	Gender=Masc|Number=Plur	38	conj	_	_
+ 41	e	e	CCONJ	_	_	42	cc	_	_
+-42	sais	sai	NOUN	_	Gender=Masc|Number=Plur	38	conj	_	_
++42	sais	sal	NOUN	_	Gender=Masc|Number=Plur	38	conj	_	_
+ 43	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	44	nsubj	_	_
+ 44	contribuem	contribuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	acl:relcl	_	_
+ 45	para	para	ADP	_	_	47	case	_	_
+@@ -126574,7 +126574,7 @@
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+ 39	adição	adição	NOUN	_	Gender=Fem|Number=Sing	36	obl	_	_
+ 40	de	de	ADP	_	_	41	case	_	_
+-41	sais	sai	NOUN	_	Gender=Masc|Number=Plur	39	nmod	_	_
++41	sais	sal	NOUN	_	Gender=Masc|Number=Plur	39	nmod	_	_
+ 42-43	à	_	_	_	_	_	_	_	_
+ 42	a	a	ADP	_	_	44	case	_	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
+@@ -128426,7 +128426,7 @@
+ 1	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
+ 2	1.1	1.1	NUM	_	NumType=Card	1	nummod	_	_
+ 3	:	:	PUNCT	_	_	5	punct	_	_
+-4	Principais	principais	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_
++4	Principais	principal	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_
+ 5	reservas	reserva	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+@@ -129252,7 +129252,7 @@
+ 30	Todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	32	det	_	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
+ 32	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	35	nsubj:pass	_	_
+-33	crus	crus	ADJ	_	Gender=Masc|Number=Plur	32	amod	_	_
++33	crus	cru	ADJ	_	Gender=Masc|Number=Plur	32	amod	_	_
+ 34	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	aux:pass	_	_
+ 35	compostos	compor	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	conj	_	_
+ 36	,	,	PUNCT	_	_	35	punct	_	_
+@@ -129693,7 +129693,7 @@
+ 2	puros	puro	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+ 4	sólidos	sólido	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-5	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_
++5	escuros	escuro	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_
+ 6	e	e	CCONJ	_	_	8	cc	_	_
+ 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
+ 8	voláteis	volátel	ADJ	_	Gender=Masc|Number=Plur	5	conj	_	_
+@@ -129808,7 +129808,7 @@
+ 12	de	de	ADP	_	_	14	case	_	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+ 14	petróleos	petróleo	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_
+-15	crus	crus	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
++15	crus	cru	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
+ 16	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	case	_	MWEPOS=ADP
+ 17-18	ao	_	_	_	_	_	_	_	_
+ 17	a	a	ADP	_	_	16	fixed	_	_
+@@ -134632,7 +134632,7 @@
+ 
+ # text = Presentes no sistema também estão uma bomba de óleo e outra de água, um compressor, um filtro, dois rotâmetros, dois manômetros, dois reguladores de freqüência, um medidor de vazão para o óleo e dois visores de acrílico.
+ # sent_id = 77-20141209-TESEMSC_0-203
+-1	Presentes	presentes	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_
++1	Presentes	presente	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_
+ 2-3	no	_	_	_	_	_	_	_	_
+ 2	em	em	ADP	_	_	4	case	_	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+@@ -138689,7 +138689,7 @@
+ 29	de	de	ADP	_	_	30	case	_	_
+ 30	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	28	nmod	_	_
+ 31	(	(	PUNCT	_	_	32	punct	_	_
+-32	sais	sai	NOUN	_	Gender=Masc|Number=Plur	30	appos	_	_
++32	sais	sal	NOUN	_	Gender=Masc|Number=Plur	30	appos	_	_
+ 33	)	)	PUNCT	_	_	32	punct	_	_
+ 34-35	na	_	_	_	_	_	_	_	_
+ 34	em	em	ADP	_	_	36	case	_	_
+@@ -144475,7 +144475,7 @@
+ 
+ # text = Tecnologias para reduzir o volume de vinhaça têm sido desenvolvidas, como é o caso das fermentações com alto teor alcoólico.
+ # sent_id = 279-20140530-MONOGRAFIA_0-69
+-1	Tecnologias	Tecnologias	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	_	_
++1	Tecnologias	tecnologia	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	_	_
+ 2	para	para	SCONJ	_	_	3	mark	_	_
+ 3	reduzir	reduzir	VERB	_	VerbForm=Inf	1	acl	_	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+@@ -145990,7 +145990,7 @@
+ 1	5.1	5.1	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+ 3	Aspectos	aspecto	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	Gerais	Gerais	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
++4	Gerais	geral	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 
+ # text = Os resultados que serão apresentados a seguir foram obtidos dos ensaios experimentais que duraram cerca de dez dias.
+ # sent_id = 279-20140530-MONOGRAFIA_0-131
+@@ -153519,7 +153519,7 @@
+ 4	muito	muito	ADV	_	_	5	advmod	_	_
+ 5	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+ 6	para	para	ADP	_	_	7	case	_	_
+-7	análises	anális	NOUN	_	Gender=Fem|Number=Plur	5	obl	_	_
++7	análises	análise	NOUN	_	Gender=Fem|Number=Plur	5	obl	_	_
+ 8	de	de	ADP	_	_	9	case	_	_
+ 9	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+@@ -154461,7 +154461,7 @@
+ # text = As análises de área específica do catalisador foram feitas por adsorção e dessorção de nitrogênio, em um equipamento Quantachrome, modelo Nova 1200.
+ # sent_id = 271-20150810-MONOGRAFIA_0-181
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+-2	análises	anális	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	_	_
++2	análises	análise	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	_	_
+ 3	de	de	ADP	_	_	4	case	_	_
+ 4	área	área	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+ 5	específica	específico	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_
+@@ -154784,7 +154784,7 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-198
+ 1	3.2.4	3.2.4	NUM	_	NumType=Card	2	nummod	_	_
+ 2	Óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-3	Vegetais	Vegetais	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++3	Vegetais	vegetal	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
+ 4	e	e	CCONJ	_	_	6	cc	_	_
+ 5	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	6	det	_	_
+ 6	caracterizações	caracterização	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_
+@@ -156764,7 +156764,7 @@
+ 3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	9	obl	_	_
+ 4	,	,	PUNCT	_	_	3	punct	_	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+-6	análises	anális	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	_	_
++6	análises	análise	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	_	_
+ 7	econômicas	econômico	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_
+ 8	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	9	aux:pass	_	_
+ 9	realizadas	realizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+@@ -157005,7 +157005,7 @@
+ # text = 3.2.9.3 Investimentos na Planta Piloto
+ # sent_id = 271-20150810-MONOGRAFIA_0-265
+ 1	3.2.9.3	3.2.9.3	NUM	_	NumType=Card	2	nummod	_	_
+-2	Investimentos	Investimentos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++2	Investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 3-4	na	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	_	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+@@ -158676,7 +158676,7 @@
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+ 5	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
+-6	Vegetais	Vegetais	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
++6	Vegetais	vegetal	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
+ 
+ # text = Fez-se a caracterização físico-quimica do óleo de soja e do óleo residual de fritura, bem como o perfil graxo dos mesmos.
+ # sent_id = 271-20150810-MONOGRAFIA_0-335
+@@ -166207,7 +166207,7 @@
+ 10	realizadas	realizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 11	através	através	ADV	_	_	13	case	_	MWEPOS=ADP
+ 12	de	de	ADP	_	_	11	fixed	_	_
+-13	análises	anális	NOUN	_	Gender=Fem|Number=Plur	10	obl	_	_
++13	análises	análise	NOUN	_	Gender=Fem|Number=Plur	10	obl	_	_
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	_	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+@@ -166281,7 +166281,7 @@
+ 33	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	31	acl	_	_
+ 34	dentre	dentre	ADP	_	_	36	case	_	_
+ 35	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_
+-36	análises	anális	NOUN	_	Gender=Fem|Number=Plur	33	obl	_	_
++36	análises	análise	NOUN	_	Gender=Fem|Number=Plur	33	obl	_	_
+ 37	quantitativa	quantitativo	ADJ	_	Gender=Fem|Number=Sing	36	amod	_	_
+ 38	para	para	SCONJ	_	_	40	mark	_	_
+ 39	se	se	PRON	_	_	40	expl	_	_
+@@ -166738,7 +166738,7 @@
+ 9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	expl	_	_
+ 10	citar	citar	VERB	_	VerbForm=Inf	8	xcomp	_	_
+ 11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+-12	sais	sai	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_
++12	sais	sal	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_
+ 13	quaternários	quaternário	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_
+ 14	de	de	ADP	_	_	15	case	_	_
+ 15	amônio	amônio	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_
+@@ -169557,7 +169557,7 @@
+ 66	para	para	ADP	_	_	67	case	_	_
+ 67	remoção	remoção	NOUN	_	Gender=Fem|Number=Sing	64	nmod	_	_
+ 68	de	de	ADP	_	_	69	case	_	_
+-69	sais	sai	NOUN	_	Gender=Masc|Number=Plur	67	nmod	_	_
++69	sais	sal	NOUN	_	Gender=Masc|Number=Plur	67	nmod	_	_
+ 70	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	69	acl	_	_
+ 71	,	,	PUNCT	_	_	72	punct	_	_
+ 72	sulfatos	sulfato	NOUN	_	Gender=Masc|Number=Plur	69	conj	_	_
+@@ -169764,7 +169764,7 @@
+ 11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+ 12	método	método	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 13	de	de	ADP	_	_	14	case	_	_
+-14	análises	anális	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_
++14	análises	análise	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_
+ 15	bastante	bastante	ADV	_	_	16	advmod	_	_
+ 16	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	acl	_	_
+ 17	em	em	ADP	_	_	18	case	_	_
+@@ -169784,7 +169784,7 @@
+ 6	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	5	expl	_	_
+ 7	fazer	fazer	VERB	_	VerbForm=Inf	5	xcomp	_	_
+ 8	tais	tal	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	_	_
+-9	análises	anális	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_
++9	análises	análise	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_
+ 10	,	,	PUNCT	_	_	12	punct	_	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+ 12	espectrofotômetro	espectrofotômetro	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_
+@@ -169870,7 +169870,7 @@
+ 14	certos	certo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	_	_
+ 15	comprimentos	comprimento	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_
+ 16	de	de	ADP	_	_	17	case	_	_
+-17	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_
++17	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	_	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+@@ -169892,7 +169892,7 @@
+ 34	aqueles	aquele	DET	_	Gender=Masc|Number=Plur|PronType=Dem	35	det	_	_
+ 35	comprimentos	comprimento	NOUN	_	Gender=Masc|Number=Plur	28	obj	_	_
+ 36	de	de	ADP	_	_	37	case	_	_
+-37	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	35	nmod	_	_
++37	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	35	nmod	_	_
+ 38	não	não	ADV	_	Polarity=Neg	39	advmod	_	_
+ 39	absorvidos	absorver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	35	acl	_	_
+ 40	.	.	PUNCT	_	_	7	punct	_	_
+@@ -170951,7 +170951,7 @@
+ 1-2	Pelas	_	_	_	_	_	_	_	_
+ 1	Por	por	ADP	_	_	3	case	_	_
+ 2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+-3	análises	anális	NOUN	_	Gender=Fem|Number=Plur	21	obl	_	_
++3	análises	análise	NOUN	_	Gender=Fem|Number=Plur	21	obl	_	_
+ 4-5	dos	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	_	_
+ 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+@@ -170995,7 +170995,7 @@
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+ 6	remoção	remoção	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_
+ 7	de	de	ADP	_	_	8	case	_	_
+-8	sais	sai	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_
++8	sais	sal	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_
+ 9	de	de	ADP	_	_	10	case	_	_
+ 10	ferro	ferro	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_
+ 11	de	de	ADP	_	_	12	case	_	_
+@@ -171208,7 +171208,7 @@
+ 10	,	,	PUNCT	_	_	7	punct	_	_
+ 11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	aux:pass	_	_
+ 12	feitas	fazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+-13	análises	anális	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	_	_
++13	análises	análise	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	_	_
+ 14	de	de	ADP	_	_	15	case	_	_
+ 15	TOG	TOG	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	_
+ 16	(	(	PUNCT	_	_	17	punct	_	_
+@@ -172401,7 +172401,7 @@
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+ 41	comprimento	comprimento	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_
+ 42	de	de	ADP	_	_	43	case	_	_
+-43	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	41	nmod	_	_
++43	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	41	nmod	_	_
+ 44	(	(	PUNCT	_	_	45	punct	_	_
+ 45	λ	λ	NOUN	_	Gender=Masc|Number=Sing	41	appos	_	_
+ 46	)	)	PUNCT	_	_	45	punct	_	_
+@@ -172764,7 +172764,7 @@
+ 11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	aux:pass	_	_
+ 12	realizadas	realizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+-14	análises	anális	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	_	_
++14	análises	análise	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	_	_
+ 15	variando	variar	VERB	_	VerbForm=Ger	12	advcl	_	_
+ 16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+ 17	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_
+@@ -175411,7 +175411,7 @@
+ 3-4	nos	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	_	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+-5	sais	sai	NOUN	_	Gender=Masc|Number=Plur	13	obl	_	_
++5	sais	sal	NOUN	_	Gender=Masc|Number=Plur	13	obl	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+ 7	molibdênio	molibdênio	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+ 8	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
+@@ -175473,7 +175473,7 @@
+ 8-9	destes	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	6	fixed	_	_
+ 9	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_
+-10	sais	sai	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_
++10	sais	sal	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_
+ 11	,	,	PUNCT	_	_	16	punct	_	_
+ 12	sendo	ser	AUX	_	VerbForm=Ger	16	mark	_	_
+ 13	que	que	SCONJ	_	_	12	fixed	_	_
+@@ -178368,7 +178368,7 @@
+ 4-5	dos	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	_	_
+ 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+-6	sais	sai	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_
++6	sais	sal	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_
+ 7	.	.	PUNCT	_	_	1	punct	_	_
+ 
+ # text = As soluções foram levadas para balões volumétricos de 100 mL [9].
+@@ -178675,7 +178675,7 @@
+ 2-3	das	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	1	fixed	_	_
+ 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+-4	análises	anális	NOUN	_	Gender=Fem|Number=Plur	9	obl	_	_
++4	análises	análise	NOUN	_	Gender=Fem|Number=Plur	9	obl	_	_
+ 5	,	,	PUNCT	_	_	1	punct	_	_
+ 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+ 7	materiais	material	NOUN	_	Gender=Masc|Number=Plur	9	nsubj:pass	_	_
+@@ -180390,7 +180390,7 @@
+ 12	interno	interno	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_
+ 13	para	para	ADP	_	_	15	case	_	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+-15	análises	anális	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_
++15	análises	análise	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_
+ 16	cromatográficas	cromatográfico	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_
+ 17	,	,	PUNCT	_	_	7	punct	_	_
+ 18	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	aux:pass	_	_
+@@ -182558,7 +182558,7 @@
+ 8	a	a	ADP	_	_	10	case	_	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+ 10	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_
+-11	silanóis	silanóis	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_
++11	silanóis	silanol	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_
+ 12	terminais	terminal	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_
+ 13	=	=	PUNCT	_	_	14	punct	_	_
+ 14	SiOH	SiOH	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	_
+@@ -182577,7 +182577,7 @@
+ # text = Os silanóis estão presentes em todas as zeólitas e são necessários para que completar a esfera de coordenação dos átomos de silício terminais na superfície dos cristais.
+ # sent_id = 25-20150123-MONOGRAFIA_0-343
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+-2	silanóis	silanóis	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_
++2	silanóis	silanol	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_
+ 3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+ 4	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_
+ 5	em	em	ADP	_	_	8	case	_	_
+@@ -182663,7 +182663,7 @@
+ # sent_id = 25-20150123-MONOGRAFIA_0-345
+ 1	Portanto	portanto	ADV	_	_	9	advmod	_	_
+ 2	,	,	PUNCT	_	_	1	punct	_	_
+-3	silanóis	silanóis	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_
++3	silanóis	silanol	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_
+ 4	dentro	dentro	ADV	_	_	3	advmod	_	_
+ 5-6	dos	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	_	_
+@@ -183763,7 +183763,7 @@
+ 13	atribuída	atribuir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	_	_
+ 14	a	a	ADP	_	_	15	case	_	_
+ 15	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_
+-16	silanóis	silanóis	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_
++16	silanóis	silanol	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_
+ 17	(	(	PUNCT	_	_	18	punct	_	_
+ 18	SiOH	SiOH	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	_
+ 19	)	)	PUNCT	_	_	18	punct	_	_
+@@ -184570,7 +184570,7 @@
+ 3	de	de	ADP	_	_	5	case	_	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+ 5	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
+-6	silanóis	silanóis	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
++6	silanóis	silanol	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
+ 7	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 8	estar	estar	AUX	_	VerbForm=Inf	9	aux	_	_
+ 9	influenciando	influenciar	VERB	_	VerbForm=Ger	7	xcomp	_	_
+@@ -188887,7 +188887,7 @@
+ 22-23	pelas	_	_	_	_	_	_	_	_
+ 22	por	por	ADP	_	_	24	case	_	_
+ 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
+-24	serras	serras	NOUN	_	Gender=Fem|Number=Plur	21	obl:agent	_	_
++24	serras	serra	NOUN	_	Gender=Fem|Number=Plur	21	obl:agent	_	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	_	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+@@ -189479,7 +189479,7 @@
+ 
+ # text = Grandes diápiros e muralhas de sal alcançam vários quilômetros de altura na região de águas profundas da Bacia de Santos.
+ # sent_id = 20-20140904-TESEDSC_0-94
+-1	Grandes	Grandes	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++1	Grandes	grande	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
+ 2	diápiros	diápiro	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_
+ 3	e	e	CCONJ	_	_	4	cc	_	_
+ 4	muralhas	muralha	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_
+@@ -191564,7 +191564,7 @@
+ 15	de	de	SCONJ	_	_	16	mark	_	_
+ 16	apresentarem	apresentar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	11	acl	_	_
+ 17	seus	seu	DET	_	Gender=Masc|Number=Plur|PronType=Prs	18	det	_	_
+-18	cimos	cimos	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_
++18	cimos	cimo	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_
+ 19	aplainados	aplainar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl	_	_
+ 20	por	por	ADP	_	_	21	case	_	_
+ 21	superfícies	superfície	NOUN	_	Gender=Fem|Number=Plur	19	obl:agent	_	_
+@@ -193918,7 +193918,7 @@
+ 10-11	das	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	_	_
+ 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+-12	serras	serras	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_
++12	serras	serra	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	_	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+@@ -193947,7 +193947,7 @@
+ 
+ # text = Autores como Almeida e Carneiro (1998) e Zalán e Oliveira (2005) desenvolveram hipóteses que buscam descrever os eventos tectônicos que produziram e modelaram o sistema de riftes que deu origem às cadeias de serras, baseando-se em observações geológicas e geomorfológicas nas bacias sedimentares associadas e nos sistemas de serras adjacentes.
+ # sent_id = 20-20140904-TESEDSC_0-210
+-1	Autores	Autores	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_
++1	Autores	autor	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_
+ 2	como	como	ADP	_	_	3	case	_	_
+ 3	Almeida	Almeida	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	_
+ 4	e	e	CCONJ	_	_	3	flat:name	_	_
+@@ -195046,7 +195046,7 @@
+ 
+ # text = Trabalhos de neotectônica ao longo da costa têm corroborado a natureza tectônica destas escarpas (Riccomini et al. 1989 em Zalán e Oliveira 2005).
+ # sent_id = 20-20140904-TESEDSC_0-234
+-1	Trabalhos	Trabalhos	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_
++1	Trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	neotectônica	neotectônica	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
+ 4-5	ao	_	_	_	_	_	_	_	_
+@@ -195429,7 +195429,7 @@
+ 13-14	nos	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	_	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+-15	sub-grábens	sub-grábens	NOUN	_	Gender=Masc|Number=Plur	11	obl	_	_
++15	sub-grábens	sub-gráben	NOUN	_	Gender=Masc|Number=Plur	11	obl	_	_
+ 16-17	da	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	_	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+@@ -197081,7 +197081,7 @@
+ 
+ # text = Trabalhos de campo, por exemplo, envolvendo a busca sistemática de eventuais dados estruturais sobre os alinhamentos NW/SE, que são magneticamente mapeáveis, seriam de grande interesse na investigação de seu efeito sobre o processo de reativação.
+ # sent_id = 20-20140904-TESEDSC_0-280
+-1	Trabalhos	Trabalhos	NOUN	_	Gender=Masc|Number=Plur	29	nsubj	_	_
++1	Trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	29	nsubj	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	campo	campo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_
+ 4	,	,	PUNCT	_	_	5	punct	_	_
+@@ -200365,7 +200365,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-370
+ 1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+ 2	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_
+-3	melhora	melhora	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
++3	melhora	melhorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+ 5	casos	caso	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_
+ 6	onde	onde	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	7	nsubj	_	_
+@@ -202577,7 +202577,7 @@
+ 63-64	nas	_	_	_	_	_	_	_	_
+ 63	em	em	ADP	_	_	65	case	_	_
+ 64	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	65	det	_	_
+-65	coordenadas	coordenadas	NOUN	_	Gender=Fem|Number=Plur	58	obl	_	_
++65	coordenadas	coordenada	NOUN	_	Gender=Fem|Number=Plur	58	obl	_	_
+ 66	(	(	PUNCT	_	_	67	punct	_	_
+ 67	x0	x0	NUM	_	NumType=Card	65	appos	_	_
+ 68	,	,	PUNCT	_	_	69	punct	_	_
+@@ -202699,8 +202699,8 @@
+ 24-25	dos	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	27	case	_	_
+ 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
+-26	mínimos	mínimos	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	_
+-27	quadrados	quadrados	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_
++26	mínimos	mínimo	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	_
++27	quadrados	quadrado	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_
+ 28	por	por	ADP	_	_	30	case	_	_
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+ 30	estimador	estimador	NOUN	_	Gender=Masc|Number=Sing	20	obl:agent	_	_
+@@ -202840,7 +202840,7 @@
+ 40	aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	41	det	_	_
+ 41	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	33	appos	_	_
+ 42	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	43	nsubj	_	_
+-43	forma	forma	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	acl:relcl	_	_
++43	forma	formar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	acl:relcl	_	_
+ 44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+ 45	cluster	cluster	NOUN	_	Gender=Masc|Number=Sing	43	obj	_	_
+ 46	mais	mais	ADV	_	_	47	advmod	_	_
+@@ -203508,7 +203508,7 @@
+ 28	problema	problema	NOUN	_	Gender=Masc|Number=Sing	23	obl	_	_
+ 29	de	de	ADP	_	_	30	case	_	_
+ 30	mínimos	mínimo	NOUN	_	Gender=Masc|Number=Plur	28	nmod	_	_
+-31	quadrados	quadrados	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_
++31	quadrados	quadrado	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_
+ 32	.	.	PUNCT	_	_	1	punct	_	_
+ 
+ # text = Dependência entre profundidade da fonte e seu índice estrutural
+@@ -203879,7 +203879,7 @@
+ 1	Adicionalmente	adicionalmente	ADV	_	_	5	advmod	_	_
+ 2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+ 3	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_
+-4	verdes	verdes	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_
++4	verdes	verde	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_
+ 5	correspondem	corresponder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 6-7	às	_	_	_	_	_	_	_	_
+ 6	a	a	ADP	_	_	8	case	_	_
+@@ -204161,7 +204161,7 @@
+ 12	inverso	inverso	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_
+ 13	(	(	PUNCT	_	_	14	punct	_	_
+ 14	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	11	appos	_	_
+-15	verdes	verdes	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	_
++15	verdes	verde	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	_
+ 16	)	)	PUNCT	_	_	14	punct	_	_
+ 17	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 18	grande	grande	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_
+@@ -204264,7 +204264,7 @@
+ 3	método	método	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_
+ 4	(	(	PUNCT	_	_	5	punct	_	_
+ 5	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	3	appos	_	_
+-6	verdes	verdes	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_
++6	verdes	verde	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_
+ 7	)	)	PUNCT	_	_	5	punct	_	_
+ 8	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 9	também	também	ADV	_	_	8	advmod	_	_
+@@ -204678,7 +204678,7 @@
+ 9	estrutural	estrutural	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_
+ 10	(	(	PUNCT	_	_	11	punct	_	_
+ 11	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	8	appos	_	_
+-12	verdes	verdes	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_
++12	verdes	verde	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_
+ 13	)	)	PUNCT	_	_	11	punct	_	_
+ 14	,	,	PUNCT	_	_	17	punct	_	_
+ 15	como	como	SCONJ	_	_	17	mark	_	_
+@@ -205829,7 +205829,7 @@
+ 23	,	,	PUNCT	_	_	24	punct	_	_
+ 24	permitindo	permitir	VERB	_	VerbForm=Ger	20	advcl	_	_
+ 25	assim	assim	ADV	_	_	24	advmod	_	_
+-26	análises	anális	NOUN	_	Gender=Fem|Number=Plur	24	obj	_	_
++26	análises	análise	NOUN	_	Gender=Fem|Number=Plur	24	obj	_	_
+ 27	mais	mais	ADV	_	_	28	advmod	_	_
+ 28	consistentes	consistente	ADJ	_	Gender=Fem|Number=Plur	26	amod	_	_
+ 29-30	da	_	_	_	_	_	_	_	_
+@@ -205884,7 +205884,7 @@
+ 23	padrão	padrão	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_
+ 24	de	de	ADP	_	_	25	case	_	_
+ 25	mínimos	mínimo	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	_
+-26	quadrados	quadrados	NOUN	_	Gender=Masc|Number=Plur	25	compound	_	_
++26	quadrados	quadrado	NOUN	_	Gender=Masc|Number=Plur	25	compound	_	_
+ 27	,	,	PUNCT	_	_	38	punct	_	_
+ 28	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	30	det	_	_
+ 29	primeira	primeiro	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	30	amod	_	_
+@@ -210250,15 +210250,15 @@
+ 1	Algoritmo	algoritmo	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	inversão	inversão	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
+-4	baseado	basear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
++4	baseado	basear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+ 5-6	no	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	_	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+ 7	estimador	estimador	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_
+ 8	padrão	padrão	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_
+ 9	de	de	ADP	_	_	11	case	_	_
+-10	mínimos	mínimos	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_
+-11	quadrados	quadrados	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_
++10	mínimos	mínimo	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_
++11	quadrados	quadrado	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_
+ 12	(	(	PUNCT	_	_	13	punct	_	_
+ 13	MQ	MQ	PROPN	_	Gender=Masc|Number=Sing	11	appos	_	_
+ 14	)	)	PUNCT	_	_	13	punct	_	_
+@@ -210680,7 +210680,7 @@
+ 35-36	das	_	_	_	_	_	_	_	_
+ 35	de	de	ADP	_	_	37	case	_	_
+ 36	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
+-37	análises	anális	NOUN	_	Gender=Fem|Number=Plur	34	nmod	_	_
++37	análises	análise	NOUN	_	Gender=Fem|Number=Plur	34	nmod	_	_
+ 38	realizadas	realizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	37	acl	_	_
+ 39-40	nesta	_	_	_	_	_	_	_	_
+ 39	em	em	ADP	_	_	41	case	_	_
+@@ -215069,7 +215069,7 @@
+ 15	em	em	ADP	_	_	16	case	_	_
+ 16	forma	forma	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_
+ 17	de	de	ADP	_	_	18	case	_	_
+-18	cones	cones	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_
++18	cones	cone	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_
+ 19	.	.	PUNCT	_	_	3	punct	_	_
+ 
+ # text = Dentro deste mesmo contexto magmático se encontra a suíte alcalina da região de Arraial do Cabo que apresenta idade aproximada de 52 Ma (eoceno inferior) segundo datação Ar-Ar em rocha total (Ferrari, 2001).
+@@ -222141,7 +222141,7 @@
+ 9	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
+ 10	regionais	regional	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
+ 11	e	e	CCONJ	_	_	12	cc	_	_
+-12	sub-domínios	sub-domínios	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
++12	sub-domínios	sub-domínio	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
+ 13	associados	associar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
+ 14	,	,	PUNCT	_	_	13	punct	_	_
+ 15	cujas	cujo	DET	_	Gender=Fem|Number=Plur|PronType=Rel	16	det	_	_
+@@ -222998,7 +222998,7 @@
+ 4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	_
+ 5	subdivide	subdividir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 6	em	em	ADP	_	_	7	case	_	_
+-7	sub-domínios	sub-domínios	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_
++7	sub-domínios	sub-domínio	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_
+ 8	como	como	ADP	_	_	9	case	_	_
+ 9	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	xcomp	_	_
+ 10	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
+@@ -227145,7 +227145,7 @@
+ 26	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_
+ 27	associados	associar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	_
+ 28	a	a	ADP	_	_	29	case	_	_
+-29	diques	diques	NOUN	_	Gender=Masc|Number=Sing	27	obl:arg	_	_
++29	diques	dique	NOUN	_	Gender=Masc|Number=Sing	27	obl:arg	_	_
+ 30	.	.	PUNCT	_	_	4	punct	_	_
+ 
+ # text = Na porção leste da área, que recobre a região proximal SW da Bacia de Campos, foram interpretados corpos magmáticos intrudidos no embasamento que tende a se aprofundar suavemente para leste.
+@@ -227321,7 +227321,7 @@
+ 23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+ 24	enxames	enxame	NOUN	_	Gender=Masc|Number=Plur	21	obl	_	_
+ 25	de	de	ADP	_	_	26	case	_	_
+-26	diques	diques	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_
++26	diques	dique	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_
+ 27	.	.	PUNCT	_	_	9	punct	_	_
+ 
+ # text = Devido à complexidade e ao grande número destes corpos, foram representados no mapa, portanto, somente alguns exemplares dos mesmos em tom verde escuro.
+@@ -231183,7 +231183,7 @@
+ 15	forte	forte	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_
+ 16	refletor	refletor	NOUN	_	Gender=Masc|Number=Sing	12	xcomp	_	_
+ 17	de	de	ADP	_	_	18	case	_	_
+-18	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_
++18	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_
+ 19	sísmicas	sísmico	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	_
+ 20	,	,	PUNCT	_	_	21	punct	_	_
+ 21	impedindo	impedir	VERB	_	VerbForm=Ger	12	advcl	_	_
+@@ -235007,7 +235007,7 @@
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+ 25	forma	forma	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_
+ 26	de	de	ADP	_	_	27	case	_	_
+-27	diques	diques	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_
++27	diques	dique	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_
+ 28	.	.	PUNCT	_	_	13	punct	_	_
+ 
+ # text = O evento magmático toleítico do Cretáceo inferior, associado à fase rifte, que resultou no enxame de diques São Paulo-Rio de Janeiro responde maciçamente pelos alinhamentos magnéticos NE-SW preponderantes na área.
+@@ -237163,7 +237163,7 @@
+ 
+ # text = Perfis de inversão compacta, certamente, constituiriam elementos importantes para fortalecer a hipótese sobre a natureza magmática toleítica associada à zona de deformação da charneira.
+ # sent_id = 20-20140904-TESEDSC_0-1347
+-1	Perfis	perfis	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_
++1	Perfis	perfil	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	inversão	inversão	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
+ 4	compacta	compacto	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_
+@@ -246494,13 +246494,13 @@
+ # text = Fluidos Newtonianos
+ # sent_id = 119-20141209-TESEMSC_0-298
+ 1	Fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-2	Newtonianos	newtonianos	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
++2	Newtonianos	newtoniano	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 
+ # text = Para fluidos Newtonianos, como a água e o ar, a viscosidade é independente da taxa de cisalhamento.
+ # sent_id = 119-20141209-TESEMSC_0-299
+ 1	Para	para	ADP	_	_	2	case	_	_
+ 2	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	15	obl	_	_
+-3	Newtonianos	newtonianos	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++3	Newtonianos	newtoniano	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
+ 4	,	,	PUNCT	_	_	2	punct	_	_
+ 5	como	como	ADP	_	_	7	case	_	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+@@ -246580,7 +246580,7 @@
+ 2	,	,	PUNCT	_	_	1	punct	_	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+ 4	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_
+-5	Newtonianos	newtonianos	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_
++5	Newtonianos	newtoniano	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_
+ 6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+ 7	definidos	definir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 8-9	pela	_	_	_	_	_	_	_	_
+@@ -247792,7 +247792,7 @@
+ 
+ # text = Soluções poliméricas, ao contrário de fluidos como água e óleo, não apresentam a mesma viscosidade para todas as taxas de escoamento, seja em um capilar ou em um meio poroso.
+ # sent_id = 119-20141209-TESEMSC_0-349
+-1	Soluções	Soluções	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	_	_
++1	Soluções	solução	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	_	_
+ 2	poliméricas	polimérico	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	_
+ 3	,	,	PUNCT	_	_	6	punct	_	_
+ 4-5	ao	_	_	_	_	_	_	_	_
+@@ -264537,7 +264537,7 @@
+ 16	em	em	ADP	_	_	17	case	_	_
+ 17	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_
+ 18	e	e	CCONJ	_	_	19	cc	_	_
+-19	sais	sai	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_
++19	sais	sal	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_
+ 20	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	_	_
+ 21	em	em	ADP	_	_	23	case	_	_
+ 22	diversas	diverso	DET	_	Gender=Fem|Number=Plur|PronType=Ind	23	det	_	_
+@@ -266527,7 +266527,7 @@
+ 
+ # text = Menores taxas de penetração.
+ # sent_id = 240-20140220-MONOGRAFIA_0-86
+-1	Menores	menores	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
++1	Menores	pequeno	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
+ 2	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
+ 3	de	de	ADP	_	_	4	case	_	_
+ 4	penetração	penetração	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+@@ -268726,7 +268726,7 @@
+ 12	conhecidos	conhecer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	xcomp	_	_
+ 13	como	como	ADP	_	_	14	case	_	_
+ 14	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	12	xcomp	_	_
+-15	Newtonianos	newtonianos	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
++15	Newtonianos	newtoniano	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_
+ 16	.	.	PUNCT	_	_	11	punct	_	_
+ 
+ # text = A equação matemática desenvolvida por Newton está mostrada na Equação 2: (2)
+@@ -270980,7 +270980,7 @@
+ 7	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+ 8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+-10	sais	sai	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++10	sais	sal	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 11	quaternários	quaternário	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_
+ 12	de	de	ADP	_	_	13	case	_	_
+ 13	amônio	amônio	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_
+@@ -271890,7 +271890,7 @@
+ 1	2.4	2.4	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+ 3	ASPECTOS	aspecto	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	GERAIS	gerais	ADJ	_	Gender=Masc|Number=Plur	3	flat:foreign	_	_
++4	GERAIS	geral	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	SOBRE	sobre	ADP	_	_	6	case	_	_
+ 6	MICROEMULSÃO	microemulsão	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_
+ 
+@@ -274606,7 +274606,7 @@
+ # text = As análises reológicas, do ponto composto por 60% de n-Parafina mais 30% de Ultranex 40 e 10% de água salina a 35000 ppm de NaCl, foram divididas em duas partes: análise da influência da concentração de viscosificante sobre fluido de perfuração e análise comparativa dos tipos de viscosificante frente ao fluido produzido.
+ # sent_id = 240-20140220-MONOGRAFIA_0-358
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+-2	análises	anális	NOUN	_	Gender=Fem|Number=Plur	33	nsubj:pass	_	_
++2	análises	análise	NOUN	_	Gender=Fem|Number=Plur	33	nsubj:pass	_	_
+ 3	reológicas	reológico	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
+ 4	,	,	PUNCT	_	_	8	punct	_	_
+ 5-6	do	_	_	_	_	_	_	_	_
+@@ -277261,7 +277261,7 @@
+ 41-42	aos	_	_	_	_	_	_	_	_
+ 41	a	a	ADP	_	_	43	case	_	_
+ 42	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	43	det	_	_
+-43	seres	seres	NOUN	_	Gender=Masc|Number=Plur	39	obl	_	_
++43	seres	ser	NOUN	_	Gender=Masc|Number=Plur	39	obl	_	_
+ 44	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	43	amod	_	_
+ 45	e	e	CCONJ	_	_	48	cc	_	_
+ 46-47	ao	_	_	_	_	_	_	_	_
+@@ -277448,7 +277448,7 @@
+ 33	hoje	hoje	ADV	_	_	36	advmod	_	_
+ 34	já	já	ADV	_	_	36	advmod	_	_
+ 35	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	36	expl	_	_
+-36	nota	nota	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
++36	nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
+ 37	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
+ 38	mudança	mudança	NOUN	_	Gender=Fem|Number=Sing	36	nsubj	_	_
+ 39	climática	climático	ADJ	_	Gender=Fem|Number=Sing	38	amod	_	_
+@@ -278208,7 +278208,7 @@
+ 18-19	dos	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	_	_
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+-20	seres	seres	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_
++20	seres	ser	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_
+ 21	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	_
+ 22	atingidos	atingir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	20	acl	_	_
+ 23-24	pelo	_	_	_	_	_	_	_	_
+@@ -278901,10 +278901,10 @@
+ 58	variadas	variar	ADJ	_	Gender=Fem|Number=Plur	59	amod	_	_
+ 59	populações	população	NOUN	_	Gender=Fem|Number=Plur	54	nmod	_	_
+ 60	de	de	ADP	_	_	61	case	_	_
+-61	seres	seres	NOUN	_	Gender=Masc|Number=Plur	59	nmod	_	_
++61	seres	ser	NOUN	_	Gender=Masc|Number=Plur	59	nmod	_	_
+ 62	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	61	amod	_	_
+ 63	ou	ou	CCONJ	_	_	64	cc	_	_
+-64	seres	seres	NOUN	_	Gender=Masc|Number=Plur	61	conj	_	_
++64	seres	ser	NOUN	_	Gender=Masc|Number=Plur	61	conj	_	_
+ 65	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	66	nsubj	_	_
+ 66	necessitam	necessitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	59	acl:relcl	_	_
+ 67-68	deste	_	_	_	_	_	_	_	_
+@@ -279284,7 +279284,7 @@
+ 75-76	aos	_	_	_	_	_	_	_	_
+ 75	a	a	ADP	_	_	77	case	_	_
+ 76	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	77	det	_	_
+-77	seres	seres	NOUN	_	Gender=Masc|Number=Plur	71	obl:arg	_	_
++77	seres	ser	NOUN	_	Gender=Masc|Number=Plur	71	obl:arg	_	_
+ 78	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	77	amod	_	_
+ 79	e	e	CCONJ	_	_	81	cc	_	_
+ 80	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	81	det	_	_
+@@ -279968,7 +279968,7 @@
+ 14	acumulo	acumulo	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	_	_
+ 15	de	de	ADP	_	_	17	case	_	_
+ 16	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	_	_
+-17	seres	seres	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_
++17	seres	ser	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_
+ 18	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_
+ 19	como	como	ADP	_	_	21	case	_	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+@@ -279976,7 +279976,7 @@
+ 22	de	de	ADP	_	_	23	case	_	_
+ 23	plânctons	plâncton	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_
+ 24	-	-	PUNCT	_	_	25	punct	_	_
+-25	seres	seres	NOUN	_	Gender=Masc|Number=Plur	21	conj	_	_
++25	seres	ser	NOUN	_	Gender=Masc|Number=Plur	21	conj	_	_
+ 26	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	29	nsubj:pass	_	_
+ 27	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	_	_
+ 28	geralmente	geralmente	ADV	_	_	29	advmod	_	_
+@@ -279994,7 +279994,7 @@
+ 39	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	32	conj	_	_
+ 40	-	-	PUNCT	_	_	45	punct	_	_
+ 41	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	42	det	_	_
+-42	seres	seres	NOUN	_	Gender=Masc|Number=Plur	45	nsubj	_	_
++42	seres	ser	NOUN	_	Gender=Masc|Number=Plur	45	nsubj	_	_
+ 43	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	45	aux	_	_
+ 44	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	45	expl	_	_
+ 45	acumulados	acumular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	parataxis	_	_
+@@ -280227,7 +280227,7 @@
+ 14-15	dos	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	_	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+-16	seres	seres	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_
++16	seres	ser	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_
+ 17	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_
+ 18	(	(	PUNCT	_	_	19	punct	_	_
+ 19	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	_	_
+@@ -281075,7 +281075,7 @@
+ 5	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+ 6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+ 7	petróleos	petróleo	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+-8	crus	crus	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_
++8	crus	cru	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_
+ 9	e	e	CCONJ	_	_	11	cc	_	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+ 11	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+@@ -281369,7 +281369,7 @@
+ 19-20	das	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	_	_
+ 20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
+-21	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_
++21	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_
+ 22	,	,	PUNCT	_	_	23	punct	_	_
+ 23	habitats	habitat	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_
+ 24	,	,	PUNCT	_	_	23	punct	_	_
+@@ -282746,7 +282746,7 @@
+ 64	modeladoras	modelador	ADJ	_	Gender=Fem|Number=Plur	63	amod	_	_
+ 65	atuais	atual	ADJ	_	Gender=Fem|Number=Plur	63	amod	_	_
+ 66	(	(	PUNCT	_	_	67	punct	_	_
+-67	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	63	appos	_	_
++67	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	63	appos	_	_
+ 68	,	,	PUNCT	_	_	69	punct	_	_
+ 69	marés	maré	NOUN	_	Gender=Fem|Number=Plur	67	conj	_	_
+ 70	,	,	PUNCT	_	_	71	punct	_	_
+@@ -284142,12 +284142,12 @@
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+ 2	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_
+ 3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+-4	ambientes	ambiente	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_
++4	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 5-6	no	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	_	_
+ 6	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+ 7	qual	qual	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	8	obl	_	_
+-8	acontece	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
++8	acontece	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
+ 9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+ 10	grande	grande	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_
+ 11	produtividade	produtividade	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_
+@@ -284314,7 +284314,7 @@
+ 26-27	nos	_	_	_	_	_	_	_	_
+ 26	em	em	ADP	_	_	28	case	_	_
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
+-28	seres	seres	NOUN	_	Gender=Masc|Number=Plur	20	obl	_	_
++28	seres	ser	NOUN	_	Gender=Masc|Number=Plur	20	obl	_	_
+ 29	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	28	amod	_	_
+ 30	(	(	PUNCT	_	_	31	punct	_	_
+ 31	POSSOBOM	POSSOBOM	PROPN	_	Gender=Masc|Number=Sing	20	parataxis	_	_
+@@ -284383,7 +284383,7 @@
+ 53-54	das	_	_	_	_	_	_	_	_
+ 53	de	de	ADP	_	_	55	case	_	_
+ 54	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	55	det	_	_
+-55	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	52	obl	_	_
++55	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	52	obl	_	_
+ 56	,	,	PUNCT	_	_	58	punct	_	_
+ 57	e	e	CCONJ	_	_	58	cc	_	_
+ 58	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	52	conj	_	_
+@@ -284407,7 +284407,7 @@
+ 2	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	11	nsubj:pass	_	_
+ 3	por	por	SCONJ	_	_	5	mark	_	_
+ 4	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	5	cop	_	_
+-5	ambientes	ambiente	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++5	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	11	advcl	_	_
+ 6	protegidos	proteger	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	_
+ 7	,	,	PUNCT	_	_	6	punct	_	_
+ 8	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
+@@ -284419,7 +284419,7 @@
+ 14-15	das	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	_	_
+ 15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+-16	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_
++16	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_
+ 17	,	,	PUNCT	_	_	19	punct	_	_
+ 18	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	nsubj	_	_
+ 19	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+@@ -284612,7 +284612,7 @@
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+ 5	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+-7	seres	seres	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_
++7	seres	ser	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_
+ 8	vivos	vivo	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_
+ 9	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+ 10	habitam	habitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+@@ -284781,7 +284781,7 @@
+ 43	já	já	ADV	_	_	45	advmod	_	_
+ 44	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	45	nsubj	_	_
+ 45	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	advcl	_	_
+-46	ovos	ovos	NOUN	_	Gender=Masc|Number=Plur	45	obj	_	_
++46	ovos	ovo	NOUN	_	Gender=Masc|Number=Plur	45	obj	_	_
+ 47	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	48	nsubj	_	_
+ 48	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	46	acl:relcl	_	_
+ 49	suportar	suportar	VERB	_	VerbForm=Inf	48	xcomp	_	_
+@@ -284891,18 +284891,18 @@
+ # text = Os micros seres aquáticos como bactérias, microalgas e lavas, que fazem parte do plâncton, possuem por natureza uma dificuldade p a r a deslocar contra as correntes, devido seu tamanho, esses seres microscópicos são fontes de vitaminas e energia para os mais variados seres da cadeia alimentar.
+ # sent_id = 411-20150702-MONOGRAFIA_0-187
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+-2	micros	micro	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_
+-3	seres	seres	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
+-4	aquáticos	aquático	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++2	micros	micro	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
++3	seres	ser	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_
++4	aquáticos	aquático	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	como	como	ADP	_	_	6	case	_	_
+-6	bactérias	bactéria	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_
++6	bactérias	bactéria	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_
+ 7	,	,	PUNCT	_	_	8	punct	_	_
+ 8	microalgas	microalga	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_
+ 9	e	e	CCONJ	_	_	10	cc	_	_
+ 10	lavas	lava	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_
+ 11	,	,	PUNCT	_	_	6	punct	_	_
+ 12	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	13	nsubj	_	_
+-13	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
++13	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
+ 14	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	_	_
+@@ -284928,7 +284928,7 @@
+ 35	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	41	obl	_	_
+ 36	,	,	PUNCT	_	_	35	punct	_	_
+ 37	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	38	det	_	_
+-38	seres	seres	NOUN	_	Gender=Masc|Number=Plur	41	nsubj	_	_
++38	seres	ser	NOUN	_	Gender=Masc|Number=Plur	41	nsubj	_	_
+ 39	microscópicos	microscópico	ADJ	_	Gender=Masc|Number=Plur	38	amod	_	_
+ 40	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	_
+ 41	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	_
+@@ -284940,7 +284940,7 @@
+ 47	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	_	_
+ 48	mais	mais	ADV	_	_	49	advmod	_	_
+ 49	variados	variado	ADJ	_	Gender=Masc|Number=Plur	50	amod	_	_
+-50	seres	seres	NOUN	_	Gender=Masc|Number=Plur	41	nmod	_	_
++50	seres	ser	NOUN	_	Gender=Masc|Number=Plur	41	nmod	_	_
+ 51-52	da	_	_	_	_	_	_	_	_
+ 51	de	de	ADP	_	_	53	case	_	_
+ 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	_	_
+@@ -284967,7 +284967,7 @@
+ 13	,	,	PUNCT	_	_	9	punct	_	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+ 15	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	_	_
+-16	seres	seres	NOUN	_	Gender=Masc|Number=Plur	26	nsubj:pass	_	_
++16	seres	ser	NOUN	_	Gender=Masc|Number=Plur	26	nsubj:pass	_	_
+ 17	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	18	nsubj	_	_
+ 18	necessitam	necessitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_
+ 19-20	deles	_	_	_	_	_	_	_	_
+@@ -284993,7 +284993,7 @@
+ 3-4	nos	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	_	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+-5	seres	seres	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
++5	seres	ser	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
+ 6	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
+ 
+ # text = Alguns dos componentes do petróleo, como os compostos mais voláteis são altamente tóxicos, e se tornam cancerígenos quando são inalados e causam os efeitos crônicos (LEÃO, 2004).
+@@ -286109,7 +286109,7 @@
+ 11-12	nas	_	_	_	_	_	_	_	_
+ 11	em	em	ADP	_	_	13	case	_	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+-13	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_
++13	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_
+ 14-15	no	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	_	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+@@ -286348,7 +286348,7 @@
+ 
+ # text = Sais minerais dissolvidos em água aceleram a taxa de oxidação.
+ # sent_id = 411-20150702-MONOGRAFIA_0-230
+-1	Sais	sais	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_
++1	Sais	sal	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_
+ 2	minerais	mineral	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_
+ 3	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	_	_
+ 4	em	em	ADP	_	_	5	case	_	_
+@@ -287060,7 +287060,7 @@
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+ 17	energia	energia	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_
+ 18	de	de	ADP	_	_	19	case	_	_
+-19	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_
++19	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_
+ 20	e	e	CCONJ	_	_	21	cc	_	_
+ 21	marés	maré	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	_
+ 22	;	;	PUNCT	_	_	23	punct	_	_
+@@ -287207,7 +287207,7 @@
+ 7	rio	rio	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+ 8	vegetadas	vegetar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	_	_
+ 9	;	;	PUNCT	_	_	10	punct	_	_
+-10	Terraços	terraços	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_
++10	Terraços	terraço	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_
+ 11	alagadiços	alagadiço	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_
+ 12	,	,	PUNCT	_	_	13	punct	_	_
+ 13	banhados	banhar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	conj	_	_
+@@ -287458,8 +287458,8 @@
+ 8-9	dos	_	_	_	_	_	_	_	_
+ 8	de	de	SCONJ	_	_	11	mark	_	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+-10	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_
+-11	apresentarem	apresentar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	7	acl	_	_
++10	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_
++11	apresentarem	apresentar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	10	acl	_	_
+ 12	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_
+ 13	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_
+ 14	de	de	ADP	_	_	15	case	_	_
+@@ -287479,7 +287479,7 @@
+ 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
+ 26	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	_	_
+ 27	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	28	cop	_	_
+-28	ambientes	ambiente	ADJ	_	Gender=Masc|Number=Plur	23	acl	_	_
++28	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	23	acl	_	_
+ 29	onde	onde	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	31	obl	_	_
+ 30	não	não	ADV	_	Polarity=Neg	31	advmod	_	_
+ 31	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	advcl	_	_
+@@ -287487,7 +287487,7 @@
+ 33-34	das	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	_	_
+ 34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_
+-35	ondas	ondas	NOUN	_	Gender=Fem|Number=Plur	32	nmod	_	_
++35	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	32	nmod	_	_
+ 36	,	,	PUNCT	_	_	31	punct	_	_
+ 37	sendo	ser	AUX	_	VerbForm=Ger	47	cop	_	_
+ 38	assim	assim	ADV	_	_	37	fixed	_	_
+@@ -289355,7 +289355,7 @@
+ 31	(	(	PUNCT	_	_	32	punct	_	_
+ 32	duas	dois	NUM	_	NumType=Card	30	appos	_	_
+ 33	)	)	PUNCT	_	_	32	punct	_	_
+-34	pets	pets	NOUN	_	Gender=Fem|Number=Plur	23	obl	_	_
++34	pets	pet	NOUN	_	Gender=Fem|Number=Plur	23	obl	_	_
+ 35	.	.	PUNCT	_	_	14	punct	_	_
+ 
+ # text = Esse teste feito em uma piscina, teve um tempo de 1 (uma) hora.
+@@ -289393,7 +289393,7 @@
+ 9	de	de	ADP	_	_	11	case	_	_
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+ 11	garrafas	garrafa	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_
+-12	pets	pets	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_
++12	pets	pet	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_
+ 13	.	.	PUNCT	_	_	6	punct	_	_
+ 
+ # text = Figura 22: revestimento com filme de PVC
+@@ -290512,7 +290512,7 @@
+ 33	de	de	ADP	_	_	34	case	_	_
+ 34	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	_
+ 35	,	,	PUNCT	_	_	36	punct	_	_
+-36	sais	sai	NOUN	_	Gender=Masc|Number=Plur	34	conj	_	_
++36	sais	sal	NOUN	_	Gender=Masc|Number=Plur	34	conj	_	_
+ 37	e	e	CCONJ	_	_	39	cc	_	_
+ 38	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+ 39	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	32	conj	_	_
+@@ -290529,7 +290529,7 @@
+ 50-51	aos	_	_	_	_	_	_	_	_
+ 50	a	a	ADP	_	_	52	case	_	_
+ 51	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
+-52	seres	seres	NOUN	_	Gender=Masc|Number=Plur	49	obl	_	_
++52	seres	ser	NOUN	_	Gender=Masc|Number=Plur	49	obl	_	_
+ 53	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	52	amod	_	_
+ 54	e	e	CCONJ	_	_	56	cc	_	_
+ 55	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	_	_
+@@ -292364,7 +292364,7 @@
+ # sent_id = 243-20141015-MONOGRAFIA_1-60
+ 1	2.1.1.3	2.1.1.3	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Produtos	Produtos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++3	Produtos	produto	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
+ 4	químicos	químico	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	adicionados	adicionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	_	_
+ 
+@@ -293028,7 +293028,7 @@
+ 17	para	para	ADP	_	_	18	case	_	_
+ 18	remoção	remoção	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	_
+ 19	de	de	ADP	_	_	20	case	_	_
+-20	sais	sai	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_
++20	sais	sal	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_
+ 21	e	e	CCONJ	_	_	22	cc	_	_
+ 22	metais	metal	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	_
+ 23	,	,	PUNCT	_	_	14	punct	_	_
+@@ -294023,7 +294023,7 @@
+ 11	resina	resina	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_
+ 12	catiônica	catiônico	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_
+ 13	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	_	_
+-14	captura	captura	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
++14	captura	capturar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+ 16	íons	íom	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	_
+ 17	Ca2+	Ca2+	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	_
+@@ -294492,7 +294492,7 @@
+ 
+ # text = Sistemas de nanofiltragem muito utilizados são o de fluxo transverso em estruturas de celulose.
+ # sent_id = 243-20141015-MONOGRAFIA_1-136
+-1	Sistemas	Sistemas	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_
++1	Sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_
+ 2	de	de	ADP	_	_	3	case	_	_
+ 3	nanofiltragem	nanofiltragem	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
+ 4	muito	muito	ADV	_	_	5	advmod	_	_
+@@ -297522,7 +297522,7 @@
+ # sent_id = 243-20141015-MONOGRAFIA_1-244
+ 1	Coletas	coleta	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
+ 2	e	e	CCONJ	_	_	3	cc	_	_
+-3	análises	anális	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_
++3	análises	análise	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_
+ 4-5	das	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	_	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_

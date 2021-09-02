@@ -1,0 +1,697 @@
+commit ffd4df9f5ef3d04b08ab9d1a08fce31160931c34
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jun 23 20:10:18 2021 -0300
+
+    MWE bem como
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index b6ea396..81a73f0 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -23647,8 +23647,8 @@
+ 19	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
+ 20	fossilífero	fossilífero	ADJ	_	Gender=Masc|Number=Sing	19	amod	O	_
+ 21	,	,	PUNCT	_	_	26	punct	O	_
+-22	bem	bem	ADP	_	_	26	cc	O	_
+-23	como	como	ADV	_	_	22	fixed	O	_
++22	bem	bem	ADV	_	_	26	cc	O	MWEPOS=CCONJ
++23	como	como	ADP	_	_	22	fixed	O	_
+ 24	por	por	ADP	_	_	26	case	O	_
+ 25	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	26	det	O	_
+ 26	complexidade	complexidade	NOUN	_	Gender=Fem|Number=Sing	19	conj	O	_
+@@ -23937,8 +23937,8 @@
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+ 32	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	29	nmod	B=LITOLOGIA	_
+ 33	,	,	PUNCT	_	_	37	punct	O	_
+-34	bem	bem	ADP	_	_	37	case	O	_
+-35	como	como	ADV	_	_	34	fixed	O	_
++34	bem	bem	ADV	_	_	37	cc	O	MWEPOS=CCONJ
++35	como	como	ADP	_	_	34	fixed	O	_
+ 36	de	de	ADP	_	_	34	fixed	O	_
+ 37	fraturamentos	fraturamento	NOUN	_	Gender=Masc|Number=Plur	27	conj	O	_
+ 38	mais	mais	ADV	_	_	39	advmod	O	_
+@@ -31360,8 +31360,8 @@
+ 13	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 14	Romualdo	Romualdo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	20	punct	O	_
+-16	bem	bem	ADP	_	_	20	case	O	_
+-17	como	como	ADV	_	_	16	fixed	O	_
++16	bem	bem	ADV	_	_	20	cc	O	MWEPOS=CCONJ
++17	como	como	ADP	_	_	16	fixed	O	_
+ 18	quanto	quanto	ADV	_	_	20	advmod	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	delimitação	delimitação	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+@@ -46736,10 +46736,10 @@
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+ 8	dispersa	disperso	ADJ	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 9	,	,	PUNCT	_	_	13	punct	O	_
+-10	bem	bem	ADP	_	_	13	case	O	_
+-11	como	como	ADV	_	_	10	fixed	O	_
++10	bem	bem	ADV	_	_	13	cc	O	MWEPOS=CCONJ
++11	como	como	ADP	_	_	10	fixed	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+-13	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	5	nmod:appos	O	_
++13	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 14	básicos	básico	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	_
+ 15	e	e	CCONJ	_	_	18	cc	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+@@ -59364,8 +59364,8 @@
+ 23	substituição	substituição	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	O	_
+ 24	isomórfica	isomórfico	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
+ 25	,	,	PUNCT	_	_	29	punct	O	_
+-26	bem	bem	ADV	_	_	29	advmod	O	_
+-27	como	como	ADV	_	_	26	fixed	O	_
++26	bem	bem	ADV	_	_	29	cc	O	MWEPOS=CCONJ
++27	como	como	ADP	_	_	26	fixed	O	_
+ 28	estar	estar	AUX	_	VerbForm=Inf	29	cop	O	_
+ 29	presente	presente	ADJ	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 30	juntamente	juntamente	ADV	_	_	29	advmod	O	_
+@@ -59543,8 +59543,8 @@
+ 24	substituição	substituição	NOUN	_	Gender=Fem|Number=Sing	21	obj	O	_
+ 25	isomórfica	isomórfico	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+ 26	,	,	PUNCT	_	_	30	punct	O	_
+-27	bem	bem	ADP	_	_	30	cc	O	_
+-28	como	como	ADV	_	_	27	fixed	O	_
++27	bem	bem	ADV	_	_	30	cc	O	MWEPOS=CCONJ
++28	como	como	ADP	_	_	27	fixed	O	_
+ 29	estar	estar	AUX	_	VerbForm=Inf	30	cop	O	_
+ 30	presente	presente	ADJ	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 31	juntamente	juntamente	ADV	_	_	30	advmod	O	_
+@@ -60038,8 +60038,8 @@
+ 21	substituição	substituição	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
+ 22	isomórfica	isomórfico	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+ 23	,	,	PUNCT	_	_	27	punct	O	_
+-24	bem	bem	ADP	_	_	27	cc	O	_
+-25	como	como	ADV	_	_	24	fixed	O	_
++24	bem	bem	ADV	_	_	27	cc	O	MWEPOS=CCONJ
++25	como	como	ADP	_	_	24	fixed	O	_
+ 26	estar	estar	AUX	_	VerbForm=Inf	27	cop	O	_
+ 27	presente	presente	ADJ	_	Gender=Masc|Number=Sing	18	conj	O	_
+ 28	juntamente	juntamente	ADV	_	_	27	advmod	O	_
+@@ -60230,8 +60230,8 @@
+ 22	substituição	substituição	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+ 23	isomórfica	isomórfico	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
+ 24	,	,	PUNCT	_	_	28	punct	O	_
+-25	bem	bem	ADP	_	_	28	cc	O	_
+-26	como	como	ADV	_	_	25	fixed	O	_
++25	bem	bem	ADV	_	_	28	cc	O	MWEPOS=CCONJ
++26	como	como	ADP	_	_	25	fixed	O	_
+ 27	estar	estar	AUX	_	VerbForm=Inf	28	cop	O	_
+ 28	presente	presente	ADJ	_	Gender=Masc|Number=Sing	19	conj	O	_
+ 29	juntamente	juntamente	ADV	_	_	28	advmod	O	_
+@@ -60448,8 +60448,8 @@
+ 26	substituição	substituição	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
+ 27	isomórfica	isomórfico	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+ 28	,	,	PUNCT	_	_	32	punct	O	_
+-29	bem	bem	ADP	_	_	32	cc	O	_
+-30	como	como	ADV	_	_	29	fixed	O	_
++29	bem	bem	ADV	_	_	32	cc	O	MWEPOS=CCONJ
++30	como	como	ADP	_	_	29	fixed	O	_
+ 31	estar	estar	AUX	_	VerbForm=Inf	32	cop	O	_
+ 32	presente	presente	ADJ	_	Gender=Masc|Number=Sing	23	conj	O	_
+ 33	juntamente	juntamente	ADV	_	_	32	advmod	O	_
+@@ -67922,7 +67922,7 @@
+ 19	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	16	nmod	O	_
+ 20	estratigráficas	estratigráfico	ADJ	_	Gender=Fem|Number=Plur	19	amod	O	_
+ 21	,	,	PUNCT	_	_	25	punct	O	_
+-22	bem	bem	ADP	_	_	25	case	O	_
++22	bem	bem	ADV	_	_	25	cc	O	MWEPOS=CCONJ
+ 23	como	como	ADP	_	_	22	fixed	O	_
+ 24	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	25	det	O	_
+ 25	variações	variação	NOUN	_	Gender=Fem|Number=Plur	14	conj	O	_
+@@ -121486,7 +121486,7 @@
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+ 12	,	,	PUNCT	_	_	16	punct	O	_
+-13	bem	bem	ADP	_	_	16	case	O	_
++13	bem	bem	ADV	_	_	16	cc	O	MWEPOS=CCONJ
+ 14	como	como	ADP	_	_	13	fixed	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	4	conj	O	_
+@@ -121510,9 +121510,9 @@
+ 5	e	e	CCONJ	_	_	6	cc	O	_
+ 6	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 7	,	,	PUNCT	_	_	10	punct	O	_
+-8	bem	bem	ADP	_	_	10	case	O	_
++8	bem	bem	ADV	_	_	10	cc	O	MWEPOS=CCONJ
+ 9	como	como	ADP	_	_	8	fixed	O	_
+-10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	1	nmod:appos	O	_
++10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	1	conj	O	_
+ 11	hidráulico	hidráulico	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
+ 12	ainda	ainda	ADV	_	_	14	advmod	O	_
+ 13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	O	_
+@@ -137356,10 +137356,10 @@
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	13	nmod	B=QUÍMICA	_
+ 16	,	,	PUNCT	_	_	20	punct	O	_
+-17	bem	bem	ADP	_	_	20	case	O	_
++17	bem	bem	ADV	_	_	20	cc	O	MWEPOS=CCONJ
+ 18	como	como	ADP	_	_	17	fixed	O	_
+ 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
+-20	características	característica	NOUN	_	Gender=Fem|Number=Plur	9	nmod:appos	O	_
++20	características	característica	NOUN	_	Gender=Fem|Number=Plur	9	conj	O	_
+ 21	envolvidas	envolver	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	O	_
+ 22	durante	durante	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+@@ -137437,11 +137437,11 @@
+ 39	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	O	_
+ 40	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	37	obj	O	_
+ 41	,	,	PUNCT	_	_	46	punct	O	_
+-42	bem	bem	ADP	_	_	46	case	O	_
++42	bem	bem	ADV	_	_	46	cc	O	MWEPOS=CCONJ
+ 43	como	como	ADP	_	_	42	fixed	O	_
+ 44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	O	_
+ 45	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	46	det	O	_
+-46	análise	análise	NOUN	_	Gender=Fem|Number=Sing	37	obl	O	_
++46	análise	análise	NOUN	_	Gender=Fem|Number=Sing	40	conj	O	_
+ 47	e	e	CCONJ	_	_	55	cc	O	_
+ 48	por	por	ADP	_	_	49	case	O	_
+ 49	fim	fim	NOUN	_	Gender=Masc|Number=Sing	46	conj	O	_
+@@ -139255,10 +139255,10 @@
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	10	conj	B=FLUIDO	_
+ 13	,	,	PUNCT	_	_	17	punct	O	_
+-14	bem	bem	ADP	_	_	17	case	O	_
++14	bem	bem	ADV	_	_	17	cc	O	MWEPOS=CCONJ
+ 15	como	como	ADP	_	_	14	fixed	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	7	nmod:appos	O	_
++17	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+@@ -142460,7 +142460,7 @@
+ 
+ # text = Os fatores como o conteúdo de óleo da emulsão e a concentração do tensoativo, afetam a estabilidade de uma emulsão O/A. O aumento da concentração do tensoativo aumenta a estabilidade da emulsão até um limite. A emulsão inversa O/A, nos petróleos estudados pode ser obtida com até 65 % (v/v) de óleo na mistura e o uso de tensoativo adequado ocasionou uma diminuição da viscosidade de até dez vezes. O comportamento de uma emulsão é largamente controlado pelas propriedades da interface óleo-água e a estabilidade da emulsão depende de vários parâmetros, sendo que muitos deles já são bem entendidos, entretanto, aspectos reológicos, sobretudo de óleos mais pesados, bem como, dos sistemas asfaltenos/ácidos graxos mistos presentes, necessitam de estudos mais aprofundados..
+ # sent_id = 202-20140404-MONOGRAFIA_0-162
+-1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
++1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	O	_
+ 3	como	como	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -148569,13 +148569,13 @@
+ 1	Sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	2	det	O	sentenciação
+ 2	origem	origem	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+ 3	,	,	PUNCT	_	_	9	punct	O	_
+-4	bem	bem	ADP	_	_	9	case	O	_
++4	bem	bem	ADV	_	_	9	cc	O	MWEPOS=CCONJ
+ 5	como	como	ADP	_	_	4	fixed	O	_
+ 6-7	das	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	4	fixed	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+ 8	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	O	_
+-9	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	2	nmod	B=BACIA:TIPO	_
++9	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	2	conj	B=BACIA:TIPO	_
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -171809,10 +171809,10 @@
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	gota	gota	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 16	,	,	PUNCT	_	_	20	punct	O	_
+-17	bem	bem	ADP	_	_	20	case	O	_
++17	bem	bem	ADV	_	_	20	cc	O	MWEPOS=CCONJ
+ 18	como	como	ADP	_	_	17	fixed	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	geometria	geometria	NOUN	_	Gender=Fem|Number=Sing	9	nmod:appos	O	_
++20	geometria	geometria	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+@@ -178106,10 +178106,10 @@
+ 18	em	em	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	tubulação	tubulação	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+-21	bem	bem	ADV	_	_	24	advmod	O	_
+-22	como	como	ADP	_	_	24	case	O	_
++21	bem	bem	ADV	_	_	24	cc	O	MWEPOS=CCONJ
++22	como	como	ADP	_	_	21	fixed	O	_
+ 23	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	24	det	O	_
+-24	variações	variação	NOUN	_	Gender=Fem|Number=Plur	9	xcomp	O	_
++24	variações	variação	NOUN	_	Gender=Fem|Number=Plur	11	conj	O	_
+ 25	em	em	ADP	_	_	26	case	O	_
+ 26	decorrência	decorrência	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+ 27-28	da	_	_	_	_	_	_	_	_
+@@ -180254,10 +180254,10 @@
+ 10	R2	R2	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 11	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	10	acl	O	_
+ 12	,	,	PUNCT	_	_	16	punct	O	_
+-13	bem	bem	ADP	_	_	16	case	O	_
++13	bem	bem	ADV	_	_	16	cc	O	MWEPOS=CCONJ
+ 14	como	como	ADP	_	_	13	fixed	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+-16	valores	valor	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
++16	valores	valor	NOUN	_	Gender=Masc|Number=Plur	6	conj	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+ 18	n	n	NOUN	_	Gender=Masc|Number=Plur	16	nmod	O	_
+ 19	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	18	acl	O	_
+@@ -184828,10 +184828,10 @@
+ 10	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	O	_
+ 11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 12	,	,	PUNCT	_	_	16	punct	O	_
+-13	bem	bem	ADP	_	_	16	case	O	_
++13	bem	bem	ADV	_	_	16	cc	O	MWEPOS=CCONJ
+ 14	como	como	ADP	_	_	13	fixed	O	_
+ 15	seus	seu	DET	_	Gender=Masc|Number=Plur|PronType=Prs	16	det	O	_
+-16	modelos	modelo	NOUN	_	Gender=Masc|Number=Plur	3	nmod:appos	O	_
++16	modelos	modelo	NOUN	_	Gender=Masc|Number=Plur	3	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18	faixa	faixa	NOUN	_	Gender=Fem|Number=Sing	16	conj	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+@@ -190739,9 +190739,9 @@
+ 14	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 15	piloto	piloto	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+ 16	,	,	PUNCT	_	_	3	punct	O	_
+-17	bem	bem	ADV	_	_	19	advmod	O	_
+-18	como	como	SCONJ	_	_	19	mark	O	_
+-19	avaliar	avaliar	VERB	_	VerbForm=Inf	3	advcl	O	_
++17	bem	bem	ADV	_	_	19	cc	O	MWEPOS=CCONJ
++18	como	como	ADP	_	_	17	fixed	O	_
++19	avaliar	avaliar	VERB	_	VerbForm=Inf	3	conj	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	viabilidade	viabilidade	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+ 22	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+@@ -197280,10 +197280,10 @@
+ 41	não	não	ADV	_	Polarity=Neg	42	advmod	O	_
+ 42	reagidos	reagir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	40	acl	O	_
+ 43	,	,	PUNCT	_	_	47	punct	O	_
+-44	bem	bem	ADP	_	_	47	mark	O	_
+-45	como	como	ADV	_	_	44	fixed	O	_
++44	bem	bem	ADV	_	_	47	cc	O	MWEPOS=CCONJ
++45	como	como	ADP	_	_	44	fixed	O	_
+ 46	para	para	SCONJ	_	_	47	mark	O	_
+-47	certificarmos	certificar	VERB	_	Number=Plur|Person=1|VerbForm=Inf	23	advcl	O	_
++47	certificarmos	certificar	VERB	_	Number=Plur|Person=1|VerbForm=Inf	23	conj	O	_
+ 48-49	da	_	_	_	_	_	_	_	_
+ 48	de	de	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+@@ -200410,7 +200410,7 @@
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	fritura	fritura	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+ 18	,	,	PUNCT	_	_	22	punct	O	_
+-19	bem	bem	ADP	_	_	22	case	O	_
++19	bem	bem	ADV	_	_	22	cc	O	MWEPOS=CCONJ
+ 20	como	como	ADP	_	_	19	fixed	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+ 22	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	4	conj	O	_
+@@ -211174,7 +211174,7 @@
+ 23	e	e	CCONJ	_	_	24	cc	O	_
+ 24	refino	refino	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	_
+ 25	,	,	PUNCT	_	_	30	punct	O	_
+-26	bem	bem	ADP	_	_	30	case	O	_
++26	bem	bem	ADV	_	_	30	cc	O	MWEPOS=CCONJ
+ 27	como	como	ADP	_	_	26	fixed	O	_
+ 28	durante	durante	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+@@ -222013,10 +222013,10 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+ 15	zeólitas	zeólita	NOUN	_	Gender=Fem|Number=Plur	11	nmod	B=LITOLOGIA	_
+-16	bem	bem	ADV	_	_	19	advmod	O	_
+-17	como	como	ADP	_	_	19	case	O	_
++16	bem	bem	ADV	_	_	19	cc	O	MWEPOS=CCONJ
++17	como	como	ADP	_	_	16	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	7	xcomp	O	_
++19	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+ 21	amônia	amônia	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 22	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+@@ -286408,11 +286408,11 @@
+ 6	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	4	obl:agent	O	_
+ 7	mecânicos	mecânico	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 8	,	,	PUNCT	_	_	13	punct	O	_
+-9	bem	bem	ADP	_	_	13	case	O	_
++9	bem	bem	ADV	_	_	13	cc	O	MWEPOS=CCONJ
+ 10	como	como	ADP	_	_	9	fixed	O	_
+ 11	quaisquer	qualquer	DET	_	Gender=Fem|Number=Plur|PronType=Ind	13	det	O	_
+ 12	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	13	det	O	_
+-13	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	6	nmod:appos	O	_
++13	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	6	conj	O	_
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+@@ -288427,10 +288427,10 @@
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	reservatórios	reservatório	NOUN	_	Gender=Masc|Number=Plur	12	nmod	O	_
+ 15	,	,	PUNCT	_	_	19	punct	O	_
+-16	bem	bem	ADP	_	_	19	case	O	_
++16	bem	bem	ADV	_	_	19	cc	O	MWEPOS=CCONJ
+ 17	como	como	ADP	_	_	16	fixed	O	_
+ 18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	visão	visão	NOUN	_	Gender=Fem|Number=Sing	7	nmod:appos	O	_
++19	visão	visão	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 20	geral	geral	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
+ 21	sobre	sobre	ADP	_	_	22	case	O	_
+ 22	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	19	nmod	B=FLUIDO	_
+@@ -290861,10 +290861,10 @@
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+ 8	dispersa	disperso	ADJ	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 9	,	,	PUNCT	_	_	13	punct	O	_
+-10	bem	bem	ADP	_	_	13	case	O	_
+-11	como	como	ADV	_	_	10	fixed	O	_
++10	bem	bem	ADV	_	_	13	cc	O	MWEPOS=CCONJ
++11	como	como	ADP	_	_	10	fixed	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+-13	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	5	nmod:appos	O	_
++13	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 14	básicos	básico	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	_
+ 15	e	e	CCONJ	_	_	18	cc	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+@@ -293391,9 +293391,9 @@
+ 17	em	em	ADP	_	_	18	case	O	_
+ 18	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	16	nmod	B=INSTRUMENTO	_
+ 19	,	,	PUNCT	_	_	14	punct	O	_
+-20	bem	bem	ADV	_	_	22	advmod	O	_
+-21	como	como	SCONJ	_	_	22	mark	O	_
+-22	possuir	possuir	VERB	_	VerbForm=Inf	14	advcl	O	_
++20	bem	bem	ADV	_	_	22	cc	O	MWEPOS=CCONJ
++21	como	como	ADP	_	_	20	fixed	O	_
++22	possuir	possuir	VERB	_	VerbForm=Inf	14	conj	O	_
+ 23	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+ 24	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
+ 25	para	para	SCONJ	_	_	30	mark	O	_
+@@ -302979,10 +302979,10 @@
+ 13	de	de	ADP	_	_	14	case	I=FLUIDO	_
+ 14	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 15	,	,	PUNCT	_	_	19	punct	O	_
+-16	bem	bem	ADP	_	_	19	case	O	_
++16	bem	bem	ADV	_	_	19	cc	O	MWEPOS=CCONJ
+ 17	como	como	ADP	_	_	16	fixed	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	2	nmod:appos	B=FLUIDO	_
++19	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	2	conj	B=FLUIDO	_
+ 20	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	O	_
+ 21	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	cop	O	_
+ 22	citados	citar	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+@@ -306692,12 +306692,12 @@
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	medição	medição	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 21	,	,	PUNCT	_	_	26	punct	O	_
+-22	bem	bem	ADP	_	_	26	case	O	_
++22	bem	bem	ADV	_	_	26	cc	O	MWEPOS=CCONJ
+ 23	como	como	ADP	_	_	22	fixed	O	_
+ 24-25	à	_	_	_	_	_	_	_	_
+ 24	a	a	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	presença	presença	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++26	presença	presença	NOUN	_	Gender=Fem|Number=Sing	18	conj	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+ 28	umidade	umidade	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
+ 29-30	na	_	_	_	_	_	_	_	_
+@@ -308768,7 +308768,7 @@
+ 53	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	49	conj	O	_
+ 54	reverso	reverso	ADJ	_	Gender=Masc|Number=Sing	53	amod	O	_
+ 55	,	,	PUNCT	_	_	60	punct	O	_
+-56	bem	bem	ADP	_	_	60	case	O	_
++56	bem	bem	ADV	_	_	60	cc	O	MWEPOS=CCONJ
+ 57	como	como	ADP	_	_	56	fixed	O	_
+ 58-59	do	_	_	_	_	_	_	_	_
+ 58	de	de	ADP	_	_	60	case	O	_
+@@ -310093,8 +310093,8 @@
+ 45	invasão	invasão	NOUN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 46	(	(	PUNCT	_	_	53	punct	O	_
+ 47	,	,	PUNCT	_	_	53	punct	O	_
+-48	bem	bem	ADP	_	_	53	cc	O	_
+-49	como	como	ADV	_	_	48	fixed	O	_
++48	bem	bem	ADV	_	_	53	cc	O	MWEPOS=CCONJ
++49	como	como	ADP	_	_	48	fixed	O	_
+ 50-51	pela	_	_	_	_	_	_	_	_
+ 50	por	por	ADP	_	_	53	case	O	_
+ 51	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
+@@ -313997,10 +313997,10 @@
+ 12	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	13	det	O	_
+ 13	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 14	,	,	PUNCT	_	_	18	punct	O	_
+-15	bem	bem	ADP	_	_	18	case	O	_
++15	bem	bem	ADV	_	_	18	cc	O	MWEPOS=CCONJ
+ 16	como	como	ADP	_	_	15	fixed	O	_
+ 17	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	18	det	O	_
+-18	sugestões	sugestão	NOUN	_	Gender=Fem|Number=Plur	7	nmod:appos	O	_
++18	sugestões	sugestão	NOUN	_	Gender=Fem|Number=Plur	7	conj	O	_
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+ 20	recomendações	recomendação	NOUN	_	Gender=Fem|Number=Plur	18	conj	O	_
+ 21	elaboradas	elaborar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	O	_
+@@ -315429,8 +315429,8 @@
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	poço	poço	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 14	,	,	PUNCT	_	_	24	punct	O	_
+-15	bem	bem	ADP	_	_	24	cc	O	_
+-16	como	como	ADV	_	_	15	fixed	O	_
++15	bem	bem	ADV	_	_	24	cc	O	MWEPOS=CCONJ
++16	como	como	ADP	_	_	15	fixed	O	_
+ 17	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Tot	19	det	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+ 19	material	material	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	O	_
+@@ -317670,8 +317670,8 @@
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=FLUIDO	_
+ 15	,	,	PUNCT	_	_	20	punct	O	_
+-16	bem	bem	ADP	_	_	20	cc	O	_
+-17	como	como	ADV	_	_	16	fixed	O	_
++16	bem	bem	ADV	_	_	20	cc	O	MWEPOS=CCONJ
++17	como	como	ADP	_	_	16	fixed	O	_
+ 18	,	,	PUNCT	_	_	16	punct	O	_
+ 19	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	20	aux:pass	O	_
+ 20	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	conj	O	_
+@@ -324704,8 +324704,8 @@
+ 24	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	25	det	O	_
+ 25	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 26	,	,	PUNCT	_	_	31	punct	O	_
+-27	bem	bem	ADP	_	_	31	cc	O	_
+-28	como	como	ADV	_	_	27	fixed	O	_
++27	bem	bem	ADV	_	_	31	cc	O	MWEPOS=CCONJ
++28	como	como	ADP	_	_	27	fixed	O	_
+ 29	,	,	PUNCT	_	_	31	punct	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	construção	construção	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
+@@ -330225,10 +330225,10 @@
+ 18	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
+ 19	composição	composição	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 20	,	,	PUNCT	_	_	24	punct	O	_
+-21	bem	bem	ADP	_	_	24	case	O	_
++21	bem	bem	ADV	_	_	24	cc	O	MWEPOS=CCONJ
+ 22	como	como	ADP	_	_	21	fixed	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	volume	volume	NOUN	_	Gender=Masc|Number=Sing	19	nmod:appos	O	_
++24	volume	volume	NOUN	_	Gender=Masc|Number=Sing	8	conj	O	_
+ 25	vazado	vazar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	O	_
+ 26	,	,	PUNCT	_	_	28	punct	O	_
+ 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	O	_
+@@ -330664,12 +330664,12 @@
+ 50	região	região	NOUN	_	Gender=Fem|Number=Sing	47	obl	B=LOCAL:GEO	_
+ 51	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	50	amod	B=UNIDADE_LITOESTRATIGRÁFICA|I=LOCAL:GEO	_
+ 52	,	,	PUNCT	_	_	57	punct	O	_
+-53	bem	bem	ADP	_	_	57	case	O	_
++53	bem	bem	ADV	_	_	57	cc	O	MWEPOS=CCONJ
+ 54	como	como	ADP	_	_	53	fixed	O	_
+ 55-56	na	_	_	_	_	_	_	_	_
+ 55	em	em	ADP	_	_	57	case	O	_
+ 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
+-57	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	45	nmod:appos	O	_
++57	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	45	conj	O	_
+ 58	zooplanctonica	zooplanctonico	ADJ	_	Gender=Fem|Number=Sing	57	amod	O	_
+ 59	,	,	PUNCT	_	_	57	punct	O	_
+ 60	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	62	obl	O	_
+@@ -330696,10 +330696,10 @@
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	água	água	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B=FLUIDO	_
+ 10	,	,	PUNCT	_	_	14	punct	O	_
+-11	bem	bem	ADP	_	_	14	case	O	_
++11	bem	bem	ADV	_	_	14	cc	O	MWEPOS=CCONJ
+ 12	como	como	ADP	_	_	11	fixed	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	redução	redução	NOUN	_	Gender=Fem|Number=Sing	3	nmod:appos	O	_
++14	redução	redução	NOUN	_	Gender=Fem|Number=Sing	3	conj	O	_
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+@@ -331226,9 +331226,9 @@
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	31	nmod	B=FLUIDO	_
+ 34	,	,	PUNCT	_	_	37	punct	O	_
+-35	bem	bem	ADP	_	_	37	case	O	_
++35	bem	bem	ADV	_	_	37	cc	O	MWEPOS=CCONJ
+ 36	como	como	ADP	_	_	35	fixed	O	_
+-37	observações	observação	NOUN	_	Gender=Fem|Number=Plur	24	conj	O	_
++37	observações	observação	NOUN	_	Gender=Fem|Number=Plur	21	conj	O	_
+ 38-39	no	_	_	_	_	_	_	_	_
+ 38	em	em	ADP	_	_	40	case	O	_
+ 39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	O	_
+@@ -331474,10 +331474,10 @@
+ 36	altera	alterar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	O	_
+ 37	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	38	det	O	_
+ 38	composição	composição	NOUN	_	Gender=Fem|Number=Sing	36	obj	O	_
+-39	bem	bem	ADV	_	_	42	advmod	O	_
+-40	como	como	ADP	_	_	42	case	O	_
++39	bem	bem	ADV	_	_	42	cc	O	MWEPOS=CCONJ
++40	como	como	ADP	_	_	39	fixed	O	_
+ 41	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	42	det	O	_
+-42	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	36	xcomp	O	_
++42	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	38	conj	O	_
+ 43	físico-químicas	físico-químico	ADJ	_	Gender=Fem|Number=Plur	42	amod	O	_
+ 44	.	.	PUNCT	_	_	27	punct	O	_
+ 45	.	.	PUNCT	_	_	27	punct	O	_
+@@ -332002,9 +332002,9 @@
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
+ 20	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+ 21	sensíveis	sensível	ADJ	_	Gender=Masc|Number=Plur	20	amod	O	_
+-22	bem	bem	ADV	_	_	24	advmod	O	_
+-23	como	como	SCONJ	_	_	24	mark	O	_
+-24	alertar	alertar	VERB	_	VerbForm=Inf	12	advcl	O	_
++22	bem	bem	ADV	_	_	24	cc	O	MWEPOS=CCONJ
++23	como	como	ADP	_	_	22	fixed	O	_
++24	alertar	alertar	VERB	_	VerbForm=Inf	12	conj	O	_
+ 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
+ 26	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	24	obj	O	_
+ 27-28	do	_	_	_	_	_	_	_	_
+@@ -332292,10 +332292,10 @@
+ 23	físico	físico	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 24	químicas	químico	ADJ	_	Gender=Fem|Number=Plur	22	amod	O	_
+ 25	,	,	PUNCT	_	_	29	punct	O	_
+-26	bem	bem	ADP	_	_	29	case	O	_
++26	bem	bem	ADV	_	_	29	cc	O	MWEPOS=CCONJ
+ 27	como	como	ADP	_	_	26	fixed	O	_
+ 28	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	29	det	O	_
+-29	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	13	obl	O	_
++29	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	16	conj	O	_
+ 30-31	da	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+@@ -333109,9 +333109,9 @@
+ 70	%	%	SYM	_	_	65	nmod:appos	O	_
+ 71	)	)	PUNCT	_	_	67	punct	O	_
+ 72	,	,	PUNCT	_	_	75	punct	O	_
+-73	bem	bem	ADP	_	_	75	cc	O	MWE=bem_como|MWEPOS=CCONJ
++73	bem	bem	ADV	_	_	75	cc	O	MWE=bem_como|MWEPOS=CCONJ
+ 74	como	como	ADP	_	_	73	fixed	O	_
+-75	metais	metal	NOUN	_	Gender=Masc|Number=Plur	65	nmod:appos	O	_
++75	metais	metal	NOUN	_	Gender=Masc|Number=Plur	48	conj	O	_
+ 76	como	como	ADP	_	_	77	case	O	_
+ 77	vanádio	vanádio	NOUN	_	Gender=Masc|Number=Sing	75	nmod:appos	O	_
+ 78	(	(	PUNCT	_	_	79	punct	O	_
+@@ -334314,9 +334314,9 @@
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+-17	bem	bem	ADV	_	_	19	advmod	O	_
+-18	como	como	SCONJ	_	_	19	mark	O	_
+-19	persistir	persistir	VERB	_	VerbForm=Inf	10	advcl	O	_
++17	bem	bem	ADV	_	_	19	cc	O	MWEPOS=CCONJ
++18	como	como	ADP	_	_	17	fixed	O	_
++19	persistir	persistir	VERB	_	VerbForm=Inf	10	conj	O	_
+ 20-21	no	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+@@ -335515,13 +335515,13 @@
+ 18	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	17	amod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	Icapuí	Icapuí	PROPN	_	Gender=Unsp|Number=Sing	17	nmod	O	_
+-21	bem	bem	ADP	_	_	23	case	O	_
++21	bem	bem	ADV	_	_	26	cc	O	MWEPOS=CCONJ
+ 22	como	como	ADP	_	_	21	fixed	O	_
+-23	dentro	dentro	ADV	_	_	8	advmod	O	_
++23	dentro	dentro	ADV	_	_	26	advmod	O	_
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	estuário	estuário	NOUN	_	Gender=Masc|Number=Sing	23	obl	O	_
++26	estuário	estuário	NOUN	_	Gender=Masc|Number=Sing	17	conj	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+ 28	barra	barra	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
+ 29	grande	grande	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
+@@ -337755,10 +337755,10 @@
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	derrame	derrame	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 17	,	,	PUNCT	_	_	21	punct	O	_
+-18	bem	bem	ADP	_	_	21	case	O	_
++18	bem	bem	ADV	_	_	21	cc	O	MWEPOS=CCONJ
+ 19	como	como	ADP	_	_	18	fixed	O	_
+ 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
+-21	insumos	insumo	NOUN	_	Gender=Masc|Number=Plur	11	nmod:appos	O	_
++21	insumos	insumo	NOUN	_	Gender=Masc|Number=Plur	16	conj	O	_
+ 22	necessários	necessário	ADJ	_	Gender=Masc|Number=Plur	21	amod	O	_
+ 23	,	,	PUNCT	_	_	21	punct	O	_
+ 24	pois	pois	SCONJ	_	_	28	mark	O	_
+@@ -338628,10 +338628,10 @@
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	B=FLUIDO	_
+ 21	,	,	PUNCT	_	_	25	punct	O	_
+-22	bem	bem	ADP	_	_	25	case	O	_
++22	bem	bem	ADV	_	_	25	cc	O	MWEPOS=CCONJ
+ 23	como	como	ADP	_	_	22	fixed	O	_
+ 24	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	25	det	O	_
+-25	variação	variação	NOUN	_	Gender=Fem|Number=Sing	14	nmod:appos	O	_
++25	variação	variação	NOUN	_	Gender=Fem|Number=Sing	14	conj	O	_
+ 26	com	com	SCONJ	_	_	28	mark	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+ 28	passar	passar	VERB	_	VerbForm=Inf	25	acl	O	_
+@@ -339398,7 +339398,7 @@
+ 40	de	de	ADP	_	_	41	case	O	_
+ 41	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 42	,	,	PUNCT	_	_	46	punct	O	_
+-43	bem	bem	ADP	_	_	46	case	O	_
++43	bem	bem	ADV	_	_	46	cc	O	MWEPOS=CCONJ
+ 44	como	como	ADP	_	_	43	fixed	O	_
+ 45	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	46	det	O	_
+ 46	graus	grau	NOUN	_	Gender=Masc|Number=Plur	33	conj	O	_
+@@ -339916,7 +339916,7 @@
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+ 29	lamina	lamina	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
+ 30	d’água	doáguo	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+-31	bem	bem	ADP	_	_	34	case	O	_
++31	bem	bem	ADV	_	_	34	cc	O	MWEPOS=CCONJ
+ 32	como	como	ADP	_	_	31	fixed	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+ 34	turbulência	turbulência	NOUN	_	Gender=Fem|Number=Sing	23	conj	O	_
+@@ -340779,9 +340779,9 @@
+ 59	de	de	ADP	_	_	60	case	O	_
+ 60	vida	vida	NOUN	_	Gender=Fem|Number=Sing	58	nmod	O	_
+ 61	,	,	PUNCT	_	_	64	punct	O	_
+-62	bem	bem	ADP	_	_	64	case	O	_
++62	bem	bem	ADV	_	_	64	cc	O	MWEPOS=CCONJ
+ 63	como	como	ADP	_	_	62	fixed	O	_
+-64	áreas	área	NOUN	_	Gender=Fem|Number=Plur	58	nmod:appos	O	_
++64	áreas	área	NOUN	_	Gender=Fem|Number=Plur	37	conj	O	_
+ 65	de	de	ADP	_	_	66	case	O	_
+ 66	alimentação	alimentação	NOUN	_	Gender=Fem|Number=Sing	64	nmod	O	_
+ 67	,	,	PUNCT	_	_	68	punct	O	_
+@@ -343719,9 +343719,9 @@
+ 20	espécies	espécie	NOUN	_	Gender=Fem|Number=Plur	15	nmod	O	_
+ 21	marítimas	marítimo	ADJ	_	Gender=Fem|Number=Plur	20	amod	O	_
+ 22	,	,	PUNCT	_	_	25	punct	O	_
+-23	bem	bem	ADP	_	_	25	case	O	_
++23	bem	bem	ADV	_	_	25	cc	O	MWEPOS=CCONJ
+ 24	como	como	ADP	_	_	23	fixed	O	_
+-25	aves	ave	NOUN	_	Gender=Fem|Number=Plur	13	xcomp	O	_
++25	aves	ave	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
+ 26	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	27	nsubj	O	_
+ 27	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	O	_
+ 28-29	das	_	_	_	_	_	_	_	_
+@@ -344330,10 +344330,10 @@
+ 38	de	de	ADP	_	_	40	case	O	_
+ 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
+ 40	barreira	barreira	NOUN	_	Gender=Fem|Number=Sing	37	nmod	O	_
+-41	bem	bem	ADV	_	_	44	advmod	O	_
+-42	como	como	ADP	_	_	44	case	O	_
++41	bem	bem	ADV	_	_	44	cc	O	MWEPOS=CCONJ
++42	como	como	ADP	_	_	41	fixed	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+-44	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	31	xcomp	O	_
++44	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	33	conj	O	_
+ 45-46	da	_	_	_	_	_	_	_	_
+ 45	de	de	SCONJ	_	_	49	mark	O	_
+ 46	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	O	_
+@@ -345432,10 +345432,10 @@
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	produção	produção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 17	,	,	PUNCT	_	_	21	punct	O	_
+-18	bem	bem	ADP	_	_	21	case	O	_
++18	bem	bem	ADV	_	_	21	cc	O	MWEPOS=CCONJ
+ 19	como	como	ADP	_	_	18	fixed	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	estágio	estágio	NOUN	_	Gender=Masc|Number=Sing	11	nmod:appos	O	_
++21	estágio	estágio	NOUN	_	Gender=Masc|Number=Sing	11	conj	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	vida	vida	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24-25	do	_	_	_	_	_	_	_	_

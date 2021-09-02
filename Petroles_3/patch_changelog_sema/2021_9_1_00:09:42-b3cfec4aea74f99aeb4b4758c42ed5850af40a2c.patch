@@ -1,0 +1,1814 @@
+commit b3cfec4aea74f99aeb4b4758c42ed5850af40a2c
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Sep 1 00:09:42 2021 -0300
+
+    Sentenciação corrigida de frases que terminavam com Fm.
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 1ab910f..6d27918 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -62663,47 +62663,44 @@
+ 33	Fé	Fé	PROPN	_	Number=Sing	31	flat:name	O	_
+ 34	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Rochas da Fm.
++# text = Rochas da Fm. Abaeté foram descritas principalmente na região de Cana Brava, Município de João Pinheiro (MG), onde ocorrem com relativa frequência e com espessuras significativas.
+ # sent_id = 283-20150917-MONOGRAFIA_0-125
+-1	Rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++1	Rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	8	nsubj:pass	O	_
+ 2-3	da	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Abaeté foram descritas principalmente na região de Cana Brava, Município de João Pinheiro (MG), onde ocorrem com relativa frequência e com espessuras significativas.
+-# sent_id = 283-20150917-MONOGRAFIA_0-126
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	3	nsubj:pass	O	_
+-2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	aux:pass	O	_
+-3	descritas	descrever	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-4	principalmente	principalmente	ADV	_	_	3	advmod	O	_
+-5-6	na	_	_	_	_	_	_	_	_
+-5	em	em	ADP	_	_	7	case	O	_
+-6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	região	região	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-8	de	de	ADP	_	_	9	case	O	_
+-9	Cana	Cana	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-10	Brava	Brava	PROPN	_	Number=Sing	9	flat:name	O	_
+-11	,	,	PUNCT	_	_	12	punct	O	_
+-12	Município	município	NOUN	_	Gender=Masc|Number=Sing	9	appos	O	_
++5	.	.	PUNCT	_	_	4	flat:name	O	_
++6	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	4	flat:name	O	_
++7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	O	_
++8	descritas	descrever	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
++9	principalmente	principalmente	ADV	_	_	8	advmod	O	_
++10-11	na	_	_	_	_	_	_	_	_
++10	em	em	ADP	_	_	12	case	O	_
++11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
++12	região	região	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+-14	João	João	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+-15	Pinheiro	Pinheiro	PROPN	_	Number=Sing	14	flat:name	O	_
+-16	(	(	PUNCT	_	_	17	punct	O	_
+-17	MG	MG	PROPN	_	Gender=Masc|Number=Sing	14	nmod:appos	O	_
+-18	)	)	PUNCT	_	_	17	punct	O	_
+-19	,	,	PUNCT	_	_	3	punct	O	_
+-20	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	O	_
+-21	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	O	_
+-22	com	com	ADP	_	_	24	case	O	_
+-23	relativa	relativo	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+-24	frequência	frequência	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+-25	e	e	CCONJ	_	_	27	cc	O	_
+-26	com	com	ADP	_	_	27	case	O	_
+-27	espessuras	espessura	NOUN	_	Gender=Fem|Number=Plur	24	conj	O	_
+-28	significativas	significativo	ADJ	_	Gender=Fem|Number=Plur	27	amod	O	_
+-29	.	.	PUNCT	_	_	3	punct	O	_
++14	Cana	Cana	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
++15	Brava	Brava	PROPN	_	Number=Sing	14	flat:name	O	_
++16	,	,	PUNCT	_	_	17	punct	O	_
++17	Município	município	NOUN	_	Gender=Masc|Number=Sing	14	appos	O	_
++18	de	de	ADP	_	_	19	case	O	_
++19	João	João	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
++20	Pinheiro	Pinheiro	PROPN	_	Number=Sing	19	flat:name	O	_
++21	(	(	PUNCT	_	_	22	punct	O	_
++22	MG	MG	PROPN	_	Gender=Masc|Number=Sing	19	nmod:appos	O	_
++23	)	)	PUNCT	_	_	22	punct	O	_
++24	,	,	PUNCT	_	_	8	punct	O	_
++25	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	26	nsubj	O	_
++26	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	O	_
++27	com	com	ADP	_	_	29	case	O	_
++28	relativa	relativo	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
++29	frequência	frequência	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
++30	e	e	CCONJ	_	_	32	cc	O	_
++31	com	com	ADP	_	_	32	case	O	_
++32	espessuras	espessura	NOUN	_	Gender=Fem|Number=Plur	29	conj	O	_
++33	significativas	significativo	ADJ	_	Gender=Fem|Number=Plur	32	amod	O	_
++34	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Próximo a Presidente Olegário (MG) foram descritos neste estudo pacotes siliciclásticos relativamente espessos (até 60 m) pertencentes a esta formação.
+ # sent_id = 283-20150917-MONOGRAFIA_0-127
+@@ -62757,7 +62754,7 @@
+ 17	reduzidas	reduzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	16	acl	O	_
+ 18	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = Em campo foram descritos 20 pontos pertencentes à Fm.
++# text = Em campo foram descritos 20 pontos pertencentes à Fm. Abaeté (Figura 4).
+ # sent_id = 283-20150917-MONOGRAFIA_0-129
+ 1	Em	em	ADP	_	_	2	case	O	_
+ 2	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	obl	B=BACIA	_
+@@ -62770,16 +62767,12 @@
+ 8	a	a	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	4	obl	O	_
+-11	.	.	PUNCT	_	_	4	punct	O	_
+-
+-# text = Abaeté (Figura 4).
+-# sent_id = 283-20150917-MONOGRAFIA_0-130
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	(	(	PUNCT	_	_	3	punct	O	_
+-3	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	sentenciação
+-4	4	4	NUM	_	NumType=Card	3	nummod	O	_
+-5	)	)	PUNCT	_	_	3	punct	O	_
+-6	.	.	PUNCT	_	_	1	punct	O	_
++11	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	10	flat:name	O	_
++12	(	(	PUNCT	_	_	13	punct	O	_
++13	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	10	appos	O	_
++14	4	4	NUM	_	NumType=Card	13	nummod	O	_
++15	)	)	PUNCT	_	_	13	punct	O	_
++16	.	.	PUNCT	_	_	4	punct	O	_
+ 
+ # text = Dentre estes pontos, em 10 foram feitas estações de paleocorrentes, totalizando 238 medidas.
+ # sent_id = 283-20150917-MONOGRAFIA_0-131
+@@ -62800,7 +62793,7 @@
+ 15	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	13	obj	O	_
+ 16	.	.	PUNCT	_	_	8	punct	O	_
+ 
+-# text = Também foram levantadas duas seções-colunares que abrangeram sedimentos da Fm.
++# text = Também foram levantadas duas seções-colunares que abrangeram sedimentos da Fm. Abaeté: seção-colunar Córrego Tiririca (Figura 6) e seção-colunar Chapadão (Figura 7).
+ # sent_id = 283-20150917-MONOGRAFIA_0-132
+ 1	Também	também	ADV	_	_	3	advmod	O	_
+ 2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	aux:pass	O	_
+@@ -62814,27 +62807,23 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-12	.	.	PUNCT	_	_	3	punct	O	_
+-
+-# text = Abaeté: seção-colunar Córrego Tiririca (Figura 6) e seção-colunar Chapadão (Figura 7).
+-# sent_id = 283-20150917-MONOGRAFIA_0-133
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	:	:	PUNCT	_	_	3	punct	O	_
+-3	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
+-4	Córrego	Córrego	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+-5	Tiririca	Tiririca	PROPN	_	Number=Sing	4	flat:name	O	_
+-6	(	(	PUNCT	_	_	7	punct	O	_
+-7	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	O	_
+-8	6	6	NUM	_	NumType=Card	7	nummod	O	_
+-9	)	)	PUNCT	_	_	7	punct	O	_
+-10	e	e	CCONJ	_	_	11	cc	O	_
+-11	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	3	conj	O	_
+-12	Chapadão	Chapadão	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+-13	(	(	PUNCT	_	_	14	punct	O	_
+-14	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	O	_
+-15	7	7	NUM	_	NumType=Card	14	nummod	O	_
+-16	)	)	PUNCT	_	_	14	punct	O	_
+-17	.	.	PUNCT	_	_	1	punct	O	_
++12	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	flat:name	O	_
++13	:	:	PUNCT	_	_	14	punct	O	_
++14	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	5	appos	O	_
++15	Córrego	Córrego	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
++16	Tiririca	Tiririca	PROPN	_	Number=Sing	15	flat:name	O	_
++17	(	(	PUNCT	_	_	18	punct	O	_
++18	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	14	parataxis	O	_
++19	6	6	NUM	_	NumType=Card	18	nummod	O	_
++20	)	)	PUNCT	_	_	18	punct	O	_
++21	e	e	CCONJ	_	_	22	cc	O	_
++22	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	14	conj	O	_
++23	Chapadão	Chapadão	PROPN	_	Gender=Masc|Number=Sing	22	nmod	O	_
++24	(	(	PUNCT	_	_	25	punct	O	_
++25	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	22	parataxis	O	_
++26	7	7	NUM	_	NumType=Card	25	nummod	O	_
++27	)	)	PUNCT	_	_	25	punct	O	_
++28	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = A Seção-colunar Córrego Tiririca localiza-se a aproximadamente 12,6
+ # sent_id = 283-20150917-MONOGRAFIA_0-134
+@@ -62896,7 +62885,7 @@
+ 21	Tiririca	Tiririca	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = A seção-colunar Córrego Tiririca apresenta 42 m de espessura, uma das maiores observadas neste estudo para a Fm.
++# text = A seção-colunar Córrego Tiririca apresenta 42 m de espessura, uma das maiores observadas neste estudo para a Fm. Abaeté na área, e abrangeu quase todo o pacote sedimentar desta formação.
+ # sent_id = 283-20150917-MONOGRAFIA_0-137
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	O	_
+@@ -62921,30 +62910,27 @@
+ 19	para	para	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	15	obl	O	_
+-22	.	.	PUNCT	_	_	5	punct	O	_
+-
+-# text = Abaeté na área, e abrangeu quase todo o pacote sedimentar desta formação.
+-# sent_id = 283-20150917-MONOGRAFIA_0-138
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2-3	na	_	_	_	_	_	_	_	_
+-2	em	em	ADP	_	_	4	case	O	_
+-3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	área	área	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	,	,	PUNCT	_	_	7	punct	O	_
+-6	e	e	CCONJ	_	_	7	cc	O	_
+-7	abrangeu	abranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	O	_
+-8	quase	quase	ADV	_	_	7	advmod	O	_
+-9	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Tot	11	det	O	_
+-10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	7	obj	O	_
+-12	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+-13-14	desta	_	_	_	_	_	_	_	_
+-13	de	de	ADP	_	_	15	case	O	_
+-14	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	O	_
+-15	formação	formação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-16	.	.	PUNCT	_	_	1	punct	O	_
++22	.	.	PUNCT	_	_	21	flat:name	O	_
++23	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	21	flat:name	O	_
++24-25	na	_	_	_	_	_	_	_	_
++24	em	em	ADP	_	_	26	case	O	_
++25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
++26	área	área	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++27	,	,	PUNCT	_	_	29	punct	O	_
++28	e	e	CCONJ	_	_	29	cc	O	_
++29	abrangeu	abranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	conj	O	_
++30	quase	quase	ADV	_	_	29	advmod	O	_
++31	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Tot	33	det	O	_
++32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
++33	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	29	obj	O	_
++34	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	33	amod	O	_
++35-36	desta	_	_	_	_	_	_	_	_
++35	de	de	ADP	_	_	37	case	O	_
++36	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	37	det	O	_
++37	formação	formação	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
++38	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = A seção assenta-se sobre filitos do embasamento e pode ser considerada seção representativa da Fm.
++# text = A seção assenta-se sobre filitos do embasamento e pode ser considerada seção representativa da Fm. Abaeté para a área estudada.
+ # sent_id = 283-20150917-MONOGRAFIA_0-139
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	seção	seção	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+@@ -62967,16 +62953,12 @@
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 18	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-19	.	.	PUNCT	_	_	3	punct	O	_
+-
+-# text = Abaeté para a área estudada.
+-# sent_id = 283-20150917-MONOGRAFIA_0-140
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	para	para	ADP	_	_	4	case	O	_
+-3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	área	área	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	estudada	estudar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	O	_
+-6	.	.	PUNCT	_	_	1	punct	O	_
++19	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	18	flat:name	O	_
++20	para	para	ADP	_	_	22	case	O	_
++21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
++22	área	área	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
++23	estudada	estudar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	22	acl	O	_
++24	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = Abaeté podem ser subdivididos em dois pacotes distintos devido a associações de fácies.
+ # sent_id = 283-20150917-MONOGRAFIA_0-142
+@@ -63097,7 +63079,7 @@
+ 20	marcada	marcar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	acl	O	_
+ 21	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = A base da seção-colunar Chapadão compreende sedimentos da Fm.
++# text = A base da seção-colunar Chapadão compreende sedimentos da Fm. Abaeté, sendo nesta seção possível observar o contato superior entre esta formação e a Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-147
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	base	base	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
+@@ -63112,81 +63094,75 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-12	.	.	PUNCT	_	_	7	punct	O	_
+-
+-# text = Abaeté, sendo nesta seção possível observar o contato superior entre esta formação e a Fm. Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-148
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	,	,	PUNCT	_	_	6	punct	O	_
+-3	sendo	ser	AUX	_	VerbForm=Ger	6	cop	O	_
+-4-5	nesta	_	_	_	_	_	_	_	_
+-4	em	em	ADP	_	_	6	case	O	_
+-5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	O	_
+-6	seção	seção	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-7	possível	possível	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
+-8	observar	observar	VERB	_	VerbForm=Inf	1	acl	O	_
+-9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	contato	contato	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+-11	superior	alto	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
+-12	entre	entre	ADP	_	_	14	case	O	_
+-13	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	O	_
+-14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+-15	e	e	CCONJ	_	_	17	cc	O	_
+-16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-18	.	.	PUNCT	_	_	19	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-19	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	17	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-20	.	.	PUNCT	_	_	1	punct	O	_
++12	.	.	PUNCT	_	_	11	flat:name	O	_
++13	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	flat:name	O	_
++14	,	,	PUNCT	_	_	18	punct	O	_
++15	sendo	ser	AUX	_	VerbForm=Ger	18	cop	O	_
++16-17	nesta	_	_	_	_	_	_	_	_
++16	em	em	ADP	_	_	18	case	O	_
++17	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	O	_
++18	seção	seção	NOUN	_	Gender=Fem|Number=Sing	20	obl	O	_
++19	possível	possível	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
++20	observar	observar	VERB	_	VerbForm=Inf	7	advcl	O	_
++21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
++22	contato	contato	NOUN	_	Gender=Masc|Number=Sing	20	obj	O	_
++23	superior	alto	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
++24	entre	entre	ADP	_	_	26	case	O	_
++25	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	26	det	O	_
++26	formação	formação	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++27	e	e	CCONJ	_	_	29	cc	O	_
++28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
++29	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	26	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++30	.	.	PUNCT	_	_	29	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++31	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	29	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++32	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = O registro sedimentar da Fm.
++# text = O registro sedimentar da Fm. Abaeté nesta seção é a associação de fácies superior desta unidade, muito semelhante àquela observada para a porção de topo da Seção Córrego Tiririca.
+ # sent_id = 283-20150917-MONOGRAFIA_0-149
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	registro	registro	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++2	registro	registro	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	O	_
+ 3	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-7	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Abaeté nesta seção é a associação de fácies superior desta unidade, muito semelhante àquela observada para a porção de topo da Seção Córrego Tiririca.
+-# sent_id = 283-20150917-MONOGRAFIA_0-150
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
+-2-3	nesta	_	_	_	_	_	_	_	_
+-2	em	em	ADP	_	_	4	case	O	_
+-3	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	4	det	O	_
+-4	seção	seção	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+-5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	O	_
+-6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	associação	associação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-8	de	de	ADP	_	_	9	case	O	_
+-9	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	7	nmod	O	_
+-10	superior	alto	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
+-11-12	desta	_	_	_	_	_	_	_	_
+-11	de	de	ADP	_	_	13	case	O	_
+-12	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	O	_
+-13	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-14	,	,	PUNCT	_	_	16	punct	O	_
+-15	muito	muito	ADV	_	_	16	advmod	O	_
+-16	semelhante	semelhante	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
+-17-18	àquela	_	_	_	_	_	_	_	_
+-17	a	a	ADP	_	_	18	case	O	_
+-18	aquela	aquele	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	16	obl	O	_
+-19	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	acl	O	_
+-20	para	para	ADP	_	_	22	case	O	_
+-21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	porção	porção	NOUN	_	Gender=Fem|Number=Sing	19	obl	O	_
+-23	de	de	ADP	_	_	24	case	O	_
+-24	topo	topo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+-25-26	da	_	_	_	_	_	_	_	_
+-25	de	de	ADP	_	_	27	case	O	_
+-26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+-28	Córrego	Córrego	PROPN	_	Number=Sing	27	flat:name	O	_
+-29	Tiririca	Tiririca	PROPN	_	Number=Sing	27	flat:name	O	_
+-30	.	.	PUNCT	_	_	7	punct	O	_
++7	.	.	PUNCT	_	_	6	flat:name	O	_
++8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
++9-10	nesta	_	_	_	_	_	_	_	_
++9	em	em	ADP	_	_	11	case	O	_
++10	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	O	_
++11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	O	_
++13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
++14	associação	associação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++15	de	de	ADP	_	_	16	case	O	_
++16	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	14	nmod	O	_
++17	superior	alto	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
++18-19	desta	_	_	_	_	_	_	_	_
++18	de	de	ADP	_	_	20	case	O	_
++19	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	O	_
++20	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++21	,	,	PUNCT	_	_	23	punct	O	_
++22	muito	muito	ADV	_	_	23	advmod	O	_
++23	semelhante	semelhante	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
++24-25	àquela	_	_	_	_	_	_	_	_
++24	a	a	ADP	_	_	25	case	O	_
++25	aquela	aquele	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	23	obl	O	_
++26	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	O	_
++27	para	para	ADP	_	_	29	case	O	_
++28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
++29	porção	porção	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
++30	de	de	ADP	_	_	31	case	O	_
++31	topo	topo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	O	_
++32-33	da	_	_	_	_	_	_	_	_
++32	de	de	ADP	_	_	34	case	O	_
++33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
++34	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	31	nmod	O	_
++35	Córrego	Córrego	PROPN	_	Number=Sing	34	flat:name	O	_
++36	Tiririca	Tiririca	PROPN	_	Number=Sing	34	flat:name	O	_
++37	.	.	PUNCT	_	_	14	punct	O	_
+ 
+-# text = Na seção Chapadão ocorrem maiores espessuras para esta associação superior do que na Seção Córrego Tiririca, sendo descritos quase 20 m de arenitos com estratificação cruzada acanalada métrica, até o contato abrupto com sedimentos mais finos da Fm.
++# text = Na seção Chapadão ocorrem maiores espessuras para esta associação superior do que na Seção Córrego Tiririca, sendo descritos quase 20 m de arenitos com estratificação cruzada acanalada métrica, até o contato abrupto com sedimentos mais finos da Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-151
+ 1-2	Na	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -63236,12 +63212,8 @@
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+ 44	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+-45	.	.	PUNCT	_	_	5	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-152
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++45	Quiricó	Quiricó	PROPN	_	_	44	flat:name	O	_
++46	.	.	PUNCT	_	_	5	punct	O	_
+ 
+ # text = São observadas dobras convolutas decimétricas nos arenitos próximo ao contato com os pelitos, como pode ser observado na Fig.
+ # sent_id = 283-20150917-MONOGRAFIA_0-153
+@@ -63286,47 +63258,44 @@
+ 4	FÁCIES	fácies	PROPN	_	Gender=Fem|Number=Plur	2	nmod	O	_
+ 5	SEDIMENTARES	sedimentar	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+ 
+-# text = As seções-colunares levantadas para a Fm.
++# text = As seções-colunares levantadas para a Fm. Abaeté permitiram entender o empilhamento das fácies para esta formação, tendo sido identificadas duas porções distintas devido à associação das fácies.
+ # sent_id = 283-20150917-MONOGRAFIA_0-156
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+-2	seções-colunares	seção-colunar	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++2	seções-colunares	seção-colunar	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	O	_
+ 3	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	_
+ 4	para	para	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-7	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Abaeté permitiram entender o empilhamento das fácies para esta formação, tendo sido identificadas duas porções distintas devido à associação das fácies.
+-# sent_id = 283-20150917-MONOGRAFIA_0-157
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
+-2	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+-3	entender	entender	VERB	_	VerbForm=Inf	2	xcomp	O	_
+-4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	empilhamento	empilhamento	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+-6-7	das	_	_	_	_	_	_	_	_
+-6	de	de	ADP	_	_	8	case	O	_
+-7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+-8	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
+-9	para	para	ADP	_	_	11	case	O	_
+-10	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	O	_
+-11	formação	formação	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-12	,	,	PUNCT	_	_	15	punct	O	_
+-13	tendo	ter	AUX	_	VerbForm=Ger	15	aux	O	_
+-14	sido	ser	AUX	_	VerbForm=Part	15	aux:pass	O	_
+-15	identificadas	identificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	advcl	O	_
+-16	duas	dois	NUM	_	NumType=Card	17	nummod	O	_
+-17	porções	porção	NOUN	_	Gender=Fem|Number=Plur	15	nsubj:pass	O	_
+-18	distintas	distinto	ADJ	_	Gender=Fem|Number=Plur	17	amod	O	_
+-19	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	22	case	O	MWEPOS=ADP
+-20-21	à	_	_	_	_	_	_	_	_
+-20	a	a	ADP	_	_	19	fixed	O	_
+-21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	associação	associação	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
+-23-24	das	_	_	_	_	_	_	_	_
+-23	de	de	ADP	_	_	25	case	O	_
+-24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
+-25	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
+-26	.	.	PUNCT	_	_	2	punct	O	_
++7	.	.	PUNCT	_	_	6	flat:name	O	_
++8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
++9	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
++10	entender	entender	VERB	_	VerbForm=Inf	9	xcomp	O	_
++11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
++12	empilhamento	empilhamento	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
++13-14	das	_	_	_	_	_	_	_	_
++13	de	de	ADP	_	_	15	case	O	_
++14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
++15	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
++16	para	para	ADP	_	_	18	case	O	_
++17	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	O	_
++18	formação	formação	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
++19	,	,	PUNCT	_	_	22	punct	O	_
++20	tendo	ter	AUX	_	VerbForm=Ger	22	aux	O	_
++21	sido	ser	AUX	_	VerbForm=Part	22	aux:pass	O	_
++22	identificadas	identificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	advcl	O	_
++23	duas	dois	NUM	_	NumType=Card	24	nummod	O	_
++24	porções	porção	NOUN	_	Gender=Fem|Number=Plur	22	nsubj:pass	O	_
++25	distintas	distinto	ADJ	_	Gender=Fem|Number=Plur	24	amod	O	_
++26	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	29	case	O	MWEPOS=ADP
++27-28	à	_	_	_	_	_	_	_	_
++27	a	a	ADP	_	_	26	fixed	O	_
++28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
++29	associação	associação	NOUN	_	Gender=Fem|Number=Sing	22	obl	O	_
++30-31	das	_	_	_	_	_	_	_	_
++30	de	de	ADP	_	_	32	case	O	_
++31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	O	_
++32	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	29	nmod	O	_
++33	.	.	PUNCT	_	_	9	punct	O	_
+ 
+ # text = A porção inferior é a mais recorrente na Sub-Bacia Abaeté, e aflora normalmente com poucos metros, podendo alcançar até 40 m de espessura.
+ # sent_id = 283-20150917-MONOGRAFIA_0-158
+@@ -64370,52 +64339,46 @@
+ 1	4.3	4.3	NUM	_	NumType=Card	2	parataxis	O	_
+ 2	PALEOCORRENTES	PALEOCORRENTES	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+-# text = As paleocorrentes fluviais da Fm.
++# text = As paleocorrentes fluviais da Fm. Abaeté foram medidas nos foresets dos arenitos na fácies St e na imbricação dos clastos (fácies G).
+ # sent_id = 283-20150917-MONOGRAFIA_0-196
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+-2	paleocorrentes	paleocorrente	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++2	paleocorrentes	paleocorrente	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	O	_
+ 3	fluviais	fluvial	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-7	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Abaeté foram medidas nos foresets dos arenitos na fácies
+-# sent_id = 283-20150917-MONOGRAFIA_0-197
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	3	nsubj:pass	O	_
+-2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	cop	O	_
+-3	medidas	medir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	0	root	O	_
+-4-5	nos	_	_	_	_	_	_	_	_
+-4	em	em	ADP	_	_	6	case	O	_
+-5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
+-6	foresets	foreset	NOUN	_	Gender=Masc|Number=Plur	3	obl	O	_
+-7-8	dos	_	_	_	_	_	_	_	_
+-7	de	de	ADP	_	_	9	case	O	_
+-8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+-9	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+-10-11	na	_	_	_	_	_	_	_	_
+-10	em	em	ADP	_	_	12	case	O	_
+-11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	fácies	fácies	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-
+-# text = St e na imbricação dos clastos (fácies G).
+-# sent_id = 283-20150917-MONOGRAFIA_0-198
+-1	St	St	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	e	e	CCONJ	_	_	5	cc	O	_
+-3-4	na	_	_	_	_	_	_	_	_
+-3	em	em	ADP	_	_	5	case	O	_
+-4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	imbricação	imbricação	NOUN	_	Gender=Fem|Number=Sing	1	conj	O	_
+-6-7	dos	_	_	_	_	_	_	_	_
+-6	de	de	ADP	_	_	8	case	O	_
+-7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	clastos	clasto	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+-9	(	(	PUNCT	_	_	10	punct	O	_
+-10	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	8	appos	O	_
+-11	G	g	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
+-12	)	)	PUNCT	_	_	10	punct	O	_
+-13	.	.	PUNCT	_	_	1	punct	O	_
++7	.	.	PUNCT	_	_	6	flat:name	O	_
++8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
++9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	aux:pass	O	_
++10	medidas	medir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
++11-12	nos	_	_	_	_	_	_	_	_
++11	em	em	ADP	_	_	13	case	O	_
++12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
++13	foresets	foreset	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
++14-15	dos	_	_	_	_	_	_	_	_
++14	de	de	ADP	_	_	16	case	O	_
++15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
++16	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
++17-18	na	_	_	_	_	_	_	_	_
++17	em	em	ADP	_	_	19	case	O	_
++18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
++19	fácies	fácies	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++20	St	St	PROPN	_	Gender=Masc|Number=Sing	19	nmod	O	_
++21	e	e	CCONJ	_	_	5	cc	O	_
++22-23	na	_	_	_	_	_	_	_	_
++22	em	em	ADP	_	_	5	case	O	_
++23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
++24	imbricação	imbricação	NOUN	_	Gender=Fem|Number=Sing	1	conj	O	_
++25-26	dos	_	_	_	_	_	_	_	_
++25	de	de	ADP	_	_	8	case	O	_
++26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
++27	clastos	clasto	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
++28	(	(	PUNCT	_	_	10	punct	O	_
++29	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	8	appos	O	_
++30	G	g	NOUN	_	Gender=Masc|Number=Plur	29	nmod	O	_
++31	)	)	PUNCT	_	_	10	punct	O	_
++32	.	.	PUNCT	_	_	10	punct	O	_
+ 
+ # text = Ao todo foram feitas 66 medidas que indicaram paleofluxo para WNW (azimute médio 300°) (Figura 11).
+ # sent_id = 283-20150917-MONOGRAFIA_0-199
+@@ -64465,7 +64428,7 @@
+ 18	dados	dado	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+ 19	.	.	PUNCT	_	_	10	punct	O	_
+ 
+-# text = Campos e Dardenne (1995) já haviam obtido 92 medidas de paleocorrentes para a porção inferior da Fm.
++# text = Campos e Dardenne (1995) já haviam obtido 92 medidas de paleocorrentes para a porção inferior da Fm. Abaeté, resultando em paleofluxos de N30W a N45E (Figura 12).
+ # sent_id = 283-20150917-MONOGRAFIA_0-201
+ 1	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	9	nsubj:pass	O	_
+ 2	e	e	CCONJ	_	_	1	flat:name	O	_
+@@ -64489,23 +64452,20 @@
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 21	.	.	PUNCT	_	_	9	punct	O	_
+-
+-# text = Abaeté, resultando em paleofluxos de N30W a N45E (Figura 12).
+-# sent_id = 283-20150917-MONOGRAFIA_0-202
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	,	,	PUNCT	_	_	3	punct	O	_
+-3	resultando	resultar	VERB	_	VerbForm=Ger	1	acl	O	_
+-4	em	em	ADP	_	_	5	case	O	_
+-5	paleofluxos	paleofluxo	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	O	_
+-6	de	de	ADP	_	_	7	case	O	_
+-7	N30W	N30W	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+-8	a	a	ADP	_	_	9	case	O	_
+-9	N45E	N45E	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+-10	(	(	PUNCT	_	_	11	punct	O	_
+-11	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	9	appos	O	sentenciação
+-12	12	12	NUM	_	NumType=Card	11	nummod	O	_
+-13	)	)	PUNCT	_	_	11	punct	O	_
+-14	.	.	PUNCT	_	_	1	punct	O	_
++22	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	21	root	O	_
++23	,	,	PUNCT	_	_	24	punct	O	_
++24	resultando	resultar	VERB	_	VerbForm=Ger	22	acl	O	_
++25	em	em	ADP	_	_	26	case	O	_
++26	paleofluxos	paleofluxo	NOUN	_	Gender=Masc|Number=Plur	24	obl:arg	O	_
++27	de	de	ADP	_	_	28	case	O	_
++28	N30W	N30W	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++29	a	a	ADP	_	_	30	case	O	_
++30	N45E	N45E	PROPN	_	Gender=Fem|Number=Sing	28	nmod	O	_
++31	(	(	PUNCT	_	_	32	punct	O	_
++32	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	30	appos	O	sentenciação
++33	12	12	NUM	_	NumType=Card	32	nummod	O	_
++34	)	)	PUNCT	_	_	32	punct	O	_
++35	.	.	PUNCT	_	_	22	punct	O	_
+ 
+ # text = Apesar dos estudos destes autores terem sido restritos à região de Canabrava, nordeste da área estudada neste trabalho, notam-se semelhanças entre os resultados daqueles autores e os dados aqui apresentados.
+ # sent_id = 283-20150917-MONOGRAFIA_0-203
+@@ -64597,7 +64557,7 @@
+ 34	sub-bacia	sub-bacia	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
+ 35	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = Foram levantadas poucas estações de paleocorrentes eólicas para a Fm.
++# text = Foram levantadas poucas estações de paleocorrentes eólicas para a Fm. Abaeté em decorrências da escassez de afloramentos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-205
+ 1	Foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	aux:pass	O	_
+ 2	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -64610,19 +64570,16 @@
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	obl	O	_
+ 11	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Abaeté em decorrências da escassez de afloramentos.
+-# sent_id = 283-20150917-MONOGRAFIA_0-206
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	em	em	ADP	_	_	3	case	O	_
+-3	decorrências	decorrência	NOUN	_	Gender=Fem|Number=Plur	1	nmod	O	_
+-4-5	da	_	_	_	_	_	_	_	_
+-4	de	de	ADP	_	_	6	case	O	_
+-5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	afloramentos	afloramento	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+-9	.	.	PUNCT	_	_	1	punct	O	_
++12	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	root	O	_
++13	em	em	ADP	_	_	14	case	O	_
++14	decorrências	decorrência	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
++15-16	da	_	_	_	_	_	_	_	_
++15	de	de	ADP	_	_	17	case	O	_
++16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
++17	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++18	de	de	ADP	_	_	19	case	O	_
++19	afloramentos	afloramento	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
++20	.	.	PUNCT	_	_	12	punct	O	_
+ 
+ # text = Contudo, foi possível obter relativamente muitas medidas em decorrência da espessura do pacote sedimentar (em torno de 30 m).
+ # sent_id = 283-20150917-MONOGRAFIA_0-207
+@@ -64929,9 +64886,9 @@
+ 6	a	a	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	obl	O	_
+-9	.	.	PUNCT	_	_	5	punct	O	_
++9	.	.	PUNCT	_	_	5	punct	O	sentenciação
+ 
+-# text = Na área estudada a espessura da Fm.
++# text = Na área estudada a espessura da Fm. Quiricó é próxima dos 25 m, mas podendo alcançar até 40m na região de Varjão de Minas (MG).
+ # sent_id = 283-20150917-MONOGRAFIA_0-220
+ 1-2	Na	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -64945,36 +64902,33 @@
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 10	.	.	PUNCT	_	_	3	punct	O	_
+-
+-# text = Quiricó é próxima dos 25 m, mas podendo alcançar até 40m na região de Varjão de Minas (MG).
+-# sent_id = 283-20150917-MONOGRAFIA_0-221
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+-2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	O	_
+-3	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+-4-5	dos	_	_	_	_	_	_	_	_
+-4	de	de	ADP	_	_	7	case	O	_
+-5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	O	_
+-6	25	25	NUM	_	NumType=Card	7	nummod	O	_
+-7	m	m	NOUN	_	Gender=Masc|Number=Plur	3	obl	O	_
+-8	,	,	PUNCT	_	_	11	punct	O	_
+-9	mas	mas	CCONJ	_	_	10	cc	O	_
+-10	podendo	poder	VERB	_	VerbForm=Ger	3	conj	O	_
+-11	alcançar	alcançar	VERB	_	VerbForm=Inf	10	xcomp	O	_
+-12	até	até	ADP	_	_	14	case	O	_
+-13	40	40	NUM	_	NumType=Card	14	nummod	O	_
+-14	m	m	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
+-15-16	na	_	_	_	_	_	_	_	_
+-15	em	em	ADP	_	_	17	case	O	_
+-16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	região	região	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+-18	de	de	ADP	_	_	19	case	O	_
+-19	Varjão	Varjão	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+-20	de	de	ADP	_	_	19	flat:name	O	_
+-21	Minas	Minas	PROPN	_	Number=Sing	19	flat:name	O	_
+-22	(	(	PUNCT	_	_	23	punct	O	_
+-23	MG	MG	PROPN	_	Gender=Masc|Number=Sing	19	nmod:appos	O	_
+-24	)	)	PUNCT	_	_	23	punct	O	_
+-25	.	.	PUNCT	_	_	3	punct	O	_
++11	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
++12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	O	_
++13	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	10	root	O	_
++14-15	dos	_	_	_	_	_	_	_	_
++14	de	de	ADP	_	_	17	case	O	_
++15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
++16	25	25	NUM	_	NumType=Card	17	nummod	O	_
++17	m	m	NOUN	_	Gender=Masc|Number=Plur	13	obl	O	_
++18	,	,	PUNCT	_	_	21	punct	O	_
++19	mas	mas	CCONJ	_	_	20	cc	O	_
++20	podendo	poder	VERB	_	VerbForm=Ger	13	conj	O	_
++21	alcançar	alcançar	VERB	_	VerbForm=Inf	20	xcomp	O	_
++22	até	até	ADP	_	_	24	case	O	_
++23	40	40	NUM	_	NumType=Card	24	nummod	O	_
++24	m	m	NOUN	_	Gender=Masc|Number=Plur	21	obl	O	_
++25-26	na	_	_	_	_	_	_	_	_
++25	em	em	ADP	_	_	27	case	O	_
++26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
++27	região	região	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
++28	de	de	ADP	_	_	29	case	O	_
++29	Varjão	Varjão	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
++30	de	de	ADP	_	_	29	flat:name	O	_
++31	Minas	Minas	PROPN	_	Number=Sing	29	flat:name	O	_
++32	(	(	PUNCT	_	_	33	punct	O	_
++33	MG	MG	PROPN	_	Gender=Masc|Number=Sing	29	nmod:appos	O	_
++34	)	)	PUNCT	_	_	33	punct	O	_
++35	.	.	PUNCT	_	_	13	punct	O	_
+ 
+ # text = Ao todo foram descritos 34 pontos da Fm. Quiricó (Figura 4).
+ # sent_id = 283-20150917-MONOGRAFIA_0-222
+@@ -64995,12 +64949,12 @@
+ 14	)	)	PUNCT	_	_	12	punct	O	_
+ 15	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Dentre as cinco seções levantadas neste trabalho, apenas na seção-colunar Córrego Tiririca não afloram sedimentos da Fm.
++# text = Dentre as cinco seções levantadas neste trabalho, apenas na seção-colunar Córrego Tiririca não afloram sedimentos da Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-223
+ 1	Dentre	dentre	ADV	_	_	17	advmod	O	_
+ 2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	O	_
+ 3	cinco	cinco	NUM	_	NumType=Card	4	nummod	O	_
+-4	seções	seção	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	O	_
++4	seções	seção	NOUN	_	Gender=Fem|Number=Plur	1	obl	O	_
+ 5	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	4	acl	O	_
+ 6-7	neste	_	_	_	_	_	_	_	_
+ 6	em	em	ADP	_	_	8	case	O	_
+@@ -65016,17 +64970,14 @@
+ 15	Tiririca	Tiririca	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	não	não	ADV	_	Polarity=Neg	17	advmod	O	_
+ 17	afloram	aflorar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-18	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	17	obj	O	_
++18	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	O	_
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+-22	.	.	PUNCT	_	_	17	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-224
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++22	.	.	PUNCT	_	_	21	flat:name	O	_
++23	Quiricó	Quiricó	PROPN	_	_	21	flat:name	O	_
++24	.	.	PUNCT	_	_	17	punct	O	_
+ 
+ # text = A seção-colunar São José Romão (Figura 13) localiza-se na cidade de Varjão de Minas – MG, e foi levantada ao longo do córrego do Crico até a sede da Fazenda São José Romão.
+ # sent_id = 283-20150917-MONOGRAFIA_0-225
+@@ -65094,7 +65045,7 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-12	.	.	PUNCT	_	_	6	punct	O	_
++12	.	.	PUNCT	_	_	6	punct	O	sentenciação
+ 
+ # text = Além do quê, esta seção compreende a maior espessura observada para a Fm.
+ # sent_id = 283-20150917-MONOGRAFIA_0-228
+@@ -65114,7 +65065,7 @@
+ 13	para	para	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
+-16	.	.	PUNCT	_	_	8	punct	O	_
++16	.	.	PUNCT	_	_	8	punct	O	sentenciação
+ 
+ # text = Acima dos folhelhos, são descritas duas sequências granocrescentes ascendentes que gradam de folhelho cinza até arenitos muito finos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-230
+@@ -65167,7 +65118,7 @@
+ 20	arenito	arenito	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 21	.	.	PUNCT	_	_	5	punct	O	_
+ 
+-# text = Sobrepondo esta sequência predominantemente pelítica, ocorrem aproximadamente 20m de seção psamítica da Fm.
++# text = Sobrepondo esta sequência predominantemente pelítica, ocorrem aproximadamente 20m de seção psamítica da Fm. Três Barras.
+ # sent_id = 283-20150917-MONOGRAFIA_0-232
+ 1	Sobrepondo	sobrepor	VERB	_	VerbForm=Ger	7	advcl	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+@@ -65185,42 +65136,35 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-16	.	.	PUNCT	_	_	7	punct	O	_
+-
+-# text = Três Barras.
+-# sent_id = 283-20150917-MONOGRAFIA_0-233
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	.	.	PUNCT	_	_	2	punct	O	_
++16	Três	Três	PROPN	_	Gender=Fem|Number=Sing	15	flat:name	O	_
++17	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	15	flat:name	O	_
++18	.	.	PUNCT	_	_	7	punct	O	_
+ 
+-# text = O contato entre esta formação e a Fm.
++# text = O contato entre esta formação e a Fm. Quiricó não foi observada na Seção São José Romão.
+ # sent_id = 283-20150917-MONOGRAFIA_0-234
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	contato	contato	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++2	contato	contato	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
+ 3	entre	entre	ADP	_	_	5	case	O	_
+ 4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	O	_
+ 5	formação	formação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 6	e	e	CCONJ	_	_	8	cc	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-9	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Quiricó não foi observada na Seção São José Romão.
+-# sent_id = 283-20150917-MONOGRAFIA_0-235
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	4	nsubj:pass	O	_
+-2	não	não	ADV	_	Polarity=Neg	4	advmod	O	_
+-3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	O	_
+-4	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-5-6	na	_	_	_	_	_	_	_	_
+-5	em	em	ADP	_	_	7	case	O	_
+-6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	4	obl	O	_
+-8	São	São	PROPN	_	Number=Sing	7	flat:name	O	_
+-9	José	José	PROPN	_	Number=Sing	7	flat:name	O	_
+-10	Romão	Romão	PROPN	_	Number=Sing	7	flat:name	O	_
+-11	.	.	PUNCT	_	_	4	punct	O	_
++9	.	.	PUNCT	_	_	8	flat:name	O	_
++10	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	8	flat:name	O	_
++11	não	não	ADV	_	Polarity=Neg	13	advmod	O	_
++12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	O	_
++13	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
++14-15	na	_	_	_	_	_	_	_	_
++14	em	em	ADP	_	_	16	case	O	_
++15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
++16	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	13	obl	O	_
++17	São	São	PROPN	_	Number=Sing	16	flat:name	O	_
++18	José	José	PROPN	_	Number=Sing	16	flat:name	O	_
++19	Romão	Romão	PROPN	_	Number=Sing	16	flat:name	O	_
++20	.	.	PUNCT	_	_	13	punct	O	_
+ 
+-# text = A Seção-colunar Chapadão (Figura 7) apresenta espessura reduzida para a formação aqui tratada, e nela foi possível observar o contato inferior da Fm.
++# text = A Seção-colunar Chapadão (Figura 7) apresenta espessura reduzida para a formação aqui tratada, e nela foi possível observar o contato inferior da Fm. Quiricó com a formação sotoposta.
+ # sent_id = 283-20150917-MONOGRAFIA_0-236
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	Seção-colunar	Seção-colunar	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+@@ -65252,18 +65196,15 @@
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+ 28	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+-29	.	.	PUNCT	_	_	8	punct	O	_
+-
+-# text = Quiricó com a formação sotoposta.
+-# sent_id = 283-20150917-MONOGRAFIA_0-237
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	com	com	ADP	_	_	4	case	O	_
+-3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	formação	formação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	sotoposta	sotoposta	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+-6	.	.	PUNCT	_	_	1	punct	O	_
++29	.	.	PUNCT	_	_	28	flat:name	O	_
++30	Quiricó	Quiricó	PROPN	_	_	28	flat:name	O	_
++31	com	com	ADP	_	_	33	case	O	_
++32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
++33	formação	formação	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++34	sotoposta	sotoposto	ADJ	_	Gender=Fem|Number=Sing	33	amod	O	_
++35	.	.	PUNCT	_	_	8	punct	O	_
+ 
+-# text = Já na Seção do Cruzeiro foi descrito o contato superior da Fm.
++# text = Já na Seção do Cruzeiro foi descrito o contato superior da Fm. Quiricó com a Fm. Três Barras.
+ # sent_id = 283-20150917-MONOGRAFIA_0-238
+ 1	Já	já	ADV	_	_	9	advmod	O	_
+ 2-3	na	_	_	_	_	_	_	_	_
+@@ -65283,21 +65224,14 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-16	.	.	PUNCT	_	_	9	punct	O	_
+-
+-# text = Quiricó com a Fm.
+-# sent_id = 283-20150917-MONOGRAFIA_0-239
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	com	com	ADP	_	_	4	case	O	_
+-3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Três Barras.
+-# sent_id = 283-20150917-MONOGRAFIA_0-240
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	.	.	PUNCT	_	_	2	punct	O	_
++16	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	15	flat:name	O	_
++17	com	com	ADP	_	_	20	case	O	_
++18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
++19	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++20	.	.	PUNCT	_	_	19	flat:name	O	_
++21	Três	Três	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
++22	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
++23	.	.	PUNCT	_	_	9	punct	O	_
+ 
+ # text = A Seção do Cruzeiro (Figura 14) encontra-se a sul do distrito de Galena – MG, e foi levantada próximo ao Morro do Escuta, sendo que o fim da seção coincide com o topo do morro.
+ # sent_id = 283-20150917-MONOGRAFIA_0-241
+@@ -65356,7 +65290,7 @@
+ 46	morro	morro	NOUN	_	Gender=Masc|Number=Sing	43	nmod	O	_
+ 47	.	.	PUNCT	_	_	10	punct	O	_
+ 
+-# text = Nesta seção observaram-se fácies típicas da Fm.
++# text = Nesta seção observaram-se fácies típicas da Fm. Quiricó, descrevendo-se fácies heterolíticas, mas com recorrente contribuição arenosa, com lentes e camadas de arenitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-242
+ 1-2	Nesta	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+@@ -65371,31 +65305,28 @@
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+-11	.	.	PUNCT	_	_	4	punct	O	_
+-
+-# text = Quiricó, descrevendo-se fácies heterolíticas, mas com recorrente contribuição arenosa, com lentes e camadas de arenitos.
+-# sent_id = 283-20150917-MONOGRAFIA_0-243
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	,	,	PUNCT	_	_	3	punct	O	_
+-3-4	descrevendo-se	_	_	_	_	_	_	_	_
+-3	descrevendo	descrever	VERB	_	VerbForm=Ger	1	advcl	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	expl	O	_
+-5	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	3	obj	O	_
+-6	heterolíticas	heterolítica	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
+-7	,	,	PUNCT	_	_	11	punct	O	_
+-8	mas	mas	CCONJ	_	_	11	cc	O	_
+-9	com	com	ADP	_	_	11	case	O	_
+-10	recorrente	recorrente	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+-11	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	6	conj	O	_
+-12	arenosa	arenoso	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+-13	,	,	PUNCT	_	_	15	punct	O	_
+-14	com	com	ADP	_	_	15	case	O	_
+-15	lentes	lente	NOUN	_	Gender=Fem|Number=Plur	11	nmod	O	_
+-16	e	e	CCONJ	_	_	17	cc	O	_
+-17	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	15	conj	O	_
+-18	de	de	ADP	_	_	19	case	O	_
+-19	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+-20	.	.	PUNCT	_	_	1	punct	O	_
++11	.	.	PUNCT	_	_	10	flat:name	O	_
++12	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	10	flat:name	O	_
++13	,	,	PUNCT	_	_	14	punct	O	_
++14-15	descrevendo-se	_	_	_	_	_	_	_	_
++14	descrevendo	descrever	VERB	_	VerbForm=Ger	4	advcl	O	_
++15	se	se	PRON	_	_	14	expl	O	_
++16	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	14	obj	O	_
++17	heterolíticas	heterolítica	ADJ	_	Gender=Fem|Number=Plur	16	amod	O	_
++18	,	,	PUNCT	_	_	22	punct	O	_
++19	mas	mas	CCONJ	_	_	22	cc	O	_
++20	com	com	ADP	_	_	22	case	O	_
++21	recorrente	recorrente	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
++22	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	17	conj	O	_
++23	arenosa	arenoso	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
++24	,	,	PUNCT	_	_	26	punct	O	_
++25	com	com	ADP	_	_	26	case	O	_
++26	lentes	lente	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
++27	e	e	CCONJ	_	_	28	cc	O	_
++28	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	26	conj	O	_
++29	de	de	ADP	_	_	30	case	O	_
++30	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	28	nmod	O	_
++31	.	.	PUNCT	_	_	4	punct	O	_
+ 
+ # text = Também foram descritos níveis com gretas de ressecamento nesta seção.
+ # sent_id = 283-20150917-MONOGRAFIA_0-244
+@@ -65413,7 +65344,7 @@
+ 11	seção	seção	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 12	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Observou-se maior aporte psamítico para o topo da seção, até que passam a ocorrer apenas sedimentos arenosos da Fm.
++# text = Observou-se maior aporte psamítico para o topo da seção, até que passam a ocorrer apenas sedimentos arenosos da Fm. Três Barras, caracterizando assim contato do tipo transicional entre esta formação e a Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-245
+ 1-2	Observou-se	_	_	_	_	_	_	_	_
+ 1	Observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -65441,32 +65372,28 @@
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+-24	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Três Barras, caracterizando assim contato do tipo transicional entre esta formação e a Fm. Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-246
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	,	,	PUNCT	_	_	4	punct	O	_
+-4	caracterizando	caracterizar	VERB	_	VerbForm=Ger	2	acl	O	_
+-5	assim	assim	ADV	_	_	4	advmod	O	_
+-6	contato	contato	NOUN	_	Gender=Masc|Number=Sing	4	obj	O	_
+-7-8	do	_	_	_	_	_	_	_	_
+-7	de	de	ADP	_	_	9	case	O	_
+-8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+-10	transicional	transicional	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+-11	entre	entre	ADP	_	_	13	case	O	_
+-12	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	O	_
+-13	formação	formação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+-14	e	e	CCONJ	_	_	16	cc	O	_
+-15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	13	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-17	.	.	PUNCT	_	_	18	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-18	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	16	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-19	.	.	PUNCT	_	_	2	punct	O	_
++24	Três	Três	PROPN	_	NumType=Card	23	flat:name	O	_
++25	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	23	flat:name	O	_
++26	,	,	PUNCT	_	_	27	punct	O	_
++27	caracterizando	caracterizar	VERB	_	VerbForm=Ger	17	advcl	O	_
++28	assim	assim	ADV	_	_	27	advmod	O	_
++29	contato	contato	NOUN	_	Gender=Masc|Number=Sing	27	obj	O	_
++30-31	do	_	_	_	_	_	_	_	_
++30	de	de	ADP	_	_	32	case	O	_
++31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
++32	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	O	_
++33	transicional	transicional	ADJ	_	Gender=Masc|Number=Sing	32	amod	O	_
++34	entre	entre	ADP	_	_	36	case	O	_
++35	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	36	det	O	_
++36	formação	formação	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
++37	e	e	CCONJ	_	_	39	cc	O	_
++38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
++39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++40	.	.	PUNCT	_	_	39	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++41	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	39	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++42	.	.	PUNCT	_	_	1	punct	O	_
+ 
+-# text = A Seção-colunar do Bexiga (Figura 15) encontra-se na estrada que liga Presidente Olegário (MG) a Galena (MG), sendo esta a única seção que compreende apenas sedimentos da Fm.
++# text = A Seção-colunar do Bexiga (Figura 15) encontra-se na estrada que liga Presidente Olegário (MG) a Galena (MG), sendo esta a única seção que compreende apenas sedimentos da Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-247
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	Seção-colunar	Seção-colunar	PROPN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+@@ -65511,12 +65438,9 @@
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+ 39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	nmod	O	_
+-40	.	.	PUNCT	_	_	10	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-248
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++40	.	.	PUNCT	_	_	39	flat:name	O	_
++41	Quiricó	Quiricó	PROPN	_	_	39	flat:name	O	_
++42	.	.	PUNCT	_	_	10	punct	O	_
+ 
+ # text = Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-250
+@@ -65747,7 +65671,7 @@
+ 18	)	)	PUNCT	_	_	16	punct	O	_
+ 19	.	.	PUNCT	_	_	8	punct	O	_
+ 
+-# text = O pacote siliciclástico que sucede a camada de folhelho margoso na Seção São José Romão se assemelha com a associação de fácies típica descrita para a Fm.
++# text = O pacote siliciclástico que sucede a camada de folhelho margoso na Seção São José Romão se assemelha com a associação de fácies típica descrita para a Fm. Quiricó nas demais localidades da Sub-Bacia Abaeté.
+ # sent_id = 283-20150917-MONOGRAFIA_0-262
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+@@ -65772,28 +65696,25 @@
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+ 21	associação	associação	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+-23	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	21	nmod	O	_
+-24	típica	típico	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+-25	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	21	acl	O	_
++23	fácies	fácies	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++24	típica	típico	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
++25	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	O	_
+ 26	para	para	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+ 28	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	25	obl	O	_
+-29	.	.	PUNCT	_	_	18	punct	O	_
+-
+-# text = Quiricó nas demais localidades da Sub-Bacia Abaeté.
+-# sent_id = 283-20150917-MONOGRAFIA_0-263
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2-3	nas	_	_	_	_	_	_	_	_
+-2	em	em	ADP	_	_	5	case	O	_
+-3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+-4	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	5	det	O	_
+-5	localidades	localidade	NOUN	_	Gender=Fem|Number=Plur	1	nmod	O	_
+-6-7	da	_	_	_	_	_	_	_	_
+-6	de	de	ADP	_	_	8	case	O	_
+-7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Sub-Bacia	Sub-Bacia	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+-9	Abaeté	Abaeté	PROPN	_	Number=Sing	8	flat:name	O	_
+-10	.	.	PUNCT	_	_	1	punct	O	_
++29	.	.	PUNCT	_	_	28	flat:name	O	_
++30	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	28	flat:name	O	_
++31-32	nas	_	_	_	_	_	_	_	_
++31	em	em	ADP	_	_	34	case	O	_
++32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	O	_
++33	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	34	det	O	_
++34	localidades	localidade	NOUN	_	Gender=Fem|Number=Plur	25	obl	O	_
++35-36	da	_	_	_	_	_	_	_	_
++35	de	de	ADP	_	_	37	case	O	_
++36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
++37	Sub-Bacia	Sub-Bacia	PROPN	_	Gender=Fem|Number=Sing	34	nmod	O	_
++38	Abaeté	Abaeté	PROPN	_	Number=Sing	37	flat:name	O	_
++39	.	.	PUNCT	_	_	18	punct	O	_
+ 
+ # text = Dentre os sedimentos pelíticos, a fácies heterolítica (H) foi a que apresentou maiores espessuras e foi descrita com maior recorrência para a Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-264
+@@ -66127,7 +66048,7 @@
+ 30	pelitos	pelito	NOUN	_	Gender=Masc|Number=Plur	28	nmod	O	_
+ 31	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = Diversos níveis com gretas de ressecamento foram descritos na Fm.
++# text = Diversos níveis com gretas de ressecamento foram descritos na Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-274
+ 1	Diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	O	_
+ 2	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	O	_
+@@ -66141,12 +66062,9 @@
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-12	.	.	PUNCT	_	_	8	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-275
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++12	.	.	PUNCT	_	_	11	flat:name	O	_
++13	Quiricó	Quiricó	PROPN	_	_	11	flat:name	O	_
++14	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Na Seção do Cruzeiro, por exemplo, dois níveis de gretamento foram identificados.
+ # sent_id = 283-20150917-MONOGRAFIA_0-276
+@@ -66170,7 +66088,7 @@
+ 16	identificados	identificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 17	.	.	PUNCT	_	_	16	punct	O	_
+ 
+-# text = Também foram observados níveis delgados de caliche e camada centimétrica de silexito (Seção do Bexiga) associados aos sedimentos da Fm.
++# text = Também foram observados níveis delgados de caliche e camada centimétrica de silexito (Seção do Bexiga) associados aos sedimentos da Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-277
+ 1	Também	também	ADV	_	_	3	advmod	O	_
+ 2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	aux:pass	O	_
+@@ -66200,12 +66118,8 @@
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 25	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+-26	.	.	PUNCT	_	_	3	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-278
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++26	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	25	flat:name	O	_
++27	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = Quase todas as fácies desta formação encontram-se cimentadas por carbonato de cálcio.
+ # sent_id = 283-20150917-MONOGRAFIA_0-279
+@@ -66752,7 +66666,7 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-12	.	.	PUNCT	_	_	5	punct	O	_
++12	.	.	PUNCT	_	_	5	punct	O	sentenciação
+ 
+ # text = Segundo Nichols (2009), é esperada a interação de playa lakes com sistemas tipicamente áridos, como observado para a Fm. Quiricó, formando, assim, associação de fácies característica de ambiente deposicional desértico.
+ # sent_id = 283-20150917-MONOGRAFIA_0-299
+@@ -66902,39 +66816,36 @@
+ 16	metros	metro	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
+ 17	.	.	PUNCT	_	_	3	punct	O	_
+ 
+-# text = Normalmente a Fm.
++# text = Normalmente a Fm. Três Barras encontra-se sobreposta à Fm. Quiricó, contudo Sgarbi (1991) também a descreve sobre o embasamento.
+ # sent_id = 283-20150917-MONOGRAFIA_0-305
+-1	Normalmente	normalmente	ADV	_	_	0	root	O	_
++1	Normalmente	normalmente	ADV	_	_	7	advmod	O	_
+ 2	a	a	ADP	_	_	3	case	O	_
+-3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	1	obl	O	_
+-4	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Três Barras encontra-se sobreposta à Fm. Quiricó, contudo Sgarbi (1991) também a descreve sobre o embasamento.
+-# sent_id = 283-20150917-MONOGRAFIA_0-306
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	O	_
+-3-4	encontra-se	_	_	_	_	_	_	_	_
+-3	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	O	_
+-5	sobreposta	sobrepor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	xcomp	O	_
+-6-7	à	_	_	_	_	_	_	_	_
+-6	a	a	ADP	_	_	8	case	O	_
+-7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	5	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-9	Quiricó	Quiricó	PROPN	_	Number=Sing	8	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-10	,	,	PUNCT	_	_	5	punct	O	_
+-11	contudo	contudo	CCONJ	_	_	18	cc	O	_
+-12	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+-13	(	(	PUNCT	_	_	12	punct	O	_
+-14	1991	1991	NUM	_	NumType=Card	12	nmod:appos	O	_
+-15	)	)	PUNCT	_	_	14	punct	O	_
+-16	também	também	ADV	_	_	18	advmod	O	_
+-17	a	ela	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	obj	O	_
+-18	descreve	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
+-19	sobre	sobre	ADP	_	_	21	case	O	_
+-20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	embasamento	embasamento	NOUN	_	Gender=Masc|Number=Sing	18	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-22	.	.	PUNCT	_	_	3	punct	O	_
++3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
++4	.	.	PUNCT	_	_	3	flat:name	O	_
++5	Três	Três	PROPN	_	NumType=Card	3	flat:name	O	_
++6	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	3	flat:name	O	_
++7-8	encontra-se	_	_	_	_	_	_	_	_
++7	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++8	se	se	PRON	_	_	7	expl	O	_
++9	sobreposta	sobrepor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	7	xcomp	O	_
++10-11	à	_	_	_	_	_	_	_	_
++10	a	a	ADP	_	_	12	case	O	_
++11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
++12	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++13	Quiricó	Quiricó	PROPN	_	Number=Sing	12	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++14	,	,	PUNCT	_	_	9	punct	O	_
++15	contudo	contudo	CCONJ	_	_	22	cc	O	_
++16	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	22	nsubj	O	_
++17	(	(	PUNCT	_	_	16	punct	O	_
++18	1991	1991	NUM	_	NumType=Card	16	nmod:appos	O	_
++19	)	)	PUNCT	_	_	18	punct	O	_
++20	também	também	ADV	_	_	22	advmod	O	_
++21	a	ela	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	obj	O	_
++22	descreve	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	O	_
++23	sobre	sobre	ADP	_	_	25	case	O	_
++24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
++25	embasamento	embasamento	NOUN	_	Gender=Masc|Number=Sing	22	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++26	.	.	PUNCT	_	_	7	punct	O	_
+ 
+ # text = Foram descritos 47 pontos para a Fm.
+ # sent_id = 283-20150917-MONOGRAFIA_0-307
+@@ -66945,7 +66856,7 @@
+ 5	para	para	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	obl	O	_
+-8	.	.	PUNCT	_	_	2	punct	O	_
++8	.	.	PUNCT	_	_	2	punct	O	sentenciação
+ 
+ # text = Nas seções-colunares São José Romão, Cruzeiro e Chapadão está descrito o pacote siliciclástico da Fm.
+ # sent_id = 283-20150917-MONOGRAFIA_0-309
+@@ -66969,7 +66880,7 @@
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 18	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-19	.	.	PUNCT	_	_	12	punct	O	_
++19	.	.	PUNCT	_	_	12	punct	O	sentenciação
+ 
+ # text = A Seção do Cruzeiro também é de grande relevância por apresentar dois níveis de silexitos associados aos arenitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-311
+@@ -67078,7 +66989,7 @@
+ 22	Sanfranciscana	Sanfranciscana	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	.	.	PUNCT	_	_	13	punct	O	_
+ 
+-# text = A Seção Chapadão (Figura 7) apresenta aproximadamente 40 m contínuos de rochas da Fm.
++# text = A Seção Chapadão (Figura 7) apresenta aproximadamente 40 m contínuos de rochas da Fm. Três Barras, sendo esta espessura mais reduzida para a Seção São José Romão (aproximadamente 25 m) (Figura 13).
+ # sent_id = 283-20150917-MONOGRAFIA_0-315
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+@@ -67098,34 +67009,31 @@
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-18	.	.	PUNCT	_	_	8	punct	O	_
+-
+-# text = Três Barras, sendo esta espessura mais reduzida para a Seção São José Romão (aproximadamente 25 m) (Figura 13).
+-# sent_id = 283-20150917-MONOGRAFIA_0-316
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	,	,	PUNCT	_	_	2	punct	O	_
+-4	sendo	ser	AUX	_	VerbForm=Ger	6	cop	O	_
+-5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	O	_
+-6	espessura	espessura	NOUN	_	Gender=Fem|Number=Sing	2	conj	O	_
+-7	mais	mais	ADV	_	_	8	advmod	O	_
+-8	reduzida	reduzir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	O	_
+-9	para	para	ADP	_	_	11	case	O	_
+-10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-12	São	São	PROPN	_	Number=Sing	11	flat:name	O	_
+-13	José	José	PROPN	_	Number=Sing	11	flat:name	O	_
+-14	Romão	Romão	PROPN	_	Number=Sing	11	flat:name	O	_
+-15	(	(	PUNCT	_	_	18	punct	O	_
+-16	aproximadamente	aproximadamente	ADV	_	_	18	advmod	O	_
+-17	25	25	NUM	_	NumType=Card	18	nummod	O	_
+-18	m	m	NOUN	_	Gender=Masc|Number=Plur	11	appos	O	_
+-19	)	)	PUNCT	_	_	18	punct	O	_
+-20	(	(	PUNCT	_	_	21	punct	O	_
+-21	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	2	parataxis	O	_
+-22	13	13	NUM	_	NumType=Card	21	nummod	O	_
+-23	)	)	PUNCT	_	_	21	punct	O	_
+-24	.	.	PUNCT	_	_	2	punct	O	_
++18	.	.	PUNCT	_	_	17	flat:name	O	_
++19	Três	Três	PROPN	_	NumType=Card	17	flat:name	O	_
++20	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	17	flat:name	O	_
++21	,	,	PUNCT	_	_	24	punct	O	_
++22	sendo	ser	AUX	_	VerbForm=Ger	26	aux	O	_
++23	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	O	_
++24	espessura	espessura	NOUN	_	Gender=Fem|Number=Sing	26	nsubj	O	_
++25	mais	mais	ADV	_	_	26	advmod	O	_
++26	reduzida	reduzir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	8	advcl	O	_
++27	para	para	ADP	_	_	29	case	O	_
++28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
++29	Seção	seção	PROPN	_	Gender=Fem|Number=Sing	26	obl	O	_
++30	São	São	PROPN	_	Number=Sing	29	flat:name	O	_
++31	José	José	PROPN	_	Number=Sing	29	flat:name	O	_
++32	Romão	Romão	PROPN	_	Number=Sing	29	flat:name	O	_
++33	(	(	PUNCT	_	_	36	punct	O	_
++34	aproximadamente	aproximadamente	ADV	_	_	36	advmod	O	_
++35	25	25	NUM	_	NumType=Card	36	nummod	O	_
++36	m	m	NOUN	_	Gender=Masc|Number=Plur	29	appos	O	_
++37	)	)	PUNCT	_	_	36	punct	O	_
++38	(	(	PUNCT	_	_	39	punct	O	_
++39	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	20	parataxis	O	_
++40	13	13	NUM	_	NumType=Card	39	nummod	O	_
++41	)	)	PUNCT	_	_	39	punct	O	_
++42	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Para ambas as seções-colunares observam-se duas distintas associações de fácies, uma inferior e outra superior.
+ # sent_id = 283-20150917-MONOGRAFIA_0-317
+@@ -67246,10 +67154,10 @@
+ 5	FÁCIES	fácies	NOUN	_	Gender=Fem|Number=Plur	3	nmod	O	_
+ 6	SEDIMENTARES	sedimentar	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
+ 
+-# text = O contato entre os sedimentos da Fm.
++# text = O contato entre os sedimentos da Fm. Três Barras e os pelitos da Fm. Quiricó é transicional.
+ # sent_id = 283-20150917-MONOGRAFIA_0-322
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	contato	contato	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++2	contato	contato	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	O	_
+ 3	entre	entre	ADP	_	_	5	case	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+@@ -67257,27 +67165,21 @@
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+-9	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Três Barras e os pelitos da Fm.
+-# sent_id = 283-20150917-MONOGRAFIA_0-323
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	e	e	CCONJ	_	_	5	cc	O	_
+-4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+-5	pelitos	pelito	NOUN	_	Gender=Masc|Number=Plur	2	conj	O	_
+-6-7	da	_	_	_	_	_	_	_	_
+-6	de	de	ADP	_	_	8	case	O	_
+-7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+-9	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Quiricó é transicional.
+-# sent_id = 283-20150917-MONOGRAFIA_0-324
+-1	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+-2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	O	_
+-3	transicional	transicional	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+-4	.	.	PUNCT	_	_	3	punct	O	_
++9	.	.	PUNCT	_	_	8	flat:name	O	_
++10	Três	Três	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
++11	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
++12	e	e	CCONJ	_	_	14	cc	O	_
++13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
++14	pelitos	pelito	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
++15-16	da	_	_	_	_	_	_	_	_
++15	de	de	ADP	_	_	17	case	O	_
++16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
++17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++18	.	.	PUNCT	_	_	17	flat:name	O	_
++19	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	17	flat:name	O	_
++20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	O	_
++21	transicional	transicional	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
++22	.	.	PUNCT	_	_	21	punct	O	_
+ 
+ # text = Ou seja, como se observa na Seção Cruzeiro (Figura 14), há aumento nas proporções de areia em relação aos pelitos, até que passa a ocorrerem apenas arenitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-325
+@@ -67741,7 +67643,7 @@
+ 6	e	e	CCONJ	_	_	8	cc	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	4	conj	O	_
+-9	.	.	PUNCT	_	_	1	punct	O	_
++9	.	.	PUNCT	_	_	1	punct	O	sentenciação
+ 
+ # text = Observa-se fácies pelíticas subordinadas relacionadas com a associação de fácies descrita acima (St, Sr, Sh e Sd).
+ # sent_id = 283-20150917-MONOGRAFIA_0-351
+@@ -67867,56 +67769,6 @@
+ 6	ressecamento	ressecamento	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	.	.	PUNCT	_	_	2	punct	O	_
+ 
+-# text = Uma superfície de descontinuidade foi observada regionalmente no topo da associação St, Sd, Sh, Sr e Fm.
+-# sent_id = 283-20150917-MONOGRAFIA_0-359
+-1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	O	_
+-3	de	de	ADP	_	_	4	case	O	_
+-4	descontinuidade	descontinuidade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	O	_
+-6	observada	observar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-7	regionalmente	regionalmente	ADV	_	_	6	advmod	O	_
+-8-9	no	_	_	_	_	_	_	_	_
+-8	em	em	ADP	_	_	10	case	O	_
+-9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	topo	topo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-11-12	da	_	_	_	_	_	_	_	_
+-11	de	de	ADP	_	_	13	case	O	_
+-12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	associação	associação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+-14	St	St	PROPN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+-15	,	,	PUNCT	_	_	16	punct	O	_
+-16	Sd	Sd	PROPN	_	Gender=Fem|Number=Sing	14	conj	O	_
+-17	,	,	PUNCT	_	_	18	punct	O	_
+-18	Sh	Sh	PROPN	_	Gender=Fem|Number=Sing	14	conj	O	_
+-19	,	,	PUNCT	_	_	20	punct	O	_
+-20	Sr	Sr	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+-21	e	e	CCONJ	_	_	22	cc	O	_
+-22	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+-23	.	.	PUNCT	_	_	6	punct	O	_
+-
+-# text = Esta superfície ocorre na cota 840m e marca uma quebra negativa significativa no relevo.
+-# sent_id = 283-20150917-MONOGRAFIA_0-360
+-1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	_
+-2	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+-3	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-4-5	na	_	_	_	_	_	_	_	_
+-4	em	em	ADP	_	_	6	case	O	_
+-5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	cota	cota	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-7	840m	840m	NUM	_	NumType=Card	6	nummod	O	_
+-8	e	e	CCONJ	_	_	9	cc	O	_
+-9	marca	marcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
+-10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	quebra	quebra	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+-12	negativa	negativo	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+-13	significativa	significativo	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+-14-15	no	_	_	_	_	_	_	_	_
+-14	em	em	ADP	_	_	16	case	O	_
+-15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	relevo	relevo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+-17	.	.	PUNCT	_	_	3	punct	O	_
+-
+ # text = Ela pôde ser notada tanto em imagens LANDSAT e do Google Earth, como em campo, estando ilustrada na figura 21.
+ # sent_id = 283-20150917-MONOGRAFIA_0-361
+ 1	Ela	ela	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	O	_
+@@ -68384,7 +68236,7 @@
+ 36	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	35	amod	O	_
+ 37	.	.	PUNCT	_	_	30	punct	O	_
+ 
+-# text = Os sistemas flúvio-deltaicos e fluviais já haviam sido atribuídos para a Fm.
++# text = Os sistemas flúvio-deltaicos e fluviais já haviam sido atribuídos para a Fm. Três Barras anteriormente (Campos e Dardenne, 1997; Sgarbi, 2011).
+ # sent_id = 283-20150917-MONOGRAFIA_0-379
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+ 2	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	9	nsubj:pass	O	_
+@@ -68398,25 +68250,22 @@
+ 10	para	para	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl:arg	O	_
+-13	.	.	PUNCT	_	_	9	punct	O	_
+-
+-# text = Três Barras anteriormente (Campos e Dardenne, 1997; Sgarbi, 2011).
+-# sent_id = 283-20150917-MONOGRAFIA_0-380
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	anteriormente	anteriormente	ADV	_	_	5	advmod	O	_
+-4	(	(	PUNCT	_	_	5	punct	O	_
+-5	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	2	appos	O	_
+-6	e	e	CCONJ	_	_	5	flat:name	O	_
+-7	Dardenne	Dardenne	PROPN	_	Gender=Masc|Number=Sing	5	flat:name	O	_
+-8	,	,	PUNCT	_	_	5	flat:name	O	_
+-9	1997	1997	NUM	_	NumType=Card	5	flat:name	O	_
+-10	;	;	PUNCT	_	_	11	punct	O	_
+-11	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	5	conj	O	_
+-12	,	,	PUNCT	_	_	11	flat:name	O	_
+-13	2011	2011	NUM	_	NumType=Card	11	flat:name	O	_
+-14	)	)	PUNCT	_	_	5	punct	O	_
+-15	.	.	PUNCT	_	_	2	punct	O	_
++13	.	.	PUNCT	_	_	12	flat:name	O	_
++14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
++15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
++16	anteriormente	anteriormente	ADV	_	_	9	advmod	O	_
++17	(	(	PUNCT	_	_	18	punct	O	_
++18	Campos	Campos	PROPN	_	Gender=Masc|Number=Sing	9	nmod:appos	O	_
++19	e	e	CCONJ	_	_	18	flat:name	O	_
++20	Dardenne	Dardenne	PROPN	_	Gender=Masc|Number=Sing	18	flat:name	O	_
++21	,	,	PUNCT	_	_	18	flat:name	O	_
++22	1997	1997	NUM	_	NumType=Card	18	flat:name	O	_
++23	;	;	PUNCT	_	_	24	punct	O	_
++24	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	18	conj	O	_
++25	,	,	PUNCT	_	_	24	flat:name	O	_
++26	2011	2011	NUM	_	NumType=Card	24	flat:name	O	_
++27	)	)	PUNCT	_	_	18	punct	O	_
++28	.	.	PUNCT	_	_	9	punct	O	_
+ 
+ # text = Acima das rochas fluviais e flúvio-deltaicas descreve-se a associação das fácies St, Sd, Sh, Sr e subordinadamente lamitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-381
+@@ -68573,7 +68422,7 @@
+ 12	eólica	eólico	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 13	.	.	PUNCT	_	_	9	punct	O	_
+ 
+-# text = As rochas eólicas ocorrem sobrepondo os sistemas flúvio-deltaico e fluvial, pertencentes a Fm.
++# text = As rochas eólicas ocorrem sobrepondo os sistemas flúvio-deltaico e fluvial, pertencentes a Fm. Três Barras, ou sobrepondo diretamente os sedimentos pelíticos do playa lake da Fm. Quiricó.
+ # sent_id = 283-20150917-MONOGRAFIA_0-387
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	O	_
+@@ -68588,39 +68437,32 @@
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12	pertencentes	pertencente	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 13	a	a	ADP	_	_	14	case	O	_
+-14	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+-15	.	.	PUNCT	_	_	4	punct	O	_
+-
+-# text = Três Barras, ou sobrepondo diretamente os sedimentos pelíticos do playa lake da Fm.
+-# sent_id = 283-20150917-MONOGRAFIA_0-388
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	,	,	PUNCT	_	_	5	punct	O	_
+-4	ou	ou	CCONJ	_	_	5	cc	O	_
+-5	sobrepondo	sobrepor	VERB	_	VerbForm=Ger	2	conj	O	_
+-6	diretamente	diretamente	ADV	_	_	5	advmod	O	_
+-7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	5	obj	O	_
+-9	pelíticos	pelítico	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+-10-11	do	_	_	_	_	_	_	_	_
+-10	de	de	ADP	_	_	12	case	O	_
+-11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	playa	playa	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+-13	lake	lake	X	_	_	12	flat:foreign	O	_
+-14-15	da	_	_	_	_	_	_	_	_
+-14	de	de	ADP	_	_	16	case	O	_
+-15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+-17	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Quiricó.
+-# sent_id = 283-20150917-MONOGRAFIA_0-389
+-1	Quiricó	quiricó	INTJ	_	_	0	root	O	_
+-2	.	.	PUNCT	_	_	1	punct	O	_
++14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
++15	.	.	PUNCT	_	_	14	flat:name	O	_
++16	Três	Três	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
++17	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
++18	,	,	PUNCT	_	_	20	punct	O	_
++19	ou	ou	CCONJ	_	_	20	cc	O	_
++20	sobrepondo	sobrepor	VERB	_	VerbForm=Ger	5	conj	O	_
++21	diretamente	diretamente	ADV	_	_	20	advmod	O	_
++22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
++23	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	20	obj	O	_
++24	pelíticos	pelítico	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
++25-26	do	_	_	_	_	_	_	_	_
++25	de	de	ADP	_	_	27	case	O	_
++26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
++27	playa	playa	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++28	lake	lake	X	_	_	27	flat:foreign	O	_
++29-30	da	_	_	_	_	_	_	_	_
++29	de	de	ADP	_	_	31	case	O	_
++30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
++31	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	27	nmod	O	_
++32	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	31	flat:name	O	_
++33	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = Acima da superfície de descontinuidade regional observada internamente à Fm.
++# text = Acima da superfície de descontinuidade regional observada internamente à Fm. Três Barras, ocorre a associação de fácies St, Sm e Sd.
+ # sent_id = 283-20150917-MONOGRAFIA_0-390
+-1	Acima	acima	ADV	_	_	0	root	O	_
++1	Acima	acima	ADV	_	_	17	advmod	O	_
+ 2-3	da	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -68633,25 +68475,22 @@
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-13	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Três Barras, ocorre a associação de fácies St, Sm e Sd.
+-# sent_id = 283-20150917-MONOGRAFIA_0-391
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	O	_
+-3	,	,	PUNCT	_	_	2	punct	O	_
+-4	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	associação	associação	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+-9	St	St	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+-10	,	,	PUNCT	_	_	11	punct	O	_
+-11	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
+-12	e	e	CCONJ	_	_	13	cc	O	_
+-13	Sd	Sd	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
+-14	.	.	PUNCT	_	_	4	punct	O	_
++12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl	O	_
++13	.	.	PUNCT	_	_	12	flat:name	O	_
++14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
++15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	17	flat:name	O	_
++16	,	,	PUNCT	_	_	15	punct	O	_
++17	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
++19	associação	associação	NOUN	_	Gender=Fem|Number=Sing	17	obj	O	_
++20	de	de	ADP	_	_	21	case	O	_
++21	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	19	nmod	O	_
++22	St	St	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
++23	,	,	PUNCT	_	_	24	punct	O	_
++24	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	22	conj	O	_
++25	e	e	CCONJ	_	_	26	cc	O	_
++26	Sd	Sd	PROPN	_	Gender=Masc|Number=Sing	22	conj	O	_
++27	.	.	PUNCT	_	_	17	punct	O	_
+ 
+ # text = St, com estruturas pin stripe, lentes com gradação inversa e estratificações de grande porte, é típica de dunas eólicas (Mountney, 2006).
+ # sent_id = 283-20150917-MONOGRAFIA_0-393
+@@ -69062,7 +68901,7 @@
+ 5	para	para	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-8	.	.	PUNCT	_	_	1	punct	O	_
++8	.	.	PUNCT	_	_	1	punct	O	sentenciação
+ 
+ # text = Foram levantadas 569 medidas, em 33 estações distintas, sendo as medidas obtidas principalmente nos foresets de arenitos St.
+ # sent_id = 283-20150917-MONOGRAFIA_0-409
+@@ -69218,7 +69057,7 @@
+ 33	ventos	vento	NOUN	_	Gender=Masc|Number=Plur	31	nmod	O	_
+ 34	.	.	PUNCT	_	_	18	punct	O	_
+ 
+-# text = Não foi observada mudança de padrão dos paleoventos em relação ao empilhamento vertical da Fm.
++# text = Não foi observada mudança de padrão dos paleoventos em relação ao empilhamento vertical da Fm. Três Barras, ou seja, paleoventos para SSW foram atuantes durante toda a deposição da unidade aqui tratada.
+ # sent_id = 283-20150917-MONOGRAFIA_0-414
+ 1	Não	não	ADV	_	Polarity=Neg	3	advmod	O	_
+ 2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	O	_
+@@ -69241,32 +69080,28 @@
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 18	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-19	.	.	PUNCT	_	_	3	punct	O	_
+-
+-# text = Três Barras, ou seja, paleoventos para SSW foram atuantes durante toda a deposição da unidade aqui tratada.
+-# sent_id = 283-20150917-MONOGRAFIA_0-415
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	O	_
+-3	,	,	PUNCT	_	_	4	punct	O	_
+-4	ou	ou	CCONJ	_	_	11	cc	O	_
+-5	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	fixed	O	_
+-6	,	,	PUNCT	_	_	4	punct	O	_
+-7	paleoventos	paleovento	NOUN	_	Gender=Masc|Number=Plur	2	conj	O	_
+-8	para	para	ADP	_	_	9	case	O	_
+-9	SSW	SSW	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	cop	O	_
+-11	atuantes	atuante	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+-12	durante	durante	ADP	_	_	15	case	O	_
+-13	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Tot	15	det	O	_
+-14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	deposição	deposição	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+-16-17	da	_	_	_	_	_	_	_	_
+-16	de	de	ADP	_	_	18	case	O	_
+-17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+-19	aqui	aqui	ADV	_	_	20	advmod	O	_
+-20	tratada	tratar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	acl	O	_
+-21	.	.	PUNCT	_	_	11	punct	O	_
++21	Três	Três	PROPN	_	Gender=Fem|Number=Sing	18	flat:name	O	_
++22	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	18	flat:name	O	_
++23	,	,	PUNCT	_	_	24	punct	O	_
++24	ou	ou	CCONJ	_	_	31	cc	O	_
++25	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	fixed	O	_
++26	,	,	PUNCT	_	_	24	punct	O	_
++27	paleoventos	paleovento	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	O	_
++28	para	para	ADP	_	_	29	case	O	_
++29	SSW	SSW	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
++30	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	31	cop	O	_
++31	atuantes	atuante	ADJ	_	Gender=Masc|Number=Plur	3	conj	O	_
++32	durante	durante	ADP	_	_	35	case	O	_
++33	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Tot	35	det	O	_
++34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
++35	deposição	deposição	NOUN	_	Gender=Fem|Number=Sing	31	obl	O	_
++36-37	da	_	_	_	_	_	_	_	_
++36	de	de	ADP	_	_	38	case	O	_
++37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
++38	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
++39	aqui	aqui	ADV	_	_	40	advmod	O	_
++40	tratada	tratar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	38	acl	O	_
++41	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = TRATO DEPOSICIONAL E PALEOGEOGRAFIA
+ # sent_id = 283-20150917-MONOGRAFIA_0-416
+@@ -69755,35 +69590,32 @@
+ 22	paleodrenagens	paleodrenagem	NOUN	_	Gender=Fem|Number=Plur	18	nmod	O	_
+ 23	.	.	PUNCT	_	_	8	punct	O	_
+ 
+-# text = Dunas eólicas decamétricas da Fm.
++# text = Dunas eólicas decamétricas da Fm. Abaeté superpõem os sedimentos aluviais na porção central da área estudada.
+ # sent_id = 283-20150917-MONOGRAFIA_0-432
+-1	Dunas	duna	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++1	Dunas	duna	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	O	_
+ 2	eólicas	eólico	ADJ	_	Gender=Fem|Number=Plur	1	amod	O	_
+ 3	decamétricas	decamétrico	ADJ	_	Gender=Fem|Number=Plur	1	amod	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-7	.	.	PUNCT	_	_	1	punct	O	_
+-
+-# text = Abaeté superpõem os sedimentos aluviais na porção central da área estudada.
+-# sent_id = 283-20150917-MONOGRAFIA_0-433
+-1	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
+-2	superpõem	superpor	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+-4	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	2	obj	O	_
+-5	aluviais	aluvial	ADJ	_	Gender=Masc|Number=Plur	4	amod	O	_
+-6-7	na	_	_	_	_	_	_	_	_
+-6	em	em	ADP	_	_	8	case	O	_
+-7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	porção	porção	NOUN	_	Gender=Fem|Number=Sing	2	obl	O	_
+-9	central	central	ADJ	_	Gender=Fem|Number=Sing	8	amod	O	_
+-10-11	da	_	_	_	_	_	_	_	_
+-10	de	de	ADP	_	_	12	case	O	_
+-11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	área	área	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-13	estudada	estudar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	O	_
+-14	.	.	PUNCT	_	_	2	punct	O	_
++7	.	.	PUNCT	_	_	6	flat:name	O	_
++8	Abaeté	Abaeté	PROPN	_	Gender=Fem|Number=Sing	6	flat:name	O	_
++9	superpõem	superpor	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
++11	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	9	obj	O	_
++12	aluviais	aluvial	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
++13-14	na	_	_	_	_	_	_	_	_
++13	em	em	ADP	_	_	15	case	O	_
++14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
++15	porção	porção	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++16	central	central	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
++17-18	da	_	_	_	_	_	_	_	_
++17	de	de	ADP	_	_	19	case	O	_
++18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
++19	área	área	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++20	estudada	estudar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	O	_
++21	.	.	PUNCT	_	_	9	punct	O	_
+ 
+ # text = Os dados de paleocorrentes mostraram dois padrões distintos de paleoventos: 1) unimodal para NW; 2) bimodal para SW.
+ # sent_id = 283-20150917-MONOGRAFIA_0-434
+@@ -70448,10 +70280,10 @@
+ 23	)	)	PUNCT	_	_	18	punct	O	_
+ 24	.	.	PUNCT	_	_	4	punct	O	_
+ 
+-# text = As paleocorrentes dadas pela migração das dunas eólicas da Fm.
++# text = As paleocorrentes dadas pela migração das dunas eólicas da Fm. Três Barras permitiram determinar peleoventos com sentido para SSW.
+ # sent_id = 283-20150917-MONOGRAFIA_0-456
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+-2	paleocorrentes	paleocorrente	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++2	paleocorrentes	paleocorrente	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	O	_
+ 3	dadas	dar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	O	_
+ 4-5	pela	_	_	_	_	_	_	_	_
+ 4	por	por	ADP	_	_	6	case	O	_
+@@ -70466,20 +70298,16 @@
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-14	.	.	PUNCT	_	_	2	punct	O	_
+-
+-# text = Três Barras permitiram determinar peleoventos com sentido para SSW.
+-# sent_id = 283-20150917-MONOGRAFIA_0-457
+-1	Três	três	NUM	_	NumType=Card	2	nummod	O	_
+-2	Barras	barra	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	O	_
+-3	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+-4	determinar	determinar	VERB	_	VerbForm=Inf	3	xcomp	O	_
+-5	peleoventos	peleovento	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
+-6	com	com	ADP	_	_	7	case	O	_
+-7	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-8	para	para	ADP	_	_	9	case	O	_
+-9	SSW.	SSW.	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-10	.	.	PUNCT	_	_	3	punct	O	_
++14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	13	flat:name	O	_
++15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	13	flat:name	O	_
++16	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
++17	determinar	determinar	VERB	_	VerbForm=Inf	16	xcomp	O	_
++18	peleoventos	peleovento	NOUN	_	Gender=Masc|Number=Plur	17	obj	O	_
++19	com	com	ADP	_	_	20	case	O	_
++20	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
++21	para	para	ADP	_	_	22	case	O	_
++22	SSW	SSW	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
++23	.	.	PUNCT	_	_	16	punct	O	_
+ 
+ # text = O rumo destes paleoventos foi consistente para toda a Sub-Bacia Abaeté e sem mudanças significativas mesmo com o decréscimo de umidade para o topo.
+ # sent_id = 283-20150917-MONOGRAFIA_0-458
+@@ -70663,7 +70491,7 @@
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+-4	.	.	PUNCT	_	_	3	punct	O	_
++4	.	.	PUNCT	_	_	3	punct	O	sentenciação
+ 
+ # text = Grande parte das rosetas de paleocorrentes eólicas desta formação revelou padrão unimodal e com dispersões relativamente baixas, com fatores de consistência (Fc) variando de 0,61 a 0,93.
+ # sent_id = 283-20150917-MONOGRAFIA_0-465

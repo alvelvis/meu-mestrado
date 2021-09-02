@@ -1,0 +1,251 @@
+commit 7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jun 23 20:07:51 2021 -0300
+
+    MWE como também
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index b6ea396..aa46f70 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -20991,8 +20991,8 @@
+ 13	vetor	vetor	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 14	resultante	resultante	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 15	,	,	PUNCT	_	_	19	punct	O	_
+-16	como	como	ADV	_	_	19	cc	O	_
+-17	também	também	ADV	_	_	19	advmod	O	_
++16	como	como	ADV	_	_	19	cc	O	MWEPOS=CCONJ
++17	também	também	ADV	_	_	16	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	dispersão	dispersão	NOUN	_	Gender=Fem|Number=Sing	10	conj	O	_
+ 20	original	original	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
+@@ -48350,8 +48350,8 @@
+ 55	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	57	det	O	_
+ 56	bom	bom	ADJ	_	Gender=Masc|Number=Sing	57	amod	O	_
+ 57	desempenho	desempenho	NOUN	_	Gender=Masc|Number=Sing	54	obj	O	_
+-58	como	como	ADV	_	_	62	cc	O	_
+-59	também	também	ADV	_	_	62	advmod	O	_
++58	como	como	ADV	_	_	62	cc	O	MWEPOS=CCONJ
++59	também	também	ADV	_	_	58	fixed	O	_
+ 60	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	62	cop	O	_
+ 61	menos	menos	ADV	_	_	62	advmod	O	_
+ 62	tóxicos	tóxico	ADJ	_	Gender=Masc|Number=Plur	54	conj	O	_
+@@ -242470,11 +242470,11 @@
+ 33	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
+ 34	NW/SE	NW/SE	PROPN	_	Gender=Masc|Number=Sing	33	nmod	O	_
+ 35	,	,	PUNCT	_	_	40	punct	O	_
+-36	como	como	ADP	_	_	40	case	O	_
+-37	também	também	ADV	_	_	40	advmod	O	_
++36	como	como	ADV	_	_	40	cc	O	MWEPOS=CCONJ
++37	também	também	ADV	_	_	36	fixed	O	_
+ 38	a	a	ADP	_	_	40	case	O	_
+ 39	possíveis	possível	ADJ	_	Gender=Fem|Number=Plur	40	amod	O	_
+-40	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	33	nmod:appos	O	_
++40	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	33	conj	O	_
+ 41	regionais	regional	ADJ	_	Gender=Fem|Number=Plur	40	amod	O	_
+ 42	de	de	ADP	_	_	43	case	O	_
+ 43	origem	origem	NOUN	_	Gender=Fem|Number=Sing	40	nmod	O	_
+@@ -242541,9 +242541,9 @@
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 18	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	13	obj	O	_
+ 19	,	,	PUNCT	_	_	13	punct	O	_
+-20	como	como	SCONJ	_	_	22	mark	O	_
+-21	também	também	ADV	_	_	22	advmod	O	_
+-22	criar	criar	VERB	_	VerbForm=Inf	4	advcl	O	_
++20	como	como	ADV	_	_	22	cc	O	MWEPOS=CCONJ
++21	também	também	ADV	_	_	20	fixed	O	_
++22	criar	criar	VERB	_	VerbForm=Inf	4	conj	O	_
+ 23	,	,	PUNCT	_	_	22	punct	O	_
+ 24	eventualmente	eventualmente	ADV	_	_	22	advmod	O	_
+ 25	,	,	PUNCT	_	_	22	punct	O	_
+@@ -244644,8 +244644,8 @@
+ 5	área	área	NOUN	_	Gender=Fem|Number=Sing	24	obl	O	_
+ 6	investigada	investigar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	O	_
+ 7	,	,	PUNCT	_	_	6	punct	O	_
+-8	como	como	ADV	_	_	12	cc	O	_
+-9	também	também	ADV	_	_	12	advmod	O	_
++8	como	como	ADV	_	_	12	cc	O	MWEPOS=CCONJ
++9	também	também	ADV	_	_	8	fixed	O	_
+ 10-11	na	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -244993,10 +244993,10 @@
+ 28	corpos	corpo	NOUN	_	Gender=Masc|Number=Plur	26	nmod	O	_
+ 29	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
+ 30	,	,	PUNCT	_	_	34	punct	O	_
+-31	como	como	ADV	_	_	34	cc	O	_
+-32	também	também	ADV	_	_	34	advmod	O	_
++31	como	como	ADV	_	_	34	cc	O	MWEPOS=CCONJ
++32	também	também	ADV	_	_	31	fixed	O	_
+ 33	para	para	SCONJ	_	_	34	mark	O	_
+-34	estimar	estimar	VERB	_	VerbForm=Inf	18	advcl	O	_
++34	estimar	estimar	VERB	_	VerbForm=Inf	18	conj	O	_
+ 35	suas	seu	DET	_	Gender=Fem|Number=Plur|PronType=Prs	36	det	O	_
+ 36	profundidades	profundidade	NOUN	_	Gender=Fem|Number=Plur	34	obj	O	_
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+@@ -248726,10 +248726,10 @@
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	Thompson	Thompson	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 25	,	,	PUNCT	_	_	21	punct	O	_
+-26	como	como	ADP	_	_	29	case	O	_
+-27	também	também	ADV	_	_	29	advmod	O	_
++26	como	como	ADV	_	_	29	cc	O	MWEPOS=CCONJ
++27	também	também	ADV	_	_	26	fixed	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+-29	método	método	NOUN	_	Gender=Masc|Number=Sing	11	obl	B=MÉTODO	_
++29	método	método	NOUN	_	Gender=Masc|Number=Sing	21	conj	B=MÉTODO	_
+ 30	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	O	_
+ 31	lança	lançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	O	_
+ 32	mão	mão	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+@@ -253776,8 +253776,8 @@
+ 45	de	de	ADP	_	_	44	flat:name	O	_
+ 46	Euler	Euler	PROPN	_	Number=Sing	44	flat:name	O	_
+ 47	,	,	PUNCT	_	_	52	punct	O	_
+-48	como	como	ADV	_	_	52	cc	O	_
+-49	também	também	ADV	_	_	52	advmod	O	_
++48	como	como	ADV	_	_	52	cc	O	MWEPOS=CCONJ
++49	também	também	ADV	_	_	48	fixed	O	_
+ 50-51	pelo	_	_	_	_	_	_	_	_
+ 50	por	por	ADP	_	_	52	case	O	_
+ 51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
+@@ -257146,10 +257146,10 @@
+ 20	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	_
+ 21	acima	acima	ADV	_	_	20	advmod	O	_
+ 22	,	,	PUNCT	_	_	20	punct	O	_
+-23	como	como	ADP	_	_	26	case	O	_
+-24	também	também	ADV	_	_	26	advmod	O	_
++23	como	como	ADV	_	_	26	cc	O	MWEPOS=CCONJ
++24	também	também	ADV	_	_	23	fixed	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	análise	análise	NOUN	_	Gender=Fem|Number=Sing	20	xcomp	O	_
++26	análise	análise	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 27	qualitativa	qualitativo	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+ 28	,	,	PUNCT	_	_	29	punct	O	_
+ 29	elaborada	elaborar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	O	_
+@@ -263063,8 +263063,8 @@
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
+ 28	corpos	corpo	NOUN	_	Gender=Masc|Number=Plur	24	obl	O	_
+ 29	,	,	PUNCT	_	_	34	punct	O	_
+-30	como	como	ADV	_	_	34	cc	O	_
+-31	também	também	ADV	_	_	34	advmod	O	_
++30	como	como	ADV	_	_	34	cc	O	MWEPOS=CCONJ
++31	também	também	ADV	_	_	30	fixed	O	_
+ 32-33	nas	_	_	_	_	_	_	_	_
+ 32	em	em	ADP	_	_	34	case	O	_
+ 33	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	O	_
+@@ -273124,10 +273124,10 @@
+ 12	figura	figura	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+ 13	7.1	7.1	NUM	_	NumType=Card	12	nummod	O	_
+ 14	)	)	PUNCT	_	_	12	punct	O	_
+-15	como	como	ADP	_	_	18	case	O	_
+-16	também	também	ADV	_	_	18	advmod	O	_
++15	como	como	ADV	_	_	18	cc	O	MWEPOS=CCONJ
++16	também	também	ADV	_	_	15	fixed	O	_
+ 17	para	para	ADP	_	_	18	case	O	_
+-18	área	área	NOUN	_	Gender=Fem|Number=Sing	9	nmod:appos	O	_
++18	área	área	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 19	marinha	marinho	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+ 20	,	,	PUNCT	_	_	4	punct	O	_
+ 21	onde	onde	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	22	obl	O	_
+@@ -276184,10 +276184,10 @@
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	plugs	plug	NOUN	_	Gender=Masc|Number=Plur	6	obj	O	_
+ 9	,	,	PUNCT	_	_	13	punct	O	_
+-10	como	como	ADP	_	_	13	case	O	_
+-11	também	também	ADV	_	_	13	advmod	O	_
++10	como	como	ADV	_	_	13	cc	O	MWEPOS=CCONJ
++11	também	também	ADV	_	_	10	fixed	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	alinhamento	alinhamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod:appos	O	_
++13	alinhamento	alinhamento	NOUN	_	Gender=Masc|Number=Sing	8	conj	O	_
+ 14	topográfico	topográfico	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+@@ -277658,8 +277658,8 @@
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+ 33	região	região	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+ 34	,	,	PUNCT	_	_	38	punct	O	_
+-35	como	como	ADV	_	_	38	cc	O	_
+-36	também	também	ADV	_	_	38	advmod	O	_
++35	como	como	ADV	_	_	38	cc	O	MWEPOS=CCONJ
++36	também	também	ADV	_	_	35	fixed	O	_
+ 37	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	38	aux	O	_
+ 38	contribuído	contribuir	VERB	_	VerbForm=Part	31	conj	O	_
+ 39-40	na	_	_	_	_	_	_	_	_
+@@ -283915,10 +283915,10 @@
+ 47	e	e	CCONJ	_	_	48	cc	O	_
+ 48	susceptibilidades	susceptibilidade	NOUN	_	Gender=Fem|Number=Plur	46	conj	O	_
+ 49	,	,	PUNCT	_	_	53	punct	O	_
+-50	como	como	ADP	_	_	53	case	O	_
+-51	também	também	ADV	_	_	53	advmod	O	_
++50	como	como	ADV	_	_	53	cc	O	MWEPOS=CCONJ
++51	também	também	ADV	_	_	50	fixed	O	_
+ 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
+-53	coleta	coleta	NOUN	_	Gender=Fem|Number=Sing	44	nmod:appos	O	_
++53	coleta	coleta	NOUN	_	Gender=Fem|Number=Sing	44	conj	O	_
+ 54	de	de	ADP	_	_	55	case	O	_
+ 55	dados	dado	NOUN	_	Gender=Masc|Number=Plur	53	nmod	O	_
+ 56	estruturais	estrutural	ADJ	_	Gender=Masc|Number=Plur	55	amod	O	_
+@@ -284948,8 +284948,8 @@
+ 25	Cabo	Cabo	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	Frio	Frio	PROPN	_	Number=Sing	23	flat:name	O	_
+ 27	,	,	PUNCT	_	_	30	punct	O	_
+-28	como	como	ADV	_	_	30	cc	O	_
+-29	também	também	ADV	_	_	30	advmod	O	_
++28	como	como	ADV	_	_	30	cc	O	MWEPOS=CCONJ
++29	também	também	ADV	_	_	28	fixed	O	_
+ 30	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	O	_
+ 31	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	32	det	O	_
+ 32	controle	controle	NOUN	_	Gender=Masc|Number=Sing	30	obj	O	_
+@@ -315919,10 +315919,10 @@
+ 37	e	e	CCONJ	_	_	38	cc	O	_
+ 38	classificação	classificação	NOUN	_	Gender=Fem|Number=Sing	34	conj	O	_
+ 39	,	,	PUNCT	_	_	43	punct	O	_
+-40	como	como	ADP	_	_	43	case	O	_
+-41	também	também	ADV	_	_	43	advmod	O	_
++40	como	como	ADV	_	_	43	cc	O	MWEPOS=CCONJ
++41	também	também	ADV	_	_	40	fixed	O	_
+ 42	sobre	sobre	ADP	_	_	43	case	O	_
+-43	diagramas	diagrama	NOUN	_	Gender=Masc|Number=Plur	22	nmod:appos	O	_
++43	diagramas	diagrama	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
+ 44	de	de	ADP	_	_	45	case	O	_
+ 45	fases	fase	NOUN	_	Gender=Fem|Number=Plur	43	nmod	O	_
+ 46	e	e	CCONJ	_	_	47	cc	O	_
+@@ -317455,10 +317455,10 @@
+ 31	a	a	ADP	_	_	32	case	O	_
+ 32	danos	dano	NOUN	_	Gender=Masc|Number=Plur	30	nmod	O	_
+ 33	,	,	PUNCT	_	_	37	punct	O	_
+-34	como	como	ADV	_	_	37	cc	O	_
+-35	também	também	ADV	_	_	37	advmod	O	_
++34	como	como	ADV	_	_	37	cc	O	MWEPOS=CCONJ
++35	também	também	ADV	_	_	34	fixed	O	_
+ 36	em	em	ADP	_	_	37	case	O	_
+-37	formações	formação	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
++37	formações	formação	NOUN	_	Gender=Fem|Number=Plur	14	conj	O	_
+ 38	muito	muito	ADV	_	_	39	advmod	O	_
+ 39	duras	duro	ADJ	_	Gender=Fem|Number=Plur	37	amod	O	_
+ 40	como	como	ADP	_	_	41	case	O	_
+@@ -324273,11 +324273,11 @@
+ 14	bem	bem	ADV	_	_	15	advmod	O	_
+ 15	menor	pequeno	ADJ	_	Gender=Fem|Number=Sing	3	xcomp	O	_
+ 16	,	,	PUNCT	_	_	24	punct	O	_
+-17	como	como	ADV	_	_	21	cc	O	_
+-18	também	também	ADV	_	_	21	advmod	O	_
++17	como	como	ADV	_	_	21	cc	O	MWEPOS=CCONJ
++18	também	também	ADV	_	_	17	fixed	O	_
+ 19	por	por	ADP	_	_	21	case	O	_
+ 20	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	21	det	O	_
+-21	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++21	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 22	termodinâmica	termodinâmica	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+ 24	estabilizando	estabilizar	VERB	_	VerbForm=Ger	15	advcl	O	_
+@@ -328551,7 +328551,7 @@
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	Bingham	Bingham	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 24	,	,	PUNCT	_	_	15	punct	O	_
+-25	como	como	ADP	_	_	36	cc	O	_
++25	como	como	ADV	_	_	36	cc	O	MWEPOS=CCONJ
+ 26	também	também	ADV	_	_	25	fixed	O	_
+ 27	,	,	PUNCT	_	_	26	punct	O	_
+ 28	que	que	SCONJ	_	_	36	mark	O	_

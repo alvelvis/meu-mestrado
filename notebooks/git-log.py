@@ -10,9 +10,10 @@ repo_name = "alvelvis/meu-mestrado"
 with open(commits_file) as f:
     commits = [x.strip() for x in f.read().splitlines() if x.strip() and not x.strip().startswith("#")]
 
+patch_folder_name = "patch_{}".format(os.path.basename(commits_file).rsplit(".", 1)[0])
 patches_folder = "{}/{}".format(
     folder_to_save_changelog, 
-    "patch")
+    patch_folder_name)
 
 if not commits:
     raise Exception("Commits list is empty.")
@@ -32,7 +33,7 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.minute,
     now_date.second)
 changelog = "# Changelog\n\nLast update: {}".format(now_date.replace("_", "-"))
-changelog_filename = "changelog.md"
+changelog_filename = os.path.basename(commits_file).rsplit(".", 1)[0] + ".md"
 
 months = {
     'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
@@ -62,7 +63,7 @@ for commit in commits:
         commit)
     with open("{}/{}".format(patches_folder, patch_filename), "w") as f:
         f.write(log)
-    changelog += "\n\n## {0}\n\n* {3}\n* {1}\n* Lines changed: {4}\n* Commit: [{2}](https://github.com/{8}/commit/{2})\n* Patch file: [{5}](patch/{5})\n\n{6}\n\n```diff\n{7}\n```".format(
+    changelog += "\n\n## {0}\n\n* {3}\n* {1}\n* Lines changed: {4}\n* Commit: [{2}](https://github.com/{8}/commit/{2})\n* Patch file: [{5}]({9}/{5})\n\n{6}\n\n```diff\n{7}\n```".format(
         message.strip().splitlines()[0],
         date,
         commit,
@@ -71,7 +72,8 @@ for commit in commits:
         patch_filename,
         message,
         "\n".join([x for x in log.split("@@")[2].splitlines() if x.strip()]),
-        repo_name)
+        repo_name,
+        patch_folder_name)
 
 with open("{}/{}".format(folder_to_save_changelog, changelog_filename), "w") as f:
     f.write(changelog)

@@ -1,0 +1,928 @@
+commit c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jul 7 05:24:26 2021 -0300
+
+    features dos verbos bugados "abserva-se"
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index dbf4c42..11b5b03 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -387,7 +387,7 @@
+ # text = Busca-se analisar as estruturas continentais que possam apresentar continuidade na bacia de Pelotas (“Lineamento Tibagi” e “Sinclinal de Torres”), verificando sua influência na evolução e deformação da mesma..
+ # sent_id = 247-20140910-MONOGRAFIA_0-11
+ 1-2	Busca-se	_	_	_	_	_	_	_	_
+-1	Dusca	doscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	analisar	analisar	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -3332,7 +3332,7 @@
+ # text = Nessas unidades é comum encontrar rochas siliciclásticas finas a grossas, glácio-marinhas e continentais..
+ # sent_id = 247-20140910-MONOGRAFIA_0-93
+ 1-2	Nessas	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	3	case	O	_
++1	Em	em	ADP	_	_	3	case	O	_
+ 2	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	3	det	O	_
+ 3	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	5	obl	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+@@ -24935,7 +24935,7 @@
+ # text = Desta forma, a característica geral da associação fossilífera encontrada por Arai & Coimbra (1990) não deixa dúvidas quanto à pertinência dos registros das ingressões marinhas no Andar Alagoas..
+ # sent_id = 284-20150917-MONOGRAFIA_0-162
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -45562,7 +45562,7 @@
+ # text = Objetivou-se também estabelecer correlações entre as propriedades químicas e mineralógicas das argilas, e a capacidade destas de promoverem o enceramento de broca..
+ # sent_id = 24-20150122-MONOGRAFIA_0-22
+ 1-2	Objetivou-se	_	_	_	_	_	_	_	_
+-1	Abjetivou	abjetivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Objetivou	objetivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	também	também	ADV	_	_	4	advmod	O	_
+ 4	estabelecer	estabelecer	VERB	_	VerbForm=Inf	1	xcomp	O	_
+@@ -48613,7 +48613,7 @@
+ # text = Tem-se tentado entender o mecanismo da ocorrência do fenômeno para o desenvolvimento de aditivos que o inibam..
+ # sent_id = 24-20150122-MONOGRAFIA_0-117
+ 1-2	Tem-se	_	_	_	_	_	_	_	_
+-1	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	O	_
++1	Tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	O	_
+ 3	tentado	tentar	VERB	_	VerbForm=Part	0	root	O	_
+ 4	entender	entender	VERB	_	VerbForm=Inf	3	xcomp	O	_
+@@ -48640,7 +48640,7 @@
+ # text = Minimizando-se o enceramento de broca pode-se maximizar a taxa de penetração da mesma (OORT, 1997)..
+ # sent_id = 24-20150122-MONOGRAFIA_0-118
+ 1-2	Minimizando-se	_	_	_	_	_	_	_	_
+-1	qinimizando	qinimizar	VERB	_	VerbForm=Ger	7	advcl	O	_
++1	Minimizando	minimizar	VERB	_	VerbForm=Ger	7	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	enceramento	enceramento	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+@@ -51270,7 +51270,7 @@
+ # text = Nessas condições, os cátions interlamelares são suscetíveis de serem trocados por outros cátions por uma reação química estequiométrica..
+ # sent_id = 24-20150122-MONOGRAFIA_0-194
+ 1-2	Nessas	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	3	case	O	_
++1	Em	em	ADP	_	_	3	case	O	_
+ 2	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	3	det	O	_
+ 3	condições	condição	NOUN	_	Gender=Fem|Number=Plur	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -51497,7 +51497,7 @@
+ # text = Desses fatos, resulta que as partículas de esmectitas, em geral, são de pequeno diâmetro e extremamente finas; por isso não tem sentido medir a distribuição granulométrica de uma montmorilonita sódica, uma vez que variações de concentração da fase dispersa e do eletrólito dispersante provocam uma separação ou agregação das camadas estruturais (SANTOS, 1989)..
+ # sent_id = 24-20150122-MONOGRAFIA_0-199
+ 1-2	Desses	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	3	det	O	_
+ 3	fatos	fato	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -53596,7 +53596,7 @@
+ # text = Dessa forma, os polieletrólitos são os mais influenciados, pois possuem grupos funcionais eletricamente carregados na molécula..
+ # sent_id = 24-20150122-MONOGRAFIA_0-245
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -53928,7 +53928,7 @@
+ # text = Usou-se uma célula de carga modelo Z da EMIC (Figura III.2), com capacidade de 20.000N (2.000 kg)..
+ # sent_id = 24-20150122-MONOGRAFIA_0-258
+ 1-2	Usou-se	_	_	_	_	_	_	_	_
+-1	fsou	fsar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	célula	célula	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	O	_
+@@ -56793,7 +56793,7 @@
+ # text = Obteve-se uma curva de calibração (Figura IV.2) para o azul de metileno com R2 = 0,9997, a equação da reta obtida foi: y=70076x-0,0061..
+ # sent_id = 24-20150122-MONOGRAFIA_0-368
+ 1-2	Obteve-se	_	_	_	_	_	_	_	_
+-1	Abteve	abtevar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Obteve	obter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	curva	curva	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	O	_
+@@ -56876,7 +56876,7 @@
+ # text = Fez-se também a leitura de um branco (Solução de azul de metileno que tinha a mesma concentração das demais, sendo que nesta não foi adicionado argila, embora tenha passado pelo mesmo processo que as demais)..
+ # sent_id = 24-20150122-MONOGRAFIA_0-370
+ 1-2	Fez-se	_	_	_	_	_	_	_	_
+-1	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -61445,7 +61445,7 @@
+ # text = Usou-se a argila A4 para demonstrar o processo de inchamento e fragmentação (desfolhamento) das argilas quando hidratadas..
+ # sent_id = 24-20150122-MONOGRAFIA_0-543
+ 1-2	Usou-se	_	_	_	_	_	_	_	_
+-1	fsou	fsar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	argila	argila	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	B=LITOLOGIA	_
+@@ -61699,7 +61699,7 @@
+ # text = Notou-se durante as análises que a qualidade dos cascalhos inibidos era maior, ou seja, os cascalhos pareciam mais rígidos que os inibidos com estearato de MPEG 350 e KCl..
+ # sent_id = 24-20150122-MONOGRAFIA_0-554
+ 1-2	Notou-se	_	_	_	_	_	_	_	_
+-1	Eotou	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Notou	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	durante	durante	ADP	_	_	5	case	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -62491,7 +62491,7 @@
+ # text = Nota-se que o gráfico A não possui esse segundo pico, pois essa força foi nula..
+ # sent_id = 24-20150122-MONOGRAFIA_0-587
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -63818,7 +63818,7 @@
+ # text = Usando-se a metodologia proposta para o ensaio é possível caracterizar a tendência das argilas ao enceramento de broca..
+ # sent_id = 24-20150122-MONOGRAFIA_0-626
+ 1-2	Usando-se	_	_	_	_	_	_	_	_
+-1	fsando	fsar	VERB	_	VerbForm=Ger	10	advcl	O	_
++1	Usando	usar	VERB	_	VerbForm=Ger	10	advcl	O	_
+ 2	se	se	SCONJ	_	_	10	mark	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+@@ -64224,7 +64224,7 @@
+ # text = Destacam-se os trabalhos de Seer et al. (1989), Sgarbi (1989), Kattah (1991), Arai et al. (1995), Campos e Dardenne (1997), Sgarbi e Dardenne (1998), Mendonça (2003), Carmo (2004) e Sgarbi (2011)..
+ # sent_id = 283-20150917-MONOGRAFIA_0-6
+ 1-2	Destacam-se	_	_	_	_	_	_	_	_
+-1	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
+@@ -64990,7 +64990,7 @@
+ # text = Limita-se a sul com a Bacia do Paraná, pelo Alto do Paranaíba, e a norte pelo Alto do São Francisco, que a separa da Bacia do Parnaíba (Campos e Dardenne, 1997)..
+ # sent_id = 283-20150917-MONOGRAFIA_0-27
+ 1-2	Limita-se	_	_	_	_	_	_	_	_
+-1	limita	limitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Limita	limitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	a	ADP	_	_	4	case	O	_
+ 4	sul	sul	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+@@ -68015,7 +68015,7 @@
+ # text = Buscou-se obter, quando possível, mínimo de 20 medidas em cada estação, número usual de medidas com significação estatística já consolidada na literatura..
+ # sent_id = 283-20150917-MONOGRAFIA_0-116
+ 1-2	Buscou-se	_	_	_	_	_	_	_	_
+-1	quscou	quscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Buscou	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	obter	obter	VERB	_	VerbForm=Inf	1	xcomp	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -69816,7 +69816,7 @@
+ # text = Desta forma, a interpretação de Campos e Dardenne (1995) pode ser estendida para demais localidades da Sub-Bacia Abaeté..
+ # sent_id = 283-20150917-MONOGRAFIA_0-187
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -70254,7 +70254,7 @@
+ # text = Depreende-se assim que o paleofluxo fluvial para a Sub-Bacia Abaeté era para NW/N, sendo esta direção preferencial consistente tanto para as porções centrais como para a porção mais setentrional da sub-bacia..
+ # sent_id = 283-20150917-MONOGRAFIA_0-204
+ 1-2	Depreende-se	_	_	_	_	_	_	_	_
+-1	Deprende	deprender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Depreende	depreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	14	mark	O	_
+@@ -71436,7 +71436,7 @@
+ # text = Notou-se que quando há o predomínio de folhelhos a laminação tende a ser monótona..
+ # sent_id = 283-20150917-MONOGRAFIA_0-255
+ 1-2	Notou-se	_	_	_	_	_	_	_	_
+-1	Eotou	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Notou	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4	quando	quando	SCONJ	_	_	5	mark	O	_
+@@ -73644,7 +73644,7 @@
+ # text = Notam-se, em alguns casos, cunhas com gradação inversa no foreset (produto de grain flow), como observado na figura 19, e com estrutura pin stripe (Figura 19)..
+ # sent_id = 283-20150917-MONOGRAFIA_0-339
+ 1-2	Notam-se	_	_	_	_	_	_	_	_
+-1	Eotam	eutar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Notam	notar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	em	em	ADP	_	_	6	case	O	_
+@@ -74179,7 +74179,7 @@
+ # text = Nele foi observado, na base, sequência de arenitos
+ # sent_id = 283-20150917-MONOGRAFIA_0-353
+ 1-2	Nele	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	2	case	O	_
++1	Em	em	ADP	_	_	2	case	O	_
+ 2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	O	_
+ 3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	O	_
+ 4	observado	observar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -83877,7 +83877,7 @@
+ # text = Nessas condições, o CO2 se mistura completamente com o petróleo dentro do reservatório, formando um fluido de baixa viscosidade que pode ser facilmente deslocado e produzido..
+ # sent_id = 161-20150810-MONOGRAFIA_0-194
+ 1-2	Nessas	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	3	case	O	_
++1	Em	em	ADP	_	_	3	case	O	_
+ 2	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	3	det	O	_
+ 3	condições	condição	NOUN	_	Gender=Fem|Number=Plur	8	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -84326,7 +84326,7 @@
+ # text = Formam-se, então, compostos sólidos estáveis como os carbonatos que se depositam no fundo, armazenando permanentemente o dióxido de carbono (carbonatação mineral)..
+ # sent_id = 161-20150810-MONOGRAFIA_0-207
+ 1-2	Formam-se	_	_	_	_	_	_	_	_
+-1	Aormam	aormar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Formam	formar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	O	_
+ 3	,	,	PUNCT	_	_	4	punct	O	_
+ 4	então	então	ADV	_	_	1	advmod	O	_
+@@ -94456,7 +94456,7 @@
+ # text = Utiliza-se a injeção de água como método de recuperação suplementar, estimando-se a repressurizacão dos reservatórios até um patamar próximo às suas pressões originais. (ANP, 2011)
+ # sent_id = 161-20150810-MONOGRAFIA_0-519
+ 1-2	Utiliza-se	_	_	_	_	_	_	_	_
+-1	ftiliza	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -94920,7 +94920,7 @@
+ # text = Utiliza-se a injeção de água como método de recuperação suplementar, estimando-se a repressurizacão dos reservatórios até um patamar próximo às suas pressões originais..
+ # sent_id = 161-20150810-MONOGRAFIA_0-537
+ 1-2	Utiliza-se	_	_	_	_	_	_	_	_
+-1	ftiliza	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -110738,7 +110738,7 @@
+ # text = Desta parcela, 60% (US$ 82 bilhões) é destinado ao pré-sal (Figura 7) (Fonte: www.petrobras.com.br/pt/quem-somos/estrategia/plano-de-negocios-e-gestao/)
+ # sent_id = 334-20150521-MONOGRAFIA_0-53
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	parcela	parcela	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -112624,7 +112624,7 @@
+ # text = Estima-se um fator de recuperação para Júpiter entre 6% e 37%, considerando-se uma depleção e sistema de produção de injeção de água, com um valor mais provável de 15% para o óleo de 18° API..
+ # sent_id = 334-20150521-MONOGRAFIA_0-104
+ 1-2	Estima-se	_	_	_	_	_	_	_	_
+-1	estima	estimar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Estima	estimar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	fator	fator	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+@@ -133795,7 +133795,7 @@
+ # text = Destes separadores, dois são submarinos (Tabela 15), outros dois atuam na plataforma (Tabela 16) e, por último, o separador trifásico onshore que recebe a corrente de saída do duto de gás não tratado (Tabela 17)..
+ # sent_id = 334-20150521-MONOGRAFIA_0-694
+ 1-2	Destes	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	3	det	O	_
+ 3	separadores	separador	NOUN	_	Gender=Masc|Number=Plur	7	nmod	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -136583,7 +136583,7 @@
+ # text = Destaca-se que o grande inventário de MEG a ser mantido neste circuito expande o mercado deste produto e fortalece a necessidade de aprimoramentos de projeto e operação de unidades de recuperação de MEG..
+ # sent_id = 334-20150521-MONOGRAFIA_0-763
+ 1-2	Destaca-se	_	_	_	_	_	_	_	_
+-1	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	15	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -137369,7 +137369,7 @@
+ # text = Utilizou-se nos estudos petróleos com vários graus API, e tensoativos com diferentes características..
+ # sent_id = 202-20140404-MONOGRAFIA_0-11
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3-4	nos	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	O	_
+@@ -148333,7 +148333,7 @@
+ 22	|	|	PUNCT	_	_	23	punct	O	_
+ 23	35	35	PROPN	_	Number=Sing	11	flat:name	O	_
+ 24-25	Nota-se	_	_	_	_	_	_	_	_
+-24	Eota	Eota	PROPN	_	Number=Sing	23	flat:name	O	_
++24	Nota	notar	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	3	flat:name	O	_
+ 26	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	O	_
+ 27-28	nos	_	_	_	_	_	_	_	_
+@@ -153079,7 +153079,7 @@
+ # text = Inicia-se no talude continental (em torno de 1600 a 2900 m) e termina no sopé continental (em torno de 3000 a 30 m de profundidade)..
+ # sent_id = 258-20160602-TESEMSC_0-257
+ 1-2	Inicia-se	_	_	_	_	_	_	_	_
+-1	inicia	iniciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Inicia	iniciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3-4	no	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	O	_
+@@ -158719,7 +158719,7 @@
+ # text = Apresenta-se mais proeminente no início das seções dip e também ao longo da seção onde ocorrem as chamadas janelas de sal..
+ # sent_id = 258-20160602-TESEMSC_0-392
+ 1-2	Apresenta-se	_	_	_	_	_	_	_	_
+-1	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	mais	mais	ADV	_	_	4	advmod	O	_
+ 4	proeminente	proeminente	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	O	_
+@@ -163233,7 +163233,7 @@
+ # text = Dessa forma, a interpretação na zona de influência do plano nodal sub-horizontal evidencia a ocorrência de falhas pouco expressivas ao longo das seções, as quais estão basicamente associadas aos processos de rifteamento e halocinese..
+ # sent_id = 258-20160602-TESEMSC_0-491
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -164177,7 +164177,7 @@
+ # text = Nota-se que na correlação do plano subvertical 2 ocorrem falhas bastante expressivas, que cortam todo o pacote sedimentar..
+ # sent_id = 258-20160602-TESEMSC_0-504
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	12	mark	O	_
+ 4-5	na	_	_	_	_	_	_	_	_
+@@ -165391,7 +165391,7 @@
+ # text = Dessa forma, fica difícil uma definição clara entre o evento e a falha..
+ # sent_id = 258-20160602-TESEMSC_0-528
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -169046,7 +169046,7 @@
+ # text = Utilizou-se uma fração de água de 10% com velocidades superficiais variando entre 0,2 m/s e 2 m/s..
+ # sent_id = 77-20141209-TESEMSC_0-101
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	fração	fração	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -172401,7 +172401,7 @@
+ # text = Utilizou-se para realização dos experimentos água fornecida pela SANASA de Campinas, sendo a água utilizada proveniente das estações de tratamento ETAs 3 e 4..
+ # sent_id = 77-20141209-TESEMSC_0-189
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	para	para	ADP	_	_	4	case	O	_
+ 4	realização	realização	NOUN	_	Gender=Fem|Number=Sing	1	obl	O	_
+@@ -172504,7 +172504,7 @@
+ # text = Utilizou-se para o escoamento um determinado holdup de óleo (H), em porcentagem..
+ # sent_id = 77-20141209-TESEMSC_0-194
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	para	para	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -173375,7 +173375,7 @@
+ # text = Utilizou-se um rotâmetro com faixa de operação de 0,04 a 5 GPM e outro com faixa de operação de 0,04 a 10 GPM..
+ # sent_id = 77-20141209-TESEMSC_0-221
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	rotâmetro	rotâmetro	NOUN	_	Gender=Masc|Number=Sing	1	obj	B=INSTRUMENTO	_
+@@ -175612,7 +175612,7 @@
+ # text = Utilizando-se esses valores calcularam-se os valores de desvio padrão (∆S) para cada ponto de pressão aplicada..
+ # sent_id = 77-20141209-TESEMSC_0-292
+ 1-2	Utilizando-se	_	_	_	_	_	_	_	_
+-1	ftilizando	ftilizar	VERB	_	VerbForm=Ger	5	advcl	O	_
++1	Utilizando	utilizar	VERB	_	VerbForm=Ger	5	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	4	det	O	_
+ 4	valores	valor	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
+@@ -179972,7 +179972,7 @@
+ # text = Dessa forma, os valores instantâneos da queda de pressão se tornam fidedignos apenas para instantes de tempo posteriores ao valor de t0 indicado na tabela 4.2..
+ # sent_id = 77-20141209-TESEMSC_0-427
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -180449,7 +180449,7 @@
+ # text = Nota-se que as discrepâncias são muito grandes, sobretudo para baixas vazões de água, indicando que, no “pseudo-patamar”, o tubo metálico ainda continha impregnações de óleo que estavam sendo muito lentamente removidas pelo cisalhamento da água..
+ # sent_id = 77-20141209-TESEMSC_0-439
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -182205,7 +182205,7 @@
+ # text = Dessa forma, o biodiesel é um combustível renovável derivado de óleos vegetais, como girassol, mamona, soja, dendê e demais oleaginosas ou de gorduras animais..
+ # sent_id = 279-20140530-MONOGRAFIA_0-10
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -182779,7 +182779,7 @@
+ # text = Desta forma, sua obtenção e queima contribuem menos para o aumento das emissões de CO2 na atmosfera.  Apresenta excelente lubricidade, fato que vem ganhando importância com a utilização do diesel de baixo teor de enxofre, cuja lubricidade é parcialmente perdida durante o processo de produção.  Possui um alto ponto de fulgor, conferindo ao biodiesel manuseio e armazenamento mais seguros.  Nenhuma modificação nos atuais motores do tipo ciclo diesel faz-se necessária para misturas de biodiesel com diesel de até 20% (B20), sendo 2 que percentuais acima de 20% requerem avaliações mais elaboradas do desempenho do motor. 
+ # sent_id = 279-20140530-MONOGRAFIA_0-27
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -183027,7 +183027,7 @@
+ # text = Dessa forma, o objetivo desse trabalho é pesquisar e estudar a viabilidade operacional da utilização de biodiesel de melaço e vinhaça de cana-de açúcar em motores diesel..
+ # sent_id = 279-20140530-MONOGRAFIA_0-33
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -184698,7 +184698,7 @@
+ # text = Desta forma, a vinhaça passa a ter um destino a mais por ser tratado como uma matéria-prima geradora de riqueza adicional, já que a sua utilização não implica a redução da produção de etanol..
+ # sent_id = 279-20140530-MONOGRAFIA_0-80
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -187495,7 +187495,7 @@
+ # text = Dessa forma, conclui-se que houve uma combustão mais completa nesse primeiro ponto..
+ # sent_id = 279-20140530-MONOGRAFIA_0-180
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -187633,7 +187633,7 @@
+ # text = Dessa forma, era esperado que este aumentasse com o aumento de carga, porém o que foi observado foi a mesma tendência dos resultados para as emissões de CO2, levando a um resultado mais elevado que o esperado no primeiro ponto de operação..
+ # sent_id = 279-20140530-MONOGRAFIA_0-186
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -193272,7 +193272,7 @@
+ # text = Pelos motivos citados, a catálise heterogênea tem sido fortemente estudada nos últimos anos como uma alternativa à transesterificação de óleos e gorduras..
+ # sent_id = 271-20150810-MONOGRAFIA_0-106
+ 1-2	Pelos	_	_	_	_	_	_	_	_
+-1	por	por	ADP	_	_	3	case	O	_
++1	Por	por	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	motivos	motivo	NOUN	_	Gender=Masc|Number=Plur	12	obl	O	_
+ 4	citados	citar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+@@ -193335,7 +193335,7 @@
+ # text = Desta forma, não necessitam ser separados da fase reacional após a síntese, evitando custos associados a estas operações e a geração de águas residuais, que causam impacto ambiental, ainda podendo ser reciclados e reutilizados, o que não é viável como catalisador homogêneo..
+ # sent_id = 271-20150810-MONOGRAFIA_0-108
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -194272,7 +194272,7 @@
+ # text = Tem-se como objetivo encontrar projetos ou alternativas de investimento que apresentem um resultado positivo para VPL, ou seja, projetos que sejam economicamente viáveis..
+ # sent_id = 271-20150810-MONOGRAFIA_0-132
+ 1-2	Tem-se	_	_	_	_	_	_	_	_
+-1	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	como	como	ADP	_	_	4	case	O	_
+ 4	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	1	xcomp	O	_
+@@ -194701,7 +194701,7 @@
+ # text = Desta forma, projetos de pequeno payback tendem a ser menos arriscados (BRUNI et al., 1998)..
+ # sent_id = 271-20150810-MONOGRAFIA_0-145
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -194989,7 +194989,7 @@
+ # text = Usou-se reagente LiNO3 marca Vetec® utilizado para dopagem do catalisador TA..
+ # sent_id = 271-20150810-MONOGRAFIA_0-158
+ 1-2	Usou-se	_	_	_	_	_	_	_	_
+-1	fsou	fsar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|PronType=Prs	1	expl	O	_
+ 3	reagente	reagente	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 4	LiNO3	LiNO3	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+@@ -195933,7 +195933,7 @@
+ # text = Utilizou-se o óleo de soja refinado da marca Liza® e óleos residuais coletados nos restaurantes da UFMG no primeiro semestre de 2014..
+ # sent_id = 271-20150810-MONOGRAFIA_0-199
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	1	obj	B=FLUIDO	_
+@@ -196097,7 +196097,7 @@
+ # text = Utilizou-se cromatógrafo a gás HP5890 com detector por ionização de chamas, coluna HP-INNOWax (HP) 15 m x 0,25 mm com gradiente de temperatura: 100 °C, 1 min, 7 °C/min até 240 °C; injetor (split de 1/50) e detector a 250 °C..
+ # sent_id = 271-20150810-MONOGRAFIA_0-202
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	cromatógrafo	cromatógrafo	NOUN	_	Gender=Masc|Number=Sing	1	obj	B=INSTRUMENTO	_
+ 4	a	a	ADP	_	_	5	case	O	_
+@@ -196155,7 +196155,7 @@
+ # text = Usou-se hidrogênio como gás de arraste (2 mL/min) e o volume de injeção foi de 1 L, além de padrões de ácidos graxos metilados SUPELCO37..
+ # sent_id = 271-20150810-MONOGRAFIA_0-203
+ 1-2	Usou-se	_	_	_	_	_	_	_	_
+-1	fsou	fsar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	hidrogênio	hidrogênio	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 4	como	como	ADP	_	_	5	case	O	_
+@@ -200390,7 +200390,7 @@
+ # text = Fez-se a caracterização físico-quimica do óleo de soja e do óleo residual de fritura, bem como o perfil graxo dos mesmos..
+ # sent_id = 271-20150810-MONOGRAFIA_0-335
+ 1-2	Fez-se	_	_	_	_	_	_	_	_
+-1	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -201467,7 +201467,7 @@
+ # text = Utilizou-se razão molar metanol:óleo de 6:1 e variou-se diferentes teores de catalisador como (1%, 3%, 5%, 7% e 10%)..
+ # sent_id = 271-20150810-MONOGRAFIA_0-373
+ 1-2	Utilizou-se	_	_	_	_	_	_	_	_
+-1	ftilizou	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	razão	razão	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+ 4	molar	molar	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+@@ -201543,7 +201543,7 @@
+ # text = Fez-se a dosagem do teor de éster por RMN 1H, conforme dados da Figura 22 e 23 para óleo residual e 24 e 25 óleo de soja comercial..
+ # sent_id = 271-20150810-MONOGRAFIA_0-375
+ 1-2	Fez-se	_	_	_	_	_	_	_	_
+-1	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	dosagem	dosagem	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -205605,7 +205605,7 @@
+ # text = Utilizando-se valores obtidos na tabela desenvolvida no Apêndice 3, foram calculados os valores do VPL , da TIR e do Payback para as simulações de diferentes cenários..
+ # sent_id = 271-20150810-MONOGRAFIA_0-512
+ 1-2	Utilizando-se	_	_	_	_	_	_	_	_
+-1	ftilizando	ftilizar	VERB	_	VerbForm=Ger	15	advcl	O	_
++1	Utilizando	utilizar	VERB	_	VerbForm=Ger	15	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	O	_
+ 3	valores	valor	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
+ 4	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+@@ -211901,7 +211901,7 @@
+ # text = Dessa forma, o tratamento da água produzida pode ser feito com os seguintes objetivos: remoção de óleo sob as forma dispersas; remoção de compostos orgânicos solúveis; desinfecção, para remoção de bactérias e algas; remoção SS, turbidez e areia; remoção de gases dissolvidos, como gases de hidrocarbonetos leves, CO2 e H2S; dessalinização, para remoção de sais dissolvidos, sulfatos, nitratos e agentes de incrustação; abrandamento, para remoção de dureza em excesso; remoção de compostos diversos, como os MRON, e ajuste da razão de adsorção de sódio (RAS)..
+ # sent_id = 391-20160914-MONOGRAFIA_0-124
+ 1-2	Dessa	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -215217,7 +215217,7 @@
+ # text = Nota-se também, o aparecimento da região de gel nas Figuras 8 e 9..
+ # sent_id = 391-20160914-MONOGRAFIA_0-233
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+@@ -216488,7 +216488,7 @@
+ # text = Propõe-se que estes catalisadores sejam utilizados como alternativa aos catalisadores de metais nobres, devido à semelhança das propriedades catalíticas..
+ # sent_id = 25-20150123-MONOGRAFIA_0-40
+ 1-2	Propõe-se	_	_	_	_	_	_	_	_
+-1	propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	7	mark	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+@@ -217641,7 +217641,7 @@
+ # text = Nele, o β-Mo2C foi obtido a partir do óxido de molibdênio sob mistura de metano em hidrogênio como gás carburante [9]..
+ # sent_id = 25-20150123-MONOGRAFIA_0-72
+ 1-2	Nele	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	2	case	O	_
++1	Em	em	ADP	_	_	2	case	O	_
+ 2	ele	ele	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obl	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -223301,7 +223301,7 @@
+ # text = Desta forma, foram obtidos espectros na região de vibrações de OH das zeólitas e catalisadores..
+ # sent_id = 25-20150123-MONOGRAFIA_0-247
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -225172,7 +225172,7 @@
+ # text = Nota-se a ausência do pico largo em 80 Ǻ no suporte CBV-720 e seus respectivos catalisadores..
+ # sent_id = 25-20150123-MONOGRAFIA_0-306
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -225796,7 +225796,7 @@
+ # text = Pelos dados contidos na Tabela 04 pode-se verificar que a troca pelo cátion potássio não alterou a estrutura cristalina da zeólita, que permaneceu com o mesmo SAR..
+ # sent_id = 25-20150123-MONOGRAFIA_0-327
+ 1-2	Pelos	_	_	_	_	_	_	_	_
+-1	por	por	ADP	_	_	3	case	O	_
++1	Por	por	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	dados	dado	NOUN	_	Gender=Masc|Number=Plur	9	obl	O	_
+ 4	contidos	conter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+@@ -226572,7 +226572,7 @@
+ # text = Verifica-se que o pico é pouco intenso..
+ # sent_id = 25-20150123-MONOGRAFIA_0-353
+ 1-2	Verifica-se	_	_	_	_	_	_	_	_
+-1	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	8	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -227138,7 +227138,7 @@
+ # text = Conclui-se que o método de adsorção foi eficiente para a difusão e encapsulamento do hexacarbonil molibdênio [17]..
+ # sent_id = 25-20150123-MONOGRAFIA_0-370
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+-1	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	9	mark	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -234724,7 +234724,7 @@
+ # text = Naquela área, sedimentos turonianos a campanianos ocorrem intercalados a rochas vulcanoclásticas, basaltos e diques de diabásio de 90 a 80
+ # sent_id = 20-20140904-TESEDSC_0-106
+ 1-2	Naquela	_	_	_	_	_	_	_	_
+-1	em	em	ADP	_	_	3	case	O	_
++1	Em	em	ADP	_	_	3	case	O	_
+ 2	aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	área	área	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -243987,7 +243987,7 @@
+ # text = Desta forma, este mapa atingiu seu objetivo que se resume a fornecer alguma informação adicional de caráter qualitativo que possa contribuir com a interpretação dos dados magnetométricos que constituem o pivô desta pesquisa..
+ # sent_id = 20-20140904-TESEDSC_0-328
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -248698,7 +248698,7 @@
+ # text = Baseando-se na análise destes autores, foram utilizados no estudo aqui proposto, não só o método tradicional de Thompson, como também o método que lança mão de um coeficiente de correlação cruzada entre os valores da anomalia (observados no centro de cada janela) e os valores do nível de base b estimados para cada janela (Barbosa et al., 1999)..
+ # sent_id = 20-20140904-TESEDSC_0-435
+ 1-2	Baseando-se	_	_	_	_	_	_	_	_
+-1	haseando	hasear	VERB	_	VerbForm=Ger	11	advcl	O	_
++1	Baseando	basear	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3-4	na	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	O	_
+@@ -249217,7 +249217,7 @@
+ # text = Desta forma, as propriedades do cluster formado por este spray podem ser estudadas..
+ # sent_id = 20-20140904-TESEDSC_0-446
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -249602,7 +249602,7 @@
+ # text = Baseando-se nas propriedades da Deconvolução de Euler abordadas acima, uma rotina computacional foi concebida, neste trabalho, de tal forma a rastrear automaticamente os valores tentativos de η, até encontrar aqueles que satisfaçam as imposições das metodologias descritos acima..
+ # sent_id = 20-20140904-TESEDSC_0-457
+ 1-2	Baseando-se	_	_	_	_	_	_	_	_
+-1	haseando	hasear	VERB	_	VerbForm=Ger	18	advcl	O	_
++1	Baseando	basear	VERB	_	VerbForm=Ger	18	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3-4	nas	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	O	_
+@@ -250043,7 +250043,7 @@
+ # text = Conclui-se assim que o pequeno deslocamento da janela de dados em torno da janela pivô produz instabilidade nas soluções..
+ # sent_id = 20-20140904-TESEDSC_0-467
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+-1	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	assim	assim	ADV	_	_	1	advmod	O	_
+ 4	que	que	SCONJ	_	_	19	mark	O	_
+@@ -251091,7 +251091,7 @@
+ # text = Desta forma, é criada uma imagem do substrato que se torna cada vez mais detalhada (sujeita naturalmente aos limites de resolução do método) à medida em que se diminui as dimensões da seção de cada prisma individual elevando o seu número..
+ # sent_id = 20-20140904-TESEDSC_0-494
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -252271,7 +252271,7 @@
+ # text = Desta forma, as soluções encontradas freqüentemente ultrapassarão os limites aceitáveis de susceptibilidades magnéticas das rochas encontrados na natureza..
+ # sent_id = 20-20140904-TESEDSC_0-523
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -252504,7 +252504,7 @@
+ # text = Desta forma, nas iterações subseqüentes, o valor substituído pj tende a permanecer preservado..
+ # sent_id = 20-20140904-TESEDSC_0-528
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -255028,7 +255028,7 @@
+ # text = Desta forma, uma nova hipótese deve ser testada com vista a se obter uma interpretação consistente..
+ # sent_id = 20-20140904-TESEDSC_0-592
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -265113,7 +265113,7 @@
+ # text = Desta forma, sua cristalização teria se dado num período de reversão de polaridade do campo geomagnético..
+ # sent_id = 20-20140904-TESEDSC_0-848
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -266062,7 +266062,7 @@
+ # text = Nota-se também neste modelo que o ajuste obtido, entre as observações e a curva teórica, não é tão perfeito quando comparado aos verificados na maioria dos modelos testados para os outros alvos descritos neste capítulo..
+ # sent_id = 20-20140904-TESEDSC_0-872
+ 1-2	Nota-se	_	_	_	_	_	_	_	_
+-1	Eota	eotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Nota	notar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4-5	neste	_	_	_	_	_	_	_	_
+@@ -282984,7 +282984,7 @@
+ # text = Optou-se, no entanto, por representar alguns dos modelos de geometria complexa, carentes de homogeneidade, pela forma suavizada em cores que se mostrou mais expressiva para estes casos..
+ # sent_id = 20-20140904-TESEDSC_0-1281
+ 1-2	Optou-se	_	_	_	_	_	_	_	_
+-1	optou	optar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Optou	optar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4-5	no	_	_	_	_	_	_	_	_
+@@ -283345,7 +283345,7 @@
+ # text = Desta vertente da tese resultaram algumas conclusões, listadas a seguir, sobre problemas geológicos envolvendo a área desta pesquisa, interpretados à luz da metodologia aplicada neste estudo..
+ # sent_id = 20-20140904-TESEDSC_0-1290
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+ 3	vertente	vertente	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+@@ -306233,7 +306233,7 @@
+ 
+ # text = `H>LMNOPãQ
+ # sent_id = 119-20141209-TESEMSC_0-590
+-1	`H>LMNOPãQ	`H>LMNOPãQ	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	`H>Lmnopãq	`H>LMNOPãQ	PROPN	_	Gender=Masc|Number=Sing	0	root	O	eliminação
+ 
+ # text = O fluxograma do protocolo de testes é mostrado na Figura 3.10..
+ # sent_id = 119-20141209-TESEMSC_0-591
+@@ -308155,7 +308155,7 @@
+ # text = Seguindo-se a dinâmica do experimento e colocando-se os gráficos em uma mesma linha de tempo, percebe-se o quanto os fluidos invasores influenciaram nos resultados de retorno da vazão relativa de óleo..
+ # sent_id = 119-20141209-TESEMSC_0-645
+ 1-2	Seguindo-se	_	_	_	_	_	_	_	_
+-1	seguindo	seguir	VERB	_	VerbForm=Ger	20	advcl	O	_
++1	Seguindo	seguir	VERB	_	VerbForm=Ger	20	advcl	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	dinâmica	dinâmica	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+@@ -312033,7 +312033,7 @@
+ # text = Conclui-se que estes fluidos apresentaram uma maior remoção natural dentre todos os fluidos testados com PHPA e GX, e consequentemente tiveram os melhores retornos da produtividade..
+ # sent_id = 119-20141209-TESEMSC_0-733
+ 1-2	Conclui-se	_	_	_	_	_	_	_	_
+-1	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+@@ -313422,7 +313422,7 @@
+ # text = Pelos valores obtidos de variação relativa da mobilidade (MRME) percebe-se que, nos experimentos realizados com PHPA, o maior resultado (maior dano) foi obtido no experimento 89 com 1,5% de massa de argila..
+ # sent_id = 119-20141209-TESEMSC_0-771
+ 1-2	Pelos	_	_	_	_	_	_	_	_
+-1	por	por	ADP	_	_	3	case	O	_
++1	Por	por	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	valores	valor	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
+ 4	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+@@ -313629,7 +313629,7 @@
+ # text = Pelos valores obtidos para razão de dano (RD) observa-se que, como esperado, os menores danos de vazão foram realmente apresentados pelas amostras cujo fluido invasor foi preparado com PHPA sem argila (8B-96) e GX com 2,0% de argila (D2), sendo os demais valores todos muito próximos..
+ # sent_id = 119-20141209-TESEMSC_0-776
+ 1-2	Pelos	_	_	_	_	_	_	_	_
+-1	por	por	ADP	_	_	3	case	O	_
++1	Por	por	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	valores	valor	NOUN	_	Gender=Masc|Number=Plur	12	obl	O	_
+ 4	obtidos	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+@@ -314815,7 +314815,7 @@
+ # text = Pelos históricos de vazão, foi observado que para a GX, a continuidade do escoamento do óleo no fluxo reverso poderia ter removido o dano ainda mais..
+ # sent_id = 119-20141209-TESEMSC_0-804
+ 1-2	Pelos	_	_	_	_	_	_	_	_
+-1	por	por	ADP	_	_	3	case	O	_
++1	Por	por	ADP	_	_	3	case	O	_
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	históricos	histórico	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+@@ -318044,7 +318044,7 @@
+ # text = Utilizam-se os fluidos de perfuração base óleo em situações especiais por possuírem as seguintes características: resistência a temperaturas elevadas, com propriedades reológicas e filtrantes controláveis até 500ºF; baixa taxa de corrosão; baixa solubilidade das formações de sal; atividade química controlada pela natureza e concentração do eletrólito dissolvido na fase aquosa; alta capacidade de inibição em relação às formações argilosas hidratáveis; alto índice lubrificante ou baixo coeficiente de atrito; baixa taxa de corrosão; intervalo amplo para variação de massa específica (MACHADO, 2002)..
+ # sent_id = 240-20140220-MONOGRAFIA_0-79
+ 1-2	Utilizam-se	_	_	_	_	_	_	_	_
+-1	ftilizam	ftilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Utilizam	utilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	1	obj	B=FLUIDO	_
+@@ -324119,7 +324119,7 @@
+ # text = Desta maneira, o antigo conceito de que água e óleo não se misturam sofreu mudanças significativas..
+ # sent_id = 240-20140220-MONOGRAFIA_0-277
+ 1-2	Desta	_	_	_	_	_	_	_	_
+-1	de	de	ADP	_	_	3	case	O	_
++1	De	de	ADP	_	_	3	case	O	_
+ 2	esta	este	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+@@ -324827,7 +324827,7 @@
+ # text = Mediu-se também a densidade deste fluido para então ser adicionar a quantidade certa de adensante para deixar o fluido com o peso ideal..
+ # sent_id = 240-20140220-MONOGRAFIA_0-299
+ 1-2	Mediu-se	_	_	_	_	_	_	_	_
+-1	qediu	qedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Mediu	medir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -327615,7 +327615,7 @@
+ # text = Infere-se também, das viscosidades, que com o aumento da concentração de Goma Xantana, aumenta-se a viscosidade plástica..
+ # sent_id = 240-20140220-MONOGRAFIA_0-377
+ 1-2	Infere-se	_	_	_	_	_	_	_	_
+-1	jnfere	jnferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Infere	inferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+@@ -328472,7 +328472,7 @@
+ # text = Infere-se também, das viscosidades, que com o aumento da concentração de Atapulgita, aumenta-se a viscosidade plástica..
+ # sent_id = 240-20140220-MONOGRAFIA_0-401
+ 1-2	Infere-se	_	_	_	_	_	_	_	_
+-1	jnfere	jnferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Infere	inferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3	também	também	ADV	_	_	1	advmod	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+@@ -336169,7 +336169,7 @@
+ # text = Verificou-se que também está relacionada com eventos de soterramento de áreas com a concentração de algas, regulando, desta forma, a distribuição geográfica das algas sobre o delta de maré (MEIRELES, 2012)..
+ # sent_id = 411-20150702-MONOGRAFIA_0-133
+ 1-2	Verificou-se	_	_	_	_	_	_	_	_
+-1	verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	O	_
+ 3	que	que	SCONJ	_	_	6	mark	O	_
+ 4	também	também	ADV	_	_	6	advmod	O	_
+@@ -343661,7 +343661,7 @@
+ # text = Verificou-se neste estudo que os ambientes costeiros são altamente vulneráveis ao derrame de óleo, principalmente os estuários, foco deste trabalho..
+ # sent_id = 411-20150702-MONOGRAFIA_0-326
+ 1-2	Verificou-se	_	_	_	_	_	_	_	_
+-1	verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
++1	Verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	expl	O	_
+ 3-4	neste	_	_	_	_	_	_	_	_
+ 3	em	em	ADP	_	_	5	case	O	_
+@@ -348382,7 +348382,7 @@
+ # text = Faz-se uso da cal (CaO) para elevar o pH da água fornecendo a alcalinidade necessária e o carbonato de sódio (Na2CO3), fornecendo a alcalinidade para a reação e também os íons carbonatos necessários. (FERNANDES, 1995; HANSEN, 1994)..
+ # sent_id = 243-20141015-MONOGRAFIA_1-118
+ 1-2	Faz-se	_	_	_	_	_	_	_	_
+-1	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	uso	uso	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+@@ -348713,7 +348713,7 @@
+ # text = Utiliza-se o processo em leito fixo e antes da passagem da água produzida através do leito adsorvedor é necessária a remoção do óleo disperso e dos sólidos em suspensão..
+ # sent_id = 243-20141015-MONOGRAFIA_1-129
+ 1-2	Utiliza-se	_	_	_	_	_	_	_	_
+-1	ftiliza	ftilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++1	Utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	processo	processo	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_

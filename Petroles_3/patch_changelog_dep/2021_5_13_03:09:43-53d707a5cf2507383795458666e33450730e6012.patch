@@ -1,0 +1,68 @@
+commit 53d707a5cf2507383795458666e33450730e6012
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu May 13 03:09:43 2021 -0300
+
+    fix det and its head gender and number
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index e501143..89bc574 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -2977,7 +2977,7 @@
+ 3-4	do	_	_	_	_	_	_	O	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	Paraná	Paraná	PROPN	_	Number=Sing	2	nmod	B=BACIA	_
++5	Paraná	Paraná	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=BACIA	_
+ 
+ # text = A Bacia Sedimentar do Paraná (Figura 6) se localiza no Continente Sul-Americano nas porções territoriais do Brasil meridional, Paraguai oriental, nordeste da Argentina e norte do Uruguai, totalizando uma área próxima de 1,5 milhão de quilômetros quadrados..
+ # sent_id = 247-20140910-MONOGRAFIA_0-82
+@@ -3818,7 +3818,7 @@
+ 37-38	da	_	_	_	_	_	_	O	_
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Bacia	bacia	PROPN	_	Number=Sing	35	nmod	B=BACIA:TIPO	_
++39	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	35	nmod	B=BACIA:TIPO	_
+ 40-41	do	_	_	_	_	_	_	O	_
+ 40	de	de	ADP	_	_	39	flat:name	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	flat:name	O	_
+@@ -5688,7 +5688,7 @@
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+ 11	N50W/70NE	N50W/70NE	PROPN	_	Gender=Fem|Number=Sing	8	appos	O	_
+ 12	)	)	PUNCT	_	_	11	punct	O	_
+-13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
++13	a	o	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	8	parataxis	O	_
+ 14	principal	principal	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+ 15	e	e	CCONJ	_	_	18	cc	O	_
+ 16	mais	mais	ADV	_	_	17	advmod	O	_
+@@ -11108,7 +11108,7 @@
+ 9	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	7	conj	O	_
+ 10	,	,	PUNCT	_	_	3	punct	O	_
+ 11	cada	cada	DET	_	Gender=Fem|Number=Sing|PronType=Tot	12	det	O	_
+-12	uma	um	NUM	_	NumType=Card	3	nsubj:pass	O	_
++12	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	15	nsubj	O	_
+ 13-14	delas	_	_	_	_	_	_	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	elas	ele	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	12	nmod	O	_
+@@ -11885,9 +11885,9 @@
+ 4	em	em	ADP	_	_	6	case	O	_
+ 5	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	6	det	O	_
+ 6	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-7	ambos	ambos	DET	_	Gender=Masc|Number=Plur|PronType=Tot	9	det	O	_
+-8	radicais	radical	ADJ	_	Gender=Masc|Number=Plur	9	amod	O	_
+-9	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
++7	ambos	ambos	DET	_	Gender=Masc|Number=Plur|PronType=Tot	8	det	O	_
++8	radicais	radical	NOUN	_	Gender=Masc|Number=Plur	9	amod	O	_
++9	ácido	ácido	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+ 11	básico	básico	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	_
+ 12	.	.	PUNCT	_	_	3	punct	O	_
+@@ -13987,7 +13987,7 @@
+ 2-3	das	_	_	_	_	_	_	O	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	O	_
+-4	Emulsões	Emulsões	PROPN	_	Number=Sing	1	nmod	B=QUÍMICA	_
++4	Emulsões	Emulsões	PROPN	_	Gender=Fem|Number=Plur	1	nmod	B=QUÍMICA	_
+ 5	Asfálticas	Asfálticas	PROPN	_	Number=Sing	4	flat:name	O	_
+ 
+ # text = Segundo Petrucci (1998), qualquer que seja o tipo, as emulsões asfálticas apresentam os seguintes benefícios:
