@@ -59,7 +59,7 @@ for commit in commits:
         x in log.split("Date:")[1].split("diff --git")[0].splitlines()[1:] if 
         x.strip()])
     patch_filename = "{}-{}.patch".format(
-        date_formatted,
+        date_formatted.replace(":", "-"),
         commit)
     with open("{}/{}".format(patches_folder, patch_filename), "w") as f:
         f.write(log)
