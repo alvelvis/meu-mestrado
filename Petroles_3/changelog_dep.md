@@ -1,6 +1,6 @@
 # Changelog
 
-Last update: 2021-9-2-11:50:2
+Last update: 2021-10-27-16:41:12
 
 ## lemma 'diferentes' is not correct
 
@@ -8,7 +8,7 @@ Last update: 2021-9-2-11:50:2
 * Date:   Thu May 13 01:22:25 2021 -0300
 * Lines changed: 117
 * Commit: [7ad921ca7b0026a8d96285f76a37097fbc5d7dda](https://github.com/alvelvis/meu-mestrado/commit/7ad921ca7b0026a8d96285f76a37097fbc5d7dda)
-* Patch file: [2021_5_13_01:22:25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch](patch_changelog_dep/2021_5_13_01:22:25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch)
+* Patch file: [2021_5_13_01-22-25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch](patch_changelog_dep/2021_5_13_01-22-25-7ad921ca7b0026a8d96285f76a37097fbc5d7dda.patch)
 
 lemma 'diferentes' is not correct
 
@@ -29,7 +29,7 @@ lemma 'diferentes' is not correct
 * Date:   Thu May 13 01:41:07 2021 -0300
 * Lines changed: 164
 * Commit: [3983c05dde4b414d6a7b400afeb89ad2a9e63603](https://github.com/alvelvis/meu-mestrado/commit/3983c05dde4b414d6a7b400afeb89ad2a9e63603)
-* Patch file: [2021_5_13_01:41:07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch](patch_changelog_dep/2021_5_13_01:41:07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch)
+* Patch file: [2021_5_13_01-41-07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch](patch_changelog_dep/2021_5_13_01-41-07-3983c05dde4b414d6a7b400afeb89ad2a9e63603.patch)
 
 lemmas cannot be fem plur
 
@@ -50,7 +50,7 @@ lemmas cannot be fem plur
 * Date:   Thu May 13 02:06:45 2021 -0300
 * Lines changed: 22
 * Commit: [cada8310640e99453c71506dac6c337a584fd1f5](https://github.com/alvelvis/meu-mestrado/commit/cada8310640e99453c71506dac6c337a584fd1f5)
-* Patch file: [2021_5_13_02:06:45-cada8310640e99453c71506dac6c337a584fd1f5.patch](patch_changelog_dep/2021_5_13_02:06:45-cada8310640e99453c71506dac6c337a584fd1f5.patch)
+* Patch file: [2021_5_13_02-06-45-cada8310640e99453c71506dac6c337a584fd1f5.patch](patch_changelog_dep/2021_5_13_02-06-45-cada8310640e99453c71506dac6c337a584fd1f5.patch)
 
 det filho de nummod -- erro?
 
@@ -71,7 +71,7 @@ det filho de nummod -- erro?
 * Date:   Thu May 13 03:09:43 2021 -0300
 * Lines changed: 8
 * Commit: [53d707a5cf2507383795458666e33450730e6012](https://github.com/alvelvis/meu-mestrado/commit/53d707a5cf2507383795458666e33450730e6012)
-* Patch file: [2021_5_13_03:09:43-53d707a5cf2507383795458666e33450730e6012.patch](patch_changelog_dep/2021_5_13_03:09:43-53d707a5cf2507383795458666e33450730e6012.patch)
+* Patch file: [2021_5_13_03-09-43-53d707a5cf2507383795458666e33450730e6012.patch](patch_changelog_dep/2021_5_13_03-09-43-53d707a5cf2507383795458666e33450730e6012.patch)
 
 fix det and its head gender and number
 
@@ -91,7 +91,7 @@ fix det and its head gender and number
 * Date:   Thu May 13 06:35:52 2021 -0300
 * Lines changed: 132
 * Commit: [b7f3d42913ca7db33f3c2927609ba56ecc3efa5c](https://github.com/alvelvis/meu-mestrado/commit/b7f3d42913ca7db33f3c2927609ba56ecc3efa5c)
-* Patch file: [2021_5_13_06:35:52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch](patch_changelog_dep/2021_5_13_06:35:52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch)
+* Patch file: [2021_5_13_06-35-52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch](patch_changelog_dep/2021_5_13_06-35-52-b7f3d42913ca7db33f3c2927609ba56ecc3efa5c.patch)
 
 "um de" indicates PRON PronType=Ind
 
@@ -112,7 +112,7 @@ fix det and its head gender and number
 * Date:   Mon May 17 00:41:34 2021 -0300
 * Lines changed: 222
 * Commit: [725b3da4d82a47ed5757524c3bb8fd4d2048b127](https://github.com/alvelvis/meu-mestrado/commit/725b3da4d82a47ed5757524c3bb8fd4d2048b127)
-* Patch file: [2021_5_17_00:41:34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch](patch_changelog_dep/2021_5_17_00:41:34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch)
+* Patch file: [2021_5_17_00-41-34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch](patch_changelog_dep/2021_5_17_00-41-34-725b3da4d82a47ed5757524c3bb8fd4d2048b127.patch)
 
 visto que, já que
 
@@ -133,7 +133,7 @@ visto que, já que
 * Date:   Mon May 17 03:45:07 2021 -0300
 * Lines changed: 45
 * Commit: [ad450c4185a5c03beff93a817b997a7963165059](https://github.com/alvelvis/meu-mestrado/commit/ad450c4185a5c03beff93a817b997a7963165059)
-* Patch file: [2021_5_17_03:45:07-ad450c4185a5c03beff93a817b997a7963165059.patch](patch_changelog_dep/2021_5_17_03:45:07-ad450c4185a5c03beff93a817b997a7963165059.patch)
+* Patch file: [2021_5_17_03-45-07-ad450c4185a5c03beff93a817b997a7963165059.patch](patch_changelog_dep/2021_5_17_03-45-07-ad450c4185a5c03beff93a817b997a7963165059.patch)
 
 abservar is not a word
 
@@ -154,7 +154,7 @@ abservar is not a word
 * Date:   Mon May 17 23:24:14 2021 -0300
 * Lines changed: 481
 * Commit: [fd9f01fe910ed8a9b7d23f66181b65939a961906](https://github.com/alvelvis/meu-mestrado/commit/fd9f01fe910ed8a9b7d23f66181b65939a961906)
-* Patch file: [2021_5_17_23:24:14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch](patch_changelog_dep/2021_5_17_23:24:14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch)
+* Patch file: [2021_5_17_23-24-14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch](patch_changelog_dep/2021_5_17_23-24-14-fd9f01fe910ed8a9b7d23f66181b65939a961906.patch)
 
 a_partir_de MWEPOS=ADP, partir VERB
 
@@ -175,7 +175,7 @@ a_partir_de MWEPOS=ADP, partir VERB
 * Date:   Wed May 19 14:44:56 2021 -0300
 * Lines changed: 539
 * Commit: [4dfd6de383be7b49ffb7005907919a1096bf3855](https://github.com/alvelvis/meu-mestrado/commit/4dfd6de383be7b49ffb7005907919a1096bf3855)
-* Patch file: [2021_5_19_14:44:56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch](patch_changelog_dep/2021_5_19_14:44:56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch)
+* Patch file: [2021_5_19_14-44-56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch](patch_changelog_dep/2021_5_19_14-44-56-4dfd6de383be7b49ffb7005907919a1096bf3855.patch)
 
 fácies as NOUN, lemma fácies; DET with same features as its head or the other way round if PronType=Art or Dem
 
@@ -207,7 +207,7 @@ fácies as NOUN, lemma fácies; DET with same features as its head or the other 
 * Date:   Wed May 19 18:39:28 2021 -0300
 * Lines changed: 71
 * Commit: [72ad91acb6b2dbcec9b8cc850ddda9fa39c36645](https://github.com/alvelvis/meu-mestrado/commit/72ad91acb6b2dbcec9b8cc850ddda9fa39c36645)
-* Patch file: [2021_5_19_18:39:28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch](patch_changelog_dep/2021_5_19_18:39:28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch)
+* Patch file: [2021_5_19_18-39-28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch](patch_changelog_dep/2021_5_19_18-39-28-72ad91acb6b2dbcec9b8cc850ddda9fa39c36645.patch)
 
 correções elvis petroles_3
 
@@ -230,7 +230,7 @@ correções elvis petroles_3
 * Date:   Wed May 19 18:40:27 2021 -0300
 * Lines changed: 73
 * Commit: [eb928fd2e4709a6df8385ab0e0b6b60a3b223564](https://github.com/alvelvis/meu-mestrado/commit/eb928fd2e4709a6df8385ab0e0b6b60a3b223564)
-* Patch file: [2021_5_19_18:40:27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch](patch_changelog_dep/2021_5_19_18:40:27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch)
+* Patch file: [2021_5_19_18-40-27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch](patch_changelog_dep/2021_5_19_18-40-27-eb928fd2e4709a6df8385ab0e0b6b60a3b223564.patch)
 
 correções mclara petroles_3
 
@@ -258,7 +258,7 @@ correções mclara petroles_3
 * Date:   Wed May 19 19:08:30 2021 -0300
 * Lines changed: 47
 * Commit: [50824b0432986749b03a99255f32e71da23d6d79](https://github.com/alvelvis/meu-mestrado/commit/50824b0432986749b03a99255f32e71da23d6d79)
-* Patch file: [2021_5_19_19:08:30-50824b0432986749b03a99255f32e71da23d6d79.patch](patch_changelog_dep/2021_5_19_19:08:30-50824b0432986749b03a99255f32e71da23d6d79.patch)
+* Patch file: [2021_5_19_19-08-30-50824b0432986749b03a99255f32e71da23d6d79.patch](patch_changelog_dep/2021_5_19_19-08-30-50824b0432986749b03a99255f32e71da23d6d79.patch)
 
 correções aline
 
@@ -279,7 +279,7 @@ correções aline
 * Date:   Wed Jun 9 13:20:48 2021 -0300
 * Lines changed: 16
 * Commit: [51713966b5603e3e4f2c04fc63f436788212b63d](https://github.com/alvelvis/meu-mestrado/commit/51713966b5603e3e4f2c04fc63f436788212b63d)
-* Patch file: [2021_6_9_13:20:48-51713966b5603e3e4f2c04fc63f436788212b63d.patch](patch_changelog_dep/2021_6_9_13:20:48-51713966b5603e3e4f2c04fc63f436788212b63d.patch)
+* Patch file: [2021_6_9_13-20-48-51713966b5603e3e4f2c04fc63f436788212b63d.patch](patch_changelog_dep/2021_6_9_13-20-48-51713966b5603e3e4f2c04fc63f436788212b63d.patch)
 
 fácies sedimentar
 
@@ -299,7 +299,7 @@ fácies sedimentar
 * Date:   Wed Jun 9 14:02:51 2021 -0300
 * Lines changed: 157
 * Commit: [7fc9bff36097f635effbfd32b37b8f46d6c5a792](https://github.com/alvelvis/meu-mestrado/commit/7fc9bff36097f635effbfd32b37b8f46d6c5a792)
-* Patch file: [2021_6_9_14:02:51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch](patch_changelog_dep/2021_6_9_14:02:51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch)
+* Patch file: [2021_6_9_14-02-51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch](patch_changelog_dep/2021_6_9_14-02-51-7fc9bff36097f635effbfd32b37b8f46d6c5a792.patch)
 
 feats de fácies
 
@@ -331,7 +331,7 @@ feats de fácies
 * Date:   Wed Jun 9 14:34:53 2021 -0300
 * Lines changed: 27
 * Commit: [7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4](https://github.com/alvelvis/meu-mestrado/commit/7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4)
-* Patch file: [2021_6_9_14:34:53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch](patch_changelog_dep/2021_6_9_14:34:53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch)
+* Patch file: [2021_6_9_14-34-53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch](patch_changelog_dep/2021_6_9_14-34-53-7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4.patch)
 
 conglomerados e sustentados
 
@@ -352,7 +352,7 @@ conglomerados e sustentados
 * Date:   Wed Jun 9 15:17:37 2021 -0300
 * Lines changed: 101
 * Commit: [c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf](https://github.com/alvelvis/meu-mestrado/commit/c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf)
-* Patch file: [2021_6_9_15:17:37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch](patch_changelog_dep/2021_6_9_15:17:37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch)
+* Patch file: [2021_6_9_15-17-37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch](patch_changelog_dep/2021_6_9_15-17-37-c603e4d70c1ba8e8a12c3c0bc1c3352f889dd2bf.patch)
 
 abserva-se e outros erros de contrações iniciais
 
@@ -373,7 +373,7 @@ abserva-se e outros erros de contrações iniciais
 * Date:   Wed Jun 9 21:03:18 2021 -0300
 * Lines changed: 679
 * Commit: [4ed0c6e32b75471d714d0ef81305b15c9979467a](https://github.com/alvelvis/meu-mestrado/commit/4ed0c6e32b75471d714d0ef81305b15c9979467a)
-* Patch file: [2021_6_9_21:03:18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch](patch_changelog_dep/2021_6_9_21:03:18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch)
+* Patch file: [2021_6_9_21-03-18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch](patch_changelog_dep/2021_6_9_21-03-18-4ed0c6e32b75471d714d0ef81305b15c9979467a.patch)
 
 sincronizar correções da tati atrasadas
 
@@ -394,7 +394,7 @@ sincronizar correções da tati atrasadas
 * Date:   Tue Jun 15 20:00:31 2021 -0300
 * Lines changed: 192
 * Commit: [8f088149d87aa346b817a9360f5bc4b03e25cdad](https://github.com/alvelvis/meu-mestrado/commit/8f088149d87aa346b817a9360f5bc4b03e25cdad)
-* Patch file: [2021_6_15_20:00:31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch](patch_changelog_dep/2021_6_15_20:00:31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch)
+* Patch file: [2021_6_15_20-00-31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch](patch_changelog_dep/2021_6_15_20-00-31-8f088149d87aa346b817a9360f5bc4b03e25cdad.patch)
 
 aspas não podem ser head
 
@@ -427,7 +427,7 @@ aspas não podem ser head
 * Date:   Fri Jun 18 00:27:44 2021 -0300
 * Lines changed: 505
 * Commit: [df297cc3dfdf90a23e54ad72c18e23d25833ff4d](https://github.com/alvelvis/meu-mestrado/commit/df297cc3dfdf90a23e54ad72c18e23d25833ff4d)
-* Patch file: [2021_6_18_00:27:44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch](patch_changelog_dep/2021_6_18_00:27:44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch)
+* Patch file: [2021_6_18_00-27-44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch](patch_changelog_dep/2021_6_18_00-27-44-df297cc3dfdf90a23e54ad72c18e23d25833ff4d.patch)
 
 quando, como, enquanto
 
@@ -448,7 +448,7 @@ quando, como, enquanto
 * Date:   Wed Jun 23 20:06:54 2021 -0300
 * Lines changed: 191
 * Commit: [a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8](https://github.com/alvelvis/meu-mestrado/commit/a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8)
-* Patch file: [2021_6_23_20:06:54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch](patch_changelog_dep/2021_6_23_20:06:54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch)
+* Patch file: [2021_6_23_20-06-54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch](patch_changelog_dep/2021_6_23_20-06-54-a5334dd7e0cacedc64cf32ef16fc19ce4f0807d8.patch)
 
 MWE a_seguir
 
@@ -470,7 +470,7 @@ MWE a_seguir
 * Date:   Wed Jun 23 20:07:51 2021 -0300
 * Lines changed: 48
 * Commit: [7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09](https://github.com/alvelvis/meu-mestrado/commit/7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09)
-* Patch file: [2021_6_23_20:07:51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch](patch_changelog_dep/2021_6_23_20:07:51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch)
+* Patch file: [2021_6_23_20-07-51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch](patch_changelog_dep/2021_6_23_20-07-51-7592c05dfaa5cb42cd1e7e19406fd69dc3b50c09.patch)
 
 MWE como também
 
@@ -493,7 +493,7 @@ MWE como também
 * Date:   Wed Jun 23 20:09:06 2021 -0300
 * Lines changed: 544
 * Commit: [ae013a1a98a4396f8021b29641810686f6184b95](https://github.com/alvelvis/meu-mestrado/commit/ae013a1a98a4396f8021b29641810686f6184b95)
-* Patch file: [2021_6_23_20:09:06-ae013a1a98a4396f8021b29641810686f6184b95.patch](patch_changelog_dep/2021_6_23_20:09:06-ae013a1a98a4396f8021b29641810686f6184b95.patch)
+* Patch file: [2021_6_23_20-09-06-ae013a1a98a4396f8021b29641810686f6184b95.patch](patch_changelog_dep/2021_6_23_20-09-06-ae013a1a98a4396f8021b29641810686f6184b95.patch)
 
 MWE devido a
 
@@ -517,7 +517,7 @@ MWE devido a
 * Date:   Wed Jun 23 20:10:18 2021 -0300
 * Lines changed: 116
 * Commit: [ffd4df9f5ef3d04b08ab9d1a08fce31160931c34](https://github.com/alvelvis/meu-mestrado/commit/ffd4df9f5ef3d04b08ab9d1a08fce31160931c34)
-* Patch file: [2021_6_23_20:10:18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch](patch_changelog_dep/2021_6_23_20:10:18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch)
+* Patch file: [2021_6_23_20-10-18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch](patch_changelog_dep/2021_6_23_20-10-18-ffd4df9f5ef3d04b08ab9d1a08fce31160931c34.patch)
 
 MWE bem como
 
@@ -540,7 +540,7 @@ MWE bem como
 * Date:   Fri Jun 25 02:15:03 2021 -0300
 * Lines changed: 364
 * Commit: [c29dfd7a6814c8974961e8777ad4b1af44ab13fb](https://github.com/alvelvis/meu-mestrado/commit/c29dfd7a6814c8974961e8777ad4b1af44ab13fb)
-* Patch file: [2021_6_25_02:15:03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch](patch_changelog_dep/2021_6_25_02:15:03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch)
+* Patch file: [2021_6_25_02-15-03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch](patch_changelog_dep/2021_6_25_02-15-03-c29dfd7a6814c8974961e8777ad4b1af44ab13fb.patch)
 
 Alterações pulverizadas de amod, punct, flat:name e com boa parte de appos, especialmente apposXconj
 
@@ -561,7 +561,7 @@ Alterações pulverizadas de amod, punct, flat:name e com boa parte de appos, es
 * Date:   Wed Jul 7 05:24:26 2021 -0300
 * Lines changed: 102
 * Commit: [c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2](https://github.com/alvelvis/meu-mestrado/commit/c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2)
-* Patch file: [2021_7_7_05:24:26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch](patch_changelog_dep/2021_7_7_05:24:26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch)
+* Patch file: [2021_7_7_05-24-26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch](patch_changelog_dep/2021_7_7_05-24-26-c9bbc9f21f13bd0769fd03ee752d7e4fba9fffa2.patch)
 
 features dos verbos bugados "abserva-se"
 
@@ -582,7 +582,7 @@ features dos verbos bugados "abserva-se"
 * Date:   Thu Jul 8 01:26:46 2021 -0300
 * Lines changed: 353
 * Commit: [09a94714b7669dedf946d33d1b334eca352aef58](https://github.com/alvelvis/meu-mestrado/commit/09a94714b7669dedf946d33d1b334eca352aef58)
-* Patch file: [2021_7_8_01:26:46-09a94714b7669dedf946d33d1b334eca352aef58.patch](patch_changelog_dep/2021_7_8_01:26:46-09a94714b7669dedf946d33d1b334eca352aef58.patch)
+* Patch file: [2021_7_8_01-26-46-09a94714b7669dedf946d33d1b334eca352aef58.patch](patch_changelog_dep/2021_7_8_01-26-46-09a94714b7669dedf946d33d1b334eca352aef58.patch)
 
 Alterações nas duas direções
 apposXparataxis
@@ -608,7 +608,7 @@ amodXxcomp
 * Date:   Thu Jul 8 01:29:09 2021 -0300
 * Lines changed: 221
 * Commit: [b4593ae3ca54af6ecaeb898481c8df332d902f84](https://github.com/alvelvis/meu-mestrado/commit/b4593ae3ca54af6ecaeb898481c8df332d902f84)
-* Patch file: [2021_7_8_01:29:09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch](patch_changelog_dep/2021_7_8_01:29:09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch)
+* Patch file: [2021_7_8_01-29-09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch](patch_changelog_dep/2021_7_8_01-29-09-b4593ae3ca54af6ecaeb898481c8df332d902f84.patch)
 
 alem_de
 
@@ -629,7 +629,7 @@ alem_de
 * Date:   Thu Jul 8 01:29:46 2021 -0300
 * Lines changed: 98
 * Commit: [3bedc0e8d1dcc3f29a5fcc9a598359310eafc495](https://github.com/alvelvis/meu-mestrado/commit/3bedc0e8d1dcc3f29a5fcc9a598359310eafc495)
-* Patch file: [2021_7_8_01:29:46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch](patch_changelog_dep/2021_7_8_01:29:46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch)
+* Patch file: [2021_7_8_01-29-46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch](patch_changelog_dep/2021_7_8_01-29-46-3bedc0e8d1dcc3f29a5fcc9a598359310eafc495.patch)
 
 assim_como
 
@@ -655,7 +655,7 @@ assim_como
 * Date:   Thu Jul 8 01:30:43 2021 -0300
 * Lines changed: 882
 * Commit: [a0647e49f63d8c9b7e6b38449c89c07ea9457f1a](https://github.com/alvelvis/meu-mestrado/commit/a0647e49f63d8c9b7e6b38449c89c07ea9457f1a)
-* Patch file: [2021_7_8_01:30:43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch](patch_changelog_dep/2021_7_8_01:30:43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch)
+* Patch file: [2021_7_8_01-30-43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch](patch_changelog_dep/2021_7_8_01-30-43-a0647e49f63d8c9b7e6b38449c89c07ea9457f1a.patch)
 
 através_de
 
@@ -681,7 +681,7 @@ através_de
 * Date:   Thu Jul 8 01:34:29 2021 -0300
 * Lines changed: 72
 * Commit: [d05c5a8ed8190af9b716fc202aa29970e5fb40c7](https://github.com/alvelvis/meu-mestrado/commit/d05c5a8ed8190af9b716fc202aa29970e5fb40c7)
-* Patch file: [2021_7_8_01:34:29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch](patch_changelog_dep/2021_7_8_01:34:29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch)
+* Patch file: [2021_7_8_01-34-29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch](patch_changelog_dep/2021_7_8_01-34-29-d05c5a8ed8190af9b716fc202aa29970e5fb40c7.patch)
 
 com_vistas_a
 
@@ -702,7 +702,7 @@ com_vistas_a
 * Date:   Thu Jul 8 01:34:53 2021 -0300
 * Lines changed: 93
 * Commit: [c16ee551855c7a24ef2da56120afc3d947ca2b3b](https://github.com/alvelvis/meu-mestrado/commit/c16ee551855c7a24ef2da56120afc3d947ca2b3b)
-* Patch file: [2021_7_8_01:34:53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch](patch_changelog_dep/2021_7_8_01:34:53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch)
+* Patch file: [2021_7_8_01-34-53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch](patch_changelog_dep/2021_7_8_01-34-53-c16ee551855c7a24ef2da56120afc3d947ca2b3b.patch)
 
 quanto_a
 
@@ -723,7 +723,7 @@ quanto_a
 * Date:   Thu Jul 8 01:37:00 2021 -0300
 * Lines changed: 530
 * Commit: [b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef](https://github.com/alvelvis/meu-mestrado/commit/b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef)
-* Patch file: [2021_7_8_01:37:00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch](patch_changelog_dep/2021_7_8_01:37:00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch)
+* Patch file: [2021_7_8_01-37-00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch](patch_changelog_dep/2021_7_8_01-37-00-b00f290675e51bc4f0b2a20ec30d645cd1b7b6ef.patch)
 
 acl deve ter mesmo gênero de seu pai
 
@@ -744,7 +744,7 @@ acl deve ter mesmo gênero de seu pai
 * Date:   Wed Jul 7 04:24:14 2021 -0300
 * Lines changed: 236
 * Commit: [112e3457b2d37aeb9c27d320698c8a960ac0a997](https://github.com/alvelvis/meu-mestrado/commit/112e3457b2d37aeb9c27d320698c8a960ac0a997)
-* Patch file: [2021_7_7_04:24:14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch](patch_changelog_dep/2021_7_7_04:24:14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch)
+* Patch file: [2021_7_7_04-24-14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch](patch_changelog_dep/2021_7_7_04-24-14-112e3457b2d37aeb9c27d320698c8a960ac0a997.patch)
 
 obl_nmod .*nte e .*vel
 NOUN filho de NOUN, caso haja amod .*nte ou .*vel, provavelmente deverá ser obl desse adjetivo
@@ -768,7 +768,7 @@ squash
 * Date:   Thu Jul 8 04:23:29 2021 -0300
 * Lines changed: 73
 * Commit: [977fa059d86f22188023c1a360045b2380c54cd0](https://github.com/alvelvis/meu-mestrado/commit/977fa059d86f22188023c1a360045b2380c54cd0)
-* Patch file: [2021_7_8_04:23:29-977fa059d86f22188023c1a360045b2380c54cd0.patch](patch_changelog_dep/2021_7_8_04:23:29-977fa059d86f22188023c1a360045b2380c54cd0.patch)
+* Patch file: [2021_7_8_04-23-29-977fa059d86f22188023c1a360045b2380c54cd0.patch](patch_changelog_dep/2021_7_8_04-23-29-977fa059d86f22188023c1a360045b2380c54cd0.patch)
 
 correções de "referente"
 
@@ -789,7 +789,7 @@ correções de "referente"
 * Date:   Sat Jul 10 05:21:23 2021 -0300
 * Lines changed: 57
 * Commit: [dfa248aeea78409c6418689d1168a49fe42efd8c](https://github.com/alvelvis/meu-mestrado/commit/dfa248aeea78409c6418689d1168a49fe42efd8c)
-* Patch file: [2021_7_10_05:21:23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch](patch_changelog_dep/2021_7_10_05:21:23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch)
+* Patch file: [2021_7_10_05-21-23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch](patch_changelog_dep/2021_7_10_05-21-23-dfa248aeea78409c6418689d1168a49fe42efd8c.patch)
 
 correções de obl e nmod
 
@@ -814,7 +814,7 @@ correções de obl e nmod
 * Date:   Sun Jul 11 02:32:30 2021 -0300
 * Lines changed: 9
 * Commit: [2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc](https://github.com/alvelvis/meu-mestrado/commit/2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc)
-* Patch file: [2021_7_11_02:32:30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch](patch_changelog_dep/2021_7_11_02:32:30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch)
+* Patch file: [2021_7_11_02-32-30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch](patch_changelog_dep/2021_7_11_02-32-30-2d66ae1805ed6b38581c60e3b0e37fbc0a9d2cdc.patch)
 
 cunha(s) NOUN
 
@@ -844,7 +844,7 @@ cunha(s) NOUN
 * Date:   Sun Jul 11 07:18:10 2021 -0300
 * Lines changed: 361
 * Commit: [33a378890a443a91b16d48593bbd231a92bd7890](https://github.com/alvelvis/meu-mestrado/commit/33a378890a443a91b16d48593bbd231a92bd7890)
-* Patch file: [2021_7_11_07:18:10-33a378890a443a91b16d48593bbd231a92bd7890.patch](patch_changelog_dep/2021_7_11_07:18:10-33a378890a443a91b16d48593bbd231a92bd7890.patch)
+* Patch file: [2021_7_11_07-18-10-33a378890a443a91b16d48593bbd231a92bd7890.patch](patch_changelog_dep/2021_7_11_07-18-10-33a378890a443a91b16d48593bbd231a92bd7890.patch)
 
 "se" não pode ser nsubj
 
@@ -865,7 +865,7 @@ cunha(s) NOUN
 * Date:   Tue Jul 13 19:50:12 2021 -0300
 * Lines changed: 121
 * Commit: [0c8a30478e21598b6445c174024deb210bde8628](https://github.com/alvelvis/meu-mestrado/commit/0c8a30478e21598b6445c174024deb210bde8628)
-* Patch file: [2021_7_13_19:50:12-0c8a30478e21598b6445c174024deb210bde8628.patch](patch_changelog_dep/2021_7_13_19:50:12-0c8a30478e21598b6445c174024deb210bde8628.patch)
+* Patch file: [2021_7_13_19-50-12-0c8a30478e21598b6445c174024deb210bde8628.patch](patch_changelog_dep/2021_7_13_19-50-12-0c8a30478e21598b6445c174024deb210bde8628.patch)
 
 "se" seguido de particípio
 "se" SCONJ/mark
@@ -888,7 +888,7 @@ cunha(s) NOUN
 * Date:   Wed Jul 14 09:28:27 2021 -0300
 * Lines changed: 78
 * Commit: [36c40d555e50791ebc581305f64bd676347bb7ef](https://github.com/alvelvis/meu-mestrado/commit/36c40d555e50791ebc581305f64bd676347bb7ef)
-* Patch file: [2021_7_14_09:28:27-36c40d555e50791ebc581305f64bd676347bb7ef.patch](patch_changelog_dep/2021_7_14_09:28:27-36c40d555e50791ebc581305f64bd676347bb7ef.patch)
+* Patch file: [2021_7_14_09-28-27-36c40d555e50791ebc581305f64bd676347bb7ef.patch](patch_changelog_dep/2021_7_14_09-28-27-36c40d555e50791ebc581305f64bd676347bb7ef.patch)
 
 Segundo_ADP
 
@@ -909,7 +909,7 @@ Segundo_ADP
 * Date:   Wed Jul 14 16:05:27 2021 -0300
 * Lines changed: 416
 * Commit: [77a9e25ebef1a6752374b9f1e5f71cf2c309d379](https://github.com/alvelvis/meu-mestrado/commit/77a9e25ebef1a6752374b9f1e5f71cf2c309d379)
-* Patch file: [2021_7_14_16:05:27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch](patch_changelog_dep/2021_7_14_16:05:27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch)
+* Patch file: [2021_7_14_16-05-27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch](patch_changelog_dep/2021_7_14_16-05-27-77a9e25ebef1a6752374b9f1e5f71cf2c309d379.patch)
 
 de acordo com
 
@@ -929,7 +929,7 @@ de acordo com
 * Date:   Sat Jul 10 05:37:02 2021 -0300
 * Lines changed: 298
 * Commit: [2becf77d15758fc6e768f12011e4506c558af0d0](https://github.com/alvelvis/meu-mestrado/commit/2becf77d15758fc6e768f12011e4506c558af0d0)
-* Patch file: [2021_7_10_05:37:02-2becf77d15758fc6e768f12011e4506c558af0d0.patch](patch_changelog_dep/2021_7_10_05:37:02-2becf77d15758fc6e768f12011e4506c558af0d0.patch)
+* Patch file: [2021_7_10_05-37-02-2becf77d15758fc6e768f12011e4506c558af0d0.patch](patch_changelog_dep/2021_7_10_05-37-02-2becf77d15758fc6e768f12011e4506c558af0d0.patch)
 
 acl concordância de número
 
@@ -950,7 +950,7 @@ acl concordância de número
 * Date:   Tue Jul 13 20:18:34 2021 -0300
 * Lines changed: 440
 * Commit: [61d2b9897427c345e4c23f1269293b2037de336a](https://github.com/alvelvis/meu-mestrado/commit/61d2b9897427c345e4c23f1269293b2037de336a)
-* Patch file: [2021_7_13_20:18:34-61d2b9897427c345e4c23f1269293b2037de336a.patch](patch_changelog_dep/2021_7_13_20:18:34-61d2b9897427c345e4c23f1269293b2037de336a.patch)
+* Patch file: [2021_7_13_20-18-34-61d2b9897427c345e4c23f1269293b2037de336a.patch](patch_changelog_dep/2021_7_13_20-18-34-61d2b9897427c345e4c23f1269293b2037de336a.patch)
 
 amod concordância de gênero
 
@@ -971,7 +971,7 @@ amod concordância de gênero
 * Date:   Wed Jul 14 19:01:04 2021 -0300
 * Lines changed: 264
 * Commit: [4f870471a1989745f7ac65405c047a954b82cc5c](https://github.com/alvelvis/meu-mestrado/commit/4f870471a1989745f7ac65405c047a954b82cc5c)
-* Patch file: [2021_7_14_19:01:04-4f870471a1989745f7ac65405c047a954b82cc5c.patch](patch_changelog_dep/2021_7_14_19:01:04-4f870471a1989745f7ac65405c047a954b82cc5c.patch)
+* Patch file: [2021_7_14_19-01-04-4f870471a1989745f7ac65405c047a954b82cc5c.patch](patch_changelog_dep/2021_7_14_19-01-04-4f870471a1989745f7ac65405c047a954b82cc5c.patch)
 
 erros de concordância envolvendo acl:relcl
 
@@ -992,7 +992,7 @@ erros de concordância envolvendo acl:relcl
 * Date:   Wed Jul 14 21:03:40 2021 -0300
 * Lines changed: 539
 * Commit: [2e56e7e11881c62b3f388221c512713416a8ef0e](https://github.com/alvelvis/meu-mestrado/commit/2e56e7e11881c62b3f388221c512713416a8ef0e)
-* Patch file: [2021_7_14_21:03:40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch](patch_changelog_dep/2021_7_14_21:03:40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch)
+* Patch file: [2021_7_14_21-03-40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch](patch_changelog_dep/2021_7_14_21-03-40-2e56e7e11881c62b3f388221c512713416a8ef0e.patch)
 
 Matriz de confusão
 Normas ABNT flat:name
@@ -1021,7 +1021,7 @@ caseXmark(um lado só)
 * Date:   Wed Jul 21 06:38:44 2021 -0300
 * Lines changed: 19
 * Commit: [4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517](https://github.com/alvelvis/meu-mestrado/commit/4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517)
-* Patch file: [2021_7_21_06:38:44-4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517.patch](patch_changelog_dep/2021_7_21_06:38:44-4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517.patch)
+* Patch file: [2021_7_21_06-38-44-4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517.patch](patch_changelog_dep/2021_7_21_06-38-44-4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517.patch)
 
 Modificações de obl com base no sema e preposições
 - Se pai das preposições "em" e "entre", os seguintes semas devem ser obl: LOCAL CAMPO BACIA LITOESTRATIGRÁFICA POÇO
@@ -1047,7 +1047,7 @@ No segundo e terceiro casos, obl:tmod
 * Date:   Thu Jul 22 18:54:41 2021 -0300
 * Lines changed: 94
 * Commit: [5eba1aa6265970f3e1275bcc5a10adc8b305aa39](https://github.com/alvelvis/meu-mestrado/commit/5eba1aa6265970f3e1275bcc5a10adc8b305aa39)
-* Patch file: [2021_7_22_18:54:41-5eba1aa6265970f3e1275bcc5a10adc8b305aa39.patch](patch_changelog_dep/2021_7_22_18:54:41-5eba1aa6265970f3e1275bcc5a10adc8b305aa39.patch)
+* Patch file: [2021_7_22_18-54-41-5eba1aa6265970f3e1275bcc5a10adc8b305aa39.patch](patch_changelog_dep/2021_7_22_18-54-41-5eba1aa6265970f3e1275bcc5a10adc8b305aa39.patch)
 
 Correção de preposições erradas
 
@@ -1068,7 +1068,7 @@ Correção de preposições erradas
 * Date:   Thu Jul 22 18:11:42 2021 -0300
 * Lines changed: 325
 * Commit: [410c27dc87938d516418e108e96efe631fb24513](https://github.com/alvelvis/meu-mestrado/commit/410c27dc87938d516418e108e96efe631fb24513)
-* Patch file: [2021_7_22_18:11:42-410c27dc87938d516418e108e96efe631fb24513.patch](patch_changelog_dep/2021_7_22_18:11:42-410c27dc87938d516418e108e96efe631fb24513.patch)
+* Patch file: [2021_7_22_18-11-42-410c27dc87938d516418e108e96efe631fb24513.patch](patch_changelog_dep/2021_7_22_18-11-42-410c27dc87938d516418e108e96efe631fb24513.patch)
 
 Obl ou obj: lista de verbos seguidos de "em"
 
@@ -1089,7 +1089,7 @@ Obl ou obj: lista de verbos seguidos de "em"
 * Date:   Fri Jul 23 10:29:37 2021 -0300
 * Lines changed: 251
 * Commit: [b10877d0a741e2b78e7b7f7e5da9ed3191afcef2](https://github.com/alvelvis/meu-mestrado/commit/b10877d0a741e2b78e7b7f7e5da9ed3191afcef2)
-* Patch file: [2021_7_23_10:29:37-b10877d0a741e2b78e7b7f7e5da9ed3191afcef2.patch](patch_changelog_dep/2021_7_23_10:29:37-b10877d0a741e2b78e7b7f7e5da9ed3191afcef2.patch)
+* Patch file: [2021_7_23_10-29-37-b10877d0a741e2b78e7b7f7e5da9ed3191afcef2.patch](patch_changelog_dep/2021_7_23_10-29-37-b10877d0a741e2b78e7b7f7e5da9ed3191afcef2.patch)
 
 amod concordância de número
 
@@ -1109,7 +1109,7 @@ amod concordância de número
 * Date:   Fri Jul 23 11:12:19 2021 -0300
 * Lines changed: 653
 * Commit: [f774355e99b6a6d8ec14354f48e1aeb02d1c5174](https://github.com/alvelvis/meu-mestrado/commit/f774355e99b6a6d8ec14354f48e1aeb02d1c5174)
-* Patch file: [2021_7_23_11:12:19-f774355e99b6a6d8ec14354f48e1aeb02d1c5174.patch](patch_changelog_dep/2021_7_23_11:12:19-f774355e99b6a6d8ec14354f48e1aeb02d1c5174.patch)
+* Patch file: [2021_7_23_11-12-19-f774355e99b6a6d8ec14354f48e1aeb02d1c5174.patch](patch_changelog_dep/2021_7_23_11-12-19-f774355e99b6a6d8ec14354f48e1aeb02d1c5174.patch)
 
 Correções de matriz de confusão -- Maria Clara
 Advmod x case
@@ -1154,7 +1154,7 @@ Conj x flat:name
 * Date:   Thu Jul 22 19:09:38 2021 -0300
 * Lines changed: 76
 * Commit: [7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac](https://github.com/alvelvis/meu-mestrado/commit/7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac)
-* Patch file: [2021_7_22_19:09:38-7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac.patch](patch_changelog_dep/2021_7_22_19:09:38-7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac.patch)
+* Patch file: [2021_7_22_19-09-38-7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac.patch](patch_changelog_dep/2021_7_22_19-09-38-7f85f7b70d947c08f4424bf614b5d66bb6d9a0ac.patch)
 
 Correções de matriz de confusão -- Aline
 nmodXcompound
@@ -1182,7 +1182,7 @@ amodXobl
 * Date:   Mon Jul 26 18:59:17 2021 -0300
 * Lines changed: 131
 * Commit: [ca33a636f86240ac7be24337dde588cf3e7a6177](https://github.com/alvelvis/meu-mestrado/commit/ca33a636f86240ac7be24337dde588cf3e7a6177)
-* Patch file: [2021_7_26_18:59:17-ca33a636f86240ac7be24337dde588cf3e7a6177.patch](patch_changelog_dep/2021_7_26_18:59:17-ca33a636f86240ac7be24337dde588cf3e7a6177.patch)
+* Patch file: [2021_7_26_18-59-17-ca33a636f86240ac7be24337dde588cf3e7a6177.patch](patch_changelog_dep/2021_7_26_18-59-17-ca33a636f86240ac7be24337dde588cf3e7a6177.patch)
 
 Obl ou obj: lista de verbos seguidos de "com"
 
@@ -1203,7 +1203,7 @@ Obl ou obj: lista de verbos seguidos de "com"
 * Date:   Mon Jul 26 14:16:16 2021 -0300
 * Lines changed: 474
 * Commit: [e53424fe13dafb1408ab182d05778daba423d23c](https://github.com/alvelvis/meu-mestrado/commit/e53424fe13dafb1408ab182d05778daba423d23c)
-* Patch file: [2021_7_26_14:16:16-e53424fe13dafb1408ab182d05778daba423d23c.patch](patch_changelog_dep/2021_7_26_14:16:16-e53424fe13dafb1408ab182d05778daba423d23c.patch)
+* Patch file: [2021_7_26_14-16-16-e53424fe13dafb1408ab182d05778daba423d23c.patch](patch_changelog_dep/2021_7_26_14-16-16-e53424fe13dafb1408ab182d05778daba423d23c.patch)
 
 Obl ou obj: lista de verbos seguidos de "a"
 
@@ -1224,7 +1224,7 @@ Obl ou obj: lista de verbos seguidos de "a"
 * Date:   Tue Jul 27 11:29:45 2021 -0300
 * Lines changed: 41
 * Commit: [7df80c015c7842dc385df998d3f8233610eb9da4](https://github.com/alvelvis/meu-mestrado/commit/7df80c015c7842dc385df998d3f8233610eb9da4)
-* Patch file: [2021_7_27_11:29:45-7df80c015c7842dc385df998d3f8233610eb9da4.patch](patch_changelog_dep/2021_7_27_11:29:45-7df80c015c7842dc385df998d3f8233610eb9da4.patch)
+* Patch file: [2021_7_27_11-29-45-7df80c015c7842dc385df998d3f8233610eb9da4.patch](patch_changelog_dep/2021_7_27_11-29-45-7df80c015c7842dc385df998d3f8233610eb9da4.patch)
 
 Obl ou obj: lista de verbos seguidos de "para"
 
@@ -1245,7 +1245,7 @@ Obl ou obj: lista de verbos seguidos de "para"
 * Date:   Tue Jul 27 11:31:01 2021 -0300
 * Lines changed: 33
 * Commit: [2beb4fece79cf40fa68889ea0f297be7b284f67c](https://github.com/alvelvis/meu-mestrado/commit/2beb4fece79cf40fa68889ea0f297be7b284f67c)
-* Patch file: [2021_7_27_11:31:01-2beb4fece79cf40fa68889ea0f297be7b284f67c.patch](patch_changelog_dep/2021_7_27_11:31:01-2beb4fece79cf40fa68889ea0f297be7b284f67c.patch)
+* Patch file: [2021_7_27_11-31-01-2beb4fece79cf40fa68889ea0f297be7b284f67c.patch](patch_changelog_dep/2021_7_27_11-31-01-2beb4fece79cf40fa68889ea0f297be7b284f67c.patch)
 
 Obl ou obj: lista de verbos seguidos de "por"
 
@@ -1266,7 +1266,7 @@ Obl ou obj: lista de verbos seguidos de "por"
 * Date:   Tue Jul 27 16:00:57 2021 -0300
 * Lines changed: 39
 * Commit: [423ae3bd04bb63dd111c0afc2a888e5f3e375913](https://github.com/alvelvis/meu-mestrado/commit/423ae3bd04bb63dd111c0afc2a888e5f3e375913)
-* Patch file: [2021_7_27_16:00:57-423ae3bd04bb63dd111c0afc2a888e5f3e375913.patch](patch_changelog_dep/2021_7_27_16:00:57-423ae3bd04bb63dd111c0afc2a888e5f3e375913.patch)
+* Patch file: [2021_7_27_16-00-57-423ae3bd04bb63dd111c0afc2a888e5f3e375913.patch](patch_changelog_dep/2021_7_27_16-00-57-423ae3bd04bb63dd111c0afc2a888e5f3e375913.patch)
 
 Obl ou obj: lista de verbos seguidos de "sobre", "entre" e outros
 
@@ -1287,7 +1287,7 @@ Obl ou obj: lista de verbos seguidos de "sobre", "entre" e outros
 * Date:   Tue Jul 27 21:35:03 2021 -0300
 * Lines changed: 52
 * Commit: [77289808694d336985848be47702c1bc30c392e1](https://github.com/alvelvis/meu-mestrado/commit/77289808694d336985848be47702c1bc30c392e1)
-* Patch file: [2021_7_27_21:35:03-77289808694d336985848be47702c1bc30c392e1.patch](patch_changelog_dep/2021_7_27_21:35:03-77289808694d336985848be47702c1bc30c392e1.patch)
+* Patch file: [2021_7_27_21-35-03-77289808694d336985848be47702c1bc30c392e1.patch](patch_changelog_dep/2021_7_27_21-35-03-77289808694d336985848be47702c1bc30c392e1.patch)
 
 Comparativas: de_o_que
 
@@ -1318,7 +1318,7 @@ Comparativas: de_o_que
 * Date:   Wed Jul 28 14:02:52 2021 -0300
 * Lines changed: 222
 * Commit: [ee405eb0077f11e3544e022f08b54e38e43cc1a0](https://github.com/alvelvis/meu-mestrado/commit/ee405eb0077f11e3544e022f08b54e38e43cc1a0)
-* Patch file: [2021_7_28_14:02:52-ee405eb0077f11e3544e022f08b54e38e43cc1a0.patch](patch_changelog_dep/2021_7_28_14:02:52-ee405eb0077f11e3544e022f08b54e38e43cc1a0.patch)
+* Patch file: [2021_7_28_14-02-52-ee405eb0077f11e3544e022f08b54e38e43cc1a0.patch](patch_changelog_dep/2021_7_28_14-02-52-ee405eb0077f11e3544e022f08b54e38e43cc1a0.patch)
 
 Obl ou obj: lista de verbos seguidos de "de"
 
@@ -1339,7 +1339,7 @@ Obl ou obj: lista de verbos seguidos de "de"
 * Date:   Thu Jul 29 17:56:46 2021 -0300
 * Lines changed: 251
 * Commit: [f62c009cd6744c841225f1631d3c34cc7e655798](https://github.com/alvelvis/meu-mestrado/commit/f62c009cd6744c841225f1631d3c34cc7e655798)
-* Patch file: [2021_7_29_17:56:46-f62c009cd6744c841225f1631d3c34cc7e655798.patch](patch_changelog_dep/2021_7_29_17:56:46-f62c009cd6744c841225f1631d3c34cc7e655798.patch)
+* Patch file: [2021_7_29_17-56-46-f62c009cd6744c841225f1631d3c34cc7e655798.patch](patch_changelog_dep/2021_7_29_17-56-46-f62c009cd6744c841225f1631d3c34cc7e655798.patch)
 
 Verbos com lema errado
 A correção faz parte do lote de "obj/obl", portanto só foram verificados os verbos seguidos de preposição
@@ -1379,7 +1379,7 @@ A correção faz parte do lote de "obj/obl", portanto só foram verificados os v
 * Date:   Thu Jul 29 18:00:03 2021 -0300
 * Lines changed: 33
 * Commit: [e12dc3278cb2f818e47a553832c6fb017d27a699](https://github.com/alvelvis/meu-mestrado/commit/e12dc3278cb2f818e47a553832c6fb017d27a699)
-* Patch file: [2021_7_29_18:00:03-e12dc3278cb2f818e47a553832c6fb017d27a699.patch](patch_changelog_dep/2021_7_29_18:00:03-e12dc3278cb2f818e47a553832c6fb017d27a699.patch)
+* Patch file: [2021_7_29_18-00-03-e12dc3278cb2f818e47a553832c6fb017d27a699.patch](patch_changelog_dep/2021_7_29_18-00-03-e12dc3278cb2f818e47a553832c6fb017d27a699.patch)
 
 Correções de matriz de confusão -- Maria Clara
 Coisas que ficaram pra trás em: Advmod x case, advmod x cc, compound x nmod e compound x amod.
@@ -1404,7 +1404,7 @@ Coisas que ficaram pra trás em: Advmod x case, advmod x cc, compound x nmod e c
 * Date:   Wed Jul 28 15:59:22 2021 -0300
 * Lines changed: 1023
 * Commit: [a3b245334b32c17efe08509eb9f06c63828598f8](https://github.com/alvelvis/meu-mestrado/commit/a3b245334b32c17efe08509eb9f06c63828598f8)
-* Patch file: [2021_7_28_15:59:22-a3b245334b32c17efe08509eb9f06c63828598f8.patch](patch_changelog_dep/2021_7_28_15:59:22-a3b245334b32c17efe08509eb9f06c63828598f8.patch)
+* Patch file: [2021_7_28_15-59-22-a3b245334b32c17efe08509eb9f06c63828598f8.patch](patch_changelog_dep/2021_7_28_15-59-22-a3b245334b32c17efe08509eb9f06c63828598f8.patch)
 
 Regra de correção de número(nummod) atrelado a figuras, tabelas, etc
 
@@ -1425,7 +1425,7 @@ Regra de correção de número(nummod) atrelado a figuras, tabelas, etc
 * Date:   Fri Jul 30 12:46:12 2021 -0300
 * Lines changed: 35
 * Commit: [4ee4a880b18bf53a004c02240c668bfee158d425](https://github.com/alvelvis/meu-mestrado/commit/4ee4a880b18bf53a004c02240c668bfee158d425)
-* Patch file: [2021_7_30_12:46:12-4ee4a880b18bf53a004c02240c668bfee158d425.patch](patch_changelog_dep/2021_7_30_12:46:12-4ee4a880b18bf53a004c02240c668bfee158d425.patch)
+* Patch file: [2021_7_30_12-46-12-4ee4a880b18bf53a004c02240c668bfee158d425.patch](patch_changelog_dep/2021_7_30_12-46-12-4ee4a880b18bf53a004c02240c668bfee158d425.patch)
 
 Confusões obl e nmod
 
@@ -1446,7 +1446,7 @@ Confusões obl e nmod
 * Date:   Fri Jul 30 12:48:03 2021 -0300
 * Lines changed: 738
 * Commit: [bcb2f34b6e1ed8e73d303d566a60b151b2622981](https://github.com/alvelvis/meu-mestrado/commit/bcb2f34b6e1ed8e73d303d566a60b151b2622981)
-* Patch file: [2021_7_30_12:48:03-bcb2f34b6e1ed8e73d303d566a60b151b2622981.patch](patch_changelog_dep/2021_7_30_12:48:03-bcb2f34b6e1ed8e73d303d566a60b151b2622981.patch)
+* Patch file: [2021_7_30_12-48-03-bcb2f34b6e1ed8e73d303d566a60b151b2622981.patch](patch_changelog_dep/2021_7_30_12-48-03-bcb2f34b6e1ed8e73d303d566a60b151b2622981.patch)
 
 Correções de frases com 2 nsubj, obj ou obl:agent
 
@@ -1476,7 +1476,7 @@ Correções de frases com 2 nsubj, obj ou obl:agent
 * Date:   Mon Aug 2 15:07:18 2021 -0300
 * Lines changed: 330
 * Commit: [bb6114657ab12253c243e7e22aff8588c93fc81a](https://github.com/alvelvis/meu-mestrado/commit/bb6114657ab12253c243e7e22aff8588c93fc81a)
-* Patch file: [2021_8_2_15:07:18-bb6114657ab12253c243e7e22aff8588c93fc81a.patch](patch_changelog_dep/2021_8_2_15:07:18-bb6114657ab12253c243e7e22aff8588c93fc81a.patch)
+* Patch file: [2021_8_2_15-07-18-bb6114657ab12253c243e7e22aff8588c93fc81a.patch](patch_changelog_dep/2021_8_2_15-07-18-bb6114657ab12253c243e7e22aff8588c93fc81a.patch)
 
 Confusões obl (Stanza) e nmod (UDPipe)
 
@@ -1497,7 +1497,7 @@ Confusões obl (Stanza) e nmod (UDPipe)
 * Date:   Wed Aug 4 22:49:15 2021 -0300
 * Lines changed: 107
 * Commit: [86a4251333c19eb12aa68f92f07d1496288fc456](https://github.com/alvelvis/meu-mestrado/commit/86a4251333c19eb12aa68f92f07d1496288fc456)
-* Patch file: [2021_8_4_22:49:15-86a4251333c19eb12aa68f92f07d1496288fc456.patch](patch_changelog_dep/2021_8_4_22:49:15-86a4251333c19eb12aa68f92f07d1496288fc456.patch)
+* Patch file: [2021_8_4_22-49-15-86a4251333c19eb12aa68f92f07d1496288fc456.patch](patch_changelog_dep/2021_8_4_22-49-15-86a4251333c19eb12aa68f92f07d1496288fc456.patch)
 
 Confusões nmod (Stanza) e obl (UDPipe)
 Confusões nas teses 411 e 243
@@ -1518,7 +1518,7 @@ Confusões nas teses 411 e 243
 * Date:   Wed Aug 4 23:32:11 2021 -0300
 * Lines changed: 35
 * Commit: [e9c6ed451f9782b8638081709609ebaaf1fb76bc](https://github.com/alvelvis/meu-mestrado/commit/e9c6ed451f9782b8638081709609ebaaf1fb76bc)
-* Patch file: [2021_8_4_23:32:11-e9c6ed451f9782b8638081709609ebaaf1fb76bc.patch](patch_changelog_dep/2021_8_4_23:32:11-e9c6ed451f9782b8638081709609ebaaf1fb76bc.patch)
+* Patch file: [2021_8_4_23-32-11-e9c6ed451f9782b8638081709609ebaaf1fb76bc.patch](patch_changelog_dep/2021_8_4_23-32-11-e9c6ed451f9782b8638081709609ebaaf1fb76bc.patch)
 
 Confusões nmod (Stanza) e obl (UDPipe)
 Confusões na tese 391
@@ -1540,7 +1540,7 @@ Confusões na tese 391
 * Date:   Thu Aug 5 09:52:23 2021 -0300
 * Lines changed: 450
 * Commit: [ebfdad7e50eb29e1a57f831905a2eca5502c8e1a](https://github.com/alvelvis/meu-mestrado/commit/ebfdad7e50eb29e1a57f831905a2eca5502c8e1a)
-* Patch file: [2021_8_5_09:52:23-ebfdad7e50eb29e1a57f831905a2eca5502c8e1a.patch](patch_changelog_dep/2021_8_5_09:52:23-ebfdad7e50eb29e1a57f831905a2eca5502c8e1a.patch)
+* Patch file: [2021_8_5_09-52-23-ebfdad7e50eb29e1a57f831905a2eca5502c8e1a.patch](patch_changelog_dep/2021_8_5_09-52-23-ebfdad7e50eb29e1a57f831905a2eca5502c8e1a.patch)
 
 Confusões nmod (Stanza) e obl (UDPipe)
 
@@ -1561,7 +1561,7 @@ Confusões nmod (Stanza) e obl (UDPipe)
 * Date:   Thu Aug 5 09:53:27 2021 -0300
 * Lines changed: 544
 * Commit: [4ad2b951e1003db40f1a30aa204abacca8dc4c14](https://github.com/alvelvis/meu-mestrado/commit/4ad2b951e1003db40f1a30aa204abacca8dc4c14)
-* Patch file: [2021_8_5_09:53:27-4ad2b951e1003db40f1a30aa204abacca8dc4c14.patch](patch_changelog_dep/2021_8_5_09:53:27-4ad2b951e1003db40f1a30aa204abacca8dc4c14.patch)
+* Patch file: [2021_8_5_09-53-27-4ad2b951e1003db40f1a30aa204abacca8dc4c14.patch](patch_changelog_dep/2021_8_5_09-53-27-4ad2b951e1003db40f1a30aa204abacca8dc4c14.patch)
 
 Confusões nmod (Stanza) e obl (UDPipe)
 
@@ -1582,7 +1582,7 @@ Confusões nmod (Stanza) e obl (UDPipe)
 * Date:   Thu Aug 5 10:53:55 2021 -0300
 * Lines changed: 1609
 * Commit: [57b1696cbaadd3e2877d7685d5d9652cc1ba81ef](https://github.com/alvelvis/meu-mestrado/commit/57b1696cbaadd3e2877d7685d5d9652cc1ba81ef)
-* Patch file: [2021_8_5_10:53:55-57b1696cbaadd3e2877d7685d5d9652cc1ba81ef.patch](patch_changelog_dep/2021_8_5_10:53:55-57b1696cbaadd3e2877d7685d5d9652cc1ba81ef.patch)
+* Patch file: [2021_8_5_10-53-55-57b1696cbaadd3e2877d7685d5d9652cc1ba81ef.patch](patch_changelog_dep/2021_8_5_10-53-55-57b1696cbaadd3e2877d7685d5d9652cc1ba81ef.patch)
 
 Transformação de obj preposicionados em obl:arg
 
@@ -1603,7 +1603,7 @@ Transformação de obj preposicionados em obl:arg
 * Date:   Thu Aug 5 13:05:26 2021 -0300
 * Lines changed: 141
 * Commit: [7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90](https://github.com/alvelvis/meu-mestrado/commit/7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90)
-* Patch file: [2021_8_5_13:05:26-7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90.patch](patch_changelog_dep/2021_8_5_13:05:26-7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90.patch)
+* Patch file: [2021_8_5_13-05-26-7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90.patch](patch_changelog_dep/2021_8_5_13-05-26-7ff2ee15b2a0ed18c7cce19f026fb5099b75cc90.patch)
 
 Correções de 'tem' como AUX
 
@@ -1633,7 +1633,7 @@ Correções de 'tem' como AUX
 * Date:   Thu Aug 5 13:17:15 2021 -0300
 * Lines changed: 30
 * Commit: [3dc61b031f1841b76092d1464d836ebc81c1c60d](https://github.com/alvelvis/meu-mestrado/commit/3dc61b031f1841b76092d1464d836ebc81c1c60d)
-* Patch file: [2021_8_5_13:17:15-3dc61b031f1841b76092d1464d836ebc81c1c60d.patch](patch_changelog_dep/2021_8_5_13:17:15-3dc61b031f1841b76092d1464d836ebc81c1c60d.patch)
+* Patch file: [2021_8_5_13-17-15-3dc61b031f1841b76092d1464d836ebc81c1c60d.patch](patch_changelog_dep/2021_8_5_13-17-15-3dc61b031f1841b76092d1464d836ebc81c1c60d.patch)
 
 Correções de root e ciclo
 
@@ -1654,7 +1654,7 @@ Correções de root e ciclo
 * Date:   Thu Aug 5 13:19:45 2021 -0300
 * Lines changed: 204
 * Commit: [ef17eb8dada155904a13eaf1efe40f1b5017b6bc](https://github.com/alvelvis/meu-mestrado/commit/ef17eb8dada155904a13eaf1efe40f1b5017b6bc)
-* Patch file: [2021_8_5_13:19:45-ef17eb8dada155904a13eaf1efe40f1b5017b6bc.patch](patch_changelog_dep/2021_8_5_13:19:45-ef17eb8dada155904a13eaf1efe40f1b5017b6bc.patch)
+* Patch file: [2021_8_5_13-19-45-ef17eb8dada155904a13eaf1efe40f1b5017b6bc.patch](patch_changelog_dep/2021_8_5_13-19-45-ef17eb8dada155904a13eaf1efe40f1b5017b6bc.patch)
 
 Correção do metadado text de algumas sentenças
 Sentenças que foram acopladas durante a fase de sentenciação não tiveram o metadado text atualizado. Com esse pós-processamento, todos os tokens aparecem separados por espaço no metadado text, como vírgulas e pontos finais, mas o problema do acoplamento foi resolvido.
@@ -1675,7 +1675,7 @@ Sentenças que foram acopladas durante a fase de sentenciação não tiveram o m
 * Date:   Thu Aug 5 13:29:50 2021 -0300
 * Lines changed: 8798
 * Commit: [8236a9314137a98221d538bf495e38366eef60e6](https://github.com/alvelvis/meu-mestrado/commit/8236a9314137a98221d538bf495e38366eef60e6)
-* Patch file: [2021_8_5_13:29:50-8236a9314137a98221d538bf495e38366eef60e6.patch](patch_changelog_dep/2021_8_5_13:29:50-8236a9314137a98221d538bf495e38366eef60e6.patch)
+* Patch file: [2021_8_5_13-29-50-8236a9314137a98221d538bf495e38366eef60e6.patch](patch_changelog_dep/2021_8_5_13-29-50-8236a9314137a98221d538bf495e38366eef60e6.patch)
 
 Remoção de pontos finais duplicados -- ponto final seguido de ponto final
 
@@ -1695,7 +1695,7 @@ Remoção de pontos finais duplicados -- ponto final seguido de ponto final
 * Date:   Thu Aug 5 14:08:49 2021 -0300
 * Lines changed: 742
 * Commit: [fa18597f93b58665bf6775c81c6a26281b195834](https://github.com/alvelvis/meu-mestrado/commit/fa18597f93b58665bf6775c81c6a26281b195834)
-* Patch file: [2021_8_5_14:08:49-fa18597f93b58665bf6775c81c6a26281b195834.patch](patch_changelog_dep/2021_8_5_14:08:49-fa18597f93b58665bf6775c81c6a26281b195834.patch)
+* Patch file: [2021_8_5_14-08-49-fa18597f93b58665bf6775c81c6a26281b195834.patch](patch_changelog_dep/2021_8_5_14-08-49-fa18597f93b58665bf6775c81c6a26281b195834.patch)
 
 Remoção de pontos finais duplicados -- tokens de word ".."
 
@@ -1715,7 +1715,7 @@ Remoção de pontos finais duplicados -- tokens de word ".."
 * Date:   Thu Aug 5 16:30:49 2021 -0300
 * Lines changed: 1037
 * Commit: [ea800f94dd0dc29b7c1e151088aca11494e313d4](https://github.com/alvelvis/meu-mestrado/commit/ea800f94dd0dc29b7c1e151088aca11494e313d4)
-* Patch file: [2021_8_5_16:30:49-ea800f94dd0dc29b7c1e151088aca11494e313d4.patch](patch_changelog_dep/2021_8_5_16:30:49-ea800f94dd0dc29b7c1e151088aca11494e313d4.patch)
+* Patch file: [2021_8_5_16-30-49-ea800f94dd0dc29b7c1e151088aca11494e313d4.patch](patch_changelog_dep/2021_8_5_16-30-49-ea800f94dd0dc29b7c1e151088aca11494e313d4.patch)
 
 Remoção de pontos finais duplicados -- tokens terminados com ".."
 
@@ -1736,7 +1736,7 @@ Remoção de pontos finais duplicados -- tokens terminados com ".."
 * Date:   Thu Aug 5 17:59:37 2021 -0300
 * Lines changed: 0
 * Commit: [f77b100a9dddb9c40140770ea3ea283886133971](https://github.com/alvelvis/meu-mestrado/commit/f77b100a9dddb9c40140770ea3ea283886133971)
-* Patch file: [2021_8_5_17:59:37-f77b100a9dddb9c40140770ea3ea283886133971.patch](patch_changelog_dep/2021_8_5_17:59:37-f77b100a9dddb9c40140770ea3ea283886133971.patch)
+* Patch file: [2021_8_5_17-59-37-f77b100a9dddb9c40140770ea3ea283886133971.patch](patch_changelog_dep/2021_8_5_17-59-37-f77b100a9dddb9c40140770ea3ea283886133971.patch)
 
 Remoção de frases mal sentenciadas ou tokenizadas
 
@@ -1799,7 +1799,7 @@ Remoção de frases mal sentenciadas ou tokenizadas
 * Date:   Thu Aug 12 14:25:41 2021 -0300
 * Lines changed: 161
 * Commit: [0e7a93944177473b2c7d125f75b632bf89022a25](https://github.com/alvelvis/meu-mestrado/commit/0e7a93944177473b2c7d125f75b632bf89022a25)
-* Patch file: [2021_8_12_14:25:41-0e7a93944177473b2c7d125f75b632bf89022a25.patch](patch_changelog_dep/2021_8_12_14:25:41-0e7a93944177473b2c7d125f75b632bf89022a25.patch)
+* Patch file: [2021_8_12_14-25-41-0e7a93944177473b2c7d125f75b632bf89022a25.patch](patch_changelog_dep/2021_8_12_14-25-41-0e7a93944177473b2c7d125f75b632bf89022a25.patch)
 
 Modificações de particípio e de conj com POS diferentes
 
@@ -1820,7 +1820,7 @@ Modificações de particípio e de conj com POS diferentes
 * Date:   Thu Aug 12 14:44:23 2021 -0300
 * Lines changed: 211
 * Commit: [f33779ff7b8fa9dc221f2d62c414ef871741f153](https://github.com/alvelvis/meu-mestrado/commit/f33779ff7b8fa9dc221f2d62c414ef871741f153)
-* Patch file: [2021_8_12_14:44:23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch](patch_changelog_dep/2021_8_12_14:44:23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch)
+* Patch file: [2021_8_12_14-44-23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch](patch_changelog_dep/2021_8_12_14-44-23-f33779ff7b8fa9dc221f2d62c414ef871741f153.patch)
 
 Correções de lema
 Lemmas que não terminam em ".r" e estavam como verbos (feats diferente de part, porque os particípios ficaram com a Tati), tokens cujo lemma termina em ".*s" e para ocorrências da palavra "sal" no plural que estavam com o lemma "sai".
@@ -1841,7 +1841,7 @@ Lemmas que não terminam em ".r" e estavam como verbos (feats diferente de part,
 * Date:   Fri Aug 13 09:39:16 2021 -0300
 * Lines changed: 106
 * Commit: [d1754a735059ef556d814b41f2a8283da9373755](https://github.com/alvelvis/meu-mestrado/commit/d1754a735059ef556d814b41f2a8283da9373755)
-* Patch file: [2021_8_13_09:39:16-d1754a735059ef556d814b41f2a8283da9373755.patch](patch_changelog_dep/2021_8_13_09:39:16-d1754a735059ef556d814b41f2a8283da9373755.patch)
+* Patch file: [2021_8_13_09-39-16-d1754a735059ef556d814b41f2a8283da9373755.patch](patch_changelog_dep/2021_8_13_09-39-16-d1754a735059ef556d814b41f2a8283da9373755.patch)
 
 Três correções
 Terminações do domínio como ADJ ou VERB
@@ -1867,7 +1867,7 @@ NUM seguido de NUM que não era flat
 * Date:   Wed Aug 25 19:21:31 2021 -0300
 * Lines changed: 928
 * Commit: [8d418fdffb04a527db48464dad5aa1a3364b3c2f](https://github.com/alvelvis/meu-mestrado/commit/8d418fdffb04a527db48464dad5aa1a3364b3c2f)
-* Patch file: [2021_8_25_19:21:31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch](patch_changelog_dep/2021_8_25_19:21:31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch)
+* Patch file: [2021_8_25_19-21-31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch](patch_changelog_dep/2021_8_25_19-21-31-8d418fdffb04a527db48464dad5aa1a3364b3c2f.patch)
 
 Figura, tabela, quadro etc.
 Se não forem flat:name, viram NOUN, com lema minúsculo, e são parataxis quando entre parênteses
@@ -1889,7 +1889,7 @@ Se não forem flat:name, viram NOUN, com lema minúsculo, e são parataxis quand
 * Date:   Mon Aug 30 23:22:34 2021 -0300
 * Lines changed: 520
 * Commit: [c306455a1bc9030090c0fcf9bae663647ddf5699](https://github.com/alvelvis/meu-mestrado/commit/c306455a1bc9030090c0fcf9bae663647ddf5699)
-* Patch file: [2021_8_30_23:22:34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch](patch_changelog_dep/2021_8_30_23:22:34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch)
+* Patch file: [2021_8_30_23-22-34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch](patch_changelog_dep/2021_8_30_23-22-34-c306455a1bc9030090c0fcf9bae663647ddf5699.patch)
 
 regras para juntar os flat:name com gap
 
@@ -1909,4 +1909,496 @@ regras para juntar os flat:name com gap
  23	,	,	PUNCT	_	_	24	punct	O	_
  24	Bueno	Bueno	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
  25	et	et	PROPN	_	Number=Sing	24	flat:name	O	_
+```
+
+## Adjetivação com gênero diferente
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Fri Sep 17 21:10:35 2021 -0300
+* Lines changed: 242
+* Commit: [d856a970ba91b276f62ab6990edb3d7810d4df8e](https://github.com/alvelvis/meu-mestrado/commit/d856a970ba91b276f62ab6990edb3d7810d4df8e)
+* Patch file: [2021_9_17_21-10-35-d856a970ba91b276f62ab6990edb3d7810d4df8e.patch](patch_changelog_dep/2021_9_17_21-10-35-d856a970ba91b276f62ab6990edb3d7810d4df8e.patch)
+
+Adjetivação com gênero diferente
+Erros de validação corrigidos pela Cláudia
+
+```diff
+ 23	atinge	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	O	_
+ 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
+ 25	coberturas	cobertura	NOUN	_	Gender=Fem|Number=Plur	23	obj	O	_
+-26	metassedimentares	metassedimentar	ADJ	_	Gender=Unsp|Number=Plur	25	amod	O	_
++26	metassedimentares	metassedimentar	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+ 27-28	meso-a	_	_	_	_	_	_	_	_
+ 27	meso	meso	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+ 28	a	a	ADP	_	_	29	case	O	_
+```
+
+## Correções derivadas da busca por obj de não-verbo
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sat Sep 18 02:36:16 2021 -0300
+* Lines changed: 375
+* Commit: [98cce96cff4375f3660b117c32afb30f484b738b](https://github.com/alvelvis/meu-mestrado/commit/98cce96cff4375f3660b117c32afb30f484b738b)
+* Patch file: [2021_9_18_02-36-16-98cce96cff4375f3660b117c32afb30f484b738b.patch](patch_changelog_dep/2021_9_18_02-36-16-98cce96cff4375f3660b117c32afb30f484b738b.patch)
+
+Correções derivadas da busca por obj de não-verbo
+
+```diff
+ 25	coberturas	cobertura	NOUN	_	Gender=Fem|Number=Plur	23	obj	O	_
+ 26	metassedimentares	metassedimentar	ADJ	_	Gender=Unsp|Number=Plur	25	amod	O	_
+ 27-28	meso-a	_	_	_	_	_	_	_	_
+-27	meso	meso	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++27	meso	meso	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
+ 28	a	a	ADP	_	_	29	case	O	_
+ 29	neoproterozóicas	neoproterozóico	ADJ	_	Gender=Fem|Number=Plur	27	nmod	B=GEOCRONOLOGIA	_
+ 30	,	,	PUNCT	_	_	31	punct	O	_
+```
+
+## Números em título de seção
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Sep 21 09:41:19 2021 -0300
+* Lines changed: 612
+* Commit: [41775229e2aa5e0a0fb68c99f2e17a5810583722](https://github.com/alvelvis/meu-mestrado/commit/41775229e2aa5e0a0fb68c99f2e17a5810583722)
+* Patch file: [2021_9_21_09-41-19-41775229e2aa5e0a0fb68c99f2e17a5810583722.patch](patch_changelog_dep/2021_9_21_09-41-19-41775229e2aa5e0a0fb68c99f2e17a5810583722.patch)
+
+Números em título de seção
+
+```diff
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 247-20140910-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+```
+
+## 'ocorrer' não deve ter objeto
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Sep 23 15:06:45 2021 -0300
+* Lines changed: 112
+* Commit: [8b98a96c5d4e804102e3353e3ce92f0332d5fe20](https://github.com/alvelvis/meu-mestrado/commit/8b98a96c5d4e804102e3353e3ce92f0332d5fe20)
+* Patch file: [2021_9_23_15-06-45-8b98a96c5d4e804102e3353e3ce92f0332d5fe20.patch](patch_changelog_dep/2021_9_23_15-06-45-8b98a96c5d4e804102e3353e3ce92f0332d5fe20.patch)
+
+'ocorrer' não deve ter objeto
+
+```diff
+ 7	,	,	PUNCT	_	_	3	punct	O	_
+ 8	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	marcante	marcante	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+-10	aloctonia	aloctonia	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
++10	aloctonia	aloctonia	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+ 11	e	e	CCONJ	_	_	13	cc	O	_
+ 12	elevado	elevado	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 13	grau	grau	NOUN	_	Gender=Masc|Number=Sing	10	conj	O	_
+```
+
+## Sujeito vira objeto nos casos de SE indeterminado
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Sep 23 20:49:56 2021 -0300
+* Lines changed: 453
+* Commit: [f96eab90d05d8c518a6230b3436bb495d898302b](https://github.com/alvelvis/meu-mestrado/commit/f96eab90d05d8c518a6230b3436bb495d898302b)
+* Patch file: [2021_9_23_20-49-56-f96eab90d05d8c518a6230b3436bb495d898302b.patch](patch_changelog_dep/2021_9_23_20-49-56-f96eab90d05d8c518a6230b3436bb495d898302b.patch)
+
+Sujeito vira objeto nos casos de SE indeterminado
+Voz passiva sintética também foi modificada, e o "SE" recebeu a etiqueta expl:impers
+
+```diff
+ 18	Rifte	Rifte	PROPN	_	Number=Sing	15	flat:name	O	_
+ 19-20	observou-se	_	_	_	_	_	_	_	_
+ 19	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-20	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	expl	O	_
++20	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	expl:impers	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	presença	presença	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	O	_
++22	presença	presença	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+ 25	adensamento	adensamento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+```
+
+## Uniformização de nominais
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Sep 23 21:03:40 2021 -0300
+* Lines changed: 264
+* Commit: [48004c2867aaff9e1add51f9bdd2ba789bad46d3](https://github.com/alvelvis/meu-mestrado/commit/48004c2867aaff9e1add51f9bdd2ba789bad46d3)
+* Patch file: [2021_9_23_21-03-40-48004c2867aaff9e1add51f9bdd2ba789bad46d3.patch](patch_changelog_dep/2021_9_23_21-03-40-48004c2867aaff9e1add51f9bdd2ba789bad46d3.patch)
+
+Uniformização de nominais
+
+```diff
+ # sent_id = 247-20140910-MONOGRAFIA_0-129
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	seção	seção	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	O	_
+-3	pós-rifte	pós-rifte	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
++3	pós-rifte	pós-rifte	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 4	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	estruturação	estruturação	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
+ 6	incipiente	incipiente	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
+```
+
+## Alguns deprel não podem ter filho
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Sep 15 21:21:06 2021 -0300
+* Lines changed: 695
+* Commit: [39825cc98f1d855a00a21ded5a52d21708dc9fdf](https://github.com/alvelvis/meu-mestrado/commit/39825cc98f1d855a00a21ded5a52d21708dc9fdf)
+* Patch file: [2021_9_15_21-21-06-39825cc98f1d855a00a21ded5a52d21708dc9fdf.patch](patch_changelog_dep/2021_9_15_21-21-06-39825cc98f1d855a00a21ded5a52d21708dc9fdf.patch)
+
+Alguns deprel não podem ter filho
+compound flat:name fixed punct aux cop
+Organização de feats por ordem alfabética
+
+```diff
+ # sent_id = 247-20140910-MONOGRAFIA_0-16
+ 1	A	a	ADP	_	_	5	obl	O	MWEPOS=ADV
+ 2	seguir	seguir	VERB	_	VerbForm=Inf	1	fixed	O	_
+-3	,	,	PUNCT	_	_	2	punct	O	_
++3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
+ 5	apresentadas	apresentar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
+```
+
+## Correções derivadas de n-grams inconsistentes
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Fri Oct 1 10:32:17 2021 -0300
+* Lines changed: 86
+* Commit: [aec3cdbf6502b1c114db9587bed2002c059cbdfb](https://github.com/alvelvis/meu-mestrado/commit/aec3cdbf6502b1c114db9587bed2002c059cbdfb)
+* Patch file: [2021_10_1_10-32-17-aec3cdbf6502b1c114db9587bed2002c059cbdfb.patch](patch_changelog_dep/2021_10_1_10-32-17-aec3cdbf6502b1c114db9587bed2002c059cbdfb.patch)
+
+Correções derivadas de n-grams inconsistentes
+
+```diff
+ 3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	O	_
+ 4	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	por	por	SCONJ	_	_	6	mark	O	_
+-6	separar	separar	VERB	_	VerbForm=Inf	4	advcl	O	_
++6	separar	separar	VERB	_	VerbForm=Inf	4	acl	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+ 8	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	6	obj	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+```
+
+## Correção de formas participiais
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Fri Oct 8 22:09:28 2021 -0300
+* Lines changed: 1246
+* Commit: [4c643837ad26325c9a56be001195613789872fc8](https://github.com/alvelvis/meu-mestrado/commit/4c643837ad26325c9a56be001195613789872fc8)
+* Patch file: [2021_10_8_22-09-28-4c643837ad26325c9a56be001195613789872fc8.patch](patch_changelog_dep/2021_10_8_22-09-28-4c643837ad26325c9a56be001195613789872fc8.patch)
+
+Correção de formas participiais
+
+```diff
+ 49	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	52	det	O	_
+ 50	278	278	NUM	_	NumType=Card	52	nummod	O	_
+ 51	048	048	NUM	_	NumType=Card	52	nummod	O	_
+-52	Km²	Km²	PROPN	_	Gender=Masc|Number=Plur	54	nsubj	O	_
+-53	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	54	cop	O	_
+-54	localizados	localizar	ADJ	_	Gender=Masc|Number=Plur	40	advcl	O	_
++52	Km²	Km²	PROPN	_	Gender=Masc|Number=Plur	54	nsubj:pass	O	_
++53	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	54	aux:pass	O	_
++54	localizados	localizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	40	advcl	O	_
+ 55-56	na	_	_	_	_	_	_	_	_
+ 55	em	em	ADP	_	_	57	case	O	_
+ 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
+```
+
+## Referências como nmod:appos
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Fri Oct 8 22:13:49 2021 -0300
+* Lines changed: 60
+* Commit: [3e3e48ea493b7aeea4db59da4abf09577e11859d](https://github.com/alvelvis/meu-mestrado/commit/3e3e48ea493b7aeea4db59da4abf09577e11859d)
+* Patch file: [2021_10_8_22-13-49-3e3e48ea493b7aeea4db59da4abf09577e11859d.patch](patch_changelog_dep/2021_10_8_22-13-49-3e3e48ea493b7aeea4db59da4abf09577e11859d.patch)
+
+Referências como nmod:appos
+
+```diff
+ 4	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	20	obl	O	_
+ 5	&	&	PROPN	_	Number=Sing	4	flat:name	O	_
+ 6	Silva	Silva	PROPN	_	Number=Sing	4	flat:name	O	_
+-7	(	(	PUNCT	_	_	4	flat:name	O	_
+-8	1995	1995	NUM	_	NumType=Card	4	flat:name	O	_
+-9	)	)	PUNCT	_	_	4	flat:name	O	_
++7	(	(	PUNCT	_	_	8	punct	O	_
++8	1995	1995	NUM	_	NumType=Card	4	nmod:appos	O	_
++9	)	)	PUNCT	_	_	8	punct	O	_
+ 10	,	,	PUNCT	_	_	4	punct	O	_
+ 11	frequentemente	frequentemente	ADV	_	_	20	advmod	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+```
+
+## ADJ não tem filhos determinantes
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Oct 19 14:23:56 2021 -0300
+* Lines changed: 25
+* Commit: [31da4f425f0280b4347e5245c432956ee9b2f8d0](https://github.com/alvelvis/meu-mestrado/commit/31da4f425f0280b4347e5245c432956ee9b2f8d0)
+* Patch file: [2021_10_19_14-23-56-31da4f425f0280b4347e5245c432956ee9b2f8d0.patch](patch_changelog_dep/2021_10_19_14-23-56-31da4f425f0280b4347e5245c432956ee9b2f8d0.patch)
+
+ADJ não tem filhos determinantes
+
+```diff
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	etileno	etileno	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
+ 18	sobre	sobre	ADP	_	_	21	case	O	_
+-19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
++19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 20	composto	composto	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 21	lipófilo	lipófilo	ADJ	_	Gender=Masc|Number=Sing	20	amod	O	_
+ 22	com	com	ADP	_	_	23	case	O	_
+```
+
+## correções de frases com 'colocar'
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Oct 19 14:27:39 2021 -0300
+* Lines changed: 5
+* Commit: [44088d4fc25dc0c6252bbd65408d38d38795a22f](https://github.com/alvelvis/meu-mestrado/commit/44088d4fc25dc0c6252bbd65408d38d38795a22f)
+* Patch file: [2021_10_19_14-27-39-44088d4fc25dc0c6252bbd65408d38d38795a22f.patch](patch_changelog_dep/2021_10_19_14-27-39-44088d4fc25dc0c6252bbd65408d38d38795a22f.patch)
+
+correções de frases com 'colocar'
+
+```diff
+ 18	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	21	nsubj	O	_
+ 19	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	cop	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+-21	sólidos	sólido	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
++21	sólidos	sólido	ADJ	_	Gender=Masc|Number=Plur	13	acl:relcl	O	_
+ 22-23	na	_	_	_	_	_	_	_	_
+ 22	em	em	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+ 25-26	dos	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+-26	os	o	DET	_	Gender=Masc|Number=Plur|PronType=Art	27	det	O	_
+-27	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	24	nmod	O	_
+-28	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	29	expl	O	_
++26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	O	_
++27	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	29	obl	O	_
++28	se	se	PRON	_	_	29	expl	O	_
+ 29	colocam	colocar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	O	_
+-30	complexos	complexo	ADJ	_	Gender=Masc|Number=Plur	29	xcomp	O	_
++30	complexos	complexo	NOUN	_	Gender=Masc|Number=Plur	29	obj	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+ 32	coordenação	coordenação	NOUN	_	Gender=Fem|Number=Sing	30	obl	O	_
+ 33	,	,	PUNCT	_	_	34	punct	O	_
+```
+
+## Correções de flat:name com semas estranhos
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Oct 20 17:28:02 2021 -0300
+* Lines changed: 226
+* Commit: [1ef93eb8496c7ffb4d3fc526dcb7754e79d876b9](https://github.com/alvelvis/meu-mestrado/commit/1ef93eb8496c7ffb4d3fc526dcb7754e79d876b9)
+* Patch file: [2021_10_20_17-28-02-1ef93eb8496c7ffb4d3fc526dcb7754e79d876b9.patch](patch_changelog_dep/2021_10_20_17-28-02-1ef93eb8496c7ffb4d3fc526dcb7754e79d876b9.patch)
+
+Correções de flat:name com semas estranhos
+
+```diff
+ 3	:	:	PUNCT	_	_	4	punct	O	_
+ 4	Localização	Localização	PROPN	_	Gender=Fem|Number=Sing	1	parataxis	O	_
+ 5-6	da	_	_	_	_	_	_	_	_
+-5	de	de	ADP	_	_	4	flat:name	O	_
+-6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	flat:name	O	_
+-7	Bacia	Bacia	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
+-8	de	de	ADP	_	_	4	flat:name	O	_
+-9	Pelotas	Pelotas	PROPN	_	Number=Sing	4	flat:name	B=BACIA	_
++5	de	de	ADP	_	_	7	case	O	_
++6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
++7	Bacia	Bacia	PROPN	_	Number=Sing	4	nmod	B=BACIA	_
++8	de	de	ADP	_	_	7	flat:name	I=BACIA	_
++9	Pelotas	Pelotas	PROPN	_	Number=Sing	7	flat:name	I=BACIA	_
+ # text = 2. - OBJETIVOS
+ # sent_id = 247-20140910-MONOGRAFIA_0-8
+```
+
+## Correções derivadas de n-grams
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Oct 20 21:48:28 2021 -0300
+* Lines changed: 201
+* Commit: [a71fa53e1a5f261d9514193621cc8f7a4246b38d](https://github.com/alvelvis/meu-mestrado/commit/a71fa53e1a5f261d9514193621cc8f7a4246b38d)
+* Patch file: [2021_10_20_21-48-28-a71fa53e1a5f261d9514193621cc8f7a4246b38d.patch](patch_changelog_dep/2021_10_20_21-48-28-a71fa53e1a5f261d9514193621cc8f7a4246b38d.patch)
+
+Correções derivadas de n-grams
+
+```diff
+ # text = 4-METODOLOGIA EXPERIMENTAL
+ # sent_id = 241-20140227-MONOGRAFIA_0-118
+-1	4-METODOLOGIA	4-metodologia	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	1	flat:name	O	_
++1	4-METODOLOGIA	4-metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	tokenização
++2	EXPERIMENTAL	experimental	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ # text = Nesta seção, será descrita a metodologia utilizada para a obtenção das emulsões asfálticas convencionais e modificadas com nanomateriais, constituintes dessas emulsões, equipamentos necessários para obtenção e metodologia de caracterização das mesmas.
+ # sent_id = 241-20140227-MONOGRAFIA_0-119
+```
+
+## mwe por_causa_de
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Wed Oct 20 23:10:26 2021 -0300
+* Lines changed: 71
+* Commit: [907bd8463bd62a3f6a445f52f9e27db3f1e63f50](https://github.com/alvelvis/meu-mestrado/commit/907bd8463bd62a3f6a445f52f9e27db3f1e63f50)
+* Patch file: [2021_10_20_23-10-26-907bd8463bd62a3f6a445f52f9e27db3f1e63f50.patch](patch_changelog_dep/2021_10_20_23-10-26-907bd8463bd62a3f6a445f52f9e27db3f1e63f50.patch)
+
+mwe por_causa_de
+
+```diff
+ 25	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 26	recuperado	recuperar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	25	acl	O	_
+ 27	,	,	PUNCT	_	_	30	punct	O	_
+-28	tendo	ter	AUX	_	VerbForm=Ger	30	aux	O	_
+-29	em	em	ADP	_	_	30	mark	O	_
+-30	vista	ver	VERB	_	VerbForm=Part	19	advcl	O	_
+-31	variações	variação	NOUN	_	Gender=Fem|Number=Plur	30	obj	O	_
++28	tendo	ter	AUX	_	VerbForm=Ger	31	case	O	MWEPOS=ADP
++29	em	em	ADP	_	_	28	fixed	O	_
++30	vista	ver	VERB	_	VerbForm=Part	28	fixed	O	_
++31	variações	variação	NOUN	_	Gender=Fem|Number=Plur	19	obl	O	_
+ 32-33	na	_	_	_	_	_	_	_	_
+ 32	em	em	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+```
+
+## Modificações de listas
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Oct 21 20:02:00 2021 -0300
+* Lines changed: 140
+* Commit: [b169f9d843aee1d54fb4a23a8870d7c8cdf817af](https://github.com/alvelvis/meu-mestrado/commit/b169f9d843aee1d54fb4a23a8870d7c8cdf817af)
+* Patch file: [2021_10_21_20-02-00-b169f9d843aee1d54fb4a23a8870d7c8cdf817af.patch](patch_changelog_dep/2021_10_21_20-02-00-b169f9d843aee1d54fb4a23a8870d7c8cdf817af.patch)
+
+Modificações de listas
+Foram aplicadas 2 regras. A primeira modifica os casos de letras entre parênteses, especificamente seu deprel, dephead, lema, pos e features. A segunda regra é relativa aos números que iniciam sentenças e modifica seu deprel e dephead.
+
+```diff
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 247-20140910-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+```
+
+## Lema de superior
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sat Oct 23 03:02:49 2021 -0300
+* Lines changed: 80
+* Commit: [14edfcfbf766a231a0dc31f58454bbff6069484c](https://github.com/alvelvis/meu-mestrado/commit/14edfcfbf766a231a0dc31f58454bbff6069484c)
+* Patch file: [2021_10_23_03-02-49-14edfcfbf766a231a0dc31f58454bbff6069484c.patch](patch_changelog_dep/2021_10_23_03-02-49-14edfcfbf766a231a0dc31f58454bbff6069484c.patch)
+
+Lema de superior
+
+```diff
+ 27	de	de	ADP	_	_	26	flat:name	I=BACIA	_
+ 28	Pelotas	Pelotas	PROPN	_	Number=Sing	26	flat:name	I=BACIA	_
+ 29	verificando	verificar	VERB	_	VerbForm=Ger	5	advcl	O	_
+-30	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	expl	O	_
++30	se	se	SCONJ	_	_	31	mark	O	_
+ 31	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	O	_
+ 32	correspondência	correspondência	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+ 33	entre	entre	ADP	_	_	35	case	O	_
+```
+
+## Correções de ciclo
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sat Oct 23 03:40:54 2021 -0300
+* Lines changed: 328
+* Commit: [0c62b58aa7a67304fdd753c37bfe2f1d8b398971](https://github.com/alvelvis/meu-mestrado/commit/0c62b58aa7a67304fdd753c37bfe2f1d8b398971)
+* Patch file: [2021_10_23_03-40-54-0c62b58aa7a67304fdd753c37bfe2f1d8b398971.patch](patch_changelog_dep/2021_10_23_03-40-54-0c62b58aa7a67304fdd753c37bfe2f1d8b398971.patch)
+
+Correções de ciclo
+
+```diff
+ 2	floco	floco	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
+ 3	expandido	expander	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
+ 4	aprisiona	aprisionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-5-6	consigo	_	_	_	_	0	_	_	_
++5-6	consigo	_	_	_	_	_	_	_	_
+ 5	com	com	ADP	_	_	6	case	O	_
+ 6	si	ele	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	O	_
+ 7	células	célula	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+```
+
+## Correções de lema verbal
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Sat Oct 23 05:15:15 2021 -0300
+* Lines changed: 592
+* Commit: [a1723d1e3e4c4e70df98c71823f88e35d4b852b6](https://github.com/alvelvis/meu-mestrado/commit/a1723d1e3e4c4e70df98c71823f88e35d4b852b6)
+* Patch file: [2021_10_23_05-15-15-a1723d1e3e4c4e70df98c71823f88e35d4b852b6.patch](patch_changelog_dep/2021_10_23_05-15-15-a1723d1e3e4c4e70df98c71823f88e35d4b852b6.patch)
+
+Correções de lema verbal
+
+```diff
+ 34	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	30	amod	O	_
+ 35	.	.	PUNCT	_	_	8	punct	O	_
+-# text = Deste modo o trabalho busca descrever e caracterizar estruturas geológicas na porção continental e da região offshore correspondente ao norte da Bacia de Pelotas verificando se há correspondência entre as estruturas geológicas caracterizadas na porção continental e offshore.
+-# sent_id = 247-20140910-MONOGRAFIA_0-3
+-1	Deste	destar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-2	modo	modo	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+-3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+-4	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
+-5	busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	O	_
+-6	descrever	descrever	VERB	_	VerbForm=Inf	5	xcomp	O	_
+-7	e	e	CCONJ	_	_	8	cc	O	_
+-8	caracterizar	caracterizar	VERB	_	VerbForm=Inf	6	conj	O	_
+-9	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	8	obj	O	_
+-10	geológicas	geológico	ADJ	_	Gender=Fem|Number=Plur	9	amod	O	_
+-11-12	na	_	_	_	_	_	_	_	_
+-11	em	em	ADP	_	_	13	case	O	_
+-12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	porção	porção	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-14	continental	continental	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+-15	e	e	CCONJ	_	_	18	cc	O	_
+-16-17	da	_	_	_	_	_	_	_	_
+-16	de	de	ADP	_	_	18	case	O	_
+-17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	região	região	NOUN	_	Gender=Fem|Number=Sing	13	conj	O	_
+-19	offshore	offshore	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+-20	correspondente	correspondente	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+-21-22	ao	_	_	_	_	_	_	_	_
+-21	a	a	ADP	_	_	23	case	O	_
+-22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	norte	norte	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
+-24-25	da	_	_	_	_	_	_	_	_
+-24	de	de	ADP	_	_	26	case	O	_
+-25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	Bacia	Bacia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=BACIA	_
+-27	de	de	ADP	_	_	26	flat:name	I=BACIA	_
+-28	Pelotas	Pelotas	PROPN	_	Number=Sing	26	flat:name	I=BACIA	_
+-29	verificando	verificar	VERB	_	VerbForm=Ger	5	advcl	O	_
+-30	se	se	SCONJ	_	_	31	mark	O	_
+-31	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	O	_
+-32	correspondência	correspondência	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+-33	entre	entre	ADP	_	_	35	case	O	_
+-34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	O	_
+-35	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	32	nmod	O	_
+-36	geológicas	geológico	ADJ	_	Gender=Fem|Number=Plur	35	amod	O	_
+-37	caracterizadas	caracterizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	35	acl	O	_
+-38-39	na	_	_	_	_	_	_	_	_
+-38	em	em	ADP	_	_	40	case	O	_
+-39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
+-40	porção	porção	NOUN	_	Gender=Fem|Number=Sing	37	obl	O	_
+-41	continental	continental	ADJ	_	Gender=Fem|Number=Sing	40	amod	O	_
+-42	e	e	CCONJ	_	_	43	cc	O	_
+-43	offshore	offshore	ADJ	_	Gender=Fem|Number=Sing	41	conj	O	_
+-44	.	.	PUNCT	_	_	1	punct	O	_
+-
+ # text = A caracterização estrutural para a porção norte da Bacia de Pelotas foi realizada através de 17 seções sísmicas, onde foram caracterizadas falhas normais, em padrão dominó, falhas sintéticas e antitéticas e lístricas, além da identificação de estruturas como o Arco de Torres (Fonseca 2006), (Alves 1981) a Plataforma de Florianópolis individualizada por Gonçalves et al. (1979), Zona de Falha do Rio Grande (Miranda 1970), (Kowsmann 1974).
+ # sent_id = 247-20140910-MONOGRAFIA_0-4
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
 ```

@@ -1,0 +1,1115 @@
+commit 92deb69651a5393f0a8e36520453363f2b0031ec
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Sep 8 08:09:50 2021 -0300
+
+    Regras para B=UNIDADE_LITOESTRATIGRÁFICA
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index ae02f44..58e4e0f 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -3272,7 +3272,7 @@
+ 5-6	do	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	3	fixed	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++7	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Rio	Rio	PROPN	_	Number=Sing	7	flat:name	O	_
+ 10	Grande	Grande	PROPN	_	Number=Sing	7	flat:name	O	_
+@@ -17735,7 +17735,7 @@
+ 18	contém	conter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	O	_
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
+ 20	membros	membro	NOUN	_	Gender=Masc|Number=Plur	18	obj	O	_
+-21	Barbalha	Barbalha	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
++21	Barbalha	Barbalha	PROPN	_	Gender=Masc|Number=Sing	20	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	Crato	Crato	PROPN	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 24	,	,	PUNCT	_	_	25	punct	O	_
+@@ -17747,7 +17747,7 @@
+ # text = O Membro Romualdo consiste no último registro litoestratigráfico da sequência pós-rifte I e marca as incursões marinhas na Bacia do Araripe (Assine 2007).
+ # sent_id = 284-20150917-MONOGRAFIA_0-8
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Romualdo	Romualdo	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	consiste	consistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5-6	no	_	_	_	_	_	_	_	_
+@@ -17852,7 +17852,7 @@
+ 32-33	do	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
+-34	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	31	nmod	O	_
++34	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	31	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 35	Romualdo	Romualdo	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -17920,7 +17920,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
++31	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Romualdo	Romualdo	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	,	,	PUNCT	_	_	34	punct	O	_
+ 34	visando	visar	VERB	_	VerbForm=Ger	10	advcl	O	_
+@@ -21719,7 +21719,7 @@
+ 6	e	e	CCONJ	_	_	7	cc	O	_
+ 7	denominados	denominar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	conj	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+-9	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
++9	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	7	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 10	Crato	Crato	PROPN	_	Number=Sing	9	flat:name	O	_
+ 11	/	/	PUNCT	_	_	7	punct	O	_
+ 12	Camadas	Camadas	PROPN	_	Gender=Fem|Number=Sing	9	conj	O	_
+@@ -21729,7 +21729,7 @@
+ 16	inferior	inferior	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 17	)	)	PUNCT	_	_	15	punct	O	_
+ 18	e	e	CCONJ	_	_	19	cc	O	_
+-19	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
++19	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	9	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Romualdo	Romualdo	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	(	(	PUNCT	_	_	22	punct	O	_
+ 22	porção	porção	NOUN	_	Gender=Fem|Number=Sing	19	appos	O	_
+@@ -21745,7 +21745,7 @@
+ # text = O Membro Crato é constituído por calcários micríticos laminados, com registro fossilífero abundante, interdigitados lateralmente com folhelhos verdes.
+ # sent_id = 284-20150917-MONOGRAFIA_0-133
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Crato	Crato	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
+ 5	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -21811,7 +21811,7 @@
+ 5	a	a	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	membro	membro	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-8	Crato	Crato	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++8	Crato	Crato	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	,	,	PUNCT	_	_	4	punct	O	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	composta	compor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -21840,12 +21840,12 @@
+ 4-5	ao	_	_	_	_	_	_	_	_
+ 4	a	a	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	3	obl	O	_
++6	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	3	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Crato	Crato	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	O	_
+ 9	denominada	denominar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	obl	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Romualdo	Romualdo	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	11	appos	O	_
+@@ -21992,7 +21992,7 @@
+ # sent_id = 284-20150917-MONOGRAFIA_0-141
+ 1	5.2	5.2	NUM	_	NumType=Card	3	parataxis	O	_
+ 2	.	.	PUNCT	_	_	3	punct	O	_
+-3	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	0	root	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 4	Romualdo	Romualdo	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5	-	-	PUNCT	_	_	3	flat:name	O	_
+ 6	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	3	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+@@ -22001,7 +22001,7 @@
+ # text = O Membro Romualdo foi distinguido primeiramente por Beurlen (1971) como Membro Romualdo superior, pertencente à Formação Santana, juntamente com os membros sotopostos Ipubi (intermediário) e Crato (inferior).
+ # sent_id = 284-20150917-MONOGRAFIA_0-142
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Romualdo	Romualdo	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	O	_
+ 5	distinguido	distinguir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -22012,7 +22012,7 @@
+ 10	1971	1971	NUM	_	NumType=Card	8	flat:name	O	_
+ 11	)	)	PUNCT	_	_	8	flat:name	O	_
+ 12	como	como	ADP	_	_	13	case	O	_
+-13	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	xcomp	O	_
++13	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	5	xcomp	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Romualdo	Romualdo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	superior	alto	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+@@ -22028,7 +22028,7 @@
+ 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	O	_
+ 26	membros	membro	NOUN	_	Gender=Masc|Number=Plur	23	obl	O	_
+ 27	sotopostos	sotoposto	ADJ	_	Gender=Masc|Number=Plur	26	amod	O	_
+-28	Ipubi	Ipubi	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++28	Ipubi	Ipubi	PROPN	_	Gender=Masc|Number=Sing	26	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	(	(	PUNCT	_	_	30	punct	O	_
+ 30	intermediário	intermediário	NOUN	_	Gender=Masc|Number=Sing	28	parataxis	O	_
+ 31	)	)	PUNCT	_	_	30	punct	O	_
+@@ -22163,7 +22163,7 @@
+ 36	e	e	CCONJ	_	_	39	cc	O	_
+ 37	consequentemente	consequentemente	ADV	_	_	39	advmod	O	_
+ 38	,	,	PUNCT	_	_	39	punct	O	_
+-39	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	34	conj	O	_
++39	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	34	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 40	Romualdo	Romualdo	PROPN	_	Number=Sing	39	flat:name	O	_
+ 41	.	.	PUNCT	_	_	30	punct	O	_
+ 
+@@ -22213,7 +22213,7 @@
+ # text = O Membro Romualdo tem sido estudado desde o início do século XIX em virtude do vasto conteúdo fossilífero presente na unidade, que representa importante registro paleontológico do Cretaceo brasileiro.
+ # sent_id = 284-20150917-MONOGRAFIA_0-147
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	6	nsubj:pass	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	6	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Romualdo	Romualdo	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	O	_
+ 5	sido	ser	AUX	_	VerbForm=Part	6	aux:pass	O	_
+@@ -22431,7 +22431,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Romualdo	Romualdo	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	como	como	ADP	_	_	14	case	O	_
+ 14	marinho	marinho	NOUN	_	Gender=Masc|Number=Sing	5	xcomp	O	_
+@@ -22534,7 +22534,7 @@
+ 11-12	ao	_	_	_	_	_	_	_	_
+ 11	a	a	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	obl:arg	O	_
++13	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	9	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Romualdo	Romualdo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	como	como	ADP	_	_	17	case	O	_
+ 16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+@@ -22570,7 +22570,7 @@
+ 45	atribuem	atribuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	conj	O	_
+ 46	para	para	ADP	_	_	48	case	O	_
+ 47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	O	_
+-48	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	45	obl:arg	O	_
++48	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	45	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 49	Romualdo	Romualdo	PROPN	_	Number=Sing	48	flat:name	O	_
+ 50	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	45	obj	O	_
+ 51	lagunar	lagunar	ADJ	_	Gender=Masc|Number=Sing	50	amod	O	_
+@@ -22758,7 +22758,7 @@
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
++20	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	17	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 21	Romualdo	Romualdo	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -22815,7 +22815,7 @@
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
++18	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Romualdo	Romualdo	PROPN	_	Number=Sing	18	flat:name	O	_
+ 20	envolve	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	O	_
+ 21	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	20	obj	O	_
+@@ -22980,7 +22980,7 @@
+ 21	)	)	PUNCT	_	_	18	punct	O	_
+ 22	,	,	PUNCT	_	_	3	punct	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	26	nsubj	O	_
++24	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	26	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25	Romualdo	Romualdo	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 27	influência	influência	NOUN	_	Gender=Fem|Number=Sing	26	obj	O	_
+@@ -23030,7 +23030,7 @@
+ 21-22	do	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
++23	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	20	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	Romualdo	Romualdo	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	e	e	CCONJ	_	_	36	cc	O	_
+ 26	,	,	PUNCT	_	_	31	punct	O	_
+@@ -23091,7 +23091,7 @@
+ 13	,	,	PUNCT	_	_	12	punct	O	_
+ 14	para	para	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
++16	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	12	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	Romualdo	Romualdo	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	,	,	PUNCT	_	_	20	punct	O	_
+ 19	paleoambiente	paleoambiente	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
+@@ -23185,7 +23185,7 @@
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
++16	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	Romualdo	Romualdo	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	,	,	PUNCT	_	_	10	punct	O	_
+ 19	as	o	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	20	obj	O	_
+@@ -23239,7 +23239,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Romualdo	Romualdo	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	,	,	PUNCT	_	_	6	punct	O	_
+ 14	Moura	Moura	PROPN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+@@ -23279,7 +23279,7 @@
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
++6	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	3	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Romualdo	Romualdo	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	,	,	PUNCT	_	_	3	punct	O	_
+ 9	Moura	Moura	PROPN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
+@@ -26158,7 +26158,7 @@
+ # text = O Membro Romualdo corresponde litoestratigraficamente a uma sequência deposicional com aproximadamente 100 m de espessura, limitada por desconformidades, na base (limite inferior da sequência deposicional) e no topo (limite superior da sequência deposicional).
+ # sent_id = 284-20150917-MONOGRAFIA_0-295
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Romualdo	Romualdo	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	corresponde	corresponder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	litoestratigraficamente	litoestratigraficamente	ADV	_	_	4	advmod	O	_
+@@ -26317,7 +26317,7 @@
+ 100-101	do	_	_	_	_	_	_	_	_
+ 100	de	de	ADP	_	_	102	case	O	_
+ 101	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	102	det	O	_
+-102	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	99	nmod	O	_
++102	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	99	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 103	Romualdo	Romualdo	PROPN	_	Number=Sing	102	flat:name	O	_
+ 104	(	(	PUNCT	_	_	105	punct	O	_
+ 105	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	102	appos	O	_
+@@ -26350,7 +26350,7 @@
+ 11	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 12	deposicional	deposicional	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	11	appos	O	_
++14	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	11	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	Romualdo	Romualdo	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	)	)	PUNCT	_	_	14	punct	O	_
+ 17	,	,	PUNCT	_	_	19	punct	O	_
+@@ -26586,7 +26586,7 @@
+ 14	entre	entre	ADP	_	_	16	case	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+ 16	membros	membro	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+-17	Crato	Crato	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
++17	Crato	Crato	PROPN	_	Gender=Masc|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	e	e	CCONJ	_	_	19	cc	O	_
+ 19	Romualdo	Romualdo	PROPN	_	Gender=Masc|Number=Sing	17	conj	O	_
+ 20	.	.	PUNCT	_	_	13	punct	O	_
+@@ -26673,7 +26673,7 @@
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+-28	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	25	nmod	O	_
++28	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	25	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	Romualdo	Romualdo	PROPN	_	Number=Sing	28	flat:name	O	_
+ 30	sobre	sobre	ADP	_	_	32	case	O	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
+@@ -26842,7 +26842,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
++31	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Crato	Crato	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	.	.	PUNCT	_	_	15	punct	O	_
+ 
+@@ -26906,7 +26906,7 @@
+ 10	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Santana	Santana	PROPN	_	Number=Sing	10	flat:name	B=CAMPO|I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+-13	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	10	appos	O	_
++13	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	10	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Romualdo	Romualdo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	)	)	PUNCT	_	_	13	punct	O	_
+ 16	e	e	CCONJ	_	_	18	cc	O	_
+@@ -27123,7 +27123,7 @@
+ 40	contato	contato	NOUN	_	Gender=Masc|Number=Sing	33	conj	O	_
+ 41	entre	entre	ADP	_	_	43	case	O	_
+ 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
+-43	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	40	nmod	O	_
++43	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	40	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 44	Romualdo	Romualdo	PROPN	_	Number=Sing	43	flat:name	O	_
+ 45	(	(	PUNCT	_	_	46	punct	O	_
+ 46	Fm.	Fm.	PROPN	_	Gender=Masc|Number=Sing	43	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+@@ -27633,7 +27633,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
++31	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Crato	Crato	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	/	/	PUNCT	_	_	31	flat:name	O	_
+ 34	Camadas	Camadas	PROPN	_	Number=Sing	31	flat:name	O	_
+@@ -27817,7 +27817,7 @@
+ 21	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 22	lacustre	lacustre	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+-24	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	21	appos	B=GEOCRONOLOGIA	_
++24	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	21	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25	Crato	Crato	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	)	)	PUNCT	_	_	24	punct	O	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+@@ -27836,7 +27836,7 @@
+ 40-41	do	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	O	_
+-42	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	39	nmod	O	_
++42	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	39	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 43	Romualdo	Romualdo	PROPN	_	Number=Sing	42	flat:name	O	_
+ 44	)	)	PUNCT	_	_	39	punct	O	_
+ 45	.	.	PUNCT	_	_	16	punct	O	_
+@@ -28215,7 +28215,7 @@
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	O	_
++27	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 28	Romualdo	Romualdo	PROPN	_	Number=Sing	27	flat:name	O	_
+ 29	,	,	PUNCT	_	_	19	punct	O	_
+ 30	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	O	_
+@@ -28763,7 +28763,7 @@
+ 28	contato	contato	NOUN	_	Gender=Masc|Number=Sing	26	obj	O	_
+ 29	entre	entre	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
++31	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Romualdo	Romualdo	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	e	e	CCONJ	_	_	35	cc	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+@@ -28918,7 +28918,7 @@
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	nmod	O	_
++13	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Romualdo	Romualdo	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	20	punct	O	_
+ 16	bem	bem	ADV	_	_	20	cc	O	MWEPOS=CCONJ
+@@ -28956,7 +28956,7 @@
+ 8-9	ao	_	_	_	_	_	_	_	_
+ 8	a	a	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
++10	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	7	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Romualdo	Romualdo	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	O	_
+ 13	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -29421,7 +29421,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Crato	Crato	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	/	/	PUNCT	_	_	11	flat:name	O	_
+ 14	Camadas	Camadas	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -29441,7 +29441,7 @@
+ 28	diastêmico	diastêmico	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29	com	com	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
++31	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	27	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Romualdo	Romualdo	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -29468,7 +29468,7 @@
+ 18	)	)	PUNCT	_	_	17	punct	O	_
+ 19	com	com	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	9	obl	O	_
++21	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	Romualdo	Romualdo	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+ 24	superior	alto	ADJ	_	Gender=Masc|Number=Sing	21	nmod:appos	O	_
+@@ -30109,7 +30109,7 @@
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	O	_
++26	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	22	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	Romualdo	Romualdo	PROPN	_	Number=Sing	26	flat:name	O	_
+ 28	,	,	PUNCT	_	_	29	punct	O	_
+ 29	assembléia	assembléia	NOUN	_	Gender=Fem|Number=Sing	26	appos	O	_
+@@ -30243,7 +30243,7 @@
+ 22-23	do	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
++24	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25	Romualdo	Romualdo	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	,	,	PUNCT	_	_	36	punct	O	_
+ 27	a	a	ADP	_	_	31	case	O	MWEPOS=ADP
+@@ -30385,7 +30385,7 @@
+ 7	discordante	discordante	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+ 8	entre	entre	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++10	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Romualdo	Romualdo	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+ 13	Fm.	Fm.	PROPN	_	Gender=Masc|Number=Sing	10	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+@@ -30546,7 +30546,7 @@
+ 53-54	do	_	_	_	_	_	_	_	_
+ 53	de	de	ADP	_	_	55	case	O	_
+ 54	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	O	_
+-55	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	52	nmod	O	_
++55	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	52	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 56	Romualdo	Romualdo	PROPN	_	Number=Sing	55	flat:name	O	_
+ 57	,	,	PUNCT	_	_	62	punct	O	_
+ 58	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	60	det	O	_
+@@ -30746,7 +30746,7 @@
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++6	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	Romualdo	Romualdo	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8-9	mostrou-se	_	_	_	_	_	_	_	_
+ 8	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -60365,7 +60365,7 @@
+ 12	dois	dois	NUM	_	NumType=Card	13	nummod	O	_
+ 13	membros	membro	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
+ 14	:	:	PUNCT	_	_	15	punct	O	_
+-15	Carmo	Carmo	PROPN	_	Gender=Masc|Number=Sing	13	appos	O	_
++15	Carmo	Carmo	PROPN	_	Gender=Masc|Number=Sing	13	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	e	e	CCONJ	_	_	17	cc	O	_
+ 17	Canabrava	Canabrava	PROPN	_	Gender=Masc|Number=Sing	15	conj	B=CAMPO	_
+ 18	.	.	PUNCT	_	_	7	punct	O	_
+@@ -60373,7 +60373,7 @@
+ # text = O Membro Carmo, segundo Sgarbi (2011), ocorre na região de Carmo do Paranaíba (MG) e é constituído por conglomerados matriz-sustentado e arenitos líticos depositados por leques aluviais e fluxos aquosos que geraram depósitos do tipo wadi.
+ # sent_id = 283-20150917-MONOGRAFIA_0-46
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Carmo	Carmo	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	,	,	PUNCT	_	_	6	punct	O	_
+ 5	segundo	segundo	ADP	_	_	6	case	O	_
+@@ -60425,7 +60425,7 @@
+ # text = O Membro Canabrava é descrito na porção norte da Sub-Bacia Abaeté, com área tipo na região homônima, e é composto por conglomerados clasto-sustentados, e secundariamente por arenitos conglomeráticos, arenitos, siltitos e argilitos.
+ # sent_id = 283-20150917-MONOGRAFIA_0-47
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	O	_
++2	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj:pass	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 3	Canabrava	Canabrava	PROPN	_	Number=Sing	2	flat:name	B=CAMPO	_
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	O	_
+ 5	descrito	descrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -62669,7 +62669,7 @@
+ 2-3	da	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
++4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 5	.	.	PUNCT	_	_	4	flat:name	O	_
+ 6	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	4	flat:name	O	_
+ 7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	O	_
+@@ -62766,7 +62766,7 @@
+ 8-9	à	_	_	_	_	_	_	_	_
+ 8	a	a	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	4	obl	O	_
++10	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	4	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	10	flat:name	O	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+ 13	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	10	appos	O	_
+@@ -62806,7 +62806,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++11	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	flat:name	O	_
+ 13	:	:	PUNCT	_	_	14	punct	O	_
+ 14	seção-colunar	seção-colunar	NOUN	_	Gender=Fem|Number=Sing	5	appos	O	_
+@@ -62909,7 +62909,7 @@
+ 18	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
+ 19	para	para	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	15	obl	O	_
++21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	15	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	.	.	PUNCT	_	_	21	flat:name	O	_
+ 23	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	21	flat:name	O	_
+ 24-25	na	_	_	_	_	_	_	_	_
+@@ -62952,7 +62952,7 @@
+ 16-17	da	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++18	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	18	flat:name	O	_
+ 20	para	para	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -63093,7 +63093,7 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	.	.	PUNCT	_	_	11	flat:name	O	_
+ 13	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	flat:name	O	_
+ 14	,	,	PUNCT	_	_	18	punct	O	_
+@@ -63125,7 +63125,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	.	.	PUNCT	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9-10	nesta	_	_	_	_	_	_	_	_
+@@ -63211,7 +63211,7 @@
+ 42-43	da	_	_	_	_	_	_	_	_
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+-44	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	39	nmod	O	_
++44	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	39	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 45	Quiricó	Quiricó	PROPN	_	_	44	flat:name	O	_
+ 46	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -63265,7 +63265,7 @@
+ 3	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	_
+ 4	para	para	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	3	obl	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	3	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	.	.	PUNCT	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+@@ -63988,7 +63988,7 @@
+ 47	2000	2000	NUM	_	NumType=Card	45	nmod:appos	O	_
+ 48	)	)	PUNCT	_	_	47	punct	O	_
+ 49	como	como	ADP	_	_	50	case	O	_
+-50	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	43	xcomp	O	_
++50	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	43	xcomp	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 51	Canabrava	Canabrava	PROPN	_	Number=Sing	50	flat:name	B=CAMPO	_
+ 52	.	.	PUNCT	_	_	28	punct	O	_
+ 
+@@ -64142,7 +64142,7 @@
+ 9-10	ao	_	_	_	_	_	_	_	_
+ 9	a	a	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	8	obl	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Carmo	Carmo	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+ 14	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	11	appos	O	_
+@@ -64347,7 +64347,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	.	.	PUNCT	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	aux:pass	O	_
+@@ -64974,7 +64974,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	.	.	PUNCT	_	_	21	flat:name	O	_
+ 23	Quiricó	Quiricó	PROPN	_	_	21	flat:name	O	_
+ 24	.	.	PUNCT	_	_	17	punct	O	_
+@@ -65135,7 +65135,7 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	Três	Três	PROPN	_	Gender=Fem|Number=Sing	15	flat:name	O	_
+ 17	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	15	flat:name	O	_
+ 18	.	.	PUNCT	_	_	7	punct	O	_
+@@ -65195,7 +65195,7 @@
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++28	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	24	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	.	.	PUNCT	_	_	28	flat:name	O	_
+ 30	Quiricó	Quiricó	PROPN	_	_	28	flat:name	O	_
+ 31	com	com	ADP	_	_	33	case	O	_
+@@ -65223,11 +65223,11 @@
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++15	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	15	flat:name	O	_
+ 17	com	com	ADP	_	_	20	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-19	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++19	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	.	.	PUNCT	_	_	19	flat:name	O	_
+ 21	Três	Três	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
+ 22	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
+@@ -65304,7 +65304,7 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 11	.	.	PUNCT	_	_	10	flat:name	O	_
+ 12	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	10	flat:name	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+@@ -65371,7 +65371,7 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++23	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	19	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	Três	Três	PROPN	_	NumType=Card	23	flat:name	O	_
+ 25	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	23	flat:name	O	_
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+@@ -65437,7 +65437,7 @@
+ 37-38	da	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	nmod	O	_
++39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 40	.	.	PUNCT	_	_	39	flat:name	O	_
+ 41	Quiricó	Quiricó	PROPN	_	_	39	flat:name	O	_
+ 42	.	.	PUNCT	_	_	10	punct	O	_
+@@ -65701,7 +65701,7 @@
+ 25	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	O	_
+ 26	para	para	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	25	obl	O	_
++28	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	25	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	.	.	PUNCT	_	_	28	flat:name	O	_
+ 30	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	28	flat:name	O	_
+ 31-32	nas	_	_	_	_	_	_	_	_
+@@ -66061,7 +66061,7 @@
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
++11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	.	.	PUNCT	_	_	11	flat:name	O	_
+ 13	Quiricó	Quiricó	PROPN	_	_	11	flat:name	O	_
+ 14	.	.	PUNCT	_	_	8	punct	O	_
+@@ -66117,7 +66117,7 @@
+ 23-24	da	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++25	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	22	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	25	flat:name	O	_
+ 27	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -66820,7 +66820,7 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-305
+ 1	Normalmente	normalmente	ADV	_	_	7	advmod	O	_
+ 2	a	a	ADP	_	_	3	case	O	_
+-3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
++3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 4	.	.	PUNCT	_	_	3	flat:name	O	_
+ 5	Três	Três	PROPN	_	NumType=Card	3	flat:name	O	_
+ 6	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	3	flat:name	O	_
+@@ -67008,7 +67008,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	.	.	PUNCT	_	_	17	flat:name	O	_
+ 19	Três	Três	PROPN	_	NumType=Card	17	flat:name	O	_
+ 20	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	17	flat:name	O	_
+@@ -67164,7 +67164,7 @@
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 9	.	.	PUNCT	_	_	8	flat:name	O	_
+ 10	Três	Três	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
+ 11	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
+@@ -67174,7 +67174,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	.	.	PUNCT	_	_	17	flat:name	O	_
+ 19	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	17	flat:name	O	_
+ 20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	O	_
+@@ -68249,7 +68249,7 @@
+ 9	atribuídos	atribuir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 10	para	para	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl:arg	O	_
++12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	.	.	PUNCT	_	_	12	flat:name	O	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+ 15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+@@ -68437,7 +68437,7 @@
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12	pertencentes	pertencente	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 13	a	a	ADP	_	_	14	case	O	_
+-14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
++14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	.	.	PUNCT	_	_	14	flat:name	O	_
+ 16	Três	Três	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
+ 17	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
+@@ -68456,7 +68456,7 @@
+ 29-30	da	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+-31	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	27	nmod	O	_
++31	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	27	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	31	flat:name	O	_
+ 33	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -68475,7 +68475,7 @@
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	.	.	PUNCT	_	_	12	flat:name	O	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+ 15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	17	flat:name	O	_
+@@ -69598,7 +69598,7 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 7	.	.	PUNCT	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Fem|Number=Sing	6	flat:name	O	_
+ 9	superpõem	superpor	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -70297,7 +70297,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++13	Fm.	Fm.	PROPN	_	Gender=Fem|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	13	flat:name	O	_
+ 15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	13	flat:name	O	_
+ 16	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+@@ -189772,7 +189772,7 @@
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	pelecípodes	pelecípode	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+ 18	(	(	PUNCT	_	_	19	punct	O	_
+-19	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	15	appos	O	_
++19	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	15	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Coqueiros	Coqueiros	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	)	)	PUNCT	_	_	19	punct	O	_
+ 22	associados	associar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	15	acl	O	_
+@@ -189834,7 +189834,7 @@
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+ 36	Neoaptiano	Neoaptiano	PROPN	_	Gender=Masc|Number=Sing	33	nmod	B=GEOCRONOLOGIA	_
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+-38	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	36	appos	O	_
++38	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	36	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 39	Retiro	Retiro	PROPN	_	Number=Sing	38	flat:name	O	_
+ 40	)	)	PUNCT	_	_	38	punct	O	_
+ 41	.	.	PUNCT	_	_	16	punct	O	_
+@@ -189908,7 +189908,7 @@
+ 8	e	e	CCONJ	_	_	9	cc	O	_
+ 9	oolíticos	oolítico	ADJ	_	Gender=Masc|Number=Plur	7	conj	O	_
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	6	appos	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	6	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Quissamã	Quissamã	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	)	)	PUNCT	_	_	11	punct	O	_
+ 14	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	18	nsubj	O	_
+@@ -189932,14 +189932,14 @@
+ 8	e	e	CCONJ	_	_	9	cc	O	_
+ 9	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	nmod:appos	O	_
++11	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	5	nmod:appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 12	Outeiro	Outeiro	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	)	)	PUNCT	_	_	11	punct	O	_
+ 14	e	e	CCONJ	_	_	15	cc	O	_
+ 15	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	5	conj	O	_
+ 16	turbidíticos	turbidítico	ADJ	_	Gender=Masc|Number=Plur	15	amod	O	_
+ 17	(	(	PUNCT	_	_	18	punct	O	_
+-18	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	15	nmod:appos	O	_
++18	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	15	nmod:appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Namorado	Namorado	PROPN	_	Number=Sing	18	flat:name	B=CAMPO	_
+ 20	)	)	PUNCT	_	_	18	punct	O	_
+ 21	.	.	PUNCT	_	_	4	punct	O	_
+@@ -189965,7 +189965,7 @@
+ 16	pobremente	pobremente	ADV	_	_	17	advmod	O	_
+ 17	selecionados	selecionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	15	acl	O	_
+ 18	(	(	PUNCT	_	_	19	punct	O	_
+-19	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	O	_
++19	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20	Goitacás	Goitacás	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	)	)	PUNCT	_	_	19	punct	O	_
+ 22	.	.	PUNCT	_	_	11	punct	O	_
+@@ -190058,7 +190058,7 @@
+ 17	turbidíticos	turbidítico	ADJ	_	Gender=Masc|Number=Plur	16	amod	O	_
+ 18	intercalados	intercalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+-20	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	16	appos	O	_
++20	Membro	Membro	PROPN	_	Gender=Masc|Number=Sing	16	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 21	Carapebus	Carapebus	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	)	)	PUNCT	_	_	20	punct	O	_
+ 23	.	.	PUNCT	_	_	4	punct	O	_
+@@ -190728,7 +190728,7 @@
+ 20	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	21	nsubj	O	_
+ 21	estudaram	estudar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	acl:relcl	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	21	obj	O	_
++23	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	21	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	23	flat:name	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	flat:name	O	_
+@@ -190953,7 +190953,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++12	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	São	São	PROPN	_	Number=Sing	12	flat:name	O	_
+ 15	João	João	PROPN	_	Number=Sing	12	flat:name	O	_
+@@ -191561,12 +191561,12 @@
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++23	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	20	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 24	e	e	CCONJ	_	_	26	cc	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+ 26	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+-28	Barra	Barra	PROPN	_	Number=Sing	26	nmod	O	_
++28	Barra	Barra	PROPN	_	Number=Sing	26	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	São	São	PROPN	_	Number=Sing	28	flat:name	O	_
+ 31	João	João	PROPN	_	Number=Sing	28	flat:name	O	_
+@@ -191696,7 +191696,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++13	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
+ 15	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	O	_
+ 16	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	O	_
+@@ -191845,7 +191845,7 @@
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+ 26	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+-28	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++28	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	26	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	28	flat:name	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	flat:name	O	_
+@@ -191951,7 +191951,7 @@
+ 5-6	do	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	3	flat:name	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	flat:name	O	_
+-7	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	O	_
++7	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	3	flat:name	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	flat:name	O	_
+@@ -191971,7 +191971,7 @@
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++12	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	9	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl	O	_
+ 14	desenvolveu	desenvolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 15	sobre	sobre	ADP	_	_	17	case	O	_
+@@ -192064,7 +192064,7 @@
+ 7-8	da	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++9	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	O	_
+ 11	implantado	implantado	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+ 12	sobre	sobre	ADP	_	_	14	case	O	_
+@@ -192213,7 +192213,7 @@
+ 31-32	da	_	_	_	_	_	_	_	_
+ 31	de	de	ADP	_	_	33	case	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+-33	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++33	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 34	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	36	nsubj:pass	O	_
+ 35	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	aux:pass	O	_
+ 36	orientadas	orientar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	30	acl:relcl	O	_
+@@ -192534,7 +192534,7 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++17	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	junto	junto	ADV	_	_	7	advmod	O	_
+ 19-20	ao	_	_	_	_	_	_	_	_
+ 19	a	a	ADP	_	_	21	case	O	_
+@@ -192585,7 +192585,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++21	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 22	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	cop	O	_
+ 23	,	,	PUNCT	_	_	26	punct	O	_
+ 24-25	na	_	_	_	_	_	_	_	_
+@@ -192766,7 +192766,7 @@
+ 16-17	da	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++18	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+ 20	adjacências	adjacência	NOUN	_	Gender=Fem|Number=Plur	18	conj	O	_
+ 21	,	,	PUNCT	_	_	12	punct	O	_
+@@ -192891,7 +192891,7 @@
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++7	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	4	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	,	,	PUNCT	_	_	1	punct	O	_
+ 9-10	no	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	12	case	O	_
+@@ -194153,7 +194153,7 @@
+ 31-32	da	_	_	_	_	_	_	_	_
+ 31	de	de	ADP	_	_	33	case	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+-33	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++33	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 34	inserido	inserir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	30	acl	O	_
+ 35-36	no	_	_	_	_	_	_	_	_
+ 35	em	em	ADP	_	_	37	case	O	_
+@@ -195022,7 +195022,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	flat:name	O	_
+-5	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	O	_
++5	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 6-7	do	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	5	flat:name	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	flat:name	O	_
+@@ -195119,7 +195119,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++5	Guanabara	Guanabara	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 6	(	(	PUNCT	_	_	7	punct	O	_
+ 7	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	2	appos	O	_
+ 8	2.2	2.2	NUM	_	NumType=Card	7	nummod	O	_
+@@ -196011,7 +196011,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++24	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	21	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	flat:name	O	_
+@@ -196209,7 +196209,7 @@
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++19	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 20-21	do	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	19	flat:name	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	flat:name	O	_
+@@ -197124,7 +197124,7 @@
+ 37-38	da	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	36	flat:name	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	flat:name	O	_
+-39	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	36	flat:name	O	_
++39	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	36	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 40-41	do	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	39	flat:name	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	flat:name	O	_
+@@ -208762,7 +208762,7 @@
+ 47-48	da	_	_	_	_	_	_	_	_
+ 47	de	de	ADP	_	_	49	case	O	_
+ 48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	O	_
+-49	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	46	nmod	O	_
++49	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	46	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 50-51	do	_	_	_	_	_	_	_	_
+ 50	de	de	ADP	_	_	49	flat:name	O	_
+ 51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	flat:name	O	_
+@@ -213019,7 +213019,7 @@
+ 11-12	da	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++13	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	flat:name	O	_
+@@ -213158,7 +213158,7 @@
+ 16-17	da	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
++18	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	15	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	18	flat:name	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	flat:name	O	_
+@@ -213830,7 +213830,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-745
+ 1	6.1.2	6.1.2	NUM	_	NumType=Card	3	parataxis	O	_
+ 2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+-3	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Gráben	Gráben	PROPN	_	Gender=Masc|Number=Sing	0	root	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	3	flat:name	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	flat:name	O	_
+@@ -223721,7 +223721,7 @@
+ 31-32	da	_	_	_	_	_	_	_	_
+ 31	de	de	ADP	_	_	33	case	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+-33	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
++33	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 34-35	do	_	_	_	_	_	_	_	_
+ 34	de	de	ADP	_	_	33	flat:name	O	_
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	flat:name	O	_
+@@ -224674,7 +224674,7 @@
+ 61-62	da	_	_	_	_	_	_	_	_
+ 61	de	de	ADP	_	_	63	case	O	_
+ 62	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	O	_
+-63	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	60	nmod	O	_
++63	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	60	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 64-65	do	_	_	_	_	_	_	_	_
+ 64	de	de	ADP	_	_	63	flat:name	O	_
+ 65	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	flat:name	O	_
+@@ -226148,7 +226148,7 @@
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	19	obl	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+-32	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
++32	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	30	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 33-34	do	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	32	flat:name	O	_
+ 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	flat:name	O	_
+@@ -228973,7 +228973,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	21	flat:name	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	flat:name	O	_
+-24	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	21	flat:name	O	_
++24	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	21	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	24	flat:name	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	flat:name	O	_
+@@ -230105,7 +230105,7 @@
+ 4	conhecido	conhecido	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	_
+ 5	gráben	gráben	NOUN	_	Gender=Masc|Number=Sing	1	obl	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+-7	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
++7	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	5	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	flat:name	O	_
+@@ -237053,7 +237053,7 @@
+ 33-34	da	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	32	nmod	O	_
++35	Barra	Barra	PROPN	_	Gender=Fem|Number=Sing	32	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 36-37	do	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	35	flat:name	O	_
+ 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	flat:name	O	_

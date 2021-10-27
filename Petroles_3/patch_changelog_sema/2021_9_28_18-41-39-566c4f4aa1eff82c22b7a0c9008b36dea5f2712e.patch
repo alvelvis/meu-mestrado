@@ -1,0 +1,306 @@
+commit 566c4f4aa1eff82c22b7a0c9008b36dea5f2712e
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Tue Sep 28 18:41:39 2021 -0300
+
+    Novas entidades a partir de coordenações -- Parte 3
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 65a1edf..a5368d0 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -3060,7 +3060,7 @@
+ 39	,	,	PUNCT	_	_	40	punct	O	_
+ 40	Teresina	Teresina	PROPN	_	Gender=Fem|Number=Sing	37	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 41	e	e	CCONJ	_	_	42	cc	O	_
+-42	parte	parte	NOUN	_	Gender=Fem|Number=Sing	37	conj	O	_
++42	parte	parte	NOUN	_	Gender=Fem|Number=Sing	36	conj	O	_
+ 43-44	da	_	_	_	_	_	_	_	_
+ 43	de	de	ADP	_	_	45	case	O	_
+ 44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	O	_
+@@ -3136,7 +3136,7 @@
+ 15	eólicos	eólico	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+ 16	)	)	PUNCT	_	_	15	punct	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+-18	Serra	Serra	PROPN	_	Gender=Masc|Number=Sing	12	conj	B=CAMPO|B=UNIDADE_LITOESTRATIGRÁFICA	_
++18	Serra	Serra	PROPN	_	Gender=Masc|Number=Sing	12	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	Geral	Geral	PROPN	_	Number=Sing	18	flat:name	O	_
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	derrames	derrame	NOUN	_	Gender=Masc|Number=Plur	18	parataxis	O	_
+@@ -3998,9 +3998,9 @@
+ 4	em	em	ADP	_	_	6	case	O	_
+ 5	três	três	NUM	_	NumType=Card	6	nummod	O	_
+ 6	fases	fase	NOUN	_	Gender=Fem|Number=Plur	3	obl	O	_
+-7	;	;	PUNCT	_	_	3	punct	O	_
++7	;	;	PUNCT	_	_	9	punct	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	inicial	inicial	NOUN	_	Gender=Fem|Number=Sing	3	nsubj:pass	O	_
++9	inicial	inicial	NOUN	_	Gender=Fem|Number=Sing	6	appos	O	_
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+ 11	representada	representar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	O	_
+ 12	por	por	ADP	_	_	13	case	O	_
+@@ -4029,11 +4029,11 @@
+ 32	Belo	Belo	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	;	;	PUNCT	_	_	35	punct	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	intermediária	intermediária	NOUN	_	Gender=Fem|Number=Sing	24	conj	O	_
++35	intermediária	intermediária	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 36	,	,	PUNCT	_	_	35	punct	O	_
+ 37	sendo	ser	AUX	_	VerbForm=Ger	39	cop	O	_
+ 38	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
+-39	período	período	NOUN	_	Gender=Masc|Number=Sing	35	appos	O	_
++39	período	período	NOUN	_	Gender=Masc|Number=Sing	35	acl	O	_
+ 40	transgressivo	transgressivo	ADJ	_	Gender=Masc|Number=Sing	39	amod	O	_
+ 41	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	43	nsubj	O	_
+ 42	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	expl	O	_
+@@ -4046,7 +4046,7 @@
+ 47	a	a	ADP	_	_	49	case	O	_
+ 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	O	_
+ 49	Oligoceno	Oligoceno	PROPN	_	Gender=Masc|Number=Sing	46	nmod	B=GEOCRONOLOGIA	_
+-50	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	49	acl	O	_
++50	representado	representar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	39	acl	O	_
+ 51-52	pelos	_	_	_	_	_	_	_	_
+ 51	por	por	ADP	_	_	53	case	O	_
+ 52	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	O	_
+@@ -4071,10 +4071,10 @@
+ 69	e	e	CCONJ	_	_	72	cc	O	_
+ 70	,	,	PUNCT	_	_	72	punct	O	_
+ 71	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	72	det	O	_
+-72	final	final	NOUN	_	Gender=Fem|Number=Sing	66	conj	O	_
++72	final	final	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 73	,	,	PUNCT	_	_	74	punct	O	_
+ 74-75	constituindo-se	_	_	_	_	_	_	_	_
+-74	constituindo	constituir	VERB	_	VerbForm=Ger	59	advcl	O	_
++74	constituindo	constituir	VERB	_	VerbForm=Ger	72	acl	O	_
+ 75	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	74	expl	O	_
+ 76	de	de	ADP	_	_	78	case	O	_
+ 77	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	78	det	O	_
+@@ -5399,7 +5399,7 @@
+ 39	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	40	nsubj	O	_
+ 40	fragmentou	fragmentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	acl:relcl	O	_
+ 41	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	40	obj	O	_
+-42	crustais	crustal	ADJ	_	Gender=Fem|Number=Plur	41	amod	O	B=LITOLOGIA
++42	crustais	crustal	ADJ	_	Gender=Fem|Number=Plur	41	amod	B=LITOLOGIA	_
+ 43	e	e	CCONJ	_	_	44	cc	O	_
+ 44	supracrustais	supracrustal	ADJ	_	Gender=Fem|Number=Plur	42	conj	B=LITOLOGIA	_
+ 45	pré-cambrianas	pré-cambriano	ADJ	_	Gender=Fem|Number=Plur	41	amod	B=GEOCRONOLOGIA	_
+@@ -8780,7 +8780,7 @@
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	Embasamento	embasamento	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+-18	topo	topo	NOUN	_	Gender=Masc|Number=Sing	16	conj	O	_
++18	topo	topo	NOUN	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -9936,7 +9936,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	Rifte	Rifte	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	B=UNIDADE_LITOESTRATIGRÁFICA
++31	Rifte	Rifte	PROPN	_	Gender=Masc|Number=Sing	28	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+ 33	Albiano	Albiano	PROPN	_	Gender=Masc|Number=Sing	31	conj	B=GEOCRONOLOGIA	_
+ 34	e	e	CCONJ	_	_	39	cc	O	_
+@@ -18022,7 +18022,7 @@
+ 14	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 15	Olinda	Olinda	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+-17	Santana	Santana	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=CAMPO	_
++17	Santana	Santana	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
+@@ -23440,7 +23440,7 @@
+ 23	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	20	conj	O	_
+ 24	Olinda	Olinda	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+-26	Santana	Santana	PROPN	_	Gender=Masc|Number=Sing	20	conj	B=CAMPO	_
++26	Santana	Santana	PROPN	_	Gender=Masc|Number=Sing	20	conj	O	_
+ 27-28	do	_	_	_	_	_	_	_	_
+ 27	de	de	ADP	_	_	26	flat:name	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	flat:name	O	_
+@@ -31579,12 +31579,12 @@
+ # text = Com campos em águas rasas e campos terrestres, a região de Rio Grande do Norte e do Ceará está entre as maiores produtoras de petróleo onshore, e muitos destes campos são caracterizados como campos maduros.
+ # sent_id = 398-20160721-MONOGRAFIA_0-16
+ 1	Com	com	ADP	_	_	2	case	O	_
+-2	campos	campo	NOUN	_	Gender=Masc|Number=Plur	26	nmod	B=BACIA	_
++2	campos	campo	NOUN	_	Gender=Masc|Number=Plur	26	nmod	O	_
+ 3	em	em	ADP	_	_	4	case	O	_
+ 4	águas	água	NOUN	_	Gender=Fem|Number=Plur	2	nmod	O	_
+ 5	rasas	raso	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+ 6	e	e	CCONJ	_	_	7	cc	O	_
+-7	campos	campo	NOUN	_	Gender=Masc|Number=Plur	4	conj	B=BACIA	_
++7	campos	campo	NOUN	_	Gender=Masc|Number=Plur	4	conj	O	_
+ 8	terrestres	terrestre	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 9	,	,	PUNCT	_	_	2	punct	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+@@ -31765,7 +31765,7 @@
+ 18	interação	interação	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+ 19	entre	entre	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	campo	campo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	B=BACIA	_
++21	campo	campo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	B=CAMPO	_
+ 22	eletromagnético	eletromagnético	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	excitação	excitação	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+@@ -33656,7 +33656,7 @@
+ 17	interação	interação	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 18	entre	entre	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	campo	campo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	B=BACIA	_
++20	campo	campo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	B=CAMPO	_
+ 21	eletromagnético	eletromagnético	ADJ	_	Gender=Masc|Number=Sing	20	amod	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	excitação	excitação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+@@ -34683,7 +34683,7 @@
+ 31	métodos	método	NOUN	_	Gender=Masc|Number=Plur	24	conj	O	_
+ 32	preventivos	preventivo	ADJ	_	Gender=Masc|Number=Plur	31	amod	O	_
+ 33	,	,	PUNCT	_	_	34	punct	O	_
+-34	campos	campo	NOUN	_	Gender=Masc|Number=Plur	24	conj	B=BACIA	_
++34	campos	campo	NOUN	_	Gender=Masc|Number=Plur	24	conj	B=CAMPO	_
+ 35	eletromagnéticos	eletromagnético	ADJ	_	Gender=Masc|Number=Plur	34	amod	O	_
+ 36	,	,	PUNCT	_	_	24	punct	O	_
+ 37	etc	etc	ADV	_	_	24	conj	O	_
+@@ -35758,7 +35758,7 @@
+ 15	)	)	PUNCT	_	_	14	punct	O	_
+ 16	,	,	PUNCT	_	_	12	punct	O	_
+ 17	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Neg	18	det	O	_
+-18	campo	campo	NOUN	_	Gender=Masc|Number=Sing	6	conj	B=BACIA	_
++18	campo	campo	NOUN	_	Gender=Masc|Number=Sing	6	conj	B=CAMPO	_
+ 19	elétrico	elétrico	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
+ 20	interno	interno	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
+ 21	.	.	PUNCT	_	_	4	punct	O	_
+@@ -36054,7 +36054,7 @@
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	corrente	corrente	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24	e	e	CCONJ	_	_	25	cc	O	_
+-25	campos	campo	NOUN	_	Gender=Masc|Number=Plur	23	conj	B=BACIA	_
++25	campos	campo	NOUN	_	Gender=Masc|Number=Plur	23	conj	B=CAMPO	_
+ 26	elétricos	elétrico	ADJ	_	Gender=Masc|Number=Plur	25	amod	O	_
+ 27	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -59298,7 +59298,7 @@
+ 10	SE.23-Y-B-I	SE.23-Y-B-I	PROPN	_	Number=Sing	9	flat:name	O	_
+ 11	)	)	PUNCT	_	_	9	punct	O	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+-13	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	6	conj	B=CAMPO	_
++13	Serra	Serra	PROPN	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 14-15	das	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	flat:name	O	_
+@@ -59729,7 +59729,7 @@
+ 18	,	,	PUNCT	_	_	14	punct	O	_
+ 19	e	e	CCONJ	_	_	21	cc	O	_
+ 20	a	a	ADP	_	_	21	case	O	_
+-21	norte	norte	NOUN	_	Gender=Masc|Number=Sing	14	conj	O	_
++21	norte	norte	NOUN	_	Gender=Masc|Number=Sing	4	conj	O	_
+ 22-23	pelo	_	_	_	_	_	_	_	_
+ 22	por	por	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+@@ -83088,7 +83088,7 @@
+ 23-24	dos	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+-25	campos	campo	NOUN	_	Gender=Masc|Number=Plur	18	conj	B=BACIA	_
++25	campos	campo	NOUN	_	Gender=Masc|Number=Plur	18	conj	O	_
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	produção	produção	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
+ 28	de	de	ADP	_	_	29	case	O	_
+@@ -97708,11 +97708,11 @@
+ 76	Campos	Campos	PROPN	_	Number=Sing	74	flat:name	O	_
+ 77	)	)	PUNCT	_	_	85	punct	O	_
+ 78	,	,	PUNCT	_	_	79	punct	O	_
+-79	FPSO	FPSO	PROPN	_	Gender=Fem|Number=Sing	69	conj	O	_
++79	FPSO	FPSO	PROPN	_	Gender=Fem|Number=Sing	29	conj	O	_
+ 80	Cidade	Cidade	PROPN	_	Number=Sing	79	flat:name	O	_
+ 81	de	de	ADP	_	_	79	flat:name	O	_
+-82	São	São	PROPN	_	Number=Sing	79	flat:name	B=BACIA	_
+-83	Paulo	Paulo	PROPN	_	Number=Sing	79	flat:name	I=BACIA	_
++82	São	São	PROPN	_	Number=Sing	79	flat:name	O	_
++83	Paulo	Paulo	PROPN	_	Number=Sing	79	flat:name	O	_
+ 84	(	(	PUNCT	_	_	85	punct	O	_
+ 85	operando	operar	VERB	_	VerbForm=Ger	79	acl	O	_
+ 86	desde	desde	ADP	_	_	87	case	O	_
+@@ -98314,8 +98314,8 @@
+ 11	Santa	Santa	PROPN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	Catarina	Catarina	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+-14	Espírito	Espírito	PROPN	_	Gender=Masc|Number=Sing	11	conj	B=BACIA	_
+-15	Santo	Santo	PROPN	_	Number=Sing	14	flat:name	I=BACIA	_
++14	Espírito	Espírito	PROPN	_	Gender=Masc|Number=Sing	11	conj	O	_
++15	Santo	Santo	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	.	.	PUNCT	_	_	6	punct	O	_
+ 
+ # text = Nestas reservas foi encontrado petróleo de alta qualidade e valor no mercado, de densidade 28,5° API, baixa acidez e baixo teor de enxofre (sites.petrobras.com.br).
+@@ -132207,7 +132207,7 @@
+ 26	,	,	PUNCT	_	_	25	flat:name	O	_
+ 27	2004	2004	NUM	_	NumType=Card	25	flat:name	O	_
+ 28	;	;	PUNCT	_	_	29	punct	O	_
+-29	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	21	conj	B=BACIA	_
++29	Santos	Santos	PROPN	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 30	,	,	PUNCT	_	_	29	flat:name	O	_
+ 31	2003	2003	NUM	_	NumType=Card	29	flat:name	O	_
+ 32	)	)	PUNCT	_	_	21	punct	O	_
+@@ -186519,7 +186519,7 @@
+ 29	Cabo	Cabo	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
+ 30	Frio	Frio	PROPN	_	Number=Sing	29	flat:name	O	_
+ 31	e	e	CCONJ	_	_	32	cc	O	_
+-32	Búzios	Búzios	PROPN	_	Gender=Masc|Number=Sing	29	conj	B=CAMPO	_
++32	Búzios	Búzios	PROPN	_	Gender=Masc|Number=Sing	29	conj	O	_
+ 33	adentra	adentrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	O	_
+ 34	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+ 35	pouco	pouco	ADV	_	_	34	fixed	O	_
+@@ -200911,7 +200911,7 @@
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	campo	campo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=BACIA	_
++16	campo	campo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 17	total	total	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+ 18	e	e	CCONJ	_	_	19	cc	O	_
+ 19	amplitude	amplitude	NOUN	_	Gender=Fem|Number=Sing	16	conj	O	_
+@@ -203980,7 +203980,7 @@
+ 21	estimativas	estimativa	NOUN	_	Gender=Fem|Number=Plur	19	nmod	O	_
+ 22	azul	azul	ADJ	_	Gender=Fem|Number=Sing	21	amod	O	_
+ 23	e	e	CCONJ	_	_	24	cc	O	_
+-24	vermelho	vermelho	ADJ	_	Gender=Masc|Number=Sing	22	conj	B=CAMPO	_
++24	vermelho	vermelho	ADJ	_	Gender=Masc|Number=Sing	22	conj	O	_
+ 25	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	29	case	O	MWEPOS=ADP
+ 26-27	à	_	_	_	_	_	_	_	_
+ 26	a	a	ADP	_	_	25	fixed	O	_
+@@ -204211,7 +204211,7 @@
+ 20	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	18	appos	O	_
+ 21	azuis	azul	ADJ	_	Gender=Fem|Number=Plur	20	amod	O	_
+ 22	e	e	CCONJ	_	_	23	cc	O	_
+-23	vermelhas	vermelho	ADJ	_	Gender=Fem|Number=Plur	21	conj	B=CAMPO	_
++23	vermelhas	vermelho	ADJ	_	Gender=Fem|Number=Plur	21	conj	O	_
+ 24-25	na	_	_	_	_	_	_	_	_
+ 24	em	em	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -208180,7 +208180,7 @@
+ 25	cruzes	cruz	NOUN	_	Gender=Fem|Number=Plur	23	nmod	O	_
+ 26	azuis	azul	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+-28	vermelhas	vermelho	ADJ	_	Gender=Fem|Number=Plur	26	conj	B=CAMPO	_
++28	vermelhas	vermelho	ADJ	_	Gender=Fem|Number=Plur	26	conj	O	_
+ 29	observados	observar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	O	_
+ 30-31	na	_	_	_	_	_	_	_	_
+ 30	em	em	ADP	_	_	32	case	O	_
+@@ -279913,7 +279913,7 @@
+ 35	mar	mar	NOUN	_	Gender=Masc|Number=Sing	32	nmod	O	_
+ 36	e	e	CCONJ	_	_	38	cc	O	_
+ 37	em	em	ADP	_	_	38	case	O	_
+-38	campos	campo	NOUN	_	Gender=Masc|Number=Plur	29	conj	B=BACIA	_
++38	campos	campo	NOUN	_	Gender=Masc|Number=Plur	29	conj	O	_
+ 39	terrestres	terrestre	ADJ	_	Gender=Masc|Number=Plur	38	amod	O	_
+ 40	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -284576,7 +284576,7 @@
+ 21	como	como	ADP	_	_	22	case	O	_
+ 22	caranguejos	caranguejo	NOUN	_	Gender=Masc|Number=Plur	19	nmod:appos	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+-24	mexilhões	mexilhão	NOUN	_	Gender=Masc|Number=Plur	22	conj	B=CAMPO	_
++24	mexilhões	mexilhão	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+ 26	corais	coral	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
+ 27	,	,	PUNCT	_	_	28	punct	O	_

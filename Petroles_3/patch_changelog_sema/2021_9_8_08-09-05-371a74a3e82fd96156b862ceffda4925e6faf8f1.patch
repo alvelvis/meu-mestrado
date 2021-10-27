@@ -1,0 +1,354 @@
+commit 371a74a3e82fd96156b862ceffda4925e6faf8f1
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Sep 8 08:09:05 2021 -0300
+
+    Sema quando a abreviação foi mal tokenizada
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index ae02f44..16af2d3 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -62669,8 +62669,8 @@
+ 2-3	da	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+-4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-5	.	.	PUNCT	_	_	4	flat:name	O	_
++4	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++5	.	.	PROPN	_	_	4	flat:name	O	_
+ 6	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	4	flat:name	O	_
+ 7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	O	_
+ 8	descritas	descrever	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -62909,8 +62909,8 @@
+ 18	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
+ 19	para	para	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	15	obl	O	_
+-22	.	.	PUNCT	_	_	21	flat:name	O	_
++21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	15	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++22	.	.	PROPN	_	_	21	flat:name	O	_
+ 23	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	21	flat:name	O	_
+ 24-25	na	_	_	_	_	_	_	_	_
+ 24	em	em	ADP	_	_	26	case	O	_
+@@ -63093,8 +63093,8 @@
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-12	.	.	PUNCT	_	_	11	flat:name	O	_
++11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++12	.	.	PROPN	_	_	11	flat:name	O	_
+ 13	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	flat:name	O	_
+ 14	,	,	PUNCT	_	_	18	punct	O	_
+ 15	sendo	ser	AUX	_	VerbForm=Ger	18	cop	O	_
+@@ -63113,7 +63113,7 @@
+ 27	e	e	CCONJ	_	_	29	cc	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+ 29	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	26	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-30	.	.	PUNCT	_	_	29	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++30	.	.	PROPN	_	_	29	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 31	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	29	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 32	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -63125,8 +63125,8 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-7	.	.	PUNCT	_	_	6	flat:name	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++7	.	.	PROPN	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9-10	nesta	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+@@ -63265,8 +63265,8 @@
+ 3	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	O	_
+ 4	para	para	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	3	obl	O	_
+-7	.	.	PUNCT	_	_	6	flat:name	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	3	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++7	.	.	PROPN	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9	permitiram	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+ 10	entender	entender	VERB	_	VerbForm=Inf	9	xcomp	O	_
+@@ -64270,8 +64270,8 @@
+ 12	para	para	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+ 14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-15	.	.	PUNCT	_	_	16	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-16	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	14	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
++15	.	.	PROPN	_	_	16	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++16	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	14	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 17	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Mendonça (2003) descreve estas fácies eólicas interdigitadas com fácies de leque aluvial, e não sobreposta a sedimentos fluviais como foi observado neste estudo.
+@@ -64347,8 +64347,8 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-7	.	.	PUNCT	_	_	6	flat:name	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++7	.	.	PROPN	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+ 9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	aux:pass	O	_
+ 10	medidas	medir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -64568,8 +64568,8 @@
+ 7	eólicas	eólico	ADJ	_	Gender=Fem|Number=Plur	6	amod	O	_
+ 8	para	para	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	obl	O	_
+-11	.	.	PUNCT	_	_	2	punct	O	_
++10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	2	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++11	.	.	PROPN	_	_	2	flat:name	O	_
+ 12	Abaeté	Abaeté	PROPN	_	Gender=Masc|Number=Sing	11	root	O	_
+ 13	em	em	ADP	_	_	14	case	O	_
+ 14	decorrências	decorrência	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
+@@ -64900,8 +64900,8 @@
+ 7-8	da	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+-10	.	.	PUNCT	_	_	3	punct	O	_
++9	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	6	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++10	.	.	PROPN	_	_	3	flat:name	O	_
+ 11	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
+ 12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	O	_
+ 13	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	10	root	O	_
+@@ -64974,8 +64974,8 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+-22	.	.	PUNCT	_	_	21	flat:name	O	_
++21	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++22	.	.	PROPN	_	_	21	flat:name	O	_
+ 23	Quiricó	Quiricó	PROPN	_	_	21	flat:name	O	_
+ 24	.	.	PUNCT	_	_	17	punct	O	_
+ 
+@@ -65150,7 +65150,7 @@
+ 6	e	e	CCONJ	_	_	8	cc	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-9	.	.	PUNCT	_	_	8	flat:name	O	_
++9	.	.	PROPN	_	_	8	flat:name	O	_
+ 10	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	8	flat:name	O	_
+ 11	não	não	ADV	_	Polarity=Neg	13	advmod	O	_
+ 12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	O	_
+@@ -65227,8 +65227,8 @@
+ 16	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	15	flat:name	O	_
+ 17	com	com	ADP	_	_	20	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-19	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-20	.	.	PUNCT	_	_	19	flat:name	O	_
++19	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	11	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++20	.	.	PROPN	_	_	19	flat:name	O	_
+ 21	Três	Três	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
+ 22	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	19	flat:name	O	_
+ 23	.	.	PUNCT	_	_	9	punct	O	_
+@@ -65304,8 +65304,8 @@
+ 8-9	da	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+-11	.	.	PUNCT	_	_	10	flat:name	O	_
++10	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	7	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++11	.	.	PROPN	_	_	10	flat:name	O	_
+ 12	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	10	flat:name	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14-15	descrevendo-se	_	_	_	_	_	_	_	_
+@@ -65389,7 +65389,7 @@
+ 37	e	e	CCONJ	_	_	39	cc	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+ 39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-40	.	.	PUNCT	_	_	39	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++40	.	.	PROPN	_	_	39	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 41	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	39	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 42	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -65437,8 +65437,8 @@
+ 37-38	da	_	_	_	_	_	_	_	_
+ 37	de	de	ADP	_	_	39	case	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	nmod	O	_
+-40	.	.	PUNCT	_	_	39	flat:name	O	_
++39	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	36	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++40	.	.	PROPN	_	_	39	flat:name	O	_
+ 41	Quiricó	Quiricó	PROPN	_	_	39	flat:name	O	_
+ 42	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -65473,8 +65473,8 @@
+ 9	para	para	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	6	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	.	.	PUNCT	_	_	13	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	11	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
++12	.	.	PROPN	_	_	13	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++13	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	11	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	.	.	PUNCT	_	_	6	punct	O	_
+ 
+ # text = Nela foram observados folhelhos pretos (Fl), ricos em matéria orgânica, com cimento carbonático, intercalados a lâminas delgadas de carbonato laminado.
+@@ -65701,8 +65701,8 @@
+ 25	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	O	_
+ 26	para	para	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	25	obl	O	_
+-29	.	.	PUNCT	_	_	28	flat:name	O	_
++28	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	25	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++29	.	.	PROPN	_	_	28	flat:name	O	_
+ 30	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	28	flat:name	O	_
+ 31-32	nas	_	_	_	_	_	_	_	_
+ 31	em	em	ADP	_	_	34	case	O	_
+@@ -65744,8 +65744,8 @@
+ 24	para	para	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+ 26	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	23	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-27	.	.	PUNCT	_	_	28	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-28	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	26	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
++27	.	.	PROPN	_	_	28	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++28	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	26	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 29	.	.	PUNCT	_	_	13	punct	O	_
+ 
+ # text = Esta fácies apresenta coloração creme esverdeada característica, e sua espessura varia de poucos centímetros até 5 metros.
+@@ -65830,7 +65830,7 @@
+ 10	compreenderam	compreender	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	acl:relcl	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	10	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	.	.	PUNCT	_	_	12	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++13	.	.	PROPN	_	_	12	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -66061,8 +66061,8 @@
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-12	.	.	PUNCT	_	_	11	flat:name	O	_
++11	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	8	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++12	.	.	PROPN	_	_	11	flat:name	O	_
+ 13	Quiricó	Quiricó	PROPN	_	_	11	flat:name	O	_
+ 14	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -66192,8 +66192,8 @@
+ 41	para	para	ADP	_	_	43	case	O	_
+ 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
+ 43	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	40	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-44	.	.	PUNCT	_	_	45	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-45	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	43	appos	I=UNIDADE_LITOESTRATIGRÁFICA	_
++44	.	.	PROPN	_	_	45	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++45	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	43	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 46	.	.	PUNCT	_	_	36	punct	O	_
+ 
+ # text = Segundo Briere (2000), sistema lacustre é àquele que passa ao menos 75% do tempo com água.
+@@ -66600,8 +66600,8 @@
+ 5	para	para	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+ 7	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	4	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-8	.	.	PUNCT	_	_	9	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-9	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	7	conj	I=UNIDADE_LITOESTRATIGRÁFICA	_
++8	.	.	PROPN	_	_	9	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++9	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	7	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 10	correspondem	corresponder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 11-12	às	_	_	_	_	_	_	_	_
+ 11	a	a	ADP	_	_	13	case	O	_
+@@ -66693,8 +66693,8 @@
+ 21	para	para	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	20	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+-24	.	.	PUNCT	_	_	25	punct	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-25	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	23	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
++24	.	.	PROPN	_	_	25	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++25	Quiricó	Quiricó	PROPN	_	Gender=Fem|Number=Sing	23	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+ 27	formando	formar	VERB	_	VerbForm=Ger	8	advcl	O	_
+ 28	,	,	PUNCT	_	_	27	punct	O	_
+@@ -66820,8 +66820,8 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-305
+ 1	Normalmente	normalmente	ADV	_	_	7	advmod	O	_
+ 2	a	a	ADP	_	_	3	case	O	_
+-3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
+-4	.	.	PUNCT	_	_	3	flat:name	O	_
++3	Fm	Fm	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++4	.	.	PROPN	_	_	3	flat:name	O	_
+ 5	Três	Três	PROPN	_	NumType=Card	3	flat:name	O	_
+ 6	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	3	flat:name	O	_
+ 7-8	encontra-se	_	_	_	_	_	_	_	_
+@@ -67008,8 +67008,8 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-18	.	.	PUNCT	_	_	17	flat:name	O	_
++17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++18	.	.	PROPN	_	_	17	flat:name	O	_
+ 19	Três	Três	PROPN	_	NumType=Card	17	flat:name	O	_
+ 20	Barras	Barras	PROPN	_	Gender=Masc|Number=Plur	17	flat:name	O	_
+ 21	,	,	PUNCT	_	_	24	punct	O	_
+@@ -67164,8 +67164,8 @@
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+-9	.	.	PUNCT	_	_	8	flat:name	O	_
++8	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	5	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++9	.	.	PROPN	_	_	8	flat:name	O	_
+ 10	Três	Três	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
+ 11	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	8	flat:name	O	_
+ 12	e	e	CCONJ	_	_	14	cc	O	_
+@@ -67174,8 +67174,8 @@
+ 15-16	da	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+-18	.	.	PUNCT	_	_	17	flat:name	O	_
++17	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	14	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++18	.	.	PROPN	_	_	17	flat:name	O	_
+ 19	Quiricó	Quiricó	PROPN	_	Gender=Masc|Number=Sing	17	flat:name	O	_
+ 20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	O	_
+ 21	transicional	transicional	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -68249,8 +68249,8 @@
+ 9	atribuídos	atribuir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 10	para	para	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl:arg	O	_
+-13	.	.	PUNCT	_	_	12	flat:name	O	_
++12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl:arg	B=UNIDADE_LITOESTRATIGRÁFICA	_
++13	.	.	PROPN	_	_	12	flat:name	O	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+ 15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+ 16	anteriormente	anteriormente	ADV	_	_	9	advmod	O	_
+@@ -68437,8 +68437,8 @@
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+ 12	pertencentes	pertencente	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 13	a	a	ADP	_	_	14	case	O	_
+-14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
+-15	.	.	PUNCT	_	_	14	flat:name	O	_
++14	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	12	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++15	.	.	PROPN	_	_	14	flat:name	O	_
+ 16	Três	Três	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
+ 17	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	14	flat:name	O	_
+ 18	,	,	PUNCT	_	_	20	punct	O	_
+@@ -68475,8 +68475,8 @@
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl	O	_
+-13	.	.	PUNCT	_	_	12	flat:name	O	_
++12	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++13	.	.	PROPN	_	_	12	flat:name	O	_
+ 14	Três	Três	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	O	_
+ 15	Barras	Barras	PROPN	_	Gender=Fem|Number=Sing	17	flat:name	O	_
+ 16	,	,	PUNCT	_	_	15	punct	O	_
+@@ -69598,8 +69598,8 @@
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-7	.	.	PUNCT	_	_	6	flat:name	O	_
++6	Fm	Fm	PROPN	_	Gender=Fem|Number=Sing	1	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
++7	.	.	PROPN	_	_	6	flat:name	O	_
+ 8	Abaeté	Abaeté	PROPN	_	Gender=Fem|Number=Sing	6	flat:name	O	_
+ 9	superpõem	superpor	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
