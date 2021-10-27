@@ -1,0 +1,2702 @@
+commit bb6114657ab12253c243e7e22aff8588c93fc81a
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Mon Aug 2 15:07:18 2021 -0300
+
+    Confusões obl (Stanza) e nmod (UDPipe)
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 36e34c7..7fff7cd 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -465,7 +465,7 @@
+ 16-17	ao	_	_	_	_	_	_	_	_
+ 16	a	a	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	norte	norte	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
++18	norte	norte	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -1664,7 +1664,7 @@
+ 16-17	na	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++18	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 19	;	;	PUNCT	_	_	3	punct	O	_
+ 20	em	em	ADP	_	_	21	case	O	_
+ 21	seguida	seguida	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+@@ -2027,7 +2027,7 @@
+ 7	poços	poço	NOUN	_	Gender=Masc|Number=Plur	6	obj	O	_
+ 8	para	para	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	calibração	calibração	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
++10	calibração	calibração	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 11	,	,	PUNCT	_	_	6	punct	O	_
+ 12	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	13	aux:pass	O	_
+ 13	calibradas	calibrar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -3246,7 +3246,7 @@
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+ 21	cauliníticos	caulinítico	ADJ	_	Gender=Masc|Number=Plur	19	conj	O	_
+ 22	com	com	ADP	_	_	23	case	O	_
+-23	estratificações	estratificação	NOUN	_	Gender=Fem|Number=Plur	21	obl	B=LITOLOGIA	_
++23	estratificações	estratificação	NOUN	_	Gender=Fem|Number=Plur	18	nmod	B=LITOLOGIA	_
+ 24	cruzadas	cruzado	ADJ	_	Gender=Fem|Number=Plur	23	amod	O	_
+ 25	)	)	PUNCT	_	_	18	punct	O	_
+ 26	e	e	CCONJ	_	_	27	cc	O	_
+@@ -3485,7 +3485,7 @@
+ 26	finos	fino	ADJ	_	Gender=Masc|Number=Plur	24	obl	O	_
+ 27	,	,	PUNCT	_	_	29	punct	O	_
+ 28	com	com	ADP	_	_	29	case	O	_
+-29	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	19	obl	B=LITOLOGIA	_
++29	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	B=LITOLOGIA	_
+ 30	cruzada	cruzado	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+ 31	)	)	PUNCT	_	_	19	punct	O	_
+ 32	..	..	PUNCT	_	_	1	punct	O	_
+@@ -3642,28 +3642,28 @@
+ # text = A primeira a partir do Terraço de Rio Grande até o Alto de Florianópolis e a segunda do Terraço em direção ao Alto de Polônio..
+ # sent_id = 247-20140910-MONOGRAFIA_0-103
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	primeira	primeiro	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	0	root	O	_
++2	primeira	primeiro	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 3	a	a	ADP	_	_	7	case	O	MWEPOS=ADP
+ 4	partir	partir	VERB	_	VerbForm=Inf	3	fixed	O	_
+ 5-6	do	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	3	fixed	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	2	obl	O	_
++7	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	Rio	Rio	PROPN	_	Number=Sing	7	flat:name	O	_
+ 10	Grande	Grande	PROPN	_	Number=Sing	7	flat:name	O	_
+ 11	até	até	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	2	obl	O	_
++13	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 14	de	de	ADP	_	_	13	flat:name	O	_
+ 15	Florianópolis	Florianópolis	PROPN	_	Number=Sing	13	flat:name	O	_
+ 16	e	e	CCONJ	_	_	18	cc	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	segunda	segundo	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	2	conj	O	_
++18	segunda	segundo	NOUN	_	Gender=Fem|Number=Sing	2	conj	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
++21	Terraço	Terraço	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 22	em	em	ADP	_	_	23	case	O	_
+ 23	direção	direção	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
+ 24-25	ao	_	_	_	_	_	_	_	_
+@@ -12696,7 +12696,7 @@
+ # text = Segundo Bauer (1999), a emulsão asfáltica é uma dispersão composta de 50 a 70% de cimento asfáltico, pequenas frações de emulsificante (1 a 2%) e o restante de água..
+ # sent_id = 241-20140227-MONOGRAFIA_0-65
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Bauer	Bauer	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
++2	Bauer	Bauer	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	1999	1999	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -12708,11 +12708,11 @@
+ 11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	dispersão	dispersão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 13	composta	compor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	O	_
+-14	de	de	ADP	_	_	18	case	O	_
+-15	50	50	NUM	_	NumType=Card	18	nummod	O	_
+-16	a	a	ADP	_	_	17	case	O	_
+-17	70	70	NUM	_	NumType=Card	15	nummod	O	_
+-18	%	%	SYM	_	_	13	obl	O	_
++14	de	de	ADP	_	_	15	case	O	_
++15	50	50	NUM	_	NumType=Card	13	obl	O	_
++16	a	a	ADP	_	_	18	case	O	_
++17	70	70	NUM	_	NumType=Card	18	nummod	O	_
++18	%	%	SYM	_	_	15	nmod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 21	asfáltico	asfáltico	ADJ	_	Gender=Masc|Number=Sing	20	amod	B=LITOLOGIA	_
+@@ -13678,7 +13678,7 @@
+ 12	maior	grande	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+ 13	consistência	consistência	NOUN	_	Gender=Fem|Number=Sing	10	obj	O	_
+ 14	em	em	ADP	_	_	15	case	O	_
+-15	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	6	obl	O	_
++15	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	13	nmod	O	_
+ 16	mais	mais	ADV	_	_	17	advmod	O	_
+ 17	elevadas	elevado	ADJ	_	Gender=Fem|Number=Plur	15	amod	O	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+@@ -15206,7 +15206,7 @@
+ 26	solúveis	solúvel	ADJ	_	Gender=Masc|Number=Plur	25	amod	O	_
+ 27	com	com	ADP	_	_	29	case	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+-29	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	24	obl	B=QUÍMICA	_
++29	emulsificante	emulsificante	NOUN	_	Gender=Masc|Number=Sing	26	obl	B=QUÍMICA	_
+ 30	e	e	CCONJ	_	_	31	cc	O	_
+ 31	reduzir	reduzir	VERB	_	VerbForm=Inf	24	conj	O	_
+ 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
+@@ -19283,7 +19283,7 @@
+ 29	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+ 30	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	26	obj	B=BACIA:TIPO	_
+ 31	com	com	ADP	_	_	32	case	O	_
+-32	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
++32	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+ 33	poligenética	poligenético	ADJ	_	Gender=Fem|Number=Sing	32	amod	O	_
+ 34	(	(	PUNCT	_	_	35	punct	O	_
+ 35	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+@@ -19480,7 +19480,7 @@
+ 20-21	na	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	16	obl	B=BACIA:TIPO	_
++22	Bacia	bacia	PROPN	_	Gender=Fem|Number=Sing	18	nmod	B=BACIA:TIPO	_
+ 23-24	do	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	22	flat:name	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	flat:name	O	_
+@@ -22260,11 +22260,11 @@
+ 44-45	do	_	_	_	_	_	_	_	_
+ 44	de	de	ADP	_	_	46	case	O	_
+ 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
+-46	Paleozoico	Paleozoico	PROPN	_	Gender=Masc|Number=Sing	42	nmod	B=GEOCRONOLOGIA	_
++46	Paleozoico	Paleozoico	PROPN	_	Gender=Masc|Number=Sing	43	obl	B=GEOCRONOLOGIA	_
+ 47-48	ao	_	_	_	_	_	_	_	_
+ 47	a	a	ADP	_	_	49	case	O	_
+ 48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	O	_
+-49	Cretaceo	Cretaceo	PROPN	_	Gender=Masc|Number=Sing	43	obl	B=GEOCRONOLOGIA	_
++49	Cretaceo	Cretaceo	PROPN	_	Gender=Masc|Number=Sing	46	nmod	B=GEOCRONOLOGIA	_
+ 50	Inferior	Inferior	PROPN	_	Number=Sing	49	flat:name	I=GEOCRONOLOGIA	_
+ 51	(	(	PUNCT	_	_	52	punct	O	_
+ 52	Rojas	Rojas	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+@@ -24994,7 +24994,7 @@
+ 10-11	na	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	base	base	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	base	base	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+@@ -25249,7 +25249,7 @@
+ 
+ # text = Assine (2007) enfocando nas coquinas, situadas no topo do Membro Romualdo, as interpreta como lags residuais, com o contato basal interpretado como superfície de ravinamento por onda, correspondendo o intervalo de coquinas à superfície de inundação máxima marinha na sequência..
+ # sent_id = 284-20150917-MONOGRAFIA_0-168
+-1	Assine	assine	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	O	_
++1	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	20	nsubj	O	_
+ 2	(	(	PUNCT	_	_	3	punct	O	_
+ 3	2007	2007	NUM	_	NumType=Card	1	nmod:appos	O	_
+ 4	)	)	PUNCT	_	_	3	punct	O	_
+@@ -25278,7 +25278,7 @@
+ 24	,	,	PUNCT	_	_	27	punct	O	_
+ 25	com	com	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	contato	contato	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
++27	contato	contato	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 28	basal	basal	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29	interpretado	interpretar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	27	acl	O	_
+ 30	como	como	ADP	_	_	31	case	O	_
+@@ -26215,7 +26215,7 @@
+ 15	esverdeados	esverdear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	O	_
+ 16	,	,	PUNCT	_	_	15	punct	O	_
+ 17	com	com	ADP	_	_	18	case	O	_
+-18	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	9	obl	O	_
++18	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
+ 19	cinza	cinza	ADJ	_	Gender=Masc|Number=Sing	18	amod	O	_
+ 20	escuros	escuros	ADJ	_	Gender=Masc|Number=Plur	18	amod	O	_
+ 21	onde	onde	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	22	obl	O	_
+@@ -26373,7 +26373,7 @@
+ 7	tamanhos	tamanho	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 8	milimétricos	milimétrico	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 9	a	a	ADP	_	_	10	case	O	_
+-10	centimétricos	centimétrico	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
++10	centimétricos	centimétrico	ADJ	_	Gender=Masc|Number=Plur	8	obl	O	_
+ 11	(	(	PUNCT	_	_	12	punct	O	_
+ 12	0,5	0,5	NUM	_	NumType=Card	10	appos	O	_
+ 13	a	a	ADP	_	_	15	case	O	_
+@@ -26860,7 +26860,7 @@
+ 33	preto	preto	ADJ	_	Gender=Masc|Number=Sing	32	amod	I=LITOLOGIA	_
+ 34	entre	entre	ADP	_	_	36	case	O	_
+ 35	duas	dois	NUM	_	NumType=Card	36	nummod	O	_
+-36	barras	barra	NOUN	_	Gender=Fem|Number=Plur	20	obl	O	_
++36	barras	barra	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
+ 37	superpostas	superpor	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	36	acl	O	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	36	appos	O	_
+@@ -27355,9 +27355,9 @@
+ 
+ # text = Arenitos com acamamento flaser, wavy e linsen (Fácies H)
+ # sent_id = 284-20150917-MONOGRAFIA_0-247
+-1	Arenitos	arenitos	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
++1	Arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 2	com	com	ADP	_	_	3	case	O	_
+-3	acamamento	acamamento	NOUN	_	Gender=Masc|Number=Sing	1	obl	O	_
++3	acamamento	acamamento	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 4	flaser	flaser	NOUN	_	Gender=Masc|Number=Sing	3	nmod	B=LITOLOGIA	_
+ 5	,	,	PUNCT	_	_	6	punct	O	_
+ 6	wavy	wavy	NOUN	_	Gender=Masc|Number=Sing	3	conj	B=LITOLOGIA	_
+@@ -27454,9 +27454,9 @@
+ 
+ # text = Lamitos cinza-escuros intercalados entre arenitos muito finos a finos, bem selecionados, matriz siltosa, esbranquiçados a acinzentados, com laminações horizontal, ondulada ou cruzada por ondas (estratificação cruzada cavalgante – ripples)..
+ # sent_id = 284-20150917-MONOGRAFIA_0-253
+-1	Lamitos	lamito	ADJ	_	Gender=Masc|Number=Plur	2	amod	B=LITOLOGIA	_
+-2	cinza-escuros	cinza-escuros	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	intercalados	intercalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
++1	Lamitos	lamito	NOUN	_	Gender=Masc|Number=Plur	0	root	B=LITOLOGIA	_
++2	cinza-escuros	cinza-escuros	ADJ	_	Gender=Masc|Number=Plur	1	amod	O	_
++3	intercalados	intercalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	O	_
+ 4	entre	entre	ADP	_	_	5	case	O	_
+ 5	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	3	obl	B=LITOLOGIA	_
+ 6	muito	muito	ADV	_	_	7	advmod	O	_
+@@ -27465,7 +27465,7 @@
+ 9	finos	fino	ADJ	_	Gender=Masc|Number=Plur	7	obl	O	_
+ 10	,	,	PUNCT	_	_	12	punct	O	_
+ 11	bem	bem	ADV	_	_	12	advmod	O	_
+-12	selecionados	selecionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	9	acl	O	_
++12	selecionados	selecionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	5	conj	O	_
+ 15	siltosa	siltoso	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+@@ -29831,10 +29831,10 @@
+ 15	admite	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	O	_
+ 16	que	que	SCONJ	_	_	21	mark	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-18	mesma	mesmo	ADJ	_	Gender=Fem|Number=Sing	19	amod	O	_
+-19	marca	marca	NOUN	_	Gender=Fem|Number=Sing	15	ccomp	O	_
++18	mesma	mesmo	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	19	nsubj	O	_
++19	marca	marcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	contato	contato	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
++21	contato	contato	NOUN	_	Gender=Masc|Number=Sing	19	obj	O	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+ 24	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+@@ -29850,7 +29850,7 @@
+ 34	abaixo	abaixo	ADV	_	_	19	advmod	O	_
+ 35	,	,	PUNCT	_	_	34	punct	O	_
+ 36	com	com	ADP	_	_	37	case	O	_
+-37	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	45	obl	B=LITOLOGIA	_
++37	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	28	nmod	B=LITOLOGIA	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	37	nmod:appos	B=LITOLOGIA	_
+ 40	Fl	Fl	PROPN	_	Gender=Fem|Number=Sing	39	parataxis	O	_
+@@ -31782,7 +31782,7 @@
+ 57-58	pelo	_	_	_	_	_	_	_	_
+ 57	por	por	ADP	_	_	59	case	O	_
+ 58	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	O	_
+-59	contato	contato	NOUN	_	Gender=Masc|Number=Sing	56	obl	O	_
++59	contato	contato	NOUN	_	Gender=Masc|Number=Sing	56	obl:agent	O	_
+ 60	discordante	discordante	ADJ	_	Gender=Masc|Number=Sing	59	amod	O	_
+ 61-62	dos	_	_	_	_	_	_	_	_
+ 61	de	de	ADP	_	_	63	case	O	_
+@@ -37709,7 +37709,7 @@
+ # text = Segundo COMSOL (2013) o problema da análise eletromagnética num nível macroscópico é a de resolver as equações de Maxwell sujeitas a certas condições de contorno..
+ # sent_id = 398-20160721-MONOGRAFIA_0-145
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	COMSOL	COMSOL	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	_
++2	COMSOL	COMSOL	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -39147,7 +39147,7 @@
+ 17	de	de	ADP	_	_	18	case	O	_
+ 18	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=FLUIDO	_
+ 19	em	em	ADP	_	_	20	case	O	_
+-20	campos	campo	NOUN	_	Gender=Masc|Number=Plur	7	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++20	campos	campo	NOUN	_	Gender=Masc|Number=Plur	14	nmod	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 21	maduros	maduro	ADJ	_	Gender=Masc|Number=Plur	20	amod	I=CAMPO:TIPO	_
+ 22	.	.	PUNCT	_	_	7	punct	O	_
+ 23	.	.	PUNCT	_	_	7	punct	O	_
+@@ -39358,11 +39358,11 @@
+ 3	artigos	artigo	NOUN	_	Gender=Masc|Number=Plur	2	nsubj:pass	O	_
+ 4	teóricos	teórico	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+ 5	e	e	CCONJ	_	_	6	cc	O	_
+-6	dados	dar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	conj	O	_
++6	dados	dado	NOUN	_	Gender=Masc|Number=Plur	3	conj	O	_
+ 7-8	da	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	produção	produção	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
++9	produção	produção	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	poços	poço	NOUN	_	Gender=Masc|Number=Plur	9	nmod	B=POÇO:TIPO	_
+ 12	de	de	ADP	_	_	13	case	I=POÇO:TIPO	_
+@@ -39486,7 +39486,7 @@
+ 
+ # text = Esta seção apresenta dicas gerais sobre modelagem que levaram a decidir o que incluir neste estudo e que pode ser feito para minimizar o tamanho de um problema.  Qual é o propósito do modelo?
+ # sent_id = 398-20160721-MONOGRAFIA_0-211
+-1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	_
++1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	O	sentenciação
+ 2	seção	seção	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+ 3	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	dicas	dica	NOUN	_	Gender=Fem|Number=Plur	3	obj	O	_
+@@ -40359,7 +40359,7 @@
+ 9-10	ao	_	_	_	_	_	_	_	_
+ 9	a	a	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	longo	longo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
++11	longo	longo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 14	período	período	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+@@ -44255,7 +44255,7 @@
+ 
+ # text = No Gráfico 23, o crescimento da temperatura da mistura alcançou os 40 ºC para o óleo, no entanto a parafina ainda está em torno dos 38 ºC.
+ # sent_id = 398-20160721-MONOGRAFIA_0-405
+-1-2	No	_	_	_	_	_	_	_	_
++1-2	No	_	_	_	_	_	_	_	sentenciação
+ 1	Em	em	ADP	_	_	3	case	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+ 3	Gráfico	Gráfico	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
+@@ -45221,9 +45221,9 @@
+ 27	base	base	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
+ 28	orgânica	orgânico	ADJ	_	Gender=Fem|Number=Sing	27	amod	O	_
+ 29	e	e	CCONJ	_	_	30	cc	O	_
+-30	fluidos	fluir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	28	conj	O	_
++30	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur|VerbForm=Part	18	conj	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+-32	base	base	NOUN	_	Gender=Fem|Number=Sing	30	obl	O	_
++32	base	base	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+ 33	aquosa	aquoso	ADJ	_	Gender=Fem|Number=Sing	32	amod	O	_
+ 34	.	.	PUNCT	_	_	7	punct	O	_
+ 35	.	.	PUNCT	_	_	7	punct	O	_
+@@ -45650,7 +45650,7 @@
+ 10	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 11	sobre	sobre	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
++13	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 14	de	de	ADP	_	_	16	case	O	_
+ 15	novos	novo	ADJ	_	Gender=Masc|Number=Plur	16	amod	O	_
+ 16	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	13	nmod	B=FLUIDO	_
+@@ -47040,7 +47040,7 @@
+ 19	,	,	PUNCT	_	_	22	punct	O	_
+ 20	como	como	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	água	água	NOUN	_	Gender=Fem|Number=Sing	18	obl	B=FLUIDO	_
++22	água	água	NOUN	_	Gender=Fem|Number=Sing	5	nmod:appos	B=FLUIDO	_
+ 23-24	do	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	I=FLUIDO	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	I=FLUIDO	_
+@@ -48719,7 +48719,7 @@
+ 7-8	do	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	enceramento	enceramento	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
++9	enceramento	enceramento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	broca	broca	NOUN	_	Gender=Fem|Number=Sing	9	nmod	B=INSTRUMENTO	_
+ 12	,	,	PUNCT	_	_	4	punct	O	_
+@@ -49804,7 +49804,7 @@
+ 5-6	na	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
++7	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 8	,	,	PUNCT	_	_	7	punct	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	dimensões	dimensão	NOUN	_	Gender=Fem|Number=Plur	7	nmod	O	_
+@@ -51159,7 +51159,7 @@
+ 39	hidratados	hidratar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	38	acl	O	_
+ 40	entre	entre	ADP	_	_	42	case	O	_
+ 41	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	42	det	O	_
+-42	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	39	obl	O	_
++42	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	38	nmod	O	_
+ 43	estruturais	estrutural	ADJ	_	Gender=Fem|Number=Plur	42	amod	O	_
+ 44	.	.	PUNCT	_	_	13	punct	O	_
+ 45	.	.	PUNCT	_	_	13	punct	O	_
+@@ -55254,7 +55254,7 @@
+ 
+ # text = velocidade de varredura do goniômetro foi de 6º por minuto.
+ # sent_id = 24-20150122-MONOGRAFIA_0-299
+-1	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
++1	velocidade	velocidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	sentenciação
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	varredura	varredura	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+ 4-5	do	_	_	_	_	_	_	_	_
+@@ -60200,7 +60200,7 @@
+ 26	octaédrico	octaédrico	ADJ	_	Gender=Masc|Number=Sing	25	amod	O	_
+ 27	por	por	ADP	_	_	29	case	O	_
+ 28	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	29	det	O	_
+-29	íons.	íons.	NOUN	_	Gender=Masc|Number=Sing	19	obl	O	_
++29	íons.	íons.	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 30	.	.	PUNCT	_	_	1	punct	O	_
+ 
+ # text = A argila possui também razoável concentração de magnésio (MgO 3,0 %p/p), este pode ser atribuído à substituição isomórfica, bem como estar presente juntamente com o sódio na forma de cátions hidratados nas entrecamadas. (SANTOS, 1992)..
+@@ -62453,7 +62453,7 @@
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+ 12	teste	teste	NOUN	_	Gender=Masc|Number=Sing	9	obl	B=MÉTODO	_
+ 13	com	com	ADP	_	_	14	case	O	_
+-14	areia	areia	NOUN	_	Gender=Fem|Number=Sing	9	obl	B=LITOLOGIA	_
++14	areia	areia	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=LITOLOGIA	_
+ 15	,	,	PUNCT	_	_	17	punct	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+ 17	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	_
+@@ -62774,7 +62774,7 @@
+ 
+ # text = presa no êmbolo
+ # sent_id = 24-20150122-MONOGRAFIA_0-595
+-1	presa	presa	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	O	_
++1	presa	presa	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	O	sentenciação
+ 2-3	no	_	_	_	_	_	_	_	_
+ 2	em	em	ADP	_	_	4	case	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+@@ -63336,7 +63336,7 @@
+ 13	correlação	correlação	NOUN	_	Gender=Fem|Number=Sing	12	obj	O	_
+ 14	com	com	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	afinidade	afinidade	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
++16	afinidade	afinidade	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 17-18	das	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	O	_
+@@ -64196,7 +64196,7 @@
+ 
+ # text = Areado já foram desenvolvidos, principalmente enfocando os aspectos estratigráficos, paleontológicos, estruturais, faciológicos e econômicos da unidade..
+ # sent_id = 283-20150917-MONOGRAFIA_0-5
+-1	Areado	Areado	PROPN	_	Gender=Masc|Number=Sing	4	nsubj:pass	O	_
++1	Areado	Areado	PROPN	_	Gender=Masc|Number=Sing	4	nsubj:pass	O	sentenciação
+ 2	já	já	ADV	_	_	4	advmod	O	_
+ 3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	O	_
+ 4	desenvolvidos	desenvolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -64217,7 +64217,7 @@
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
++21	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 22	.	.	PUNCT	_	_	4	punct	O	_
+ 23	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -64723,7 +64723,7 @@
+ # text = Segundo Sgarbi (2011), as principais feições geomorfológicas da área são morrotes de morfologia plana, colinas baixas, cristas elevadas e vales encaixados..
+ # sent_id = 283-20150917-MONOGRAFIA_0-19
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	15	obl	O	_
++2	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	15	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	2011	2011	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -65696,7 +65696,7 @@
+ 26	para	para	ADP	_	_	29	case	O	_
+ 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	O	_
+ 28	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	29	det	O	_
+-29	regiões	região	NOUN	_	Gender=Fem|Number=Plur	22	obl	O	_
++29	regiões	região	NOUN	_	Gender=Fem|Number=Plur	25	nmod	O	_
+ 30-31	da	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+@@ -67311,9 +67311,9 @@
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 5	radiolários	radiolário	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 6	,	,	PUNCT	_	_	9	punct	O	_
+-7	como	como	ADP	_	_	9	case	O	_
++7	como	como	CCONJ	_	_	9	cc	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	biota	biota	NOUN	_	Gender=Fem|Number=Sing	5	nmod:appos	O	_
++9	biota	biota	NOUN	_	Gender=Fem|Number=Sing	5	conj	O	_
+ 10	descrita	descrever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	O	_
+ 11	posteriormente	posteriormente	ADV	_	_	10	advmod	O	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+@@ -67327,7 +67327,7 @@
+ 20	)	)	PUNCT	_	_	13	punct	O	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
+-23	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
++23	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+ 25	Pessagno	Pessagno	PROPN	_	Gender=Masc|Number=Sing	9	appos	O	_
+ 26	e	e	CCONJ	_	_	25	flat:name	O	_
+@@ -69379,14 +69379,14 @@
+ 
+ # text = St apresentam estratificações cruzadas acanaladas centimétricas a decimétricas e sets tabulares a cuneiformes (Figura 9)..
+ # sent_id = 283-20150917-MONOGRAFIA_0-175
+-1	St	St	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
++1	St	St	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	sentenciação
+ 2	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 3	estratificações	estratificação	NOUN	_	Gender=Fem|Number=Plur	2	obj	B=LITOLOGIA	_
+ 4	cruzadas	cruzar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	I=LITOLOGIA	_
+ 5	acanaladas	acanalar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	I=LITOLOGIA	_
+-6	centimétricas	centimétrico	ADJ	_	Gender=Fem|Number=Plur	5	xcomp	O	_
++6	centimétricas	centimétrico	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+ 7	a	a	ADP	_	_	8	case	O	_
+-8	decimétricas	decimétrica	NOUN	_	Gender=Fem|Number=Plur	5	obl	O	_
++8	decimétricas	decimétrico	ADJ	_	Gender=Fem|Number=Plur	6	obl	O	_
+ 9	e	e	CCONJ	_	_	10	cc	O	_
+ 10	sets	set	NOUN	_	Gender=Masc|Number=Plur	8	conj	O	_
+ 11	tabulares	tabular	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+@@ -69409,7 +69409,7 @@
+ 6	ruim	ruim	ADJ	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 7	,	,	PUNCT	_	_	4	punct	O	_
+ 8	com	com	ADP	_	_	9	case	O	_
+-9	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	4	obl	B=LITOLOGIA	_
++9	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=LITOLOGIA	_
+ 10	plano-paralela	plano-paralela	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+ 11	(	(	PUNCT	_	_	12	punct	O	_
+ 12	Sh	Sh	PROPN	_	Gender=Masc|Number=Sing	9	appos	O	_
+@@ -71335,7 +71335,7 @@
+ 
+ # text = Apesar de delgada e nela não se observar nenhum contato com as formações adjacentes, esta seção é relevante por apresentar associação de fácies característica para a Fm..
+ # sent_id = 283-20150917-MONOGRAFIA_0-249
+-1	Apesar	apesar	ADV	_	_	3	case	O	_
++1	Apesar	apesar	ADV	_	_	3	case	O	sentenciação
+ 2	de	de	ADP	_	_	1	fixed	O	_
+ 3	delgada	delgada	NOUN	_	Gender=Fem|Number=Sing	20	obl	O	_
+ 4	e	e	CCONJ	_	_	6	cc	O	_
+@@ -72119,7 +72119,7 @@
+ 14	Romão	Romão	PROPN	_	Number=Sing	11	flat:name	O	_
+ 15	,	,	PUNCT	_	_	18	punct	O	_
+ 16	com	com	ADP	_	_	17	case	O	_
+-17	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	5	obl	B=LITOLOGIA	_
++17	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	2	nmod	B=LITOLOGIA	_
+ 18	provenientes	proveniente	ADJ	_	Gender=Fem|Number=Plur	17	amod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	decantação	decantação	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
+@@ -72154,7 +72154,7 @@
+ # text = Segundo Briere (2000), sistema lacustre é àquele que passa ao menos 75% do tempo com água..
+ # sent_id = 283-20150917-MONOGRAFIA_0-282
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Briere	Briere	PROPN	_	Gender=Masc|Number=Sing	11	obl	O	_
++2	Briere	Briere	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	2000	2000	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -72228,7 +72228,7 @@
+ 12	litotipos	litotipo	NOUN	_	Gender=Masc|Number=Plur	10	obl:agent	B=LITOLOGIA	_
+ 13	com	com	ADP	_	_	15	case	O	_
+ 14	maior	grande	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+-15	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
++15	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 16	psamítica	psamítico	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 17	,	,	PUNCT	_	_	10	punct	O	_
+ 18	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -72280,7 +72280,7 @@
+ # text = Segundo Nichols (2009), lagos efêmeros são massas de água que secam periodicamente, típicos de ambientes áridos e semi-áridos, com longos períodos secos interrompidos por chuvas torrenciais..
+ # sent_id = 283-20150917-MONOGRAFIA_0-286
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Nichols	Nichols	PROPN	_	Gender=Masc|Number=Sing	10	obl	O	_
++2	Nichols	Nichols	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	2009	2009	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -72304,7 +72304,7 @@
+ 23	,	,	PUNCT	_	_	28	punct	O	_
+ 24	com	com	ADP	_	_	26	case	O	_
+ 25	longos	longo	ADJ	_	Gender=Masc|Number=Plur	26	amod	O	_
+-26	períodos	período	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
++26	períodos	período	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
+ 27	secos	seco	ADJ	_	Gender=Masc|Number=Plur	26	amod	O	_
+ 28	interrompidos	interromper	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	26	acl	O	_
+ 29	por	por	ADP	_	_	30	case	O	_
+@@ -73188,10 +73188,10 @@
+ 3	compreende	compreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	3	xcomp	B=LITOLOGIA	_
+ 5	de	de	ADP	_	_	6	case	O	_
+-6	granulometria	granulometria	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
++6	granulometria	granulometria	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+ 7	fina	fino	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
+ 8	a	a	ADP	_	_	9	case	O	_
+-9	grossa	grosso	NOUN	_	Gender=Fem|Number=Sing	6	amod	O	_
++9	grossa	grosso	ADJ	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+ 11	seleção	seleção	NOUN	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 12	moderada	moderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
+@@ -73610,7 +73610,7 @@
+ 
+ # text = St os arenitos são bimodais, bem selecionados, com grãos bem arredondados, com estratificação cruzada acanalada decimétrica a decamétrica em sets tabulares (Figura 19)..
+ # sent_id = 283-20150917-MONOGRAFIA_0-338
+-1	St	St	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
++1	St	St	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	sentenciação
+ 2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	O	_
+ 3	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	B=LITOLOGIA	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+@@ -74373,7 +74373,7 @@
+ 14-15	no	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	relevo	relevo	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
++16	relevo	relevo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 17	.	.	PUNCT	_	_	3	punct	O	_
+ 18	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -75680,7 +75680,7 @@
+ 5	com	com	ADP	_	_	8	case	O	_
+ 6	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	8	det	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	dados	dado	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
++8	dados	dado	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+ 9	,	,	PUNCT	_	_	8	punct	O	_
+ 10	resultou	resultar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 11	em	em	ADP	_	_	12	case	O	_
+@@ -75975,7 +75975,7 @@
+ 55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	O	_
+ 56	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	53	obl	O	_
+ 57	45	45	NUM	_	NumType=Card	58	nummod	O	_
+-58	m	m	NOUN	_	Gender=Masc|Number=Plur	53	obl	O	_
++58	m	m	NOUN	_	Gender=Masc|Number=Plur	53	obj	O	_
+ 59	em	em	ADP	_	_	61	case	O	_
+ 60	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	61	det	O	_
+ 61	porção	porção	NOUN	_	Gender=Fem|Number=Sing	53	obl	O	_
+@@ -77300,7 +77300,7 @@
+ 19	baixas	baixo	ADJ	_	Gender=Fem|Number=Plur	17	amod	O	_
+ 20	,	,	PUNCT	_	_	22	punct	O	_
+ 21	com	com	ADP	_	_	22	case	O	_
+-22	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	12	obl	O	_
++22	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	consistência	consistência	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+@@ -83946,14 +83946,14 @@
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+ 4	entre	entre	ADP	_	_	6	case	O	_
+ 5	50	50	NUM	_	NumType=Card	6	nummod	O	_
+-6	%	%	SYM	_	_	13	obl	O	_
++6	%	%	SYM	_	_	13	nsubj	O	_
+ 7	e	e	CCONJ	_	_	9	cc	O	_
+ 8	67	67	NUM	_	NumType=Card	9	nummod	O	_
+ 9	%	%	SYM	_	_	6	conj	O	_
+ 10-11	do	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	9	nmod	B=QUÍMICA	_
++12	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=QUÍMICA	_
+ 13	retorna	retornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 14	com	com	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+@@ -84167,7 +84167,7 @@
+ 10	água	água	NOUN	_	Gender=Fem|Number=Sing	8	obl	B=FLUIDO	_
+ 11	com	com	ADP	_	_	13	case	O	_
+ 12	alta	alto	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+-13	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
++13	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	sais	sai	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 16	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	15	acl	O	_
+@@ -84532,7 +84532,7 @@
+ 16-17	no	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	reservatório	reservatório	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
++18	reservatório	reservatório	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
+ 19	recuperam	recuperar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 20	cerca	cerca	ADV	_	_	23	advmod	O	_
+ 21	de	de	ADP	_	_	20	fixed	O	_
+@@ -87900,7 +87900,7 @@
+ 13	por	por	ADP	_	_	16	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 15	então	então	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+-16	presidente	presidente	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
++16	presidente	presidente	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	O	_
+ 17	Getúlio	Getúlio	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 18	Vargas	Vargas	PROPN	_	Number=Sing	17	flat:name	O	_
+ 19	,	,	PUNCT	_	_	6	punct	O	_
+@@ -89852,7 +89852,7 @@
+ 26	essencial	essencial	ADJ	_	Gender=Fem|Number=Sing	25	amod	O	_
+ 27	para	para	ADP	_	_	29	case	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+-29	movimentação	movimentação	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
++29	movimentação	movimentação	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
+ 30-31	do	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
+@@ -90170,7 +90170,7 @@
+ 80	terreno	terreno	NOUN	_	Gender=Masc|Number=Sing	77	nmod	O	_
+ 81	para	para	ADP	_	_	83	case	O	_
+ 82	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	83	det	O	_
+-83	instalação	instalação	NOUN	_	Gender=Fem|Number=Sing	75	obl	O	_
++83	instalação	instalação	NOUN	_	Gender=Fem|Number=Sing	77	nmod	O	_
+ 84	de	de	ADP	_	_	86	case	O	_
+ 85	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	86	det	O	_
+ 86	duto	duto	NOUN	_	Gender=Masc|Number=Sing	83	nmod	B=LOCAL:GEO	_
+@@ -92377,7 +92377,7 @@
+ 23	diâmetros	diâmetro	NOUN	_	Gender=Masc|Number=Plur	21	conj	O	_
+ 24	diferentes	diferente	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
+ 25	entre	entre	ADP	_	_	26	case	O	_
+-26	si	si	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obl	O	_
++26	si	si	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obl	O	_
+ 27	..	..	PUNCT	_	_	6	punct	O	_
+ 
+ # text = Posteriormente os investimentos necessários de cada trecho serão somados, resultando em um valor agregado..
+@@ -93428,7 +93428,7 @@
+ 55-56	do	_	_	_	_	_	_	_	_
+ 55	de	de	ADP	_	_	57	case	O	_
+ 56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	O	_
+-57	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	54	obl	O	_
++57	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	52	obl	O	_
+ 58	.	.	PUNCT	_	_	3	punct	O	_
+ 59	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -93456,7 +93456,7 @@
+ 18-19	no	_	_	_	_	_	_	_	_
+ 18	em	em	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	Estado	estado	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
++20	Estado	estado	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 21-22	do	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+@@ -94843,12 +94843,12 @@
+ 7	de	de	ADP	_	_	6	flat:name	O	_
+ 8	Barracuda	Barracuda	PROPN	_	Number=Sing	6	flat:name	B=CAMPO	_
+ 9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	O	_
+-10	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	0	root	B=LITOLOGIA	_
++10	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	0	root	B=LITOLOGIA	_
+ 11	turbidíticos	turbidítico	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+ 12-13	da	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	11	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	Carapebus	Carapebus	PROPN	_	Gender=Fem|Number=Sing	14	nmod	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	,	,	PUNCT	_	_	18	punct	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+@@ -96065,7 +96065,7 @@
+ 37	Tanto	tanto	ADV	_	_	40	advmod	O	_
+ 38	para	para	ADP	_	_	40	case	O	_
+ 39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	O	_
+-40	campo	campo	NOUN	_	Gender=Masc|Number=Sing	35	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++40	campo	campo	NOUN	_	Gender=Masc|Number=Sing	62	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 41	de	de	ADP	_	_	42	case	O	_
+ 42	Marlim	Marlim	PROPN	_	Gender=Masc|Number=Sing	40	nmod	B=CAMPO	_
+ 43	quanto	quanto	CCONJ	_	_	46	cc	O	_
+@@ -96075,7 +96075,7 @@
+ 47	de	de	ADP	_	_	48	case	O	_
+ 48	Barracuda	Barracuda	PROPN	_	Gender=Masc|Number=Sing	46	nmod	B=CAMPO	_
+ 49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	O	_
+-50	valor	valor	NOUN	_	Gender=Masc|Number=Sing	62	nsubj	O	_
++50	valor	valor	NOUN	_	Gender=Masc|Number=Sing	32	nmod:appos	O	_
+ 51-52	da	_	_	_	_	_	_	_	_
+ 51	de	de	ADP	_	_	53	case	O	_
+ 52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	O	_
+@@ -96089,7 +96089,7 @@
+ 59	1000	1000	NUM	_	NumType=Card	62	nummod	O	_
+ 60	e	e	CCONJ	_	_	61	cc	O	_
+ 61	2500	2500	NUM	_	NumType=Card	59	conj	O	_
+-62	mD	md	NOUN	_	Gender=Masc|Number=Plur	40	conj	O	_
++62	mD	md	NOUN	_	Gender=Masc|Number=Plur	50	acl:relcl	O	_
+ 63	(	(	PUNCT	_	_	64	punct	O	_
+ 64	Bruhn	Bruhn	PROPN	_	Gender=Masc|Number=Sing	14	parataxis	O	_
+ 65	et.	et.	PROPN	_	Number=Sing	64	flat:name	O	_
+@@ -98323,7 +98323,7 @@
+ 15	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=FLUIDO	_
+ 16	,	,	PUNCT	_	_	6	punct	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+-18	campos	campo	NOUN	_	Gender=Masc|Number=Plur	20	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++18	campos	campo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 19	maduros	maduro	ADJ	_	Gender=Masc|Number=Plur	18	amod	O	_
+ 20	promove	promover	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -99208,7 +99208,7 @@
+ 37	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	O	_
+ 38	reservatórios	reservatório	NOUN	_	Gender=Masc|Number=Plur	27	obl	O	_
+ 39	com	com	ADP	_	_	40	case	O	_
+-40	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	32	obl	B=FLUIDO	_
++40	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	38	nmod	B=FLUIDO	_
+ 41	mais	mais	ADV	_	_	42	advmod	O	_
+ 42	leves	leve	ADJ	_	Gender=Masc|Number=Plur	40	amod	O	_
+ 43	,	,	PUNCT	_	_	32	punct	O	_
+@@ -99260,7 +99260,7 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-649
+ 1	Segundo	segundo	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+-3	IEA	IEA	PROPN	_	Gender=Fem|Number=Sing	16	obl	O	_
++3	IEA	IEA	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 4	,	,	PUNCT	_	_	3	punct	O	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
+ 6	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	O	_
+@@ -100320,7 +100320,7 @@
+ 11	gás	gás	NOUN	_	Gender=Masc|Number=Sing	9	conj	B=FLUIDO	_
+ 12	presente	presente	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+ 13	em	em	ADP	_	_	14	case	O	_
+-14	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	5	obl	O	_
++14	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	carvão	carvão	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=LITOLOGIA	_
+ 17	ou	ou	CCONJ	_	_	18	cc	O	_
+@@ -102145,7 +102145,7 @@
+ 14	como	como	ADP	_	_	15	case	O	_
+ 15	responsável	responsável	ADJ	_	Gender=Masc|Number=Sing	13	xcomp	O	_
+ 16	por	por	ADP	_	_	17	case	O	_
+-17	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
++17	parte	parte	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
+ 18	de	de	ADP	_	_	21	case	O	_
+ 19	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	21	det	O	_
+ 20	grande	grande	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+@@ -102285,7 +102285,7 @@
+ 18	com	com	ADP	_	_	21	case	O	_
+ 19	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	21	det	O	_
+ 20	reconhecida	reconhecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	21	acl	O	_
+-21	agilidade	agilidade	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++21	agilidade	agilidade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	flexibilidade	flexibilidade	NOUN	_	Gender=Fem|Number=Sing	21	conj	O	_
+ 24	e	e	CCONJ	_	_	25	cc	O	_
+@@ -105072,7 +105072,7 @@
+ 48-49	pela	_	_	_	_	_	_	_	_
+ 48	por	por	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	geração	geração	NOUN	_	Gender=Fem|Number=Sing	36	obl	O	_
++50	geração	geração	NOUN	_	Gender=Fem|Number=Sing	43	nmod	O	_
+ 51	de	de	ADP	_	_	52	case	O	_
+ 52	energia	energia	NOUN	_	Gender=Fem|Number=Sing	50	nmod	O	_
+ 53	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	52	amod	O	_
+@@ -106692,7 +106692,7 @@
+ 19	quadros	quadro	NOUN	_	Gender=Masc|Number=Plur	16	obl	O	_
+ 20	com	com	ADP	_	_	22	case	O	_
+ 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	O	_
+-22	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	16	obl	O	_
++22	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
+ 23	econômicos	econômico	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 24-25	das	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+@@ -108162,7 +108162,7 @@
+ 27	de	de	ADP	_	_	30	case	O	_
+ 28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	O	_
+ 29	duas	dois	NUM	_	NumType=Card	30	nummod	O	_
+-30	abordagens	abordagem	NOUN	_	Gender=Fem|Number=Plur	38	obl	O	_
++30	abordagens	abordagem	NOUN	_	Gender=Fem|Number=Plur	26	nmod	O	_
+ 31	apresentadas	apresentar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	30	acl	O	_
+ 32-33	nesse	_	_	_	_	_	_	_	_
+ 32	em	em	ADP	_	_	34	case	O	_
+@@ -108761,7 +108761,7 @@
+ 30	desafios	desafio	NOUN	_	Gender=Masc|Number=Plur	28	obj	O	_
+ 31	para	para	ADP	_	_	33	case	O	_
+ 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
+-33	processo	processo	NOUN	_	Gender=Masc|Number=Sing	28	obl	O	_
++33	processo	processo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	O	_
+ 34	de	de	ADP	_	_	35	case	O	_
+ 35	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
+ 36	(	(	PUNCT	_	_	37	punct	O	_
+@@ -110873,7 +110873,7 @@
+ 27	em	em	ADP	_	_	30	case	O	_
+ 28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	O	_
+ 29	diversas	diverso	ADJ	_	Gender=Fem|Number=Plur	30	amod	O	_
+-30	áreas	área	NOUN	_	Gender=Fem|Number=Plur	26	obl	O	_
++30	áreas	área	NOUN	_	Gender=Fem|Number=Plur	25	nmod	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+ 32	produção	produção	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+ 33-34	na	_	_	_	_	_	_	_	_
+@@ -111492,7 +111492,7 @@
+ 30	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+ 31	poço	poço	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+ 32	com	com	ADP	_	_	33	case	O	_
+-33	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	25	obl	O	_
++33	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+ 34	final	final	ADJ	_	Gender=Fem|Number=Sing	33	amod	O	_
+ 35	dentro	dentro	ADV	_	_	25	advmod	O	_
+ 36-37	da	_	_	_	_	_	_	_	_
+@@ -111670,7 +111670,7 @@
+ 15	por	por	ADP	_	_	16	case	O	_
+ 16	filtrado	filtrado	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+-18	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	16	obl	B=FLUIDO	_
++18	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=FLUIDO	_
+ 19	de	de	ADP	_	_	20	case	I=FLUIDO	_
+ 20	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	18	nmod	I=FLUIDO	_
+ 21	a	a	ADP	_	_	22	case	O	_
+@@ -111804,7 +111804,7 @@
+ 14	gás	gás	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=FLUIDO	_
+ 15	sobre	sobre	ADP	_	_	17	case	O	_
+ 16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	zona	zona	NOUN	_	Gender=Fem|Number=Sing	7	obl	B=LOCAL:ORG	_
++17	zona	zona	NOUN	_	Gender=Fem|Number=Sing	12	nmod	B=LOCAL:ORG	_
+ 18	de	de	ADP	_	_	19	case	I=LOCAL:ORG	_
+ 19	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	I=LOCAL:ORG|B=FLUIDO	_
+ 20	.	.	PUNCT	_	_	2	punct	O	_
+@@ -111902,7 +111902,7 @@
+ 2	descoberta	descoberta	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	O	_
+ 3	,	,	PUNCT	_	_	5	punct	O	_
+ 4	com	com	ADP	_	_	5	case	O	_
+-5	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	16	obl	O	_
++5	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	2	nmod	O	_
+ 6	muito	muito	ADV	_	_	7	advmod	O	_
+ 7	altas	alto	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+@@ -114236,7 +114236,7 @@
+ 15	a	a	ADP	_	_	14	fixed	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+ 17	grandes	grande	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+-18	reservas	reserva	NOUN	_	Gender=Fem|Number=Plur	13	obl	O	_
++18	reservas	reserva	NOUN	_	Gender=Fem|Number=Plur	13	nmod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	gás	gás	NOUN	_	Gender=Masc|Number=Sing	18	nmod	B=FLUIDO	_
+ 21	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	18	amod	O	_
+@@ -115726,7 +115726,7 @@
+ 15-16	no	_	_	_	_	_	_	_	_
+ 15	em	em	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	Golfo	Golfo	PROPN	_	Gender=Masc|Number=Sing	4	obl	O	_
++17	Golfo	Golfo	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
+@@ -117168,9 +117168,9 @@
+ 11	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	secundária	secundário	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 13	ou	ou	CCONJ	_	_	14	cc	O	_
+-14	avançada	avançar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	12	conj	O	_
++14	avançada	avançado	ADJ	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+-16	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	14	obl	B=FLUIDO	_
++16	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=FLUIDO	_
+ 17	,	,	PUNCT	_	_	20	punct	O	_
+ 18	tendo	ter	AUX	_	VerbForm=Ger	20	cop	O	_
+ 19	como	como	ADP	_	_	20	case	O	_
+@@ -119120,7 +119120,7 @@
+ 17-18	nas	_	_	_	_	_	_	_	_
+ 17	em	em	ADP	_	_	19	case	O	_
+ 18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	O	_
+-19	frações	fração	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
++19	frações	fração	NOUN	_	Gender=Fem|Number=Plur	15	nmod	O	_
+ 20	constituídas	constituir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	O	_
+ 21	por	por	ADP	_	_	22	case	O	_
+ 22	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	obl:agent	O	_
+@@ -120277,7 +120277,7 @@
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+ 7	com	com	ADP	_	_	9	case	O	_
+ 8	oito	oito	NUM	_	NumType=Card	9	nummod	O	_
+-9	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
++9	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 10	,	,	PUNCT	_	_	12	punct	O	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	Mar	Mar	PROPN	_	Gender=Masc|Number=Sing	5	conj	O	_
+@@ -120291,7 +120291,7 @@
+ 19	,	,	PUNCT	_	_	22	punct	O	_
+ 20	com	com	ADP	_	_	22	case	O	_
+ 21	16	16	NUM	_	NumType=Card	22	nummod	O	_
+-22	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	24	obl	O	_
++22	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	12	nmod	O	_
+ 23	,	,	PUNCT	_	_	22	punct	O	_
+ 24	lideram	liderar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -120455,7 +120455,7 @@
+ 60	,	,	PUNCT	_	_	63	punct	O	_
+ 61	e	e	CCONJ	_	_	63	cc	O	_
+ 62	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	O	_
+-63	terceira	terceiro	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	57	conj	O	_
++63	terceira	terceiro	NOUN	_	Gender=Fem|Number=Sing	57	conj	O	_
+ 64	,	,	PUNCT	_	_	66	punct	O	_
+ 65	e	e	CCONJ	_	_	66	cc	O	_
+ 66	principal	principal	ADJ	_	Gender=Fem|Number=Sing	63	conj	O	_
+@@ -120463,7 +120463,7 @@
+ 68-69	no	_	_	_	_	_	_	_	_
+ 68	em	em	ADP	_	_	70	case	O	_
+ 69	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	70	det	O	_
+-70	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	63	obl	O	_
++70	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	63	nmod	O	_
+ 71	,	,	PUNCT	_	_	70	punct	O	_
+ 72	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	74	obl	O	_
+ 73	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	74	aux:pass	O	_
+@@ -121823,7 +121823,7 @@
+ 45	ou	ou	CCONJ	_	_	47	cc	O	_
+ 46	muito	muito	ADV	_	_	47	advmod	O	_
+ 47	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	44	conj	O	_
+-48	presença	presença	NOUN	_	Gender=Fem|Number=Sing	33	obl	O	_
++48	presença	presença	NOUN	_	Gender=Fem|Number=Sing	41	nmod	O	_
+ 49	de	de	ADP	_	_	50	case	O	_
+ 50	gás	gás	NOUN	_	Gender=Masc|Number=Sing	48	nmod	B=FLUIDO	_
+ 51	livre	livre	ADJ	_	Gender=Masc|Number=Sing	50	amod	O	_
+@@ -123292,7 +123292,7 @@
+ 53-54	na	_	_	_	_	_	_	_	_
+ 53	em	em	ADP	_	_	55	case	O	_
+ 54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	O	_
+-55	camada	camada	NOUN	_	Gender=Fem|Number=Sing	48	obl	O	_
++55	camada	camada	NOUN	_	Gender=Fem|Number=Sing	50	nmod	O	_
+ 56	de	de	ADP	_	_	57	case	O	_
+ 57	sal	sal	NOUN	_	Gender=Masc|Number=Sing	55	nmod	B=LITOLOGIA	_
+ 58	,	,	PUNCT	_	_	48	punct	O	_
+@@ -125132,7 +125132,7 @@
+ 8	vantagens	vantagem	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	O	_
+-11	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
++11	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+ 12	:	:	PUNCT	_	_	14	punct	O	_
+ 13	•	•	PUNCT	_	_	14	punct	O	_
+ 14	Redução	redução	NOUN	_	Gender=Fem|Number=Sing	8	appos	O	_
+@@ -127974,7 +127974,7 @@
+ 16	tratar	tratar	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 17	gases	gase	NOUN	_	Gender=Masc|Number=Plur	16	obj	O	_
+ 18	com	com	ADP	_	_	19	case	O	_
+-19	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	16	obl	O	_
++19	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	_
+ 20	muito	muito	ADV	_	_	21	advmod	O	_
+ 21	elevadas	elevado	ADJ	_	Gender=Fem|Number=Plur	19	amod	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+@@ -128676,7 +128676,7 @@
+ 27	absorção	absorção	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+ 28	química	química	ADJ	_	Gender=Fem|Number=Sing	27	amod	O	_
+ 29	com	com	ADP	_	_	30	case	O	_
+-30	amina	amina	NOUN	_	Gender=Fem|Number=Sing	25	obl	B=QUÍMICA	_
++30	amina	amina	NOUN	_	Gender=Fem|Number=Sing	27	nmod	B=QUÍMICA	_
+ 31	(	(	PUNCT	_	_	32	punct	O	_
+ 32	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+ 33	46	46	PROPN	_	Number=Sing	32	flat:name	O	_
+@@ -128776,7 +128776,7 @@
+ 7	controle	controle	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
+ 8	sobre	sobre	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
++10	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	metano	metano	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 13	perdida	perder	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	O	_
+@@ -129831,7 +129831,7 @@
+ 12-13	no	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	campo	campo	NOUN	_	Gender=Masc|Number=Sing	7	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++14	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	Lula	Lula	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 17	.	.	PUNCT	_	_	19	punct	O	_
+@@ -129863,7 +129863,7 @@
+ 16	,	,	PUNCT	_	_	10	punct	O	_
+ 17	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	case	O	MWEPOS=ADP
+ 18	a	a	ADP	_	_	17	fixed	O	_
+-19	limitações	limitação	NOUN	_	Gender=Fem|Number=Plur	10	obl	O	_
++19	limitações	limitação	NOUN	_	Gender=Fem|Number=Plur	11	obl	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+ 21	estocagem	estocagem	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 22	e	e	CCONJ	_	_	23	cc	O	_
+@@ -132337,7 +132337,7 @@
+ 18	transporte	transporte	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
+ 19	até	até	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++21	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 22	..	..	PUNCT	_	_	8	punct	O	_
+ 
+ # text = A seguir, esta corrente é então encaminhada a um separador bifásico..
+@@ -132660,7 +132660,7 @@
+ 21-22	no	_	_	_	_	_	_	_	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	duto	duto	NOUN	_	Gender=Masc|Number=Sing	15	obl	B=LOCAL:GEO	_
++23	duto	duto	NOUN	_	Gender=Masc|Number=Sing	18	nmod	B=LOCAL:GEO	_
+ 24	submarino	submarino	ADJ	_	Gender=Masc|Number=Sing	23	amod	B=TRANSPORTE	_
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	gás	gás	NOUN	_	Gender=Masc|Number=Sing	23	nmod	B=FLUIDO	_
+@@ -135238,7 +135238,7 @@
+ 16-17	ao	_	_	_	_	_	_	_	_
+ 16	a	a	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-18	longo	longo	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
++18	longo	longo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -135285,7 +135285,7 @@
+ 
+ # text = percentual superior a 90%..
+ # sent_id = 334-20150521-MONOGRAFIA_0-722
+-1	percentual	percentual	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	percentual	percentual	NOUN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	superior	alto	ADJ	_	Gender=Masc|Number=Sing	1	amod	O	_
+ 3	a	a	ADP	_	_	5	case	O	_
+ 4	90	90	NUM	_	NumType=Card	5	nummod	O	_
+@@ -138004,7 +138004,7 @@
+ 41	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	O	_
+ 42	parte	parte	NOUN	_	Gender=Fem|Number=Sing	41	obj	O	_
+ 43	de	de	ADP	_	_	44	case	O	_
+-44	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	41	obl	O	_
++44	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	42	nmod	O	_
+ 45	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	44	acl	O	_
+ 46	como	como	ADP	_	_	47	case	O	_
+ 47	asfaltenos	asfalteno	NOUN	_	Gender=Masc|Number=Plur	45	xcomp	B=QUÍMICA	_
+@@ -138895,7 +138895,7 @@
+ 21	densidades	densidade	NOUN	_	Gender=Fem|Number=Plur	19	nmod	O	_
+ 22	entre	entre	ADP	_	_	24	case	O	_
+ 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
+-24	fases	fase	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
++24	fases	fase	NOUN	_	Gender=Fem|Number=Plur	19	nmod	O	_
+ 25	,	,	PUNCT	_	_	14	punct	O	_
+ 26	pois	pois	SCONJ	_	_	39	mark	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+@@ -140710,7 +140710,7 @@
+ 13	água	água	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=FLUIDO	_
+ 14	sob	sob	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++16	forma	forma	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 17	emulsionada	emulsionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	16	acl	O	_
+ 18	.	.	PUNCT	_	_	9	punct	O	_
+ 19	.	.	PUNCT	_	_	9	punct	O	_
+@@ -141280,7 +141280,7 @@
+ 32	mais	mais	ADV	_	_	35	advmod	O	_
+ 33	de	de	ADP	_	_	32	fixed	O	_
+ 34	60	60	NUM	_	NumType=Card	35	nummod	O	_
+-35	%	%	SYM	_	_	26	obl	O	_
++35	%	%	SYM	_	_	30	nmod	O	_
+ 36	em	em	ADP	_	_	38	case	O	_
+ 37	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	38	det	O	_
+ 38	casos	caso	NOUN	_	Gender=Masc|Number=Plur	35	nmod	O	_
+@@ -141834,7 +141834,7 @@
+ 
+ # text = A são apresentados na Tabela 3 para a proporção de óleo de 70 % e para os demais petróleos nas duas menores concentrações na Tabela 4..
+ # sent_id = 202-20140404-MONOGRAFIA_0-140
+-1	A	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	O	_
++1	A	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	O	sentenciação
+ 2	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	O	_
+ 3	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 4-5	na	_	_	_	_	_	_	_	_
+@@ -143587,7 +143587,7 @@
+ 30	planos	plano	NOUN	_	Gender=Masc|Number=Plur	27	conj	O	_
+ 31	nodais	nodal	ADJ	_	Gender=Masc|Number=Plur	30	amod	O	_
+ 32	com	com	ADP	_	_	33	case	O	_
+-33	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	23	obl	O	_
++33	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	30	nmod	O	_
+ 34	reconhecidas	reconhecer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	33	acl	O	_
+ 35-36	na	_	_	_	_	_	_	_	_
+ 35	em	em	ADP	_	_	37	case	O	_
+@@ -143714,21 +143714,21 @@
+ 12-13	dos	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	os	o	DET	_	Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+-14	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	19	obl	O	_
++14	quais	qual	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	16	nmod	O	_
+ 15	200.000	200.000	NUM	_	NumType=Card	16	nummod	O	_
+-16	km2	km2	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	O	_
++16	km2	km2	NOUN	_	Gender=Masc|Number=Plur	10	appos	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+ 18	lâminas	lâmina	NOUN	_	Gender=Fem|Number=Plur	16	nmod	O	_
+-19	d’água	doáguar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	O	_
++19	d’água	d'água	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+ 20	até	até	ADP	_	_	22	case	O	_
+ 21	400	400	NUM	_	NumType=Card	22	nummod	O	_
+-22	m	m	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
++22	m	m	NOUN	_	Gender=Masc|Number=Plur	16	nmod	O	_
+ 23	e	e	CCONJ	_	_	25	cc	O	_
+ 24	150.000	150.000	NUM	_	NumType=Card	25	nummod	O	_
+-25	km2	km2	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
++25	km2	km2	NOUN	_	Gender=Masc|Number=Plur	16	conj	O	_
+ 26	entre	entre	ADP	_	_	28	case	O	_
+ 27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	O	_
+-28	cotas	cota	NOUN	_	Gender=Fem|Number=Plur	19	obl	O	_
++28	cotas	cota	NOUN	_	Gender=Fem|Number=Plur	25	nmod	O	_
+ 29	de	de	ADP	_	_	33	case	O	_
+ 30	400	400	NUM	_	NumType=Card	33	nummod	O	_
+ 31	e	e	CCONJ	_	_	32	cc	O	_
+@@ -143762,7 +143762,7 @@
+ 15-16	pelo	_	_	_	_	_	_	_	_
+ 15	por	por	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
++17	Alto	Alto	PROPN	_	Gender=Masc|Number=Sing	7	obl:agent	O	_
+ 18	de	de	ADP	_	_	17	flat:name	O	_
+ 19	Cabo	Cabo	PROPN	_	Number=Sing	17	flat:name	O	_
+ 20	Frio	Frio	PROPN	_	Number=Sing	17	flat:name	O	_
+@@ -144800,7 +144800,7 @@
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	flat:name	O	_
+ 25	Sul	Sul	PROPN	_	Number=Sing	22	flat:name	O	_
+ 26	em	em	ADP	_	_	27	case	O	_
+-27	1886	1886	NUM	_	NumType=Card	22	nmod	O	_
++27	1886	1886	NUM	_	NumType=Card	11	obl	O	_
+ 28	,	,	PUNCT	_	_	11	punct	O	_
+ 29	com	com	ADP	_	_	30	case	O	_
+ 30	intensidade	intensidade	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+@@ -147242,9 +147242,9 @@
+ 8	compressivos	compressivo	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 9	orientados	orientar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	O	_
+ 10	aproximadamente	aproximadamente	ADV	_	_	11	advmod	O	_
+-11	E-W	e-w	ADJ	_	Gender=Masc|Number=Plur	9	xcomp	O	_
++11	E-W	E-W	PROPN	_	Gender=Masc|Number=Sing	9	xcomp	O	_
+ 12	para	para	ADP	_	_	13	case	O	_
+-13	ESE-WNW	ESE-WNW	PROPN	_	Gender=Masc|Number=Sing	9	obl	O	_
++13	ESE-WNW	ESE-WNW	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 14	,	,	PUNCT	_	_	17	punct	O	_
+ 15	e	e	CCONJ	_	_	17	cc	O	_
+ 16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	O	_
+@@ -149624,7 +149624,7 @@
+ 
+ # text = Ma que marca a passagem da sequência sedimentar clástica/carbonática para um ambiente evaporítico..
+ # sent_id = 258-20160602-TESEMSC_0-181
+-1	Ma	Ma	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	Ma	Ma	PROPN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	3	nsubj	O	_
+ 3	marca	marcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -150912,10 +150912,10 @@
+ 28	de	de	ADP	_	_	29	case	O	_
+ 29	granulometria	granulometria	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
+ 30	grossa	grosso	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+-31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+-32	fina	fino	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
++31	a	a	ADP	_	_	32	case	O	_
++32	fina	fino	ADJ	_	Gender=Fem|Number=Sing	30	obl	O	_
+ 33	por	por	ADP	_	_	34	case	O	_
+-34	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	32	obl	O	_
++34	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	24	obl	O	_
+ 35	glauconítico	glauconítico	NOUN	_	Gender=Masc|Number=Sing	26	conj	O	_
+ 36	e	e	CCONJ	_	_	37	cc	O	_
+ 37	coquinas	coquina	NOUN	_	Gender=Fem|Number=Plur	35	conj	B=LITOLOGIA	_
+@@ -151062,10 +151062,10 @@
+ 3	de	de	ADP	_	_	2	flat:name	O	_
+ 4	Santos	Santos	PROPN	_	Number=Sing	2	flat:name	B=BACIA|B=LOCAL:POL	_
+ 5	,	,	PUNCT	_	_	9	punct	O	_
+-6	assim	assim	ADV	_	_	9	advmod	O	_
+-7	com	com	ADP	_	_	9	case	O	_
++6	assim	assim	ADV	_	_	9	cc	O	MWEPOS=CCONJ
++7	com	como	ADP	_	_	6	fixed	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+-9	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	19	obl	B=BACIA:TIPO	_
++9	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	2	conj	B=BACIA:TIPO	_
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -152129,7 +152129,7 @@
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+ 29	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	26	nmod	B=BACIA:TIPO	_
+ 30	em	em	ADP	_	_	31	case	O	_
+-31	Santos-Sul	Santos-Sul	PROPN	_	Gender=Masc|Number=Sing	24	obl	O	_
++31	Santos-Sul	Santos-Sul	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+ 32	e	e	CCONJ	_	_	33	cc	O	_
+ 33	Santos-Norte	Santos-Norte	PROPN	_	Gender=Masc|Number=Sing	31	conj	O	_
+ 34	.	.	PUNCT	_	_	7	punct	O	_
+@@ -156393,7 +156393,7 @@
+ 21	3	3	NUM	_	NumType=Card	19	obl	O	_
+ 22	a	a	ADP	_	_	24	case	O	_
+ 23	50	50	NUM	_	NumType=Card	24	nummod	O	_
+-24	km	km	NOUN	_	Gender=Masc|Number=Plur	19	obl	O	_
++24	km	km	NOUN	_	Gender=Masc|Number=Plur	21	nmod	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+ 26	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+ 27	4.2	4.2	PROPN	_	Number=Sing	26	flat:name	O	_
+@@ -159309,7 +159309,7 @@
+ 32-33	da	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+-34	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	31	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++34	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	25	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 35	Juréia	Juréia	PROPN	_	Number=Sing	34	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 36	;	;	PUNCT	_	_	37	punct	O	_
+ 37	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	17	conj	B=LITOLOGIA	_
+@@ -159429,7 +159429,7 @@
+ 23-24	da	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	22	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
++25	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	16	nmod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	Juréia	Juréia	PROPN	_	Number=Sing	25	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 27	;	;	PUNCT	_	_	28	punct	O	_
+ 28	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	8	conj	B=LITOLOGIA	_
+@@ -160143,7 +160143,7 @@
+ 15-16	ao	_	_	_	_	_	_	_	_
+ 15	a	a	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	longo	longo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
++17	longo	longo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 18-19	das	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
+@@ -162444,7 +162444,7 @@
+ 11-12	aos	_	_	_	_	_	_	_	_
+ 11	a	a	ADP	_	_	13	case	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+-13	dados	dado	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
++13	dados	dado	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+ 14	gravimétricos	gravimétrico	ADJ	_	Gender=Masc|Number=Plur	13	amod	O	_
+ 15	,	,	PUNCT	_	_	3	punct	O	_
+ 16	ambas	ambos	DET	_	Gender=Fem|Number=Plur|PronType=Tot	18	det	O	_
+@@ -162673,7 +162673,7 @@
+ 25	com	com	ADP	_	_	28	case	O	_
+ 26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	O	_
+ 27	principais	principal	ADJ	_	Gender=Fem|Number=Plur	28	amod	O	_
+-28	direções	direção	NOUN	_	Gender=Fem|Number=Plur	3	obl	O	_
++28	direções	direção	NOUN	_	Gender=Fem|Number=Plur	24	obl	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	estruturação	estruturação	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
+ 31-32	da	_	_	_	_	_	_	_	_
+@@ -164551,7 +164551,7 @@
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	falha	falha	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=LITOLOGIA|B=LOCAL:GEO	_
+ 14	com	com	ADP	_	_	15	case	O	_
+-15	direção	direção	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++15	direção	direção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 16	82º	82º	NOUN	_	Gender=Masc|NumType=Ord|Number=Sing	15	nmod	O	_
+ 17-18	na	_	_	_	_	_	_	_	_
+ 17	em	em	ADP	_	_	19	case	O	_
+@@ -165909,7 +165909,7 @@
+ 12	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	B=FLUIDO	_
+ 13	pesados	pesado	ADJ	_	Gender=Masc|Number=Plur	12	amod	I=FLUIDO	_
+ 14	de	de	ADP	_	_	15	case	O	_
+-15	forma	forma	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
++15	forma	forma	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 16	eficiente	eficiente	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+@@ -166693,7 +166693,7 @@
+ 37	últimos	último	ADJ	_	Gender=Masc|NumType=Ord|Number=Plur	11	conj	O	_
+ 38	de	de	ADP	_	_	40	case	O	_
+ 39	maior	grande	ADJ	_	Gender=Fem|Number=Sing	40	amod	O	_
+-40	incidência	incidência	NOUN	_	Gender=Fem|Number=Sing	37	obl	O	_
++40	incidência	incidência	NOUN	_	Gender=Fem|Number=Sing	39	obl	O	_
+ 41	.	.	PUNCT	_	_	43	punct	O	_
+ 42	(	(	PUNCT	_	_	43	punct	O	_
+ 43	Thomas	Thomas	PROPN	_	Gender=Masc|Number=Sing	9	parataxis	O	_
+@@ -166945,7 +166945,7 @@
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	10	obl	B=FLUIDO	_
+ 14	para	para	ADP	_	_	15	case	O	_
+-15	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	10	obl	B=FLUIDO	_
++15	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=FLUIDO	_
+ 16	.	.	PUNCT	_	_	10	punct	O	_
+ 17	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -169082,7 +169082,7 @@
+ 11	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 12	entre	entre	ADP	_	_	14	case	O	_
+ 13	3	3	NUM	_	NumType=Card	14	nummod	O	_
+-14	Pa.s	pa.s	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
++14	Pa.s	pa.s	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 15	a	a	ADP	_	_	17	case	O	_
+ 16	100	100	NUM	_	NumType=Card	17	nummod	O	_
+ 17	Pa.s..	Pa.s..	PROPN	_	Gender=Masc|Number=Plur	14	nmod	O	_
+@@ -169646,7 +169646,7 @@
+ 39	entre	entre	ADP	_	_	40	case	O	_
+ 40	0,73	0,73	NUM	_	NumType=Card	38	obl	O	_
+ 41	a	a	ADP	_	_	42	case	O	_
+-42	0,76	0,76	NUM	_	NumType=Card	38	obl	O	_
++42	0,76	0,76	NUM	_	NumType=Card	40	nmod	O	_
+ 43	de	de	ADP	_	_	44	case	O	_
+ 44	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	42	nmod	B=FLUIDO	_
+ 45-46	da	_	_	_	_	_	_	_	_
+@@ -173252,7 +173252,7 @@
+ 22	,	,	PUNCT	_	_	25	punct	O	_
+ 23	segundo	segundo	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	carta	carta	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
++25	carta	carta	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	calibração	calibração	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
+ 28	e	e	CCONJ	_	_	29	cc	O	_
+@@ -176470,7 +176470,7 @@
+ 4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	O	_
+ 5	água	água	NOUN	_	Gender=Fem|Number=Sing	3	obj	B=FLUIDO	_
+ 6	com	com	ADP	_	_	7	case	O	_
+-7	desemulsificante	desemulsificante	NOUN	_	Gender=Masc|Number=Sing	3	obl	B=QUÍMICA	_
++7	desemulsificante	desemulsificante	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=QUÍMICA	_
+ 
+ # text = O aparato foi completado com a solução de desemulsificante a partir da abertura de uma das tampas acrílicas..
+ # sent_id = 77-20141209-TESEMSC_0-327
+@@ -180629,7 +180629,7 @@
+ 25	discrepância	discrepância	NOUN	_	Gender=Fem|Number=Sing	21	obj	O	_
+ 26	entre	entre	ADP	_	_	28	case	O	_
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
+-28	valores	valor	NOUN	_	Gender=Masc|Number=Plur	21	obl	O	_
++28	valores	valor	NOUN	_	Gender=Masc|Number=Plur	25	nmod	O	_
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+@@ -180784,7 +180784,7 @@
+ 15	coerência	coerência	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 16	entre	entre	ADP	_	_	18	case	O	_
+ 17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	O	_
+-18	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
++18	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	limpeza	limpeza	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 21	parcial	parcial	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
+@@ -182110,7 +182110,7 @@
+ # sent_id = 279-20140530-MONOGRAFIA_0-7
+ 1	Segundo	segundo	ADP	_	_	3	case	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+-3	ANP	ANP	PROPN	_	Gender=Fem|Number=Sing	24	obl	O	_
++3	ANP	ANP	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+ 4	[	[	PUNCT	_	_	5	punct	O	_
+ 5	1	1	PROPN	_	Gender=Fem|Number=Sing	3	nmod:appos	O	_
+ 6	]	]	PUNCT	_	_	5	punct	O	_
+@@ -182524,7 +182524,7 @@
+ 25	combustível	combustível	NOUN	_	Gender=Masc|Number=Sing	23	obj	O	_
+ 26	com	com	ADP	_	_	28	case	O	_
+ 27	95	95	NUM	_	NumType=Card	28	nummod	O	_
+-28	%	%	SYM	_	_	23	obl	O	_
++28	%	%	SYM	_	_	25	nmod	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	B=PRODUTO|B=FLUIDO	_
+ 31	diesel	diesel	ADJ	_	Gender=Masc|Number=Sing	30	amod	B=PRODUTO|I=PRODUTO	_
+@@ -182688,7 +182688,7 @@
+ # text = Segundo ANP um dos princípios do marco regulatório para produção de biodiesel é o aproveitamento das oleaginosas de acordo com as diversidades regionais, fortalecendo as potencialidades de cada região para produção da matéria-prima..
+ # sent_id = 279-20140530-MONOGRAFIA_0-25
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	ANP	ANP	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	_
++2	ANP	ANP	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 3	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	17	nsubj	O	_
+ 4-5	dos	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+@@ -183509,7 +183509,7 @@
+ 36	,	,	PUNCT	_	_	13	punct	O	_
+ 37	em	em	ADP	_	_	39	case	O	_
+ 38	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
+-39	motor	motor	NOUN	_	Gender=Masc|Number=Sing	43	obl	O	_
++39	motor	motor	NOUN	_	Gender=Masc|Number=Sing	13	obl	O	_
+ 40	diesel	diesel	ADJ	_	Gender=Masc|Number=Sing	39	amod	B=PRODUTO	_
+ 41	,	,	PUNCT	_	_	39	punct	O	_
+ 42	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	aux:pass	O	_
+@@ -183549,7 +183549,7 @@
+ 14	obtido	obter	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
+ 15	com	com	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	11	obl	B=PRODUTO|B=FLUIDO	_
++17	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=PRODUTO|B=FLUIDO	_
+ 18	diesel	diesel	ADJ	_	Gender=Masc|Number=Sing	17	amod	B=PRODUTO|I=PRODUTO	_
+ 19	indicando	indicar	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 20	que	que	SCONJ	_	_	22	mark	O	_
+@@ -186811,7 +186811,7 @@
+ 14	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 15	entre	entre	ADP	_	_	17	case	O	_
+ 16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
+-17	testes	teste	NOUN	_	Gender=Masc|Number=Plur	9	obl	B=MÉTODO	_
++17	testes	teste	NOUN	_	Gender=Masc|Number=Plur	11	nmod	B=MÉTODO	_
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+@@ -186820,7 +186820,7 @@
+ 22	,	,	PUNCT	_	_	25	punct	O	_
+ 23	entre	entre	ADP	_	_	25	case	O	_
+ 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+-25	testes	teste	NOUN	_	Gender=Masc|Number=Plur	9	obl	B=MÉTODO	_
++25	testes	teste	NOUN	_	Gender=Masc|Number=Plur	17	conj	B=MÉTODO	_
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+@@ -186828,7 +186828,7 @@
+ 29	e	e	CCONJ	_	_	32	cc	O	_
+ 30	entre	entre	ADP	_	_	32	case	O	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
+-32	testes	teste	NOUN	_	Gender=Masc|Number=Plur	25	conj	B=MÉTODO	_
++32	testes	teste	NOUN	_	Gender=Masc|Number=Plur	17	conj	B=MÉTODO	_
+ 33-34	da	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+@@ -190698,9 +190698,9 @@
+ 
+ # text = b) Testar o catalisador no processo de produção de biodiesel em escala de laboratório via catálise heterogênea..
+ # sent_id = 271-20150810-MONOGRAFIA_0-32
+-1	b	b	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
++1	b	b	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+ 2	)	)	PUNCT	_	_	1	punct	O	_
+-3	Testar	testar	VERB	_	VerbForm=Inf	17	csubj	O	_
++3	Testar	testar	VERB	_	VerbForm=Inf	0	root	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	3	obj	B=QUÍMICA	_
+ 6-7	no	_	_	_	_	_	_	_	_
+@@ -190715,11 +190715,11 @@
+ 14	escala	escala	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	laboratório	laboratório	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+-17	via	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	O	_
+-18	catálise	catálise	NOUN	_	Gender=Fem|Number=Sing	17	obj	O	_
++17	via	via	ADP	_	_	18	case	O	_
++18	catálise	catálise	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 19	heterogênea	heterogêneo	ADJ	_	Gender=Fem|Number=Sing	18	amod	O	_
+-20	.	.	PUNCT	_	_	17	punct	O	_
+-21	.	.	PUNCT	_	_	17	punct	O	_
++20	.	.	PUNCT	_	_	3	punct	O	_
++21	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = c) Levantar os investimentos e custos de produção de biodiesel em uma unidade piloto, bem como avaliar a viabilidade econômica deste processo em diferentes cenários..
+ # sent_id = 271-20150810-MONOGRAFIA_0-33
+@@ -190857,7 +190857,7 @@
+ 25-26	ao	_	_	_	_	_	_	_	_
+ 25	a	a	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	diesel	diesel	NOUN	_	Gender=Masc|Number=Sing	21	obl	B=PRODUTO	_
++27	diesel	diesel	NOUN	_	Gender=Masc|Number=Sing	24	obl	B=PRODUTO	_
+ 28	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	O	_
+ 29	feitas	fazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 30	,	,	PUNCT	_	_	31	punct	O	_
+@@ -191158,7 +191158,7 @@
+ 7	resolução	resolução	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+ 8	ANP	ANP	PROPN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 9-10	n°	_	_	_	_	_	_	_	_
+-9	em	em	ADP	_	_	11	case	O	_
++9	em	em	ADP	_	_	11	case	O	tokenização
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	3/2014	3/2014	NUM	_	NumType=Card	4	obl	O	_
+ 
+@@ -191176,7 +191176,7 @@
+ 1-2	No	_	_	_	_	_	_	_	_
+ 1	Em	em	ADP	_	_	3	case	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+-3	processo	processo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
++3	processo	processo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	produção	produção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 6-7	do	_	_	_	_	_	_	_	_
+@@ -193560,7 +193560,7 @@
+ 53	químicas	químico	ADJ	_	Gender=Fem|Number=Plur	52	amod	O	_
+ 54	com	com	ADP	_	_	56	case	O	_
+ 55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	O	_
+-56	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	51	obl	O	_
++56	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	52	nmod	O	_
+ 57	catalítico	catalítico	ADJ	_	Gender=Masc|Number=Sing	56	amod	O	_
+ 58	,	,	PUNCT	_	_	59	punct	O	_
+ 59	ativando	ativar	VERB	_	VerbForm=Ger	51	advcl	O	_
+@@ -193716,10 +193716,10 @@
+ 13	mássicos	mássico	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 14	:	:	PUNCT	_	_	12	punct	O	_
+ 15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	O	_
+-16	catalisadores	catalisador	ADJ	_	Gender=Masc|Number=Plur	12	acl:relcl	B=QUÍMICA	_
++16	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	12	acl:relcl	B=QUÍMICA	_
+ 17	constituídos	constituir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+-19	aglomerados	aglomerado	NOUN	_	Gender=Masc|Number=Plur	16	obl	B=LITOLOGIA	_
++19	aglomerados	aglomerado	NOUN	_	Gender=Masc|Number=Plur	17	obl	B=LITOLOGIA	_
+ 20	formados	formar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	O	_
+ 21	por	por	ADP	_	_	22	case	O	_
+ 22	grãos	grão	NOUN	_	Gender=Masc|Number=Plur	20	obl:agent	O	_
+@@ -197021,7 +197021,7 @@
+ 10-11	na	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14	IME	IME	PROPN	_	Gender=Fem|Number=Sing	3	appos	O	_
+ 15	=	=	PUNCT	_	_	16	punct	O	_
+@@ -198193,7 +198193,7 @@
+ 19	usina	usina	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 20	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 21	para	para	ADP	_	_	22	case	O	_
+-22	produção	produção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
++22	produção	produção	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	22	nmod	B=PRODUTO	_
+ 25	localizada	localizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	O	_
+@@ -198984,10 +198984,10 @@
+ # text = O catalisador denominado TA dopado com lítio e sem dopar, após a calcinação, são apresentados na Figura 7..
+ # sent_id = 271-20150810-MONOGRAFIA_0-289
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	B=QUÍMICA	_
++2	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	B=QUÍMICA	_
+ 3	denominado	denominar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
+-4	TA	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	O	_
+-5	dopado	dopar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	O	_
++4	TA	TA	PROPN	_	Gender=Masc|Number=Sing	3	xcomp	O	_
++5	dopado	dopar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
+ 6	com	com	ADP	_	_	7	case	O	_
+ 7	lítio	lítio	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 8	e	e	CCONJ	_	_	10	cc	O	_
+@@ -198996,10 +198996,10 @@
+ 11	,	,	PUNCT	_	_	10	punct	O	_
+ 12	após	após	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	calcinação	calcinação	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
++14	calcinação	calcinação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 15	,	,	PUNCT	_	_	10	punct	O	_
+ 16	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:pass	O	_
+-17	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	conj	O	_
++17	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 18-19	na	_	_	_	_	_	_	_	_
+ 18	em	em	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+@@ -201534,7 +201534,7 @@
+ 27	para	para	ADP	_	_	29	case	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+ 29	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	6	obl	B=FLUIDO	_
+-30	des	des	ADP	_	_	31	case	O	_
++30	des	de	ADP	_	_	31	case	O	_
+ 31	soja	soja	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
+ 32	comercial	comercial	ADJ	_	Gender=Fem|Number=Sing	31	amod	O	_
+ 33	.	.	PUNCT	_	_	6	punct	O	_
+@@ -202057,7 +202057,7 @@
+ 11	conversão	conversão	NOUN	_	Gender=Fem|Number=Sing	10	obj	O	_
+ 12	acima	acima	ADV	_	_	10	advmod	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+-14	90%	90%	NUM	_	NumType=Card	12	obl	O	_
++14	90%	90%	NUM	_	NumType=Card	11	nmod	O	_
+ 15	,	,	PUNCT	_	_	17	punct	O	_
+ 16	para	para	ADP	_	_	17	case	O	_
+ 17	5	5	NUM	_	NumType=Card	11	nmod	O	_
+@@ -203566,7 +203566,7 @@
+ 15	20	20	NUM	_	NumType=Card	16	nummod	O	_
+ 16	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 17	para	para	ADP	_	_	18	case	O	_
+-18	dosagem	dosagem	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
++18	dosagem	dosagem	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -204842,7 +204842,7 @@
+ 16-17	na	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	receita	receita	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
++18	receita	receita	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+ 19	.	.	PUNCT	_	_	3	punct	O	_
+ 20	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -206713,7 +206713,7 @@
+ 23	acima	acima	ADV	_	_	21	advmod	O	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	95	95	NUM	_	NumType=Card	26	nummod	O	_
+-26	%	%	SYM	_	_	23	obl	O	_
++26	%	%	SYM	_	_	22	nmod	O	_
+ 27	em	em	ADP	_	_	29	case	O	_
+ 28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+ 29	hora	hora	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
+@@ -209408,11 +209408,11 @@
+ 5	moleculares	molecular	ADJ	_	Gender=Masc|Number=Plur	4	amod	O	_
+ 6	,	,	PUNCT	_	_	8	punct	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+-8	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
++8	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 9	coloidal	coloidal	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 10	,	,	PUNCT	_	_	8	punct	O	_
+ 11	em	em	ADP	_	_	12	case	O	_
+-12	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
++12	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 13	com	com	ADP	_	_	15	case	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+ 15	moléculas	molécula	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
+@@ -212170,7 +212170,7 @@
+ # text = Segundo Samuel Feitoza (2012), a espectrofotometria é um método de análises bastante usado em investigações biológicas e físico-químicas..
+ # sent_id = 391-20160914-MONOGRAFIA_0-131
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Samuel	Samuel	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
++2	Samuel	Samuel	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 3	Feitoza	Feitoza	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	(	(	PUNCT	_	_	2	flat:name	O	_
+ 5	2012	2012	NUM	_	NumType=Card	2	flat:name	O	_
+@@ -214398,7 +214398,7 @@
+ 13	óleo/tensoativo	óleo/tensoativo	NOUN	_	Gender=Masc|Number=Sing	11	appos	O	_
+ 14	)	)	PUNCT	_	_	13	punct	O	_
+ 15	com	com	ADP	_	_	16	case	O	_
+-16	água	água	NOUN	_	Gender=Fem|Number=Sing	8	obl	B=FLUIDO	_
++16	água	água	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=FLUIDO	_
+ 17	até	até	SCONJ	_	_	24	mark	O	_
+ 18	que	que	SCONJ	_	_	24	mark	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+@@ -214735,7 +214735,7 @@
+ 
+ # text = mL de clorofórmio, agitar por 1 minuto, em seguida centrifugar para facilitar a separação de fases..
+ # sent_id = 391-20160914-MONOGRAFIA_0-216
+-1	mL	ml	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	mL	ml	NOUN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	clorofórmio	clorofórmio	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 4	,	,	PUNCT	_	_	5	punct	O	_
+@@ -215635,7 +215635,7 @@
+ 12-13	no	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	clorofórmio	clorofórmio	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
++14	clorofórmio	clorofórmio	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	O	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	231,9	231,9	NUM	_	NumType=Card	18	nummod	O	_
+@@ -215997,7 +215997,7 @@
+ 41-42	à	_	_	_	_	_	_	_	_
+ 41	a	a	ADP	_	_	40	fixed	O	_
+ 42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	O	_
+-43	absorção	absorção	NOUN	_	Gender=Fem|Number=Sing	32	obl	O	_
++43	absorção	absorção	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	_
+ 44-45	do	_	_	_	_	_	_	_	_
+ 44	de	de	ADP	_	_	46	case	O	_
+ 45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	O	_
+@@ -216632,11 +216632,11 @@
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+ 3	zeólitas	zeólita	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	B=LITOLOGIA	_
+ 4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+-5	materiais	material	ADJ	_	Gender=Fem|Number=Plur	0	root	O	_
++5	materiais	material	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 6	especialmente	especialmente	ADV	_	_	7	advmod	O	_
+ 7	interessantes	interessante	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
+ 8	para	para	ADP	_	_	9	case	O	_
+-9	uso	uso	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
++9	uso	uso	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 10	como	como	ADP	_	_	11	case	O	_
+ 11	suportes	suporte	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+ 12	,	,	PUNCT	_	_	14	punct	O	_
+@@ -216784,7 +216784,7 @@
+ 19	zeólitas	zeólita	NOUN	_	Gender=Fem|Number=Plur	17	obl	B=LITOLOGIA	_
+ 20	Y	Y	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 21	para	para	ADP	_	_	22	case	O	_
+-22	hidrogenação	hidrogenação	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
++22	hidrogenação	hidrogenação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
+ 25	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
+@@ -217377,7 +217377,7 @@
+ 44	,	,	PUNCT	_	_	43	punct	O	_
+ 45	em	em	ADP	_	_	47	case	O	_
+ 46	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	O	_
+-47	recipiente	recipiente	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
++47	recipiente	recipiente	NOUN	_	Gender=Masc|Number=Sing	36	nmod	O	_
+ 48	a	a	ADP	_	_	50	case	O	_
+ 49	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	50	amod	O	_
+ 50	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	47	nmod	O	_
+@@ -222128,7 +222128,7 @@
+ 8	NH3	NH3	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 9	a	a	ADP	_	_	11	case	O	_
+ 10	175	175	NUM	_	NumType=Card	11	nummod	O	_
+-11	°C	°c	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
++11	°C	°c	NOUN	_	Gender=Masc|Number=Plur	3	obl	O	_
+ 12	seguidos	seguir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	acl	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	TPD	TPD	PROPN	_	Gender=Masc|Number=Sing	12	obj	O	_
+@@ -228559,7 +228559,7 @@
+ 28	de	de	ADP	_	_	29	case	O	_
+ 29	alumínio	alumínio	NOUN	_	Gender=Masc|Number=Sing	27	obl	O	_
+ 30	em	em	ADP	_	_	31	case	O	_
+-31	coordenação	coordenação	NOUN	_	Gender=Fem|Number=Sing	27	obl	O	_
++31	coordenação	coordenação	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
+ 32	octaédrica	octaédrico	ADJ	_	Gender=Fem|Number=Sing	31	amod	O	_
+ 33	.	.	PUNCT	_	_	1	punct	O	_
+ 34	.	.	PUNCT	_	_	1	punct	O	_
+@@ -229826,10 +229826,10 @@
+ 17	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	O	_
+ 18	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	O	_
+ 19	menos	pouco	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	O	_
+-20	prótons	prótom	NOUN	_	Gender=Masc|Number=Plur	18	obj	O	_
++20	prótons	próton	NOUN	_	Gender=Masc|Number=Plur	18	obj	O	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	23	det	O	_
+-23	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
++23	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+ 24	.	.	PUNCT	_	_	3	punct	O	_
+ 25	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -230054,7 +230054,7 @@
+ 13-14	nos	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
+-15	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	26	obl	B=QUÍMICA	_
++15	catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	26	nmod	B=QUÍMICA	_
+ 16	com	com	ADP	_	_	18	case	O	_
+ 17	10	10	NUM	_	NumType=Card	18	nummod	O	_
+ 18	%	%	SYM	_	_	15	nmod	O	_
+@@ -234379,9 +234379,9 @@
+ 17	Santos	Santos	PROPN	_	Number=Sing	16	flat:name	B=BACIA|I=UNIDADE_LITOESTRATIGRÁFICA|B=LOCAL:POL	_
+ 18	)	)	PUNCT	_	_	16	punct	O	_
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+-20	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	14	conj	B=LITOLOGIA	_
++20	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	14	conj	B=LITOLOGIA	_
+ 21	de	de	ADP	_	_	22	case	O	_
+-22	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
++22	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+ 23	marinho	marinho	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 24	raso	raso	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+@@ -234731,7 +234731,7 @@
+ 5	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	O	_
+ 6	turonianos	turoniano	ADJ	_	Gender=Masc|Number=Plur	5	amod	B=GEOCRONOLOGIA	_
+ 7	a	a	ADP	_	_	8	case	O	_
+-8	campanianos	campaniano	NOUN	_	Gender=Masc|Number=Plur	6	obl	B=GEOCRONOLOGIA	_
++8	campanianos	campaniano	ADJ	_	Gender=Masc|Number=Plur	6	obl	B=GEOCRONOLOGIA	_
+ 9	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 10	intercalados	intercalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	9	xcomp	O	_
+ 11	a	a	ADP	_	_	12	case	O	_
+@@ -235706,7 +235706,7 @@
+ 29	sedimentar	sedimentar	ADJ	_	Gender=Masc|Number=Sing	28	amod	O	_
+ 30	terciário	terciário	ADJ	_	Gender=Masc|Number=Sing	28	amod	O	_
+ 31	a	a	ADP	_	_	32	case	O	_
+-32	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	30	obl	O	_
++32	oeste	oeste	NOUN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 33-34	do	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	36	case	O	_
+ 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+@@ -237782,7 +237782,7 @@
+ 3	segundo	segundo	ADP	_	_	6	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 5	mesmo	mesmo	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+-6	autor	autor	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
++6	autor	autor	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 7	,	,	PUNCT	_	_	6	punct	O	_
+ 8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	O	_
+ 9	diques	dique	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+@@ -238620,7 +238620,7 @@
+ 42	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	41	compound	I=LITOLOGIA|B=LITOLOGIA	_
+ 43	grosseiro	grosseiro	ADJ	_	Gender=Masc|Number=Sing	41	amod	O	_
+ 44	com	com	ADP	_	_	45	case	O	_
+-45	bolsões	bolsão	NOUN	_	Gender=Masc|Number=Plur	37	obl	O	_
++45	bolsões	bolsão	NOUN	_	Gender=Masc|Number=Plur	39	nmod	O	_
+ 46	pegmatóides	pegmatóide	ADJ	_	Gender=Masc|Number=Plur	45	amod	O	_
+ 47	,	,	PUNCT	_	_	51	punct	O	_
+ 48	como	como	ADP	_	_	51	case	O	_
+@@ -241186,7 +241186,7 @@
+ 2	segundo	segundo	ADP	_	_	5	case	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+ 4	mesmos	mesmo	ADJ	_	Gender=Masc|Number=Plur	5	amod	O	_
+-5	autores	autor	NOUN	_	Gender=Masc|Number=Plur	21	obl	O	_
++5	autores	autor	NOUN	_	Gender=Masc|Number=Plur	21	nmod	O	_
+ 6	,	,	PUNCT	_	_	5	punct	O	_
+ 7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	situação	situação	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	O	_
+@@ -241522,7 +241522,7 @@
+ 37	torno	torno	NOUN	_	Gender=Masc|Number=Sing	36	fixed	O	_
+ 38	de	de	ADP	_	_	36	fixed	O	_
+ 39	800	800	NUM	_	NumType=Card	40	nummod	O	_
+-40	m	m	NOUN	_	Gender=Masc|Number=Plur	30	obl	O	_
++40	m	m	NOUN	_	Gender=Masc|Number=Plur	34	nmod	O	_
+ 41	(	(	PUNCT	_	_	42	punct	O	_
+ 42	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	40	appos	O	_
+ 43	e	e	CCONJ	_	_	44	cc	O	_
+@@ -241741,7 +241741,7 @@
+ 8	detalhado	detalhado	ADJ	_	Gender=Masc|Number=Sing	7	amod	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	magmatismo	magmatismo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
++11	magmatismo	magmatismo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 12	pós-aptiano	pós-aptiano	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+@@ -241879,7 +241879,7 @@
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	base	base	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	base	base	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+@@ -242066,7 +242066,7 @@
+ 32	coincidente	coincidente	ADJ	_	Gender=Masc|Number=Sing	31	amod	O	_
+ 33	com	com	ADP	_	_	35	case	O	_
+ 34	importante	importante	ADJ	_	Gender=Masc|Number=Sing	35	amod	O	_
+-35	alinhamento	alinhamento	NOUN	_	Gender=Masc|Number=Sing	24	obl	O	_
++35	alinhamento	alinhamento	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
+ 36	de	de	ADP	_	_	37	case	O	_
+ 37	direção	direção	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
+ 38	NW/SE	NW/SE	PROPN	_	Gender=Fem|Number=Sing	37	nmod	O	_
+@@ -243237,12 +243237,12 @@
+ 19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	O	_
+ 20	mesmos	mesmo	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+ 21	com	com	ADP	_	_	22	case	O	_
+-22	foco	foco	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
++22	foco	foco	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 23	principal	principal	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 24-25	na	_	_	_	_	_	_	_	_
+ 24	em	em	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+-26	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++26	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 27	quantitativa	quantitativo	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+ 28	.	.	PUNCT	_	_	8	punct	O	_
+ 29	.	.	PUNCT	_	_	8	punct	O	_
+@@ -244947,7 +244947,7 @@
+ 4	detalhada	detalhado	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
+ 5	sobre	sobre	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
++7	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 8	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	O	_
+ 9	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 10-11	nos	_	_	_	_	_	_	_	_
+@@ -245603,7 +245603,7 @@
+ 14	a	a	ADP	_	_	17	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 16	inevitável	inevitável	ADJ	_	Gender=Fem|Number=Sing	17	amod	O	_
+-17	amplificação	amplificação	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
++17	amplificação	amplificação	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+@@ -247141,7 +247141,7 @@
+ 19	úteis	útil	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+ 20	sobre	sobre	ADP	_	_	22	case	O	_
+ 21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+-22	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
++22	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
+ 25	observacionais	observacional	ADJ	_	Gender=Fem|Number=Plur	24	amod	O	_
+@@ -251406,7 +251406,7 @@
+ 14-15	neste	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	O	_
+ 15	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	O	_
+-16	caso	caso	NOUN	_	Gender=Masc|Number=Sing	22	obl	O	_
++16	caso	caso	NOUN	_	Gender=Masc|Number=Sing	1	obl	O	_
+ 17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+ 18	susceptibilidades	susceptibilidade	NOUN	_	Gender=Fem|Number=Plur	7	appos	O	_
+ 19	magnéticas	magnético	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+@@ -253955,10 +253955,10 @@
+ 2	estimativa	estimativa	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-5	obtida	obter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	O	_
++5	obtida	obter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	320	320	NUM	_	NumType=Card	8	nummod	O	_
+-8	m	m	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
++8	m	m	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+ 9	e	e	CCONJ	_	_	11	cc	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	índice	índice	NOUN	_	Gender=Masc|Number=Sing	8	conj	O	_
+@@ -257008,7 +257008,7 @@
+ 
+ # text = P estimado ao estimador MQ acima para próxima iteração K+1
+ # sent_id = 20-20140904-TESEDSC_0-647
+-1	P	P	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	P	P	NOUN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	estimado	estimado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	O	_
+ 3-4	ao	_	_	_	_	_	_	_	_
+ 3	a	a	ADP	_	_	5	case	O	_
+@@ -257792,7 +257792,7 @@
+ 29	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	27	obj	O	_
+ 30	com	com	ADP	_	_	32	case	O	_
+ 31	estas	este	DET	_	Gender=Fem|Number=Plur|PronType=Dem	32	det	O	_
+-32	características	característica	NOUN	_	Gender=Fem|Number=Plur	27	obl	O	_
++32	características	característica	NOUN	_	Gender=Fem|Number=Plur	29	nmod	O	_
+ 33	.	.	PUNCT	_	_	12	punct	O	_
+ 34	.	.	PUNCT	_	_	12	punct	O	_
+ 
+@@ -258352,7 +258352,7 @@
+ 28	mais	mais	ADV	_	_	29	advmod	O	_
+ 29	suavizadas	suavizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	27	acl	O	_
+ 30	com	com	ADP	_	_	31	case	O	_
+-31	predominância	predominância	NOUN	_	Gender=Fem|Number=Sing	29	obl	O	_
++31	predominância	predominância	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+ 32-33	dos	_	_	_	_	_	_	_	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	O	_
+@@ -258658,7 +258658,7 @@
+ 21	torno	torno	NOUN	_	Gender=Masc|Number=Sing	20	fixed	O	_
+ 22	de	de	ADP	_	_	20	fixed	O	_
+ 23	2000	2000	NUM	_	NumType=Card	24	nummod	O	_
+-24	nT	nt	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
++24	nT	nt	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+ 26	ou	ou	CCONJ	_	_	30	cc	O	_
+ 27	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	fixed	O	_
+@@ -260418,7 +260418,7 @@
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	porção	porção	NOUN	_	Gender=Fem|Number=Sing	22	obl	O	_
++15	porção	porção	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 16	interior	interior	ADJ	_	Gender=Fem|Number=Sing	15	amod	O	_
+ 17-18	do	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+@@ -260504,7 +260504,7 @@
+ 35-36	na	_	_	_	_	_	_	_	_
+ 35	em	em	ADP	_	_	37	case	O	_
+ 36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
+-37	representação	representação	NOUN	_	Gender=Fem|Number=Sing	32	obl	O	_
++37	representação	representação	NOUN	_	Gender=Fem|Number=Sing	34	nmod	O	_
+ 38-39	do	_	_	_	_	_	_	_	_
+ 38	de	de	ADP	_	_	40	case	O	_
+ 39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	O	_
+@@ -261209,7 +261209,7 @@
+ 13	hipóteses	hipótese	NOUN	_	Gender=Fem|Number=Plur	12	obj	O	_
+ 14	sobre	sobre	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	existência	existência	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
++16	existência	existência	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 17	de	de	ADP	_	_	20	case	O	_
+ 18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 19	possível	possível	ADJ	_	Gender=Masc|Number=Sing	20	amod	O	_
+@@ -262338,7 +262338,7 @@
+ 16	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 17	sobre	sobre	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	porção	porção	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++19	porção	porção	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 20	SW	SW	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+@@ -262943,7 +262943,7 @@
+ 48-49	ao	_	_	_	_	_	_	_	_
+ 48	a	a	ADP	_	_	50	case	O	_
+ 49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	O	_
+-50	campo	campo	NOUN	_	Gender=Masc|Number=Sing	45	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++50	campo	campo	NOUN	_	Gender=Masc|Number=Sing	47	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 51	atual	atual	ADJ	_	Gender=Masc|Number=Sing	50	amod	O	_
+ 52	(	(	PUNCT	_	_	54	punct	O	_
+ 53	36º	36º	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	54	amod	O	_
+@@ -263061,7 +263061,7 @@
+ 25	ascendentes	ascendente	ADJ	_	Gender=Fem|Number=Plur	23	amod	O	_
+ 26	sobre	sobre	ADP	_	_	28	case	O	_
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
+-28	corpos	corpo	NOUN	_	Gender=Masc|Number=Plur	24	obl	O	_
++28	corpos	corpo	NOUN	_	Gender=Masc|Number=Plur	23	nmod	O	_
+ 29	,	,	PUNCT	_	_	34	punct	O	_
+ 30	como	como	ADV	_	_	34	cc	O	MWEPOS=CCONJ
+ 31	também	também	ADV	_	_	30	fixed	O	_
+@@ -265350,7 +265350,7 @@
+ 29	magnética	magnético	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
+ 30	com	com	ADP	_	_	32	case	O	_
+ 31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	O	_
+-32	características	característica	NOUN	_	Gender=Fem|Number=Plur	26	obl	O	_
++32	características	característica	NOUN	_	Gender=Fem|Number=Plur	28	nmod	O	_
+ 33	mencionadas	mencionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	32	acl	O	_
+ 34	acima..	acima..	PUNCT	_	_	13	punct	O	_
+ 
+@@ -265995,7 +265995,7 @@
+ 9	7	7	NUM	_	NumType=Card	8	nummod	O	_
+ 10	sobre	sobre	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	integração	integração	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
++12	integração	integração	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 13-14	dos	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
+@@ -266218,7 +266218,7 @@
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 11	para	para	ADP	_	_	12	case	O	_
+-12	sul	sul	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
++12	sul	sul	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	16	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+@@ -266539,15 +266539,15 @@
+ 5	demais	demais	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
+ 6	alinhamentos	alinhamento	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+ 7	paralelos	paralelo	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+-8	a	a	SCONJ	_	_	9	mark	O	_
++8	a	a	ADP	_	_	9	case	O	_
+ 9-10	subparalelos	_	_	_	_	_	_	_	_
+-9	subparala	subparalo	VERB	_	VerbForm=Inf	6	acl	O	_
++9	subparale	subparalelo	ADJ	_	Gender=Masc|Number=Plur	7	obl	O	tokenização
+ 10	los	eles	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	obj	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	14	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 13	referido	referir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	O	_
+-14	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
++14	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 15	(	(	PUNCT	_	_	16	punct	O	_
+ 16	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	22	parataxis	O	_
+ 17	3.3	3.3	NUM	_	NumType=Card	16	nummod	O	_
+@@ -268772,7 +268772,7 @@
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	dique	dique	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
++26	dique	dique	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+ 27-28	na	_	_	_	_	_	_	_	_
+ 27	em	em	ADP	_	_	29	case	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+@@ -269725,7 +269725,7 @@
+ 8	curvilíneo	curvilíneo	ADJ	_	Gender=Masc|Number=Sing	7	amod	O	_
+ 9	com	com	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	concavidade	concavidade	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
++11	concavidade	concavidade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 12	voltada	voltar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
+ 13	para	para	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+@@ -269915,7 +269915,7 @@
+ 32	nítida	nítido	ADJ	_	Gender=Fem|Number=Sing	33	amod	O	_
+ 33	curvatura	curvatura	NOUN	_	Gender=Fem|Number=Sing	31	obj	O	_
+ 34	com	com	ADP	_	_	35	case	O	_
+-35	concavidade	concavidade	NOUN	_	Gender=Fem|Number=Sing	31	obl	O	_
++35	concavidade	concavidade	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
+ 36	voltada	voltar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	35	acl	O	_
+ 37	para	para	ADP	_	_	39	case	O	_
+ 38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	O	_
+@@ -270819,7 +270819,7 @@
+ 26-27	na	_	_	_	_	_	_	_	_
+ 26	em	em	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	direção	direção	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
++28	direção	direção	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 29	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	28	nmod	O	_
+ 30	.	.	PUNCT	_	_	17	punct	O	_
+ 31	.	.	PUNCT	_	_	17	punct	O	_
+@@ -271405,7 +271405,7 @@
+ 
+ # text = A hipótese interpretativa desenvolvida para o perfil I
+ # sent_id = 20-20140904-TESEDSC_0-1006
+-1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
++1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	hipótese	hipótese	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 3	interpretativa	interpretativo	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
+ 4	desenvolvida	desenvolver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	_
+@@ -276318,7 +276318,7 @@
+ 4	,	,	PUNCT	_	_	7	punct	O	_
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	boa	bom	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
+-7	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
++7	parte	parte	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 10	alcalina	alcalino	ADJ	_	Gender=Fem|Number=Sing	9	amod	B=QUÍMICA	_
+@@ -277678,7 +277678,7 @@
+ 51	magnética	magnético	ADJ	_	Gender=Fem|Number=Sing	50	amod	O	_
+ 52	para	para	ADP	_	_	54	case	O	_
+ 53	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	O	_
+-54	grabén	grabén	NOUN	_	Gender=Masc|Number=Sing	48	obl	B=LOCAL:GEO	_
++54	grabén	grabén	NOUN	_	Gender=Masc|Number=Sing	50	nmod	B=LOCAL:GEO	_
+ 55-56	da	_	_	_	_	_	_	_	_
+ 55	de	de	ADP	_	_	57	case	O	_
+ 56	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	O	_
+@@ -277793,7 +277793,7 @@
+ 21	torno	torno	NOUN	_	Gender=Masc|Number=Sing	20	fixed	O	_
+ 22	de	de	ADP	_	_	20	fixed	O	_
+ 23	800	800	NUM	_	NumType=Card	24	nummod	O	_
+-24	metros	metro	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
++24	metros	metro	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
+ 25	(	(	PUNCT	_	_	27	punct	O	_
+ 26	já	já	ADV	_	_	27	advmod	O	_
+ 27	descontados	descontar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	24	acl	O	_
+@@ -279432,7 +279432,7 @@
+ 22	sobre	sobre	ADP	_	_	25	case	O	_
+ 23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+ 24	pequeno	pequeno	ADJ	_	Gender=Masc|Number=Sing	25	amod	O	_
+-25	trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
++25	trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+@@ -280103,7 +280103,7 @@
+ 27-28	na	_	_	_	_	_	_	_	_
+ 27	em	em	ADP	_	_	29	case	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+-29	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	45	obl	O	_
++29	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 30-31	dos	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	O	_
+@@ -284906,7 +284906,7 @@
+ 17	,	,	PUNCT	_	_	20	punct	O	_
+ 18	segundo	segundo	ADP	_	_	20	case	O	_
+ 19	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	20	det	O	_
+-20	autores	autor	NOUN	_	Gender=Masc|Number=Plur	22	obl	O	_
++20	autores	autor	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
+ 21	,	,	PUNCT	_	_	20	punct	O	_
+ 22	locais	local	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 23	de	de	ADP	_	_	25	case	O	_
+@@ -284955,7 +284955,7 @@
+ 32	controle	controle	NOUN	_	Gender=Masc|Number=Sing	30	obj	O	_
+ 33	sobre	sobre	ADP	_	_	35	case	O	_
+ 34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	O	_
+-35	ocorrências	ocorrência	NOUN	_	Gender=Fem|Number=Plur	30	obl	O	_
++35	ocorrências	ocorrência	NOUN	_	Gender=Fem|Number=Plur	32	nmod	O	_
+ 36	de	de	ADP	_	_	37	case	O	_
+ 37	corpos	corpo	NOUN	_	Gender=Masc|Number=Plur	35	nmod	O	_
+ 38	alcalinos	alcalino	ADJ	_	Gender=Masc|Number=Plur	37	amod	B=QUÍMICA	_
+@@ -285629,7 +285629,7 @@
+ 28	interessante	interessante	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29	para	para	ADP	_	_	31	case	O	_
+ 30	nova	novo	ADJ	_	Gender=Fem|Number=Sing	31	amod	O	_
+-31	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
++31	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	28	obl	O	_
+ 32	.	.	PUNCT	_	_	26	punct	O	_
+ 33	.	.	PUNCT	_	_	26	punct	O	_
+ 
+@@ -289797,7 +289797,7 @@
+ 23	anular	anular	ADJ	_	Gender=Masc|Number=Sing	22	amod	O	_
+ 24	entre	entre	ADP	_	_	26	case	O	_
+ 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
+-26	paredes	parede	NOUN	_	Gender=Fem|Number=Plur	23	obl	O	_
++26	paredes	parede	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
+ 27-28	do	_	_	_	_	_	_	_	_
+ 27	de	de	ADP	_	_	29	case	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+@@ -291704,7 +291704,7 @@
+ # text = Segundo Gallino et al., 2001, um fluido drill-in é um fluido com menor poder de dano, que pode ser utilizado na perfuração através de formações produtoras, especialmente quando longas seções horizontais devem ser perfuradas..
+ # sent_id = 119-20141209-TESEMSC_0-159
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Gallino	Gallino	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
++2	Gallino	Gallino	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 3	et	et	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	al.	al.	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	,	,	PUNCT	_	_	2	flat:name	O	_
+@@ -291956,7 +291956,7 @@
+ 21	poço	poço	NOUN	_	Gender=Masc|Number=Sing	18	obj	O	_
+ 22	sem	sem	ADP	_	_	24	case	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+-24	presença	presença	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
++24	presença	presença	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+@@ -292042,7 +292042,7 @@
+ 19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 20	reboco	reboco	NOUN	_	Gender=Masc|Number=Sing	18	obj	O	_
+ 21	com	com	ADP	_	_	22	case	O	_
+-22	características	característica	NOUN	_	Gender=Fem|Number=Plur	18	obl	O	_
++22	características	característica	NOUN	_	Gender=Fem|Number=Plur	20	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	impermeabilização	impermeabilização	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 25	desejáveis	desejável	ADJ	_	Gender=Fem|Number=Plur	22	amod	O	_
+@@ -293475,7 +293475,7 @@
+ # text = Segundo Darley & Gray, 1988, a bentonita é a argila comercial mais utilizada em fluidos à base de água doce..
+ # sent_id = 119-20141209-TESEMSC_0-209
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Darley	Darley	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
++2	Darley	Darley	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 3	&	&	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	Gray	Gray	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	,	,	PUNCT	_	_	2	flat:name	O	_
+@@ -294264,7 +294264,7 @@
+ # text = Segundo Rosa et al., 2006, um polímero é uma molécula muito grande formada por milhares de blocos que se repetem, chamados monômeros..
+ # sent_id = 119-20141209-TESEMSC_0-233
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Rosa	Rosa	PROPN	_	Gender=Fem|Number=Sing	12	obl	O	_
++2	Rosa	Rosa	PROPN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 3	et	et	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	al.	al.	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	,	,	PUNCT	_	_	2	flat:name	O	_
+@@ -294989,7 +294989,7 @@
+ 18	de	de	ADP	_	_	19	case	I=FLUIDO	_
+ 19	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 20	para	para	ADP	_	_	21	case	O	_
+-21	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
++21	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+ 22	ricos	rico	ADJ	_	Gender=Masc|Number=Plur	21	amod	O	_
+ 23	em	em	ADP	_	_	24	case	O	_
+ 24	eletrólitos	eletrólito	NOUN	_	Gender=Masc|Number=Plur	21	nmod	B=QUÍMICA	_
+@@ -295040,7 +295040,7 @@
+ 4	complexa	complexo	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+ 5	com	com	ADP	_	_	7	case	O	_
+ 6	alto	alto	ADJ	_	Gender=Masc|Number=Sing	7	amod	O	_
+-7	peso	peso	NOUN	_	Gender=Masc|Number=Sing	1	obl	O	_
++7	peso	peso	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+ 8	molecular	molecular	ADJ	_	Gender=Masc|Number=Sing	7	amod	O	_
+ 9	.	.	PUNCT	_	_	1	punct	O	_
+ 10	.	.	PUNCT	_	_	1	punct	O	_
+@@ -296923,7 +296923,7 @@
+ 14	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 15	sobre	sobre	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+-17	relação	relação	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
++17	relação	relação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 18	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
+ 19	cisalhante-taxa	cisalhante-taxo	ADJ	_	Gender=Fem|Number=Sing	17	amod	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+@@ -297769,7 +297769,7 @@
+ 21	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	20	fixed	O	_
+ 22	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	20	fixed	O	_
+ 23	em	em	ADP	_	_	24	case	O	_
+-24	B..	B..	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	_
++24	B..	B..	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	tokenização
+ 
+ # text = Efeito da concentração
+ # sent_id = 119-20141209-TESEMSC_0-359
+@@ -300684,7 +300684,7 @@
+ 
+ # text = As fraturas dividem-se em:
+ # sent_id = 119-20141209-TESEMSC_0-438
+-1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
++1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	sentenciação
+ 2	fraturas	fratura	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	B=LITOLOGIA	_
+ 3-4	dividem-se	_	_	_	_	_	_	_	_
+ 3	dividem	dividir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -300889,7 +300889,7 @@
+ # sent_id = 119-20141209-TESEMSC_0-443
+ 1	Ainda	ainda	ADV	_	_	3	advmod	O	_
+ 2	segundo	segundo	ADP	_	_	3	case	O	_
+-3	Iscan	Iscan	PROPN	_	Gender=Masc|Number=Sing	24	obl	O	_
++3	Iscan	Iscan	PROPN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+ 4	et	et	PROPN	_	Number=Sing	3	flat:name	O	_
+ 5	al.	al.	PROPN	_	Number=Sing	3	flat:name	O	_
+ 6	,	,	PUNCT	_	_	3	flat:name	O	_
+@@ -301215,7 +301215,7 @@
+ # text = Segundo Gallino et al., 2001, um fluido drill-in é um fluido que minimiza o dano e que pode ser usado em perfurações através de formações produtoras, especialmente quando longas seções horizontais precisam ser perfuradas..
+ # sent_id = 119-20141209-TESEMSC_0-453
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Gallino	Gallino	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
++2	Gallino	Gallino	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 3	et	et	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	al.	al.	PROPN	_	Number=Sing	2	flat:name	O	_
+ 5	,	,	PUNCT	_	_	2	flat:name	O	_
+@@ -302534,11 +302534,11 @@
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	poço	poço	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+ 31	,	,	PUNCT	_	_	32	punct	O	_
+-32	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	30	amod	O	_
++32	histórico	histórico	NOUN	_	Gender=Masc|Number=Sing	28	conj	O	_
+ 33-34	do	_	_	_	_	_	_	_	_
+ 33	de	de	ADP	_	_	35	case	O	_
+ 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
+-35	poço	poço	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
++35	poço	poço	NOUN	_	Gender=Masc|Number=Sing	32	nmod	O	_
+ 36	,	,	PUNCT	_	_	37	punct	O	_
+ 37	comparações	comparação	NOUN	_	Gender=Fem|Number=Plur	28	conj	O	_
+ 38	com	com	ADP	_	_	39	case	O	_
+@@ -302564,7 +302564,7 @@
+ 54	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	O	_
+ 55	poço	poço	NOUN	_	Gender=Masc|Number=Sing	52	nmod	O	_
+ 56	e	e	CCONJ	_	_	57	cc	O	_
+-57	análise	análise	NOUN	_	Gender=Fem|Number=Sing	52	conj	O	_
++57	análise	análise	NOUN	_	Gender=Fem|Number=Sing	28	conj	O	_
+ 58-59	dos	_	_	_	_	_	_	_	_
+ 58	de	de	ADP	_	_	60	case	O	_
+ 59	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	60	det	O	_
+@@ -303086,7 +303086,7 @@
+ 11	torno	torno	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
+ 12	de	de	ADP	_	_	10	fixed	O	_
+ 13	6,0	6,0	NUM	_	NumType=Card	14	nummod	O	_
+-14	cm	cm	NOUN	_	Gender=Masc|Number=Plur	2	obl	O	_
++14	cm	cm	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+ 16	diâmetro	diâmetro	NOUN	_	Gender=Masc|Number=Sing	14	conj	O	_
+ 17	de	de	ADP	_	_	21	case	O	_
+@@ -303389,7 +303389,7 @@
+ 94	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	92	nmod	O	_
+ 95	entre	entre	ADP	_	_	97	case	O	_
+ 96	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	97	det	O	_
+-97	faces	face	NOUN	_	Gender=Fem|Number=Plur	90	obl	O	_
++97	faces	face	NOUN	_	Gender=Fem|Number=Plur	92	nmod	O	_
+ 98-99	do	_	_	_	_	_	_	_	_
+ 98	de	de	ADP	_	_	100	case	O	_
+ 99	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	100	det	O	_
+@@ -304792,7 +304792,7 @@
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 12	com	com	ADP	_	_	13	case	O	_
+-13	sensores	sensor	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
++13	sensores	sensor	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	cilindros	cilindro	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 16	coaxiais	coaxial	ADJ	_	Gender=Masc|Number=Plur	15	amod	O	_
+@@ -305823,7 +305823,7 @@
+ 32	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+ 33	após	após	ADP	_	_	35	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	O	_
+-35	invasão	invasão	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
++35	invasão	invasão	NOUN	_	Gender=Fem|Number=Sing	29	obl	O	_
+ 36	(	(	PUNCT	_	_	39	punct	O	_
+ 37	)	)	PUNCT	_	_	39	punct	O	_
+ 38	conforme	conforme	ADP	_	_	39	case	O	_
+@@ -307876,12 +307876,12 @@
+ 18	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	B=FLUIDO	_
+ 19	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	O	_
+ 20	expulsando	expulsar	VERB	_	VerbForm=Ger	15	ccomp	O	_
+-21	tanto	tanto	ADV	_	_	20	advmod	O	_
++21	tanto	tanto	ADV	_	_	23	advmod	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+ 23	polímero	polímero	NOUN	_	Gender=Masc|Number=Sing	20	obj	O	_
+-24	quanto	quanto	ADV	_	_	26	advmod	O	_
++24	quanto	quanto	CCONJ	_	_	26	cc	O	_
+ 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
+-26	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	20	obl	O	_
++26	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	23	conj	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+ 28	argila	argila	NOUN	_	Gender=Fem|Number=Sing	26	nmod	B=LITOLOGIA	_
+ 29	presentes	presente	ADJ	_	Gender=Fem|Number=Plur	26	amod	O	_
+@@ -311846,7 +311846,7 @@
+ 66	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	67	det	O	_
+ 67	testes	teste	NOUN	_	Gender=Masc|Number=Plur	63	nmod	B=MÉTODO	_
+ 68	com	com	ADP	_	_	69	case	O	_
+-69	GX..	GX..	PROPN	_	Gender=Masc|Number=Sing	60	obl	O	_
++69	GX..	GX..	PROPN	_	Gender=Masc|Number=Sing	67	nmod	O	_
+ 
+ # text = Os gráficos de retorno da vazão relativa de óleo, tanto para a GX quanto para a PHPA são apresentados na Figura 4.23 em escala linear e na Figura 4.24 em escala log-log..
+ # sent_id = 119-20141209-TESEMSC_0-727
+@@ -312014,7 +312014,7 @@
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+ 23	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	20	obj	O	_
+ 24	com	com	ADP	_	_	25	case	O	_
+-25	PHPA	PHPA	PROPN	_	Gender=Masc|Number=Sing	20	obl	B=QUÍMICA	_
++25	PHPA	PHPA	PROPN	_	Gender=Masc|Number=Sing	23	nmod	B=QUÍMICA	_
+ 26	sem	sem	ADP	_	_	27	case	O	_
+ 27	argila	argila	NOUN	_	Gender=Fem|Number=Sing	25	nmod	B=LITOLOGIA	_
+ 28	e	e	CCONJ	_	_	30	cc	O	_
+@@ -312212,7 +312212,7 @@
+ 56-57	na	_	_	_	_	_	_	_	_
+ 56	em	em	ADP	_	_	58	case	O	_
+ 57	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	O	_
+-58	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	50	obl	O	_
++58	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	55	obl	O	_
+ 59-60	ao	_	_	_	_	_	_	_	_
+ 59	a	a	ADP	_	_	61	case	O	_
+ 60	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	O	_
+@@ -312401,10 +312401,10 @@
+ 19	para	para	ADP	_	_	20	case	O	_
+ 20	baixas	baixa	NOUN	_	Gender=Fem|Number=Plur	13	obl	O	_
+ 21	,	,	PUNCT	_	_	13	punct	O	_
+-22	quanto	quanto	ADV	_	_	25	advmod	O	_
++22	quanto	quanto	CCONJ	_	_	25	cc	O	_
+ 23	para	para	ADP	_	_	25	case	O	_
+ 24	altas	alto	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+-25	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	13	obl	O	_
++25	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	cisalhamento	cisalhamento	NOUN	_	Gender=Masc|Number=Sing	25	nmod	O	_
+ 28	.	.	PUNCT	_	_	8	punct	O	_
+@@ -313543,7 +313543,7 @@
+ 33	com	com	ADP	_	_	36	case	O	_
+ 34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+ 35	menor	pequeno	ADJ	_	Gender=Fem|Number=Sing	36	amod	O	_
+-36	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	29	obl	O	_
++36	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	_
+ 37	de	de	ADP	_	_	38	case	O	_
+ 38	argila	argila	NOUN	_	Gender=Fem|Number=Sing	36	nmod	B=LITOLOGIA	_
+ 39	(	(	PUNCT	_	_	41	punct	O	_
+@@ -313857,7 +313857,7 @@
+ 31	com	com	ADP	_	_	34	case	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+ 33	maior	grande	ADJ	_	Gender=Fem|Number=Sing	34	amod	O	_
+-34	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	27	obl	O	_
++34	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+ 35	de	de	ADP	_	_	36	case	O	_
+ 36	argila	argila	NOUN	_	Gender=Fem|Number=Sing	34	nmod	B=LITOLOGIA	_
+ 37	,	,	PUNCT	_	_	38	punct	O	_
+@@ -315379,7 +315379,7 @@
+ 42-43	na	_	_	_	_	_	_	_	_
+ 42	em	em	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+-44	condição	condição	NOUN	_	Gender=Fem|Number=Sing	32	obl	O	_
++44	condição	condição	NOUN	_	Gender=Fem|Number=Sing	38	nmod	O	_
+ 45	inicial	inicial	ADJ	_	Gender=Fem|Number=Sing	44	amod	O	_
+ 46	de	de	ADP	_	_	47	case	O	_
+ 47	saturação	saturação	NOUN	_	Gender=Fem|Number=Sing	44	nmod	O	_
+@@ -315571,7 +315571,7 @@
+ 33-34	aos	_	_	_	_	_	_	_	_
+ 33	a	a	ADP	_	_	35	case	O	_
+ 34	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	O	_
+-35	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	31	obl	O	_
++35	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	32	nmod	O	_
+ 36	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	37	nsubj	O	_
+ 37	venham	vir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	O	_
+ 38	a	a	SCONJ	_	_	39	mark	O	_
+@@ -315908,7 +315908,7 @@
+ 26	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+ 27	sobre	sobre	ADP	_	_	29	case	O	_
+ 28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	O	_
+-29	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	23	obl	B=FLUIDO	_
++29	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	26	nmod	B=FLUIDO	_
+ 30	de	de	ADP	_	_	31	case	I=FLUIDO	_
+ 31	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	29	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 32	,	,	PUNCT	_	_	34	punct	O	_
+@@ -318252,7 +318252,7 @@
+ 6	e	e	CCONJ	_	_	7	cc	O	_
+ 7	fluidos	fluir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	conj	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+-9	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	obl	B=QUÍMICA	_
++9	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=QUÍMICA	_
+ 10	inversa	inverso	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+ 11	requer	requerer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 12	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
+@@ -318430,7 +318430,7 @@
+ 6	produtores	produtor	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+ 7	danificáveis	danificável	ADJ	_	Gender=Masc|Number=Plur	3	amod	O	_
+ 8	por	por	ADP	_	_	9	case	O	_
+-9	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	1	obl	O	_
++9	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -318462,7 +318462,7 @@
+ 3	formações	formação	NOUN	_	Gender=Fem|Number=Plur	1	obl	O	_
+ 4	com	com	ADP	_	_	6	case	O	_
+ 5	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	6	amod	O	_
+-6	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	1	obl	O	_
++6	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+ 8	poros	poro	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+ 9	ou	ou	CCONJ	_	_	11	cc	O	_
+@@ -319389,7 +319389,7 @@
+ 2	reológicos	reológico	ADJ	_	Gender=Masc|Number=Plur	1	amod	O	_
+ 3	:	:	PUNCT	_	_	5	punct	O	_
+ 4	Segundo	segundo	ADP	_	_	5	case	O	_
+-5	Annis	Annis	PROPN	_	Gender=Masc|Number=Sing	22	obl	O	_
++5	Annis	Annis	PROPN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 6	e	e	CCONJ	_	_	5	flat:name	O	_
+ 7	Smith	Smith	PROPN	_	Gender=Masc|Number=Sing	5	flat:name	O	_
+ 8	(	(	PUNCT	_	_	9	punct	O	_
+@@ -321086,7 +321086,7 @@
+ 18-19	à	_	_	_	_	_	_	_	_
+ 18	a	a	ADP	_	_	17	fixed	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	interação	interação	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
++20	interação	interação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 21	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
+ 22	entre	entre	ADP	_	_	23	case	O	_
+ 23	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	20	nmod	O	_
+@@ -321358,7 +321358,7 @@
+ # text = Segundo Machado (2002), fluidos de perfuração são exemplos de fluidos tixotrópicos..
+ # sent_id = 240-20140220-MONOGRAFIA_0-188
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Machado	Machado	PROPN	_	Gender=Masc|Number=Sing	11	obl	O	_
++2	Machado	Machado	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+ 4	2002	2002	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+@@ -321976,7 +321976,7 @@
+ 5-6	na	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	formação	formação	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
++7	formação	formação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 8	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	causar	causar	VERB	_	VerbForm=Inf	8	xcomp	O	_
+ 10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+@@ -323523,7 +323523,7 @@
+ 9	coloidal	coloidal	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 10	,	,	PUNCT	_	_	8	punct	O	_
+ 11	em	em	ADP	_	_	12	case	O	_
+-12	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
++12	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 13	com	com	ADP	_	_	15	case	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+ 15	moléculas	molécula	NOUN	_	Gender=Fem|Number=Plur	12	nmod	O	_
+@@ -324580,7 +324580,7 @@
+ 45	a	a	ADP	_	_	48	case	O	_
+ 46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	O	_
+ 47	mesmo	mesmo	ADJ	_	Gender=Masc|Number=Sing	48	amod	O	_
+-48	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	44	obl	O	_
++48	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	37	nmod	O	_
+ 49	.	.	PUNCT	_	_	4	punct	O	_
+ 50	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -325682,7 +325682,7 @@
+ 9	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	O	_
+ 10	de	de	SCONJ	_	_	12	mark	O	_
+ 11	ser	ser	AUX	_	VerbForm=Inf	12	cop	O	_
+-12	microemulsão	microemulsão	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	microemulsão	microemulsão	NOUN	_	Gender=Fem|Number=Sing	9	xcomo	O	_
+ 13	,	,	PUNCT	_	_	12	punct	O	_
+ 14	pesa	pesar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+@@ -325691,7 +325691,7 @@
+ 18	ensaio	ensaio	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 19	com	com	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++21	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 22	para	para	SCONJ	_	_	23	mark	O	_
+ 23	descobrir	descobrir	VERB	_	VerbForm=Inf	14	advcl	O	_
+ 24	qual	qual	DET	_	Gender=Fem|Number=Sing|PronType=Int	26	det	O	_
+@@ -327864,7 +327864,7 @@
+ 20	,	,	PUNCT	_	_	12	punct	O	_
+ 21	para	para	ADP	_	_	23	case	O	_
+ 22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	O	_
+-23	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	26	obl	O	_
++23	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	2	nmod	O	_
+ 24	estudadas	estudar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	23	acl	O	_
+ 25	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	O	_
+ 26	apresentados	apresentar	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+@@ -328660,7 +328660,7 @@
+ 11	para	para	ADP	_	_	14	case	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
+ 13	demais	demais	DET	_	Gender=Fem|Number=Plur|PronType=Ind	14	det	O	_
+-14	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
++14	concentrações	concentração	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+ 15	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	O	_
+ 16-17	no	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+@@ -328928,7 +328928,7 @@
+ 31	base	base	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+ 32	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	B=FLUIDO	_
+ 33	com	com	ADP	_	_	34	case	O	_
+-34	características	característica	NOUN	_	Gender=Fem|Number=Plur	28	obl	O	_
++34	características	característica	NOUN	_	Gender=Fem|Number=Plur	30	nmod	O	_
+ 35	mais	mais	ADV	_	_	36	advmod	O	_
+ 36	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	34	amod	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+@@ -332944,7 +332944,7 @@
+ 26	,	,	PUNCT	_	_	18	punct	O	_
+ 27	com	com	ADP	_	_	29	case	O	_
+ 28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+-29	cheiro	cheirar	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
++29	cheiro	cheirar	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+ 30	característico	característico	ADJ	_	Gender=Masc|Number=Sing	29	amod	O	_
+ 31	,	,	PUNCT	_	_	32	punct	O	_
+ 32	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	O	_
+@@ -333666,7 +333666,7 @@
+ 10	inflamação	inflamação	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 11	com	com	ADP	_	_	13	case	O	_
+ 12	mais	mais	DET	_	Gender=Fem|Number=Sing|PronType=Ind	13	det	O	_
+-13	facilidade	facilidade	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
++13	facilidade	facilidade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 14	que	que	SCONJ	_	_	16	mark	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+ 16	óleos	óleo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	B=FLUIDO	_
+@@ -334765,7 +334765,7 @@
+ 26	onshore	onshore	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
+ 27	(	(	PUNCT	_	_	29	punct	O	_
+ 28	em	em	ADP	_	_	29	case	O	_
+-29	terra	terra	NOUN	_	Gender=Fem|Number=Sing	34	obl	O	_
++29	terra	terra	NOUN	_	Gender=Fem|Number=Sing	26	nmod:appos	O	_
+ 30	)	)	PUNCT	_	_	29	punct	O	_
+ 31	,	,	PUNCT	_	_	34	punct	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+@@ -337281,7 +337281,7 @@
+ # text = Segundo Duarte e Vieira (1997), o estuário é como a entrada de um braço de mar em uma bacia hidrográfica..
+ # sent_id = 411-20150702-MONOGRAFIA_0-165
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Duarte	Duarte	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
++2	Duarte	Duarte	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 3	e	e	CCONJ	_	_	2	flat:name	O	_
+ 4	Vieira	Vieira	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	O	_
+ 5	(	(	PUNCT	_	_	2	flat:name	O	_
+@@ -337455,7 +337455,7 @@
+ 20-21	à	_	_	_	_	_	_	_	_
+ 20	a	a	ADP	_	_	19	fixed	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	retenção	retenção	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
++22	retenção	retenção	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	nutrientes	nutriente	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
+ 25	oriunda	oriundo	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
+@@ -340011,7 +340011,7 @@
+ 19-20	na	_	_	_	_	_	_	_	_
+ 19	em	em	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+-21	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
++21	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 22	,	,	PUNCT	_	_	16	punct	O	_
+ 23	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	O	_
+ 24	decrescer	decrescer	VERB	_	VerbForm=Inf	23	xcomp	O	_
+@@ -340767,7 +340767,7 @@
+ 49-50	da	_	_	_	_	_	_	_	_
+ 49	de	de	ADP	_	_	51	case	O	_
+ 50	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	O	_
+-51	reprodução	reprodução	NOUN	_	Gender=Fem|Number=Sing	48	obl	O	_
++51	reprodução	reprodução	NOUN	_	Gender=Fem|Number=Sing	48	nmod	O	_
+ 52-53	das	_	_	_	_	_	_	_	_
+ 52	de	de	ADP	_	_	54	case	O	_
+ 53	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	O	_
+@@ -343336,7 +343336,7 @@
+ 19	garrafa	garrafa	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 20	,	,	PUNCT	_	_	11	punct	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+-22	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	O	_
++22	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
+ 23-24	desse	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	O	_
+@@ -343346,7 +343346,7 @@
+ 28	4	4	NUM	_	NumType=Card	31	nummod	O	_
+ 29	a	a	ADP	_	_	31	case	O	_
+ 30	8	8	NUM	_	NumType=Card	31	nummod	O	_
+-31	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
++31	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	22	acl:relcl	O	_
+ 32	após	após	ADP	_	_	34	case	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+ 34	adição	adição	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+@@ -343811,7 +343811,7 @@
+ 52	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	O	_
+ 53	estuário	estuário	NOUN	_	Gender=Masc|Number=Sing	45	obl	O	_
+ 54	,	,	PUNCT	_	_	55	punct	O	_
+-55	protejedo	protejer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	53	acl	O	_
++55	protejedo	proteger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	53	acl	O	_
+ 56-57	dos	_	_	_	_	_	_	_	_
+ 56	de	de	ADP	_	_	58	case	O	_
+ 57	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	58	det	O	_
+@@ -345673,7 +345673,7 @@
+ 14	água	água	NOUN	_	Gender=Fem|Number=Sing	11	obl	B=FLUIDO	_
+ 15	com	com	ADP	_	_	17	case	O	_
+ 16	alto	alto	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
+-17	teor	teor	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
++17	teor	teor	NOUN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	sal.	sal.	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 20	.	.	PUNCT	_	_	11	punct	O	_
+@@ -350771,7 +350771,7 @@
+ 7-8	na	_	_	_	_	_	_	_	_
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	água	água	NOUN	_	Gender=Fem|Number=Sing	3	obl	B=FLUIDO	_
++9	água	água	NOUN	_	Gender=Fem|Number=Sing	6	obl	B=FLUIDO	_
+ 10	com	com	ADP	_	_	12	case	O	_
+ 11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	O	_
+ 12	metais	metal	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+@@ -350906,7 +350906,7 @@
+ 8	alternância	alternância	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
+ 9	entre	entre	ADP	_	_	11	case	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+-11	íons	íom	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
++11	íons	íon	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+@@ -352964,7 +352964,7 @@
+ 8	alternância	alternância	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
+ 9	entre	entre	ADP	_	_	11	case	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+-11	íons	íom	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
++11	íons	íon	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_

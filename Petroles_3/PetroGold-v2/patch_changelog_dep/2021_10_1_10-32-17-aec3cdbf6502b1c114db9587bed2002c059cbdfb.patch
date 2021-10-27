@@ -1,0 +1,537 @@
+commit aec3cdbf6502b1c114db9587bed2002c059cbdfb
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Fri Oct 1 10:32:17 2021 -0300
+
+    Correções derivadas de n-grams inconsistentes
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 3aa4a1c..245b3b0 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -4538,7 +4538,7 @@
+ 3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	O	_
+ 4	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	por	por	SCONJ	_	_	6	mark	O	_
+-6	separar	separar	VERB	_	VerbForm=Inf	4	advcl	O	_
++6	separar	separar	VERB	_	VerbForm=Inf	4	acl	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+ 8	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	6	obj	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+@@ -5245,17 +5245,17 @@
+ 10	Lineamento	Lineamento	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
+ 11	Tibagi	Tibagi	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	aparenta	aparentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-13	estar	estar	AUX	_	VerbForm=Inf	14	cop	O	_
+-14	relacionado	relacionar	ADJ	_	Gender=Masc|Number=Sing	12	xcomp	O	_
++13	estar	estar	AUX	_	VerbForm=Inf	14	aux	O	_
++14	relacionado	relacionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	xcomp	O	_
+ 15-16	ao	_	_	_	_	_	_	_	_
+ 15	a	a	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	processo	processo	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
++17	processo	processo	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
+ 20	para	para	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
++22	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 23-24	dos	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+@@ -13724,7 +13724,7 @@
+ 
+ # text = O teor de água presente na emulsão asfáltica pode variar na proporção de 30 até 60% em volume, interagindo com o emulsificante. • Emulsificante: O emulsificante presente na fase aquosa é o responsável por garantir uma dispersão estável das partículas de asfalto em meio aquoso.
+ # sent_id = 241-20140227-MONOGRAFIA_0-128
+-1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
++1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	teor	teor	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	água	água	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+@@ -23335,7 +23335,7 @@
+ 2	.	.	PUNCT	_	_	4	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	SUCESSÃO	sucessão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-5	ESTRATIGRÁFICA	estratigráfico	ADJ	_	Gender=Fem|Number=Sing	4	flat:foreign	O	_
++5	ESTRATIGRÁFICA	estratigráfico	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 6	DE	de	ADP	_	_	7	case	O	_
+ 7	FÁCIES	fácies	NOUN	_	Gender=Fem|Number=Plur	4	nmod	O	_
+ 8	SEDIMENTARES	sedimentar	ADJ	_	Gender=Fem|Number=Plur	7	amod	O	_
+@@ -39500,18 +39500,18 @@
+ 10	Gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+ 11	8	8	NUM	_	NumType=Card	10	nummod	O	_
+ 12	,	,	PUNCT	_	_	10	punct	O	_
+-13	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	14	nsubj	O	_
+-14	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	xcomp	O	_
++13	que	que	SCONJ	_	_	14	mark	O	_
++14	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	O	_
+ 15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	tendência	tendência	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 17	a	a	SCONJ	_	_	18	mark	O	_
+ 18	crescer	crescer	VERB	_	VerbForm=Inf	16	acl	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
+-21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	mark	O	_
++21	a	a	ADP	_	_	24	mark	O	MWEPOS=SCONJ
+ 22	medida	medida	ADP	_	_	21	fixed	O	_
+-23	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	24	nsubj	O	_
+-24	cresce	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	O	_
++23	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	21	fixed	O	_
++24	cresce	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+ 26	frequência	frequência	NOUN	_	Gender=Fem|Number=Sing	24	obj	O	_
+ 27	,	,	PUNCT	_	_	30	punct	O	_
+@@ -41179,12 +41179,12 @@
+ 8	como	como	ADP	_	_	10	case	O	_
+ 9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	método	método	NOUN	_	Gender=Masc|Number=Sing	7	xcomp	O	_
+-11	avançado	avançar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	O	_
++11	avançado	avançado	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
+ 12	,	,	PUNCT	_	_	11	punct	O	_
+ 13	já	já	ADV	_	_	15	mark	O	MWEPOS=SCONJ
+ 14	que	que	SCONJ	_	_	13	fixed	O	_
+-15	objetiva	objetivo	ADJ	_	Gender=Fem|Number=Sing	7	advcl	O	_
+-16	reduzir	reduzir	VERB	_	VerbForm=Inf	15	advcl	O	_
++15	objetiva	objetivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	O	_
++16	reduzir	reduzir	VERB	_	VerbForm=Inf	15	xcomp	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 18	viscosidade	viscosidade	NOUN	_	Gender=Fem|Number=Sing	16	obj	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+@@ -42812,7 +42812,7 @@
+ 26	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	cop	O	_
+ 27	responsáveis	responsável	ADJ	_	Gender=Masc|Number=Plur	23	acl:relcl	O	_
+ 28	por	por	SCONJ	_	_	29	mark	O	_
+-29	retirar	retirar	VERB	_	VerbForm=Inf	27	advcl	O	_
++29	retirar	retirar	VERB	_	VerbForm=Inf	27	acl	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	areia	areia	NOUN	_	Gender=Fem|Number=Sing	29	obj	O	_
+ 32-33	do	_	_	_	_	_	_	_	_
+@@ -44077,11 +44077,11 @@
+ 11	ou	ou	CCONJ	_	_	12	cc	O	_
+ 12	fissuradas	fissurar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	8	conj	O	_
+ 13	,	,	PUNCT	_	_	5	punct	O	_
+-14	onde	onde	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	18	obl	O	_
++14	onde	onde	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	17	obl	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+-17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	O	_
+-18	aumentar	aumentar	VERB	_	VerbForm=Inf	7	acl:relcl	O	_
++16	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
++17	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	O	_
++18	aumentar	aumentar	VERB	_	VerbForm=Inf	16	ccomp	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	18	obj	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+@@ -48558,13 +48558,13 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-234
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	O	_
+-3	polímero-argila	polímero-argilo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+-5	relacionado	relacionar	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
++3	polímero-argila	polímero-argila	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	O	_
++5	relacionado	relacionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	O	_
+ 6-7	ao	_	_	_	_	_	_	_	_
+ 6	a	a	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	processo	processo	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
++8	processo	processo	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	adsorção	adsorção	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+@@ -48574,7 +48574,7 @@
+ 14-15	na	_	_	_	_	_	_	_	_
+ 14	em	em	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
++16	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 17-18	da	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+@@ -67380,7 +67380,7 @@
+ 
+ # text = St variam de fino a médio, com seleção moderada a ruim, apresentam estratificação cruzada acanalada centimétrica a decimétrica e sets cuneiformes (Figura 18).
+ # sent_id = 283-20150917-MONOGRAFIA_0-333
+-1	St	St	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
++1	St	St	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	sentenciação
+ 2	variam	variar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	fino	fino	ADJ	_	Gender=Masc|Number=Sing	2	xcomp	O	_
+@@ -77917,7 +77917,7 @@
+ 4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+ 5	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+ 6	por	por	SCONJ	_	_	7	mark	O	_
+-7	produzir	produzir	VERB	_	VerbForm=Inf	5	advcl	O	_
++7	produzir	produzir	VERB	_	VerbForm=Inf	5	acl	O	_
+ 8	aço	aço	NOUN	_	Gender=Masc|Number=Sing	7	obj	O	_
+ 9	,	,	PUNCT	_	_	7	punct	O	_
+ 10	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	O	_
+@@ -83010,7 +83010,7 @@
+ 20	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	cop	O	_
+ 21	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 22	por	por	SCONJ	_	_	23	mark	O	_
+-23	elevar	elevar	VERB	_	VerbForm=Inf	21	advcl	O	_
++23	elevar	elevar	VERB	_	VerbForm=Inf	21	acl	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 25	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
+ 26-27	do	_	_	_	_	_	_	_	_
+@@ -93057,8 +93057,8 @@
+ 28	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	29	det	O	_
+ 29	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	17	advcl	O	_
+ 30	por	por	SCONJ	_	_	31	mark	O	_
+-31	validar	validar	VERB	_	VerbForm=Inf	29	advcl	O	_
+-32	ou	ou	CCONJ	_	_	35	cc	O	_
++31	validar	validar	VERB	_	VerbForm=Inf	29	acl	O	_
++32	ou	ou	CCONJ	_	_	33	cc	O	_
+ 33	não	não	ADV	_	Polarity=Neg	35	advmod	O	_
+ 34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	O	_
+ 35	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	31	obj	O	_
+@@ -104948,12 +104948,12 @@
+ 14	gasosa	gasoso	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+ 15	,	,	PUNCT	_	_	17	punct	O	_
+ 16	ou	ou	CCONJ	_	_	17	cc	O	_
+-17	trifásicos	trifásico	ADJ	_	Gender=Masc|Number=Plur	14	conj	O	_
++17	trifásicos	trifásico	ADJ	_	Gender=Masc|Number=Plur	4	conj	O	_
+ 18	quando	quando	ADV	_	_	20	advmod	O	_
+ 19	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	O	_
+ 20	responsáveis	responsável	ADJ	_	Gender=Masc|Number=Plur	7	advcl	O	_
+ 21	por	por	SCONJ	_	_	22	mark	O	_
+-22	separar	separar	VERB	_	VerbForm=Inf	20	xcomp	O	_
++22	separar	separar	VERB	_	VerbForm=Inf	20	acl	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	fase	fase	NOUN	_	Gender=Fem|Number=Sing	22	obj	O	_
+ 25	gasosa	gasoso	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+@@ -107101,7 +107101,7 @@
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+ 25	responsável	responsável	ADJ	_	Gender=Masc|Number=Sing	21	amod	O	_
+ 26	por	por	SCONJ	_	_	27	mark	O	_
+-27	separar	separar	VERB	_	VerbForm=Inf	25	advcl	O	_
++27	separar	separar	VERB	_	VerbForm=Inf	25	acl	O	_
+ 28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	O	_
+ 29	três	três	NUM	_	NumType=Card	30	nummod	O	_
+ 30	fases	fase	NOUN	_	Gender=Fem|Number=Plur	27	obj	O	_
+@@ -113855,13 +113855,13 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-463
+ 1	Existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	dois	dois	NUM	_	NumType=Card	3	nummod	O	_
+-3	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	1	obj	O	_
++3	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	inibidores	inibidor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
+ 6	anti-aglomerantes	anti-aglomerante	ADJ	_	Gender=Masc|Number=Plur	5	amod	O	_
+ 7	,	,	PUNCT	_	_	9	punct	O	_
+ 8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	O	_
+-9	solúveis	solúvel	NOUN	_	Gender=Masc|Number=Plur	3	conj	O	_
++9	solúveis	solúvel	NOUN	_	Gender=Masc|Number=Plur	3	appos	O	_
+ 10	em	em	ADP	_	_	11	case	O	_
+ 11	água	água	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	,	,	PUNCT	_	_	9	punct	O	_
+@@ -113877,7 +113877,7 @@
+ 22	sal	sal	NOUN	_	Gender=Masc|Number=Sing	20	obj	O	_
+ 23	e	e	CCONJ	_	_	25	cc	O	_
+ 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+-25	solúveis	solúvel	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
++25	solúveis	solúvel	NOUN	_	Gender=Masc|Number=Plur	9	conj	O	_
+ 26	em	em	ADP	_	_	27	case	O	_
+ 27	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	O	_
+ 28	(	(	PUNCT	_	_	29	punct	O	_
+@@ -116220,9 +116220,9 @@
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 8	cujo	cujo	DET	_	Gender=Masc|Number=Sing|PronType=Rel	9	det	O	_
+-9	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
+-10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	O	_
+-11	aumentar	aumentar	VERB	_	VerbForm=Inf	4	acl:relcl	O	_
++9	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	O	_
++10	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	O	_
++11	aumentar	aumentar	VERB	_	VerbForm=Inf	10	ccomp	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	volume	volume	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+@@ -116328,20 +116328,20 @@
+ 
+ # text = Sendo essa diferença de pressão responsável por impulsionar os hidrocarbonetos para a superfície.
+ # sent_id = 334-20150521-MONOGRAFIA_0-537
+-1	Sendo	ser	AUX	_	VerbForm=Ger	3	cop	O	_
++1	Sendo	ser	AUX	_	VerbForm=Ger	6	cop	O	_
+ 2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	O	_
+-3	diferença	diferença	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++3	diferença	diferença	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+-6	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
++6	responsável	responsável	ADJ	_	Gender=Fem|Number=Sing	0	root	O	_
+ 7	por	por	SCONJ	_	_	8	mark	O	_
+-8	impulsionar	impulsionar	VERB	_	VerbForm=Inf	6	advcl	O	_
++8	impulsionar	impulsionar	VERB	_	VerbForm=Inf	6	acl	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
+ 10	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
+ 11	para	para	ADP	_	_	13	case	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	superfície	superfície	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+-14	.	.	PUNCT	_	_	3	punct	O	_
++14	.	.	PUNCT	_	_	6	punct	O	_
+ 
+ # text = Por isso são necessários métodos de elevação artificial, considerados como processos de recuperação secundária de petróleo.
+ # sent_id = 334-20150521-MONOGRAFIA_0-539
+@@ -118872,7 +118872,7 @@
+ 16	alcance	alcançar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	O	_
+ 17	110	110	NUM	_	NumType=Card	18	nummod	O	_
+ 18	°	°	NOUN	_	Gender=Masc|Number=Sing	16	obj	O	_
+-19	C	C	PROPN	_	Gender=Masc|Number=Sing	18	compound	O	_
++19	C	C	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 20	.	.	PUNCT	_	_	9	punct	O	_
+ 
+ # text = A corrente em alta temperatura e na pressão adequada segue então para o primeiro separador subsea.
+@@ -119361,12 +119361,12 @@
+ 2	corrente	corrente	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	O	_
+ 3	rica	rico	ADJ	_	Gender=Fem|Number=Sing	2	amod	O	_
+ 4	em	em	ADP	_	_	5	case	O	_
+-5	gás	gás	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++5	gás	gás	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
+ 6	e	e	CCONJ	_	_	8	cc	O	_
+-7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	rica	rico	NOUN	_	Gender=Fem|Number=Sing	5	conj	O	_
++7	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	2	conj	O	_
++8	rica	rico	ADJ	_	Gender=Fem|Number=Sing	7	amod	O	_
+ 9	em	em	ADP	_	_	10	case	O	_
+-10	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++10	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 11	deixam	deixar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 12	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	O	_
+ 13	primeiro	primeiro	ADJ	_	Gender=Masc|NumType=Ord|Number=Sing	14	amod	O	_
+@@ -123507,7 +123507,7 @@
+ # sent_id = 202-20140404-MONOGRAFIA_0-16
+ 1	1.2	1.2	NUM	_	NumType=Card	2	parataxis	O	_
+ 2	OBJETIVO	objetivo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-3	ESPECÍFICO	específico	ADJ	_	Gender=Masc|Number=Sing	2	flat:name	O	_
++3	ESPECÍFICO	específico	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
+ 
+ # text = As inversões transicionais de emulsões formadas a partir de petróleo e água de formação, foram avaliadas quanto a estabilidade, comportamento reológico e condutividade elétrica, utilizando diferentes concentrações e tipos de tensoativos.
+ # sent_id = 202-20140404-MONOGRAFIA_0-17
+@@ -125511,7 +125511,7 @@
+ 16-17	nas	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+-18	características	característica	NOUN	_	Gender=Fem|Number=Plur	15	obl	O	_
++18	características	característica	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	O	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	21	det	O	_
+ 21	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+@@ -125534,7 +125534,7 @@
+ 37	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	27	conj	O	_
+ 38	chamados	chamar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	37	acl	O	_
+ 39	de	de	ADP	_	_	40	case	O	_
+-40	anfóteros	anfótero	NOUN	_	Gender=Masc|Number=Plur	37	nmod	O	_
++40	anfóteros	anfótero	NOUN	_	Gender=Masc|Number=Plur	38	xcomp	O	_
+ 41	e	e	CCONJ	_	_	42	cc	O	_
+ 42	zwitteriônicos	zwitteriônico	NOUN	_	Gender=Masc|Number=Plur	40	conj	O	_
+ 43	.	.	PUNCT	_	_	15	punct	O	_
+@@ -125978,7 +125978,7 @@
+ 
+ # text = Uma das ideias básica que norteiam a seleção de tensoativos é que os mais solúveis em água tendem a formar emulsões
+ # sent_id = 202-20140404-MONOGRAFIA_0-87
+-1	Uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	0	root	O	_
++1	Uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	12	nsubj	O	_
+ 2-3	das	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	O	_
+@@ -125990,14 +125990,14 @@
+ 9	seleção	seleção	NOUN	_	Gender=Fem|Number=Sing	7	obj	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+-12	é	ser	AUX	_	Tense=Pres	19	discourse	O	_
+-13	que	que	SCONJ	_	_	12	fixed	O	_
+-14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
++12	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++13	que	que	SCONJ	_	_	19	mark	O	_
++14	os	o	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	19	nsubj	O	_
+ 15	mais	mais	ADV	_	_	16	advmod	O	_
+-16	solúveis	solúvel	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	O	_
++16	solúveis	solúvel	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+-18	água	água	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+-19	tendem	tender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	O	_
++18	água	água	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
++19	tendem	tender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	O	_
+ 20	a	a	SCONJ	_	_	21	mark	O	_
+ 21	formar	formar	VERB	_	VerbForm=Inf	19	xcomp	O	_
+ 22	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	21	obj	O	_
+@@ -133283,13 +133283,13 @@
+ # sent_id = 77-20141209-TESEMSC_0-167
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 2	principal	principal	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+-3	função	função	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	O	_
++3	função	função	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 6	desemulsificante	desemulsificante	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+ 7	químico	químico	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+-8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	O	_
+-9	aumentar	aumentar	VERB	_	VerbForm=Inf	0	root	O	_
++8	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++9	aumentar	aumentar	VERB	_	VerbForm=Inf	8	ccomp	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	drenagem	drenagem	NOUN	_	Gender=Fem|Number=Sing	9	obj	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+@@ -133306,7 +133306,7 @@
+ 20	gradiente	gradiente	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+-23	.	.	PUNCT	_	_	9	punct	O	_
++23	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Pode ser mostrado que não somente a viscosidade interfacial deve ser baixa, para aumentar o afinamento do filme, mas também a concentração interfacial e a atividade do desemulsificante deve ser suficientemente alta para suprimir o gradiente de tensão.
+ # sent_id = 77-20141209-TESEMSC_0-168
+@@ -138688,7 +138688,7 @@
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	pH	ph	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 20	=	=	PUNCT	_	_	21	punct	O	_
+-21	7	7	NUM	_	NumType=Card	19	appos	O	_
++21	7	7	NUM	_	NumType=Card	19	nummod	O	_
+ 22	.	.	PUNCT	_	_	12	punct	O	_
+ 
+ # text = Foi também realizado um teste de medição do ângulo de contato, no qual um desemulsificante fornecido pela empresa Bio-Sul Química Ind. e Com.
+@@ -186648,12 +186648,12 @@
+ 18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	O	_
+ 19	áreas	área	NOUN	_	Gender=Fem|Number=Plur	15	nmod	O	_
+ 20	proximais	proximal	ADJ	_	Gender=Fem|Number=Plur	19	amod	O	_
+-21	e	e	CCONJ	_	_	22	cc	O	_
+-22	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	conj	O	_
++21	e	e	CCONJ	_	_	23	cc	O	_
++22	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	O	_
+ 23	lançaram	lançar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	13	conj	O	_
+-24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
++24	a	a	ADP	_	_	26	case	O	_
+ 25	grande	grande	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+-26	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
++26	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+ 27	dando	dar	VERB	_	VerbForm=Ger	23	advcl	O	_
+ 28	origem	origem	NOUN	_	Gender=Fem|Number=Sing	27	obj	O	_
+ 29-30	ao	_	_	_	_	_	_	_	_
+@@ -226946,7 +226946,7 @@
+ 4	e	e	CCONJ	_	_	5	cc	O	_
+ 5	I	I	PROPN	_	Gender=Masc|Number=Sing	3	conj	O	_
+ 6	I’(vide	I’(vide	PROPN	_	Number=Sing	5	flat:name	O	_
+-7	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
++7	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	tokenização
+ 8-9	dos	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
+@@ -237073,12 +237073,12 @@
+ 48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	O	_
+ 49	área	área	NOUN	_	Gender=Fem|Number=Sing	46	nmod	O	_
+ 50	,	,	PUNCT	_	_	52	punct	O	_
+-51	ambas	ambos	DET	_	Gender=Fem|Number=Plur|PronType=Tot	52	det	O	_
+-52	resultantes	resultante	NOUN	_	Gender=Fem|Number=Plur	43	conj	O	_
++51	ambas	ambos	PRON	_	Gender=Fem|Number=Plur|PronType=Tot	35	parataxis	O	_
++52	resultantes	resultante	ADJ	_	Gender=Fem|Number=Plur	51	amod	O	_
+ 53-54	dos	_	_	_	_	_	_	_	_
+ 53	de	de	ADP	_	_	55	case	O	_
+ 54	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	O	_
+-55	processos	processo	NOUN	_	Gender=Masc|Number=Plur	52	nmod	O	_
++55	processos	processo	NOUN	_	Gender=Masc|Number=Plur	52	obl	O	_
+ 56	de	de	ADP	_	_	57	case	O	_
+ 57	reativação	reativação	NOUN	_	Gender=Fem|Number=Sing	55	nmod	O	_
+ 58	terciária	terciário	ADJ	_	Gender=Fem|Number=Sing	57	amod	O	_
+@@ -238094,7 +238094,7 @@
+ 
+ # text = Um dos principais objetivos quando se utiliza um poço horizontal é aumentar o índice de produtividade do mesmo, quando comparado ao de um poço vertical (Rosa et al., 2006).
+ # sent_id = 119-20141209-TESEMSC_0-16
+-1	Um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	13	nsubj	O	_
++1	Um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	12	nsubj	O	_
+ 2-3	dos	_	_	_	_	_	_	_	_
+ 2	de	de	ADP	_	_	5	case	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -238102,12 +238102,12 @@
+ 5	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
+ 6	quando	quando	SCONJ	_	_	8	mark	O	_
+ 7	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	expl	O	_
+-8	utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	O	_
++8	utiliza	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	O	_
+ 9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	poço	poço	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 11	horizontal	horizontal	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
+-12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	O	_
+-13	aumentar	aumentar	VERB	_	VerbForm=Inf	0	root	O	_
++12	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++13	aumentar	aumentar	VERB	_	VerbForm=Inf	12	ccomp	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	índice	índice	NOUN	_	Gender=Masc|Number=Sing	13	obj	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+@@ -238133,7 +238133,7 @@
+ 34	,	,	PUNCT	_	_	31	flat:name	O	_
+ 35	2006	2006	NUM	_	NumType=Card	31	flat:name	O	_
+ 36	)	)	PUNCT	_	_	31	punct	O	_
+-37	.	.	PUNCT	_	_	13	punct	O	_
++37	.	.	PUNCT	_	_	12	punct	O	_
+ 
+ # text = Esse aumento de produtividade deve-se à maior área contatada de reservatório.
+ # sent_id = 119-20141209-TESEMSC_0-17
+@@ -242486,10 +242486,10 @@
+ 3	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 4	2.2	2.2	NUM	_	NumType=Card	3	nummod	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+-5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
++5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 6	se	se	PRON	_	_	5	expl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++8	escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+@@ -242497,7 +242497,7 @@
+ 13	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 14	em	em	ADP	_	_	16	case	O	_
+ 15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	poço	poço	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
++16	poço	poço	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 17	horizontal	horizontal	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+ 18	com	com	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+@@ -242506,7 +242506,7 @@
+ 22	não	não	ADV	_	Polarity=Neg	24	advmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+ 24	reboco	reboco	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	_
+-25	.	.	PUNCT	_	_	8	punct	O	_
++25	.	.	PUNCT	_	_	5	punct	O	_
+ 
+ # text = Figura 2. 2– Escoamento do fluido em um poço horizontal. (a) com reboco; (b) sem reboco (Gallino et al., 2001)
+ # sent_id = 119-20141209-TESEMSC_0-164
+@@ -247666,13 +247666,13 @@
+ # text = O propósito de aumentar a temperatura é aumentar a mobilidade da cadeia polimérica, levando a uma viscosidade menor para uma dada taxa de cisalhamento.
+ # sent_id = 119-20141209-TESEMSC_0-355
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	propósito	propósito	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
++2	propósito	propósito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	O	_
+ 3	de	de	ADP	_	_	6	case	O	_
+ 4	aumentar	aumentar	VERB	_	VerbForm=Inf	2	acl	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	O	_
+-7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	O	_
+-8	aumentar	aumentar	VERB	_	VerbForm=Inf	0	root	O	_
++7	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++8	aumentar	aumentar	VERB	_	VerbForm=Inf	7	ccomp	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	mobilidade	mobilidade	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+ 11-12	da	_	_	_	_	_	_	_	_
+@@ -247692,7 +247692,7 @@
+ 24	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	cisalhamento	cisalhamento	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+-27	.	.	PUNCT	_	_	8	punct	O	_
++27	.	.	PUNCT	_	_	7	punct	O	_
+ 
+ # text = Efeito da concentração
+ # sent_id = 119-20141209-TESEMSC_0-359
+@@ -247884,7 +247884,7 @@
+ 20	poliacrilamida	poliacrilamida	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 21	hidrolisada	hidrolisar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	20	acl	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+-23	PHPA	PHPA	PROPN	_	Gender=Fem|Number=Sing	20	nmod:appos	O	_
++23	PHPA	PHPA	PROPN	_	Gender=Fem|Number=Sing	20	appos	O	_
+ 24	)	)	PUNCT	_	_	23	punct	O	_
+ 25	.	.	PUNCT	_	_	5	punct	O	_
+ 

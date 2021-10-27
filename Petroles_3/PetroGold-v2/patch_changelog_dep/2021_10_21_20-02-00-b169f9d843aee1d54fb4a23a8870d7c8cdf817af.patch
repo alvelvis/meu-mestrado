@@ -1,0 +1,900 @@
+commit b169f9d843aee1d54fb4a23a8870d7c8cdf817af
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Oct 21 20:02:00 2021 -0300
+
+    Modificações de listas
+    Foram aplicadas 2 regras. A primeira modifica os casos de letras entre parênteses, especificamente seu deprel, dephead, lema, pos e features. A segunda regra é relativa aos números que iniciam sentenças e modifica seu deprel e dephead.
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index b44a284..85dcb90 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -1,7 +1,7 @@
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 247-20140910-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -287,8 +287,8 @@
+ 
+ # text = 2. - OBJETIVOS
+ # sent_id = 247-20140910-MONOGRAFIA_0-8
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	OBJETIVOS	objetivo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+@@ -379,8 +379,8 @@
+ 
+ # text = 3. - LOCALIZAÇÃO DA ÁREA DE ESTUDO
+ # sent_id = 247-20140910-MONOGRAFIA_0-12
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	LOCALIZAÇÃO	localização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5-6	DA	_	_	_	_	_	_	_	_
+@@ -478,7 +478,7 @@
+ # text = 4. - MÉTODOS E ETAPAS DE TRABALHO
+ # sent_id = 247-20140910-MONOGRAFIA_0-14
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	MÉTODOS	método	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -2218,8 +2218,8 @@
+ 
+ # text = 5. - GEOLOGIA REGIONAL
+ # sent_id = 247-20140910-MONOGRAFIA_0-69
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	GEOLOGIA	GEOLOGIA	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	REGIONAL	REGIONAL	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -6069,7 +6069,7 @@
+ # text = 6. - RESULTADOS
+ # sent_id = 247-20140910-MONOGRAFIA_0-182
+ 1	6	6	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+@@ -9352,8 +9352,8 @@
+ 
+ # text = 7. - CONCLUSÃO E CONSIDERAÇÕES FINAIS
+ # sent_id = 247-20140910-MONOGRAFIA_0-283
+-1	7	7	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	7	7	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONCLUSÃO	conclusão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -14218,9 +14218,9 @@
+ 
+ # text = 2. - Ao obter a solução de emulsificante, pesa-se 50g de vermiculita e coloca-se esse nanomaterial em contato com 0,5L dessa solução, deixando tal mistura em sob rotação constante durante 24hrs.
+ # sent_id = 241-20140227-MONOGRAFIA_0-141
+-1	2	2	NUM	_	NumType=Card	12	parataxis	O	_
++1	2	2	NUM	_	NumType=Card	12	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+-3	-	-	PUNCT	_	_	6	punct	O	_
++3	-	-	PUNCT	_	_	12	punct	O	_
+ 4-5	Ao	_	_	_	_	_	_	_	_
+ 4	A	a	SCONJ	_	_	6	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -14264,9 +14264,9 @@
+ 
+ # text = 3. - Após as 24hrs, filtra-se a solução da vermiculita e coloca-se o nanomaterial para secar sob o sol durante 12hrs.
+ # sent_id = 241-20140227-MONOGRAFIA_0-142
+-1	3	3	NUM	_	NumType=Card	8	nsubj	O	_
++1	3	3	NUM	_	NumType=Card	8	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+-3	-	-	PUNCT	_	_	6	punct	O	_
++3	-	-	PUNCT	_	_	8	punct	O	_
+ 4	Após	após	ADP	_	_	6	case	O	_
+ 5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	O	_
+ 6	24hrs	24hrs	NOUN	_	Gender=Fem|Number=Plur	8	obl	O	_
+@@ -14298,8 +14298,8 @@
+ 
+ # text = 4. - O procedimento de obtenção da vermiculita tratada com solução de emulsificante em meio ácido é o mesmo, no entanto, ao obter-se a solução de tensoativo, adiciona-se o equivalente a 0,3% em peso de ácido clorídrico na solução.
+ # sent_id = 241-20140227-MONOGRAFIA_0-143
+-1	4	4	NUM	_	NumType=Card	21	parataxis	O	_
+-2	.	.	PUNCT	_	_	21	punct	O	_
++1	4	4	NUM	_	NumType=Card	21	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	21	punct	O	_
+ 4	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	procedimento	procedimento	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	O	_
+@@ -17511,8 +17511,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 284-20150917-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -17879,8 +17879,8 @@
+ 
+ # text = 2. - OBJETIVOS
+ # sent_id = 284-20150917-MONOGRAFIA_0-12
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	OBJETIVOS	objetivo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+@@ -17958,8 +17958,8 @@
+ 
+ # text = 3. - LOCALIZAÇÃO
+ # sent_id = 284-20150917-MONOGRAFIA_0-14
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	LOCALIZAÇÃO	localização	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -18342,7 +18342,7 @@
+ # text = 4. - MÉTODOS E MEIOS
+ # sent_id = 284-20150917-MONOGRAFIA_0-31
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	MÉTODOS	método	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -20256,8 +20256,8 @@
+ 
+ # text = 5. - GEOLOGIA REGIONAL
+ # sent_id = 284-20150917-MONOGRAFIA_0-93
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	GEOLOGIA	GEOLOGIA	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	REGIONAL	REGIONAL	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -23332,7 +23332,7 @@
+ # text = 6. - SUCESSÃO ESTRATIGRÁFICA DE FÁCIES SEDIMENTARES
+ # sent_id = 284-20150917-MONOGRAFIA_0-172
+ 1	6	6	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	SUCESSÃO	sucessão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	ESTRATIGRÁFICA	estratigráfico	ADJ	_	Gender=Fem|Number=Sing	4	flat:foreign	O	_
+@@ -26148,8 +26148,8 @@
+ 
+ # text = 7. - ESTRATIGRAFIA DE SEQUÊNCIAS
+ # sent_id = 284-20150917-MONOGRAFIA_0-294
+-1	7	7	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	7	7	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	ESTRATIGRAFIA	estratigrafia	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	DE	de	ADP	_	_	6	case	O	_
+@@ -30733,8 +30733,8 @@
+ 
+ # text = 8. - CONCLUSÕES
+ # sent_id = 284-20150917-MONOGRAFIA_0-413
+-1	8	8	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	8	8	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONCLUSÕES	conclusce	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 
+@@ -31093,8 +31093,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 398-20160721-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -32244,8 +32244,8 @@
+ 
+ # text = 2. - FUNDAMENTAÇÃO TEÓRICA
+ # sent_id = 398-20160721-MONOGRAFIA_0-41
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	FUNDAMENTAÇÃO	fundamentação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	TEÓRICA	teórica	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+@@ -36125,8 +36125,8 @@
+ 
+ # text = 3. - METODOLOGIA EXPERIMENTAL
+ # sent_id = 398-20160721-MONOGRAFIA_0-201
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -38426,7 +38426,7 @@
+ # text = 4. - RESULTADOS E DISCUSSÕES
+ # sent_id = 398-20160721-MONOGRAFIA_0-283
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -41139,8 +41139,8 @@
+ 
+ # text = 5. - CONSIDERAÇÕES FINAIS
+ # sent_id = 398-20160721-MONOGRAFIA_0-415
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONSIDERAÇÕES	Consideraçães	PROPN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 5	FINAIS	Finais	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -45668,8 +45668,8 @@
+ 
+ # text = 2. - A composição mineralógica dos não-argilominerais, qualitativa e quantitativa, e a distribuição granulométrica das partículas.
+ # sent_id = 24-20150122-MONOGRAFIA_0-155
+-1	2	2	NUM	_	NumType=Card	5	parataxis	O	_
+-2	.	.	PUNCT	_	_	5	punct	O	_
++1	2	2	NUM	_	NumType=Card	5	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	5	punct	O	_
+ 4	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	composição	composição	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+@@ -45696,7 +45696,7 @@
+ # text = 3. - Teor em eletrólitos, quer dos cátions trocáveis, quer de sais solúveis, qualitativa e quantitativamente.
+ # sent_id = 24-20150122-MONOGRAFIA_0-156
+ 1	3	3	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Teor	teor	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 5	em	em	ADP	_	_	6	case	O	_
+@@ -45722,7 +45722,7 @@
+ # text = 4. - Natureza e teor de componentes orgânicos.
+ # sent_id = 24-20150122-MONOGRAFIA_0-157
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	e	e	CCONJ	_	_	6	cc	O	_
+@@ -45735,7 +45735,7 @@
+ # text = 5. - Características estruturais das argilas, tais como forma dos grãos de quartzo, grau de orientação ou paralelismo das partículas dos argilominerais, silicificação e outros.
+ # sent_id = 24-20150122-MONOGRAFIA_0-158
+ 1	5	5	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Características	característica	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 5	estruturais	estrutural	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+@@ -55118,7 +55118,7 @@
+ 
+ # text = sódio (< 0,1 %p/p), e uma razoável concentração de óxido de potássio (1,3 %p/p).
+ # sent_id = 24-20150122-MONOGRAFIA_0-495
+-1	sódio	sódio	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	sódio	sódio	NOUN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	(	(	PUNCT	_	_	3	punct	O	_
+ 3	<	<	SYM	_	_	1	appos	O	_
+ 4	0,1	0,1	NUM	_	NumType=Card	5	nummod	O	_
+@@ -70844,8 +70844,8 @@
+ 
+ # text = 1. - Introdução
+ # sent_id = 161-20150810-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Introdução	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -71539,8 +71539,8 @@
+ 
+ # text = 2. - Objetivos
+ # sent_id = 161-20150810-MONOGRAFIA_0-19
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+@@ -71620,8 +71620,8 @@
+ 
+ # text = 3. - Metodologia
+ # sent_id = 161-20150810-MONOGRAFIA_0-21
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -72260,8 +72260,8 @@
+ 
+ # text = 4. - Revisão Bibliográfica de CCGS e SIG
+ # sent_id = 161-20150810-MONOGRAFIA_0-38
+-1	4	4	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	4	4	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Revisão	Revisão	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	Bibliográfica	Bibliográfica	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -77362,8 +77362,8 @@
+ 
+ # text = 5. - Descrição do Projeto
+ # sent_id = 161-20150810-MONOGRAFIA_0-224
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Descrição	descrição	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5-6	do	_	_	_	_	_	_	_	_
+@@ -91758,8 +91758,8 @@
+ 
+ # text = 6. - O Mecanismo de Desenvolvimento Limpo
+ # sent_id = 161-20150810-MONOGRAFIA_0-723
+-1	6	6	NUM	_	NumType=Card	5	parataxis	O	_
+-2	.	.	PUNCT	_	_	5	punct	O	_
++1	6	6	NUM	_	NumType=Card	5	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	5	punct	O	_
+ 4	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	Mecanismo	Mecanismo	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -93617,8 +93617,8 @@
+ 
+ # text = 7. - Aplicação do projeto de CCGS como MDL
+ # sent_id = 161-20150810-MONOGRAFIA_0-787
+-1	7	7	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	7	7	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5-6	do	_	_	_	_	_	_	_	_
+@@ -95725,8 +95725,8 @@
+ 
+ # text = 8. - Resultados
+ # sent_id = 161-20150810-MONOGRAFIA_0-862
+-1	8	8	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	8	8	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 
+@@ -97037,8 +97037,8 @@
+ 
+ # text = 9. - Conclusão
+ # sent_id = 161-20150810-MONOGRAFIA_0-909
+-1	9	9	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	9	9	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Conclusão	conclusão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -115872,7 +115872,7 @@
+ 14	)	)	PUNCT	_	_	12	punct	O	_
+ 15	.	.	PUNCT	_	_	12	punct	O	_
+ 16	(	(	PUNCT	_	_	17	punct	O	_
+-17	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	12	appos	O	_
++17	a	a	NUM	_	_	21	nummod	O	_
+ 18	)	)	PUNCT	_	_	17	punct	O	_
+ 19	:	:	PUNCT	_	_	21	punct	O	_
+ 20	três	três	NUM	_	NumType=Card	21	nummod	O	_
+@@ -115881,7 +115881,7 @@
+ 23	paralelo	paralelo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 24	;	;	PUNCT	_	_	21	punct	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+-26	b	b	NOUN	_	Gender=Masc|Number=Sing	29	parataxis	O	_
++26	b	b	NUM	_	_	29	nummod	O	_
+ 27	)	)	PUNCT	_	_	26	punct	O	_
+ 28	dois	dois	NUM	_	NumType=Card	29	nummod	O	_
+ 29	estágios	estágio	NOUN	_	Gender=Masc|Number=Plur	21	conj	O	_
+@@ -115889,7 +115889,7 @@
+ 31	série	série	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
+ 32	;	;	PUNCT	_	_	29	punct	O	_
+ 33	(	(	PUNCT	_	_	34	punct	O	_
+-34	c	c	NOUN	_	Gender=Masc|Number=Sing	37	parataxis	O	_
++34	c	c	NUM	_	_	37	nummod	O	_
+ 35	)	)	PUNCT	_	_	34	punct	O	_
+ 36	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+ 37	estágio	estágio	NOUN	_	Gender=Masc|Number=Sing	6	conj	O	_
+@@ -115902,7 +115902,7 @@
+ 43	permeado	permeado	NOUN	_	Gender=Masc|Number=Sing	39	nmod	O	_
+ 44	;	;	PUNCT	_	_	47	punct	O	_
+ 45	(	(	PUNCT	_	_	47	punct	O	_
+-46	d)dois	d)dol	ADJ	_	Gender=Masc|Number=Plur	47	amod	O	_
++46	d)dois	d)dol	ADJ	_	Gender=Masc|Number=Plur	47	amod	O	tokenização
+ 47	estágios	estágio	NOUN	_	Gender=Masc|Number=Plur	37	appos	O	_
+ 48	com	com	ADP	_	_	49	case	O	_
+ 49	reciclo	reciclo	NOUN	_	Gender=Masc|Number=Sing	47	nmod	O	_
+@@ -142176,8 +142176,8 @@
+ 
+ # text = 5. - Desenvolver um modelo matemático que descreva o processo de repartida de linha levando em consideração os diferentes transientes observados; 6. - Avaliar a ação de desemulsificantes de diferentes composições no procedimento de repartida.
+ # sent_id = 77-20141209-TESEMSC_0-461
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Desenvolver	desenvolver	VERB	_	VerbForm=Inf	0	root	O	_
+ 5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -142199,7 +142199,7 @@
+ 21	transientes	transiente	NOUN	_	Gender=Masc|Number=Plur	16	obj	O	_
+ 22	observados	observar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	O	_
+ 23	;	;	PUNCT	_	_	27	punct	O	_
+-24	6	6	NUM	_	NumType=Card	27	parataxis	O	_
++24	6	6	NUM	_	NumType=Card	27	nummod	O	_
+ 25	.	.	PUNCT	_	_	24	punct	O	_
+ 26	-	-	PUNCT	_	_	27	punct	O	_
+ 27	Avaliar	avaliar	VERB	_	VerbForm=Inf	4	conj	O	_
+@@ -157829,13 +157829,13 @@
+ 11	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+ 12	TA	TA	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	11	appos	O	_
++14	a	a	NUM	_	_	17	nummod	O	_
+ 15	)	)	PUNCT	_	_	14	punct	O	_
+ 16	sem	sem	SCONJ	_	_	17	mark	O	_
+ 17	calcinar	calcinar	VERB	_	VerbForm=Inf	1	advcl	O	_
+ 18	e	e	CCONJ	_	_	20	cc	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+-20	b	b	NOUN	_	Gender=Masc|Number=Sing	17	conj	O	_
++20	b	b	NUM	_	_	22	nummod	O	_
+ 21	)	)	PUNCT	_	_	20	punct	O	_
+ 22	calcinado	calcinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	conj	O	_
+ 
+@@ -159375,7 +159375,7 @@
+ 2	21	21	NUM	_	NumType=Card	1	nummod	O	_
+ 3	–	–	PUNCT	_	_	5	punct	O	_
+ 4	(	(	PUNCT	_	_	5	punct	O	_
+-5	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	1	appos	O	_
++5	a	a	NUM	_	_	7	nummod	O	_
+ 6	)	)	PUNCT	_	_	5	punct	O	_
+ 7	Efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 8-9	da	_	_	_	_	_	_	_	_
+@@ -160574,7 +160574,7 @@
+ 11	reacionais	reacional	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+ 12	com	com	ADP	_	_	14	case	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	10	appos	O	_
++14	a	a	NUM	_	_	16	nummod	O	_
+ 15	)	)	PUNCT	_	_	14	punct	O	_
+ 16	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 17	residual	residual	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+@@ -160585,7 +160585,7 @@
+ 22	escuro	escuro	ADJ	_	Gender=Masc|Number=Sing	16	acl:relcl	O	_
+ 23	e	e	CCONJ	_	_	25	cc	O	_
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+-25	b	b	NOUN	_	Gender=Masc|Number=Sing	22	conj	O	_
++25	b	b	NUM	_	_	28	nummod	O	_
+ 26	)	)	PUNCT	_	_	25	punct	O	_
+ 27	com	com	ADP	_	_	28	case	O	_
+ 28	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	22	obl	O	_
+@@ -165440,8 +165440,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 391-20160914-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -166291,8 +166291,8 @@
+ 
+ # text = 2. - REFERENCIAL TEÓRICO
+ # sent_id = 391-20160914-MONOGRAFIA_0-21
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REFERENCIAL	referencial	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 5	TEÓRICO	TEÓRICO	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -170345,8 +170345,8 @@
+ 
+ # text = 3. - ESTADO DA ARTE
+ # sent_id = 391-20160914-MONOGRAFIA_0-158
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	ESTADO	estado	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 5-6	DA	_	_	_	_	_	_	_	_
+@@ -171377,7 +171377,7 @@
+ # text = 4. - MATERIAIS UTILIZADOS
+ # sent_id = 391-20160914-MONOGRAFIA_0-183
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	MATERIAIS	material	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	UTILIZADOS	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	acl	O	_
+@@ -172115,7 +172115,7 @@
+ # text = 6. - RESULTADOS E DISCUSSÕES
+ # sent_id = 391-20160914-MONOGRAFIA_0-220
+ 1	6	6	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -172899,14 +172899,14 @@
+ 
+ # text = 7. - CONCLUSÃO
+ # sent_id = 391-20160914-MONOGRAFIA_0-245
+-1	7	7	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	7	7	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONCLUSÃO	conclusão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+ # text = 2. - Os diagramas mostraram com clareza as diversas regiões formadas, permitindo a escolha dos pontos para extração do óleo da água.
+ # sent_id = 391-20160914-MONOGRAFIA_0-247
+-1	2	2	NUM	_	NumType=Card	6	obl	O	_
++1	2	2	NUM	_	NumType=Card	6	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	6	punct	O	_
+ 4	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -173006,8 +173006,8 @@
+ 
+ # text = 4. - A presença do tensoativo na emulsão inicial tornou a técnica do UV-VIS inadequada, pois os resultados das concentrações obtidas estão acima da concentração de óleo presente na emulsão inicial devido à absorção do tensoativo pelo clorofórmio.
+ # sent_id = 391-20160914-MONOGRAFIA_0-253
+-1	4	4	NUM	_	NumType=Card	13	parataxis	O	_
+-2	.	.	PUNCT	_	_	13	punct	O	_
++1	4	4	NUM	_	NumType=Card	13	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	13	punct	O	_
+ 4	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	presença	presença	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	O	_
+@@ -173095,8 +173095,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 25-20150123-MONOGRAFIA_0-5
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -173132,15 +173132,15 @@
+ 
+ # text = 2. - OBJETIVO
+ # sent_id = 25-20150123-MONOGRAFIA_0-10
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	OBJETIVO	objetivo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+ # text = 3. - MATERIAIS E MÉTODOS
+ # sent_id = 25-20150123-MONOGRAFIA_0-11
+ 1	3	3	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	MATERIAIS	material	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -173375,7 +173375,7 @@
+ # text = 6. - REFERÊNCIAS BIBLIOGRÁFICAS
+ # sent_id = 25-20150123-MONOGRAFIA_0-32
+ 1	6	6	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REFERÊNCIAS	refervncia	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 5	BIBLIOGRÁFICAS	bibliográfico	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+@@ -173386,8 +173386,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 25-20150123-MONOGRAFIA_0-34
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -177106,15 +177106,15 @@
+ 
+ # text = 2. - OBJETIVO
+ # sent_id = 25-20150123-MONOGRAFIA_0-144
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	OBJETIVO	objetivo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+ # text = 3. - MATERIAIS E MÉTODOS
+ # sent_id = 25-20150123-MONOGRAFIA_0-146
+ 1	3	3	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	MATERIAIS	material	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -180727,7 +180727,7 @@
+ # text = 4. - RESULTADOS E DISCUSSÕES
+ # sent_id = 25-20150123-MONOGRAFIA_0-280
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -185809,8 +185809,8 @@
+ 
+ # text = 5. - CONCLUSÃO
+ # sent_id = 25-20150123-MONOGRAFIA_0-462
+-1	5	5	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	5	5	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONCLUSÃO	conclusão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -209861,8 +209861,8 @@
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
+ 21	dados	dado	NOUN	_	Gender=Masc|Number=Plur	17	nmod	O	_
+-22	:	:	PUNCT	_	_	24	punct	O	_
+-23	-	-	PUNCT	_	_	24	punct	O	_
++22	:	:	PUNCT	_	_	8	punct	O	_
++23	-	-	PUNCT	_	_	9	punct	O	_
+ 24	EulerDPSA	EulerDPSA	PROPN	_	Gender=Fem|Number=Sing	17	appos	O	_
+ 25	.m	.m	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	e	e	CCONJ	_	_	28	cc	O	_
+@@ -237580,8 +237580,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 119-20141209-TESEMSC_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -239303,8 +239303,8 @@
+ 
+ # text = 2. - REVISÃO BIBLIOGRÁFICA
+ # sent_id = 119-20141209-TESEMSC_0-60
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REVISÃO	revisão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	BIBLIOGRÁFICA	bibliográfico	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+@@ -242524,13 +242524,13 @@
+ 11	horizontal	horizontal	ADJ	_	Gender=Masc|Number=Sing	10	amod	O	_
+ 12	.	.	PUNCT	_	_	14	punct	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	a	ela	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	10	appos	O	_
++14	a	a	NUM	_	_	17	nummod	O	_
+ 15	)	)	PUNCT	_	_	14	punct	O	_
+ 16	com	com	ADP	_	_	17	case	O	_
+ 17	reboco	reboco	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 18	;	;	PUNCT	_	_	20	punct	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+-20	b	b	NOUN	_	Gender=Masc|Number=Sing	17	appos	O	_
++20	b	b	NUM	_	_	23	nummod	O	_
+ 21	)	)	PUNCT	_	_	20	punct	O	_
+ 22	sem	sem	ADP	_	_	23	case	O	_
+ 23	reboco	reboco	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+@@ -251481,8 +251481,8 @@
+ 16	três	três	NUM	_	NumType=Card	17	nummod	O	_
+ 17	estágios	estágio	NOUN	_	Gender=Masc|Number=Plur	14	nmod	O	_
+ 18	:	:	PUNCT	_	_	19	punct	O	_
+-19	1	1	NUM	_	NumType=Card	17	appos	O	_
+-20	.	.	PUNCT	_	_	22	punct	O	_
++19	1	1	NUM	_	NumType=Card	22	nummod	O	_
++20	.	.	PUNCT	_	_	19	punct	O	_
+ 21	-	-	PUNCT	_	_	22	punct	O	_
+ 22	Quantificar	quantificar	VERB	_	VerbForm=Inf	17	acl	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+@@ -251493,7 +251493,7 @@
+ 27	dano	dano	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+ 28	existente	existente	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29	;	;	PUNCT	_	_	32	punct	O	_
+-30	2.	2.	NUM	_	NumType=Card	32	parataxis	O	_
++30	2.	2.	NUM	_	NumType=Card	32	nummod	O	_
+ 31	-	-	PUNCT	_	_	32	punct	O	_
+ 32	Diagnosticar	diagnosticar	VERB	_	VerbForm=Inf	12	conj	O	_
+ 33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	O	_
+@@ -251510,7 +251510,7 @@
+ 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
+ 43	poço	poço	NOUN	_	Gender=Masc|Number=Sing	40	nmod	O	_
+ 44	;	;	PUNCT	_	_	47	punct	O	_
+-45	3.	3.	NUM	_	NumType=Card	47	parataxis	O	_
++45	3.	3.	NUM	_	NumType=Card	47	nummod	O	_
+ 46	-	-	PUNCT	_	_	47	punct	O	_
+ 47	Realizar	realizar	VERB	_	VerbForm=Inf	12	conj	O	_
+ 48	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	47	obj	O	_
+@@ -251567,8 +251567,8 @@
+ 
+ # text = 3. - METODOLOGIA
+ # sent_id = 119-20141209-TESEMSC_0-486
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -254986,7 +254986,7 @@
+ # text = 4. - RESULTADOS OBTIDOS
+ # sent_id = 119-20141209-TESEMSC_0-595
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	OBTIDOS	obtir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	acl	O	_
+@@ -262102,7 +262102,7 @@
+ # text = 5. - CONCLUSÕES E RECOMENDAÇÕES
+ # sent_id = 119-20141209-TESEMSC_0-783
+ 1	5	5	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	CONCLUSÕES	conclusce	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_
+@@ -263925,8 +263925,8 @@
+ 
+ # text = 2. - REVISÃO BIBLIOGRÁFICA
+ # sent_id = 240-20140220-MONOGRAFIA_0-13
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REVISÃO	revisão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	BIBLIOGRÁFICA	bibliográfico	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+@@ -264673,7 +264673,7 @@
+ 
+ # text = 2. - Uma bomba extrai a lama do tanque e a bombeia, pelo interior da coluna de perfuração, passa pela broca, que está raspando a formação rochosa.
+ # sent_id = 240-20140220-MONOGRAFIA_0-32
+-1	2	2	NUM	_	NumType=Card	6	obl	O	_
++1	2	2	NUM	_	NumType=Card	6	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	6	punct	O	_
+ 4	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -264716,8 +264716,8 @@
+ 
+ # text = 3. - Retorna a superfície através do espaço anular formado pelas paredes do poço e da coluna de perfuração, transportando cascalhos das rochas raspadas pela broca.
+ # sent_id = 240-20140220-MONOGRAFIA_0-33
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	Retorna	retornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -264760,7 +264760,7 @@
+ 
+ # text = 4. - A seguir, a lama inicia a viagem de volta até a superfície transportando pedaços de rocha, chamados cortes, que foram raspados da formação pela broca.
+ # sent_id = 240-20140220-MONOGRAFIA_0-34
+-1	4	4	NUM	_	NumType=Card	9	parataxis	O	_
++1	4	4	NUM	_	NumType=Card	9	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	9	punct	O	_
+ 4	A	a	ADP	_	_	9	obl	O	MWEPOS=ADV
+@@ -264846,7 +264846,7 @@
+ 
+ # text = 6. - Os cascalhos das rochas escorrem pelo deslizador de xisto para serem descartados, ou analisados por geólogos.
+ # sent_id = 240-20140220-MONOGRAFIA_0-38
+-1	6	6	NUM	_	NumType=Card	9	parataxis	O	_
++1	6	6	NUM	_	NumType=Card	9	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	9	punct	O	_
+ 4	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -272135,8 +272135,8 @@
+ 
+ # text = 3. - METODOLOGIA EXPERIMENTAL
+ # sent_id = 240-20140220-MONOGRAFIA_0-295
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -276837,8 +276837,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 411-20150702-MONOGRAFIA_0-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -288186,8 +288186,8 @@
+ 
+ # text = 3. - METODOLOGIA
+ # sent_id = 411-20150702-MONOGRAFIA_0-291
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -290016,8 +290016,8 @@
+ 
+ # text = 1. - INTRODUÇÃO
+ # sent_id = 243-20141015-MONOGRAFIA_1-1
+-1	1	1	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	1	1	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	INTRODUÇÃO	introdução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 
+@@ -290637,8 +290637,8 @@
+ 
+ # text = 2. - REVISÃO BIBLIOGRÁFICA
+ # sent_id = 243-20141015-MONOGRAFIA_1-15
+-1	2	2	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	2	2	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REVISÃO	revisão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	BIBLIOGRÁFICA	bibliográfico	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+@@ -296069,8 +296069,8 @@
+ 
+ # text = 3. - METODOLOGIA EXPERIMENTAL
+ # sent_id = 243-20141015-MONOGRAFIA_1-201
+-1	3	3	NUM	_	NumType=Card	4	parataxis	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++1	3	3	NUM	_	NumType=Card	4	nummod	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -297279,7 +297279,7 @@
+ # text = 4. - RESULTADOS E DISCUSSÕES
+ # sent_id = 243-20141015-MONOGRAFIA_1-251
+ 1	4	4	NUM	_	NumType=Card	4	nummod	O	_
+-2	.	.	PUNCT	_	_	4	punct	O	_
++2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	RESULTADOS	resmltado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	E	e	CCONJ	_	_	6	cc	O	_

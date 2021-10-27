@@ -1,0 +1,168 @@
+commit 4c704207fadaaaa56c96b2f6b0d2eb30bcb9e517
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jul 21 06:38:44 2021 -0300
+
+    Modificações de obl com base no sema e preposições
+    
+    - Se pai das preposições "em" e "entre", os seguintes semas devem ser obl: LOCAL CAMPO BACIA LITOESTRATIGRÁFICA POÇO
+    - Se pai das preposições "em" e "entre", os seguintes semas devem ser obl: GEOCRONOLOGIA
+    - Se pai das preposições "após durante enquanto há", deve ser obl
+    
+    No primeiro caso, posteriormente serão obl:lmod
+    No segundo e terceiro casos, obl:tmod
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 536de24..c6979b2 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -10071,7 +10071,7 @@
+ 11	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 12	após	após	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	separação	separação	NOUN	_	Gender=Fem|Number=Sing	11	obj	O	_
++14	separação	separação	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 15-16	dos	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	O	_
+@@ -93206,7 +93206,7 @@
+ 45	resultaria	resultar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	43	acl:relcl	O	_
+ 46	em	em	ADP	_	_	48	case	O	_
+ 47	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	O	_
+-48	falha	falha	NOUN	_	Gender=Fem|Number=Sing	45	obj	B=LITOLOGIA|B=LOCAL:GEO	_
++48	falha	falha	NOUN	_	Gender=Fem|Number=Sing	45	obj	_	_
+ 49	de	de	ADP	_	_	52	case	O	_
+ 50	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Tot	52	det	O	_
+ 51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
+@@ -93256,7 +93256,7 @@
+ 14	em	em	ADP	_	_	17	case	O	_
+ 15	dois	dois	NUM	_	NumType=Card	17	nummod	O	_
+ 16	grandes	grande	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
+-17	campos	campo	NOUN	_	Gender=Masc|Number=Plur	13	obj	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++17	campos	campo	NOUN	_	Gender=Masc|Number=Plur	13	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	B=FLUIDO	_
+ 20-21	da	_	_	_	_	_	_	_	_
+@@ -114743,7 +114743,7 @@
+ 16-17	na	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	18	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+-18	costa	costa	NOUN	_	Gender=Fem|Number=Sing	15	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++18	costa	costa	NOUN	_	Gender=Fem|Number=Sing	15	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19-20	da	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	O	_
+@@ -115749,7 +115749,7 @@
+ 8-9	no	_	_	_	_	_	_	_	_
+ 8	em	em	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	obj	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++10	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	Tahiti	Tahiti	PROPN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+@@ -117511,7 +117511,7 @@
+ 10-11	nas	_	_	_	_	_	_	_	_
+ 10	em	em	ADP	_	_	12	case	O	_
+ 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
+-12	costas	costa	NOUN	_	Gender=Fem|Number=Plur	9	obj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++12	costas	costa	NOUN	_	Gender=Fem|Number=Plur	9	obl	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	marítimas	marítimo	ADJ	_	Gender=Fem|Number=Plur	12	amod	O	_
+ 14-15	da	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	16	case	O	_
+@@ -142716,7 +142716,7 @@
+ 5-6	na	_	_	_	_	_	_	_	_
+ 5	em	em	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	região	região	NOUN	_	Gender=Fem|Number=Sing	4	obj	B=LOCAL:GEO	_
++7	região	região	NOUN	_	Gender=Fem|Number=Sing	4	obl	B=LOCAL:GEO	_
+ 8	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	7	amod	B=UNIDADE_LITOESTRATIGRÁFICA|I=LOCAL:GEO	_
+ 9	e	e	CCONJ	_	_	11	cc	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+@@ -153100,7 +153100,7 @@
+ 18-19	no	_	_	_	_	_	_	_	_
+ 18	em	em	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	sopé	sopé	NOUN	_	Gender=Masc|Number=Sing	17	obj	B=LOCAL:GEO	_
++20	sopé	sopé	NOUN	_	Gender=Masc|Number=Sing	17	obl	B=LOCAL:GEO	_
+ 21	continental	continental	ADJ	_	Gender=Masc|Number=Sing	20	amod	I=LOCAL:GEO	_
+ 22	(	(	PUNCT	_	_	26	punct	O	_
+ 23	em	em	ADP	_	_	26	case	O	_
+@@ -164672,7 +164672,7 @@
+ 21-22	na	_	_	_	_	_	_	_	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	zona	zona	NOUN	_	Gender=Fem|Number=Sing	20	obj	B=LOCAL:ORG	_
++23	zona	zona	NOUN	_	Gender=Fem|Number=Sing	20	obl	B=LOCAL:ORG	_
+ 24	de	de	ADP	_	_	25	case	I=LOCAL:ORG	_
+ 25	transição	transição	NOUN	_	Gender=Fem|Number=Sing	23	nmod	I=LOCAL:ORG	_
+ 26	entre	entre	ADP	_	_	28	case	O	_
+@@ -234925,7 +234925,7 @@
+ 10	constituindo	constituir	VERB	_	VerbForm=Ger	3	advcl	O	_
+ 11	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl	O	_
+ 12	em	em	ADP	_	_	13	case	O	_
+-13	depósitos	depósito	NOUN	_	Gender=Masc|Number=Plur	10	obj	B=LOCAL:GEO	_
++13	depósitos	depósito	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	carapaças	carapaça	NOUN	_	Gender=Fem|Number=Plur	13	nmod	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+@@ -235055,7 +235055,7 @@
+ 9-10	na	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	8	obj	B=BACIA:TIPO	_
++11	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	8	obl	B=BACIA:TIPO	_
+ 12	.	.	PUNCT	_	_	8	punct	O	_
+ 13	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -239423,11 +239423,11 @@
+ 
+ # text = Ma após cessada a fase rifte (134-114 Ma) iniciou-se um levantamento de natureza epirogenética da crosta continental em resposta à passagem da placa Sul-Americana sobre uma anomalia térmica..
+ # sent_id = 20-20140904-TESEDSC_0-217
+-1	Ma	Ma	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	O	_
+-2	após	após	ADP	_	_	5	case	O	_
+-3	cessada	cessar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	1	acl	O	_
++1	Ma	mas	CCONJ	_	_	3	cc	O	_
++2	após	após	SCONJ	_	_	3	mark	O	_
++3	cessada	cessar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	advcl	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	fase	fase	NOUN	_	Gender=Fem|Number=Sing	3	obj	O	_
++5	fase	fase	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+ 6	rifte	rifte	ADJ	_	Gender=Fem|Number=Sing	5	amod	B=LOCAL:GEO	_
+ 7	(	(	PUNCT	_	_	9	punct	O	_
+ 8	134-114	134-114	NUM	_	NumType=Card	9	nummod	O	_
+@@ -239444,7 +239444,7 @@
+ 18-19	da	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	crosta	crosta	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++20	crosta	crosta	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
+ 21	continental	continental	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
+ 22	em	em	ADP	_	_	23	case	O	_
+ 23	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+@@ -275769,7 +275769,7 @@
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+-15	área	área	NOUN	_	Gender=Fem|Number=Sing	12	obj	B=LOCAL:GEO	_
++15	área	área	NOUN	_	Gender=Fem|Number=Sing	12	obl	B=LOCAL:GEO	_
+ 16	submersa	submerso	ADJ	_	Gender=Fem|Number=Sing	15	amod	I=LOCAL:GEO	_
+ 17	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	O	_
+ 18	associadas	associar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -299118,7 +299118,7 @@
+ 15	durante	durante	ADP	_	_	18	case	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	O	_
+ 17	várias	vário	DET	_	Gender=Fem|Number=Plur|PronType=Ind	18	det	O	_
+-18	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	14	obj	O	_
++18	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+@@ -351005,7 +351005,7 @@
+ 24	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	25	nsubj	O	_
+ 25	atua	atuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	O	_
+ 26	em	em	ADP	_	_	27	case	O	_
+-27	campos	campo	NOUN	_	Gender=Masc|Number=Plur	25	obj	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
++27	campos	campo	NOUN	_	Gender=Masc|Number=Plur	25	obl	B=BACIA|B=CAMPO:TIPO|B=LOCAL:GEO	_
+ 28	de	de	ADP	_	_	29	case	I=CAMPO:TIPO	_
+ 29	produção	produção	NOUN	_	Gender=Fem|Number=Sing	27	nmod	I=CAMPO:TIPO	_
+ 30	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	27	amod	O	_

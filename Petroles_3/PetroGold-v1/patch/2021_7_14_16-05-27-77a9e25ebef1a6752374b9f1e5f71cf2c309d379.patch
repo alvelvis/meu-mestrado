@@ -1,0 +1,2089 @@
+commit 77a9e25ebef1a6752374b9f1e5f71cf2c309d379
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jul 14 16:05:27 2021 -0300
+
+    de acordo com
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 537a91d..881eea2 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -1120,7 +1120,7 @@
+ 
+ # text = De acordo com Luiz & Silva (1995), frequentemente os lineamentos observados nos mapas magnéticos são paralelos às direções estruturais como zonas de cisalhamento, falhas, fraturas e dobras..
+ # sent_id = 247-20140910-MONOGRAFIA_0-32
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	20	obl	O	_
+@@ -1435,11 +1435,11 @@
+ 2	feições	feição	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	O	_
+ 3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	O	_
+ 4	marcadas	marcar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-5	de	de	ADP	_	_	6	case	O	_
+-6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-7	com	com	ADP	_	_	9	case	O	_
++5	de	de	ADP	_	_	9	case	O	MWEPOS=ADP
++6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
++7	com	com	ADP	_	_	5	fixed	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	adensamento	adensamento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	O	_
++9	adensamento	adensamento	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 10-11	das	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	O	_
+@@ -4077,7 +4077,7 @@
+ 
+ # text = De acordo com Bueno et al. (2007), é dividida em dois estágios, Rifte I – relacionado à Sequência de Idade que vai desde o Barremiano ao Aptiano, basicamente representada pelos basaltos da Formação Imbituba, e o Rifte II – composto pelas fácies siliciclásticas da Formação Cassino, constituindo as fases da sequência datando no Aptiano..
+ # sent_id = 247-20140910-MONOGRAFIA_0-116
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Bueno	Bueno	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+@@ -4309,7 +4309,7 @@
+ 
+ # text = De acordo com Martins-Neto et al. (2006) é possível dizer que a Sub-bacia de Torres (Norte da Bacia de Pelotas) ainda sofria o processo de rifteamento, enquanto a Sub-bacia de Pelotas (Sul) já experimentava o estágio de subsidência flexural produzido pelo resfriamento e contração termal da crosta oceânica..
+ # sent_id = 247-20140910-MONOGRAFIA_0-120
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Martins-Neto	Martins-Neto	PROPN	_	Gender=Masc|Number=Sing	11	obl	O	_
+@@ -5424,14 +5424,14 @@
+ 
+ # text = De acordo com Fonseca (2006), o Arco de Torres é uma estrutura antiformal ocorrendo na plataforma transversalmente à Bacia de Pelotas e se comporta como um subdivisor desta..
+ # sent_id = 247-20140910-MONOGRAFIA_0-147
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Fonseca	Fonseca	PROPN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 5	(	(	PUNCT	_	_	4	flat:name	O	_
+ 6	2006	2006	NUM	_	NumType=Card	4	flat:name	O	_
+ 7	)	)	PUNCT	_	_	4	flat:name	O	_
+-8	,	,	PUNCT	_	_	2	punct	O	_
++8	,	,	PUNCT	_	_	4	punct	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	Arco	Arco	PROPN	_	Gender=Masc|Number=Sing	15	nsubj	O	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+@@ -6712,11 +6712,11 @@
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	Lineamento	Lineamento	PROPN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 14	Tibagi	Tibagi	PROPN	_	Number=Sing	13	flat:name	O	_
+-15	de	de	ADP	_	_	16	case	O	_
+-16	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+-17	com	com	ADP	_	_	19	case	O	_
++15	de	de	ADP	_	_	19	case	O	MWEPOS=ADP
++16	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	fixed	O	_
++17	com	com	ADP	_	_	15	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	drenagem	drenagem	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++19	drenagem	drenagem	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 20	,	,	PUNCT	_	_	25	punct	O	_
+ 21	porém	porém	CCONJ	_	_	25	cc	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+@@ -7952,9 +7952,9 @@
+ 24	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	25	nsubj	O	_
+ 25	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	O	_
+ 26	orientação	orientação	NOUN	_	Gender=Fem|Number=Sing	25	obj	O	_
+-27	de	de	ADP	_	_	28	case	O	_
+-28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+-29	com	com	ADP	_	_	31	case	O	_
++27	de	de	ADP	_	_	31	case	O	MWEPOS=ADP
++28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	27	fixed	O	_
++29	com	com	ADP	_	_	27	fixed	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	direção	direção	NOUN	_	Gender=Fem|Number=Sing	25	obl	O	_
+ 32	N30E/65SE	N30E/65SE	PROPN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+@@ -10174,10 +10174,10 @@
+ 29	drenagens	drenagem	NOUN	_	Gender=Fem|Number=Plur	27	obl:agent	O	_
+ 30	e	e	CCONJ	_	_	31	cc	O	_
+ 31	relevo	relevo	NOUN	_	Gender=Masc|Number=Sing	29	conj	O	_
+-32	de	de	ADP	_	_	33	case	O	_
+-33	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	O	_
+-34	com	com	ADP	_	_	35	case	O	_
+-35	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	33	nmod	O	_
++32	de	de	ADP	_	_	35	case	O	MWEPOS=ADP
++33	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	32	fixed	O	_
++34	com	com	ADP	_	_	32	fixed	O	_
++35	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	27	obl	O	_
+ 36	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	38	nsubj:pass	O	_
+ 37	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	aux:pass	O	_
+ 38	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	35	acl:relcl	O	_
+@@ -10571,8 +10571,8 @@
+ 
+ # text = De acordo com informações verbais de Souza (2012) esta estrutura é identificada em mapa de isópacas do topo dos derrames de basaltos Mesozóico, como pode ser visto na Figura 34, este fato explica a ausência da estrutura em mapa aerogravimétrico..
+ # sent_id = 247-20140910-MONOGRAFIA_0-295
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	informações	informação	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 5	verbais	verbal	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+@@ -11566,9 +11566,9 @@
+ # sent_id = 241-20140227-MONOGRAFIA_0-28
+ 1	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	O	_
+ 2	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-3	de	de	ADP	_	_	4	case	O	_
+-4	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
+-5	com	com	ADP	_	_	7	case	O	_
++3	de	de	ADP	_	_	7	case	O	MWEPOS=ADP
++4	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	3	fixed	O	_
++5	com	com	ADP	_	_	3	fixed	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	grau	grau	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+@@ -11744,11 +11744,11 @@
+ 3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	O	_
+ 5	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	xcomp	O	_
+-6	de	de	ADP	_	_	7	case	O	_
+-7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+-8	com	com	ADP	_	_	10	case	O	_
++6	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
++7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	fixed	O	_
++8	com	com	ADP	_	_	6	fixed	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	região	região	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=LOCAL:GEO|B=LOCAL:POL	_
++10	região	região	NOUN	_	Gender=Fem|Number=Sing	5	obl	B=LOCAL:GEO|B=LOCAL:POL	_
+ 11	polar	polar	ADJ	_	Gender=Fem|Number=Sing	10	amod	I=LOCAL:POL|I=LOCAL:GEO	_
+ 12	,	,	PUNCT	_	_	14	punct	O	_
+ 13	ou	ou	CCONJ	_	_	14	cc	O	_
+@@ -11900,11 +11900,11 @@
+ 3	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	características	característica	NOUN	_	Gender=Fem|Number=Plur	3	obj	O	_
+ 5	específicas	específico	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+-6	de	de	ADP	_	_	7	case	O	_
+-7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+-8	com	com	ADP	_	_	10	case	O	_
++6	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
++7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	fixed	O	_
++8	com	com	ADP	_	_	6	fixed	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	pH	ph	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++10	pH	ph	NOUN	_	Gender=Masc|Number=Sing	3	obl	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -13115,15 +13115,15 @@
+ 5	classificar	classificar	VERB	_	VerbForm=Inf	3	acl	O	_
+ 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	O	_
+ 7	emulsões	emulsão	NOUN	_	Gender=Fem|Number=Plur	5	obj	B=QUÍMICA	_
+-8	,	,	PUNCT	_	_	10	punct	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++8	,	,	PUNCT	_	_	13	punct	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	O	_
+-13	Normas	Normas	PROPN	_	Gender=Fem|Number=Plur	10	nmod	O	_
++13	Normas	Normas	PROPN	_	Gender=Fem|Number=Plur	5	obl	O	_
+ 14	Técnicas	Técnicas	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	Brasileiras	Brasileiras	PROPN	_	Number=Sing	13	flat:name	O	_
+-16	,	,	PUNCT	_	_	10	punct	O	_
++16	,	,	PUNCT	_	_	13	punct	O	_
+ 17	leva	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 18	em	em	ADP	_	_	19	case	O	_
+ 19	conta	conta	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+@@ -14230,7 +14230,7 @@
+ 
+ # text = De acordo com Grajales (2011) os materiais nanoestruturados são sólidos que apresentam microestruturas nanométricas, sejam elas ordenadas ou desordenadas..
+ # sent_id = 241-20140227-MONOGRAFIA_0-106
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Grajales	Grajales	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+@@ -16493,9 +16493,9 @@
+ 4	peneiramento	peneiramento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	O	_
+ 6	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	14393	14393	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -16563,9 +16563,9 @@
+ 6	Saybolt-Furol	Saybolt-Furol	PROPN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+ 7	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	O	_
+ 8	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 14	NBR	NBR	PROPN	_	Number=Sing	13	flat:name	O	_
+@@ -16826,9 +16826,9 @@
+ 4	pH	ph	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	O	_
+ 6	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -16950,9 +16950,9 @@
+ 4	adesividade	adesividade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	O	_
+ 6	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -17052,9 +17052,9 @@
+ 4	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 5	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	O	_
+ 6	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+@@ -17183,9 +17183,9 @@
+ 6	evaporação	evaporação	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+ 7	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	O	_
+ 8	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 14	NBR	NBR	PROPN	_	Number=Sing	13	flat:name	O	_
+@@ -17400,8 +17400,8 @@
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+ 11	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+-13	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	11	nmod	B=LITOLOGIA	_
+-14	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
++13	vermiculita	vermiculita	NOUN	_	Gender=Fem|Number=Sing	9	nmod	B=LITOLOGIA	_
++14	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	13	acl	O	_
+ 15-16	na	_	_	_	_	_	_	_	_
+ 15	em	em	ADP	_	_	17	case	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+@@ -17410,13 +17410,13 @@
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+ 20	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=QUÍMICA	_
+-21	,	,	PUNCT	_	_	26	punct	O	_
++21	,	,	PUNCT	_	_	24	punct	O	_
+ 22	com	com	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	intuito	intuito	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
++24	intuito	intuito	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+ 25	de	de	SCONJ	_	_	26	mark	O	_
+ 26	encontrar	encontrar	VERB	_	VerbForm=Inf	24	acl	O	_
+-27	,	,	PUNCT	_	_	26	punct	O	_
++27	,	,	PUNCT	_	_	31	punct	O	_
+ 28	através	através	ADV	_	_	31	case	O	MWEPOS=ADP
+ 29-30	da	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	28	fixed	O	_
+@@ -17428,16 +17428,16 @@
+ 34	de	de	ADP	_	_	36	case	O	_
+ 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+ 36	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
+-37	,	,	PUNCT	_	_	26	punct	O	_
++37	,	,	PUNCT	_	_	31	punct	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+ 39	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	26	obj	B=QUÍMICA	_
+ 40	mais	mais	ADV	_	_	41	advmod	O	_
+ 41	padrão	padrão	ADJ	_	Gender=Masc|Number=Sing	39	amod	O	_
+-42	de	de	ADP	_	_	43	case	O	_
+-43	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	39	nmod	O	_
+-44	com	com	ADP	_	_	46	case	O	_
++42	de	de	ADP	_	_	46	case	O	MWEPOS=ADP
++43	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	42	fixed	O	_
++44	com	com	ADP	_	_	42	fixed	O	_
+ 45	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	O	_
+-46	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	43	nmod	O	_
++46	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	26	obl	O	_
+ 47	exigidos	exigir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	46	acl	O	_
+ 48-49	pela	_	_	_	_	_	_	_	_
+ 48	por	por	ADP	_	_	50	case	O	_
+@@ -17763,13 +17763,13 @@
+ 
+ # text = De acordo com a tabela 02, observa-se que as emulsões asfálticas modificadas com vermiculita apresentam pH no intervalo de 1,98 a 2,38, com valores próximos ao pH das emulsões asfálticas convencionais..
+ # sent_id = 241-20140227-MONOGRAFIA_0-213
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 6	02	02	NUM	_	NumType=Card	5	nummod	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++7	,	,	PUNCT	_	_	5	punct	O	_
+ 8-9	observa-se	_	_	_	_	_	_	_	_
+ 8	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
+@@ -17809,7 +17809,7 @@
+ 
+ # text = De acordo com Baungardner (2006), as emulsões asfálticas catiônicas devem apresentar pH na faixa de 1 a 7, mais especificamente entre 2 a 4..
+ # sent_id = 241-20140227-MONOGRAFIA_0-214
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Baungardner	Baungardner	PROPN	_	Gender=Masc|Number=Sing	13	obl	O	_
+@@ -17842,13 +17842,13 @@
+ 
+ # text = De acordo com este mesmo autor, a dosagem de ácido adicionado a emulsão é o fator determinante no valor final do pH da emulsão..
+ # sent_id = 241-20140227-MONOGRAFIA_0-215
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+-3	com	com	ADP	_	_	6	case	O	_
++1	De	de	ADP	_	_	6	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	O	_
+ 5	mesmo	mesmo	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+-6	autor	autor	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++6	autor	autor	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
++7	,	,	PUNCT	_	_	6	punct	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	dosagem	dosagem	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+@@ -17986,7 +17986,7 @@
+ 
+ # text = De acordo com Shafii et al. (2011), com base no “Transportation Research Board”, o principal propósito do processo de recuperação do resíduo asfáltico é determinar a quantidade de fase não aquosa na emulsão e obter o resíduo asfáltico para outros testes..
+ # sent_id = 241-20140227-MONOGRAFIA_0-219
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Shafii	Shafii	PROPN	_	Gender=Masc|Number=Sing	34	obl	O	_
+@@ -18169,9 +18169,9 @@
+ 
+ # text = De acordo com estes autores as altas temperaturas utilizadas para obter o resíduo não representam as reais temperaturas quando a emulsão é aplicada no campo..
+ # sent_id = 241-20140227-MONOGRAFIA_0-223
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
+-3	com	com	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+ 5	autores	autor	NOUN	_	Gender=Masc|Number=Plur	15	obl	O	_
+ 6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+@@ -18226,9 +18226,9 @@
+ 14	tende	tender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	O	_
+ 15	a	a	SCONJ	_	_	16	mark	O	_
+ 16	aumentar	aumentar	VERB	_	VerbForm=Inf	14	xcomp	O	_
+-17	de	de	ADP	_	_	18	case	O	_
+-18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+-19	com	com	ADP	_	_	21	case	O	_
++17	de	de	ADP	_	_	21	case	O	MWEPOS=ADP
++18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	fixed	O	_
++19	com	com	ADP	_	_	17	fixed	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+ 22-23	da	_	_	_	_	_	_	_	_
+@@ -18244,12 +18244,12 @@
+ 30	com	com	ADP	_	_	32	case	O	_
+ 31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	O	_
+ 32	asfalto	asfalto	NOUN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+-33	e	e	CCONJ	_	_	35	cc	O	_
+-34	de	de	ADP	_	_	35	case	O	_
+-35	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	32	conj	O	_
+-36	com	com	ADP	_	_	38	case	O	_
++33	e	e	CCONJ	_	_	38	cc	O	_
++34	de	de	ADP	_	_	38	case	O	MWEPOS=ADP
++35	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	34	fixed	O	_
++36	com	com	ADP	_	_	34	fixed	O	_
+ 37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	O	_
+-38	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	35	nmod	O	_
++38	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	21	conj	O	_
+ 39-40	da	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	41	case	O	_
+ 40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	O	_
+@@ -18753,7 +18753,7 @@
+ 
+ # text = De acordo com Oda (2000), o comportamento esperado é que a adição de nanomateriais torne o ligante mais consistente, resultando em valores mais baixos de penetração, proporcionalmente ao teor de nanomaterial inserido..
+ # sent_id = 241-20140227-MONOGRAFIA_0-241
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Oda	Oda	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+@@ -18797,7 +18797,7 @@
+ 
+ # text = De acordo com a especificação técnica (DNER-EM 369/97) as emulsões asfálticas catiônicas de ruptura rápida, média e lenta devem apresentar penetração no intervalo de 50 - 250 (1/10 mm)..
+ # sent_id = 241-20140227-MONOGRAFIA_0-242
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -18838,7 +18838,7 @@
+ 
+ # text = De acordo com os resultados apresentados na Tabela 02, todos os valores obtidos encontram-se dentro da faixa especificada..
+ # sent_id = 241-20140227-MONOGRAFIA_0-243
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -19069,7 +19069,7 @@
+ 
+ # text = De acordo com as propriedades físicas das emulsões asfálticas modificadas, conclui-se que esta argila pode ocasionar melhorias nas propriedades da emulsão e, por consequência, do asfalto. • Todas as emulsões convencionais desenvolvidas apresentaram resultados no ensaio de peneiramento e sedimentação de acordo com os requisitos presentes na especificação (DNER-EM 369/97), comprovando a obtenção de emulsões estáveis. • Os resultados de viscosidade mostraram-se contra ao presente na literatura..
+ # sent_id = 241-20140227-MONOGRAFIA_0-253
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -19125,11 +19125,11 @@
+ 48	peneiramento	peneiramento	NOUN	_	Gender=Masc|Number=Sing	46	nmod	O	_
+ 49	e	e	CCONJ	_	_	50	cc	O	_
+ 50	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	48	conj	O	_
+-51	de	de	ADP	_	_	52	case	O	_
+-52	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	50	nmod	O	_
+-53	com	com	ADP	_	_	55	case	O	_
++51	de	de	ADP	_	_	55	case	O	MWEPOS=ADP
++52	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	51	fixed	O	_
++53	com	com	ADP	_	_	51	fixed	O	_
+ 54	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	O	_
+-55	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	52	nmod	O	_
++55	requisitos	requisito	NOUN	_	Gender=Masc|Number=Plur	43	nmod	O	_
+ 56	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	55	amod	O	_
+ 57-58	na	_	_	_	_	_	_	_	_
+ 57	em	em	ADP	_	_	59	case	O	_
+@@ -38701,12 +38701,12 @@
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	corrente	corrente	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 10	infinita	infinito	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+-11	de	de	ADP	_	_	12	case	O	_
+-12	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-13	com	com	ADP	_	_	16	case	O	_
++11	de	de	ADP	_	_	16	case	O	MWEPOS=ADP
++12	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	fixed	O	_
++13	com	com	ADP	_	_	11	fixed	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 15	terceira	terceiro	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	16	amod	O	_
+-16	relação	relação	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++16	relação	relação	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 17	constitutivo	constitutivo	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+ 18	fundamental	fundamental	ADJ	_	Gender=Masc|Number=Sing	16	amod	O	_
+ 19	apresentado	apresentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	O	_
+@@ -39599,7 +39599,7 @@
+ 
+ # text = De acordo com as etapas descritas foram obtidas as variáveis principais do problema, descritas na Figura 7..
+ # sent_id = 398-20160721-MONOGRAFIA_0-212
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -40467,15 +40467,15 @@
+ 21	testadas	testar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	conj	O	_
+ 22	,	,	PUNCT	_	_	21	punct	O	_
+ 23	onde	onde	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	40	obl	O	_
+-24	de	de	ADP	_	_	25	case	O	_
+-25	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	40	obl	O	_
+-26	com	com	ADP	_	_	28	case	O	_
++24	de	de	ADP	_	_	28	case	O	MWEPOS=ADP
++25	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	24	fixed	O	_
++26	com	com	ADP	_	_	24	fixed	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+-28	variação	variação	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
++28	variação	variação	NOUN	_	Gender=Fem|Number=Sing	40	obl	O	_
+ 29	em	em	ADP	_	_	31	case	O	_
+ 30	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	31	det	O	_
+ 31	intensidade	intensidade	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
+-32	,	,	PUNCT	_	_	25	punct	O	_
++32	,	,	PUNCT	_	_	28	punct	O	_
+ 33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+ 34	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	40	nsubj	O	_
+ 35-36	nos	_	_	_	_	_	_	_	_
+@@ -40560,11 +40560,11 @@
+ 7	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=FLUIDO	_
+ 8	variam	variar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	muito	muito	ADV	_	_	8	advmod	O	_
+-10	de	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++10	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	O	_
+-14	parâmetros	parâmetro	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
++14	parâmetros	parâmetro	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	composição	composição	NOUN	_	Gender=Fem|Number=Sing	14	appos	O	_
+ 17-18	do	_	_	_	_	_	_	_	_
+@@ -45199,12 +45199,12 @@
+ 6	tradicionalmente	tradicionalmente	ADV	_	_	7	advmod	O	_
+ 7	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 8	,	,	PUNCT	_	_	7	punct	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+-11	com	com	ADP	_	_	14	case	O	_
++9	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+ 13	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	14	det	O	_
+-14	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
++14	constituinte	constituinte	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 15	principal	principal	ADJ	_	Gender=Masc|Number=Sing	14	amod	O	_
+ 16	,	,	PUNCT	_	_	18	punct	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+@@ -67857,11 +67857,11 @@
+ 32	mas	mas	CCONJ	_	_	34	cc	O	_
+ 33	com	com	ADP	_	_	34	case	O	_
+ 34	adaptações	adaptação	NOUN	_	Gender=Fem|Number=Plur	11	conj	O	_
+-35	de	de	ADP	_	_	36	case	O	_
+-36	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	34	nmod	O	_
+-37	com	com	ADP	_	_	39	case	O	_
++35	de	de	ADP	_	_	39	case	O	MWEPOS=ADP
++36	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	35	fixed	O	_
++37	com	com	ADP	_	_	35	fixed	O	_
+ 38	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	O	_
+-39	necessidades	necessidade	NOUN	_	Gender=Fem|Number=Plur	36	nmod	O	_
++39	necessidades	necessidade	NOUN	_	Gender=Fem|Number=Plur	34	nmod	O	_
+ 40-41	do	_	_	_	_	_	_	_	_
+ 40	de	de	ADP	_	_	42	case	O	_
+ 41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	O	_
+@@ -68052,9 +68052,9 @@
+ 2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	_
+ 3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	O	_
+ 4	discriminados	discriminar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-5	de	de	ADP	_	_	6	case	O	_
+-6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-7	com	com	ADP	_	_	9	case	O	_
++5	de	de	ADP	_	_	9	case	O	MWEPOS=ADP
++6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
++7	com	com	ADP	_	_	5	fixed	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+ 9	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	4	obl	O	_
+ 10	sedimentares	sedimentar	ADJ	_	Gender=Fem|Number=Plur	9	amod	O	_
+@@ -70373,11 +70373,11 @@
+ 6	dois	dois	NUM	_	NumType=Card	7	nummod	O	_
+ 7	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 8	principais	principal	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	padrão	padrão	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
++13	padrão	padrão	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	paleocorrente	paleocorrente	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 16	observado	observar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	O	_
+@@ -83719,11 +83719,11 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=FLUIDO	_
+-16	de	de	ADP	_	_	17	case	O	_
+-17	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	O	_
+-18	com	com	ADP	_	_	20	case	O	_
++16	de	de	ADP	_	_	20	case	O	MWEPOS=ADP
++17	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	fixed	O	_
++18	com	com	ADP	_	_	16	fixed	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++20	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
+ 23	imiscíveis	imiscível	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+@@ -85395,11 +85395,11 @@
+ 6	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	O	_
+ 7	capturado	capturar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl:relcl	O	_
+ 8	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++13	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 14	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj:pass	O	_
+ 15	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux:pass	O	_
+ 16	aplicada	aplicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	acl:relcl	O	_
+@@ -88883,16 +88883,16 @@
+ 
+ # text = De acordo com informações da própria empresa, a produção de aço chegará e se manterá na capacidade máxima em 2013, ou seja, 5 milhões de toneladas por ano..
+ # sent_id = 161-20150810-MONOGRAFIA_0-358
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
+-3	com	com	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	informações	informação	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 5-6	da	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	8	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 7	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Emp	8	det	O	_
+ 8	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+-9	,	,	PUNCT	_	_	2	punct	O	_
++9	,	,	PUNCT	_	_	4	punct	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	produção	produção	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+@@ -89499,11 +89499,11 @@
+ 13	carbono	carbono	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 14	variam	variar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 15	significativamente	significativamente	ADV	_	_	14	advmod	O	_
+-16	de	de	ADP	_	_	17	case	O	_
+-17	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
+-18	com	com	ADP	_	_	20	case	O	_
++16	de	de	ADP	_	_	20	case	O	MWEPOS=ADP
++17	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	fixed	O	_
++18	com	com	ADP	_	_	16	fixed	O	_
+ 19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
+-20	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
++20	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 21	almejada	almejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	20	acl	O	_
+ 22	a	a	SCONJ	_	_	24	mark	O	_
+ 23	ser	ser	AUX	_	VerbForm=Inf	24	aux:pass	O	_
+@@ -96449,12 +96449,12 @@
+ 13	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 14	por	por	ADP	_	_	15	case	O	_
+ 15	poço	poço	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+-16	,	,	PUNCT	_	_	18	punct	O	_
+-17	de	de	ADP	_	_	18	case	O	_
+-18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+-19	com	com	ADP	_	_	21	case	O	_
++16	,	,	PUNCT	_	_	21	punct	O	_
++17	de	de	ADP	_	_	21	case	O	MWEPOS=ADP
++18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	fixed	O	_
++19	com	com	ADP	_	_	17	fixed	O	_
+ 20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	O	_
+-21	condições	condição	NOUN	_	Gender=Fem|Number=Plur	18	nmod	O	_
++21	condições	condição	NOUN	_	Gender=Fem|Number=Plur	34	obl	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24	de	de	ADP	_	_	25	case	O	_
+@@ -96693,9 +96693,9 @@
+ 12	injetado	injetar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl:relcl	O	_
+ 13	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	O	_
+ 14	variar	variar	VERB	_	VerbForm=Inf	0	root	O	_
+-15	de	de	ADP	_	_	16	case	O	_
+-16	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
+-17	com	com	ADP	_	_	19	case	O	_
++15	de	de	ADP	_	_	19	case	O	MWEPOS=ADP
++16	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	fixed	O	_
++17	com	com	ADP	_	_	15	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+@@ -97674,12 +97674,12 @@
+ 
+ # text = De acordo com a Petrobras, um metro cúbico de óleo cru equivale a 6,3 barris..
+ # sent_id = 161-20150810-MONOGRAFIA_0-607
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	Petrobras	Petrobras	PROPN	_	Gender=Fem|Number=Sing	13	obl	O	_
+-6	,	,	PUNCT	_	_	2	punct	O	_
++6	,	,	PUNCT	_	_	5	punct	O	_
+ 7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	metro	metro	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	O	_
+ 9	cúbico	cúbico	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+@@ -99080,9 +99080,9 @@
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=FLUIDO	_
+ 8	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+@@ -100483,11 +100483,11 @@
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	monitoramento	monitoramento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	de	de	ADP	_	_	7	case	O	_
+-7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+-8	com	com	ADP	_	_	10	case	O	_
++6	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
++7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	fixed	O	_
++8	com	com	ADP	_	_	6	fixed	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	duração	duração	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++10	duração	duração	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -103518,11 +103518,11 @@
+ 31	de	de	ADP	_	_	32	case	O	_
+ 32	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	30	nmod	B=QUÍMICA	_
+ 33	)	)	PUNCT	_	_	30	punct	O	_
+-34	de	de	ADP	_	_	35	case	O	_
+-35	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+-36	com	com	ADP	_	_	38	case	O	_
++34	de	de	ADP	_	_	38	case	O	MWEPOS=ADP
++35	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	34	fixed	O	_
++36	com	com	ADP	_	_	34	fixed	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+-38	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
++38	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+ 39	de	de	ADP	_	_	40	case	O	_
+ 40	linha	linha	NOUN	_	Gender=Fem|Number=Sing	38	nmod	O	_
+ 41	de	de	ADP	_	_	42	case	O	_
+@@ -104080,8 +104080,8 @@
+ 30	sendo	ser	AUX	_	VerbForm=Ger	32	aux:pass	O	_
+ 31	propriamente	propriamente	ADV	_	_	32	advmod	O	_
+ 32	mitigadas	mitigar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	ccomp	O	_
+-33	de	de	ADP	_	_	34	case	O	_
+-34	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
++33	de	de	ADP	_	_	37	case	O	MWEPOS=ADP
++34	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	33	fixed	O	_
+ 35	com	com	ADP	_	_	33	fixed	O	_
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+ 37	previsto	prever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	32	advcl	O	_
+@@ -122575,14 +122575,14 @@
+ 
+ # text = De acordo com Euphemio (2009), o desenvolvimento de tecnologias de bombeamento e compressão submarinas permitirá a construção de sistemas subsea to shore..
+ # sent_id = 334-20150521-MONOGRAFIA_0-352
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Euphemio	Euphemio	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
+ 5	(	(	PUNCT	_	_	4	flat:name	O	_
+ 6	2009	2009	NUM	_	NumType=Card	4	flat:name	O	_
+ 7	)	)	PUNCT	_	_	4	flat:name	O	_
+-8	,	,	PUNCT	_	_	2	punct	O	_
++8	,	,	PUNCT	_	_	4	punct	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+@@ -130422,9 +130422,9 @@
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+ 17	’	’	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 18	)	)	PUNCT	_	_	10	punct	O	_
+-19	de	de	ADP	_	_	20	case	O	_
+-20	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
+-21	com	com	ADP	_	_	23	case	O	_
++19	de	de	ADP	_	_	23	case	O	MWEPOS=ADP
++20	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	19	fixed	O	_
++21	com	com	ADP	_	_	19	fixed	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	Eq.	Eq.	PROPN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+@@ -134606,11 +134606,11 @@
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	I=FLUIDO	_
+ 25	mar	mar	NOUN	_	Gender=Masc|Number=Sing	22	nmod	I=FLUIDO	_
+ 26	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	O	_
+-27	de	de	ADP	_	_	28	case	O	_
+-28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
+-29	com	com	ADP	_	_	31	case	O	_
++27	de	de	ADP	_	_	31	case	O	MWEPOS=ADP
++28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	27	fixed	O	_
++29	com	com	ADP	_	_	27	fixed	O	_
+ 30	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	31	det	O	_
+-31	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
++31	profundidade	profundidade	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
+ 32	.	.	PUNCT	_	_	3	punct	O	_
+ 33	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -137789,7 +137789,7 @@
+ 
+ # text = De acordo com Brasil (2012), preparada pela mistura de hidrocarbonetos e água, uma emulsão é instável, as fases são facilmente separadas..
+ # sent_id = 202-20140404-MONOGRAFIA_0-22
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	21	obl	O	_
+@@ -138203,7 +138203,7 @@
+ 
+ # text = De acordo com Pal (1994), as emulsões podem ser classificadas em três grandes grupos: as emulsões de água em óleo (A/O), de óleo em água (O/A) e as emulsões múltiplas..
+ # sent_id = 202-20140404-MONOGRAFIA_0-29
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Pal	Pal	PROPN	_	Gender=Masc|Number=Sing	11	obl	O	_
+@@ -138404,11 +138404,11 @@
+ 4	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	ser	ser	AUX	_	VerbForm=Inf	6	aux:pass	O	_
+ 6	classificadas	classificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	xcomp	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++11	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+ 12-13	das	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	O	_
+@@ -138558,7 +138558,7 @@
+ 14	líquido-líquido	líquido-líquido	ADJ	_	Gender=Fem|Number=Sing	13	amod	O	_
+ 15	)	)	PUNCT	_	_	13	punct	O	_
+ 16	,	,	PUNCT	_	_	3	punct	O	_
+-17	de	de	ADP	_	_	20	case	O	_
++17	de	de	ADP	_	_	20	case	O	MWEPOS=ADP
+ 18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	fixed	O	_
+ 19	com	com	ADP	_	_	17	fixed	O	_
+ 20	Daltin	Daltin	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+@@ -141244,7 +141244,7 @@
+ 
+ # text = De acordo com Bradley (2001) a quantidade de água que emulsifica com óleo cru na maioria dos sistemas de produção pode variar de menos de 1 a mais de 60 % em alguns casos..
+ # sent_id = 202-20140404-MONOGRAFIA_0-122
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Bradley	Bradley	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+@@ -142889,8 +142889,8 @@
+ 55	intraplaca	intraplaco	ADJ	_	Gender=Fem|Number=Sing	54	amod	O	_
+ 56	ou	ou	CCONJ	_	_	62	cc	O	_
+ 57	ainda	ainda	ADV	_	_	59	fixed	O	_
+-58	,	,	PUNCT	_	_	60	punct	O	_
+-59	de	de	ADP	_	_	62	case	O	_
++58	,	,	PUNCT	_	_	62	punct	O	_
++59	de	de	ADP	_	_	62	case	O	MWEPOS=ADP
+ 60	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	59	fixed	O	_
+ 61	com	com	ADP	_	_	59	fixed	O	_
+ 62	Assumpção	Assumpção	PROPN	_	Gender=Masc|Number=Sing	51	obl	O	_
+@@ -144717,7 +144717,7 @@
+ 
+ # text = De acordo com Hasui (1979) e Assumpção (1980a) o interior das placas não pode ser definido como assísmico e sim, com um aspecto de atividade de menor frequência, geralmente com magnitudes menores e, via de regra, menos intensa..
+ # sent_id = 258-20160602-TESEMSC_0-63
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Hasui	Hasui	PROPN	_	Gender=Masc|Number=Sing	19	obl	O	_
+@@ -148187,7 +148187,7 @@
+ 
+ # text = De acordo com Assumpção et al. (2011), o plano nodal subvertical estabelecido é bastante evidente na análise das polaridades da onda P, já o plano sub-horizontal não se apresenta tão bem definido ao longo dos dados e dessa forma pode variar 10 ou 20 graus..
+ # sent_id = 258-20160602-TESEMSC_0-144
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Assumpção	Assumpção	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
+@@ -152999,7 +152999,7 @@
+ 
+ # text = De acordo com Palma (1984), o Platô de São Paulo se estende por cerca de 1000 km desde o sul da Cadeia Vitória-Trindade até a Dorsal de São Paulo, com largura de aproximadamente 150 km do extremo norte até a altura da cidade de Cabo Frio, para cerca de 550 km na região em frente a Bacia de Santos..
+ # sent_id = 258-20160602-TESEMSC_0-256
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Palma	Palma	PROPN	_	Gender=Masc|Number=Sing	15	obl	O	_
+@@ -153651,7 +153651,7 @@
+ 
+ # text = De acordo com Asmus & Ferrari (1978), Asmus & Porto (1980), Asmus & Guazelli (1981), Ojeda (1982) e Asmus & Baisch (1983) o mecanismo desencadeador do rifteamento inicial é atribuído a um domeamento térmico sub-crustal ou intumescência do manto na porção sudeste do Brasil, como causa do adelgaçamento crustal..
+ # sent_id = 258-20160602-TESEMSC_0-267
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Asmus	Asmus	PROPN	_	Gender=Masc|Number=Sing	44	obl	O	_
+@@ -155156,7 +155156,7 @@
+ 
+ # text = De acordo com Telford et al. (1990) algumas técnicas de interpretação auxiliam na obtenção de um bom resultado..
+ # sent_id = 258-20160602-TESEMSC_0-297
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Telford	Telford	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
+@@ -156087,9 +156087,9 @@
+ 9	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 10	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	O	_
+ 11	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-12	de	de	ADP	_	_	13	case	O	_
+-13	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
+-14	com	com	ADP	_	_	16	case	O	_
++12	de	de	ADP	_	_	16	case	O	MWEPOS=ADP
++13	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	fixed	O	_
++14	com	com	ADP	_	_	12	fixed	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	localização	localização	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 17-18	do	_	_	_	_	_	_	_	_
+@@ -158775,11 +158775,11 @@
+ 1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	O	_
+ 2	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+-4	de	de	ADP	_	_	5	case	O	_
+-5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
+-6	com	com	ADP	_	_	8	case	O	_
++4	de	de	ADP	_	_	8	case	O	MWEPOS=ADP
++5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	fixed	O	_
++6	com	com	ADP	_	_	4	fixed	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++8	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	2	obl	O	_
+ 9	,	,	PUNCT	_	_	2	punct	O	_
+ 10	por	por	ADP	_	_	11	case	O	_
+ 11	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	2	obl:agent	B=LITOLOGIA	_
+@@ -159123,12 +159123,12 @@
+ 
+ # text = De acordo com a literatura, marca o início da sedimentação marinha na bacia e o intervalo sedimentar compreende arenitos e folhelhos associado a um sistema de leques aluviais e deltaicos da Formação Florianópolis; calcarenitos oolíticos e/ou oncolíticos gradando lateralmente para calcilutitos e margas da Formação Guarujá; folhelhos radioativos e margas da Formação Itanhaém; e os sedimentos arenosos do Membro Tombo (MOREIRA et al. 2007)..
+ # sent_id = 258-20160602-TESEMSC_0-402
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+-3	com	com	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-6	,	,	PUNCT	_	_	2	punct	O	_
++5	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
++6	,	,	PUNCT	_	_	5	punct	O	_
+ 7	marca	marcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	início	início	NOUN	_	Gender=Masc|Number=Sing	7	obj	O	_
+@@ -159816,7 +159816,7 @@
+ 
+ # text = De acordo com Moreira et al (2007) corresponde a deposição de calcarenitos e calcirruditos bioclásticos intercalados com argilito cinza-esverdeado, siltitos e margas da Formação Iguape nas porções proximais; siltitos, folhelhos, diamictitos e margas da Formação Marambaia na porção distal; e arenitos turbidíticos do Membro Maresias..
+ # sent_id = 258-20160602-TESEMSC_0-416
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Moreira	Moreira	PROPN	_	Gender=Masc|Number=Sing	10	obl	O	_
+@@ -167114,11 +167114,11 @@
+ 7	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 8	em	em	ADP	_	_	9	case	O	_
+ 9	classes	classe	NOUN	_	Gender=Fem|Number=Plur	7	obl	O	_
+-10	de	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++10	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	seus	seu	DET	_	Gender=Masc|Number=Plur|PronType=Prs	14	det	O	_
+-14	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	11	nmod	O	_
++14	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	7	nmod	O	_
+ 15	principais	principal	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+ 16	:	:	PUNCT	_	_	17	punct	O	_
+ 17	os	o	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	14	appos	O	_
+@@ -174239,11 +174239,11 @@
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=FLUIDO	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	O	_
+ 9	ajustada	ajustar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-10	de	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++10	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++14	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=FLUIDO	_
+ 17	desejada	desejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	O	_
+@@ -174988,11 +174988,11 @@
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=FLUIDO	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	O	_
+ 9	ajustada	ajustar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-10	de	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	obl	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++10	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++14	vazão	vazão	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=FLUIDO	_
+ 17	desejada	desejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	O	_
+@@ -177173,7 +177173,7 @@
+ 2	sua	sua	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Prs	1	fixed	O	_
+ 3	vez	vez	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+-5	de	de	ADP	_	_	8	case	O	_
++5	de	de	ADP	_	_	8	case	O	MWEPOS=ADP
+ 6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
+ 7	com	com	ADP	_	_	5	fixed	O	_
+ 8	Silva	Silva	PROPN	_	Gender=Masc|Number=Sing	29	obl	O	_
+@@ -182710,11 +182710,11 @@
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	O	_
+ 20	oleaginosas	oleaginosa	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	_
+-21	de	de	ADP	_	_	22	case	O	_
+-22	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+-23	com	com	ADP	_	_	25	case	O	_
++21	de	de	ADP	_	_	25	case	O	MWEPOS=ADP
++22	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	21	fixed	O	_
++23	com	com	ADP	_	_	21	fixed	O	_
+ 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
+-25	diversidades	diversidade	NOUN	_	Gender=Fem|Number=Plur	22	nmod	O	_
++25	diversidades	diversidade	NOUN	_	Gender=Fem|Number=Plur	17	obl	O	_
+ 26	regionais	regional	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+ 27	,	,	PUNCT	_	_	28	punct	O	_
+ 28	fortalecendo	fortalecer	VERB	_	VerbForm=Ger	17	advcl	O	_
+@@ -183134,18 +183134,18 @@
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 5	,	,	PUNCT	_	_	4	punct	O	_
+-6	de	de	ADP	_	_	7	case	O	_
+-7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	25	obl	O	_
+-8	com	com	ADP	_	_	10	case	O	_
++6	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
++7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	fixed	O	_
++8	com	com	ADP	_	_	6	fixed	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Ministério	Ministério	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++10	Ministério	Ministério	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 11-12	das	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	10	flat:name	O	_
+ 12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	flat:name	O	_
+ 13	Minas	Minas	PROPN	_	Number=Sing	10	flat:name	O	_
+ 14	e	e	CCONJ	_	_	10	flat:name	O	_
+ 15	Energia	Energia	PROPN	_	Number=Sing	10	flat:name	O	_
+-16	,	,	PUNCT	_	_	7	punct	O	_
++16	,	,	PUNCT	_	_	10	punct	O	_
+ 17	cerca	cerca	ADV	_	_	19	advmod	O	_
+ 18	de	de	ADP	_	_	17	fixed	O	_
+ 19	800	800	NUM	_	NumType=Card	25	nsubj	O	_
+@@ -186004,9 +186004,9 @@
+ 2	testes	teste	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	B=MÉTODO	_
+ 3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	O	_
+ 4	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-5	de	de	ADP	_	_	6	case	O	_
+-6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-7	com	com	ADP	_	_	10	case	O	_
++5	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
++6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
++7	com	com	ADP	_	_	5	fixed	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 9	seguinte	seguinte	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+ 10	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	4	obl	O	_
+@@ -186464,9 +186464,9 @@
+ 2	incertezas	incerteza	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	O	_
+ 3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	O	_
+ 4	calculadas	calcular	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-5	de	de	ADP	_	_	6	case	O	_
+-6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+-7	com	com	ADP	_	_	9	case	O	_
++5	de	de	ADP	_	_	9	case	O	MWEPOS=ADP
++6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
++7	com	com	ADP	_	_	5	fixed	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	descrito	descrever	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 10-11	no	_	_	_	_	_	_	_	_
+@@ -195161,11 +195161,11 @@
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+ 28	reagente	reagente	NOUN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 29	LiNO3	LiNO3	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+-30	de	de	ADP	_	_	31	case	O	_
+-31	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+-32	com	com	ADP	_	_	34	case	O	_
++30	de	de	ADP	_	_	34	case	O	MWEPOS=ADP
++31	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	30	fixed	O	_
++32	com	com	ADP	_	_	30	fixed	O	_
+ 33	(	(	PUNCT	_	_	34	punct	O	_
+-34	Castro	Castro	PROPN	_	Gender=Masc|Number=Sing	9	parataxis	O	_
++34	Castro	Castro	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 35	et	et	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	al.,2013	al.,2013	PROPN	_	Number=Sing	34	flat:name	O	_
+ 37	)	)	PUNCT	_	_	34	punct	O	_
+@@ -197069,9 +197069,9 @@
+ 51	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	48	obj	O	_
+ 52	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	aux:pass	O	_
+ 53	analisada	analisar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+-54	de	de	ADP	_	_	55	case	O	_
+-55	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	53	obl	O	_
+-56	com	com	ADP	_	_	58	case	O	_
++54	de	de	ADP	_	_	58	case	O	MWEPOS=ADP
++55	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	54	fixed	O	_
++56	com	com	ADP	_	_	54	fixed	O	_
+ 57	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	O	_
+ 58	especificação	especificação	NOUN	_	Gender=Fem|Number=Sing	53	obl	O	_
+ 59-60	do	_	_	_	_	_	_	_	_
+@@ -205746,7 +205746,7 @@
+ 
+ # text = De acordo com os resultados apresentados nas Tabelas 17 e 18, pode-se perceber que, o preço de produção de biodiesel apresentou elevado valor, quando se utiliza como matéria prima o óleo de soja comercial, devido principalmente ao seu alto custo..
+ # sent_id = 271-20150810-MONOGRAFIA_0-515
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -205890,7 +205890,7 @@
+ 
+ # text = De acordo com os resultados apresentados na TABELA 18, pode-se perceber que, o VPL possui valor negativo para as capacidades de produção é de 50 e 100 litros por batelada, ao aumentar a produção para 200 litros por batelada, apresenta VPL positivo, tempo de retorno de 3,76 anos e TIR maior que a TMA..
+ # sent_id = 271-20150810-MONOGRAFIA_0-519
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -205959,7 +205959,7 @@
+ 
+ # text = De acordo com os resultados apresentados na TABELA 19, pode-se perceber que, o VPL possui valor negativo para a capacidade de produção de 50 litros por batelada, ao aumentar a produção por batelada para 100 litros, apresenta VPL positivo e tempo de retorno de 3,876 anos e TIR maior que a TMA, e o aumento ainda mais para 200 litros por batelada, este apresenta VPL positivo, tempo de retorno de 0,89 anos e TIR maior que a TMA..
+ # sent_id = 271-20150810-MONOGRAFIA_0-520
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -206315,7 +206315,7 @@
+ 
+ # text = De acordo com os resultados apresentados na Figura 35, pode-se perceber que, o preço de custo do catalisador no valor de R$ 6,13, a produção de biodiesel atinge a região de “break even” (VPL=0)..
+ # sent_id = 271-20150810-MONOGRAFIA_0-527
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -206842,7 +206842,7 @@
+ 
+ # text = De acordo com os resultados apresentados na Figura 36, pode-se perceber que, com o preço de custo do óleo no valor de R$ 0,32, a produção de biodiesel atinge a região de “break even”..
+ # sent_id = 271-20150810-MONOGRAFIA_0-539
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -207144,7 +207144,7 @@
+ 
+ # text = De acordo com os resultados apresentados na Tabela 37, pode-se perceber que, com o preço de custo do metanol no valor de R$ 1,76, a produção de biodiesel atinge a região de break even..
+ # sent_id = 271-20150810-MONOGRAFIA_0-547
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -208365,11 +208365,11 @@
+ 30	tratar	tratar	VERB	_	VerbForm=Inf	11	conj	O	_
+ 31	e	e	CCONJ	_	_	32	cc	O	_
+ 32	acondicionar	acondicionar	VERB	_	VerbForm=Inf	30	conj	O	_
+-33	de	de	ADP	_	_	34	case	O	_
+-34	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
+-35	com	com	ADP	_	_	37	case	O	_
++33	de	de	ADP	_	_	37	case	O	MWEPOS=ADP
++34	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	33	fixed	O	_
++35	com	com	ADP	_	_	33	fixed	O	_
+ 36	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	O	_
+-37	leis	lei	NOUN	_	Gender=Fem|Number=Plur	34	nmod	O	_
++37	leis	lei	NOUN	_	Gender=Fem|Number=Plur	30	obl	O	_
+ 38	,	,	PUNCT	_	_	40	punct	O	_
+ 39	para	para	SCONJ	_	_	40	mark	O	_
+ 40	evitarem	evitar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	30	advcl	O	_
+@@ -208875,11 +208875,11 @@
+ 3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	O	_
+ 5	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	xcomp	O	_
+-6	de	de	ADP	_	_	7	case	O	_
++6	de	de	ADP	_	_	10	case	O	MWEPOS=ADP
+ 7	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	fixed	O	_
+ 8	com	com	ADP	_	_	6	fixed	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
++10	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -208887,7 +208887,7 @@
+ 14	hidrofílico	hidrofílico	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 15	em	em	ADP	_	_	17	case	O	_
+ 16	:	:	PUNCT	_	_	17	punct	O	_
+-17	iônicos	iônico	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
++17	iônicos	iônico	NOUN	_	Gender=Masc|Number=Plur	5	xcomp	O	_
+ 18	(	(	PUNCT	_	_	19	punct	O	_
+ 19	catiônicos	catiônico	ADJ	_	Gender=Masc|Number=Plur	17	appos	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+@@ -208897,7 +208897,7 @@
+ 24	)	)	PUNCT	_	_	19	punct	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	não-iônicos	não-iônico	ADJ	_	Gender=Masc|Number=Plur	17	conj	O	_
+-27	.	.	PUNCT	_	_	5	punct	O	_
++27	.	.	PUNCT	_	_	3	punct	O	_
+ 28	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = 2.1.1..
+@@ -210088,13 +210088,13 @@
+ 
+ # text = De acordo com a Figura 4, as substâncias de BHL muito baixo, portanto acentuadamente lipófilas, são agentes antiespumantes..
+ # sent_id = 391-20160914-MONOGRAFIA_0-74
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+ 6	4	4	PROPN	_	Number=Sing	5	flat:name	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++7	,	,	PUNCT	_	_	5	punct	O	_
+ 8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	O	_
+ 9	substâncias	substância	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+@@ -210728,11 +210728,11 @@
+ 9	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+ 10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	definidos	definir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-12	de	de	ADP	_	_	13	case	O	_
+-13	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
+-14	com	com	ADP	_	_	16	case	O	_
++12	de	de	ADP	_	_	16	case	O	MWEPOS=ADP
++13	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	12	fixed	O	_
++14	com	com	ADP	_	_	12	fixed	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+-16	percentuais	percentual	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
++16	percentuais	percentual	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+ 18	frações	fração	NOUN	_	Gender=Fem|Number=Plur	16	nmod	O	_
+ 19	leves	leve	ADJ	_	Gender=Fem|Number=Plur	18	amod	O	_
+@@ -211300,7 +211300,7 @@
+ 
+ # text = De acordo com AHMADUM et al.(2009), rochas que existem naturalmente em formações subterrâneas são geralmente permeadas por fluidos subterrâneos como óleo, gás e água salina..
+ # sent_id = 391-20160914-MONOGRAFIA_0-105
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	AHMADUM	AHMADUM	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
+@@ -215819,11 +215819,11 @@
+ 1	3	3	NUM	_	NumType=Card	20	parataxis	O	_
+ 2	.	.	PUNCT	_	_	20	punct	O	_
+ 3	-	-	PUNCT	_	_	20	punct	O	_
+-4	De	de	ADP	_	_	5	case	O	_
+-5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
+-6	com	com	ADP	_	_	8	case	O	_
++4	De	de	ADP	_	_	8	case	O	MWEPOS=ADP
++5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	fixed	O	_
++6	com	com	ADP	_	_	4	fixed	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	dados	dado	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
++8	dados	dado	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 11-12	da	_	_	_	_	_	_	_	_
+@@ -219711,9 +219711,9 @@
+ 55	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	48	acl:relcl	O	_
+ 56	ser	ser	AUX	_	VerbForm=Inf	57	aux:pass	O	_
+ 57	controladas	controlar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	55	xcomp	O	_
+-58	de	de	ADP	_	_	59	case	O	_
+-59	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	57	obl	O	_
+-60	com	com	ADP	_	_	62	case	O	_
++58	de	de	ADP	_	_	62	case	O	MWEPOS=ADP
++59	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	58	fixed	O	_
++60	com	com	ADP	_	_	58	fixed	O	_
+ 61	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	O	_
+ 62	aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	57	obl	O	_
+ 63	desejada	desejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	62	acl	O	_
+@@ -228286,12 +228286,12 @@
+ 23	RMN	RMN	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 24	de	de	ADP	_	_	25	case	O	_
+ 25	29Si	29si	NUM	_	NumType=Card	23	nmod	O	_
+-26	,	,	PUNCT	_	_	28	punct	O	_
+-27	de	de	ADP	_	_	28	case	O	_
+-28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+-29	com	com	ADP	_	_	31	case	O	_
++26	,	,	PUNCT	_	_	31	punct	O	_
++27	de	de	ADP	_	_	31	case	O	MWEPOS=ADP
++28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	27	fixed	O	_
++29	com	com	ADP	_	_	27	fixed	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+-31	equação	equação	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
++31	equação	equação	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 32	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	O	_
+ 33	por	por	ADP	_	_	34	case	O	_
+ 34	Klinowski	Klinowski	PROPN	_	Gender=Masc|Number=Sing	32	obl:agent	O	_
+@@ -236589,11 +236589,11 @@
+ 6	receberam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+ 7	diversas	diverso	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	O	_
+ 8	denominações	denominação	NOUN	_	Gender=Fem|Number=Plur	6	obj	O	_
+-9	de	de	ADP	_	_	10	case	O	_
+-10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+-11	com	com	ADP	_	_	13	case	O	_
++9	de	de	ADP	_	_	13	case	O	MWEPOS=ADP
++10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	fixed	O	_
++11	com	com	ADP	_	_	9	fixed	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+-13	altitude	altitude	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++13	altitude	altitude	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 14	em	em	ADP	_	_	15	case	O	_
+ 15	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	17	obl	O	_
+ 16	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	17	expl	O	_
+@@ -237164,7 +237164,7 @@
+ 
+ # text = De acordo com Ferrari (2001) o gráben da Guanabara se desenvolveu sobre um embasamento proterozóico policíclico integrante do cinturão móvel que contorna o Cráton do São Francisco a sudeste e leste, denominado Faixa Ribeira por Hasui et al.(1975)..
+ # sent_id = 20-20140904-TESEDSC_0-165
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
+@@ -237696,14 +237696,14 @@
+ 
+ # text = De acordo com Ferrari (2001), no gráben da Guanabara os diques de diabásio se concentram principalmente na borda sul, intrudindo os maciços litorâneos, onde ocorrem em “enxames” de direção preferencial NE-SW (figura 2.4)..
+ # sent_id = 20-20140904-TESEDSC_0-176
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	20	obl	O	_
+ 5	(	(	PUNCT	_	_	4	flat:name	O	_
+ 6	2001	2001	NUM	_	NumType=Card	4	flat:name	O	_
+ 7	)	)	PUNCT	_	_	4	flat:name	O	_
+-8	,	,	PUNCT	_	_	2	punct	O	_
++8	,	,	PUNCT	_	_	4	punct	O	_
+ 9-10	no	_	_	_	_	_	_	_	_
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+@@ -238892,10 +238892,10 @@
+ 21	(	(	PUNCT	_	_	22	punct	O	_
+ 22	Eoceno	Eoceno	PROPN	_	Gender=Masc|Number=Sing	20	nmod:appos	B=GEOCRONOLOGIA	_
+ 23	)	)	PUNCT	_	_	22	punct	O	_
+-24	de	de	ADP	_	_	25	case	O	_
+-25	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
+-26	com	com	ADP	_	_	27	case	O	_
+-27	análise	análise	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
++24	de	de	ADP	_	_	27	case	O	MWEPOS=ADP
++25	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	24	fixed	O	_
++26	com	com	ADP	_	_	24	fixed	O	_
++27	análise	análise	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
+ 28	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	O	_
+ 29	por	por	ADP	_	_	30	case	O	_
+ 30	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	28	obl:agent	O	_
+@@ -239521,14 +239521,14 @@
+ 
+ # text = Ainda de acordo com os autores supracitados, este soerguimento neocretáceo (89-65 Ma) foi acompanhado de intenso magmatismo de natureza alcalina sobre crosta continental não-afinada e de natureza básica sobre crosta afinada..
+ # sent_id = 20-20140904-TESEDSC_0-220
+-1	Ainda	ainda	ADV	_	_	3	advmod	O	_
+-2	de	de	ADP	_	_	3	case	O	_
+-3	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
+-4	com	com	ADP	_	_	6	case	O	_
++1	Ainda	ainda	ADV	_	_	6	advmod	O	_
++2	de	de	ADP	_	_	6	case	O	MWEPOS=ADP
++3	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	2	fixed	O	_
++4	com	com	ADP	_	_	2	fixed	O	_
+ 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
+-6	autores	autor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
++6	autores	autor	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
+ 7	supracitados	supracitar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	O	_
+-8	,	,	PUNCT	_	_	7	punct	O	_
++8	,	,	PUNCT	_	_	6	punct	O	_
+ 9	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	O	_
+ 10	soerguimento	soerguimento	NOUN	_	Gender=Masc|Number=Sing	17	nsubj:pass	O	_
+ 11	neocretáceo	neocretáceo	ADJ	_	Gender=Masc|Number=Sing	10	amod	B=GEOCRONOLOGIA	_
+@@ -239550,7 +239550,7 @@
+ 27	não-afinada	não-afinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	O	_
+ 28	e	e	CCONJ	_	_	30	cc	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+-30	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	25	conj	O	_
++30	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	22	conj	O	_
+ 31	básica	básico	ADJ	_	Gender=Fem|Number=Sing	30	amod	O	_
+ 32	sobre	sobre	ADP	_	_	33	case	O	_
+ 33	crosta	crosta	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+@@ -240350,11 +240350,11 @@
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	O	_
+ 26	mesmos	mesmo	NOUN	_	Gender=Masc|Number=Plur	23	nmod	O	_
+-27	de	de	ADP	_	_	28	case	O	_
+-28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+-29	com	com	ADP	_	_	31	case	O	_
++27	de	de	ADP	_	_	31	case	O	MWEPOS=ADP
++28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	27	fixed	O	_
++29	com	com	ADP	_	_	27	fixed	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+-31	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
++31	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	31	nmod	O	_
+ 34	e	e	CCONJ	_	_	35	cc	O	_
+@@ -242383,11 +242383,11 @@
+ 
+ # text = De acordo com o estado da arte do conhecimento, estes dados são inexistentes..
+ # sent_id = 20-20140904-TESEDSC_0-281
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+-3	com	com	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	estado	estado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++5	estado	estado	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+ 6-7	da	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+@@ -242396,7 +242396,7 @@
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+-12	,	,	PUNCT	_	_	2	punct	O	_
++12	,	,	PUNCT	_	_	5	punct	O	_
+ 13	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	14	det	O	_
+ 14	dados	dado	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	O	_
+ 15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	O	_
+@@ -245476,8 +245476,8 @@
+ 4	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	ser	ser	AUX	_	VerbForm=Inf	6	aux:pass	O	_
+ 6	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	O	_
+-7	,	,	PUNCT	_	_	6	punct	O	_
+-8	de	de	ADP	_	_	11	case	O	_
++7	,	,	PUNCT	_	_	11	punct	O	_
++8	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
+ 9	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	8	fixed	O	_
+ 10	com	com	ADP	_	_	8	fixed	O	_
+ 11	MacLeod	MacLeod	PROPN	_	Gender=Masc|Number=Sing	6	obl	O	_
+@@ -245485,7 +245485,7 @@
+ 13	al.(	al.(	NOUN	_	Gender=Masc|Number=Plur	11	flat:name	O	_
+ 14	1993	1993	NUM	_	NumType=Card	11	flat:name	O	_
+ 15	)	)	PUNCT	_	_	11	punct	O	_
+-16	,	,	PUNCT	_	_	6	punct	O	_
++16	,	,	PUNCT	_	_	11	punct	O	_
+ 17	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	28	obl	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	largura	largura	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	O	_
+@@ -245499,7 +245499,7 @@
+ 25	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 26	analítico	analítico	ADJ	_	Gender=Masc|Number=Sing	25	amod	O	_
+ 27	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	O	_
+-28	proporcional	proporcional	ADJ	_	Gender=Fem|Number=Sing	11	acl:relcl	O	_
++28	proporcional	proporcional	ADJ	_	Gender=Fem|Number=Sing	6	advcl	O	_
+ 29-30	à	_	_	_	_	_	_	_	_
+ 29	a	a	ADP	_	_	31	case	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+@@ -245519,15 +245519,15 @@
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	O	_
+ 44	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	41	nmod	O	_
+-45	de	de	ADP	_	_	46	case	O	_
+-46	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	44	nmod	O	_
+-47	com	com	ADP	_	_	49	case	O	_
++45	de	de	ADP	_	_	49	case	O	MWEPOS=ADP
++46	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	45	fixed	O	_
++47	com	com	ADP	_	_	45	fixed	O	_
+ 48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	O	_
+-49	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	46	nmod	O	_
++49	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	38	obl	O	_
+ 50	a	a	ADP	_	_	49	amod	O	MWEPOS=ADJ
+ 51	seguir	seguir	VERB	_	VerbForm=Inf	50	fixed	O	_
+-52	.	.	PUNCT	_	_	6	punct	O	_
+-53	.	.	PUNCT	_	_	6	punct	O	_
++52	.	.	PUNCT	_	_	4	punct	O	_
++53	.	.	PUNCT	_	_	4	punct	O	_
+ 
+ # text = Derivadas de n-ésima ordem podem ser empregadas no cálculo da amplitude do sinal analítico, visando separar com maior eficiência anomalias causadas por fontes magnéticas muito próximas e enfatizar detalhes associados às fontes rasas que respondem como altas freqüências..
+ # sent_id = 20-20140904-TESEDSC_0-361
+@@ -248441,9 +248441,9 @@
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-13	de	de	ADP	_	_	14	case	O	_
+-14	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+-15	com	com	ADP	_	_	17	case	O	_
++13	de	de	ADP	_	_	17	case	O	MWEPOS=ADP
++14	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	13	fixed	O	_
++15	com	com	ADP	_	_	13	fixed	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	tabela	tabela	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 18	a	a	ADP	_	_	17	amod	O	MWEPOS=ADJ
+@@ -252247,12 +252247,12 @@
+ 39	com	com	ADP	_	_	41	case	O	_
+ 40	alta	alto	ADJ	_	Gender=Fem|Number=Sing	41	amod	O	_
+ 41	magnetização	magnetização	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
+-42	(	(	PUNCT	_	_	44	punct	O	_
+-43	de	de	ADP	_	_	44	case	O	_
+-44	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	41	nmod	O	_
+-45	com	com	ADP	_	_	47	case	O	_
++42	(	(	PUNCT	_	_	47	punct	O	_
++43	de	de	ADP	_	_	47	case	O	MWEPOS=ADP
++44	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	43	fixed	O	_
++45	com	com	ADP	_	_	43	fixed	O	_
+ 46	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	O	_
+-47	ambigüidade	ambigüidade	NOUN	_	Gender=Fem|Number=Sing	44	nmod	O	_
++47	ambigüidade	ambigüidade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+ 48	clássica	clássico	ADJ	_	Gender=Fem|Number=Sing	47	amod	O	_
+ 49	entre	entre	ADP	_	_	51	case	O	_
+ 50	e	e	CCONJ	_	_	51	cc	O	_
+@@ -252264,7 +252264,7 @@
+ 56	volume	volume	NOUN	_	Gender=Masc|Number=Sing	51	conj	O	_
+ 57	e	e	CCONJ	_	_	58	cc	O	_
+ 58	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	56	conj	O	_
+-59	)	)	PUNCT	_	_	44	punct	O	_
++59	)	)	PUNCT	_	_	47	punct	O	_
+ 60	.	.	PUNCT	_	_	19	punct	O	_
+ 61	.	.	PUNCT	_	_	19	punct	O	_
+ 
+@@ -253005,7 +253005,7 @@
+ 
+ # text = De acordo com a teoria descrita acima, este método leva em conta o princípio de compacidade das fontes anômalas que são delineadas por elementos geométricos..
+ # sent_id = 20-20140904-TESEDSC_0-541
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -254692,11 +254692,11 @@
+ 
+ # text = De acordo com o item
+ # sent_id = 20-20140904-TESEDSC_0-582
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-3	com	com	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP|sentenciação
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
++3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	item	item	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++5	item	item	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 
+ # text = Conclusões do capitulo 4.1.2.2, pode-se dizer que estas duas estimativas distintas indicam a presença de fontes interferentes com mais de um índice estrutural..
+ # sent_id = 20-20140904-TESEDSC_0-583
+@@ -255763,8 +255763,8 @@
+ 
+ # text = De acordo com o que é sugerido e utilizando o método de tentativa e erro é preenchida a porção abaixo da reta superficial com outras retas horizontais empilhadas de forma a simular um corpo, de contraste negativo de susceptibilidade, que se estende e se estreita em profundidade sob a forma de uma calha triangular (figura 4.12)..
+ # sent_id = 20-20140904-TESEDSC_0-609
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	17	obl	O	_
+ 5	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	7	nsubj:pass	O	_
+@@ -257833,7 +257833,7 @@
+ 
+ # text = De acordo com o conhecimento geológico sobre a área investigada, as estruturas magnetizadas (representadas por contatos, diques e outros corpos intrusivos) se apresentam basicamente verticalizadas a subverticalizadas..
+ # sent_id = 20-20140904-TESEDSC_0-673
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -277446,7 +277446,7 @@
+ 
+ # text = De acordo com Mohriak e Barros (1990), esta corresponde a uma falha antitética do flanco sul da estrutura com provável continuidade para o Cabo de Búzios e rápida diminuição lateral de rejeito..
+ # sent_id = 20-20140904-TESEDSC_0-1148
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	12	obl	O	_
+@@ -277583,13 +277583,13 @@
+ 
+ # text = De acordo com a interpretação magnética, tal falha não constitui um traço contínuo em mapa, como sugerem Mohriak e Barros (1990), e sim estaria deslocada por um alinhamento transversal NW-SE..
+ # sent_id = 20-20140904-TESEDSC_0-1151
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 6	magnética	magnético	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++7	,	,	PUNCT	_	_	5	punct	O	_
+ 8	tal	tal	DET	_	Gender=Fem|Number=Sing|PronType=Ind	9	det	O	_
+ 9	falha	falha	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	B=LITOLOGIA|B=LOCAL:GEO	_
+ 10	não	não	ADV	_	Polarity=Neg	11	advmod	O	_
+@@ -277718,12 +277718,12 @@
+ 22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	falha	falha	NOUN	_	Gender=Fem|Number=Sing	20	obj	B=LITOLOGIA|B=LOCAL:GEO	_
+ 24	sintética	sintético	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
+-25	de	de	ADP	_	_	26	case	O	_
+-26	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+-27	com	com	ADP	_	_	30	case	O	_
++25	de	de	ADP	_	_	30	case	O	MWEPOS=ADP
++26	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	25	fixed	O	_
++27	com	com	ADP	_	_	25	fixed	O	_
+ 28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	O	_
+ 29	referidos	referir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	30	acl	O	_
+-30	autores	autor	NOUN	_	Gender=Masc|Number=Plur	26	nmod	O	_
++30	autores	autor	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
+ 31	.	.	PUNCT	_	_	9	punct	O	_
+ 32	.	.	PUNCT	_	_	9	punct	O	_
+ 
+@@ -277769,7 +277769,7 @@
+ 
+ # text = De acordo com a estimativa do modelo de inversão, a calha apresenta um preenchimento sedimentar com espessura em torno de 800 metros (já descontados 200 metros que inclui 150 m de altura de vôo mais 50 metros para aproximar a lâmina d’água)..
+ # sent_id = 20-20140904-TESEDSC_0-1155
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -277780,7 +277780,7 @@
+ 8	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	inversão	inversão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+-11	,	,	PUNCT	_	_	2	punct	O	_
++11	,	,	PUNCT	_	_	5	punct	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	calha	calha	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	O	_
+ 14	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -284418,13 +284418,13 @@
+ 
+ # text = De acordo com a hipótese interpretativa, a anomalia da Ilha de Cabo Frio (figura 6.8) seria formada por, pelo menos, dois pulsos magmáticos separados por um certo intervalo de tempo que permitiu registrar um período normal e de reversão do campo geomagnético..
+ # sent_id = 20-20140904-TESEDSC_0-1320
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	hipótese	hipótese	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+ 6	interpretativa	interpretativo	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++7	,	,	PUNCT	_	_	5	punct	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	anomalia	anomalia	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	O	_
+ 10-11	da	_	_	_	_	_	_	_	_
+@@ -284805,11 +284805,11 @@
+ 34	diques	dique	NOUN	_	Gender=Masc|Number=Plur	32	obj	O	_
+ 35	alimentadores	alimentador	ADJ	_	Gender=Masc|Number=Plur	34	amod	O	_
+ 36	subverticais	subvertical	ADJ	_	Gender=Masc|Number=Plur	34	amod	O	_
+-37	de	de	ADP	_	_	38	case	O	_
+-38	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	34	nmod	O	_
+-39	com	com	ADP	_	_	41	case	O	_
++37	de	de	ADP	_	_	41	case	O	MWEPOS=ADP
++38	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	37	fixed	O	_
++39	com	com	ADP	_	_	37	fixed	O	_
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	O	_
+-41	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	38	nmod	O	_
++41	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
+ 42	de	de	ADP	_	_	43	case	O	_
+ 43	Oreiro	Oreiro	PROPN	_	Gender=Masc|Number=Sing	41	nmod	O	_
+ 44	et	et	PROPN	_	Number=Sing	43	flat:name	O	_
+@@ -285573,11 +285573,11 @@
+ 17	)	)	PUNCT	_	_	16	punct	O	_
+ 18	para	para	ADP	_	_	19	case	O	_
+ 19	charneira	charneira	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+-20	,	,	PUNCT	_	_	22	punct	O	_
+-21	de	de	ADP	_	_	22	case	O	_
+-22	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+-23	com	com	ADP	_	_	24	case	O	_
+-24	informação	informação	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++20	,	,	PUNCT	_	_	24	punct	O	_
++21	de	de	ADP	_	_	24	case	O	MWEPOS=ADP
++22	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	21	fixed	O	_
++23	com	com	ADP	_	_	21	fixed	O	_
++24	informação	informação	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 25	verbal	verbal	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+@@ -293209,11 +293209,11 @@
+ 8	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	6	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	O	_
+ 10	diferenciadas	diferenciar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-11	de	de	ADP	_	_	12	case	O	_
+-12	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
+-13	com	com	ADP	_	_	15	case	O	_
++11	de	de	ADP	_	_	15	case	O	MWEPOS=ADP
++12	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	fixed	O	_
++13	com	com	ADP	_	_	11	fixed	O	_
+ 14	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	15	det	O	_
+-15	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
++15	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 16	de	de	SCONJ	_	_	17	mark	O	_
+ 17	aumentar	aumentar	VERB	_	VerbForm=Inf	15	acl	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+@@ -293513,11 +293513,11 @@
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	5	obj	O	_
+ 9	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	de	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++10	de	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++14	formação	formação	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 15	a	a	SCONJ	_	_	17	mark	O	_
+ 16	ser	ser	AUX	_	VerbForm=Inf	17	aux:pass	O	_
+ 17	perfurada	perfurar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	advcl	O	_
+@@ -302122,7 +302122,7 @@
+ 
+ # text = De acordo com Porter, 1989, e Mungan, 1989, apud Civan, 2007, para uma boa caracterização do dano de formação, testes laboratoriais de fluxo em testemunho devem ser conduzidos seguindo algumas condições:
+ # sent_id = 119-20141209-TESEMSC_0-476
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Porter	Porter	PROPN	_	Gender=Masc|Number=Sing	34	obl	O	_
+@@ -303286,7 +303286,7 @@
+ 
+ # text = De acordo com o catálogo fornecido pelo fabricante, a permeabilidade é dada pela Equação 3.3: (3.3) onde c é visto diretamente na coluna de mercúrio ou é tabelado e tem relação com o valor lido na coluna de hw, Q é a vazão constante fornecida por um orifício, A é a área da seção transversal, L o comprimento da amostra e hw é a altura da coluna de água que, junto com c, fornece a queda de pressão entre as faces do meio poroso..
+ # sent_id = 119-20141209-TESEMSC_0-507
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -317829,7 +317829,7 @@
+ 
+ # text = De acordo com Lummus e Azar (1986), os fluidos à base de óleo podem ser subdivididos em duas classes: os verdadeiros fluidos à base de óleo e as emulsões inversas..
+ # sent_id = 240-20140220-MONOGRAFIA_0-73
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Lummus	Lummus	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
+@@ -320063,7 +320063,7 @@
+ 16	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	O	_
+ 17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+ 18	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	16	obj	O	_
+-19	,	,	PUNCT	_	_	16	punct	O	_
++19	,	,	PUNCT	_	_	22	punct	O	_
+ 20	para	para	ADP	_	_	22	case	O	_
+ 21	melhor	bom	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
+ 22	visualização	visualização	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+@@ -320073,11 +320073,11 @@
+ 26	divisões	divisão	NOUN	_	Gender=Fem|Number=Plur	16	obl	O	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+ 28	subdivisões	subdivisão	NOUN	_	Gender=Fem|Number=Plur	26	conj	O	_
+-29	de	de	ADP	_	_	30	case	O	_
+-30	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+-31	com	com	ADP	_	_	33	case	O	_
++29	de	de	ADP	_	_	33	case	O	MWEPOS=ADP
++30	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	29	fixed	O	_
++31	com	com	ADP	_	_	29	fixed	O	_
+ 32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	O	_
+-33	relação	relação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++33	relação	relação	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 34	entre	entre	ADP	_	_	36	case	O	_
+ 35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	O	_
+ 36	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	33	nmod	O	_
+@@ -320177,13 +320177,13 @@
+ 9	laminar	laminar	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 10	ou	ou	CCONJ	_	_	11	cc	O	_
+ 11	turbulento	turbulento	ADJ	_	Gender=Masc|Number=Sing	9	conj	O	_
+-12	,	,	PUNCT	_	_	14	punct	O	_
+-13	de	de	ADP	_	_	14	case	O	_
+-14	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+-15	com	com	ADP	_	_	18	case	O	_
++12	,	,	PUNCT	_	_	18	punct	O	_
++13	de	de	ADP	_	_	18	case	O	MWEPOS=ADP
++14	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	13	fixed	O	_
++15	com	com	ADP	_	_	13	fixed	O	_
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	O	_
+ 17	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	18	det	O	_
+-18	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++18	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 19	.	.	PUNCT	_	_	7	punct	O	_
+ 20	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -323838,18 +323838,18 @@
+ 1	Com	com	ADP	_	_	2	case	O	_
+ 2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	15	obl	O	_
+ 3	,	,	PUNCT	_	_	2	punct	O	_
+-4	de	de	ADP	_	_	5	case	O	_
+-5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	15	obl	O	_
+-6	com	com	ADP	_	_	8	case	O	_
++4	de	de	ADP	_	_	8	case	O	MWEPOS=ADP
++5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	fixed	O	_
++6	com	com	ADP	_	_	4	fixed	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+-8	condições	condição	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
++8	condições	condição	NOUN	_	Gender=Fem|Number=Plur	15	obl	O	_
+ 9	e	e	CCONJ	_	_	10	cc	O	_
+ 10	proporções	proporção	NOUN	_	Gender=Fem|Number=Plur	8	conj	O	_
+ 11-12	dos	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	O	_
+ 13	constituintes	constituinte	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
+-14	,	,	PUNCT	_	_	5	punct	O	_
++14	,	,	PUNCT	_	_	8	punct	O	_
+ 15	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 16	ser	ser	AUX	_	VerbForm=Inf	17	aux:pass	O	_
+ 17	delimitada	delimitar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	O	_
+@@ -329788,8 +329788,8 @@
+ 
+ # text = De acordo com o Ministério do Meio Ambiente (MMA), a zona costeira nacional compreende uma faixa que se estende por mais de 8.500 km, levando em conta os recortes litorâneos como baías, reentrâncias, golfões etc., banhando seus 17 estados da costa, indo do Norte (Oiapoque, no Amapá) ao extremo sul do país (Chuí, no Rio Grande do Sul), possuindo uma das maiores faixas costeiras do mundo (MMA, 2015)..
+ # sent_id = 411-20150702-MONOGRAFIA_0-6
+-1	De	de	ADP	_	_	2	case	O	_
+-2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	18	obl	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
++2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+ 5	Ministério	Ministério	PROPN	_	Gender=Masc|Number=Sing	18	obl	O	_
+@@ -329801,7 +329801,7 @@
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+ 11	MMA	MMA	PROPN	_	Gender=Masc|Number=Sing	5	appos	O	_
+ 12	)	)	PUNCT	_	_	11	punct	O	_
+-13	,	,	PUNCT	_	_	2	punct	O	_
++13	,	,	PUNCT	_	_	5	punct	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	zona	zona	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	B=LOCAL:GEO	_
+ 16	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	15	amod	B=UNIDADE_LITOESTRATIGRÁFICA|I=LOCAL:GEO	_
+@@ -330769,11 +330769,11 @@
+ 4	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	O	_
+ 5	mais	mais	ADV	_	_	6	advmod	O	_
+ 6	adequadas	adequado	ADJ	_	Gender=Fem|Number=Plur	4	amod	O	_
+-7	de	de	ADP	_	_	8	case	O	_
+-8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+-9	com	com	ADP	_	_	11	case	O	_
++7	de	de	ADP	_	_	11	case	O	MWEPOS=ADP
++8	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	fixed	O	_
++9	com	com	ADP	_	_	7	fixed	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+-11	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	4	nmod	B=INSTRUMENTO	_
++11	mapas	mapa	NOUN	_	Gender=Masc|Number=Plur	6	obl	B=INSTRUMENTO	_
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	sensibilidade	sensibilidade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+@@ -330796,7 +330796,7 @@
+ 29	ambientais	ambiental	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
+ 30	,	,	PUNCT	_	_	32	punct	O	_
+ 31	onde	onde	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	32	obl	O	_
+-32	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	acl:relcl	O	_
++32	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	O	_
+ 33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	O	_
+ 34	revisão	revisão	NOUN	_	Gender=Fem|Number=Sing	32	obj	O	_
+ 35	bibliográfica	bibliográfico	ADJ	_	Gender=Fem|Number=Sing	34	amod	O	_
+@@ -330816,7 +330816,7 @@
+ 49	e	e	CCONJ	_	_	50	cc	O	_
+ 50	internacionalmente	internacionalmente	ADV	_	_	47	conj	O	_
+ 51	,	,	PUNCT	_	_	52	punct	O	_
+-52	concluindo	concluir	VERB	_	VerbForm=Ger	42	advcl	O	_
++52	concluindo	concluir	VERB	_	VerbForm=Ger	32	advcl	O	_
+ 53	que	que	SCONJ	_	_	62	mark	O	_
+ 54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	O	_
+ 55	opção	opção	NOUN	_	Gender=Fem|Number=Sing	62	nsubj	O	_
+@@ -330826,7 +330826,7 @@
+ 58	método	método	NOUN	_	Gender=Masc|Number=Sing	55	nmod	B=MÉTODO	_
+ 59	a	a	SCONJ	_	_	61	mark	O	_
+ 60	ser	ser	AUX	_	VerbForm=Inf	61	aux:pass	O	_
+-61	empregado	empregado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	52	advcl	O	_
++61	empregado	empregado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	58	advcl	O	_
+ 62-63	vincula-se	_	_	_	_	_	_	_	_
+ 62	vincula	vincular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	ccomp	O	_
+ 63	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	62	expl	O	_
+@@ -330880,7 +330880,7 @@
+ 106	para	para	SCONJ	_	_	109	mark	O	_
+ 107	que	que	SCONJ	_	_	106	fixed	O	_
+ 108	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	109	aux:pass	O	_
+-109	obtidas	obter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	97	advcl	O	_
++109	obtidas	obter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	90	advcl	O	_
+ 110	informações	informação	NOUN	_	Gender=Fem|Number=Plur	109	nsubj:pass	O	_
+ 111	mais	mais	ADV	_	_	112	advmod	O	_
+ 112	detalhadas	detalhado	ADJ	_	Gender=Fem|Number=Plur	110	amod	O	_
+@@ -330964,9 +330964,9 @@
+ 48	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	ccomp	O	_
+ 49	em	em	ADP	_	_	50	case	O	_
+ 50	prática	prática	NOUN	_	Gender=Fem|Number=Sing	48	obl	O	_
+-51	de	de	ADP	_	_	52	case	O	_
+-52	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	50	nmod	O	_
+-53	com	com	ADP	_	_	55	case	O	_
++51	de	de	ADP	_	_	55	case	O	MWEPOS=ADP
++52	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	51	fixed	O	_
++53	com	com	ADP	_	_	51	fixed	O	_
+ 54	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	O	_
+ 55	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	48	obl	O	_
+ 56	meteorológicos	meteorológico	ADJ	_	Gender=Masc|Number=Plur	55	amod	O	_
+@@ -332717,7 +332717,7 @@
+ 
+ # text = De acordo com Vaz (2011), para que o petróleo venha a existir é preciso ter sedimentos ricos em matéria orgânica, dentro de rochas denominadas rochas reservatórios ou rocha base que acumulam esses hidrocarbonetos..
+ # sent_id = 411-20150702-MONOGRAFIA_0-57
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Vaz	Vaz	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	_
+@@ -333511,7 +333511,7 @@
+ 
+ # text = De acordo com o resultado obtido na formula o petróleo que apresenta seu grau API maior que 30 é considerado um óleo leve; se o resultado obtido for entre 22 e 30 graus API, esse óleo é considerado médios; e resultados abaixo de 22 graus API, são para os óleos pesados; e por último o óleo em que o resultado é um grau API igual ou inferior a 10, são petróleos extrapesados..
+ # sent_id = 411-20150702-MONOGRAFIA_0-74
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -334296,7 +334296,7 @@
+ 
+ # text = De acordo com os fatores apresentado ele também poderá desaparecer ao longo do tempo bem como persistir no ambiente..
+ # sent_id = 411-20150702-MONOGRAFIA_0-89
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+@@ -338737,11 +338737,11 @@
+ 15	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	13	amod	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 16	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	O	_
+ 17	representados	representado	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+-18	de	de	ADP	_	_	19	case	O	_
+-19	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
+-20	com	com	ADP	_	_	22	case	O	_
++18	de	de	ADP	_	_	22	case	O	MWEPOS=ADP
++19	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	18	fixed	O	_
++20	com	com	ADP	_	_	18	fixed	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	figura	figura	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++22	figura	figura	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+ 23	5	5	NUM	_	NumType=Card	22	nummod	O	_
+ 24	.	.	PUNCT	_	_	17	punct	O	_
+ 25	.	.	PUNCT	_	_	17	punct	O	_
+@@ -338970,7 +338970,7 @@
+ 
+ # text = o he de
+ # sent_id = 411-20150702-MONOGRAFIA_0-206
+-1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
++1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	sentenciação
+ 2	he	he	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	O	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4			DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -338979,12 +338979,12 @@
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	ano	ano	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+-9	:	:	PUNCT	_	_	11	punct	O	_
+-10	De	de	ADP	_	_	11	case	O	_
+-11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-12	com	com	ADP	_	_	14	case	O	_
++9	:	:	PUNCT	_	_	14	punct	O	_
++10	De	de	ADP	_	_	14	case	O	MWEPOS=ADP
++11	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	O	_
++12	com	com	ADP	_	_	10	fixed	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	época	época	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++14	época	época	NOUN	_	Gender=Fem|Number=Sing	31	obl	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+@@ -338993,7 +338993,7 @@
+ 19	e	e	CCONJ	_	_	22	cc	O	_
+ 20	com	com	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+-22	época	época	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
++22	época	época	NOUN	_	Gender=Fem|Number=Sing	14	conj	O	_
+ 23	em	em	ADP	_	_	24	case	O	_
+ 24	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	25	obl	O	_
+ 25	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	O	_
+@@ -342844,14 +342844,14 @@
+ 
+ # text = De acordo com Ecycle (2015), as garrafas depois que descartadas, podem permanecer no meio ambiente por até 800 anos, a produção dessas garrafas cresceu, mas a reciclagem tornou-se o maior problema, pois não acompanhou a produção, isso fez com que em vários locais houve um acumulo de garrafas com tamanhos e formatos diversificado, essas garrafas tornaram um dos maiores vilões do meio ambiente..
+ # sent_id = 411-20150702-MONOGRAFIA_0-296
+-1	De	de	ADP	_	_	4	case	O	_
++1	De	de	ADP	_	_	4	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	Ecycle	Ecycle	PROPN	_	Gender=Masc|Number=Sing	15	obl	O	_
+ 5	(	(	PUNCT	_	_	4	flat:name	O	_
+ 6	2015	2015	NUM	_	NumType=Card	4	flat:name	O	_
+ 7	)	)	PUNCT	_	_	4	flat:name	O	_
+-8	,	,	PUNCT	_	_	2	punct	O	_
++8	,	,	PUNCT	_	_	4	punct	O	_
+ 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
+ 10	garrafas	garrafa	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	O	_
+ 11	depois	depois	ADV	_	_	13	advmod	O	_
+@@ -343109,11 +343109,11 @@
+ 22	descritos	descrito	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+ 23	a	a	ADP	_	_	22	obl	O	MWEPOS=ADV
+ 24	seguir	seguir	VERB	_	VerbForm=Inf	23	fixed	O	_
+-25	de	de	ADP	_	_	26	case	O	_
+-26	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	24	obl	O	_
+-27	com	com	ADP	_	_	29	case	O	_
++25	de	de	ADP	_	_	29	case	O	MWEPOS=ADP
++26	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	25	fixed	O	_
++27	com	com	ADP	_	_	25	fixed	O	_
+ 28	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	29	det	O	_
+-29	processo	processo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
++29	processo	processo	NOUN	_	Gender=Masc|Number=Sing	22	obl	O	_
+ 30	de	de	ADP	_	_	31	case	O	_
+ 31	montagem	montagem	NOUN	_	Gender=Fem|Number=Sing	29	nmod	O	_
+ 32	.	.	PUNCT	_	_	22	punct	O	_
+@@ -343768,13 +343768,13 @@
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+ 14	piscina	piscina	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-15	,	,	PUNCT	_	_	18	punct	O	_
+-16	e	e	CCONJ	_	_	18	cc	O	_
+-17	de	de	ADP	_	_	18	case	O	_
+-18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	conj	O	_
+-19	com	com	ADP	_	_	21	case	O	_
++15	,	,	PUNCT	_	_	21	punct	O	_
++16	e	e	CCONJ	_	_	21	conj	O	_
++17	de	de	ADP	_	_	21	case	O	_
++18	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	17	conj	O	_
++19	com	com	ADP	_	_	17	fixed	O	_
+ 20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	O	_
+-21	barreiras	barreira	NOUN	_	Gender=Fem|Number=Plur	18	nmod	O	_
++21	barreiras	barreira	NOUN	_	Gender=Fem|Number=Plur	29	nmod	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	contenção	contenção	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24	identificadas	identificar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	21	acl	O	_
+@@ -343782,10 +343782,10 @@
+ 25	em	em	ADP	_	_	27	case	O	_
+ 26	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	27	det	O	_
+ 27	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	24	obl	O	_
+-28	,	,	PUNCT	_	_	24	punct	O	_
++28	,	,	PUNCT	_	_	21	punct	O	_
+ 29-30	constatou-se	_	_	_	_	_	_	_	_
+ 29	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+-30	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	29	expl	O	_
++30	se	se	PRON	_	_	29	expl	O	_
+ 31	que	que	SCONJ	_	_	43	mark	O	_
+ 32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	O	_
+ 33	barreiras	barreira	NOUN	_	Gender=Fem|Number=Plur	43	nsubj	O	_
+@@ -343821,13 +343821,13 @@
+ 61	,	,	PUNCT	_	_	55	punct	O	_
+ 62	enquanto	enquanto	ADV	_	_	64	advmod	O	_
+ 63	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	64	det	O	_
+-64	equipes	equipe	NOUN	_	Gender=Fem|Number=Plur	60	nsubj	O	_
++64	equipes	equipe	NOUN	_	Gender=Fem|Number=Plur	45	nsubj	O	_
+ 65	de	de	ADP	_	_	66	case	O	_
+ 66	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	64	nmod	O	_
+-67	junto	junto	ADV	_	_	62	advmod	O	_
++67	junto	junto	ADV	_	_	64	advmod	O	_
+ 68	com	com	ADP	_	_	70	case	O	_
+ 69	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	70	det	O	_
+-70	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	67	obl	O	_
++70	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	64	obl	O	_
+ 71	especializadas	especializar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	70	acl	O	_
+ 72	para	para	ADP	_	_	74	case	O	_
+ 73	tais	tal	DET	_	Gender=Fem|Number=Plur|PronType=Dem	74	det	O	_
+@@ -350594,13 +350594,13 @@
+ 
+ # text = De acordo com a figura 2.15, verifica-se que, em baixas concentrações e acima da temperatura de Krafft, tem-se uma solução de monômeros (Zona II)..
+ # sent_id = 243-20141015-MONOGRAFIA_1-193
+-1	De	de	ADP	_	_	5	case	O	_
++1	De	de	ADP	_	_	5	case	O	MWEPOS=ADP
+ 2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	com	com	ADP	_	_	1	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+ 5	figura	figura	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 6	2.15	2.15	NUM	_	NumType=Card	5	nummod	O	_
+-7	,	,	PUNCT	_	_	2	punct	O	_
++7	,	,	PUNCT	_	_	5	punct	O	_
+ 8-9	verifica-se	_	_	_	_	_	_	_	_
+ 8	verifica	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	se	se	PRON	_	Case=Acc|Gender=Unsp|PronType=Prs	8	nsubj	O	_
