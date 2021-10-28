@@ -32,7 +32,7 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.hour,
     now_date.minute,
     now_date.second)
-changelog = "# Changelog\n\nLast update: {}".format(now_date.replace("_", "-"))
+changelog = "# {}\n\nLast update: {}".format(os.path.basename(commits_file).rsplit(".", 1)[0], now_date.replace("_", "-"))
 changelog_filename = os.path.basename(commits_file).rsplit(".", 1)[0] + ".md"
 
 months = {
