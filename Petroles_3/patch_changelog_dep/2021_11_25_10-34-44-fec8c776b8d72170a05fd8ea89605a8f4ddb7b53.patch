@@ -1,0 +1,2217 @@
+commit fec8c776b8d72170a05fd8ea89605a8f4ddb7b53
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Nov 25 10:34:44 2021 -0300
+
+    tokens núméricos devem ser NUM
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index ff7cca4..ddf3610 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -99,12 +99,12 @@
+ 48	Torres	Torres	PROPN	_	Number=Sing	46	flat:name	O	_
+ 49	(	(	PUNCT	_	_	50	punct	O	_
+ 50	Fonseca	Fonseca	PROPN	_	Gender=Fem|Number=Sing	46	appos	O	_
+-51	2006	2006	PROPN	_	Number=Sing	50	flat:name	O	_
++51	2006	2006	NUM	_	NumType=Card	50	flat:name	O	_
+ 52	)	)	PUNCT	_	_	50	punct	O	_
+ 53	,	,	PUNCT	_	_	55	punct	O	_
+ 54	(	(	PUNCT	_	_	55	punct	O	_
+ 55	Alves	Alves	PROPN	_	Gender=Masc|Number=Sing	46	appos	O	_
+-56	1981	1981	PROPN	_	Number=Sing	55	flat:name	O	_
++56	1981	1981	NUM	_	NumType=Card	55	flat:name	O	_
+ 57	)	)	PUNCT	_	_	55	punct	O	_
+ 58	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	O	_
+ 59	Plataforma	Plataforma	PROPN	_	Gender=Fem|Number=Sing	46	conj	O	_
+@@ -129,12 +129,12 @@
+ 77	Grande	Grande	PROPN	_	Number=Sing	71	flat:name	O	_
+ 78	(	(	PUNCT	_	_	79	punct	O	_
+ 79	Miranda	Miranda	PROPN	_	Gender=Fem|Number=Sing	71	appos	O	_
+-80	1970	1970	PROPN	_	Number=Sing	79	flat:name	O	_
++80	1970	1970	NUM	_	NumType=Card	79	flat:name	O	_
+ 81	)	)	PUNCT	_	_	79	punct	O	_
+ 82	,	,	PUNCT	_	_	84	punct	O	_
+ 83	(	(	PUNCT	_	_	84	punct	O	_
+ 84	Kowsmann	Kowsmann	PROPN	_	Gender=Masc|Number=Sing	71	appos	O	_
+-85	1974	1974	PROPN	_	Number=Sing	84	flat:name	O	_
++85	1974	1974	NUM	_	NumType=Card	84	flat:name	O	_
+ 86	)	)	PUNCT	_	_	84	punct	O	_
+ 87	.	.	PUNCT	_	_	14	punct	O	_
+ 
+@@ -1767,7 +1767,7 @@
+ 2	poço	poço	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	O	_
+ 3	1	1	NUM	_	NumType=Card	2	nummod	O	_
+ 4	BPS	BPS	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-5	0007	0007	PROPN	_	Number=Sing	4	flat:name	O	_
++5	0007	0007	NUM	_	NumType=Card	4	flat:name	O	_
+ 6	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 7	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	xcomp	O	_
+ 8	próximo	próximo	ADV	_	_	7	advmod	O	_
+@@ -2190,17 +2190,17 @@
+ 5	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	2	appos	O	_
+ 6	et	et	PROPN	_	Number=Sing	5	flat:name	O	_
+ 7	al.	al.	PROPN	_	Number=Sing	5	flat:name	O	_
+-8	1973	1973	PROPN	_	Number=Sing	5	flat:name	O	_
++8	1973	1973	NUM	_	NumType=Card	5	flat:name	O	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+ 10	Cordani	Cordani	PROPN	_	Gender=Fem|Number=Sing	5	conj	O	_
+ 11	et	et	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	al.	al.	PROPN	_	Number=Sing	10	flat:name	O	_
+-13	1973	1973	PROPN	_	Number=Sing	10	flat:name	O	_
++13	1973	1973	NUM	_	NumType=Card	10	flat:name	O	_
+ 14	,	,	PUNCT	_	_	15	punct	O	_
+ 15	Hasui	Hasui	PROPN	_	Gender=Fem|Number=Sing	5	conj	O	_
+ 16	&	&	PROPN	_	Number=Sing	15	flat:name	O	_
+ 17	Oliveira	Oliveira	PROPN	_	Number=Sing	15	flat:name	O	_
+-18	1984	1984	PROPN	_	Number=Sing	15	flat:name	O	_
++18	1984	1984	NUM	_	NumType=Card	15	flat:name	O	_
+ 19	)	)	PUNCT	_	_	5	punct	O	_
+ 20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -2253,7 +2253,7 @@
+ 17	Machado	Machado	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+ 18	et	et	PROPN	_	Number=Sing	17	flat:name	O	_
+ 19	al.	al.	PROPN	_	Number=Sing	17	flat:name	O	_
+-20	1996	1996	PROPN	_	Number=Sing	17	flat:name	O	_
++20	1996	1996	NUM	_	NumType=Card	17	flat:name	O	_
+ 21	)	)	PUNCT	_	_	17	punct	O	_
+ 22	,	,	PUNCT	_	_	2	punct	O	_
+ 23-24	na	_	_	_	_	_	_	_	_
+@@ -2272,7 +2272,7 @@
+ 33	Francisco	Francisco	PROPN	_	Number=Sing	29	flat:name	O	_
+ 34	(	(	PUNCT	_	_	35	punct	O	_
+ 35	Barbosa	Barbosa	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+-36	1966	1966	PROPN	_	Number=Sing	35	flat:name	O	_
++36	1966	1966	NUM	_	NumType=Card	35	flat:name	O	_
+ 37	,	,	PUNCT	_	_	38	punct	O	_
+ 38	Almeida	Almeida	PROPN	_	Gender=Masc|Number=Sing	35	conj	O	_
+ 39	1969	1969	NUM	_	NumType=Card	38	flat:name	O	_
+@@ -2379,7 +2379,7 @@
+ 43	Heilbron	Heilbron	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+ 44	et	et	PROPN	_	Number=Sing	43	flat:name	O	_
+ 45	al.	al.	PROPN	_	Number=Sing	43	flat:name	O	_
+-46	2000	2000	PROPN	_	Number=Sing	43	flat:name	O	_
++46	2000	2000	NUM	_	NumType=Card	43	flat:name	O	_
+ 47	)	)	PUNCT	_	_	43	punct	O	_
+ 48	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -2475,7 +2475,7 @@
+ 16	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+ 17	et	et	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	al.	al.	PROPN	_	Number=Sing	16	flat:name	O	_
+-19	2004	2004	PROPN	_	Number=Sing	16	flat:name	O	_
++19	2004	2004	NUM	_	NumType=Card	16	flat:name	O	_
+ 20	)	)	PUNCT	_	_	16	punct	O	_
+ 21	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -2501,7 +2501,7 @@
+ 15	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+ 16	et	et	PROPN	_	Number=Sing	15	flat:name	O	_
+ 17	al.	al.	PROPN	_	Number=Sing	15	flat:name	O	_
+-18	1981	1981	PROPN	_	Number=Sing	15	flat:name	O	_
++18	1981	1981	NUM	_	NumType=Card	15	flat:name	O	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+ 20	Hasui	Hasui	PROPN	_	Gender=Fem|Number=Sing	15	appos	O	_
+ 21	et	et	PROPN	_	Number=Sing	20	flat:name	O	_
+@@ -2647,7 +2647,7 @@
+ 32	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+ 33	et	et	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	al.	al.	PROPN	_	Number=Sing	32	flat:name	O	_
+-35	2004	2004	PROPN	_	Number=Sing	32	flat:name	O	_
++35	2004	2004	NUM	_	NumType=Card	32	flat:name	O	_
+ 36	)	)	PUNCT	_	_	32	punct	O	_
+ 37	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -3295,7 +3295,7 @@
+ 20	m	m	NOUN	_	Gender=Masc|Number=Plur	18	obj	O	_
+ 21	(	(	PUNCT	_	_	22	punct	O	_
+ 22	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	20	appos	O	_
+-23	1989	1989	PROPN	_	Number=Sing	22	flat:name	O	_
++23	1989	1989	NUM	_	NumType=Card	22	flat:name	O	_
+ 24	)	)	PUNCT	_	_	22	punct	O	_
+ 25	,	,	PUNCT	_	_	32	punct	O	_
+ 26	porém	porém	CCONJ	_	_	32	cc	O	_
+@@ -3360,7 +3360,7 @@
+ 27	Villwock	Villwock	PROPN	_	Gender=Masc|Number=Sing	24	appos	O	_
+ 28	e	e	CCONJ	_	_	29	cc	O	_
+ 29	Tomazelli	Tomazelli	PROPN	_	Gender=Masc|Number=Sing	27	conj	O	_
+-30	1995	1995	PROPN	_	Number=Sing	29	flat:name	O	_
++30	1995	1995	NUM	_	NumType=Card	29	flat:name	O	_
+ 31	)	)	PUNCT	_	_	27	punct	O	_
+ 32	e	e	CCONJ	_	_	35	cc	O	_
+ 33-34	pelas	_	_	_	_	_	_	_	_
+@@ -3512,7 +3512,7 @@
+ 26	Milani	Milani	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 27	et	et	PROPN	_	Number=Sing	26	flat:name	O	_
+ 28	al.	al.	PROPN	_	Number=Sing	26	flat:name	O	_
+-29	1994	1994	PROPN	_	Number=Sing	26	flat:name	O	_
++29	1994	1994	NUM	_	NumType=Card	26	flat:name	O	_
+ 30	)	)	PUNCT	_	_	26	punct	O	_
+ 31	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -3535,7 +3535,7 @@
+ 13	Milani	Milani	PROPN	_	Gender=Fem|Number=Sing	1	appos	O	_
+ 14	et	et	PROPN	_	Number=Sing	13	flat:name	O	_
+ 15	al.	al.	PROPN	_	Number=Sing	13	flat:name	O	_
+-16	1994	1994	PROPN	_	Number=Sing	13	flat:name	O	_
++16	1994	1994	NUM	_	NumType=Card	13	flat:name	O	_
+ 17	)	)	PUNCT	_	_	13	punct	O	_
+ 18	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -4119,7 +4119,7 @@
+ 38	Gonçalves	Gonçalves	PROPN	_	Gender=Masc|Number=Sing	20	parataxis	O	_
+ 39	et	et	PROPN	_	Number=Sing	38	flat:name	O	_
+ 40	al.	al.	PROPN	_	Number=Sing	38	flat:name	O	_
+-41	1979	1979	PROPN	_	Number=Sing	38	flat:name	O	_
++41	1979	1979	NUM	_	NumType=Card	38	flat:name	O	_
+ 42	)	)	PUNCT	_	_	38	punct	O	_
+ 43	.	.	PUNCT	_	_	20	punct	O	_
+ 
+@@ -4156,7 +4156,7 @@
+ 28	Gonçalves	Gonçalves	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+ 29	et	et	PROPN	_	Number=Sing	28	flat:name	O	_
+ 30	al.	al.	PROPN	_	Number=Sing	28	flat:name	O	_
+-31	1979	1979	PROPN	_	Number=Sing	28	flat:name	O	_
++31	1979	1979	NUM	_	NumType=Card	28	flat:name	O	_
+ 32	)	)	PUNCT	_	_	28	punct	O	_
+ 33	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -4185,7 +4185,7 @@
+ 21	Milani	Milani	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 22	et	et	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	al.	al.	PROPN	_	Number=Sing	21	flat:name	O	_
+-24	2000	2000	PROPN	_	Number=Sing	21	flat:name	O	_
++24	2000	2000	NUM	_	NumType=Card	21	flat:name	O	_
+ 25	)	)	PUNCT	_	_	21	punct	O	_
+ 26	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -4288,7 +4288,7 @@
+ 37	Gonçalves	Gonçalves	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	O	_
+ 38	et	et	PROPN	_	Number=Sing	37	flat:name	O	_
+ 39	al.	al.	PROPN	_	Number=Sing	37	flat:name	O	_
+-40	1979	1979	PROPN	_	Number=Sing	37	flat:name	O	_
++40	1979	1979	NUM	_	NumType=Card	37	flat:name	O	_
+ 41	)	)	PUNCT	_	_	37	punct	O	_
+ 42	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -4339,7 +4339,7 @@
+ 37	Grande	Grande	PROPN	_	Number=Sing	33	flat:name	O	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	13	parataxis	O	_
+-40	1990	1990	PROPN	_	Number=Sing	39	flat:name	O	_
++40	1990	1990	NUM	_	NumType=Card	39	flat:name	O	_
+ 41	a	a	PROPN	_	Number=Sing	39	flat:name	O	_
+ 42	)	)	PUNCT	_	_	39	punct	O	_
+ 43	.	.	PUNCT	_	_	13	punct	O	_
+@@ -4459,7 +4459,7 @@
+ 32	Gamboa	Gamboa	PROPN	_	Gender=Fem|Number=Sing	26	parataxis	O	_
+ 33	&	&	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	Rabinovitch	Rabinovitch	PROPN	_	Number=Sing	32	flat:name	O	_
+-35	1981	1981	PROPN	_	Number=Sing	32	flat:name	O	_
++35	1981	1981	NUM	_	NumType=Card	32	flat:name	O	_
+ 36	)	)	PUNCT	_	_	26	punct	O	_
+ 37	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -4500,7 +4500,7 @@
+ 32	Gamboa	Gamboa	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+ 33	&	&	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	Rabinowitch	Rabinowitch	PROPN	_	Number=Sing	32	flat:name	O	_
+-35	1981	1981	PROPN	_	Number=Sing	32	flat:name	O	_
++35	1981	1981	NUM	_	NumType=Card	32	flat:name	O	_
+ 36	)	)	PUNCT	_	_	32	punct	O	_
+ 37	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -4577,7 +4577,7 @@
+ 30	Inferior	Inferior	PROPN	_	Number=Sing	29	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 31	(	(	PUNCT	_	_	32	punct	O	_
+ 32	Fonseca	Fonseca	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+-33	2006	2006	PROPN	_	Number=Sing	32	flat:name	O	_
++33	2006	2006	NUM	_	NumType=Card	32	flat:name	O	_
+ 34	)	)	PUNCT	_	_	32	punct	O	_
+ 35	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -4667,7 +4667,7 @@
+ 31	Gonçalves	Gonçalves	PROPN	_	Gender=Masc|Number=Sing	10	parataxis	O	_
+ 32	et	et	PROPN	_	Number=Sing	31	flat:name	O	_
+ 33	al.	al.	PROPN	_	Number=Sing	31	flat:name	O	_
+-34	1979	1979	PROPN	_	Number=Sing	31	flat:name	O	_
++34	1979	1979	NUM	_	NumType=Card	31	flat:name	O	_
+ 35	)	)	PUNCT	_	_	31	punct	O	_
+ 36	a	a	ADP	_	_	39	case	O	MWEPOS=ADP
+ 37	partir	partir	VERB	_	VerbForm=Inf	36	fixed	O	_
+@@ -4769,7 +4769,7 @@
+ 39	continental	continental	ADJ	_	Gender=Fem|Number=Sing	38	amod	B=SISTEMA_DEPOSICIONAL|I=SISTEMA_DEPOSICIONAL	_
+ 40	(	(	PUNCT	_	_	41	punct	O	_
+ 41	Miranda	Miranda	PROPN	_	Gender=Fem|Number=Sing	8	parataxis	O	_
+-42	1970	1970	PROPN	_	Number=Sing	41	flat:name	O	_
++42	1970	1970	NUM	_	NumType=Card	41	flat:name	O	_
+ 43	;	;	PUNCT	_	_	44	punct	O	_
+ 44	Kowsmann	Kowsmann	PROPN	_	Gender=Masc|Number=Sing	41	conj	O	_
+ 45	1974	1974	NUM	_	NumType=Card	44	flat:name	O	_
+@@ -4826,7 +4826,7 @@
+ 18	Torres	Torres	PROPN	_	Number=Sing	16	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	Alves	Alves	PROPN	_	Gender=Masc|Number=Sing	16	appos	O	_
+-21	1981	1981	PROPN	_	Number=Sing	20	flat:name	O	_
++21	1981	1981	NUM	_	NumType=Card	20	flat:name	O	_
+ 22	)	)	PUNCT	_	_	20	punct	O	_
+ 23	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -4869,7 +4869,7 @@
+ 34	Basseto	Basseto	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+ 35	et	et	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	al.	al.	PROPN	_	Number=Sing	34	flat:name	O	_
+-37	2000	2000	PROPN	_	Number=Sing	34	flat:name	O	_
++37	2000	2000	NUM	_	NumType=Card	34	flat:name	O	_
+ 38	)	)	PUNCT	_	_	34	punct	O	_
+ 39	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -4900,7 +4900,7 @@
+ 21	este	este	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	nmod	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	Fonseca	Fonseca	PROPN	_	Gender=Fem|Number=Sing	19	appos	O	_
+-24	2006	2006	PROPN	_	Number=Sing	23	flat:name	O	_
++24	2006	2006	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	)	)	PUNCT	_	_	23	punct	O	_
+ 26	.	.	PUNCT	_	_	19	punct	O	_
+ 
+@@ -5028,7 +5028,7 @@
+ 22	Vitorello	Vitorello	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+ 23	e	e	CCONJ	_	_	22	flat:name	O	_
+ 24	Padilha	Padilha	PROPN	_	Gender=Fem|Number=Sing	22	flat:name	O	_
+-25	2000	2000	PROPN	_	Number=Sing	22	flat:name	O	_
++25	2000	2000	NUM	_	NumType=Card	22	flat:name	O	_
+ 26	)	)	PUNCT	_	_	22	punct	O	_
+ 27	e	e	CCONJ	_	_	29	cc	O	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+@@ -5100,7 +5100,7 @@
+ 51	Hasui	Hasui	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+ 52	et	et	PROPN	_	Number=Sing	51	flat:name	O	_
+ 53	al.	al.	PROPN	_	Number=Sing	51	flat:name	O	_
+-54	2012	2012	PROPN	_	Number=Sing	51	flat:name	O	_
++54	2012	2012	NUM	_	NumType=Card	51	flat:name	O	_
+ 55	)	)	PUNCT	_	_	51	punct	O	_
+ 56	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -5159,7 +5159,7 @@
+ 24	Hasui	Hasui	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+ 25	et	et	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	al.	al.	PROPN	_	Number=Sing	24	flat:name	O	_
+-27	2012	2012	PROPN	_	Number=Sing	24	flat:name	O	_
++27	2012	2012	NUM	_	NumType=Card	24	flat:name	O	_
+ 28	)	)	PUNCT	_	_	24	punct	O	_
+ 29	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -5373,7 +5373,7 @@
+ 23	Sul	Sul	PROPN	_	Number=Sing	19	flat:name	O	_
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+ 25	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+-26	1990	1990	PROPN	_	Number=Sing	25	flat:name	O	_
++26	1990	1990	NUM	_	NumType=Card	25	flat:name	O	_
+ 27	b	b	PROPN	_	Number=Sing	25	flat:name	O	_
+ 28	)	)	PUNCT	_	_	25	punct	O	_
+ 29	.	.	PUNCT	_	_	3	punct	O	_
+@@ -5418,7 +5418,7 @@
+ 34	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	31	obl	O	_
+ 35	(	(	PUNCT	_	_	36	punct	O	_
+ 36	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+-37	1996	1996	PROPN	_	Number=Sing	36	flat:name	O	_
++37	1996	1996	NUM	_	NumType=Card	36	flat:name	O	_
+ 38	)	)	PUNCT	_	_	36	punct	O	_
+ 39	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -5528,7 +5528,7 @@
+ 30	basaltos	basalto	NOUN	_	Gender=Masc|Number=Plur	27	nmod	B=LITOLOGIA	_
+ 31	(	(	PUNCT	_	_	32	punct	O	_
+ 32	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+-33	1990	1990	PROPN	_	Number=Sing	32	flat:name	O	_
++33	1990	1990	NUM	_	NumType=Card	32	flat:name	O	_
+ 34	b	b	PROPN	_	Number=Sing	32	flat:name	O	_
+ 35	)	)	PUNCT	_	_	32	punct	O	_
+ 36	.	.	PUNCT	_	_	8	punct	O	_
+@@ -5590,7 +5590,7 @@
+ 21	recém-fragmentada	recém-fragmentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+-24	1990	1990	PROPN	_	Number=Sing	23	flat:name	O	_
++24	1990	1990	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	b	b	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	)	)	PUNCT	_	_	23	punct	O	_
+ 27	.	.	PUNCT	_	_	4	punct	O	_
+@@ -5666,7 +5666,7 @@
+ 24	albo-aptiana	albo-aptiano	ADJ	_	Gender=Fem|Number=Sing	23	amod	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+ 26	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+-27	1990	1990	PROPN	_	Number=Sing	26	flat:name	O	_
++27	1990	1990	NUM	_	NumType=Card	26	flat:name	O	_
+ 28	b	b	PROPN	_	Number=Sing	26	flat:name	O	_
+ 29	)	)	PUNCT	_	_	26	punct	O	_
+ 30	.	.	PUNCT	_	_	4	punct	O	_
+@@ -5816,7 +5816,7 @@
+ 31	continente	continente	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+ 32	(	(	PUNCT	_	_	33	punct	O	_
+ 33	Fontana	Fontana	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+-34	1990	1990	PROPN	_	Number=Sing	33	flat:name	O	_
++34	1990	1990	NUM	_	NumType=Card	33	flat:name	O	_
+ 35	b	b	PROPN	_	Number=Sing	33	flat:name	O	_
+ 36	)	)	PUNCT	_	_	33	punct	O	_
+ 37	.	.	PUNCT	_	_	1	punct	O	_
+@@ -5909,7 +5909,7 @@
+ 20	Asmus	Asmus	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+ 21	&	&	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	Paim	Paim	PROPN	_	Number=Sing	20	flat:name	O	_
+-23	1986	1986	PROPN	_	Number=Sing	20	flat:name	O	_
++23	1986	1986	NUM	_	NumType=Card	20	flat:name	O	_
+ 24	)	)	PUNCT	_	_	20	punct	O	_
+ 25	e	e	CCONJ	_	_	34	cc	O	_
+ 26	,	,	PUNCT	_	_	28	punct	O	_
+@@ -5945,7 +5945,7 @@
+ 52	Atlântico	Atlântico	PROPN	_	Number=Sing	51	flat:name	O	_
+ 53	(	(	PUNCT	_	_	54	punct	O	_
+ 54	Fontana	Fontana	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+-55	1990	1990	PROPN	_	Number=Sing	54	flat:name	O	_
++55	1990	1990	NUM	_	NumType=Card	54	flat:name	O	_
+ 56	b	b	PROPN	_	Number=Sing	54	flat:name	O	_
+ 57	)	)	PUNCT	_	_	54	punct	O	_
+ 58	.	.	PUNCT	_	_	5	punct	O	_
+@@ -8494,7 +8494,7 @@
+ 16	Bueno	Bueno	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 17	et	et	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	al.	al.	PROPN	_	Number=Sing	16	flat:name	O	_
+-19	2007	2007	PROPN	_	Number=Sing	16	flat:name	O	_
++19	2007	2007	NUM	_	NumType=Card	16	flat:name	O	_
+ 20	)	)	PUNCT	_	_	16	punct	O	_
+ 21	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -10001,7 +10001,7 @@
+ 17	Soares	Soares	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 18	et	et	PROPN	_	Number=Sing	17	flat:name	O	_
+ 19	al.	al.	PROPN	_	Number=Sing	17	flat:name	O	_
+-20	2012	2012	PROPN	_	Number=Sing	17	flat:name	O	_
++20	2012	2012	NUM	_	NumType=Card	17	flat:name	O	_
+ 21	)	)	PUNCT	_	_	17	punct	O	_
+ 
+ # text = CAPÍTULO 1
+@@ -10277,7 +10277,7 @@
+ 43	(	(	PUNCT	_	_	44	punct	O	_
+ 44	Grajales	Grajales	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+ 45	,	,	PUNCT	_	_	44	flat:name	O	_
+-46	2011	2011	NOUN	_	Gender=Fem|Number=Sing	44	flat:name	O	_
++46	2011	2011	NUM	_	NumType=Card	44	flat:name	O	_
+ 47	;	;	PUNCT	_	_	48	punct	O	_
+ 48	You	You	PROPN	_	Gender=Masc|Number=Sing	44	conj	O	_
+ 49	et	et	PROPN	_	Number=Sing	48	flat:name	O	_
+@@ -14954,7 +14954,7 @@
+ 9	com	com	ADP	_	_	7	fixed	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+-12	14393	14393	PROPN	_	Number=Sing	11	flat:name	O	_
++12	14393	14393	NUM	_	NumType=Card	11	flat:name	O	_
+ 13	(	(	PUNCT	_	_	11	flat:name	O	_
+ 14	2006	2006	NUM	_	NumType=Card	11	flat:name	O	_
+ 15	)	)	PUNCT	_	_	11	flat:name	O	_
+@@ -15234,7 +15234,7 @@
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+-13	6299	6299	PROPN	_	Number=Sing	11	flat:name	O	_
++13	6299	6299	NUM	_	NumType=Card	11	flat:name	O	_
+ 14	(	(	PUNCT	_	_	11	flat:name	O	_
+ 15	2005	2005	NUM	_	NumType=Card	11	flat:name	O	_
+ 16	)	)	PUNCT	_	_	11	flat:name	O	_
+@@ -15356,7 +15356,7 @@
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+-13	6300	6300	PROPN	_	Number=Sing	11	flat:name	O	_
++13	6300	6300	NUM	_	NumType=Card	11	flat:name	O	_
+ 14	(	(	PUNCT	_	_	11	flat:name	O	_
+ 15	2009	2009	NUM	_	NumType=Card	11	flat:name	O	_
+ 16	)	)	PUNCT	_	_	11	flat:name	O	_
+@@ -15455,7 +15455,7 @@
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 12	NBR	NBR	PROPN	_	Number=Sing	11	flat:name	O	_
+-13	6570	6570	PROPN	_	Number=Sing	11	flat:name	O	_
++13	6570	6570	NUM	_	NumType=Card	11	flat:name	O	_
+ 14	(	(	PUNCT	_	_	11	flat:name	O	_
+ 15	2000	2000	NUM	_	NumType=Card	11	flat:name	O	_
+ 16	)	)	PUNCT	_	_	11	flat:name	O	_
+@@ -15583,7 +15583,7 @@
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 14	NBR	NBR	PROPN	_	Number=Sing	13	flat:name	O	_
+-15	14376	14376	PROPN	_	Number=Sing	13	flat:name	O	_
++15	14376	14376	NUM	_	NumType=Card	13	flat:name	O	_
+ 16	(	(	PUNCT	_	_	13	flat:name	O	_
+ 17	2007	2007	NUM	_	NumType=Card	13	flat:name	O	_
+ 18	)	)	PUNCT	_	_	13	flat:name	O	_
+@@ -15990,7 +15990,7 @@
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	peneira	peneira	NOUN	_	Gender=Fem|Number=Sing	13	obl	O	_
+ 17	ASTM	ASTM	PROPN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+-18	20	20	PROPN	_	Number=Sing	17	flat:name	O	_
++18	20	20	NUM	_	NumType=Card	17	flat:name	O	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+ 20	mostrando	mostrar	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -17222,7 +17222,7 @@
+ 19	norma	norma	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	O	_
+ 20	ABNT	ABNT	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 21	NBR	NBR	PROPN	_	Number=Sing	20	flat:name	O	_
+-22	14376	14376	PROPN	_	Number=Sing	20	flat:name	O	_
++22	14376	14376	NUM	_	NumType=Card	20	flat:name	O	_
+ 23	(	(	PUNCT	_	_	20	flat:name	O	_
+ 24	2007	2007	NUM	_	NumType=Card	20	flat:name	O	_
+ 25	)	)	PUNCT	_	_	20	flat:name	O	_
+@@ -17474,7 +17474,7 @@
+ 42	(	(	PUNCT	_	_	43	punct	O	_
+ 43	Brito	Brito	PROPN	_	Gender=Masc|Number=Sing	14	parataxis	O	_
+ 44	Neves	Neves	PROPN	_	Number=Sing	43	flat:name	O	_
+-45	1990	1990	PROPN	_	Number=Sing	43	flat:name	O	_
++45	1990	1990	NUM	_	NumType=Card	43	flat:name	O	_
+ 46	)	)	PUNCT	_	_	43	punct	O	_
+ 47	.	.	PUNCT	_	_	14	punct	O	_
+ 
+@@ -17512,7 +17512,7 @@
+ 28	rifte	rifte	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+ 29	(	(	PUNCT	_	_	30	punct	O	_
+ 30	Dias	Dias	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+-31	2005	2005	PROPN	_	Number=Sing	30	nummod	O	_
++31	2005	2005	NUM	_	NumType=Card	30	nummod	O	_
+ 32	)	)	PUNCT	_	_	30	punct	O	_
+ 33	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -17612,7 +17612,7 @@
+ 25	Araripe	Araripe	PROPN	_	Number=Sing	22	flat:name	I=BACIA	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	Assine	Assine	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+-28	2007	2007	PROPN	_	Number=Sing	27	flat:name	O	_
++28	2007	2007	NUM	_	NumType=Card	27	flat:name	O	_
+ 29	)	)	PUNCT	_	_	27	punct	O	_
+ 30	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -18372,7 +18372,7 @@
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	julho	julho	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+-22	2013	2013	NOUN	_	Gender=Masc|Number=Plur	20	nummod	O	_
++22	2013	2013	NUM	_	NumType=Card	20	nummod	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+ 24	visando	visar	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 25	estudar	estudar	VERB	_	VerbForm=Inf	24	xcomp	O	_
+@@ -18474,7 +18474,7 @@
+ 18	sondagem	sondagem	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	Catuneanu	Catuneanu	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+-21	2006	2006	PROPN	_	Number=Sing	20	nummod	O	_
++21	2006	2006	NUM	_	NumType=Card	20	nummod	O	_
+ 22	)	)	PUNCT	_	_	20	punct	O	_
+ 23	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -18543,7 +18543,7 @@
+ 55	sedimentares	sedimentar	ADJ	_	Gender=Masc|Number=Plur	54	amod	O	_
+ 56	(	(	PUNCT	_	_	57	punct	O	_
+ 57	Walker	Walker	PROPN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
+-58	1992	1992	PROPN	_	Number=Sing	57	flat:name	O	_
++58	1992	1992	NUM	_	NumType=Card	57	flat:name	O	_
+ 59	)	)	PUNCT	_	_	57	punct	O	_
+ 60	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -18611,7 +18611,7 @@
+ 51	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	49	nmod	O	_
+ 52	(	(	PUNCT	_	_	53	punct	O	_
+ 53	Catuneanu	Catuneanu	PROPN	_	Gender=Masc|Number=Sing	17	parataxis	O	_
+-54	2006	2006	PROPN	_	Number=Sing	53	nummod	O	_
++54	2006	2006	NUM	_	NumType=Card	53	nummod	O	_
+ 55	)	)	PUNCT	_	_	53	punct	O	_
+ 56	.	.	PUNCT	_	_	17	punct	O	_
+ 
+@@ -18787,7 +18787,7 @@
+ 35	modificado	modificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	parataxis	O	_
+ 36	de	de	ADP	_	_	37	case	O	_
+ 37	Ashley	Ashley	PROPN	_	Gender=Fem|Number=Sing	35	obl	O	_
+-38	1990	1990	PROPN	_	Number=Sing	37	flat:name	O	_
++38	1990	1990	NUM	_	NumType=Card	37	flat:name	O	_
+ 39	)	)	PUNCT	_	_	35	punct	O	_
+ 40	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -19738,7 +19738,7 @@
+ 89	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+ 90	&	&	PROPN	_	Number=Sing	89	flat:name	O	_
+ 91	Perinotto	Perinotto	PROPN	_	Number=Sing	89	flat:name	O	_
+-92	2001	2001	PROPN	_	Number=Sing	89	flat:name	O	_
++92	2001	2001	NUM	_	NumType=Card	89	flat:name	O	_
+ 93	)	)	PUNCT	_	_	89	punct	O	_
+ 94	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -19829,7 +19829,7 @@
+ 39	limitantes	limitante	ADJ	_	Gender=Fem|Number=Plur	38	amod	O	_
+ 40	(	(	PUNCT	_	_	41	punct	O	_
+ 41	Catuneanu	Catuneanu	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+-42	2006	2006	PROPN	_	Number=Sing	41	nummod	O	_
++42	2006	2006	NUM	_	NumType=Card	41	nummod	O	_
+ 43	)	)	PUNCT	_	_	41	punct	O	_
+ 44	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -20217,7 +20217,7 @@
+ 42	África	África	PROPN	_	Gender=Fem|Number=Sing	37	conj	O	_
+ 43	(	(	PUNCT	_	_	44	punct	O	_
+ 44	Matos	Matos	PROPN	_	Gender=Masc|Number=Sing	42	appos	O	_
+-45	1992	1992	PROPN	_	Number=Sing	44	flat:name	O	_
++45	1992	1992	NUM	_	NumType=Card	44	flat:name	O	_
+ 46	)	)	PUNCT	_	_	44	punct	O	_
+ 47	.	.	PUNCT	_	_	17	punct	O	_
+ 
+@@ -20284,7 +20284,7 @@
+ 54	Neves	Neves	PROPN	_	Number=Sing	53	flat:name	O	_
+ 55	et	et	PROPN	_	Number=Sing	53	flat:name	O	_
+ 56	al.	al.	PROPN	_	Number=Sing	53	flat:name	O	_
+-57	2000	2000	PROPN	_	Number=Sing	53	flat:name	O	_
++57	2000	2000	NUM	_	NumType=Card	53	flat:name	O	_
+ 58	)	)	PUNCT	_	_	53	punct	O	_
+ 59	,	,	PUNCT	_	_	61	punct	O	_
+ 60	a	a	ADP	_	_	61	case	O	_
+@@ -20682,7 +20682,7 @@
+ 54	Pernambuco	Pernambuco	PROPN	_	Number=Sing	52	flat:name	O	_
+ 55	(	(	PUNCT	_	_	56	punct	O	_
+ 56	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	14	parataxis	O	_
+-57	2007	2007	PROPN	_	Number=Sing	56	flat:name	O	_
++57	2007	2007	NUM	_	NumType=Card	56	flat:name	O	_
+ 58	)	)	PUNCT	_	_	56	punct	O	_
+ 59	.	.	PUNCT	_	_	14	punct	O	_
+ 
+@@ -20818,7 +20818,7 @@
+ 25	litológica	litológico	ADJ	_	Gender=Fem|Number=Sing	24	amod	O	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+-28	2007	2007	PROPN	_	Number=Sing	27	flat:name	O	_
++28	2007	2007	NUM	_	NumType=Card	27	flat:name	O	_
+ 29	)	)	PUNCT	_	_	27	punct	O	_
+ 30	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -20855,7 +20855,7 @@
+ 27	Velha	Velha	PROPN	_	Number=Sing	26	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 28	(	(	PUNCT	_	_	29	punct	O	_
+ 29	Assine	Assine	PROPN	_	Gender=Fem|Number=Sing	5	parataxis	O	_
+-30	2007	2007	PROPN	_	Number=Sing	29	flat:name	O	_
++30	2007	2007	NUM	_	NumType=Card	29	flat:name	O	_
+ 31	)	)	PUNCT	_	_	29	punct	O	_
+ 32	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -21080,7 +21080,7 @@
+ 14	Ponte	Ponte	PROPN	_	Gender=Fem|Number=Sing	3	parataxis	O	_
+ 15	&	&	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	Appi	Appi	PROPN	_	Number=Sing	14	flat:name	O	_
+-17	1990	1990	PROPN	_	Number=Sing	14	flat:name	O	_
++17	1990	1990	NUM	_	NumType=Card	14	flat:name	O	_
+ 18	)	)	PUNCT	_	_	14	punct	O	_
+ 19	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -21231,7 +21231,7 @@
+ 25	inferior	inferior	ADJ	_	Gender=Masc|Number=Sing	24	amod	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+-28	2007	2007	PROPN	_	Number=Sing	27	flat:name	O	_
++28	2007	2007	NUM	_	NumType=Card	27	flat:name	O	_
+ 29	)	)	PUNCT	_	_	27	punct	O	_
+ 30	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -21399,7 +21399,7 @@
+ 11	Ponte	Ponte	PROPN	_	Gender=Fem|Number=Sing	6	parataxis	O	_
+ 12	&	&	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	Appi	Appi	PROPN	_	Number=Sing	11	flat:name	O	_
+-14	1990	1990	PROPN	_	Number=Sing	11	flat:name	O	_
++14	1990	1990	NUM	_	NumType=Card	11	flat:name	O	_
+ 15	)	)	PUNCT	_	_	11	punct	O	_
+ 16	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -21464,7 +21464,7 @@
+ 50	Pernambuco	Pernambuco	PROPN	_	Number=Sing	48	nmod	O	_
+ 51	(	(	PUNCT	_	_	52	punct	O	_
+ 52	Chagas	Chagas	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+-53	2006	2006	PROPN	_	Number=Sing	52	nummod	O	_
++53	2006	2006	NUM	_	NumType=Card	52	nummod	O	_
+ 54	)	)	PUNCT	_	_	52	punct	O	_
+ 55	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -21620,7 +21620,7 @@
+ 25	lacustre	lacustre	ADJ	_	Gender=Fem|Number=Sing	24	amod	B=SISTEMA_DEPOSICIONAL	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	Neumann	Neumann	PROPN	_	Gender=Masc|Number=Sing	21	parataxis	O	_
+-28	1999	1999	PROPN	_	Number=Sing	27	flat:name	O	_
++28	1999	1999	NUM	_	NumType=Card	27	flat:name	O	_
+ 29	)	)	PUNCT	_	_	27	punct	O	_
+ 30	.	.	PUNCT	_	_	21	punct	O	_
+ 
+@@ -21807,7 +21807,7 @@
+ 17	Araripina	Araripina	PROPN	_	Number=Sing	16	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 18	(	(	PUNCT	_	_	19	punct	O	_
+ 19	Assine	Assine	PROPN	_	Gender=Fem|Number=Sing	16	appos	O	_
+-20	2007	2007	PROPN	_	Number=Sing	19	flat:name	O	_
++20	2007	2007	NUM	_	NumType=Card	19	flat:name	O	_
+ 21	)	)	PUNCT	_	_	19	punct	O	_
+ 22	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -22185,7 +22185,7 @@
+ 73	lacustre	lacustre	ADJ	_	Gender=Masc|Number=Sing	72	amod	B=SISTEMA_DEPOSICIONAL	_
+ 74	(	(	PUNCT	_	_	75	punct	O	_
+ 75	Moura	Moura	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+-76	2007	2007	PROPN	_	Number=Sing	75	nummod	O	_
++76	2007	2007	NUM	_	NumType=Card	75	nummod	O	_
+ 77	)	)	PUNCT	_	_	75	punct	O	_
+ 78	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -22224,7 +22224,7 @@
+ 26	Parnaíba	Parnaíba	PROPN	_	Number=Sing	23	flat:name	I=BACIA	_
+ 27	(	(	PUNCT	_	_	28	punct	O	_
+ 28	Arai	Arai	PROPN	_	Gender=Fem|Number=Sing	23	appos	O	_
+-29	2014	2014	PROPN	_	Number=Sing	28	flat:name	O	_
++29	2014	2014	NUM	_	NumType=Card	28	flat:name	O	_
+ 30	)	)	PUNCT	_	_	28	punct	O	_
+ 31	enquanto	enquanto	ADP	_	_	34	mark	O	MWEPOS=SCONJ
+ 32	que	que	SCONJ	_	_	31	fixed	O	_
+@@ -23764,7 +23764,7 @@
+ 36	&	&	PROPN	_	Number=Sing	35	flat:name	O	_
+ 37	High	High	PROPN	_	Number=Sing	35	flat:name	O	_
+ 38	Jr.	Jr.	PROPN	_	Number=Sing	35	flat:name	O	_
+-39	1973	1973	PROPN	_	Number=Sing	35	flat:name	O	_
++39	1973	1973	NUM	_	NumType=Card	35	flat:name	O	_
+ 40	)	)	PUNCT	_	_	35	punct	O	_
+ 41	.	.	PUNCT	_	_	23	punct	O	_
+ 
+@@ -24121,7 +24121,7 @@
+ 12	&	&	PROPN	_	Number=Sing	11	flat:name	O	_
+ 13	High	High	PROPN	_	Number=Sing	11	flat:name	O	_
+ 14	Jr.	Jr.	PROPN	_	Number=Sing	11	flat:name	O	_
+-15	1973	1973	PROPN	_	Number=Sing	11	flat:name	O	_
++15	1973	1973	NUM	_	NumType=Card	11	flat:name	O	_
+ 16	)	)	PUNCT	_	_	11	punct	O	_
+ 17	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -24287,7 +24287,7 @@
+ 34	&	&	PROPN	_	Number=Sing	33	flat:name	O	_
+ 35	High	High	PROPN	_	Number=Sing	33	flat:name	O	_
+ 36	Jr.	Jr.	PROPN	_	Number=Sing	33	flat:name	O	_
+-37	1973	1973	PROPN	_	Number=Sing	33	flat:name	O	_
++37	1973	1973	NUM	_	NumType=Card	33	flat:name	O	_
+ 38	)	)	PUNCT	_	_	33	punct	O	_
+ 39	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -24739,7 +24739,7 @@
+ 35	&	&	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	High	High	PROPN	_	Number=Sing	34	flat:name	O	_
+ 37	Jr.	Jr.	PROPN	_	Number=Sing	34	flat:name	O	_
+-38	1973	1973	PROPN	_	Number=Sing	34	flat:name	O	_
++38	1973	1973	NUM	_	NumType=Card	34	flat:name	O	_
+ 39	)	)	PUNCT	_	_	34	punct	O	_
+ 40	.	.	PUNCT	_	_	30	punct	O	_
+ 
+@@ -24906,7 +24906,7 @@
+ 22	&	&	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	High	High	PROPN	_	Number=Sing	21	flat:name	O	_
+ 24	Jr.	Jr.	PROPN	_	Number=Sing	21	flat:name	O	_
+-25	1973	1973	PROPN	_	Number=Sing	21	flat:name	O	_
++25	1973	1973	NUM	_	NumType=Card	21	flat:name	O	_
+ 26	)	)	PUNCT	_	_	21	punct	O	_
+ 27	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -24933,7 +24933,7 @@
+ 19	Benton	Benton	PROPN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
+ 20	&	&	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	Harper	Harper	PROPN	_	Number=Sing	19	flat:name	O	_
+-22	1997	1997	PROPN	_	Number=Sing	19	flat:name	O	_
++22	1997	1997	NUM	_	NumType=Card	19	flat:name	O	_
+ 23	)	)	PUNCT	_	_	19	punct	O	_
+ 24	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -25286,7 +25286,7 @@
+ 25	&	&	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	High	High	PROPN	_	Number=Sing	24	flat:name	O	_
+ 27	Jr.	Jr.	PROPN	_	Number=Sing	24	flat:name	O	_
+-28	1973	1973	PROPN	_	Number=Sing	24	flat:name	O	_
++28	1973	1973	NUM	_	NumType=Card	24	flat:name	O	_
+ 29	)	)	PUNCT	_	_	24	punct	O	_
+ 30	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -25387,7 +25387,7 @@
+ 26	&	&	PROPN	_	Number=Sing	25	flat:name	O	_
+ 27	High	High	PROPN	_	Number=Sing	25	flat:name	O	_
+ 28	Jr.	Jr.	PROPN	_	Number=Sing	25	flat:name	O	_
+-29	1973	1973	PROPN	_	Number=Sing	25	flat:name	O	_
++29	1973	1973	NUM	_	NumType=Card	25	flat:name	O	_
+ 30	)	)	PUNCT	_	_	25	punct	O	_
+ 31	.	.	PUNCT	_	_	9	punct	O	_
+ 
+@@ -27463,7 +27463,7 @@
+ 35	Ipubi	Ipubi	PROPN	_	Number=Sing	34	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 36	(	(	PUNCT	_	_	37	punct	O	_
+ 37	Rojas	Rojas	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+-38	2009	2009	PROPN	_	Number=Sing	37	flat:name	O	_
++38	2009	2009	NUM	_	NumType=Card	37	flat:name	O	_
+ 39	)	)	PUNCT	_	_	37	punct	O	_
+ 40	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -29868,7 +29868,7 @@
+ 21	Echinopygus	Echinopygus	PROPN	_	Gender=Masc|Number=Sing	19	conj	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	Beurlen	Beurlen	PROPN	_	Gender=Fem|Number=Sing	3	parataxis	O	_
+-24	1963	1963	PROPN	_	Number=Sing	23	flat:name	O	_
++24	1963	1963	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	)	)	PUNCT	_	_	23	punct	O	_
+ 26	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -30281,7 +30281,7 @@
+ 18	nordeste	nordeste	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	Arai	Arai	PROPN	_	Gender=Fem|Number=Sing	18	appos	O	_
+-21	2014	2014	PROPN	_	Number=Sing	20	flat:name	O	_
++21	2014	2014	NUM	_	NumType=Card	20	flat:name	O	_
+ 22	)	)	PUNCT	_	_	20	punct	O	_
+ 23	;	;	PUNCT	_	_	24	punct	O	_
+ 24	via	via	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+@@ -30290,7 +30290,7 @@
+ 27	Sergipe	Sergipe	PROPN	_	Number=Sing	25	flat:name	I=BACIA	_
+ 28	(	(	PUNCT	_	_	29	punct	O	_
+ 29	Lima	Lima	PROPN	_	Gender=Fem|Number=Sing	24	appos	O	_
+-30	1978	1978	PROPN	_	Number=Sing	29	flat:name	O	_
++30	1978	1978	NUM	_	NumType=Card	29	flat:name	O	_
+ 31	)	)	PUNCT	_	_	29	punct	O	_
+ 32	e	e	CCONJ	_	_	35	cc	O	_
+ 33-34	pela	_	_	_	_	_	_	_	_
+@@ -30301,7 +30301,7 @@
+ 37	Potiguar	Potiguar	PROPN	_	Number=Sing	35	flat:name	I=BACIA	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	Viana	Viana	PROPN	_	Gender=Fem|Number=Sing	35	appos	O	_
+-40	1998	1998	PROPN	_	Number=Sing	39	flat:name	O	_
++40	1998	1998	NUM	_	NumType=Card	39	flat:name	O	_
+ 41	)	)	PUNCT	_	_	39	punct	O	_
+ 42	.	.	PUNCT	_	_	9	punct	O	_
+ 
+@@ -30342,7 +30342,7 @@
+ 28	Tucano	Tucano	PROPN	_	Number=Sing	25	flat:name	I=BACIA	_
+ 29	(	(	PUNCT	_	_	30	punct	O	_
+ 30	Varejão	Varejão	PROPN	_	Gender=Masc|Number=Sing	25	appos	O	_
+-31	2013	2013	PROPN	_	Number=Sing	30	nummod	O	_
++31	2013	2013	NUM	_	NumType=Card	30	nummod	O	_
+ 32	)	)	PUNCT	_	_	30	punct	O	_
+ 33	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	34	nsubj	O	_
+ 34	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+@@ -30470,7 +30470,7 @@
+ 50	Santana	Santana	PROPN	_	Number=Sing	49	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 51	(	(	PUNCT	_	_	52	punct	O	_
+ 52	Assine	Assine	PROPN	_	Gender=Fem|Number=Sing	4	parataxis	O	_
+-53	1994	1994	PROPN	_	Number=Sing	52	flat:name	O	_
++53	1994	1994	NUM	_	NumType=Card	52	flat:name	O	_
+ 54	)	)	PUNCT	_	_	52	punct	O	_
+ 55	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -33013,7 +33013,7 @@
+ 7	Electrical	Electrical	PROPN	_	Number=Sing	2	flat:name	O	_
+ 8	Heating	Heating	PROPN	_	Number=Sing	2	flat:name	O	_
+ 9	US	US	PROPN	_	Number=Sing	2	flat:name	O	_
+-10	5099918	5099918	PROPN	_	Number=Sing	2	flat:name	O	_
++10	5099918	5099918	NUM	_	NumType=Card	2	flat:name	O	_
+ 
+ # text = A  Radiofrequency Ground Heating System For Soil Remediation . .
+ # sent_id = 398-20160721-MONOGRAFIA_0-83
+@@ -33555,7 +33555,7 @@
+ 17	et	et	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	al..	al..	PROPN	_	Number=Sing	16	flat:name	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+-20	2013	2013	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	O	_
++20	2013	2013	NUM	_	NumType=Card	16	nmod:appos	O	_
+ 21	)	)	PUNCT	_	_	20	punct	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	estabelecer	estabelecer	VERB	_	VerbForm=Inf	13	advcl	O	_
+@@ -34587,7 +34587,7 @@
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	COMSOL	COMSOL	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 3	(	(	PUNCT	_	_	2	flat:name	O	_
+-4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	2	flat:name	O	_
++4	2013	2013	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	)	)	PUNCT	_	_	2	flat:name	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	problema	problema	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
+@@ -34830,7 +34830,7 @@
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	Comsol	Comsol	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 3	(	(	PUNCT	_	_	4	punct	O	_
+-4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	2	nmod:appos	O	_
++4	2013	2013	NUM	_	NumType=Card	2	nmod:appos	O	_
+ 5	)	)	PUNCT	_	_	4	punct	O	_
+ 6	,	,	PUNCT	_	_	2	punct	O	_
+ 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -35301,7 +35301,7 @@
+ 11	segundo	segundo	ADP	_	_	12	case	O	_
+ 12	Mukhametshina	Mukhametshina	PROPN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+-14	2013	2013	NOUN	_	Gender=Masc|Number=Plur	12	nmod:appos	O	_
++14	2013	2013	NUM	_	NumType=Card	12	nmod:appos	O	_
+ 15	)	)	PUNCT	_	_	14	punct	O	_
+ 16	,	,	PUNCT	_	_	12	punct	O	_
+ 17	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Neg	18	det	O	_
+@@ -35456,7 +35456,7 @@
+ 3	Adaptado	adaptar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	parataxis	O	_
+ 4	Comsol	Comsol	PROPN	_	Gender=Masc|Number=Sing	3	obj	O	_
+ 5	(	(	PUNCT	_	_	6	punct	O	_
+-6	2013	2013	NOUN	_	Gender=Masc|Number=Plur	4	appos	O	_
++6	2013	2013	NUM	_	NumType=Card	4	appos	O	_
+ 7	)	)	PUNCT	_	_	6	punct	O	_
+ 
+ # text = A condição de limite magnético é usado em fronteiras para representar as superfícies de um condutor sem perdas ou metálico representando um corte de simetria.
+@@ -36411,7 +36411,7 @@
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+ 2	COMSOL	COMSOL	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
+ 3	(	(	PUNCT	_	_	4	punct	O	_
+-4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	2	nmod:appos	O	_
++4	2013	2013	NUM	_	NumType=Card	2	nmod:appos	O	_
+ 5	)	)	PUNCT	_	_	4	punct	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	desafio	desafio	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	O	_
+@@ -37717,7 +37717,7 @@
+ 15	em	em	ADP	_	_	16	case	O	_
+ 16	Bientinesia	Bientinesia	PROPN	_	Gender=Masc|Number=Sing	14	obl	O	_
+ 17	(	(	PUNCT	_	_	18	punct	O	_
+-18	2013	2013	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	O	_
++18	2013	2013	NUM	_	NumType=Card	16	nmod:appos	O	_
+ 19	)	)	PUNCT	_	_	18	punct	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+ 21	Cha-Um	Cha-Um	PROPN	_	Gender=Masc|Number=Sing	16	conj	O	_
+@@ -37737,7 +37737,7 @@
+ 35	et	et	PROPN	_	Number=Sing	34	flat:name	O	_
+ 36	al.	al.	PROPN	_	Number=Sing	34	flat:name	O	_
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+-38	2013	2013	NOUN	_	Gender=Fem|Number=Plur	34	nmod:appos	O	_
++38	2013	2013	NUM	_	NumType=Card	34	nmod:appos	O	_
+ 39	)	)	PUNCT	_	_	38	punct	O	_
+ 40	e	e	CCONJ	_	_	41	cc	O	_
+ 41	adaptadas	adaptar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	7	conj	O	_
+@@ -37776,7 +37776,7 @@
+ 24	et	et	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	al.	al.	PROPN	_	Number=Sing	23	flat:name	O	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+-27	2013	2013	NOUN	_	Gender=Masc|Number=Plur	23	nmod:appos	O	_
++27	2013	2013	NUM	_	NumType=Card	23	nmod:appos	O	_
+ 28	)	)	PUNCT	_	_	27	punct	O	_
+ 29	e	e	CCONJ	_	_	30	cc	O	_
+ 30	Halliburton	Halliburton	PROPN	_	Gender=Masc|Number=Sing	16	conj	O	_
+@@ -38603,7 +38603,7 @@
+ 5	-	-	PUNCT	_	_	4	punct	O	_
+ 6	Duto	Duto	PROPN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	3D	3D	PROPN	_	Number=Sing	6	flat:name	O	_
+-8	1000	1000	PROPN	_	Number=Sing	6	flat:name	O	_
++8	1000	1000	NUM	_	NumType=Card	6	flat:name	O	_
+ 
+ # text = A – 2000 Hz
+ # sent_id = 398-20160721-MONOGRAFIA_0-314
+@@ -49615,7 +49615,7 @@
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+ 11	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 12	PW	PW	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+-13	1480	1480	PROPN	_	Number=Sing	12	flat:name	O	_
++13	1480	1480	NUM	_	NumType=Card	12	flat:name	O	_
+ 14	,	,	PUNCT	_	_	11	punct	O	_
+ 15	com	com	ADP	_	_	17	case	O	_
+ 16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+@@ -56107,7 +56107,7 @@
+ 28	estearato	estearato	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	MPEG	MPEG	PROPN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+-31	350	350	PROPN	_	Number=Sing	30	flat:name	O	_
++31	350	350	NUM	_	NumType=Card	30	flat:name	O	_
+ 32	e	e	CCONJ	_	_	33	cc	O	_
+ 33	KCl.	KCl.	PROPN	_	Gender=Masc|Number=Sing	30	conj	O	_
+ 34	.	.	PUNCT	_	_	1	punct	O	_
+@@ -58705,7 +58705,7 @@
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+ 11	rodovias	rodovia	NOUN	_	Gender=Fem|Number=Plur	8	obl	O	_
+ 12	BR	BR	PROPN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-13	352	352	PROPN	_	Number=Sing	12	flat:name	O	_
++13	352	352	NUM	_	NumType=Card	12	flat:name	O	_
+ 14	,	,	PUNCT	_	_	15	punct	O	_
+ 15	BR	BR	PROPN	_	Gender=Masc|Number=Sing	12	conj	O	_
+ 16	365	365	NUM	_	NumType=Card	15	flat:name	O	_
+@@ -58714,7 +58714,7 @@
+ 19	354	354	NUM	_	NumType=Card	18	flat:name	O	_
+ 20	,	,	PUNCT	_	_	21	punct	O	_
+ 21	BR	BR	PROPN	_	Gender=Masc|Number=Sing	12	conj	O	_
+-22	040	040	PROPN	_	Number=Sing	21	flat:name	O	_
++22	040	040	NUM	_	NumType=Card	21	flat:name	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+ 24	MG	MG	PROPN	_	Gender=Masc|Number=Sing	12	conj	O	_
+ 25	410	410	NUM	_	NumType=Card	24	flat:name	O	_
+@@ -59921,7 +59921,7 @@
+ 15	pelitos	pelito	NOUN	_	Gender=Masc|Number=Plur	12	obl	O	_
+ 16	(	(	PUNCT	_	_	17	punct	O	_
+ 17	Sgarbi,	Sgarbi,	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+-18	1989	1989	PROPN	_	Number=Sing	17	flat:name	O	_
++18	1989	1989	NUM	_	NumType=Card	17	flat:name	O	_
+ 19	)	)	PUNCT	_	_	17	punct	O	_
+ 20	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -59950,7 +59950,7 @@
+ 18	Gilbert	Gilbert	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	17	appos	O	_
+-21	1989	1989	PROPN	_	Number=Sing	20	flat:name	O	_
++21	1989	1989	NUM	_	NumType=Card	20	flat:name	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	Sgarbi	Sgarbi	PROPN	_	Gender=Masc|Number=Sing	20	conj	O	_
+ 24	,	,	PUNCT	_	_	23	flat:name	O	_
+@@ -63124,7 +63124,7 @@
+ 56	)	)	PUNCT	_	_	55	punct	O	_
+ 57	(	(	PUNCT	_	_	58	punct	O	_
+ 58	Pontos	Pontos	PROPN	_	Gender=Masc|Number=Plur	11	parataxis	O	_
+-59	26	26	PROPN	_	Number=Sing	58	flat:name	O	_
++59	26	26	NUM	_	NumType=Card	58	flat:name	O	_
+ 60	,	,	PUNCT	_	_	61	punct	O	_
+ 61	28	28	NUM	_	NumType=Card	58	conj	O	_
+ 62	,	,	PUNCT	_	_	63	punct	O	_
+@@ -79954,7 +79954,7 @@
+ 20	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+ 21	máxima	grande	ADJ	_	Gender=Fem|Number=Sing	20	amod	O	_
+ 22	em	em	ADP	_	_	23	case	O	_
+-23	2013	2013	NOUN	_	Gender=Masc|Number=Plur	14	obl	O	_
++23	2013	2013	NUM	_	NumType=Card	14	obl	O	_
+ 24	,	,	PUNCT	_	_	25	punct	O	_
+ 25	ou	ou	CCONJ	_	_	28	cc	O	_
+ 26	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	fixed	O	_
+@@ -81492,7 +81492,7 @@
+ 19	Furado	Furado	PROPN	_	Number=Sing	18	flat:name	O	_
+ 20	–	–	PUNCT	_	_	21	punct	O	_
+ 21	PNA	PNA	PROPN	_	Gender=Fem|Number=Sing	18	appos	O	_
+-22	1	1	PROPN	_	Number=Sing	21	flat:name	O	_
++22	1	1	NUM	_	NumType=Card	21	flat:name	O	_
+ 23	)	)	PUNCT	_	_	18	punct	O	_
+ 24			PUNCT	_	_	25	punct	O	_
+ 25	Trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	18	conj	O	_
+@@ -84847,7 +84847,7 @@
+ 9	Bruhn	Bruhn	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 10	et	et	PROPN	_	Number=Sing	9	flat:name	O	_
+ 11	al.	al.	PROPN	_	Number=Sing	9	flat:name	O	_
+-12	2003	2003	PROPN	_	Number=Sing	9	flat:name	O	_
++12	2003	2003	NUM	_	NumType=Card	9	flat:name	O	_
+ 13	)	)	PUNCT	_	_	9	punct	O	_
+ 14	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -85232,7 +85232,7 @@
+ 20	Guimaraes	Guimaraes	PROPN	_	Gender=Masc|Number=Sing	11	parataxis	O	_
+ 21	et	et	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	al.	al.	PROPN	_	Number=Sing	20	flat:name	O	_
+-23	2001	2001	PROPN	_	Number=Sing	20	flat:name	O	_
++23	2001	2001	NUM	_	NumType=Card	20	flat:name	O	_
+ 24	)	)	PUNCT	_	_	20	punct	O	_
+ 25	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -86845,7 +86845,7 @@
+ 21	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	CO	CO	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+-24	2	2	PROPN	_	Number=Sing	23	flat:name	O	_
++24	2	2	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = Esse dado é importante em relação à segurança do armazenamento no reservatório, garantindo que não haja uma quantidade maior de dióxido de carbono do que a capacidade de suporte.
+@@ -88449,7 +88449,7 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	CO	CO	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+-16	2	2	PROPN	_	Number=Sing	15	flat:name	O	_
++16	2	2	NUM	_	NumType=Card	15	flat:name	O	_
+ 17	,	,	PUNCT	_	_	3	punct	O	_
+ 18	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	cop	O	_
+ 19	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -90220,7 +90220,7 @@
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	CO	CO	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+-16	2	2	PROPN	_	Number=Sing	15	flat:name	O	_
++16	2	2	NUM	_	NumType=Card	15	flat:name	O	_
+ 17	dentro	dentro	ADV	_	_	10	advmod	O	_
+ 18-19	dos	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+@@ -92907,7 +92907,7 @@
+ 2	1PON	1PON	PROPN	_	Number=Sing	1	flat:name	O	_
+ 3	(	(	PUNCT	_	_	4	punct	O	_
+ 4	t	t	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+-5	2	2	PROPN	_	Number=Sing	4	flat:name	O	_
++5	2	2	NUM	_	NumType=Card	4	flat:name	O	_
+ 6	)	)	PUNCT	_	_	4	punct	O	_
+ 7	+	+	PUNCT	_	_	8	punct	O	_
+ 8	AA	AA	PROPN	_	Gender=Masc|Number=Sing	1	conj	O	_
+@@ -92916,7 +92916,7 @@
+ 11	OPAÇQÇ	OPAÇQÇ	PROPN	_	Number=Sing	10	flat:name	O	_
+ 12	(	(	PUNCT	_	_	13	punct	O	_
+ 13	t	t	PROPN	_	Gender=Masc|Number=Sing	10	appos	O	_
+-14	2	2	PROPN	_	Number=Sing	13	flat:name	O	_
++14	2	2	NUM	_	NumType=Card	13	flat:name	O	_
+ 15	)	)	PUNCT	_	_	13	punct	O	_
+ 
+ # text = As emissões decorrentes do projeto consistem basicamente nas emissões resultantes do gasto energético que é exercido desde a captura até o armazenamento final.
+@@ -93234,7 +93234,7 @@
+ 75	-	-	PUNCT	_	_	76	punct	O	_
+ 76	Ano	Ano	PROPN	_	Gender=Masc|Number=Sing	74	appos	O	_
+ 77	Base	Base	PROPN	_	Number=Sing	76	flat:name	O	_
+-78	2011	2011	PROPN	_	Number=Sing	76	flat:name	O	_
++78	2011	2011	NUM	_	NumType=Card	76	flat:name	O	_
+ 79	)	)	PUNCT	_	_	76	punct	O	_
+ 80	,	,	PUNCT	_	_	68	punct	O	_
+ 81-82	pode-se	_	_	_	_	_	_	_	_
+@@ -96305,7 +96305,7 @@
+ 86	desde	desde	ADP	_	_	87	case	O	_
+ 87	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	85	obl	O	_
+ 88	de	de	ADP	_	_	89	case	O	_
+-89	2013	2013	NOUN	_	Gender=Masc|Number=Plur	87	nummod	O	_
++89	2013	2013	NUM	_	NumType=Card	87	nummod	O	_
+ 90-91	no	_	_	_	_	_	_	_	_
+ 90	em	em	ADP	_	_	92	case	O	_
+ 91	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	92	det	O	_
+@@ -96346,7 +96346,7 @@
+ 1	E	e	CCONJ	_	_	6	cc	O	_
+ 2	ainda	ainda	ADV	_	_	4	advmod	O	_
+ 3	em	em	ADP	_	_	4	case	O	_
+-4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	6	obl	O	_
++4	2013	2013	NUM	_	NumType=Card	6	obl	O	_
+ 5	,	,	PUNCT	_	_	4	punct	O	_
+ 6	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 7	em	em	ADP	_	_	8	case	O	_
+@@ -98009,7 +98009,7 @@
+ 14	Fonte:	Fonte:	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 15	MORAIS	MORAIS	PROPN	_	Number=Sing	14	flat:name	O	_
+ 16	,	,	PUNCT	_	_	14	flat:name	O	_
+-17	2013	2013	NOUN	_	Gender=Masc|Number=Plur	14	flat:name	O	_
++17	2013	2013	NUM	_	NumType=Card	14	flat:name	O	_
+ 18	)	)	PUNCT	_	_	14	punct	O	_
+ 
+ # text = I.2.2 Investimentos
+@@ -99348,7 +99348,7 @@
+ 41	Atividade	Atividade	PROPN	_	Number=Sing	38	flat:name	O	_
+ 42	II.2.1	II.2.1	PROPN	_	Number=Sing	38	flat:name	O	_
+ 43	,	,	PUNCT	_	_	44	punct	O	_
+-44	2013	2013	NOUN	_	Gender=Masc|Number=Plur	38	appos	O	_
++44	2013	2013	NUM	_	NumType=Card	38	appos	O	_
+ 45	)	)	PUNCT	_	_	38	punct	O	_
+ 46	.	.	PUNCT	_	_	36	punct	O	_
+ 
+@@ -101318,7 +101318,7 @@
+ 5	mesmo	mesmo	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+ 6	ano	ano	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+-8	2013	2013	NOUN	_	Gender=Masc|Number=Plur	6	nummod	O	_
++8	2013	2013	NUM	_	NumType=Card	6	nummod	O	_
+ 9	,	,	PUNCT	_	_	2	punct	O	_
+ 10	tal	tal	DET	_	Gender=Fem|Number=Sing|PronType=Ind	11	det	O	_
+ 11	produção	produção	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
+@@ -102740,7 +102740,7 @@
+ 46	Bloco	Bloco	PROPN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 47	Green	Green	PROPN	_	Number=Sing	46	flat:name	O	_
+ 48	Canyon	Canyon	PROPN	_	Number=Sing	46	flat:name	O	_
+-49	640	640	PROPN	_	Number=Sing	46	flat:name	O	_
++49	640	640	NUM	_	NumType=Card	46	flat:name	O	_
+ 50	,	,	PUNCT	_	_	46	punct	O	_
+ 51	e	e	CCONJ	_	_	52	cc	O	_
+ 52	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	24	conj	O	_
+@@ -103691,7 +103691,7 @@
+ 26	líquidas	líquido	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+ 27	(	(	PUNCT	_	_	28	punct	O	_
+ 28	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+-29	2009	2009	PROPN	_	Number=Sing	28	nummod	O	_
++29	2009	2009	NUM	_	NumType=Card	28	nummod	O	_
+ 30	)	)	PUNCT	_	_	28	punct	O	_
+ 31	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -104264,7 +104264,7 @@
+ 44	tocha	tocha	NOUN	_	Gender=Fem|Number=Sing	42	nmod	O	_
+ 45	(	(	PUNCT	_	_	46	punct	O	_
+ 46	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+-47	2009	2009	PROPN	_	Number=Sing	46	nummod	O	_
++47	2009	2009	NUM	_	NumType=Card	46	nummod	O	_
+ 48	)	)	PUNCT	_	_	46	punct	O	_
+ 49	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -105309,7 +105309,7 @@
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+ 14	MORAIS	MORAIS	PROPN	_	Gender=Fem|Number=Sing	12	appos	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+-16	2013	2013	NOUN	_	Gender=Masc|Number=Plur	14	nmod:appos	O	_
++16	2013	2013	NUM	_	NumType=Card	14	nmod:appos	O	_
+ 17	)	)	PUNCT	_	_	14	punct	O	_
+ 18	:	:	PUNCT	_	_	20	punct	O	_
+ 19	•	•	PUNCT	_	_	20	punct	O	_
+@@ -105855,7 +105855,7 @@
+ 53	aquecimento	aquecimento	NOUN	_	Gender=Masc|Number=Sing	40	conj	O	_
+ 54	(	(	PUNCT	_	_	55	punct	O	_
+ 55	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	12	parataxis	O	_
+-56	2009	2009	PROPN	_	Number=Sing	55	nummod	O	_
++56	2009	2009	NUM	_	NumType=Card	55	nummod	O	_
+ 57	)	)	PUNCT	_	_	55	punct	O	_
+ 58	.	.	PUNCT	_	_	12	punct	O	_
+ 
+@@ -107259,7 +107259,7 @@
+ 16	Fonte:	Fonte:	PROPN	_	Gender=Masc|Number=Sing	1	appos	O	_
+ 17	JAHANSHASI	JahanshasI	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	,	,	PUNCT	_	_	16	flat:name	O	_
+-19	2013	2013	NOUN	_	Gender=Masc|Number=Plur	16	flat:name	O	_
++19	2013	2013	NUM	_	NumType=Card	16	flat:name	O	_
+ 20	)	)	PUNCT	_	_	16	punct	O	_
+ 
+ # text = O segundo sistema de separação subsea instalado no mundo foi o Tordis SSBI (Subsea Separation Boosting & Injection).
+@@ -107712,7 +107712,7 @@
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+ 10	instalado	instalar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
+ 11	em	em	ADP	_	_	12	case	O	_
+-12	2011	2011	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
++12	2011	2011	NUM	_	NumType=Card	10	obl	O	_
+ 13	,	,	PUNCT	_	_	10	punct	O	_
+ 14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
+ 15	similar	similar	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -108257,7 +108257,7 @@
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	MORAIS	MORAIS	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+ 22	,	,	PUNCT	_	_	21	flat:name	O	_
+-23	2013	2013	NOUN	_	Gender=Masc|Number=Plur	21	flat:name	O	_
++23	2013	2013	NUM	_	NumType=Card	21	flat:name	O	_
+ 24	)	)	PUNCT	_	_	21	punct	O	_
+ 25	.	.	PUNCT	_	_	27	punct	O	_
+ 26	•	•	PUNCT	_	_	27	punct	O	_
+@@ -108336,7 +108336,7 @@
+ 53	(	(	PUNCT	_	_	54	punct	O	_
+ 54	MORAIS	MORAIS	PROPN	_	Gender=Masc|Number=Sing	22	parataxis	O	_
+ 55	,	,	PUNCT	_	_	54	flat:name	O	_
+-56	2013	2013	NOUN	_	Gender=Masc|Number=Plur	54	flat:name	O	_
++56	2013	2013	NUM	_	NumType=Card	54	flat:name	O	_
+ 57	)	)	PUNCT	_	_	54	punct	O	_
+ 58	.	.	PUNCT	_	_	22	punct	O	_
+ 
+@@ -108523,7 +108523,7 @@
+ 45	(	(	PUNCT	_	_	46	punct	O	_
+ 46	MORAIS	MORAIS	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 47	,	,	PUNCT	_	_	46	flat:name	O	_
+-48	2013	2013	NOUN	_	Gender=Masc|Number=Plur	46	flat:name	O	_
++48	2013	2013	NUM	_	NumType=Card	46	flat:name	O	_
+ 49	)	)	PUNCT	_	_	46	punct	O	_
+ 50	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -108670,7 +108670,7 @@
+ 32	(	(	PUNCT	_	_	33	punct	O	_
+ 33	MORAIS	MORAIS	PROPN	_	Gender=Fem|Number=Sing	11	parataxis	O	_
+ 34	,	,	PUNCT	_	_	33	flat:name	O	_
+-35	2013	2013	NOUN	_	Gender=Masc|Number=Plur	33	flat:name	O	_
++35	2013	2013	NUM	_	NumType=Card	33	flat:name	O	_
+ 36	)	)	PUNCT	_	_	33	punct	O	_
+ 37	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -109333,7 +109333,7 @@
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+ 26	MORAIS	MORAIS	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+ 27	,	,	PUNCT	_	_	26	flat:name	O	_
+-28	2013	2013	NOUN	_	Gender=Masc|Number=Plur	26	flat:name	O	_
++28	2013	2013	NUM	_	NumType=Card	26	flat:name	O	_
+ 29	)	)	PUNCT	_	_	26	punct	O	_
+ 30	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -109410,7 +109410,7 @@
+ 11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	O	_
+ 12	lançado	lançar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 13	em	em	ADP	_	_	14	case	O	_
+-14	2009	2009	NOUN	_	Gender=Fem|Number=Plur	12	obl	O	_
++14	2009	2009	NUM	_	NumType=Card	12	obl	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+ 16	programa	programa	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	O	_
+ 17-18	da	_	_	_	_	_	_	_	_
+@@ -109511,7 +109511,7 @@
+ 69	(	(	PUNCT	_	_	70	punct	O	_
+ 70	MORAIS	MORAIS	PROPN	_	Gender=Masc|Number=Sing	6	parataxis	O	_
+ 71	,	,	PUNCT	_	_	70	flat:name	O	_
+-72	2013	2013	NOUN	_	Gender=Masc|Number=Plur	70	flat:name	O	_
++72	2013	2013	NUM	_	NumType=Card	70	flat:name	O	_
+ 73	)	)	PUNCT	_	_	70	punct	O	_
+ 74	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -109520,7 +109520,7 @@
+ 1	E	e	CCONJ	_	_	20	cc	O	_
+ 2	já	já	ADV	_	_	20	advmod	O	_
+ 3	em	em	ADP	_	_	4	case	O	_
+-4	2013	2013	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
++4	2013	2013	NUM	_	NumType=Card	20	obl	O	_
+ 5	,	,	PUNCT	_	_	4	punct	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	diretor	diretor	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	O	_
+@@ -115013,7 +115013,7 @@
+ 10	ser	ser	AUX	_	VerbForm=Inf	11	aux:pass	O	_
+ 11	implementado	implementar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	O	_
+ 12	em	em	ADP	_	_	13	case	O	_
+-13	2013	2013	NOUN	_	Gender=Masc|Number=Plur	11	obl	O	_
++13	2013	2013	NUM	_	NumType=Card	11	obl	O	_
+ 14	,	,	PUNCT	_	_	11	punct	O	_
+ 15	já	já	ADV	_	_	19	mark	O	MWEPOS=SCONJ
+ 16	que	que	SCONJ	_	_	15	fixed	O	_
+@@ -115036,7 +115036,7 @@
+ 32	GALP	GALP	PROPN	_	Gender=Fem|Number=Sing	8	parataxis	O	_
+ 33	ENERGIA	ENERGIA	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	,	,	PUNCT	_	_	32	flat:name	O	_
+-35	2013	2013	NOUN	_	Gender=Masc|Number=Plur	32	flat:name	O	_
++35	2013	2013	NUM	_	NumType=Card	32	flat:name	O	_
+ 36	)	)	PUNCT	_	_	32	punct	O	_
+ 37	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -115070,7 +115070,7 @@
+ 23	a	a	ADP	_	_	26	case	O	MWEPOS=ADP
+ 24	partir	partir	VERB	_	VerbForm=Inf	23	fixed	O	_
+ 25	de	de	ADP	_	_	23	fixed	O	_
+-26	2012	2012	NOUN	_	Gender=Masc|Number=Sing	27	obl	O	_
++26	2012	2012	NUM	_	NumType=Card	27	obl	O	_
+ 27	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	O	_
+ 28	a	a	ADP	_	_	29	mark	O	_
+ 29	utilizar	utilizar	VERB	_	VerbForm=Inf	27	xcomp	O	_
+@@ -115092,7 +115092,7 @@
+ 2	a	a	ADP	_	_	5	case	O	MWEPOS=ADP
+ 3	partir	partir	VERB	_	VerbForm=Inf	2	fixed	O	_
+ 4	de	de	ADP	_	_	2	fixed	O	_
+-5	2013	2013	NOUN	_	Gender=Masc|Number=Plur	9	obl	O	_
++5	2013	2013	NUM	_	NumType=Card	9	obl	O	_
+ 6	,	,	PUNCT	_	_	1	punct	O	_
+ 7	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	O	_
+ 8	processo	processo	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	O	_
+@@ -115367,7 +115367,7 @@
+ 20	GALP	GALP	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	ENERGIA	ENERGIA	PROPN	_	Number=Sing	19	flat:name	O	_
+ 22	,	,	PUNCT	_	_	19	flat:name	O	_
+-23	2013	2013	NOUN	_	Gender=Masc|Number=Plur	19	appos	O	_
++23	2013	2013	NUM	_	NumType=Card	19	appos	O	_
+ 24	)	)	PUNCT	_	_	19	punct	O	_
+ 
+ # text = O uso de CO2 para injeção WAG é uma alternativa atrativa principalmente para operações marítimas, devido a limitações de estocagem e manipulação (LIGERO, 2013).
+@@ -115398,7 +115398,7 @@
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+ 25	LIGERO	LIGERO	PROPN	_	Gender=Fem|Number=Sing	10	parataxis	O	_
+ 26	,	,	PUNCT	_	_	25	flat:name	O	_
+-27	2013	2013	NOUN	_	Gender=Masc|Number=Plur	25	flat:name	O	_
++27	2013	2013	NUM	_	NumType=Card	25	flat:name	O	_
+ 28	)	)	PUNCT	_	_	25	punct	O	_
+ 29	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -115758,7 +115758,7 @@
+ 22	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	19	obl	O	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+ 24	Colunas	Colunas	PROPN	_	Gender=Fem|Number=Sing	16	parataxis	O	_
+-25	1	1	PROPN	_	Number=Sing	24	flat:name	O	_
++25	1	1	NUM	_	NumType=Card	24	flat:name	O	_
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+ 27	2	2	NUM	_	NumType=Card	24	appos	O	_
+ 28	,	,	PUNCT	_	_	29	punct	O	_
+@@ -116128,7 +116128,7 @@
+ 19	kg/m3	kg/m3	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+-22	2009	2009	PROPN	_	Number=Sing	21	nummod	O	_
++22	2009	2009	NUM	_	NumType=Card	21	nummod	O	_
+ 23	)	)	PUNCT	_	_	21	punct	O	_
+ 24	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -116158,7 +116158,7 @@
+ 13	por	por	ADP	_	_	14	case	O	_
+ 14	Neto	Neto	PROPN	_	Gender=Masc|Number=Sing	12	obl:agent	O	_
+ 15	(	(	PUNCT	_	_	16	punct	O	_
+-16	2013	2013	NOUN	_	Gender=Masc|Number=Plur	14	nmod:appos	O	_
++16	2013	2013	NUM	_	NumType=Card	14	nmod:appos	O	_
+ 17	)	)	PUNCT	_	_	16	punct	O	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+ 19	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	O	_
+@@ -118822,7 +118822,7 @@
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
+ 23	Vasos	Vasos	PROPN	_	Gender=Masc|Number=Plur	20	obl	O	_
+-24	1	1	PROPN	_	Number=Sing	23	flat:name	O	_
++24	1	1	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	3	3	NUM	_	NumType=Card	23	conj	O	_
+ 27	.	.	PUNCT	_	_	13	punct	O	_
+@@ -119901,7 +119901,7 @@
+ 21	de	de	ADP	_	_	22	case	O	_
+ 22	BTU	BTU	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+ 23	em	em	ADP	_	_	24	case	O	_
+-24	2013	2013	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
++24	2013	2013	NUM	_	NumType=Card	15	nummod	O	_
+ 25	,	,	PUNCT	_	_	15	punct	O	_
+ 26	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	appos	O	_
+ 27	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	O	_
+@@ -120077,7 +120077,7 @@
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	Brasil	Brasil	PROPN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 9	em	em	ADP	_	_	10	case	O	_
+-10	2013	2013	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
++10	2013	2013	NUM	_	NumType=Card	5	obl	O	_
+ 11	,	,	PUNCT	_	_	5	punct	O	_
+ 12	proporciona	proporcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 13	maior	grande	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+@@ -124204,14 +124204,14 @@
+ 8	não	não	ADV	_	Polarity=Neg	9	advmod	O	_
+ 9	iônicos	iônico	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 10	Span	Span	PROPN	_	Gender=Masc|Number=Sing	7	nmod	O	_
+-11	80	80	PROPN	_	Number=Sing	10	flat:name	O	_
++11	80	80	NUM	_	NumType=Card	10	flat:name	O	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	Tween	Tween	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+-14	80	80	PROPN	_	Number=Sing	13	flat:name	O	_
++14	80	80	NUM	_	NumType=Card	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+ 17	NP	NP	PROPN	_	Number=Sing	16	flat:name	O	_
+-18	150	150	PROPN	_	Number=Sing	16	flat:name	O	_
++18	150	150	NUM	_	NumType=Card	16	flat:name	O	_
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+ 20	Ultrol	Ultrol	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+ 21	.	.	PUNCT	_	_	5	punct	O	_
+@@ -125062,7 +125062,7 @@
+ 9	destilada	destilar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	8	acl	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+ 11	NaCl	NaCl	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+-12	50	50	PROPN	_	Number=Sing	11	flat:name	O	_
++12	50	50	NUM	_	NumType=Card	11	flat:name	O	_
+ 13	g.	g.	NOUN	_	Gender=Masc|Number=Sing	11	compound	O	_
+ 14	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -125123,14 +125123,14 @@
+ 4	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	6	cop	O	_
+ 5	,	,	PUNCT	_	_	6	punct	O	_
+ 6	Span	Span	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+-7	80	80	PROPN	_	Number=Sing	6	flat:name	O	_
++7	80	80	NUM	_	NumType=Card	6	flat:name	O	_
+ 8	,	,	PUNCT	_	_	9	punct	O	_
+ 9	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+ 11	Ultrol	Ultrol	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+ 12	e	e	CCONJ	_	_	13	cc	O	_
+ 13	Tween	Tween	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+-14	40	40	PROPN	_	Number=Sing	13	flat:name	O	_
++14	40	40	NUM	_	NumType=Card	13	flat:name	O	_
+ 15	.	.	PUNCT	_	_	6	punct	O	_
+ 
+ # text = 3.2 PREPARO DAS EMULSÕES
+@@ -125652,7 +125652,7 @@
+ 15	lipofílico	lipofílico	ADJ	_	Gender=Masc|Number=Sing	12	amod	O	_
+ 16	(	(	PUNCT	_	_	17	punct	O	_
+ 17	Span	Span	PROPN	_	Gender=Masc|Number=Sing	14	appos	O	_
+-18	80	80	PROPN	_	Number=Sing	17	flat:name	O	_
++18	80	80	NUM	_	NumType=Card	17	flat:name	O	_
+ 19	)	)	PUNCT	_	_	17	punct	O	_
+ 20	e	e	CCONJ	_	_	23	cc	O	_
+ 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
+@@ -125663,7 +125663,7 @@
+ 26	Ultrol	Ultrol	PROPN	_	Number=Sing	25	flat:name	O	_
+ 27	,	,	PUNCT	_	_	28	punct	O	_
+ 28	Tween	Tween	PROPN	_	Gender=Masc|Number=Sing	25	conj	O	_
+-29	40	40	PROPN	_	Number=Sing	28	flat:name	O	_
++29	40	40	NUM	_	NumType=Card	28	flat:name	O	_
+ 30	)	)	PUNCT	_	_	25	punct	O	_
+ 31	,	,	PUNCT	_	_	33	punct	O	_
+ 32	em	em	ADP	_	_	33	case	O	_
+@@ -126200,7 +126200,7 @@
+ 3	Figuras	figuras	NOUN	_	Gender=Fem|Number=Plur	7	obl	O	_
+ 4	6	6	NUM	_	NumType=Card	3	nummod	O	_
+ 5	e	e	CCONJ	_	_	6	cc	O	_
+-6	7	7	PROPN	_	Number=Sing	4	conj	O	_
++6	7	7	NUM	_	NumType=Card	4	conj	O	_
+ 7-8	pode-se	_	_	_	_	_	_	_	_
+ 7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 8	se	se	PRON	_	_	7	expl	O	_
+@@ -132378,7 +132378,7 @@
+ 24	de	de	ADP	_	_	25	case	O	_
+ 25	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+ 26	ETAs	ETAs	PROPN	_	Gender=Masc|Number=Sing	25	nmod	O	_
+-27	3	3	PROPN	_	Number=Sing	26	flat:name	O	_
++27	3	3	NUM	_	NumType=Card	26	flat:name	O	_
+ 28	e	e	CCONJ	_	_	29	cc	O	_
+ 29	4	4	NUM	_	NumType=Card	26	conj	O	_
+ 30	.	.	PUNCT	_	_	1	punct	O	_
+@@ -132407,7 +132407,7 @@
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	O	_
+ 10	ETAs	ETAs	PROPN	_	Gender=Fem|Number=Plur	7	nmod	O	_
+-11	3	3	PROPN	_	Number=Sing	10	flat:name	O	_
++11	3	3	NUM	_	NumType=Card	10	flat:name	O	_
+ 12	e	e	CCONJ	_	_	14	cc	O	_
+ 13	4	4	NUM	_	NumType=Card	14	aux:pass	O	_
+ 14	fornecida	fornecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	O	_
+@@ -133143,7 +133143,7 @@
+ 17	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	11	conj	O	_
+ 18	MASSFLO	Massflo	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 19	DI	DI	PROPN	_	Number=Sing	18	flat:name	O	_
+-20	25	25	PROPN	_	Number=Sing	18	flat:name	O	_
++20	25	25	NUM	_	NumType=Card	18	flat:name	O	_
+ 21	juntamente	juntamente	ADV	_	_	6	advmod	O	_
+ 22	com	com	ADP	_	_	24	case	O	_
+ 23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+@@ -133151,13 +133151,13 @@
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	24	nmod	O	_
+ 27	MASS	MASS	PROPN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+-28	6000	6000	PROPN	_	Number=Sing	27	flat:name	O	_
++28	6000	6000	NUM	_	NumType=Card	27	flat:name	O	_
+ 
+ # text = Compact IP 67.
+ # sent_id = 77-20141209-TESEMSC_0-216
+ 1	Compact	Compact	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	IP	IP	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	67	67	PROPN	_	Number=Sing	1	flat:name	O	_
++3	67	67	NUM	_	NumType=Card	1	flat:name	O	_
+ 4	.	.	PUNCT	_	_	1	punct	O	_
+ 
+ # text = As incertezas deste equipamento, para uma faixa de confiança de 95%, são de ±1,253x10-6 m3/s, segundo a carta de calibração e aferição do equipamento fornecida pelo fabricante.
+@@ -134454,7 +134454,7 @@
+ 13	desemulsificante	desemulsificante	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 14	hidrofílico	hidrofílico	ADJ	_	Gender=Masc|Number=Sing	13	amod	O	_
+ 15	BDO	BDO	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+-16	20	20	PROPN	_	Number=Sing	15	flat:name	O	_
++16	20	20	NUM	_	NumType=Card	15	flat:name	O	_
+ 17	fornecido	fornecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	O	_
+ 18-19	pela	_	_	_	_	_	_	_	_
+ 18	por	por	ADP	_	_	20	case	O	_
+@@ -136963,7 +136963,7 @@
+ 6	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	5	fixed	O	_
+ 7	com	com	ADP	_	_	5	fixed	O	_
+ 8	Silva	Silva	PROPN	_	Gender=Masc|Number=Sing	29	obl	O	_
+-9	35	35	PROPN	_	Number=Sing	8	flat:name	O	_
++9	35	35	NUM	_	NumType=Card	8	flat:name	O	_
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+ 11	2003	2003	NUM	_	NumType=Card	8	nmod:appos	O	_
+ 12	)	)	PUNCT	_	_	11	punct	O	_
+@@ -140660,7 +140660,7 @@
+ 1	Conforme	conforme	ADP	_	_	2	case	O	_
+ 2	Lei	Lei	PROPN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 3	n°.	n°.	PROPN	_	Number=Sing	2	flat:name	O	_
+-4	9478	9478	PROPN	_	Number=Sing	2	flat:name	O	_
++4	9478	9478	NUM	_	NumType=Card	2	flat:name	O	_
+ 5	/97	/97	PROPN	_	Number=Sing	2	flat:name	O	_
+ 6	,	,	PUNCT	_	_	2	punct	O	_
+ 7	biocombustível	biocombustível	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	O	_
+@@ -140727,7 +140727,7 @@
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	ANP	ANP	PROPN	_	Gender=Fem|Number=Sing	24	nmod	O	_
+ 4	[	[	PUNCT	_	_	5	punct	O	_
+-5	1	1	PROPN	_	Gender=Fem|Number=Sing	3	nmod:appos	O	_
++5	1	1	NUM	_	NumType=Card	3	nmod:appos	O	_
+ 6	]	]	PUNCT	_	_	5	punct	O	_
+ 7	(	(	PUNCT	_	_	8	punct	O	_
+ 8	Agência	Agência	PROPN	_	Gender=Fem|Number=Sing	3	appos	O	_
+@@ -147071,7 +147071,7 @@
+ 39	Holanda	Holanda	PROPN	_	Gender=Fem|Number=Sing	35	appos	O	_
+ 40	,	,	PUNCT	_	_	39	flat:name	O	_
+ 41	A.	A.	PROPN	_	Gender=Fem|Number=Sing	39	flat:name	O	_
+-42	2004	2004	PROPN	_	Number=Sing	39	flat:name	O	_
++42	2004	2004	NUM	_	NumType=Card	39	flat:name	O	_
+ 43	)	)	PUNCT	_	_	39	punct	O	_
+ 44	,	,	PUNCT	_	_	48	punct	O	_
+ 45	além	além	ADV	_	_	48	cc	O	MWEPOS=CCONJ
+@@ -152215,7 +152215,7 @@
+ 5	em	em	ADP	_	_	6	case	O	_
+ 6	difratômetro	difratômetro	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 7	SHIMADZU	SHIMADZU	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+-8	6000	6000	PROPN	_	Number=Sing	7	flat:name	O	_
++8	6000	6000	NUM	_	NumType=Card	7	flat:name	O	_
+ 9	,	,	PUNCT	_	_	10	punct	O	_
+ 10	usando	usar	VERB	_	VerbForm=Ger	4	advcl	O	_
+ 11	tubo	tubo	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
+@@ -152286,7 +152286,7 @@
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	20	appos	O	_
+ 24	Nova	Nova	PROPN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+-25	1200	1200	PROPN	_	Number=Sing	24	flat:name	O	_
++25	1200	1200	NUM	_	NumType=Card	24	flat:name	O	_
+ 26	.	.	PUNCT	_	_	10	punct	O	_
+ 
+ # text = As amostras foram previamente desgaseificadas por 2 h a 120 oC.
+@@ -152505,7 +152505,7 @@
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	analisador	analisador	NOUN	_	Gender=Masc|Number=Sing	27	obl:agent	O	_
+ 31	Multigas	Multigas	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
+-32	2000	2000	PROPN	_	Number=Sing	31	flat:name	O	_
++32	2000	2000	NUM	_	NumType=Card	31	flat:name	O	_
+ 33	FTIR	FTIR	PROPN	_	Number=Sing	31	flat:name	O	_
+ 34	(	(	PUNCT	_	_	35	punct	O	_
+ 35	MKS	MKS	PROPN	_	Gender=Masc|Number=Sing	30	nmod:appos	O	_
+@@ -153705,7 +153705,7 @@
+ 156	)	)	PUNCT	_	_	155	punct	O	_
+ 157	(	(	PUNCT	_	_	158	punct	O	_
+ 158	NBR	NBR	PROPN	_	Gender=Fem|Number=Sing	153	appos	O	_
+-159	15553	15553	PROPN	_	Number=Sing	158	flat:name	O	_
++159	15553	15553	NUM	_	NumType=Card	158	flat:name	O	_
+ 160	)	)	PUNCT	_	_	158	punct	O	_
+ 161	,	,	PUNCT	_	_	162	punct	O	_
+ 162	Corrosividade	Corrosividade	PROPN	_	Gender=Fem|Number=Sing	153	conj	O	_
+@@ -153720,7 +153720,7 @@
+ 170	(	(	PUNCT	_	_	171	punct	O	_
+ 171	ASTM	ASTM	PROPN	_	Gender=Fem|Number=Sing	165	appos	O	_
+ 172	D	D	PROPN	_	Number=Sing	171	flat:name	O	_
+-173	130	130	PROPN	_	Number=Sing	171	flat:name	O	_
++173	130	130	NUM	_	NumType=Card	171	flat:name	O	_
+ 174	)	)	PUNCT	_	_	171	punct	O	_
+ 175	,	,	PUNCT	_	_	176	punct	O	_
+ 176	Ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	165	conj	O	_
+@@ -153752,7 +153752,7 @@
+ 202	)	)	PUNCT	_	_	200	punct	O	_
+ 203	(	(	PUNCT	_	_	204	punct	O	_
+ 204	EN	EN	PROPN	_	Gender=Fem|Number=Sing	200	parataxis	O	_
+-205	14103	14103	PROPN	_	Number=Sing	204	flat:name	O	_
++205	14103	14103	NUM	_	NumType=Card	204	flat:name	O	_
+ 206	)	)	PUNCT	_	_	204	punct	O	_
+ 207	,	,	PUNCT	_	_	209	punct	O	_
+ 208	conforme	conforme	ADP	_	_	209	case	O	_
+@@ -161681,7 +161681,7 @@
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	TABELA	TABELA	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+-10	18	18	PROPN	_	Number=Sing	9	flat:name	O	_
++10	18	18	NUM	_	NumType=Card	9	flat:name	O	_
+ 11	,	,	PUNCT	_	_	6	punct	O	_
+ 12-13	pode-se	_	_	_	_	_	_	_	_
+ 12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -161750,7 +161750,7 @@
+ 7	em	em	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	TABELA	TABELA	PROPN	_	Gender=Fem|Number=Sing	6	obl	O	_
+-10	19	19	PROPN	_	Number=Sing	9	flat:name	O	_
++10	19	19	NUM	_	NumType=Card	9	flat:name	O	_
+ 11	,	,	PUNCT	_	_	6	punct	O	_
+ 12-13	pode-se	_	_	_	_	_	_	_	_
+ 12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -164007,7 +164007,7 @@
+ # sent_id = 391-20160914-MONOGRAFIA_0-17
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	Resolução	resolução	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	O	_
+-3	393	393	PROPN	_	Number=Sing	2	nmod	O	_
++3	393	393	NUM	_	NumType=Card	2	nummod	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	agosto	agosto	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+@@ -167029,7 +167029,7 @@
+ 21	EKINS	EKINS	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+ 22	et	et	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	al.	al.	PROPN	_	Number=Sing	21	flat:name	O	_
+-24	2007	2007	PROPN	_	Number=Sing	21	flat:name	O	_
++24	2007	2007	NUM	_	NumType=Card	21	flat:name	O	_
+ 25	)	)	PUNCT	_	_	21	punct	O	_
+ 26	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -168241,7 +168241,7 @@
+ 27	Jesiele	Jesiele	PROPN	_	Number=Sing	24	flat:name	O	_
+ 28	Oliveira	Oliveira	PROPN	_	Number=Sing	24	flat:name	O	_
+ 29	,	,	PUNCT	_	_	24	flat:name	O	_
+-30	2013	2013	NOUN	_	Gender=Fem|Number=Plur	24	flat:name	O	_
++30	2013	2013	NUM	_	NumType=Card	24	flat:name	O	_
+ 31	)	)	PUNCT	_	_	20	punct	O	_
+ 32	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -170489,7 +170489,7 @@
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+ 9	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+-10	40	40	PROPN	_	Number=Sing	9	flat:name	O	_
++10	40	40	NUM	_	NumType=Card	9	flat:name	O	_
+ 11	variando	variar	VERB	_	VerbForm=Ger	1	advcl	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	percentual	percentual	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
+@@ -170593,7 +170593,7 @@
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
+ 5	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+-6	60	60	PROPN	_	Number=Sing	5	flat:name	O	_
++6	60	60	NUM	_	NumType=Card	5	flat:name	O	_
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+ 8	100	100	NUM	_	NumType=Card	5	conj	O	_
+ 9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	O	_
+@@ -170618,7 +170618,7 @@
+ 26	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	24	fixed	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+ 28	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	23	obl	O	_
+-29	40	40	PROPN	_	Number=Sing	28	flat:name	O	_
++29	40	40	NUM	_	NumType=Card	28	flat:name	O	_
+ 30	e	e	CCONJ	_	_	31	cc	O	_
+ 31	solubilizaram	solubilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	20	conj	O	_
+ 32	totalmente	totalmente	ADV	_	_	31	advmod	O	_
+@@ -171026,7 +171026,7 @@
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	Hexacarbonil	Hexacarbonil	PROPN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 5	Molibdênio	Molibdênio	PROPN	_	Number=Sing	4	flat:name	O	_
+-6	13	13	PROPN	_	Number=Sing	4	flat:name	O	_
++6	13	13	NUM	_	NumType=Card	4	flat:name	O	_
+ 7	3.3	3.3	PROPN	_	Number=Sing	4	flat:name	O	_
+ 8	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -171037,7 +171037,7 @@
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	Materiais	Materiais	PROPN	_	Gender=Masc|Number=Plur	1	nmod	O	_
+-5	16	16	PROPN	_	Number=Sing	4	flat:name	O	_
++5	16	16	NUM	_	NumType=Card	4	flat:name	O	_
+ 
+ # text = Ressonância Magnética Nuclear no Estado Sólido 17 3.3.5.
+ # sent_id = 25-20150123-MONOGRAFIA_0-17
+@@ -171079,7 +171079,7 @@
+ 2	de	de	ADP	_	_	4	case	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	Catalisadores	Catalisadores	PROPN	_	Gender=Masc|Number=Plur	1	nmod	O	_
+-5	20	20	PROPN	_	Number=Sing	4	flat:name	O	_
++5	20	20	NUM	_	NumType=Card	4	flat:name	O	_
+ 6	3.4.1	3.4.1	PROPN	_	Number=Sing	4	flat:name	O	_
+ 7	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -173666,7 +173666,7 @@
+ 3	zeólitas	zeólita	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	O	_
+ 4	com	com	ADP	_	_	5	case	O	_
+ 5	SAR	SAR	PROPN	_	Gender=Masc|Number=Sing	2	obl	O	_
+-6	9	9	PROPN	_	Number=Sing	5	flat:name	O	_
++6	9	9	NUM	_	NumType=Card	5	flat:name	O	_
+ 7	,	,	PUNCT	_	_	8	punct	O	_
+ 8	18	18	NUM	_	NumType=Card	5	conj	O	_
+ 9	e	e	CCONJ	_	_	10	cc	O	_
+@@ -175928,7 +175928,7 @@
+ 1	mL	ml	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	HCl	HCl	PROPN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+-4	1	1	PROPN	_	Number=Sing	3	flat:name	O	_
++4	1	1	NUM	_	NumType=Card	3	flat:name	O	_
+ 
+ # text = M para dissolução dos sais.
+ # sent_id = 25-20150123-MONOGRAFIA_0-196
+@@ -175986,7 +175986,7 @@
+ 21	Elmer	Elmer	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	A.	A.	PROPN	_	Number=Sing	20	flat:name	O	_
+ 23	Analyst	Analyst	PROPN	_	Number=Sing	20	flat:name	O	_
+-24	300	300	PROPN	_	Number=Sing	20	flat:name	O	_
++24	300	300	NUM	_	NumType=Card	20	flat:name	O	_
+ 25	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	O	_
+ 26-27	no	_	_	_	_	_	_	_	_
+ 26	em	em	ADP	_	_	28	case	O	_
+@@ -176177,7 +176177,7 @@
+ 30	aparelhagem	aparelhagem	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+ 31	volumétrica	volumétrico	ADJ	_	Gender=Fem|Number=Sing	30	amod	O	_
+ 32	ASAP	ASAP	PROPN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+-33	2010	2010	PROPN	_	Number=Sing	32	flat:name	O	_
++33	2010	2010	NUM	_	NumType=Card	32	flat:name	O	_
+ 34	.	.	PUNCT	_	_	16	punct	O	_
+ 
+ # text = As áreas específicas foram calculadas empregando-se o método BET.
+@@ -176784,7 +176784,7 @@
+ 15	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	14	appos	O	_
+ 16	Magna	Magna	PROPN	_	Gender=Masc|Number=Sing	14	nmod	O	_
+ 17	IR	IR	PROPN	_	Number=Sing	16	flat:name	O	_
+-18	760	760	PROPN	_	Number=Sing	16	flat:name	O	_
++18	760	760	NUM	_	NumType=Card	16	flat:name	O	_
+ 19	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	O	_
+ 20-21	no	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+@@ -182621,7 +182621,7 @@
+ 7	Y	Y	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 8	de	de	ADP	_	_	7	flat:name	O	_
+ 9	SAR	SAR	PROPN	_	Number=Sing	7	flat:name	O	_
+-10	9	9	PROPN	_	Number=Sing	7	flat:name	O	_
++10	9	9	NUM	_	NumType=Card	7	flat:name	O	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	O	_
+ 13	teor	teor	NOUN	_	Gender=Masc|Number=Sing	12	obj	O	_
+@@ -184090,12 +184090,12 @@
+ 39	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	31	parataxis	O	_
+ 40	et	et	PROPN	_	Number=Sing	39	flat:name	O	_
+ 41	al.	al.	PROPN	_	Number=Sing	39	flat:name	O	_
+-42	1990	1990	PROPN	_	Number=Sing	39	flat:name	O	_
++42	1990	1990	NUM	_	NumType=Card	39	flat:name	O	_
+ 43	,	,	PUNCT	_	_	44	punct	O	_
+ 44	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	39	conj	O	_
+ 45	e	e	CCONJ	_	_	46	cc	O	_
+ 46	Magalhães	Magalhães	PROPN	_	Gender=Masc|Number=Sing	39	conj	O	_
+-47	1993	1993	PROPN	_	Number=Sing	46	flat:name	O	_
++47	1993	1993	NUM	_	NumType=Card	46	flat:name	O	_
+ 48	)	)	PUNCT	_	_	39	punct	O	_
+ 49	,	,	PUNCT	_	_	50	punct	O	_
+ 50	dando	dar	VERB	_	VerbForm=Ger	31	advcl	O	_
+@@ -184411,12 +184411,12 @@
+ 37	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	32	nmod	O	_
+ 38	(	(	PUNCT	_	_	39	punct	O	_
+ 39	Macedo	Macedo	PROPN	_	Gender=Masc|Number=Sing	32	appos	O	_
+-40	1989	1989	PROPN	_	Number=Sing	39	flat:name	O	_
++40	1989	1989	NUM	_	NumType=Card	39	flat:name	O	_
+ 41	,	,	PUNCT	_	_	42	punct	O	_
+ 42	Almeida	Almeida	PROPN	_	Gender=Fem|Number=Sing	39	conj	O	_
+ 43	e	e	CCONJ	_	_	44	cc	O	_
+ 44	Carneiro	Carneiro	PROPN	_	Gender=Masc|Number=Sing	39	conj	O	_
+-45	1998	1998	PROPN	_	Number=Sing	44	flat:name	O	_
++45	1998	1998	NUM	_	NumType=Card	44	flat:name	O	_
+ 46	)	)	PUNCT	_	_	39	punct	O	_
+ 47	,	,	PUNCT	_	_	39	punct	O	_
+ 48	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	aux:pass	O	_
+@@ -184547,7 +184547,7 @@
+ 44	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 45	e	e	CCONJ	_	_	44	flat:name	O	_
+ 46	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	44	flat:name	O	_
+-47	2005	2005	PROPN	_	Number=Sing	44	flat:name	O	_
++47	2005	2005	NUM	_	NumType=Card	44	flat:name	O	_
+ 48	)	)	PUNCT	_	_	44	punct	O	_
+ 49	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -184840,7 +184840,7 @@
+ 34	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+ 35	e	e	CCONJ	_	_	34	flat:name	O	_
+ 36	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	34	flat:name	O	_
+-37	2005	2005	PROPN	_	Number=Sing	34	flat:name	O	_
++37	2005	2005	NUM	_	NumType=Card	34	flat:name	O	_
+ 38	)	)	PUNCT	_	_	34	punct	O	_
+ 39	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -186902,7 +186902,7 @@
+ 23	Milani	Milani	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 24	et	et	PROPN	_	Number=Sing	23	flat:name	O	_
+ 25	al.	al.	PROPN	_	Number=Sing	23	flat:name	O	_
+-26	2001	2001	PROPN	_	Number=Sing	23	flat:name	O	_
++26	2001	2001	NUM	_	NumType=Card	23	flat:name	O	_
+ 27	)	)	PUNCT	_	_	17	punct	O	_
+ 28	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -187155,7 +187155,7 @@
+ 15	Milani	Milani	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 16	et	et	PROPN	_	Number=Sing	15	flat:name	O	_
+ 17	al.	al.	PROPN	_	Number=Sing	15	flat:name	O	_
+-18	2001	2001	PROPN	_	Number=Sing	15	flat:name	O	_
++18	2001	2001	NUM	_	NumType=Card	15	flat:name	O	_
+ 19	)	)	PUNCT	_	_	11	punct	O	_
+ 20	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -188551,7 +188551,7 @@
+ 16	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	9	appos	O	_
+ 17	et	et	PROPN	_	Number=Sing	16	flat:name	O	_
+ 18	al.	al.	PROPN	_	Number=Sing	16	flat:name	O	_
+-19	2004	2004	PROPN	_	Number=Sing	16	flat:name	O	_
++19	2004	2004	NUM	_	NumType=Card	16	flat:name	O	_
+ 20	)	)	PUNCT	_	_	16	punct	O	_
+ 21	e	e	CCONJ	_	_	22	cc	O	_
+ 22	Cabo	Cabo	PROPN	_	Gender=Masc|Number=Sing	9	conj	O	_
+@@ -188560,7 +188560,7 @@
+ 25	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	22	appos	O	_
+ 26	et	et	PROPN	_	Number=Sing	25	flat:name	O	_
+ 27	al.	al.	PROPN	_	Number=Sing	25	flat:name	O	_
+-28	2000	2000	PROPN	_	Number=Sing	25	flat:name	O	_
++28	2000	2000	NUM	_	NumType=Card	25	flat:name	O	_
+ 29	)	)	PUNCT	_	_	25	punct	O	_
+ 30	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	31	expl	O	_
+ 31	estendem	estender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -189418,7 +189418,7 @@
+ 55	1990	1990	NUM	_	NumType=Card	54	flat:name	O	_
+ 56	em	em	ADP	_	_	57	case	O	_
+ 57	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	51	nmod	O	_
+-58	2001	2001	PROPN	_	Number=Sing	57	flat:name	O	_
++58	2001	2001	NUM	_	NumType=Card	57	flat:name	O	_
+ 59	)	)	PUNCT	_	_	51	punct	O	_
+ 60	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -189879,10 +189879,10 @@
+ 48	Reis	Reis	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+ 49	&	&	PROPN	_	Number=Sing	48	flat:name	O	_
+ 50	Licht	Licht	PROPN	_	Number=Sing	48	flat:name	O	_
+-51	1977	1977	PROPN	_	Number=Sing	48	flat:name	O	_
++51	1977	1977	NUM	_	NumType=Card	48	flat:name	O	_
+ 52	em	em	ADP	_	_	53	case	O	_
+ 53	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	48	nmod	O	_
+-54	2001	2001	PROPN	_	Number=Sing	53	flat:name	O	_
++54	2001	2001	NUM	_	NumType=Card	53	flat:name	O	_
+ 55	)	)	PUNCT	_	_	48	punct	O	_
+ 56	e	e	CCONJ	_	_	59	cc	O	_
+ 57-58	pelos	_	_	_	_	_	_	_	_
+@@ -189900,10 +189900,10 @@
+ 67	Heilbron	Heilbron	PROPN	_	Gender=Fem|Number=Sing	8	parataxis	O	_
+ 68	et	et	PROPN	_	Number=Sing	67	flat:name	O	_
+ 69	al.	al.	PROPN	_	Number=Sing	67	flat:name	O	_
+-70	1982	1982	PROPN	_	Number=Sing	67	flat:name	O	_
++70	1982	1982	NUM	_	NumType=Card	67	flat:name	O	_
+ 71	em	em	ADP	_	_	72	case	O	_
+ 72	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	67	nmod	O	_
+-73	2001	2001	PROPN	_	Number=Sing	72	flat:name	O	_
++73	2001	2001	NUM	_	NumType=Card	72	flat:name	O	_
+ 74	)	)	PUNCT	_	_	67	punct	O	_
+ 75	e	e	CCONJ	_	_	76	cc	O	_
+ 76	Palmital	Palmital	PROPN	_	Gender=Masc|Number=Sing	64	conj	O	_
+@@ -189911,10 +189911,10 @@
+ 78	Reis	Reis	PROPN	_	Gender=Masc|Number=Sing	8	parataxis	O	_
+ 79	&	&	PROPN	_	Number=Sing	78	flat:name	O	_
+ 80	Licht	Licht	PROPN	_	Number=Sing	78	flat:name	O	_
+-81	1977	1977	PROPN	_	Number=Sing	78	flat:name	O	_
++81	1977	1977	NUM	_	NumType=Card	78	flat:name	O	_
+ 82	em	em	ADP	_	_	83	case	O	_
+ 83	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	78	nmod	O	_
+-84	2001	2001	PROPN	_	Number=Sing	83	flat:name	O	_
++84	2001	2001	NUM	_	NumType=Card	83	flat:name	O	_
+ 85	)	)	PUNCT	_	_	78	punct	O	_
+ 86	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -190081,10 +190081,10 @@
+ 44	Turner	Turner	PROPN	_	Gender=Masc|Number=Sing	42	appos	O	_
+ 45	et	et	PROPN	_	Number=Sing	44	flat:name	O	_
+ 46	al.	al.	PROPN	_	Number=Sing	44	flat:name	O	_
+-47	1994	1994	PROPN	_	Number=Sing	44	flat:name	O	_
++47	1994	1994	NUM	_	NumType=Card	44	flat:name	O	_
+ 48	em	em	ADP	_	_	49	case	O	_
+ 49	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	44	nmod	O	_
+-50	2001	2001	PROPN	_	Number=Sing	49	flat:name	O	_
++50	2001	2001	NUM	_	NumType=Card	49	flat:name	O	_
+ 51	)	)	PUNCT	_	_	44	punct	O	_
+ 52	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	53	obl	O	_
+ 53	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	acl:relcl	O	_
+@@ -190130,11 +190130,11 @@
+ 30	Renne	Renne	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+ 31	et	et	PROPN	_	Number=Sing	30	flat:name	O	_
+ 32	al.	al.	PROPN	_	Number=Sing	30	flat:name	O	_
+-33	1996	1996	PROPN	_	Number=Sing	30	flat:name	O	_
++33	1996	1996	NUM	_	NumType=Card	30	flat:name	O	_
+ 34	(	(	PUNCT	_	_	36	punct	O	_
+ 35	em	em	ADP	_	_	36	case	O	_
+ 36	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	25	obl	O	_
+-37	2001	2001	PROPN	_	Number=Sing	36	flat:name	O	_
++37	2001	2001	NUM	_	NumType=Card	36	flat:name	O	_
+ 38	)	)	PUNCT	_	_	36	punct	O	_
+ 39	,	,	PUNCT	_	_	25	punct	O	_
+ 40	com	com	ADP	_	_	41	case	O	_
+@@ -190155,7 +190155,7 @@
+ 9	1998	1998	NUM	_	NumType=Card	6	flat:name	O	_
+ 10	em	em	ADP	_	_	11	case	O	_
+ 11	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+-12	2001	2001	PROPN	_	Number=Sing	11	flat:name	O	_
++12	2001	2001	NUM	_	NumType=Card	11	flat:name	O	_
+ 13	)	)	PUNCT	_	_	3	punct	O	_
+ 14	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -190184,7 +190184,7 @@
+ 19	N-S	N-S	PROPN	_	Gender=Masc|Number=Sing	15	conj	O	_
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+-22	1990	1990	PROPN	_	Number=Sing	21	flat:name	O	_
++22	1990	1990	NUM	_	NumType=Card	21	flat:name	O	_
+ 23	)	)	PUNCT	_	_	21	punct	O	_
+ 24	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -190966,7 +190966,7 @@
+ 40	NE-SW	NE-SW	PROPN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 41	(	(	PUNCT	_	_	42	punct	O	_
+ 42	Ferrari	Ferrari	PROPN	_	Gender=Fem|Number=Sing	13	parataxis	O	_
+-43	2001	2001	PROPN	_	Number=Sing	42	nummod	O	_
++43	2001	2001	NUM	_	NumType=Card	42	nummod	O	_
+ 44	)	)	PUNCT	_	_	42	punct	O	_
+ 45	.	.	PUNCT	_	_	13	punct	O	_
+ 
+@@ -192553,12 +192553,12 @@
+ 19	Riccomini	Riccomini	PROPN	_	Gender=Fem|Number=Sing	11	parataxis	O	_
+ 20	et	et	PROPN	_	Number=Sing	19	flat:name	O	_
+ 21	al.	al.	PROPN	_	Number=Sing	19	flat:name	O	_
+-22	1989	1989	PROPN	_	Number=Sing	19	flat:name	O	_
++22	1989	1989	NUM	_	NumType=Card	19	flat:name	O	_
+ 23	em	em	ADP	_	_	24	case	O	_
+ 24	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 25	e	e	CCONJ	_	_	24	flat:name	O	_
+ 26	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	24	flat:name	O	_
+-27	2005	2005	PROPN	_	Number=Sing	24	flat:name	O	_
++27	2005	2005	NUM	_	NumType=Card	24	flat:name	O	_
+ 28	)	)	PUNCT	_	_	19	punct	O	_
+ 29	.	.	PUNCT	_	_	11	punct	O	_
+ 
+@@ -192828,7 +192828,7 @@
+ 21	Heilbron	Heilbron	PROPN	_	Gender=Fem|Number=Sing	1	parataxis	O	_
+ 22	et	et	PROPN	_	Number=Sing	21	flat:name	O	_
+ 23	al.	al.	PROPN	_	Number=Sing	21	flat:name	O	_
+-24	2000	2000	PROPN	_	Number=Sing	21	flat:name	O	_
++24	2000	2000	NUM	_	NumType=Card	21	flat:name	O	_
+ 25	)	)	PUNCT	_	_	21	punct	O	_
+ 26	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -192904,7 +192904,7 @@
+ 6	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+ 8	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+-9	2005	2005	PROPN	_	Number=Sing	8	flat:name	O	_
++9	2005	2005	NUM	_	NumType=Card	8	flat:name	O	_
+ 10	)	)	PUNCT	_	_	3	punct	O	_
+ 11-12	subdividiu-o	_	_	_	_	_	_	_	_
+ 11	subdividiu	subdividir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -193299,12 +193299,12 @@
+ 48	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	42	parataxis	O	_
+ 49	et	et	PROPN	_	Number=Sing	48	flat:name	O	_
+ 50	al.	al.	PROPN	_	Number=Sing	48	flat:name	O	_
+-51	2004	2004	PROPN	_	Number=Sing	48	flat:name	O	_
++51	2004	2004	NUM	_	NumType=Card	48	flat:name	O	_
+ 52	em	em	ADP	_	_	53	case	O	_
+ 53	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	48	nmod	O	_
+ 54	e	e	CCONJ	_	_	55	cc	O	_
+ 55	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	53	conj	O	_
+-56	2005	2005	PROPN	_	Number=Sing	55	flat:name	O	_
++56	2005	2005	NUM	_	NumType=Card	55	flat:name	O	_
+ 57	)	)	PUNCT	_	_	42	punct	O	_
+ 58	e	e	CCONJ	_	_	61	cc	O	_
+ 59-60	na	_	_	_	_	_	_	_	_
+@@ -193334,7 +193334,7 @@
+ 80	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	70	conj	O	_
+ 81	et	et	PROPN	_	Number=Sing	80	flat:name	O	_
+ 82	al.	al.	PROPN	_	Number=Sing	80	flat:name	O	_
+-83	2000	2000	PROPN	_	Number=Sing	80	flat:name	O	_
++83	2000	2000	NUM	_	NumType=Card	80	flat:name	O	_
+ 84	,	,	PUNCT	_	_	86	punct	O	_
+ 85	ou	ou	CCONJ	_	_	86	cc	O	_
+ 86	Domínio	Domínio	PROPN	_	Gender=Masc|Number=Sing	76	conj	O	_
+@@ -193347,12 +193347,12 @@
+ 93	Schmitt	Schmitt	PROPN	_	Gender=Masc|Number=Sing	86	nmod:appos	O	_
+ 94	et	et	PROPN	_	Number=Sing	93	flat:name	O	_
+ 95	al.	al.	PROPN	_	Number=Sing	93	flat:name	O	_
+-96	2004	2004	PROPN	_	Number=Sing	93	flat:name	O	_
++96	2004	2004	NUM	_	NumType=Card	93	flat:name	O	_
+ 97	em	em	ADP	_	_	98	case	O	_
+ 98	Zalán	Zalán	PROPN	_	Gender=Masc|Number=Sing	86	nmod	O	_
+ 99	e	e	CCONJ	_	_	100	cc	O	_
+ 100	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	98	conj	O	_
+-101	2005	2005	PROPN	_	Number=Sing	100	flat:name	O	_
++101	2005	2005	NUM	_	NumType=Card	100	flat:name	O	_
+ 102	)	)	PUNCT	_	_	70	punct	O	_
+ 103	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -194871,7 +194871,7 @@
+ 45	Mohriak	Mohriak	PROPN	_	Gender=Masc|Number=Sing	19	parataxis	O	_
+ 46	e	e	CCONJ	_	_	45	flat:name	O	_
+ 47	Barros	Barros	PROPN	_	Gender=Masc|Number=Sing	45	flat:name	O	_
+-48	1990	1990	PROPN	_	Number=Sing	45	flat:name	O	_
++48	1990	1990	NUM	_	NumType=Card	45	flat:name	O	_
+ 49	)	)	PUNCT	_	_	45	punct	O	_
+ 50	.	.	PUNCT	_	_	19	punct	O	_
+ 
+@@ -197053,7 +197053,7 @@
+ 24	(	(	PUNCT	_	_	25	punct	O	_
+ 25	Xiong	Xiong	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+ 26	Li,	Li,	PROPN	_	Number=Sing	25	flat:name	O	_
+-27	2006	2006	PROPN	_	Number=Sing	25	flat:name	O	_
++27	2006	2006	NUM	_	NumType=Card	25	flat:name	O	_
+ 28	)	)	PUNCT	_	_	25	punct	O	_
+ 29	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -198625,7 +198625,7 @@
+ 52	ilha	ilha	NOUN	_	Gender=Fem|Number=Sing	49	nmod	O	_
+ 53	(	(	PUNCT	_	_	54	punct	O	_
+ 54	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+-55	2001	2001	PROPN	_	Number=Sing	54	nummod	O	_
++55	2001	2001	NUM	_	NumType=Card	54	nummod	O	_
+ 56	)	)	PUNCT	_	_	54	punct	O	_
+ 57	.	.	PUNCT	_	_	5	punct	O	_
+ 
+@@ -214721,7 +214721,7 @@
+ 24	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	20	appos	O	_
+ 25	et	et	PROPN	_	Number=Sing	24	flat:name	O	_
+ 26	al.	al.	PROPN	_	Number=Sing	24	flat:name	O	_
+-27	2000	2000	PROPN	_	Number=Sing	24	flat:name	O	_
++27	2000	2000	NUM	_	NumType=Card	24	flat:name	O	_
+ 28	)	)	PUNCT	_	_	24	punct	O	_
+ 29	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	30	expl	O	_
+ 30	deva	dever	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	csubj	O	_
+@@ -214777,7 +214777,7 @@
+ 20	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	31	parataxis	O	_
+ 21	et	et	PROPN	_	Number=Sing	20	flat:name	O	_
+ 22	al.	al.	PROPN	_	Number=Sing	20	flat:name	O	_
+-23	2004	2004	PROPN	_	Number=Sing	20	flat:name	O	_
++23	2004	2004	NUM	_	NumType=Card	20	flat:name	O	_
+ 24	)	)	PUNCT	_	_	20	punct	O	_
+ 25	,	,	PUNCT	_	_	10	punct	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+@@ -219476,7 +219476,7 @@
+ 32	Heilbron	Heilbron	PROPN	_	Gender=Masc|Number=Sing	18	parataxis	O	_
+ 33	et	et	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	al.	al.	PROPN	_	Number=Sing	32	flat:name	O	_
+-35	2000	2000	PROPN	_	Number=Sing	32	flat:name	O	_
++35	2000	2000	NUM	_	NumType=Card	32	flat:name	O	_
+ 36	)	)	PUNCT	_	_	32	punct	O	_
+ 37	.	.	PUNCT	_	_	18	punct	O	_
+ 
+@@ -219842,7 +219842,7 @@
+ 40	Zalán	Zalán	PROPN	_	Gender=Fem|Number=Sing	18	parataxis	O	_
+ 41	e	e	CCONJ	_	_	40	flat:name	O	_
+ 42	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	40	flat:name	O	_
+-43	2005	2005	PROPN	_	Number=Sing	40	flat:name	O	_
++43	2005	2005	NUM	_	NumType=Card	40	flat:name	O	_
+ 44	)	)	PUNCT	_	_	40	punct	O	_
+ 45	.	.	PUNCT	_	_	18	punct	O	_
+ 
+@@ -266955,7 +266955,7 @@
+ 37	(	(	PUNCT	_	_	38	punct	O	_
+ 38	AMOCO	AMOCO	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+ 39	,	,	PUNCT	_	_	38	flat:name	O	_
+-40	2013	2013	NOUN	_	Gender=Masc|Number=Plur	38	flat:name	O	_
++40	2013	2013	NUM	_	NumType=Card	38	flat:name	O	_
+ 41	)	)	PUNCT	_	_	38	punct	O	_
+ 42	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -268784,7 +268784,7 @@
+ 33	constante	constante	ADJ	_	Gender=Fem|Number=Sing	32	amod	O	_
+ 34	(	(	PUNCT	_	_	35	punct	O	_
+ 35	SANTANNA	SANTANNA	PROPN	_	Gender=Masc|Number=Sing	32	appos	O	_
+-36	2003	2003	PROPN	_	Number=Sing	35	nummod	O	_
++36	2003	2003	NUM	_	NumType=Card	35	nummod	O	_
+ 37	)	)	PUNCT	_	_	35	punct	O	_
+ 38	,	,	PUNCT	_	_	23	punct	O	_
+ 39	conforme	conforme	ADP	_	_	40	mark	O	_
+@@ -269594,10 +269594,10 @@
+ 45	Nonifenoletoxilado	Nonifenoletoxilado	PROPN	_	Number=Sing	43	flat:name	O	_
+ 46	(	(	PUNCT	_	_	47	punct	O	_
+ 47	Ultranex	Ultranex	PROPN	_	Gender=Fem|Number=Sing	43	appos	O	_
+-48	40	40	PROPN	_	Number=Sing	47	flat:name	O	_
++48	40	40	NUM	_	NumType=Card	47	flat:name	O	_
+ 49	e	e	CCONJ	_	_	50	cc	O	_
+ 50	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	47	conj	O	_
+-51	80	80	PROPN	_	Number=Sing	50	flat:name	O	_
++51	80	80	NUM	_	NumType=Card	50	flat:name	O	_
+ 52	)	)	PUNCT	_	_	47	punct	O	_
+ 53	,	,	PUNCT	_	_	54	punct	O	_
+ 54	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	43	conj	O	_
+@@ -270401,7 +270401,7 @@
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	Excel	Excel	PROPN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+-8	2010	2010	PROPN	_	Number=Sing	7	flat:name	O	_
++8	2010	2010	NUM	_	NumType=Card	7	flat:name	O	_
+ 9	,	,	PUNCT	_	_	4	punct	O	_
+ 10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	aux:pass	O	_
+ 11	construídos	construir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -270534,10 +270534,10 @@
+ 18	emulsificante	emulsificante	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	17	appos	O	_
+-21	40	40	PROPN	_	Number=Sing	20	flat:name	O	_
++21	40	40	NUM	_	NumType=Card	20	flat:name	O	_
+ 22	ou	ou	CCONJ	_	_	23	cc	O	_
+ 23	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	20	conj	O	_
+-24	80	80	PROPN	_	Number=Sing	23	flat:name	O	_
++24	80	80	NUM	_	NumType=Card	23	flat:name	O	_
+ 25	)	)	PUNCT	_	_	20	punct	O	_
+ 26	,	,	PUNCT	_	_	31	punct	O	_
+ 27	e	e	CCONJ	_	_	31	cc	O	_
+@@ -271058,10 +271058,10 @@
+ 33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	O	_
+ 34	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	21	conj	O	_
+ 35	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	34	nmod	O	_
+-36	40	40	PROPN	_	Number=Sing	35	flat:name	O	_
++36	40	40	NUM	_	NumType=Card	35	flat:name	O	_
+ 37	e	e	CCONJ	_	_	38	cc	O	_
+ 38	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	35	conj	O	_
+-39	80	80	PROPN	_	Number=Sing	38	flat:name	O	_
++39	80	80	NUM	_	NumType=Card	38	flat:name	O	_
+ 40	e	e	CCONJ	_	_	41	cc	O	_
+ 41	água	água	NOUN	_	Gender=Fem|Number=Sing	21	conj	O	_
+ 42	doce	doce	ADJ	_	Gender=Fem|Number=Sing	41	amod	O	_
+@@ -271079,7 +271079,7 @@
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	Excel	Excel	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+-10	2010	2010	PROPN	_	Number=Sing	9	flat:name	O	_
++10	2010	2010	NUM	_	NumType=Card	9	flat:name	O	_
+ 11	,	,	PUNCT	_	_	15	punct	O	_
+ 12	para	para	ADP	_	_	14	case	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+@@ -271129,7 +271129,7 @@
+ 19	utilizando	utilizar	VERB	_	VerbForm=Ger	24	advcl	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	19	obj	O	_
+-22	40	40	PROPN	_	Number=Sing	21	flat:name	O	_
++22	40	40	NUM	_	NumType=Card	21	flat:name	O	_
+ 23	,	,	PUNCT	_	_	19	punct	O	_
+ 24	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	O	_
+ 25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -271175,7 +271175,7 @@
+ 20	utilizando	utilizar	VERB	_	VerbForm=Ger	10	advcl	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+ 22	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	20	obj	O	_
+-23	40	40	PROPN	_	Number=Sing	22	flat:name	O	_
++23	40	40	NUM	_	NumType=Card	22	flat:name	O	_
+ 24	.	.	PUNCT	_	_	10	punct	O	_
+ 
+ # text = A fim de obter um fluido mais adequado à realidade de campo, foi adicionado NaCl (sal), em concentrações pré-determinadas, à água destilada para a construção de um novo diagrama de fase.
+@@ -272166,7 +272166,7 @@
+ 49	<	<	NOUN	_	Gender=Masc|Number=Plur	46	appos	O	_
+ 50	𝑛	𝑛	NUM	_	NumType=Card	51	nummod	O	_
+ 51	<	<	PROPN	_	Gender=Masc|Number=Sing	49	nmod	O	_
+-52	1	1	PROPN	_	Number=Sing	51	flat:name	O	_
++52	1	1	NUM	_	NumType=Card	51	flat:name	O	_
+ 53	)	)	PUNCT	_	_	49	punct	O	_
+ 54	.	.	PUNCT	_	_	10	punct	O	_
+ 
+@@ -272906,7 +272906,7 @@
+ 40	<	<	NOUN	_	Gender=Masc|Number=Plur	36	appos	O	_
+ 41	𝑛	𝑛	NUM	_	NumType=Card	40	compound	O	_
+ 42	<	<	PROPN	_	Number=Sing	40	compound	O	_
+-43	1	1	PROPN	_	Number=Sing	40	compound	O	_
++43	1	1	NUM	_	NumType=Card	40	compound	O	_
+ 44	)	)	PUNCT	_	_	40	punct	O	_
+ 45	e	e	CCONJ	_	_	60	cc	O	_
+ 46	,	,	PUNCT	_	_	47	punct	O	_
+@@ -273339,14 +273339,14 @@
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	tensoativo	tensoativo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 22	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+-23	40	40	PROPN	_	Number=Sing	22	flat:name	O	_
++23	40	40	NUM	_	NumType=Card	22	flat:name	O	_
+ 24	se	se	SCONJ	_	_	25	mark	O	_
+ 25	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	O	_
+ 26-27	ao	_	_	_	_	_	_	_	_
+ 26	a	a	ADP	_	_	28	case	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+ 28	Ultranex	Ultranex	PROPN	_	Gender=Masc|Number=Sing	25	obl:arg	O	_
+-29	80	80	PROPN	_	Number=Sing	28	flat:name	O	_
++29	80	80	NUM	_	NumType=Card	28	flat:name	O	_
+ 30	.	.	PUNCT	_	_	15	punct	O	_
+ 
+ # text = Analisando o efeito da salinidade no sistema foi possível a obtenção de região de microemulsão com a concentração de NaCl de 35000 ppm, permitindo elaborar um fluido base óleo com características mais próximas a realidade do campo.
+@@ -274291,7 +274291,7 @@
+ 57	(	(	PUNCT	_	_	58	punct	O	_
+ 58	GOMES	GOMES	PROPN	_	Gender=Masc|Number=Sing	3	parataxis	O	_
+ 59	,	,	PUNCT	_	_	58	flat:name	O	_
+-60	2013	2013	NOUN	_	Gender=Masc|Number=Plur	58	flat:name	O	_
++60	2013	2013	NUM	_	NumType=Card	58	flat:name	O	_
+ 61	)	)	PUNCT	_	_	58	punct	O	_
+ 62	.	.	PUNCT	_	_	3	punct	O	_
+ 
+@@ -274887,7 +274887,7 @@
+ 29	dispersante	dispersante	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
+ 30	químico	químico	ADJ	_	Gender=Masc|Number=Sing	29	amod	O	_
+ 31	Corexit	Corexit	PROPN	_	Gender=Masc|Number=Sing	29	nmod	O	_
+-32	9500	9500	PROPN	_	Number=Sing	31	flat:name	O	_
++32	9500	9500	NUM	_	NumType=Card	31	flat:name	O	_
+ 33	(	(	PUNCT	_	_	34	punct	O	_
+ 34	formulação	formulação	NOUN	_	Gender=Fem|Number=Sing	29	appos	O	_
+ 35	desenvolvida	desenvolver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	34	acl	O	_
+@@ -276677,7 +276677,7 @@
+ 26	mar	mar	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
+ 27	(	(	PUNCT	_	_	28	punct	O	_
+ 28	VAZ,	VAZ,	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+-29	2011	2011	PROPN	_	Number=Sing	28	nummod	O	_
++29	2011	2011	NUM	_	NumType=Card	28	nummod	O	_
+ 30	)	)	PUNCT	_	_	28	punct	O	_
+ 31	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -283574,7 +283574,7 @@
+ # text = ISL 7 Planície de maré arenosa exposta; Terraço de baixa-mar
+ # sent_id = 411-20150702-MONOGRAFIA_0-250
+ 1	ISL	ISL	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+-2	7	7	PROPN	_	Number=Sing	1	flat:name	O	_
++2	7	7	NUM	_	NumType=Card	1	flat:name	O	_
+ 3	Planície	planície	NOUN	_	Gender=Fem|Number=Sing	1	flat:name	B=SISTEMA_DEPOSICIONAL	_
+ 4	de	de	ADP	_	_	5	case	I=SISTEMA_DEPOSICIONAL	_
+ 5	maré	maré	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=SISTEMA_DEPOSICIONAL|I=SISTEMA_DEPOSICIONAL	_
+@@ -288438,7 +288438,7 @@
+ 6	SO4	SO4	PROPN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+ 7	2e	2e	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	CO3	CO3	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	O	_
+-9	2	2	PROPN	_	Number=Sing	6	flat:name	O	_
++9	2	2	NUM	_	NumType=Card	6	flat:name	O	_
+ 10	-	-	PUNCT	_	_	2	punct	O	_
+ 11	,	,	PUNCT	_	_	13	punct	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -289957,7 +289957,7 @@
+ 41	(	(	PUNCT	_	_	42	punct	O	_
+ 42	TOG	TOG	PROPN	_	Gender=Fem|Number=Sing	20	parataxis	O	_
+ 43	<	<	PROPN	_	Number=Sing	42	flat:name	O	_
+-44	29	29	PROPN	_	Number=Sing	42	flat:name	O	_
++44	29	29	NUM	_	NumType=Card	42	flat:name	O	_
+ 45	mg/L	mg/L	NOUN	_	Gender=Masc|Number=Plur	42	flat:name	O	_
+ 46	)	)	PUNCT	_	_	42	punct	O	_
+ 47	.	.	PUNCT	_	_	9	punct	O	_

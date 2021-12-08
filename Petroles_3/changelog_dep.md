@@ -1,6 +1,6 @@
 # changelog_dep
 
-Last update: 2021-10-27-17:4:6
+Last update: 2021-12-8-15:8:8
 
 ## lemma 'diferentes' is not correct
 
@@ -2401,4 +2401,143 @@ Correções de lema verbal
  # text = A caracterização estrutural para a porção norte da Bacia de Pelotas foi realizada através de 17 seções sísmicas, onde foram caracterizadas falhas normais, em padrão dominó, falhas sintéticas e antitéticas e lístricas, além da identificação de estruturas como o Arco de Torres (Fonseca 2006), (Alves 1981) a Plataforma de Florianópolis individualizada por Gonçalves et al. (1979), Zona de Falha do Rio Grande (Miranda 1970), (Kowsmann 1974).
  # sent_id = 247-20140910-MONOGRAFIA_0-4
  1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+```
+
+## ADP/mark para as preposições que iniciam orações
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Mon Nov 22 00:26:00 2021 -0300
+* Lines changed: 1547
+* Commit: [c3900916f308534592cdc0286fb334405850f724](https://github.com/alvelvis/meu-mestrado/commit/c3900916f308534592cdc0286fb334405850f724)
+* Patch file: [2021_11_22_00-26-00-c3900916f308534592cdc0286fb334405850f724.patch](patch_changelog_dep/2021_11_22_00-26-00-c3900916f308534592cdc0286fb334405850f724.patch)
+
+ADP/mark para as preposições que iniciam orações
+
+```diff
+ # text = Para alcançar o objetivo, o trabalho realizado contou com banco de dados possuindo 9 imagens SRTM 90 m para a região estudada, 17 seções sísmicas referente a Bacia de Pelotas, registro sônico, pasta de poço, perfil composto, mapa gravimétrico e magnetométrico da porção Sudeste à porção Sul do território brasileiro, mapa geológico e geomorfológico de todo o território brasileiro.
+ # sent_id = 247-20140910-MONOGRAFIA_0-15
+-1	Para	para	SCONJ	_	_	2	mark	O	_
++1	Para	para	ADP	_	_	2	mark	O	_
+ 2	alcançar	alcançar	VERB	_	VerbForm=Inf	9	advcl	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+ 4	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	2	obj	O	_
+```
+
+## lemma de caracteriza-se
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Nov 23 12:50:19 2021 -0300
+* Lines changed: 6
+* Commit: [2d35600b53011449d91bafca81793aa513f607f7](https://github.com/alvelvis/meu-mestrado/commit/2d35600b53011449d91bafca81793aa513f607f7)
+* Patch file: [2021_11_23_12-50-19-2d35600b53011449d91bafca81793aa513f607f7.patch](patch_changelog_dep/2021_11_23_12-50-19-2d35600b53011449d91bafca81793aa513f607f7.patch)
+
+lemma de caracteriza-se
+
+```diff
+ 13	de	de	ADP	_	_	12	flat:name	O	_
+ 14	Florianópolis	Florianópolis	PROPN	_	Number=Sing	12	flat:name	O	_
+ 15-16	caracteriza-se	_	_	_	_	_	_	_	_
+-15	caracteziza	caractezizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++15	caracteriza	caracterizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 16	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	expl	O	_
+ 17	por	por	ADP	_	_	18	mark	O	_
+ 18	apresentar	apresentar	VERB	_	VerbForm=Inf	15	advcl	O	_
+```
+
+## correções de 'a priori'
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Nov 25 01:25:01 2021 -0300
+* Lines changed: 70
+* Commit: [f163a461a38f8cbc50e5c0cda01b0e53900b8ddc](https://github.com/alvelvis/meu-mestrado/commit/f163a461a38f8cbc50e5c0cda01b0e53900b8ddc)
+* Patch file: [2021_11_25_01-25-01-f163a461a38f8cbc50e5c0cda01b0e53900b8ddc.patch](patch_changelog_dep/2021_11_25_01-25-01-f163a461a38f8cbc50e5c0cda01b0e53900b8ddc.patch)
+
+correções de 'a priori'
+
+```diff
+ 21	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 22	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 23	decidir	decidir	VERB	_	VerbForm=Inf	22	xcomp	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	25	expl	O	_
+-25	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	xcomp	O	_
+-26	ou	ou	CCONJ	_	_	28	cc	O	_
+-27	não	não	ADV	_	Polarity=Neg	28	advmod	O	_
+-28	implantar	implantar	VERB	_	VerbForm=Inf	25	conj	O	_
++24	se	se	SCONJ	_	_	25	mark	O	_
++25	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	O	_
++26	ou	ou	CCONJ	_	_	27	cc	O	_
++27	não	não	ADV	_	Polarity=Neg	25	advmod	O	_
++28	implantar	implantar	VERB	_	VerbForm=Inf	25	xcomp	O	_
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	28	obj	O	_
+ 31	exploratório	exploratório	ADJ	_	Gender=Masc|Number=Sing	30	amod	O	_
+```
+
+## tokens núméricos devem ser NUM
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Nov 25 10:34:44 2021 -0300
+* Lines changed: 254
+* Commit: [fec8c776b8d72170a05fd8ea89605a8f4ddb7b53](https://github.com/alvelvis/meu-mestrado/commit/fec8c776b8d72170a05fd8ea89605a8f4ddb7b53)
+* Patch file: [2021_11_25_10-34-44-fec8c776b8d72170a05fd8ea89605a8f4ddb7b53.patch](patch_changelog_dep/2021_11_25_10-34-44-fec8c776b8d72170a05fd8ea89605a8f4ddb7b53.patch)
+
+tokens núméricos devem ser NUM
+
+```diff
+ 48	Torres	Torres	PROPN	_	Number=Sing	46	flat:name	O	_
+ 49	(	(	PUNCT	_	_	50	punct	O	_
+ 50	Fonseca	Fonseca	PROPN	_	Gender=Fem|Number=Sing	46	appos	O	_
+-51	2006	2006	PROPN	_	Number=Sing	50	flat:name	O	_
++51	2006	2006	NUM	_	NumType=Card	50	flat:name	O	_
+ 52	)	)	PUNCT	_	_	50	punct	O	_
+ 53	,	,	PUNCT	_	_	55	punct	O	_
+ 54	(	(	PUNCT	_	_	55	punct	O	_
+ 55	Alves	Alves	PROPN	_	Gender=Masc|Number=Sing	46	appos	O	_
+-56	1981	1981	PROPN	_	Number=Sing	55	flat:name	O	_
++56	1981	1981	NUM	_	NumType=Card	55	flat:name	O	_
+ 57	)	)	PUNCT	_	_	55	punct	O	_
+ 58	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	O	_
+ 59	Plataforma	Plataforma	PROPN	_	Gender=Fem|Number=Sing	46	conj	O	_
+```
+
+## N com word terminando em a e lema terminando em o
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Dec 7 11:21:27 2021 -0300
+* Lines changed: 55
+* Commit: [f62987545b7ae4380f3e527a3c3c26f3a303f2e5](https://github.com/alvelvis/meu-mestrado/commit/f62987545b7ae4380f3e527a3c3c26f3a303f2e5)
+* Patch file: [2021_12_7_11-21-27-f62987545b7ae4380f3e527a3c3c26f3a303f2e5.patch](patch_changelog_dep/2021_12_7_11-21-27-f62987545b7ae4380f3e527a3c3c26f3a303f2e5.patch)
+
+N com word terminando em a e lema terminando em o
+
+```diff
+ # text = A primeira a partir do Terraço de Rio Grande até o Alto de Florianópolis e a segunda do Terraço em direção ao Alto de Polônio.
+ # sent_id = 247-20140910-MONOGRAFIA_0-103
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+-2	primeira	primeiro	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++2	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	0	root	O	_
+ 3	a	a	ADP	_	_	7	case	O	MWEPOS=ADP
+ 4	partir	partir	VERB	_	VerbForm=Inf	3	fixed	O	_
+ 5-6	do	_	_	_	_	_	_	_	_
+```
+
+## correções de lema
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Dec 7 21:55:55 2021 -0300
+* Lines changed: 34
+* Commit: [9420f0c51db5838645d749aba5ab5a35853e8c99](https://github.com/alvelvis/meu-mestrado/commit/9420f0c51db5838645d749aba5ab5a35853e8c99)
+* Patch file: [2021_12_7_21-55-55-9420f0c51db5838645d749aba5ab5a35853e8c99.patch](patch_changelog_dep/2021_12_7_21-55-55-9420f0c51db5838645d749aba5ab5a35853e8c99.patch)
+
+correções de lema
+
+```diff
+ # sent_id = 241-20140227-MONOGRAFIA_0-113
+ 1	Cada	cada	DET	_	Gender=Masc|Number=Sing|PronType=Tot	2	det	O	_
+ 2	floco	floco	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	O	_
+-3	expandido	expander	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
++3	expandido	expandir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	O	_
+ 4	aprisiona	aprisionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5-6	consigo	_	_	_	_	_	_	_	_
+ 5	com	com	ADP	_	_	6	case	O	_
 ```

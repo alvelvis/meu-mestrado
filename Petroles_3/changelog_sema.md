@@ -1,6 +1,6 @@
 # changelog_sema
 
-Last update: 2021-10-27-17:3:53
+Last update: 2021-12-8-15:4:54
 
 ## Regras para B=CAMPO
 
@@ -430,4 +430,66 @@ Conversão de GEOCRONOLOGIA para UNIDADE_CRONOESTRATIGRÁFICA
 +77	Mioceno	Mioceno	PROPN	_	Number=Sing	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
  78	)	)	PUNCT	_	_	48	punct	O	_
  79	.	.	PUNCT	_	_	15	punct	O	_
+```
+
+## litologia e tipo_fluido
+
+* Maria Clara Castro
+* Date:   Tue Dec 7 11:53:46 2021 -0300
+* Lines changed: 4034
+* Commit: [fba2de17575b774aee209ea6ea9548f6a44ae7b2](https://github.com/alvelvis/meu-mestrado/commit/fba2de17575b774aee209ea6ea9548f6a44ae7b2)
+* Patch file: [2021_12_7_11-53-46-fba2de17575b774aee209ea6ea9548f6a44ae7b2.patch](patch_changelog_sema/2021_12_7_11-53-46-fba2de17575b774aee209ea6ea9548f6a44ae7b2.patch)
+
+litologia e tipo_fluido
+
+```diff
+ 23	atinge	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	O	_
+ 24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	O	_
+ 25	coberturas	cobertura	NOUN	_	Gender=Fem|Number=Plur	23	obj	O	_
+-26	metassedimentares	metassedimentar	ADJ	_	Gender=Fem|Number=Plur	25	amod	B=LITOLOGIA	_
++26	metassedimentares	metassedimentar	ADJ	_	Gender=Fem|Number=Plur	25	amod	O	_
+ 27-28	meso-a	_	_	_	_	_	_	_	_
+ 27	meso	meso	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
+ 28	a	a	ADP	_	_	29	case	O	_
+```
+
+## sistema deposicional
+
+* Tatiana Cavalcanti
+* Date:   Tue Dec 7 11:57:09 2021 -0300
+* Lines changed: 469
+* Commit: [1b3a1e1177fa095bcc6034b0fc856e9b444522d7](https://github.com/alvelvis/meu-mestrado/commit/1b3a1e1177fa095bcc6034b0fc856e9b444522d7)
+* Patch file: [2021_12_7_11-57-09-1b3a1e1177fa095bcc6034b0fc856e9b444522d7.patch](patch_changelog_sema/2021_12_7_11-57-09-1b3a1e1177fa095bcc6034b0fc856e9b444522d7.patch)
+
+sistema deposicional
+
+```diff
+ 30	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	26	obl:arg	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+ 32	margem	margem	NOUN	_	Gender=Fem|Number=Sing	30	nmod	O	_
+-33	continental	continental	ADJ	_	Gender=Fem|Number=Sing	32	amod	B=SISTEMA_DEPOSICIONAL	_
++33	continental	continental	ADJ	_	Gender=Fem|Number=Sing	32	amod	O	_
+ 34	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	30	amod	O	_
+ 35	.	.	PUNCT	_	_	8	punct	O	_
+```
+
+## Estrutura deposicional e poços
+
+* Aline Silveira
+* Date:   Wed Dec 8 11:41:35 2021 -0300
+* Lines changed: 758
+* Commit: [9f4b3162c32d889b4569e72ef236b848ea3c0d73](https://github.com/alvelvis/meu-mestrado/commit/9f4b3162c32d889b4569e72ef236b848ea3c0d73)
+* Patch file: [2021_12_8_11-41-35-9f4b3162c32d889b4569e72ef236b848ea3c0d73.patch](patch_changelog_sema/2021_12_8_11-41-35-9f4b3162c32d889b4569e72ef236b848ea3c0d73.patch)
+
+Estrutura deposicional e poços
+
+```diff
+ 5-6	pela	_	_	_	_	_	_	_	_
+ 5	por	por	ADP	_	_	7	case	O	_
+ 6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	O	_
+-7	presença	presença	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	B=ESTRUTURA_DEPOSICIONAL	_
++7	presença	presença	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 10	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
 ```
