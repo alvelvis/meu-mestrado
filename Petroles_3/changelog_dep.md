@@ -1,6 +1,6 @@
 # changelog_dep
 
-Last update: 2021-12-8-15:8:8
+Last update: 2022-1-7-1:48:46
 
 ## lemma 'diferentes' is not correct
 
@@ -2540,4 +2540,90 @@ correções de lema
  4	aprisiona	aprisionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
  5-6	consigo	_	_	_	_	_	_	_	_
  5	com	com	ADP	_	_	6	case	O	_
+```
+
+## correções de verbos intransitivos
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Dec 21 19:34:46 2021 -0300
+* Lines changed: 7
+* Commit: [9118124f74957948ee3dec47459cae2b374b3902](https://github.com/alvelvis/meu-mestrado/commit/9118124f74957948ee3dec47459cae2b374b3902)
+* Patch file: [2021_12_21_19-34-46-9118124f74957948ee3dec47459cae2b374b3902.patch](patch_changelog_dep/2021_12_21_19-34-46-9118124f74957948ee3dec47459cae2b374b3902.patch)
+
+correções de verbos intransitivos
+
+```diff
+ 30	condutividade	condutividade	NOUN	_	Gender=Fem|Number=Sing	28	nmod	O	_
+ 31	,	,	PUNCT	_	_	28	punct	O	_
+ 32	flui	fluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	O	_
+-33	calor	calor	NOUN	_	Gender=Masc|Number=Sing	32	obj	O	_
++33	calor	calor	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	O	_
+ 34	até	até	ADP	_	_	36	case	O	_
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+ 36	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
+```
+
+## correções de release
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Dec 21 20:12:51 2021 -0300
+* Lines changed: 8
+* Commit: [e8a05c2e373aa681e638ecea94ec37a076a96954](https://github.com/alvelvis/meu-mestrado/commit/e8a05c2e373aa681e638ecea94ec37a076a96954)
+* Patch file: [2021_12_21_20-12-51-e8a05c2e373aa681e638ecea94ec37a076a96954.patch](patch_changelog_dep/2021_12_21_20-12-51-e8a05c2e373aa681e638ecea94ec37a076a96954.patch)
+
+correções de release
+
+```diff
+ 13	gás	gás	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=TIPO_FLUIDO	_
+ 14	natural	natural	ADJ	_	Gender=Masc|Number=Sing	13	compound	O	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+-16	condensado	condensado	ADJ	_	Gender=Masc|Number=Sing	14	conj	O	_
++16	condensado	condensado	ADJ	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18	denominada	denominar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
+ 19	Júpiter	Júpiter	PROPN	_	Gender=Fem|Number=Sing	18	obj	O	_
+```
+
+## correções 'NUM a NUM' como conj
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Jan 4 16:49:30 2022 -0300
+* Lines changed: 226
+* Commit: [e43f36cf6f9f176c28cdec843f93393bf7bfc923](https://github.com/alvelvis/meu-mestrado/commit/e43f36cf6f9f176c28cdec843f93393bf7bfc923)
+* Patch file: [2022_1_4_16-49-30-e43f36cf6f9f176c28cdec843f93393bf7bfc923.patch](patch_changelog_dep/2022_1_4_16-49-30-e43f36cf6f9f176c28cdec843f93393bf7bfc923.patch)
+
+correções 'NUM a NUM' como conj
+
+```diff
+ 20	(	(	PUNCT	_	_	21	punct	O	_
+ 21	Figuras	figura	NOUN	_	Gender=Fem|Number=Plur	5	parataxis	O	_
+ 22	15	15	NUM	_	NumType=Card	21	nummod	O	_
+-23	a	a	ADP	_	_	24	case	O	_
+-24	18	18	NUM	_	NumType=Card	21	nummod	O	_
++23	a	a	CCONJ	_	_	24	cc	O	_
++24	18	18	NUM	_	NumType=Card	22	conj	O	_
+ 25	)	)	PUNCT	_	_	21	punct	O	_
+ 26	,	,	PUNCT	_	_	16	punct	O	_
+ 27	juntamente	juntamente	ADV	_	_	16	advmod	O	_
+```
+
+## os verbos viver|ocorrer|crescer|entrar não devem ter argumento
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Jan 4 17:58:50 2022 -0300
+* Lines changed: 19
+* Commit: [ceb12f5b35f8582d9149f4ca7a1b677ebb9b9290](https://github.com/alvelvis/meu-mestrado/commit/ceb12f5b35f8582d9149f4ca7a1b677ebb9b9290)
+* Patch file: [2022_1_4_17-58-50-ceb12f5b35f8582d9149f4ca7a1b677ebb9b9290.patch](patch_changelog_dep/2022_1_4_17-58-50-ceb12f5b35f8582d9149f4ca7a1b677ebb9b9290.patch)
+
+os verbos viver|ocorrer|crescer|entrar não devem ter argumento
+
+```diff
+ 4	BPS	BPS	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	0007	0007	NUM	_	NumType=Card	4	flat:name	O	_
+ 6	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-7	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	xcomp	O	_
++7	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	O	_
+ 8	próximo	próximo	ADV	_	_	7	advmod	O	_
+ 9-10	à	_	_	_	_	_	_	_	_
+ 9	a	a	ADP	_	_	11	case	O	_
 ```

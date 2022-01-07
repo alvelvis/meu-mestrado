@@ -1,6 +1,6 @@
 # changelog_sema
 
-Last update: 2021-12-8-15:4:54
+Last update: 2022-1-7-1:50:18
 
 ## Regras para B=CAMPO
 
@@ -492,4 +492,127 @@ Estrutura deposicional e poços
  8	de	de	ADP	_	_	9	case	O	_
  9	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
  10	sedimentar	sedimentar	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+```
+
+## Correções de sema duplicados
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Dec 9 17:19:20 2021 -0300
+* Lines changed: 155
+* Commit: [b4177285db2f20b511409f98b78c505dc6333a78](https://github.com/alvelvis/meu-mestrado/commit/b4177285db2f20b511409f98b78c505dc6333a78)
+* Patch file: [2021_12_9_17-19-20-b4177285db2f20b511409f98b78c505dc6333a78.patch](patch_changelog_sema/2021_12_9_17-19-20-b4177285db2f20b511409f98b78c505dc6333a78.patch)
+
+Correções de sema duplicados
+
+```diff
+ 45	estratigráficos	estratigráfico	ADJ	_	Gender=Masc|Number=Plur	44	amod	O	_
+ 46	mapeados	mapear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	44	acl	O	_
+ 47	(	(	PUNCT	_	_	48	punct	O	_
+-48	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	44	appos	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++48	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	44	appos	O	_
+ 49-50	do	_	_	_	_	_	_	_	_
+-49	de	de	ADP	_	_	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-51	Embasamento	Embasamento	PROPN	_	Number=Sing	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++49	de	de	ADP	_	_	48	flat:name	O	_
++50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	flat:name	O	_
++51	Embasamento	Embasamento	PROPN	_	Number=Sing	48	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 52	,	,	PUNCT	_	_	53	punct	O	_
+-53	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++53	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 54-55	do	_	_	_	_	_	_	_	_
+-54	de	de	ADP	_	_	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-56	Rifte	Rifte	PROPN	_	Number=Sing	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++54	de	de	ADP	_	_	53	flat:name	O	_
++55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	flat:name	O	_
++56	Rifte	Rifte	PROPN	_	Number=Sing	53	flat:name	O	_
+ 57	,	,	PUNCT	_	_	58	punct	O	_
+-58	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++58	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 59-60	do	_	_	_	_	_	_	_	_
+-59	de	de	ADP	_	_	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-60	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-61	Albiano	Albiano	PROPN	_	Number=Sing	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++59	de	de	ADP	_	_	58	flat:name	O	_
++60	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	flat:name	O	_
++61	Albiano	Albiano	PROPN	_	Number=Sing	58	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 62	,	,	PUNCT	_	_	63	punct	O	_
+-63	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++63	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 64-65	do	_	_	_	_	_	_	_	_
+-64	de	de	ADP	_	_	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-65	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-66	Cretáceo	Cretáceo	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-67	Superior	Superior	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++64	de	de	ADP	_	_	63	flat:name	O	_
++65	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	flat:name	O	_
++66	Cretáceo	Cretáceo	PROPN	_	Number=Sing	63	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++67	Superior	Superior	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 68	,	,	PUNCT	_	_	69	punct	O	_
+-69	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++69	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 70-71	do	_	_	_	_	_	_	_	_
+-70	de	de	ADP	_	_	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-71	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-72	Eoceno	Eoceno	PROPN	_	Number=Sing	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++70	de	de	ADP	_	_	69	flat:name	O	_
++71	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	flat:name	O	_
++72	Eoceno	Eoceno	PROPN	_	Number=Sing	69	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 73	e	e	CCONJ	_	_	74	cc	O	_
+-74	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++74	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 75-76	do	_	_	_	_	_	_	_	_
+-75	de	de	ADP	_	_	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-76	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-77	Mioceno	Mioceno	PROPN	_	Number=Sing	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++75	de	de	ADP	_	_	74	flat:name	O	_
++76	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	flat:name	O	_
++77	Mioceno	Mioceno	PROPN	_	Number=Sing	74	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 78	)	)	PUNCT	_	_	48	punct	O	_
+ 79	.	.	PUNCT	_	_	15	punct	O	_
+```
+
+## correções de estrutura deposicional
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Tue Dec 21 18:44:29 2021 -0300
+* Lines changed: 60
+* Commit: [95b5b95ca08122eabca00937a42210c4a1118278](https://github.com/alvelvis/meu-mestrado/commit/95b5b95ca08122eabca00937a42210c4a1118278)
+* Patch file: [2021_12_21_18-44-29-95b5b95ca08122eabca00937a42210c4a1118278.patch](patch_changelog_sema/2021_12_21_18-44-29-95b5b95ca08122eabca00937a42210c4a1118278.patch)
+
+correções de estrutura deposicional
+
+```diff
+ # text = Os fluxos das marés, quando canalizados, têm períodos distintos de águas estagnadas que resultam na deposição de finos.
+ # sent_id = 284-20150917-MONOGRAFIA_0-232
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	O	_
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+```
+
+## Modificações relacionadas a “ambiente”, “deposicional”, “sistemas (deposicionais)” e uma revisão geral dos elementos SD da planilha.
+
+* Tatiana Cavalcanti
+* Date:   Tue Jan 4 17:07:53 2022 -0300
+* Lines changed: 105
+* Commit: [ee6963ce7d15ddec121f49b3f1e77273985d578d](https://github.com/alvelvis/meu-mestrado/commit/ee6963ce7d15ddec121f49b3f1e77273985d578d)
+* Patch file: [2022_1_4_17-07-53-ee6963ce7d15ddec121f49b3f1e77273985d578d.patch](patch_changelog_sema/2022_1_4_17-07-53-ee6963ce7d15ddec121f49b3f1e77273985d578d.patch)
+
+Modificações relacionadas a “ambiente”, “deposicional”, “sistemas (deposicionais)” e uma revisão geral dos elementos SD da planilha.
+
+```diff
+ 19	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	_
+ 20	geradas	gerar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+-22	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
+-23	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	22	amod	B=SISTEMA_DEPOSICIONAL	_
++22	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	20	obl	B=SISTEMA_DEPOSICIONAL	_
++23	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 24	distintos	distinto	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+ 26-27	tratando-se	_	_	_	_	_	_	_	_
 ```
