@@ -1,0 +1,61 @@
+commit e8a05c2e373aa681e638ecea94ec37a076a96954
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Tue Dec 21 20:12:51 2021 -0300
+
+    correções de release
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 63568ff..acd9ac7 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -98667,7 +98667,7 @@
+ 13	gás	gás	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=TIPO_FLUIDO	_
+ 14	natural	natural	ADJ	_	Gender=Masc|Number=Sing	13	compound	O	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+-16	condensado	condensado	ADJ	_	Gender=Masc|Number=Sing	14	conj	O	_
++16	condensado	condensado	ADJ	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18	denominada	denominar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	O	_
+ 19	Júpiter	Júpiter	PROPN	_	Gender=Fem|Number=Sing	18	obj	O	_
+@@ -192381,7 +192381,7 @@
+ # text = No entender destes autores os aspectos que apontam para a natureza tectônica dos grábens do RCSB são: (1) planícies litorâneas ou vales fluviais limitados por desníveis topográficos abruptos, retilíneos e de grande expressão (centenas a milhares de metros); (2) perfis morfotectônicos que podem ser interpretados como resultantes de tectônica de blocos planares rotacionados (tectônica dominó), em se tomando como referência as superfícies de aplainamento (superfície Japi por exemplo); (3) cotas altimétricas coerentes com patamares tectônicos escalonados desde a Serra da Mantiqueira até a plataforma continental da Bacia de Santos; (4) inserção em um contexto regional de quebramento/basculamento/abatimento cenozóico, comprovado em algumas das bacias sedimentares estudadas em grande detalhe.
+ # sent_id = 20-20140904-TESEDSC_0-233
+ 1	No	no	ADP	_	_	2	mark	O	tokenização
+-2	entender	entender	VERB	_	VerbForm=Inf	20	advcl	O	_
++2	entender	entender	VERB	_	VerbForm=Inf	25	advcl	O	_
+ 3-4	destes	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	O	_
+@@ -192403,7 +192403,7 @@
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+ 19	RCSB	RCSB	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 20	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	cop	O	_
+-21	:	:	PUNCT	_	_	20	punct	O	_
++21	:	:	PUNCT	_	_	25	punct	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	1	1	NUM	_	NumType=Card	25	parataxis	O	_
+ 24	)	)	PUNCT	_	_	23	punct	O	_
+@@ -239392,7 +239392,7 @@
+ 13	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	B=TIPO_FLUIDO	_
+ 14	diesel	diesel	NOUN	_	Gender=Masc|Number=Sing	13	compound	O	_
+ 15	ou	ou	CCONJ	_	_	16	cc	O	_
+-16	mineral	mineral	NOUN	_	Gender=Masc|Number=Sing	14	conj	O	_
++16	mineral	mineral	NOUN	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18	restringindo	restringir	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+diff --git a/Petroles_3/prepare_release.ipynb b/Petroles_3/prepare_release.ipynb
+index 71b754b..da617fc 100644
+--- a/Petroles_3/prepare_release.ipynb
++++ b/Petroles_3/prepare_release.ipynb
+@@ -297,7 +297,9 @@
+     "    print(len(new_sentences))\n",
+     "    print(len(old_sentences))\n",
+     "\n",
+-    "corpus.save(\"regras.conllu\")"
++    "corpus.save(\"regras.conllu\")\n",
++    "if new_sentences != old_sentences:\n",
++    "    print(\"Atualize frases: cp regras.conllu {}\".format(file))"
+    ]
+   },
+   {

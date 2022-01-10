@@ -1,0 +1,741 @@
+commit ee6963ce7d15ddec121f49b3f1e77273985d578d
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Tue Jan 4 17:07:53 2022 -0300
+
+    Modificações relacionadas a “ambiente”, “deposicional”, “sistemas (deposicionais)” e uma revisão geral dos elementos SD da planilha.
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index bf7159a..0729b7d 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -17402,8 +17402,8 @@
+ 19	bacias	bacia	NOUN	_	Gender=Fem|Number=Plur	17	nmod	O	_
+ 20	geradas	gerar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+-22	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	20	obl	O	_
+-23	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	22	amod	B=SISTEMA_DEPOSICIONAL	_
++22	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	20	obl	B=SISTEMA_DEPOSICIONAL	_
++23	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 24	distintos	distinto	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 25	,	,	PUNCT	_	_	26	punct	O	_
+ 26-27	tratando-se	_	_	_	_	_	_	_	_
+@@ -17628,7 +17628,7 @@
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
++10	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	7	obl	B=SISTEMA_DEPOSICIONAL	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 13	para	para	ADP	_	_	15	case	O	_
+@@ -18606,7 +18606,7 @@
+ 47-48	dos	_	_	_	_	_	_	_	_
+ 47	de	de	ADP	_	_	49	case	O	_
+ 48	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	49	det	O	_
+-49	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	46	nmod	O	_
++49	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	46	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 50	de	de	ADP	_	_	51	case	O	_
+ 51	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	49	nmod	O	_
+ 52	(	(	PUNCT	_	_	53	punct	O	_
+@@ -19052,7 +19052,7 @@
+ 22-23	ao	_	_	_	_	_	_	_	_
+ 22	a	a	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	21	obl	O	_
++24	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	21	obl	B=SISTEMA_DEPOSICIONAL	_
+ 25	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	24	amod	O	_
+ 26	.	.	PUNCT	_	_	6	punct	O	_
+ 
+@@ -19851,7 +19851,7 @@
+ 14	diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	O	_
+ 15	tratos	trato	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+-17	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
++17	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	15	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 18	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
+ 19	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -19860,7 +19860,7 @@
+ 1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	trato	trato	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+-4	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
++4	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	2	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 5	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	4	amod	O	_
+ 6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	O	_
+ 7	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -19891,7 +19891,7 @@
+ 2	trato	trato	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+-5	transgressivo	transgressivo	ADJ	_	Gender=Masc|Number=Plur	4	amod	O	_
++5	transgressivo	transgressivo	ADJ	_	Gender=Masc|Number=Plur	4	amod	B=SISTEMA_DEPOSICIONAL	_
+ 6	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 7	como	como	ADP	_	_	8	case	O	_
+ 8	limite	limite	NOUN	_	Gender=Masc|Number=Sing	6	xcomp	O	_
+@@ -20005,7 +20005,7 @@
+ 2	trato	trato	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+-5	transgressivo	transgressivo	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
++5	transgressivo	transgressivo	ADJ	_	Gender=Masc|Number=Sing	2	amod	B=SISTEMA_DEPOSICIONAL	_
+ 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+ 7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	intervalo	intervalo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -20590,8 +20590,8 @@
+ 16	embaciamentos	embaciamento	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 17	gerados	gerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	O	_
+ 18	em	em	ADP	_	_	19	case	O	_
+-19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
+-20	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	19	amod	B=SISTEMA_DEPOSICIONAL	_
++19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	17	obl	B=SISTEMA_DEPOSICIONAL	_
++20	tectônicos	tectônico	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+ 21	distintos	distinto	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	5	parataxis	O	_
+@@ -22117,8 +22117,8 @@
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	16	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	paleoambiente	paleoambiente	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+-16	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	15	amod	B=SISTEMA_DEPOSICIONAL	_
++15	paleoambiente	paleoambiente	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=SISTEMA_DEPOSICIONAL	_
++16	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	15	amod	O	_
+ 17	e	e	CCONJ	_	_	21	cc	O	_
+ 18	quanto	quanto	ADV	_	_	21	case	O	MWEPOS=ADP
+ 19-20	ao	_	_	_	_	_	_	_	_
+@@ -24610,7 +24610,7 @@
+ 20-21	no	_	_	_	_	_	_	_	_
+ 20	em	em	ADP	_	_	22	case	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+-22	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
++22	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	16	obl	B=SISTEMA_DEPOSICIONAL	_
+ 23	.	.	PUNCT	_	_	16	punct	O	_
+ 
+ # text = As barras amalgamadas podem ter sido formadas em águas muito rasas, com as estratificações sigmóides geradas durante a aceleração das condições de fluxo.
+@@ -25572,7 +25572,7 @@
+ 7	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	5	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 8	finos	fino	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 9	em	em	ADP	_	_	10	case	O	_
+-10	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
++10	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	3	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 11	subaquosos	subaquoso	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+@@ -25703,7 +25703,7 @@
+ 12	?	?	PUNCT	_	_	1	parataxis	O	_
+ 13	)	)	PUNCT	_	_	12	punct	O	_
+ 14	em	em	ADP	_	_	15	case	O	_
+-15	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	3	nmod	O	_
++15	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	3	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 16	subaquoso	subaquoso	ADJ	_	Gender=Masc|Number=Sing	15	amod	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+ 18	períodos	período	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+@@ -25951,8 +25951,8 @@
+ 14	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	O	_
+ 15	interpretar	interpretar	VERB	_	VerbForm=Inf	14	xcomp	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+-17	paleoambiente	paleoambiente	ADV	_	_	18	advmod	O	_
+-18	deposicional	deposicional	NOUN	_	Gender=Masc|Number=Sing	15	obj	B=SISTEMA_DEPOSICIONAL	_
++17	paleoambiente	paleoambiente	ADV	_	_	18	advmod	B=SISTEMA_DEPOSICIONAL	_
++18	deposicional	deposicional	NOUN	_	Gender=Masc|Number=Sing	15	obj	O	_
+ 19	.	.	PUNCT	_	_	6	punct	O	_
+ 
+ # text = Associação de fácies e interpretação do sistema deposicional.
+@@ -25965,7 +25965,7 @@
+ 6-7	do	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
++8	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 9	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 10	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -26164,7 +26164,7 @@
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+ 4	tratos	trato	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+-6	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	4	nmod	O	_
++6	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	4	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 7	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 8	identificados	identificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	O	_
+ 9-10	na	_	_	_	_	_	_	_	_
+@@ -26262,7 +26262,7 @@
+ # text = Tais depósitos são sucedidos por fácies mais continentais representadas por arenitos com fósseis de água doce, os quais caracterizam o TSMA, de caráter regressivo.
+ # sent_id = 284-20150917-MONOGRAFIA_0-299
+ 1	Tais	tais	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	O	_
+-2	depósitos	depósito	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	B=SISTEMA_DEPOSICIONAL	_
++2	depósitos	depósito	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	_
+ 3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	O	_
+ 4	sucedidos	suceder	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 5	por	por	ADP	_	_	6	case	O	_
+@@ -28174,7 +28174,7 @@
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+ 8	tratos	trato	NOUN	_	Gender=Masc|Number=Plur	5	nmod	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+-10	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
++10	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	8	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 11	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	10	amod	O	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	limitando	limitar	VERB	_	VerbForm=Ger	5	advcl	O	_
+@@ -29111,7 +29111,7 @@
+ 10	inferior	inferior	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+-13	deposicional	deposicional	ADJ	_	Gender=Fem|Number=Sing	12	amod	B=SISTEMA_DEPOSICIONAL	_
++13	deposicional	deposicional	ADJ	_	Gender=Fem|Number=Sing	12	amod	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+ 15	LSDi	LSDi	PROPN	_	Gender=Fem|Number=Sing	12	appos	O	_
+ 16	)	)	PUNCT	_	_	15	punct	O	_
+@@ -29212,7 +29212,7 @@
+ 
+ # text = entrada de sedimentos continentais seguidos do avanço do mar no continente.
+ # sent_id = 284-20150917-MONOGRAFIA_0-383
+-1	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++1	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	0	root	O	sentenciação
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	sedimentos	sedimento	NOUN	_	Gender=Masc|Number=Plur	1	nmod	O	_
+ 4	continentais	continental	ADJ	_	Gender=Masc|Number=Plur	3	amod	B=SISTEMA_DEPOSICIONAL	_
+@@ -29750,13 +29750,13 @@
+ 30	,	,	PUNCT	_	_	33	punct	O	_
+ 31	4	4	NUM	_	NumType=Card	33	parataxis	O	_
+ 32	)	)	PUNCT	_	_	29	punct	O	_
+-33	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	17	conj	O	_
+-34	mixohalino	mixohalino	ADJ	_	Gender=Masc|Number=Sing	33	amod	B=SISTEMA_DEPOSICIONAL	_
++33	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	17	conj	B=SISTEMA_DEPOSICIONAL	_
++34	mixohalino	mixohalino	ADJ	_	Gender=Masc|Number=Sing	33	amod	O	_
+ 35	;	;	PUNCT	_	_	39	punct	O	_
+ 36	e	e	CCONJ	_	_	39	cc	O	_
+ 37	5	5	NUM	_	NumType=Card	39	parataxis	O	_
+ 38	)	)	PUNCT	_	_	37	punct	O	_
+-39	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	17	conj	O	_
++39	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	17	conj	B=SISTEMA_DEPOSICIONAL	_
+ 40	de	de	ADP	_	_	41	case	O	_
+ 41	água	água	NOUN	_	Gender=Fem|Number=Sing	39	nmod	B=TIPO_FLUIDO	_
+ 42	doce	doce	ADJ	_	Gender=Fem|Number=Sing	41	amod	O	_
+@@ -30019,7 +30019,7 @@
+ 41-42	no	_	_	_	_	_	_	_	_
+ 41	em	em	ADP	_	_	43	case	O	_
+ 42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	O	_
+-43	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	37	nmod	O	_
++43	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	37	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 44	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	43	amod	O	_
+ 45	(	(	PUNCT	_	_	46	punct	O	_
+ 46	Arai	Arai	PROPN	_	Gender=Masc|Number=Sing	33	parataxis	O	_
+@@ -30347,7 +30347,7 @@
+ 33	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	34	nsubj	O	_
+ 34	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	O	_
+ 35	paleofluxos	paleofluxo	NOUN	_	Gender=Masc|Number=Plur	34	obj	O	_
+-36	fluviais	fluvial	ADJ	_	Gender=Masc|Number=Plur	35	amod	B=SISTEMA_DEPOSICIONAL	_
++36	fluviais	fluvial	ADJ	_	Gender=Masc|Number=Plur	35	amod	O	_
+ 37	com	com	ADP	_	_	38	case	O	_
+ 38	rumo	rumo	ADV	_	_	34	advmod	O	_
+ 39	para	para	ADP	_	_	40	case	O	_
+@@ -30426,7 +30426,7 @@
+ 10	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	11	nsubj	O	_
+ 11	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	O	_
+ 12	paleofluxo	paleofluxo	NOUN	_	Gender=Masc|Number=Sing	11	obj	O	_
+-13	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	12	amod	B=SISTEMA_DEPOSICIONAL	_
++13	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	12	amod	O	_
+ 14	com	com	ADP	_	_	15	case	O	_
+ 15	proveniência	proveniência	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+@@ -30449,7 +30449,7 @@
+ 32	concorda	concordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	O	_
+ 33	com	com	ADP	_	_	34	case	O	_
+ 34	paleocorrentes	paleocorrente	NOUN	_	Gender=Masc|Number=Plur	32	obl:arg	O	_
+-35	fluviais	fluvial	ADJ	_	Gender=Masc|Number=Plur	34	amod	B=SISTEMA_DEPOSICIONAL	_
++35	fluviais	fluvial	ADJ	_	Gender=Masc|Number=Plur	34	amod	O	_
+ 36-37	da	_	_	_	_	_	_	_	_
+ 36	de	de	ADP	_	_	38	case	O	_
+ 37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	O	_
+@@ -30620,7 +30620,7 @@
+ 5	dois	dois	NUM	_	NumType=Card	6	nummod	O	_
+ 6	tratos	trato	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+-8	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
++8	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	6	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 9	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+ 10	com	com	ADP	_	_	11	case	O	_
+ 11	padrões	padrão	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+@@ -58511,7 +58511,7 @@
+ 4-5	dos	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
+-6	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
++6	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	3	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 7	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 8	atuantes	atuante	ADJ	_	Gender=Masc|Number=Plur	6	amod	O	_
+ 9	e	e	CCONJ	_	_	11	cc	O	_
+@@ -58893,8 +58893,8 @@
+ 25	visando	visar	VERB	_	VerbForm=Ger	3	advcl	O	_
+ 26	obter	obter	VERB	_	VerbForm=Inf	25	xcomp	O	_
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
+-28	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	26	obj	O	_
+-29	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	28	amod	B=SISTEMA_DEPOSICIONAL	_
++28	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	26	obj	B=SISTEMA_DEPOSICIONAL	_
++29	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
+ 30	e	e	CCONJ	_	_	32	cc	O	_
+ 31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	O	_
+ 32	reconstituição	reconstituição	NOUN	_	Gender=Fem|Number=Sing	28	conj	O	_
+@@ -58955,7 +58955,7 @@
+ 42	de	de	ADP	_	_	44	case	O	_
+ 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
+ 44	paleomergulho	paleomergulho	NOUN	_	Gender=Masc|Number=Sing	41	nmod	O	_
+-45	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	44	amod	B=SISTEMA_DEPOSICIONAL	_
++45	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	44	amod	O	_
+ 46	,	,	PUNCT	_	_	47	punct	O	_
+ 47	definição	definição	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 48-49	das	_	_	_	_	_	_	_	_
+@@ -61214,8 +61214,8 @@
+ 12	paleontológicos	paleontológico	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	e	e	CCONJ	_	_	15	cc	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	11	conj	O	_
+-16	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	15	amod	B=SISTEMA_DEPOSICIONAL	_
++15	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	11	conj	B=SISTEMA_DEPOSICIONAL	_
++16	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	15	amod	O	_
+ 17	interpretado	interpretar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	O	_
+ 18-19	pelas	_	_	_	_	_	_	_	_
+ 18	por	por	ADP	_	_	20	case	O	_
+@@ -63680,7 +63680,7 @@
+ # sent_id = 283-20150917-MONOGRAFIA_0-196
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	paleocorrentes	paleocorrente	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	O	_
+-3	fluviais	fluvial	ADJ	_	Gender=Fem|Number=Plur	2	amod	B=SISTEMA_DEPOSICIONAL	_
++3	fluviais	fluvial	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 4-5	da	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+@@ -63702,10 +63702,10 @@
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 19	fácies	fácies	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 20	St	St	PROPN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+-21	e	e	CCONJ	_	_	5	cc	O	_
++21	e	e	CCONJ	_	_	24	cc	O	_
+ 22-23	na	_	_	_	_	_	_	_	_
+-22	em	em	ADP	_	_	5	case	O	_
+-23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
++22	em	em	ADP	_	_	24	case	O	_
++23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	imbricação	imbricação	NOUN	_	Gender=Fem|Number=Sing	19	conj	O	_
+ 25-26	dos	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+@@ -63863,7 +63863,7 @@
+ 4	que	que	SCONJ	_	_	14	mark	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+ 6	paleofluxo	paleofluxo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	O	_
+-7	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	6	amod	B=SISTEMA_DEPOSICIONAL	_
++7	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+ 8	para	para	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	Sub-Bacia	Sub-Bacia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+@@ -65627,7 +65627,7 @@
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	típicos	típico	ADJ	_	Gender=Masc|Number=Plur	7	amod	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+-19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
++19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	17	obl	B=SISTEMA_DEPOSICIONAL	_
+ 20	áridos	árido	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+ 21	e	e	CCONJ	_	_	22	cc	O	_
+ 22	semi-áridos	semi-árido	ADJ	_	Gender=Masc|Number=Plur	20	conj	O	_
+@@ -65653,7 +65653,7 @@
+ 7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	transição	transição	NOUN	_	Gender=Fem|Number=Sing	2	acl:relcl	O	_
+ 9	entre	entre	ADP	_	_	10	case	O	_
+-10	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
++10	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	8	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	playa	playa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 13	e	e	CCONJ	_	_	14	cc	O	_
+@@ -65900,7 +65900,7 @@
+ 16	processos	processo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 17	com	com	ADP	_	_	19	case	O	_
+ 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
++19	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	10	obl	B=SISTEMA_DEPOSICIONAL	_
+ 20	de	de	ADP	_	_	21	case	O	_
+ 21	playa	playa	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 22	lake	lake	NOUN	_	Gender=Masc|Number=Sing	21	compound	O	_
+@@ -65956,7 +65956,7 @@
+ 12	playa	playa	X	_	_	10	nmod	O	_
+ 13	lakes	lakes	X	_	_	12	flat:foreign	O	_
+ 14	com	com	ADP	_	_	15	case	O	_
+-15	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
++15	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 16	tipicamente	tipicamente	ADV	_	_	17	advmod	O	_
+ 17	áridos	árido	ADJ	_	Gender=Masc|Number=Plur	15	amod	O	_
+ 18	,	,	PUNCT	_	_	20	punct	O	_
+@@ -67701,7 +67701,7 @@
+ 
+ # text = Sm corresponde ao interduna e são menos frequentes e menos espessas do que no sistema deposicional eólico descrito abaixo da descontinuidade regional.
+ # sent_id = 283-20150917-MONOGRAFIA_0-395
+-1	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
++1	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	O	sentenciação
+ 2	corresponde	corresponder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 3-4	ao	_	_	_	_	_	_	_	_
+ 3	a	a	ADP	_	_	5	case	O	_
+@@ -68243,7 +68243,7 @@
+ 9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 10	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+-12	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	nmod	O	_
++12	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	10	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 13	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 14	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
+ 15	para	para	ADP	_	_	17	case	O	_
+@@ -68273,8 +68273,8 @@
+ 16	de	de	ADP	_	_	19	case	O	_
+ 17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	O	_
+ 18	diversos	diverso	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+-19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
+-20	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	19	amod	B=SISTEMA_DEPOSICIONAL	_
++19	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	15	nmod	B=SISTEMA_DEPOSICIONAL	_
++20	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+ 21	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	22	nsubj	O	_
+ 22	coexistiram	coexistir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	19	acl:relcl	O	_
+ 23	.	.	PUNCT	_	_	13	punct	O	_
+@@ -68306,7 +68306,7 @@
+ 21-22	do	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
++23	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	20	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 24	deposicional	deposicional	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	_
+ 25	e	e	CCONJ	_	_	27	cc	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+@@ -68492,7 +68492,7 @@
+ 8	quase	quase	ADV	_	_	9	advmod	O	_
+ 9	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Tot	11	det	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+-11	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	O	_
++11	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	B=SISTEMA_DEPOSICIONAL	_
+ 12	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	O	_
+ 14	para	para	ADP	_	_	16	case	O	_
+@@ -68615,7 +68615,7 @@
+ 7	permitem	permitir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 8	estabelecer	estabelecer	VERB	_	VerbForm=Inf	7	xcomp	O	_
+ 9	paleofluxo	paleofluxo	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+-10	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	9	amod	B=SISTEMA_DEPOSICIONAL	_
++10	fluvial	fluvial	ADJ	_	Gender=Masc|Number=Sing	9	amod	O	_
+ 11	para	para	ADP	_	_	12	case	O	_
+ 12	NW	NW	PROPN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+@@ -69037,8 +69037,8 @@
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 25	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	O	_
+ 26	em	em	ADP	_	_	27	case	O	_
+-27	lagos	lago	NOUN	_	Gender=Masc|Number=Plur	23	obl	O	_
+-28	rasos	raso	ADJ	_	Gender=Masc|Number=Plur	27	amod	O	_
++27	lagos	lago	NOUN	_	Gender=Masc|Number=Plur	23	obl	B=SISTEMA_DEPOSICIONAL	_
++28	rasos	raso	ADJ	_	Gender=Masc|Number=Plur	27	amod	I=SISTEMA_DEPOSICIONAL	_
+ 29	e	e	CCONJ	_	_	30	cc	O	_
+ 30	efêmeros	efêmero	ADJ	_	Gender=Masc|Number=Plur	28	conj	O	_
+ 31	,	,	PUNCT	_	_	34	punct	O	_
+@@ -69094,12 +69094,12 @@
+ 8	diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	O	_
+ 9	processos	processo	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+-11	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	9	conj	O	_
++11	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	9	conj	B=SISTEMA_DEPOSICIONAL	_
+ 12	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	interagiram	interagir	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	5	ccomp	O	_
+ 14	com	com	ADP	_	_	16	case	O	_
+ 15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	O	_
+-16	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	O	_
++16	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	B=SISTEMA_DEPOSICIONAL	_
+ 17	de	de	ADP	_	_	18	case	O	_
+ 18	playa	playa	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
+ 19	lake	lake	NOUN	_	Gender=Masc|Number=Sing	18	compound	O	_
+@@ -69212,7 +69212,7 @@
+ 5	de	de	ADP	_	_	6	case	O	_
+ 6	fácies	fácies	NOUN	_	Gender=Fem|Number=Plur	4	nmod	O	_
+ 7	e	e	CCONJ	_	_	8	cc	O	_
+-8	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	6	conj	O	_
++8	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	6	conj	B=SISTEMA_DEPOSICIONAL	_
+ 9	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+ 10	para	para	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+@@ -69273,7 +69273,7 @@
+ 
+ # text = Ambientes de interduna muitas vezes eram bem desenvolvidos e algumas de suas características, como constante deformação por fluidificação e liquefação e presença de rochas pelíticas, permitiram interpretá-las como interdunas úmidas.
+ # sent_id = 283-20150917-MONOGRAFIA_0-451
+-1	Ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	O	_
++1	Ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	B=SISTEMA_DEPOSICIONAL	_
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	interduna	interduna	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+ 4	muitas	muito	DET	_	Gender=Fem|Number=Plur|PronType=Ind	5	det	O	_
+@@ -69817,7 +69817,7 @@
+ 20-21	dos	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	22	case	O	_
+ 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	O	_
+-22	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	19	nmod	O	_
++22	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	19	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 23	deposicionais	deposicional	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 24	atuantes	atuante	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
+ 25-26	na	_	_	_	_	_	_	_	_
+@@ -116738,8 +116738,8 @@
+ 38	re-encaminhado	re-encaminhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	33	conj	O	_
+ 39	para	para	ADP	_	_	41	case	O	_
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	O	_
+-41	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	38	obl	O	_
+-42	submarino	submarino	ADJ	_	Gender=Masc|Number=Sing	41	amod	B=SISTEMA_DEPOSICIONAL	_
++41	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	38	obl	B=SISTEMA_DEPOSICIONAL	_
++42	submarino	submarino	ADJ	_	Gender=Masc|Number=Sing	41	amod	O	_
+ 43	,	,	PUNCT	_	_	44	punct	O	_
+ 44-45	unindo-se	_	_	_	_	_	_	_	_
+ 44	unindo	unir	VERB	_	VerbForm=Ger	33	advcl	O	_
+@@ -116796,8 +116796,8 @@
+ 4	água	água	NOUN	_	Gender=Fem|Number=Sing	2	nmod	B=TIPO_FLUIDO	_
+ 5	separada	separar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	O	_
+ 6	em	em	ADP	_	_	7	case	O	_
+-7	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+-8	subsea	subsea	ADJ	_	_	7	amod	B=SISTEMA_DEPOSICIONAL	_
++7	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	5	obl	B=SISTEMA_DEPOSICIONAL	_
++8	subsea	subsea	ADJ	_	_	7	amod	O	_
+ 9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	O	_
+ 10	destinada	destinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -187201,9 +187201,9 @@
+ 35	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	32	obl:arg	O	_
+ 36	pelítico	pelítico	ADJ	_	Gender=Masc|Number=Sing	35	amod	O	_
+ 37	de	de	ADP	_	_	38	case	O	_
+-38	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	35	nmod	O	_
++38	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	35	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 39	e	e	CCONJ	_	_	40	cc	O	_
+-40	talude	talude	NOUN	_	Gender=Masc|Number=Sing	38	conj	O	_
++40	talude	talude	NOUN	_	Gender=Masc|Number=Sing	38	conj	B=SISTEMA_DEPOSICIONAL	_
+ 41	(	(	PUNCT	_	_	42	punct	O	_
+ 42	Formação	Formação	PROPN	_	Gender=Fem|Number=Sing	35	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 43	Marambaia	Marambaia	PROPN	_	Number=Sing	42	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+@@ -196946,7 +196946,7 @@
+ 27-28	no	_	_	_	_	_	_	_	_
+ 27	em	em	ADP	_	_	29	case	O	_
+ 28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	O	_
+-29	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	26	obl	O	_
++29	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	26	obl	B=SISTEMA_DEPOSICIONAL	_
+ 30	dominado	dominar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	29	acl	O	_
+ 31-32	pelas	_	_	_	_	_	_	_	_
+ 31	por	por	ADP	_	_	33	case	O	_
+@@ -198119,7 +198119,7 @@
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	observação	observação	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 18	,	,	PUNCT	_	_	9	punct	O	_
+-19	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	26	cc	O	_
++19	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	26	cc	O	MWEPOS=CCONJ
+ 20	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	fixed	O	_
+ 21	,	,	PUNCT	_	_	19	punct	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+@@ -198130,7 +198130,7 @@
+ 27	para	para	ADP	_	_	28	case	O	_
+ 28	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
+ 29	em	em	ADP	_	_	30	case	O	_
+-30	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	28	nmod	O	_
++30	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	28	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 31	dominados	dominar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	30	acl	O	_
+ 32-33	pela	_	_	_	_	_	_	_	_
+ 32	por	por	ADP	_	_	34	case	O	_
+@@ -211576,7 +211576,7 @@
+ 9	em	em	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
+-12	Marítimo	Marítimo	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++12	Marítimo	marítimo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 13	.	.	PUNCT	_	_	8	punct	O	_
+ 
+ # text = A feição magnética interpretada neste estudo representa, por conseguinte, a extremidade NE de um dos riftes do sistema Marítimo inferido por esses autores a partir dos mesmos dados aeromagnéticos utilizados no presente trabalho.
+@@ -232089,7 +232089,7 @@
+ 8	para	para	ADP	_	_	9	case	O	_
+ 9	interpretações	interpretação	NOUN	_	Gender=Fem|Number=Plur	3	obl	O	_
+ 10	em	em	ADP	_	_	11	case	O	_
+-11	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
++11	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	9	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 12	com	com	ADP	_	_	13	case	O	_
+ 13	predomínio	predomínio	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+@@ -274987,12 +274987,12 @@
+ 21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	O	_
+ 22	mais	mais	ADV	_	_	23	advmod	O	_
+ 23	variados	variado	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
+-24	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	10	obl	O	_
++24	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	10	obl	B=SISTEMA_DEPOSICIONAL	_
+ 25	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
+ 26	como	como	ADP	_	_	27	case	O	_
+-27	manguezais	manguezal	ADJ	_	Gender=Masc|Number=Plur	24	nmod:appos	O	_
++27	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	24	nmod:appos	B=SISTEMA_DEPOSICIONAL	_
+ 28	,	,	PUNCT	_	_	29	punct	O	_
+-29	marinas	marina	NOUN	_	Gender=Fem|Number=Plur	27	conj	O	_
++29	marinas	marina	NOUN	_	Gender=Fem|Number=Plur	27	conj	B=SISTEMA_DEPOSICIONAL	_
+ 30	,	,	PUNCT	_	_	31	punct	O	_
+ 31	praias	praia	NOUN	_	Gender=Fem|Number=Plur	27	conj	B=SISTEMA_DEPOSICIONAL	_
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+@@ -275000,8 +275000,8 @@
+ 34	de	de	ADP	_	_	35	case	O	_
+ 35	coral	coral	NOUN	_	Gender=Masc|Number=Sing	33	nmod	O	_
+ 36	e	e	CCONJ	_	_	37	cc	O	_
+-37	lagoas	lagoa	NOUN	_	Gender=Fem|Number=Plur	27	conj	O	_
+-38	costeiras	costeiro	ADJ	_	Gender=Fem|Number=Plur	37	amod	B=SISTEMA_DEPOSICIONAL	_
++37	lagoas	lagoa	NOUN	_	Gender=Fem|Number=Plur	27	conj	B=SISTEMA_DEPOSICIONAL	_
++38	costeiras	costeiro	ADJ	_	Gender=Fem|Number=Plur	37	amod	I=SISTEMA_DEPOSICIONAL	_
+ 39	.	.	PUNCT	_	_	10	punct	O	_
+ 
+ # text = Foram utilizadas as técnicas mais adequadas de acordo com os mapas de sensibilidade (Cartas SAO) que são indispensáveis neste contexto para minimização dos impactos ambientais, onde fez uma revisão bibliográfica sobre os métodos de limpezas, baseado em estudo de casos ocorridos nacionalmente e internacionalmente, concluindo que a opção pelo método a ser empregado vincula-se fortemente ao tipo de ecossistema impactado, levando-se em consideração suas características e sensibilidade do ambiente no qual há necessidade de ser realizado o monitoramento dos ambientes que sofreram contaminação por óleo e intervenções de limpeza, para que sejam obtidas informações mais detalhadas sobre os efeitos do óleo e da limpeza nos ambientes e nos organismos.
+@@ -275792,9 +275792,9 @@
+ 28	como	como	ADP	_	_	29	case	O	_
+ 29	praias	praia	NOUN	_	Gender=Fem|Number=Plur	25	nmod:appos	B=SISTEMA_DEPOSICIONAL	_
+ 30	,	,	PUNCT	_	_	31	punct	O	_
+-31	rios	rio	NOUN	_	Gender=Masc|Number=Plur	29	conj	O	_
++31	rios	rio	NOUN	_	Gender=Masc|Number=Plur	29	conj	B=SISTEMA_DEPOSICIONAL	_
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+-33	lagos	lago	NOUN	_	Gender=Masc|Number=Plur	29	conj	O	_
++33	lagos	lago	NOUN	_	Gender=Masc|Number=Plur	29	conj	B=SISTEMA_DEPOSICIONAL	_
+ 34	e	e	CCONJ	_	_	35	cc	O	_
+ 35	estuários	estuário	NOUN	_	Gender=Masc|Number=Plur	29	conj	B=SISTEMA_DEPOSICIONAL	_
+ 36	,	,	PUNCT	_	_	29	punct	O	_
+@@ -275811,7 +275811,7 @@
+ 46	maior	grande	ADJ	_	Gender=Masc|Number=Sing	45	xcomp	O	_
+ 47	pois	pois	SCONJ	_	_	50	mark	O	_
+ 48	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	49	det	O	_
+-49	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	50	nsubj	O	_
++49	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	50	nsubj	B=SISTEMA_DEPOSICIONAL	_
+ 50	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	45	advcl	O	_
+ 51	áreas	área	NOUN	_	Gender=Fem|Number=Plur	50	obj	O	_
+ 52	de	de	ADP	_	_	54	case	O	_
+@@ -276122,8 +276122,8 @@
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	27	case	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+-27	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	24	obl	O	_
+-28	offshore	offshore	ADJ	_	Gender=Masc|Number=Sing	27	amod	B=SISTEMA_DEPOSICIONAL	_
++27	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	24	obl	B=SISTEMA_DEPOSICIONAL	_
++28	offshore	offshore	ADJ	_	Gender=Masc|Number=Sing	27	amod	O	_
+ 29-30	no	_	_	_	_	_	_	_	_
+ 29	em	em	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+@@ -276264,7 +276264,7 @@
+ 51	atinge	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	advcl	O	_
+ 52	estuário	estuário	NOUN	_	Gender=Masc|Number=Sing	51	obj	B=SISTEMA_DEPOSICIONAL	_
+ 53	e	e	CCONJ	_	_	54	cc	O	_
+-54	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	52	conj	O	_
++54	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	52	conj	B=SISTEMA_DEPOSICIONAL	_
+ 55	,	,	PUNCT	_	_	56	punct	O	_
+ 56	local	local	NOUN	_	Gender=Masc|Number=Sing	52	conj	O	_
+ 57	de	de	ADP	_	_	59	case	O	_
+@@ -277637,8 +277637,8 @@
+ 6-7	no	_	_	_	_	_	_	_	_
+ 6	em	em	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-9	aquático	aquático	ADJ	_	Gender=Masc|Number=Sing	8	amod	B=SISTEMA_DEPOSICIONAL	_
++8	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=SISTEMA_DEPOSICIONAL	_
++9	aquático	aquático	ADJ	_	Gender=Masc|Number=Sing	8	amod	O	_
+ 10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	considerada	considerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+ 12	baixa	baixo	ADJ	_	Gender=Fem|Number=Sing	11	xcomp	O	_
+@@ -278999,17 +278999,17 @@
+ 43	biodiversidade	biodiversidade	NOUN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 44	marinha	marinho	ADJ	_	Gender=Fem|Number=Sing	43	amod	O	_
+ 45	,	,	PUNCT	_	_	46	punct	O	_
+-46	lagoas	lagoa	NOUN	_	Gender=Fem|Number=Plur	43	conj	O	_
+-47	costeiras	costeiro	ADJ	_	Gender=Fem|Number=Plur	46	amod	B=SISTEMA_DEPOSICIONAL	_
++46	lagoas	lagoa	NOUN	_	Gender=Fem|Number=Plur	43	conj	B=SISTEMA_DEPOSICIONAL	_
++47	costeiras	costeiro	ADJ	_	Gender=Fem|Number=Plur	46	amod	I=SISTEMA_DEPOSICIONAL	_
+ 48	,	,	PUNCT	_	_	49	punct	O	_
+-49	manguezais	manguezal	ADJ	_	Gender=Fem|Number=Plur	43	conj	O	_
++49	manguezais	manguezal	NOUN	_	Gender=Fem|Number=Plur	43	conj	B=SISTEMA_DEPOSICIONAL	_
+ 50	,	,	PUNCT	_	_	51	punct	O	_
+ 51	terraços	terraço	NOUN	_	Gender=Masc|Number=Plur	43	conj	O	_
+ 52	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	51	amod	O	_
+ 53	,	,	PUNCT	_	_	54	punct	O	_
+-54	delta	delta	NOUN	_	Gender=Masc|Number=Sing	43	conj	O	_
+-55	de	de	ADP	_	_	56	case	O	_
+-56	maré	maré	NOUN	_	Gender=Fem|Number=Sing	54	nmod	B=SISTEMA_DEPOSICIONAL	_
++54	delta	delta	NOUN	_	Gender=Masc|Number=Sing	43	conj	B=SISTEMA_DEPOSICIONAL	_
++55	de	de	ADP	_	_	56	case	I=SISTEMA_DEPOSICIONAL	_
++56	maré	maré	NOUN	_	Gender=Fem|Number=Sing	54	nmod	I=SISTEMA_DEPOSICIONAL	_
+ 57	,	,	PUNCT	_	_	58	punct	O	_
+ 58	dunas	duna	NOUN	_	Gender=Fem|Number=Plur	43	conj	O	_
+ 59	,	,	PUNCT	_	_	60	punct	O	_
+@@ -279523,15 +279523,15 @@
+ 35	terraços	terraço	NOUN	_	Gender=Masc|Number=Plur	33	conj	B=SISTEMA_DEPOSICIONAL	_
+ 36	marinhos	marinho	ADJ	_	Gender=Masc|Number=Plur	35	amod	O	_
+ 37	e	e	CCONJ	_	_	38	cc	O	_
+-38	dunas	duna	NOUN	_	Gender=Fem|Number=Plur	33	conj	B=SISTEMA_DEPOSICIONAL	_
++38	dunas	duna	NOUN	_	Gender=Fem|Number=Plur	33	conj	O	_
+ 39	que	que	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	41	nsubj	O	_
+ 40	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	41	expl	O	_
+ 41	direcionam	direcionar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	38	acl:relcl	O	_
+ 42	para	para	ADP	_	_	44	case	O	_
+ 43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	O	_
+-44	delta	delta	NOUN	_	Gender=Masc|Number=Sing	41	obl	O	_
+-45	de	de	ADP	_	_	46	case	O	_
+-46	maré	maré	NOUN	_	Gender=Fem|Number=Sing	44	nmod	B=SISTEMA_DEPOSICIONAL	_
++44	delta	delta	NOUN	_	Gender=Masc|Number=Sing	41	obl	B=SISTEMA_DEPOSICIONAL	_
++45	de	de	ADP	_	_	46	case	I=SISTEMA_DEPOSICIONAL	_
++46	maré	maré	NOUN	_	Gender=Fem|Number=Sing	44	nmod	I=SISTEMA_DEPOSICIONAL	_
+ 47	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	49	nsubj:pass	O	_
+ 48	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	aux:pass	O	_
+ 49	criados	criar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	44	acl:relcl	O	_
+@@ -279628,9 +279628,9 @@
+ 46-47	do	_	_	_	_	_	_	_	_
+ 46	de	de	ADP	_	_	48	case	O	_
+ 47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	O	_
+-48	delta	delta	NOUN	_	Gender=Masc|Number=Sing	45	nmod	O	_
+-49	de	de	ADP	_	_	50	case	O	_
+-50	maré	maré	NOUN	_	Gender=Fem|Number=Sing	48	nmod	B=SISTEMA_DEPOSICIONAL	_
++48	delta	delta	NOUN	_	Gender=Masc|Number=Sing	45	nmod	B=SISTEMA_DEPOSICIONAL	_
++49	de	de	ADP	_	_	50	case	I=SISTEMA_DEPOSICIONAL	_
++50	maré	maré	NOUN	_	Gender=Fem|Number=Sing	48	nmod	I=SISTEMA_DEPOSICIONAL	_
+ 51	.	.	PUNCT	_	_	4	punct	O	_
+ 
+ # text = Esses sedimentos movimentaram-se na forma de grandes bancos de areia ricos em biodetritos.
+@@ -279722,9 +279722,9 @@
+ 30	algas	alga	NOUN	_	Gender=Fem|Number=Plur	26	nmod	O	_
+ 31	sobre	sobre	ADP	_	_	33	case	O	_
+ 32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	O	_
+-33	delta	delta	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+-34	de	de	ADP	_	_	35	case	O	_
+-35	maré	maré	NOUN	_	Gender=Fem|Number=Sing	33	nmod	B=SISTEMA_DEPOSICIONAL	_
++33	delta	delta	NOUN	_	Gender=Masc|Number=Sing	26	nmod	B=SISTEMA_DEPOSICIONAL	_
++34	de	de	ADP	_	_	35	case	I=SISTEMA_DEPOSICIONAL	_
++35	maré	maré	NOUN	_	Gender=Fem|Number=Sing	33	nmod	I=SISTEMA_DEPOSICIONAL	_
+ 36	(	(	PUNCT	_	_	37	punct	O	_
+ 37	MEIRELES	MEIRELES	PROPN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+ 38	,	,	PUNCT	_	_	37	flat:name	O	_
+@@ -279884,7 +279884,7 @@
+ # text = O manguezal de Barra Grande e o banco de algas da planície costeira de Icapuí representam sistemas ambientais importantes do estuário Barra Grande, eles apresentam uma grande variedade de organismos diversos.
+ # sent_id = 411-20150702-MONOGRAFIA_0-140
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	manguezal	manguezal	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
++2	manguezal	manguezal	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	B=SISTEMA_DEPOSICIONAL	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	Barra	Barra	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	Grande	Grande	PROPN	_	Number=Sing	4	flat:name	O	_
+@@ -280266,7 +280266,7 @@
+ 38-39	na	_	_	_	_	_	_	_	_
+ 38	em	em	ADP	_	_	40	case	O	_
+ 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
+-40	zono	zono	NOUN	_	Gender=Fem|Number=Sing	37	nmod	O	_
++40	zono	zona	NOUN	_	Gender=Fem|Number=Sing	37	nmod	O	_
+ 41	costeira	costeiro	ADJ	_	Gender=Fem|Number=Sing	40	amod	B=SISTEMA_DEPOSICIONAL	_
+ 42-43	do	_	_	_	_	_	_	_	_
+ 42	de	de	ADP	_	_	44	case	O	_
+@@ -281013,7 +281013,7 @@
+ 41	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	O	_
+ 42	ambientes	ambiente	NOUN	_	Gender=Masc|Number=Plur	45	nsubj	O	_
+ 43	de	de	ADP	_	_	44	case	O	_
+-44	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	42	nmod	O	_
++44	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	42	nmod	B=SISTEMA_DEPOSICIONAL	_
+ 45	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	acl:relcl	O	_
+ 46	,	,	PUNCT	_	_	49	punct	O	_
+ 47	e	e	CCONJ	_	_	49	cc	O	_
+@@ -284785,7 +284785,7 @@
+ 43	marinas	marina	NOUN	_	Gender=Fem|Number=Plur	36	conj	O	_
+ 44	e	e	CCONJ	_	_	46	cc	O	_
+ 45	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	O	_
+-46	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	36	conj	O	_
++46	manguezais	manguezal	NOUN	_	Gender=Masc|Number=Plur	36	conj	B=SISTEMA_DEPOSICIONAL	_
+ 47	(	(	PUNCT	_	_	48	punct	O	_
+ 48	POSSOBON,2012	POSSOBON,2012	PROPN	_	Gender=Masc|Number=Sing	46	appos	O	_
+ 49	)	)	PUNCT	_	_	48	punct	O	_

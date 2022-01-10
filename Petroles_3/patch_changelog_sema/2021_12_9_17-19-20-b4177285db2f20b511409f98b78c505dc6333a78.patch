@@ -1,0 +1,610 @@
+commit b4177285db2f20b511409f98b78c505dc6333a78
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Dec 9 17:19:20 2021 -0300
+
+    Correções de sema duplicados
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index bf7159a..a32acc8 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -1722,42 +1722,42 @@
+ 45	estratigráficos	estratigráfico	ADJ	_	Gender=Masc|Number=Plur	44	amod	O	_
+ 46	mapeados	mapear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	44	acl	O	_
+ 47	(	(	PUNCT	_	_	48	punct	O	_
+-48	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	44	appos	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++48	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	44	appos	O	_
+ 49-50	do	_	_	_	_	_	_	_	_
+-49	de	de	ADP	_	_	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-51	Embasamento	Embasamento	PROPN	_	Number=Sing	48	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++49	de	de	ADP	_	_	48	flat:name	O	_
++50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	flat:name	O	_
++51	Embasamento	Embasamento	PROPN	_	Number=Sing	48	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 52	,	,	PUNCT	_	_	53	punct	O	_
+-53	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++53	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 54-55	do	_	_	_	_	_	_	_	_
+-54	de	de	ADP	_	_	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-56	Rifte	Rifte	PROPN	_	Number=Sing	53	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++54	de	de	ADP	_	_	53	flat:name	O	_
++55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	flat:name	O	_
++56	Rifte	Rifte	PROPN	_	Number=Sing	53	flat:name	O	_
+ 57	,	,	PUNCT	_	_	58	punct	O	_
+-58	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++58	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 59-60	do	_	_	_	_	_	_	_	_
+-59	de	de	ADP	_	_	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-60	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-61	Albiano	Albiano	PROPN	_	Number=Sing	58	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++59	de	de	ADP	_	_	58	flat:name	O	_
++60	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	flat:name	O	_
++61	Albiano	Albiano	PROPN	_	Number=Sing	58	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 62	,	,	PUNCT	_	_	63	punct	O	_
+-63	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++63	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 64-65	do	_	_	_	_	_	_	_	_
+-64	de	de	ADP	_	_	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-65	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-66	Cretáceo	Cretáceo	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-67	Superior	Superior	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++64	de	de	ADP	_	_	63	flat:name	O	_
++65	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	flat:name	O	_
++66	Cretáceo	Cretáceo	PROPN	_	Number=Sing	63	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++67	Superior	Superior	PROPN	_	Number=Sing	63	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 68	,	,	PUNCT	_	_	69	punct	O	_
+-69	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++69	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 70-71	do	_	_	_	_	_	_	_	_
+-70	de	de	ADP	_	_	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-71	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-72	Eoceno	Eoceno	PROPN	_	Number=Sing	69	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++70	de	de	ADP	_	_	69	flat:name	O	_
++71	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	flat:name	O	_
++72	Eoceno	Eoceno	PROPN	_	Number=Sing	69	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 73	e	e	CCONJ	_	_	74	cc	O	_
+-74	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++74	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	48	conj	O	_
+ 75-76	do	_	_	_	_	_	_	_	_
+-75	de	de	ADP	_	_	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-76	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-77	Mioceno	Mioceno	PROPN	_	Number=Sing	74	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++75	de	de	ADP	_	_	74	flat:name	O	_
++76	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	flat:name	O	_
++77	Mioceno	Mioceno	PROPN	_	Number=Sing	74	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 78	)	)	PUNCT	_	_	48	punct	O	_
+ 79	.	.	PUNCT	_	_	15	punct	O	_
+ 
+@@ -1873,36 +1873,36 @@
+ 6	:	:	PUNCT	_	_	7	punct	O	_
+ 7	Embasamento	embasamento	NOUN	_	Gender=Masc|Number=Sing	4	appos	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 8	,	,	PUNCT	_	_	9	punct	O	_
+-9	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=UNIDADE_LITOESTRATIGRÁFICA	_
++9	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 10-11	do	_	_	_	_	_	_	_	_
+-10	de	de	ADP	_	_	9	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	Rifte	Rifte	PROPN	_	Number=Sing	9	flat:name	I=UNIDADE_LITOESTRATIGRÁFICA	_
++10	de	de	ADP	_	_	9	flat:name	O	_
++11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	flat:name	O	_
++12	Rifte	Rifte	PROPN	_	Number=Sing	9	flat:name	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+-14	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++14	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+-15	de	de	ADP	_	_	14	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-17	Albiano	Albiano	PROPN	_	Number=Sing	14	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++15	de	de	ADP	_	_	14	flat:name	O	_
++16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	flat:name	O	_
++17	Albiano	Albiano	PROPN	_	Number=Sing	14	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 18	,	,	PUNCT	_	_	19	punct	O	_
+-19	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++19	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 20-21	do	_	_	_	_	_	_	_	_
+-20	de	de	ADP	_	_	19	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-22	Cretáceo	Cretáceo	PROPN	_	Number=Sing	19	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-23	Superior	Superior	PROPN	_	Number=Sing	19	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++20	de	de	ADP	_	_	19	flat:name	O	_
++21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	flat:name	O	_
++22	Cretáceo	Cretáceo	PROPN	_	Number=Sing	19	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++23	Superior	Superior	PROPN	_	Number=Sing	19	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 24	,	,	PUNCT	_	_	25	punct	O	_
+-25	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++25	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 26-27	do	_	_	_	_	_	_	_	_
+-26	de	de	ADP	_	_	25	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-28	Eoceno	Eoceno	PROPN	_	Number=Sing	25	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++26	de	de	ADP	_	_	25	flat:name	O	_
++27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	flat:name	O	_
++28	Eoceno	Eoceno	PROPN	_	Number=Sing	25	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 29	e	e	CCONJ	_	_	30	cc	O	_
+-30	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++30	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	conj	O	_
+ 31-32	do	_	_	_	_	_	_	_	_
+-31	de	de	ADP	_	_	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-33	Mioceno	Mioceno	PROPN	_	Number=Sing	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++31	de	de	ADP	_	_	30	flat:name	O	_
++32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	flat:name	O	_
++33	Mioceno	Mioceno	PROPN	_	Number=Sing	30	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 34	e	e	CCONJ	_	_	44	cc	O	_
+ 35	,	,	PUNCT	_	_	40	punct	O	_
+ 36	a	a	ADP	_	_	40	case	O	MWEPOS=ADP
+@@ -2010,7 +2010,7 @@
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	descrição	descrição	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 9	em	em	ADP	_	_	10	case	O	_
+-10	escala	escala	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++10	escala	escala	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=ESCALA	_
+ 11	regional	regional	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+@@ -3767,11 +3767,11 @@
+ 3-4	pela	_	_	_	_	_	_	_	_
+ 3	por	por	ADP	_	_	5	case	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+-5	Sequência	Sequência	PROPN	_	Gender=Fem|Number=Sing	2	obl:agent	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++5	Sequência	Sequência	PROPN	_	Gender=Fem|Number=Sing	2	obl:agent	O	_
+ 6-7	do	_	_	_	_	_	_	_	_
+-6	de	de	ADP	_	_	5	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-8	Aptiano	Aptiano	PROPN	_	Number=Sing	5	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++6	de	de	ADP	_	_	5	flat:name	O	_
++7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	flat:name	O	_
++8	Aptiano	Aptiano	PROPN	_	Number=Sing	5	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 9	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	10	nsubj	O	_
+ 10	equivale	equivaler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	O	_
+ 11-12	à	_	_	_	_	_	_	_	_
+@@ -4569,7 +4569,7 @@
+ 22	a	a	ADP	_	_	21	fixed	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+ 24	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	25	det	O	_
+-25	petrografia	petrografia	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++25	petrografia	petrografia	NOUN	_	Gender=Fem|Number=Sing	15	obl	B=ESCALA	_
+ 26	e	e	CCONJ	_	_	28	cc	O	_
+ 27	provável	provável	ADJ	_	Gender=Fem|Number=Sing	28	amod	O	_
+ 28	idade	idade	NOUN	_	Gender=Fem|Number=Sing	25	conj	O	_
+@@ -8309,19 +8309,19 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	8	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	8	obl	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+-12	de	de	ADP	_	_	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Embasamento	Embasamento	PROPN	_	Number=Sing	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++12	de	de	ADP	_	_	11	flat:name	O	_
++13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
++14	Embasamento	Embasamento	PROPN	_	Number=Sing	11	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15-16	ao	_	_	_	_	_	_	_	_
+ 15	a	a	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	Topo	Topo	PROPN	_	Number=Sing	8	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++17	Topo	Topo	PROPN	_	Number=Sing	8	obl	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+-18	de	de	ADP	_	_	17	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-20	Rifte	Rifte	PROPN	_	Number=Sing	17	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++18	de	de	ADP	_	_	17	flat:name	O	_
++19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	flat:name	O	_
++20	Rifte	Rifte	PROPN	_	Number=Sing	17	flat:name	O	_
+ 21	como	como	ADP	_	_	22	mark	O	_
+ 22	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	O	_
+ 23	ser	ser	AUX	_	VerbForm=Inf	24	aux:pass	O	_
+@@ -8351,7 +8351,7 @@
+ # text = 6.5.2-SEÇÕES SÍSMICAS DE DIREÇÃO STRIKE (ANEXOS 9 A 14)
+ # sent_id = 247-20140910-MONOGRAFIA_0-260
+ 1	6.5.2-SEÇÕES	6.5.g-sEçCES	NUM	_	NumType=Card	2	nummod	O	_
+-2	SÍSMICAS	sísmica	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++2	SÍSMICAS	sísmica	NOUN	_	Gender=Fem|Number=Plur	0	root	B=ESCALA	_
+ 3	DE	de	ADP	_	_	4	case	O	_
+ 4	DIREÇÃO	direção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 5	STRIKE	STRIKE	PROPN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+@@ -8847,52 +8847,52 @@
+ 8	horizontes	horizonte	NOUN	_	Gender=Masc|Number=Plur	4	obl	O	_
+ 9	interpretados	interpretar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	O	_
+ 10	(	(	PUNCT	_	_	11	punct	O	_
+-11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	8	appos	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	8	appos	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+-12	de	de	ADP	_	_	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Embasamento	Embasamento	PROPN	_	Number=Sing	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++12	de	de	ADP	_	_	11	flat:name	O	_
++13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
++14	Embasamento	Embasamento	PROPN	_	Number=Sing	11	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+-16	Topo	Topo	PROPN	_	Number=Sing	11	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++16	Topo	Topo	PROPN	_	Number=Sing	11	conj	O	_
+ 17-18	do	_	_	_	_	_	_	_	_
+-17	de	de	ADP	_	_	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-19	Rifte	Rifte	PROPN	_	Number=Sing	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++17	de	de	ADP	_	_	16	flat:name	O	_
++18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	flat:name	O	_
++19	Rifte	Rifte	PROPN	_	Number=Sing	16	flat:name	O	_
+ 20	,	,	PUNCT	_	_	9	punct	O	_
+ 21	Figuras	figuras	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 22	31A	31A	NUM	_	NumType=Card	21	nummod	O	_
+ 23	e	e	CCONJ	_	_	24	cc	O	_
+ 24	31B	31B	PROPN	_	Number=Sing	11	conj	O	_
+ 25	;	;	PUNCT	_	_	26	punct	O	_
+-26	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	11	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++26	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	11	conj	O	_
+ 27-28	do	_	_	_	_	_	_	_	_
+-27	de	de	ADP	_	_	26	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-29	Albiano	Albiano	PROPN	_	Number=Sing	26	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++27	de	de	ADP	_	_	26	flat:name	O	_
++28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	flat:name	O	_
++29	Albiano	Albiano	PROPN	_	Number=Sing	26	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 30	e	e	CCONJ	_	_	31	cc	O	_
+-31	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	26	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++31	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	26	conj	O	_
+ 32-33	do	_	_	_	_	_	_	_	_
+-32	de	de	ADP	_	_	31	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-34	Cretáceo	Cretáceo	PROPN	_	Number=Sing	31	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-35	Superior	Superior	PROPN	_	Number=Sing	31	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++32	de	de	ADP	_	_	31	flat:name	O	_
++33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	flat:name	O	_
++34	Cretáceo	Cretáceo	PROPN	_	Number=Sing	31	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++35	Superior	Superior	PROPN	_	Number=Sing	31	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 36	,	,	PUNCT	_	_	37	punct	O	_
+ 37	Figuras	figuras	NOUN	_	Gender=Fem|Number=Sing	11	conj	O	_
+ 38	32A	32A	NUM	_	NumType=Card	37	nummod	O	_
+ 39	e	e	CCONJ	_	_	40	cc	O	_
+ 40	32B	32B	PROPN	_	Number=Sing	11	conj	O	_
+ 41	;	;	PUNCT	_	_	42	punct	O	_
+-42	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	11	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++42	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	11	conj	O	_
+ 43-44	do	_	_	_	_	_	_	_	_
+-43	de	de	ADP	_	_	42	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-45	Eoceno	Eoceno	PROPN	_	Number=Sing	42	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++43	de	de	ADP	_	_	42	flat:name	O	_
++44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	flat:name	O	_
++45	Eoceno	Eoceno	PROPN	_	Number=Sing	42	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 46	e	e	CCONJ	_	_	47	cc	O	_
+-47	Topo	Topo	PROPN	_	Number=Sing	42	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++47	Topo	Topo	PROPN	_	Number=Sing	42	conj	O	_
+ 48-49	do	_	_	_	_	_	_	_	_
+-48	de	de	ADP	_	_	47	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-50	Mioceno	Mioceno	PROPN	_	Number=Sing	47	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++48	de	de	ADP	_	_	47	flat:name	O	_
++49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	flat:name	O	_
++50	Mioceno	Mioceno	PROPN	_	Number=Sing	47	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 51	,	,	PUNCT	_	_	52	punct	O	_
+ 52	Figuras	figuras	NOUN	_	Gender=Fem|Number=Sing	42	nmod:appos	O	_
+ 53	33A	33A	NUM	_	NumType=Card	52	nummod	O	_
+@@ -8959,19 +8959,19 @@
+ 8-9	ao	_	_	_	_	_	_	_	_
+ 8	a	a	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
+-11	de	de	ADP	_	_	10	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	Embasamento	Embasamento	PROPN	_	Number=Sing	10	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++10	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	7	obl	O	_
++11	de	de	ADP	_	_	10	flat:name	O	_
++12	Embasamento	Embasamento	PROPN	_	Number=Sing	10	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 13	(	(	PUNCT	_	_	14	punct	O	_
+ 14	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	27	parataxis	O	_
+ 15	31A	31A	NUM	_	NumType=Card	14	nummod	O	_
+ 16	)	)	PUNCT	_	_	14	punct	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+-18	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	10	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++18	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+-19	de	de	ADP	_	_	18	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-21	Rifte	Rifte	PROPN	_	Number=Sing	18	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++19	de	de	ADP	_	_	18	flat:name	O	_
++20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	flat:name	O	_
++21	Rifte	Rifte	PROPN	_	Number=Sing	18	flat:name	O	_
+ 22	(	(	PUNCT	_	_	23	punct	O	_
+ 23	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	27	parataxis	O	_
+ 24	31B	31B	NUM	_	NumType=Card	23	nummod	O	_
+@@ -9155,32 +9155,32 @@
+ 34-35	ao	_	_	_	_	_	_	_	_
+ 34	a	a	ADP	_	_	36	case	O	_
+ 35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	O	_
+-36	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	33	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++36	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	33	obl	O	_
+ 37-38	do	_	_	_	_	_	_	_	_
+-37	de	de	ADP	_	_	36	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-39	Rifte	Rifte	PROPN	_	Number=Sing	36	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++37	de	de	ADP	_	_	36	flat:name	O	_
++38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	flat:name	O	_
++39	Rifte	Rifte	PROPN	_	Number=Sing	36	flat:name	O	_
+ 40	(	(	PUNCT	_	_	41	punct	O	_
+ 41	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	O	_
+ 42	31	31	NUM	_	NumType=Card	41	nummod	O	_
+ 43	)	)	PUNCT	_	_	41	punct	O	_
+ 44	,	,	PUNCT	_	_	45	punct	O	_
+-45	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	36	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++45	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	36	conj	O	_
+ 46-47	do	_	_	_	_	_	_	_	_
+-46	de	de	ADP	_	_	45	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-48	Cretáceo	Cretáceo	PROPN	_	Number=Sing	45	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-49	Superior	Superior	PROPN	_	Number=Sing	45	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++46	de	de	ADP	_	_	45	flat:name	O	_
++47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	flat:name	O	_
++48	Cretáceo	Cretáceo	PROPN	_	Number=Sing	45	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++49	Superior	Superior	PROPN	_	Number=Sing	45	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 50	(	(	PUNCT	_	_	51	punct	O	_
+ 51	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	O	_
+ 52	32	32	NUM	_	NumType=Card	51	nummod	O	_
+ 53	)	)	PUNCT	_	_	51	punct	O	_
+ 54	e	e	CCONJ	_	_	55	cc	O	_
+-55	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	36	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++55	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	36	conj	O	_
+ 56-57	do	_	_	_	_	_	_	_	_
+-56	de	de	ADP	_	_	55	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-57	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-58	Eoceno	Eoceno	PROPN	_	Number=Sing	55	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++56	de	de	ADP	_	_	55	flat:name	O	_
++57	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	flat:name	O	_
++58	Eoceno	Eoceno	PROPN	_	Number=Sing	55	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 59	(	(	PUNCT	_	_	60	punct	O	_
+ 60	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	O	_
+ 61	33	33	NUM	_	NumType=Card	60	nummod	O	_
+@@ -9391,11 +9391,11 @@
+ 28-29	do	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+-30	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	27	nmod	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++30	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	27	nmod	O	_
+ 31-32	do	_	_	_	_	_	_	_	_
+-31	de	de	ADP	_	_	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-33	Embasamento	Embasamento	PROPN	_	Number=Sing	30	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++31	de	de	ADP	_	_	30	flat:name	O	_
++32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	flat:name	O	_
++33	Embasamento	Embasamento	PROPN	_	Number=Sing	30	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 34	e	e	CCONJ	_	_	36	cc	O	_
+ 35	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	36	nsubj	O	_
+ 36	afetou	afetar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	conj	O	_
+@@ -9404,11 +9404,11 @@
+ 39-40	do	_	_	_	_	_	_	_	_
+ 39	de	de	ADP	_	_	41	case	O	_
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	O	_
+-41	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	38	nmod	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++41	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	38	nmod	O	_
+ 42-43	do	_	_	_	_	_	_	_	_
+-42	de	de	ADP	_	_	41	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-44	Rifte	Rifte	PROPN	_	Number=Sing	41	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++42	de	de	ADP	_	_	41	flat:name	O	_
++43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	flat:name	O	_
++44	Rifte	Rifte	PROPN	_	Number=Sing	41	flat:name	O	_
+ 45	sendo	ser	AUX	_	VerbForm=Ger	49	mark	O	_
+ 46	que	que	SCONJ	_	_	45	fixed	O	_
+ 47	em	em	ADP	_	_	49	case	O	_
+@@ -9416,11 +9416,11 @@
+ 49	casos	caso	NOUN	_	Gender=Masc|Number=Plur	36	obl	O	_
+ 50	isolados	isolar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	49	acl	O	_
+ 51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
+-52	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	50	obj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++52	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	50	obj	O	_
+ 53-54	do	_	_	_	_	_	_	_	_
+-53	de	de	ADP	_	_	52	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-54	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-55	Albiano	Albiano	PROPN	_	Number=Sing	52	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++53	de	de	ADP	_	_	52	flat:name	O	_
++54	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	flat:name	O	_
++55	Albiano	Albiano	PROPN	_	Number=Sing	52	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 56	.	.	PUNCT	_	_	17	punct	O	_
+ 
+ # text = Com o alinhamento das seções sísmicas (228-0322, 231-0498 e 231-0486 Anexo 15) pelo Arco de Torres foi visualizada uma sequência de grábens apresentando orientação NW-SE alinhados.
+@@ -9495,17 +9495,17 @@
+ 8-9	do	_	_	_	_	_	_	_	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++10	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+-11	de	de	ADP	_	_	10	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	Embasamento	Embasamento	PROPN	_	Number=Sing	10	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++11	de	de	ADP	_	_	10	flat:name	O	_
++12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	flat:name	O	_
++13	Embasamento	Embasamento	PROPN	_	Number=Sing	10	flat:name	B=UNIDADE_LITOESTRATIGRÁFICA	_
+ 14	e	e	CCONJ	_	_	15	cc	O	_
+-15	Topo	Topo	PROPN	_	Number=Sing	10	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++15	Topo	Topo	PROPN	_	Number=Sing	10	conj	O	_
+ 16-17	do	_	_	_	_	_	_	_	_
+-16	de	de	ADP	_	_	15	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-18	Rifte	Rifte	PROPN	_	Number=Sing	15	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++16	de	de	ADP	_	_	15	flat:name	O	_
++17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	flat:name	O	_
++18	Rifte	Rifte	PROPN	_	Number=Sing	15	flat:name	O	_
+ 19-20	observou-se	_	_	_	_	_	_	_	_
+ 19	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 20	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	expl:impers	O	_
+@@ -9909,23 +9909,23 @@
+ 4-5	ao	_	_	_	_	_	_	_	_
+ 4	a	a	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	3	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++6	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	3	obl	O	_
+ 7-8	do	_	_	_	_	_	_	_	_
+-7	de	de	ADP	_	_	6	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-9	Mioceno	Mioceno	PROPN	_	Number=Sing	6	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++7	de	de	ADP	_	_	6	flat:name	O	_
++8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	flat:name	O	_
++9	Mioceno	Mioceno	PROPN	_	Number=Sing	6	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 10	,	,	PUNCT	_	_	11	punct	O	_
+-11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	6	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++11	Topo	Topo	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+ 12-13	do	_	_	_	_	_	_	_	_
+-12	de	de	ADP	_	_	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-14	Cretáceo	Cretáceo	PROPN	_	Number=Sing	11	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++12	de	de	ADP	_	_	11	flat:name	O	_
++13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	flat:name	O	_
++14	Cretáceo	Cretáceo	PROPN	_	Number=Sing	11	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+-16	Topo	Topo	PROPN	_	Number=Sing	11	conj	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++16	Topo	Topo	PROPN	_	Number=Sing	11	conj	O	_
+ 17-18	do	_	_	_	_	_	_	_	_
+-17	de	de	ADP	_	_	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+-19	Eoceno	Eoceno	PROPN	_	Number=Sing	16	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++17	de	de	ADP	_	_	16	flat:name	O	_
++18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	flat:name	O	_
++19	Eoceno	Eoceno	PROPN	_	Number=Sing	16	flat:name	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 20-21	encontram-se	_	_	_	_	_	_	_	_
+ 20	encontram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 21	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	expl	O	_
+@@ -21222,12 +21222,12 @@
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	Andar	Andar	PROPN	_	Gender=Masc|Number=Sing	17	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
+-21	Buracica	Buracica	PROPN	_	Number=Sing	20	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
++20	Andar	Andar	PROPN	_	Gender=Masc|Number=Sing	17	obl	B=UNIDADE_CRONOESTRATIGRÁFICA	_
++21	Buracica	Buracica	PROPN	_	Number=Sing	20	flat:name	I=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 22-23	ao	_	_	_	_	_	_	_	_
+ 22	a	a	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	Alagoas	Alagoas	PROPN	_	Gender=Masc|Number=Sing	17	obl	B=UNIDADE_CRONOESTRATIGRÁFICA|B=UNIDADE_LITOESTRATIGRÁFICA	_
++24	Alagoas	Alagoas	PROPN	_	Gender=Masc|Number=Sing	17	obl	O	_
+ 25	inferior	inferior	ADJ	_	Gender=Masc|Number=Sing	24	amod	I=UNIDADE_CRONOESTRATIGRÁFICA|I=UNIDADE_LITOESTRATIGRÁFICA	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	7	parataxis	O	_
+@@ -23914,7 +23914,7 @@
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+ 18	filmes	filme	NOUN	_	Gender=Masc|Number=Plur	16	conj	B=ESTRUTURA_DEPOSICIONAL	_
+ 19	de	de	ADP	_	_	20	case	I=ESTRUTURA_DEPOSICIONAL	_
+-20	argila	argila	NOUN	_	Gender=Fem|Number=Sing	18	nmod	B=LITOLOGIA|I=ESTRUTURA_DEPOSICIONAL	_
++20	argila	argila	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+ 22	foresets	foreset	NOUN	_	Gender=Masc|Number=Plur	9	obl	O	_
+ 23	de	de	ADP	_	_	25	case	O	_
+@@ -25757,7 +25757,7 @@
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	dados	dado	NOUN	_	Gender=Masc|Number=Plur	18	obl:arg	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+-22	petrografia	petrografia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++22	petrografia	petrografia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	B=ESCALA	_
+ 23	para	para	ADP	_	_	25	case	O	_
+ 24	melhor	bom	ADJ	_	Gender=Fem|Number=Sing	25	amod	O	_
+ 25	caracterização	caracterização	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
+@@ -187953,7 +187953,7 @@
+ 16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	O	_
+ 17	análise	análise	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+-19	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
++19	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=ESCALA	_
+ 20	3D	3D	NUM	_	NumType=Card	19	nummod	O	_
+ 21	em	em	ADP	_	_	23	case	O	_
+ 22	diversos	diverso	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	O	_
+@@ -192840,7 +192840,7 @@
+ 4	,	,	PUNCT	_	_	1	punct	O	_
+ 5	expressão	expressão	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+ 6	em	em	ADP	_	_	7	case	O	_
+-7	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++7	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	5	nmod	B=ESCALA	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	reflexão	reflexão	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 10	em	em	ADP	_	_	12	case	O	_
+@@ -193733,7 +193733,7 @@
+ 9	cenozóicas	cenozóico	ADJ	_	Gender=Fem|Number=Plur	8	amod	B=UNIDADE_CRONOESTRATIGRÁFICA	_
+ 10	mapeadas	mapear	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	O	_
+ 11	por	por	ADP	_	_	12	case	O	_
+-12	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	O	_
++12	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	B=ESCALA	_
+ 13-14	na	_	_	_	_	_	_	_	_
+ 13	em	em	ADP	_	_	15	case	O	_
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+@@ -194750,7 +194750,7 @@
+ 4	empregados	empregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 5	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+-7	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++7	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	5	nmod	B=ESCALA	_
+ 8	e	e	CCONJ	_	_	9	cc	O	_
+ 9	batimetria	batimetria	NOUN	_	Gender=Fem|Number=Sing	7	conj	O	_
+ 10	com	com	ADP	_	_	13	mark	O	MWEPOS=SCONJ
+@@ -210577,7 +210577,7 @@
+ 25	por	por	ADP	_	_	26	case	O	_
+ 26	dados	dado	NOUN	_	Gender=Masc|Number=Plur	24	obl	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+-28	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++28	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	26	nmod	B=ESCALA	_
+ 29	como	como	ADP	_	_	30	case	O	_
+ 30	informação	informação	NOUN	_	Gender=Fem|Number=Sing	26	nmod:appos	O	_
+ 31	a	a	ADP	_	_	32	case	O	_
+@@ -210660,7 +210660,7 @@
+ 24	conformidade	conformidade	NOUN	_	Gender=Fem|Number=Sing	39	conj	O	_
+ 25	com	com	ADP	_	_	27	case	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+-27	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	24	nmod	O	_
++27	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	24	nmod	B=ESCALA	_
+ 28	,	,	PUNCT	_	_	24	punct	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	ajuste	ajuste	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	O	_
+@@ -223289,7 +223289,7 @@
+ 13	Campos	Campos	PROPN	_	Number=Sing	11	flat:name	I=BACIA	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+ 15	utilizando	utilizar	VERB	_	VerbForm=Ger	21	advcl	O	_
+-16	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	15	obj	O	_
++16	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	15	obj	B=ESCALA	_
+ 17	2D	2D	NUM	_	NumType=Card	16	nummod	O	_
+ 18	e	e	CCONJ	_	_	19	cc	O	_
+ 19	3D	3D	NUM	_	NumType=Card	17	conj	O	_
+@@ -228095,7 +228095,7 @@
+ 21	,	,	PUNCT	_	_	5	punct	O	_
+ 22	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	23	nsubj	O	_
+ 23	utilizam	utilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	O	_
+-24	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	23	obj	O	_
++24	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	23	obj	B=ESCALA	_
+ 25	3D	3D	NUM	_	NumType=Card	28	nummod	O	_
+ 26	e	e	CCONJ	_	_	28	cc	O	_
+ 27	inovadores	inovador	ADJ	_	Gender=Masc|Number=Plur	28	amod	O	_
+@@ -228247,7 +228247,7 @@
+ 39	passo	passo	NOUN	_	Gender=Masc|Number=Sing	37	fixed	O	_
+ 40	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	37	fixed	O	_
+ 41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
+-42	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	44	nsubj	O	_
++42	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	44	nsubj	B=ESCALA	_
+ 43	ainda	ainda	ADV	_	_	44	advmod	O	_
+ 44	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	O	_
+ 45	lacunas	lacuna	NOUN	_	Gender=Fem|Number=Plur	44	obj	O	_
+@@ -228297,7 +228297,7 @@
+ 4-5	à	_	_	_	_	_	_	_	_
+ 4	a	a	ADP	_	_	2	fixed	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
++6	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	15	obl	B=ESCALA	_
+ 7	,	,	PUNCT	_	_	6	punct	O	_
+ 8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+ 9	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	10	det	O	_
+@@ -229351,7 +229351,7 @@
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	análise	análise	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+-10	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
++10	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=ESCALA	_
+ 11	3D	3D	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+ 12	e	e	CCONJ	_	_	14	cc	O	_
+ 13	seus	seu	DET	_	Gender=Masc|Number=Plur|PronType=Prs	14	det	O	_
+@@ -233488,7 +233488,7 @@
+ 26	trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	23	obl:agent	O	_
+ 27	,	,	PUNCT	_	_	28	punct	O	_
+ 28	utilizando	utilizar	VERB	_	VerbForm=Ger	23	advcl	O	_
+-29	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	28	obj	O	_
++29	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	28	obj	B=ESCALA	_
+ 30	2D	2D	NUM	_	NumType=Card	29	nummod	O	_
+ 31	e	e	CCONJ	_	_	32	cc	O	_
+ 32	3D	3D	NUM	_	NumType=Card	30	conj	O	_

@@ -1,0 +1,549 @@
+commit 95b5b95ca08122eabca00937a42210c4a1118278
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Tue Dec 21 18:44:29 2021 -0300
+
+    correções de estrutura deposicional
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index bf7159a..03fb398 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -24558,7 +24558,7 @@
+ # text = Os fluxos das marés, quando canalizados, têm períodos distintos de águas estagnadas que resultam na deposição de finos.
+ # sent_id = 284-20150917-MONOGRAFIA_0-232
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	O	_
+ 3-4	das	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+@@ -24590,7 +24590,7 @@
+ 3-4	dos	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	O	_
+-5	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++5	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	O	_
+ 6-7	das	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	O	_
+@@ -36479,7 +36479,7 @@
+ 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	O	_
+ 4	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	11	obl	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+-6	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++6	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+ 8	água	água	NOUN	_	Gender=Fem|Number=Sing	6	nmod	B=TIPO_FLUIDO	_
+ 9	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	11	cop	O	_
+@@ -36487,7 +36487,7 @@
+ 11	modestos	modesto	ADJ	_	Gender=Masc|Number=Plur	19	advcl	O	_
+ 12	,	,	PUNCT	_	_	11	punct	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	O	_
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+@@ -37602,7 +37602,7 @@
+ 19-20	ao	_	_	_	_	_	_	_	_
+ 19	a	a	ADP	_	_	18	fixed	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+-21	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	14	obl	B=ESTRUTURA_DEPOSICIONAL	_
++21	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	14	obl	O	_
+ 22	por	por	ADP	_	_	23	case	O	_
+ 23	condutividade	condutividade	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24	.	.	PUNCT	_	_	3	punct	O	_
+@@ -40785,7 +40785,7 @@
+ 7	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	mark	O	MWEPOS=SCONJ
+ 8	que	que	SCONJ	_	_	7	fixed	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	O	_
+ 11-12	do	_	_	_	_	_	_	_	_
+ 11	de	de	ADP	_	_	13	case	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+@@ -68685,7 +68685,7 @@
+ 1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	O	_
+ 2	paleodrenagens	paleodrenagem	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	O	_
+ 3	com	com	ADP	_	_	4	case	O	_
+-4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	para	para	ADP	_	_	6	case	O	_
+ 6	NW	NW	PROPN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+@@ -71488,7 +71488,7 @@
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	O	_
+ 9	produzir	produzir	VERB	_	VerbForm=Inf	0	root	O	_
+ 10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	obj	B=ESTRUTURA_DEPOSICIONAL	_
++11	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
+ 12	concentrado	concentrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	dióxido	dióxido	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+@@ -72057,7 +72057,7 @@
+ 21	separada	separar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	xcomp	O	_
+ 22	em	em	ADP	_	_	24	case	O	_
+ 23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	21	obl	B=ESTRUTURA_DEPOSICIONAL	_
++24	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	21	obl	O	_
+ 25	de	de	ADP	_	_	26	case	O	_
+ 26	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	24	nmod	O	_
+ 27	e	e	CCONJ	_	_	29	cc	O	_
+@@ -73167,7 +73167,7 @@
+ 22	entretanto	entretanto	CCONJ	_	_	34	cc	O	_
+ 23	,	,	PUNCT	_	_	22	punct	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+-25	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	34	nsubj:pass	B=ESTRUTURA_DEPOSICIONAL	_
++25	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	34	nsubj:pass	O	_
+ 26	de	de	ADP	_	_	27	case	O	_
+ 27	gás	gás	NOUN	_	Gender=Masc|Number=Sing	25	nmod	B=TIPO_FLUIDO	_
+ 28	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	O	_
+@@ -80361,7 +80361,7 @@
+ 15-16	do	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++17	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+ 19	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 20	capturado	capturar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	O	_
+@@ -81342,7 +81342,7 @@
+ # text = O fluxo de CO2 será dividido em dois carbodutos que saem da PNA-1, um dos carbodutos segue para a plataforma FPSO P-43 no Campo de Barracuda e o outro segue até a plataforma FPSO P-35 no Campo de Marlim, este último distribui o CO2 em outras três plataformas, as plataformas semissubmersíveis P-19 e P-26 e a FPSOs P-37.
+ # sent_id = 161-20150810-MONOGRAFIA_0-406
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	B=ESTRUTURA_DEPOSICIONAL	_
++2	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	O	_
+@@ -82408,7 +82408,7 @@
+ 36			PUNCT	_	_	37	punct	O	_
+ 37	F	F	PROPN	_	Gender=Masc|Number=Sing	24	conj	O	_
+ 38	=	=	PUNCT	_	_	39	punct	O	_
+-39	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	24	conj	B=ESTRUTURA_DEPOSICIONAL	_
++39	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	24	conj	O	_
+ 40	de	de	ADP	_	_	41	case	O	_
+ 41	massa	massa	NOUN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 42	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	43	nsubj	O	_
+@@ -83400,7 +83400,7 @@
+ 10-11	pelo	_	_	_	_	_	_	_	_
+ 10	por	por	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	4	obl	B=ESTRUTURA_DEPOSICIONAL	_
++12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	4	obl	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 15	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	17	nsubj:pass	O	_
+@@ -86001,7 +86001,7 @@
+ 6-7	ao	_	_	_	_	_	_	_	_
+ 6	a	a	ADP	_	_	8	case	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+-8	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	B=ESTRUTURA_DEPOSICIONAL	_
++8	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+ 10	massa	massa	NOUN	_	Gender=Fem|Number=Sing	8	nmod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+@@ -86256,7 +86256,7 @@
+ 3	anteriormente	anteriormente	ADV	_	_	2	advmod	O	_
+ 4	,	,	PUNCT	_	_	2	punct	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++6	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+ 8	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	6	nmod	O	_
+ 9	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj:pass	O	_
+@@ -101967,7 +101967,7 @@
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	garantia	garantia	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
+ 21	de	de	ADP	_	_	22	case	O	_
+-22	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++22	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+ 24	incluindo	incluir	VERB	_	VerbForm=Ger	7	advcl	O	_
+ 25	formação	formação	NOUN	_	Gender=Fem|Number=Sing	24	obj	O	_
+@@ -108359,7 +108359,7 @@
+ 15	duas	dois	NUM	_	NumType=Card	16	nummod	O	_
+ 16	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	7	obl	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+-18	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++18	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+ 20	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	16	appos	O	_
+ 21	para	para	ADP	_	_	23	case	O	_
+@@ -108497,7 +108497,7 @@
+ 20	duto	duto	NOUN	_	Gender=Masc|Number=Sing	11	obl	O	_
+ 21	,	,	PUNCT	_	_	23	punct	O	_
+ 22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
+-23	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	11	obj	B=ESTRUTURA_DEPOSICIONAL	_
++23	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	11	obj	O	_
+ 24	de	de	ADP	_	_	25	case	O	_
+ 25	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	B=TIPO_FLUIDO	_
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+@@ -112428,7 +112428,7 @@
+ 17-18	deste	_	_	_	_	_	_	_	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	O	_
+-19	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	B=ESTRUTURA_DEPOSICIONAL	_
++19	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+ 21	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	19	nmod	B=TIPO_FLUIDO	_
+ 22	,	,	PUNCT	_	_	16	punct	O	_
+@@ -112460,7 +112460,7 @@
+ 9	controle	controle	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 10	sobre	sobre	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+-12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 13	através	através	ADV	_	_	16	case	O	MWEPOS=ADP
+ 14-15	do	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	13	fixed	O	_
+@@ -129970,7 +129970,7 @@
+ 50-51	ao	_	_	_	_	_	_	_	_
+ 50	a	a	ADP	_	_	52	case	O	_
+ 51	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	O	_
+-52	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	49	obl	B=ESTRUTURA_DEPOSICIONAL	_
++52	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	49	obl	O	_
+ 53	de	de	ADP	_	_	56	case	O	_
+ 54	somente	somente	ADV	_	_	56	advmod	O	_
+ 55	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	56	det	O	_
+@@ -130107,7 +130107,7 @@
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	repartida	repartida	NOUN	_	Gender=Fem|Number=Sing	10	obj	O	_
+ 13	com	com	ADP	_	_	14	case	O	_
+-14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	10	obl	B=ESTRUTURA_DEPOSICIONAL	_
++14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	10	obl	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	água	água	NOUN	_	Gender=Fem|Number=Sing	14	nmod	B=TIPO_FLUIDO	_
+ 17	apenas	apenas	ADV	_	_	31	advmod	O	_
+@@ -132962,7 +132962,7 @@
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++5	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=TIPO_FLUIDO	_
+ 8	mais	mais	DET	_	Gender=Fem|Number=Sing|PronType=Ind	9	det	O	_
+@@ -133032,7 +133032,7 @@
+ # text = O fluxo de entrada é desacelerado por três chicanas existentes no interior do separador, facilitando a separação das fases.
+ # sent_id = 77-20141209-TESEMSC_0-211
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+-2	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	B=ESTRUTURA_DEPOSICIONAL	_
++2	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	O	_
+@@ -133668,7 +133668,7 @@
+ 23-24	do	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+-25	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++25	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	O	_
+ 26	em	em	ADP	_	_	28	case	O	_
+ 27	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	28	det	O	_
+ 28	interior	interior	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
+@@ -150994,7 +150994,7 @@
+ 29-30	do	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+-31	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	0	root	B=ESTRUTURA_DEPOSICIONAL	_
++31	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+ 33	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	31	nmod	O	_
+ 34	descontado	descontar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	O	_
+@@ -151077,7 +151077,7 @@
+ 8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	série	série	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+-11	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++11	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 14	,	,	PUNCT	_	_	17	punct	O	_
+@@ -151103,7 +151103,7 @@
+ # text = Os fluxos de caixa são todos referidos à data zero, ou seja, de quanto os futuros pagamentos somados a um custo inicial estariam valendo atualmente.
+ # sent_id = 271-20150810-MONOGRAFIA_0-129
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	B=ESTRUTURA_DEPOSICIONAL	_
++2	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 5	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	O	_
+@@ -151160,7 +151160,7 @@
+ 7	FCt	FCt	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	O	_
+ 8	representa	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	O	_
+-10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	obj	B=ESTRUTURA_DEPOSICIONAL	_
++10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 13-14	no	_	_	_	_	_	_	_	_
+@@ -151288,7 +151288,7 @@
+ 18	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	obl	O	_
+ 19	,	,	PUNCT	_	_	18	punct	O	_
+ 20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	O	_
+-21	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	29	nsubj	B=ESTRUTURA_DEPOSICIONAL	_
++21	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	29	nsubj	O	_
+ 22	de	de	ADP	_	_	23	case	O	_
+ 23	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 24-25	do	_	_	_	_	_	_	_	_
+@@ -152160,7 +152160,7 @@
+ 4	,	,	PUNCT	_	_	7	punct	O	_
+ 5	com	com	ADP	_	_	7	case	O	_
+ 6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+-7	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++7	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	gás	gás	NOUN	_	Gender=Masc|Number=Sing	7	nmod	B=TIPO_FLUIDO	_
+ 10	de	de	ADP	_	_	12	case	O	_
+@@ -152480,7 +152480,7 @@
+ 7	por	por	ADP	_	_	8	case	O	_
+ 8	controladores	controlador	NOUN	_	Gender=Masc|Number=Plur	6	obl:agent	O	_
+ 9	de	de	ADP	_	_	10	case	O	_
+-10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++10	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	massa	massa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 13	,	,	PUNCT	_	_	6	punct	O	_
+@@ -152574,7 +152574,7 @@
+ 23	,	,	PUNCT	_	_	17	punct	O	_
+ 24	a	a	ADP	_	_	26	case	O	_
+ 25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+-26	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	obl	B=ESTRUTURA_DEPOSICIONAL	_
++26	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
+ 27	de	de	ADP	_	_	29	case	O	_
+ 28	500	500	NUM	_	NumType=Card	29	nummod	O	_
+ 29	mL	ml	NOUN	_	Gender=Masc|Number=Plur	26	nmod	O	_
+@@ -160771,7 +160771,7 @@
+ 6	a	a	ADP	_	_	9	case	O	MWEPOS=ADP
+ 7	partir	partir	VERB	_	VerbForm=Inf	6	fixed	O	_
+ 8	de	de	ADP	_	_	6	fixed	O	_
+-9	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	5	obl	B=ESTRUTURA_DEPOSICIONAL	_
++9	fluxos	fluxo	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	,	,	PUNCT	_	_	5	punct	O	_
+@@ -160809,7 +160809,7 @@
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	planilha	planilha	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+-4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+ 6	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+ 7	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -161110,7 +161110,7 @@
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++11	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 14	Horizonte	Horizonte	PROPN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+@@ -161181,7 +161181,7 @@
+ 10	esquematizou	esquematizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 11	se	se	PRON	_	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	10	expl:impers	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	10	obj	B=ESTRUTURA_DEPOSICIONAL	_
++13	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	10	obj	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 16-17	dos	_	_	_	_	_	_	_	_
+@@ -161303,7 +161303,7 @@
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+ 11	cálculos	cálculo	NOUN	_	Gender=Masc|Number=Plur	7	nmod	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+-13	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++13	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	caixa	caixa	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 16	,	,	PUNCT	_	_	18	punct	O	_
+@@ -166762,7 +166762,7 @@
+ 6	salina	salino	ADJ	_	Gender=Fem|Number=Sing	5	amod	O	_
+ 7	:	:	PUNCT	_	_	9	punct	O	_
+ 8			DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+-9	Fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	3	appos	B=ESTRUTURA_DEPOSICIONAL	_
++9	Fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	3	appos	O	_
+ 10	acima	acima	ADV	_	_	9	advmod	O	_
+ 11	ou	ou	CCONJ	_	_	15	cc	O	_
+ 12	abaixo	abaixo	ADV	_	_	9	advmod	O	_
+@@ -166774,7 +166774,7 @@
+ 17	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	15	nmod	B=TIPO_FLUIDO	_
+ 18	;	;	PUNCT	_	_	20	punct	O	_
+ 19			DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+-20	Fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	conj	B=ESTRUTURA_DEPOSICIONAL	_
++20	Fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	conj	O	_
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+@@ -166898,7 +166898,7 @@
+ 14	e	e	CCONJ	_	_	15	cc	O	_
+ 15	auxiliar	auxiliar	VERB	_	VerbForm=Inf	11	conj	O	_
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+-17	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	15	obj	B=ESTRUTURA_DEPOSICIONAL	_
++17	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	15	obj	O	_
+ 18-19	do	_	_	_	_	_	_	_	_
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+@@ -176403,7 +176403,7 @@
+ 24	como	como	ADP	_	_	25	case	O	_
+ 25	gás	gás	NOUN	_	Gender=Masc|Number=Sing	22	nmod:appos	B=TIPO_FLUIDO	_
+ 26	de	de	ADP	_	_	27	case	O	_
+-27	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++27	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	O	_
+ 28	.	.	PUNCT	_	_	1	punct	O	_
+ 
+ # text = Depois eram dados pulsos de quimissorção de NH3 a 175°C seguidos de TPD com temperatura inicial de 175 °C e final de 500 °C por também 30 min e taxa de 10 °C min-1.
+@@ -177404,7 +177404,7 @@
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	resfriada	resfriar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	13	acl	O	_
+ 17	sob	sob	ADP	_	_	18	case	O	_
+-18	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	obl	B=ESTRUTURA_DEPOSICIONAL	_
++18	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	120	120	NUM	_	NumType=Card	21	nummod	O	_
+ 21	m	m	NOUN	_	Gender=Masc|Number=Plur	18	nmod	O	_
+@@ -238065,7 +238065,7 @@
+ 13-14	ao	_	_	_	_	_	_	_	_
+ 13	a	a	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++15	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	obtida	obter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	O	_
+ 18	com	com	ADP	_	_	20	case	O	_
+@@ -248213,7 +248213,7 @@
+ 72	e	e	CCONJ	_	_	73	cc	O	_
+ 73	eficiência	eficiência	NOUN	_	Gender=Fem|Number=Sing	15	conj	O	_
+ 74	de	de	ADP	_	_	75	case	O	_
+-75	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	73	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++75	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	73	nmod	O	_
+ 76	(	(	PUNCT	_	_	77	punct	O	_
+ 77	EF	EF	PROPN	_	Gender=Masc|Number=Sing	73	appos	O	_
+ 78	)	)	PUNCT	_	_	77	punct	O	_
+@@ -248269,7 +248269,7 @@
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 14	de	de	ADP	_	_	15	case	O	_
+-15	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++15	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+ 16-17	do	_	_	_	_	_	_	_	_
+ 16	de	de	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+@@ -251814,7 +251814,7 @@
+ 1	Ao	ao	ADP	_	_	3	mark	O	_
+ 2	se	se	PRON	_	_	3	expl:impers	O	_
+ 3	observar	observar	VERB	_	VerbForm=Inf	23	advcl	O	_
+-4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	3	obj	B=ESTRUTURA_DEPOSICIONAL	_
++4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	3	obj	O	_
+ 5	estabilizado	estabilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	O	_
+ 6-7	do	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	8	case	O	_
+@@ -264582,7 +264582,7 @@
+ 25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	O	_
+ 26	características	característica	NOUN	_	Gender=Fem|Number=Plur	24	obj	O	_
+ 27	de	de	ADP	_	_	28	case	O	_
+-28	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++28	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	O	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	O	_
+ 31	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	28	nmod	B=TIPO_FLUIDO	_
+@@ -264638,7 +264638,7 @@
+ 10-11	deste	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	O	_
+-12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++12	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	O	_
+ 13	,	,	PUNCT	_	_	5	punct	O	_
+ 14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
+ 15	preciso	preciso	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+@@ -264674,7 +264674,7 @@
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++5	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 6	de	de	ADP	_	_	8	case	O	_
+ 7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	5	nmod	B=TIPO_FLUIDO	_
+@@ -264971,7 +264971,7 @@
+ 12-13	do	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+-14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++14	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+ 17	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	14	nmod	B=TIPO_FLUIDO	_
+@@ -265202,14 +265202,14 @@
+ 22-23	do	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	24	case	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++24	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+ 25	e	e	CCONJ	_	_	27	cc	O	_
+ 26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	O	_
+ 27	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	20	conj	O	_
+ 28-29	do	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+-30	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	27	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++30	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	27	nmod	O	_
+ 31	,	,	PUNCT	_	_	35	punct	O	_
+ 32	e	e	CCONJ	_	_	35	cc	O	_
+ 33	depois	depois	ADV	_	_	35	advmod	O	_
+@@ -265231,7 +265231,7 @@
+ 45-46	no	_	_	_	_	_	_	_	_
+ 45	em	em	ADP	_	_	47	case	O	_
+ 46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	O	_
+-47	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	41	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++47	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	41	nmod	O	_
+ 48	.	.	PUNCT	_	_	13	punct	O	_
+ 
+ # text = Os regimes de escoamentos viscosos são classificados em laminar ou turbulento, de acordo com a sua estrutura.
+@@ -265364,7 +265364,7 @@
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	O	_
+ 2	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+-4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++4	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 7	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=TIPO_FLUIDO	_
+@@ -265691,7 +265691,7 @@
+ 16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	O	_
+ 17	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	15	obj	O	_
+ 18	de	de	ADP	_	_	19	case	O	_
+-19	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++19	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+ 20	de	de	ADP	_	_	22	case	O	_
+ 21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	O	_
+ 22	líquido	líquido	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+@@ -279352,7 +279352,7 @@
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	28	obj	O	_
+ 31	de	de	ADP	_	_	32	case	O	_
+-32	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	B=ESTRUTURA_DEPOSICIONAL	_
++32	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	O	_
+ 33	de	de	ADP	_	_	34	case	O	_
+ 34	energia	energia	NOUN	_	Gender=Fem|Number=Sing	32	nmod	O	_
+ 35	e	e	CCONJ	_	_	37	cc	O	_
+@@ -279543,7 +279543,7 @@
+ 55-56	pelo	_	_	_	_	_	_	_	_
+ 55	por	por	ADP	_	_	57	case	O	_
+ 56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	O	_
+-57	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	54	obl:agent	B=ESTRUTURA_DEPOSICIONAL	_
++57	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	54	obl:agent	O	_
+ 58	de	de	ADP	_	_	59	case	O	_
+ 59	água	água	NOUN	_	Gender=Fem|Number=Sing	57	nmod	B=TIPO_FLUIDO	_
+ 60	,	,	PUNCT	_	_	61	punct	O	_
+@@ -280046,7 +280046,7 @@
+ 26-27	do	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	O	_
+-28	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	25	obl:arg	B=ESTRUTURA_DEPOSICIONAL	_
++28	fluxo	fluxo	NOUN	_	Gender=Masc|Number=Sing	25	obl:arg	O	_
+ 29-30	da	_	_	_	_	_	_	_	_
+ 29	de	de	ADP	_	_	31	case	O	_
+ 30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
