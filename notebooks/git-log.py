@@ -5,12 +5,12 @@ if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]) or not sys.argv[1].ends
     raise Exception("Commits file not found.")
 commits_file = sys.argv[1]
 
-folder_to_save_changelog = commits_file.rsplit("/", 1)[0]
+folder_to_save_changelog = os.path.dirname(os.path.abspath(commits_file))
 repo_name = "alvelvis/meu-mestrado"
 with open(commits_file) as f:
     commits = [x.strip() for x in f.read().splitlines() if x.strip() and not x.strip().startswith("#")]
 
-patch_folder_name = "patch_{}".format(os.path.basename(commits_file).rsplit(".", 1)[0])
+patch_folder_name = "patch_{}".format(os.path.splitext(os.path.basename(commits_file))[0])
 patches_folder = "{}/{}".format(
     folder_to_save_changelog, 
     patch_folder_name)
@@ -32,8 +32,8 @@ now_date = "{}_{}_{}_{}:{}:{}".format(
     now_date.hour,
     now_date.minute,
     now_date.second)
-changelog = "# {}\n\nLast update: {}".format(os.path.basename(commits_file).rsplit(".", 1)[0], now_date.replace("_", "-"))
-changelog_filename = os.path.basename(commits_file).rsplit(".", 1)[0] + ".md"
+changelog = "# {}\n\nLast update: {}".format(os.path.splitext(os.path.basename(commits_file))[0], now_date.replace("_", "-"))
+changelog_filename = os.path.splitext(os.path.basename(commits_file))[0] + ".md"
 
 months = {
     'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,

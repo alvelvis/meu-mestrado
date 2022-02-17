@@ -1,0 +1,390 @@
+commit 5291b9e67c39611458d4b96e360f683262c9baaf
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Feb 17 16:39:35 2022 -0300
+
+    Correções de LITOLOGIA e TIPO_FLUIDO
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index bf7159a..91e71bb 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -10512,10 +10512,10 @@
+ 17	dividem	dividir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
+ 18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	expl	O	_
+ 19	em	em	ADP	_	_	20	case	O	_
+-20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
++20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	17	obl	B=TIPO_FLUIDO	_
+ 21	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+-23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	conj	O	_
++23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	conj	B=TIPO_FLUIDO	_
+ 24	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
+@@ -10625,7 +10625,7 @@
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	O	_
+ 29	condição	condição	NOUN	_	Gender=Fem|Number=Sing	26	obl	O	_
+ 30	de	de	ADP	_	_	31	case	O	_
+-31	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	29	nmod	B=TIPO_FLUIDO	_
++31	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	29	nmod	O	_
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+ 33	conveniente	conveniente	ADJ	_	Gender=Fem|Number=Sing	29	amod	O	_
+ 34-35	ao	_	_	_	_	_	_	_	_
+@@ -43476,7 +43476,7 @@
+ 14	com	com	ADP	_	_	15	case	O	_
+ 15	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+-17	água	água	NOUN	_	Gender=Fem|Number=Sing	15	nmod	B=TIPO_FLUIDO	_
++17	água	água	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+ 18	ou	ou	CCONJ	_	_	19	cc	O	_
+ 19	regiões	região	NOUN	_	Gender=Fem|Number=Plur	15	conj	O	_
+ 20	glaciais	glacial	ADJ	_	Gender=Fem|Number=Plur	19	amod	B=SISTEMA_DEPOSICIONAL	_
+@@ -97945,7 +97945,7 @@
+ 23-24	dos	_	_	_	_	_	_	_	_
+ 23	de	de	ADP	_	_	25	case	O	_
+ 24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	O	_
+-25	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
++25	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	B=TIPO_FLUIDO	_
+ 26	(	(	PUNCT	_	_	27	punct	O	_
+ 27	ALVES	ALVES	PROPN	_	Gender=Masc|Number=Sing	4	parataxis	O	_
+ 28	et	et	PROPN	_	Number=Sing	27	flat:name	O	_
+@@ -98866,7 +98866,7 @@
+ 9	em	em	ADP	_	_	10	case	O	_
+ 10	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	8	obl	B=TIPO_FLUIDO	_
+ 11	com	com	ADP	_	_	12	case	O	_
+-12	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	8	obl	O	_
++12	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	8	obl	B=TIPO_FLUIDO	_
+ 13	.	.	PUNCT	_	_	2	punct	O	_
+ 
+ # text = Após a perfilagem e amostragem de fluidos, o poço pioneiro teve que ser interrompido para manutenção (docagem) da sonda de perfuração.
+@@ -100851,7 +100851,7 @@
+ 5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+-8	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
++8	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	B=TIPO_FLUIDO	_
+ 9	gasosos	gasoso	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+ 10	,	,	PUNCT	_	_	15	punct	O	_
+ 11	dentre	dentre	ADP	_	_	13	case	O	_
+@@ -101197,7 +101197,7 @@
+ 21-22	pelos	_	_	_	_	_	_	_	_
+ 21	por	por	ADP	_	_	23	case	O	_
+ 22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	O	_
+-23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	nmod	O	_
++23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	nmod	B=TIPO_FLUIDO	_
+ 24	mais	mais	ADV	_	_	25	advmod	O	_
+ 25	leves	leve	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
+ 26	principalmente	principalmente	ADV	_	_	27	advmod	O	_
+@@ -108663,7 +108663,7 @@
+ 26-27	dos	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	O	_
+-28	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	25	nmod	O	_
++28	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	25	nmod	B=TIPO_FLUIDO	_
+ 29	a	a	ADP	_	_	31	case	O	_
+ 30	longas	longo	ADJ	_	Gender=Fem|Number=Plur	31	amod	O	_
+ 31	distâncias	distância	NOUN	_	Gender=Fem|Number=Plur	28	nmod	O	_
+@@ -110488,7 +110488,7 @@
+ 31	em	em	ADP	_	_	32	case	O	_
+ 32	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	30	nmod	O	_
+ 33	de	de	ADP	_	_	34	case	O	_
+-34	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	32	nmod	B=TIPO_FLUIDO	_
++34	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	32	nmod	O	_
+ 35	como	como	ADV	_	_	37	cc	O	_
+ 36	em	em	ADP	_	_	37	case	O	_
+ 37	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	32	nmod	O	_
+@@ -116109,7 +116109,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-588
+ 1	Para	para	ADP	_	_	3	case	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+-3	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	8	obl	O	_
++3	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	8	obl	B=TIPO_FLUIDO	_
+ 4	hipotético	hipotético	ADJ	_	Gender=Masc|Number=Sing	3	amod	O	_
+ 5	C20+	C20+	PROPN	_	Gender=Masc|Number=Sing	3	nmod	O	_
+ 6	,	,	PUNCT	_	_	3	punct	O	_
+@@ -122067,7 +122067,7 @@
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	9	obl:agent	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+-14	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	nmod	O	_
++14	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	nmod	B=TIPO_FLUIDO	_
+ 15	e	e	CCONJ	_	_	16	cc	O	_
+ 16	água	água	NOUN	_	Gender=Fem|Number=Sing	14	conj	B=TIPO_FLUIDO	_
+ 17	,	,	PUNCT	_	_	9	punct	O	_
+@@ -127041,17 +127041,17 @@
+ 8	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	O	_
+ 9	complexa	complexo	ADJ	_	Gender=Fem|Number=Sing	8	amod	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+-11	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
++11	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	8	nmod	B=TIPO_FLUIDO	_
+ 12	composta	compor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	acl	O	_
+ 13-14	pelos	_	_	_	_	_	_	_	_
+ 13	por	por	ADP	_	_	15	case	O	_
+ 14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	O	_
+ 15	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+-17	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	15	nmod	O	_
++17	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	15	nmod	B=TIPO_FLUIDO	_
+ 18	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	O	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+-20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	15	conj	O	_
++20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	15	conj	B=TIPO_FLUIDO	_
+ 21	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	20	amod	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+ 23	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	15	conj	O	_
+@@ -127204,7 +127204,7 @@
+ # text = Os hidrocarbonetos saturados constituem o maior grupo, formado por alcanos normais (n-parafina), isoalcanos (isoparafinas) e cicloalcanos (naftenos).
+ # sent_id = 77-20141209-TESEMSC_0-31
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	O	_
++2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	B=TIPO_FLUIDO	_
+ 3	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
+ 4	constituem	constituir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+@@ -127296,7 +127296,7 @@
+ # text = Os Hidrocarbonetos aromáticos incluem aromáticos puros, moléculas cicloalcanoaromaticas (naftenoaromaticas) e geralmente compostos cíclicos sulfúricos.
+ # sent_id = 77-20141209-TESEMSC_0-34
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	Hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	O	_
++2	Hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	B=TIPO_FLUIDO	_
+ 3	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	incluem	incluir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	aromáticos	aromático	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
+@@ -127406,10 +127406,10 @@
+ 45	de	de	ADP	_	_	46	case	O	_
+ 46	componentes	componente	NOUN	_	Gender=Masc|Number=Plur	44	nmod	O	_
+ 47	:	:	PUNCT	_	_	48	punct	O	_
+-48	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	44	appos	O	_
++48	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	44	appos	B=TIPO_FLUIDO	_
+ 49	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	48	acl	O	_
+ 50	,	,	PUNCT	_	_	51	punct	O	_
+-51	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	48	conj	O	_
++51	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	48	conj	B=TIPO_FLUIDO	_
+ 52	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	51	amod	O	_
+ 53	,	,	PUNCT	_	_	54	punct	O	_
+ 54	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	48	conj	O	_
+@@ -127426,7 +127426,7 @@
+ 5	cada	cada	DET	_	Gender=Masc|Number=Sing|PronType=Tot	6	det	O	_
+ 6	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 7	de	de	ADP	_	_	8	case	O	_
+-8	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
++8	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	B=TIPO_FLUIDO	_
+ 9	presente	presente	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+ 10	varia	variar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 11	muito	muito	ADV	_	_	10	advmod	O	_
+@@ -127665,7 +127665,7 @@
+ 71	50	50	NUM	_	NumType=Card	72	nummod	O	_
+ 72	%	%	SYM	_	_	68	obj	O	_
+ 73	de	de	ADP	_	_	74	case	O	_
+-74	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	72	nmod	O	_
++74	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	72	nmod	B=TIPO_FLUIDO	_
+ 75	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	74	amod	O	_
+ 76	;	;	PUNCT	_	_	81	punct	O	_
+ 77	os	o	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	17	conj	O	_
+@@ -127858,7 +127858,7 @@
+ 16	voláteis	volátel	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+ 17	como	como	ADP	_	_	19	case	O	_
+ 18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	O	_
+-19	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
++19	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	16	obl	B=TIPO_FLUIDO	_
+ 20-21	do	_	_	_	_	_	_	_	_
+ 20	de	de	ADP	_	_	23	case	O	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+@@ -128051,7 +128051,7 @@
+ 8	de	de	ADP	_	_	9	case	O	_
+ 9	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
+ 10	e	e	CCONJ	_	_	11	cc	O	_
+-11	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	9	conj	O	_
++11	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	9	conj	B=TIPO_FLUIDO	_
+ 12	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+ 14	asfaltenos	asfalteno	NOUN	_	Gender=Masc|Number=Plur	17	nsubj:pass	O	_
+@@ -128326,7 +128326,7 @@
+ 11	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	O	_
+ 12	constituídos	constituir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+-14	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	O	_
++14	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	B=TIPO_FLUIDO	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	14	conj	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+@@ -128369,7 +128369,7 @@
+ 3	pesados	pesado	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	contêm	conter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 5	menos	pouco	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	O	_
+-6	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	obj	O	_
++6	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	obj	B=TIPO_FLUIDO	_
+ 7	,	,	PUNCT	_	_	4	punct	O	_
+ 8	especialmente	especialmente	ADV	_	_	10	advmod	O	_
+ 9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	O	_
+@@ -128401,7 +128401,7 @@
+ # text = Os hidrocarbonetos saturados geralmente somam menos do que 25% nos óleos pesados, com um valor médio de 16%, comparado a 57% nos óleos normais.
+ # sent_id = 77-20141209-TESEMSC_0-71
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	O	_
++2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	B=TIPO_FLUIDO	_
+ 3	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
+ 4	geralmente	geralmente	ADV	_	_	5	advmod	O	_
+ 5	somam	somar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+@@ -128440,7 +128440,7 @@
+ # text = Os hidrocarbonetos aromáticos e derivados de benzotiofenos freqüentemente representam de 25 – 35% da composição dos óleos pesados, com um valor médio de 30%, sendo este valor comparável ao valor médio de 29% existente nos óleos normais.
+ # sent_id = 77-20141209-TESEMSC_0-72
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	O	_
++2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	B=TIPO_FLUIDO	_
+ 3	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	e	e	CCONJ	_	_	5	cc	O	_
+ 5	derivados	derivar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	conj	O	_
+@@ -132725,7 +132725,7 @@
+ 30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	O	_
+ 31	linha	linha	NOUN	_	Gender=Fem|Number=Sing	22	conj	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+-33	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	31	nmod	B=TIPO_FLUIDO	_
++33	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	31	nmod	O	_
+ 34	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	36	nsubj	O	_
+ 35	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	36	expl	O	_
+ 36	unem	unir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	O	_
+@@ -134093,7 +134093,7 @@
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	linha	linha	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+-18	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=TIPO_FLUIDO	_
++18	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 19	até	até	ADP	_	_	26	mark	O	_
+ 20	que	que	SCONJ	_	_	26	mark	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -134250,7 +134250,7 @@
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	linha	linha	NOUN	_	Gender=Fem|Number=Sing	2	obj	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+-6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=TIPO_FLUIDO	_
++6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	válvula	válvula	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
+ 9	3	3	NUM	_	NumType=Card	8	nummod	O	_
+@@ -134826,7 +134826,7 @@
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	linha	linha	NOUN	_	Gender=Fem|Number=Sing	14	obj	O	_
+ 17	de	de	ADP	_	_	18	case	O	_
+-18	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=TIPO_FLUIDO	_
++18	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 19	até	até	ADP	_	_	26	mark	O	_
+ 20	que	que	SCONJ	_	_	26	mark	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+@@ -134983,7 +134983,7 @@
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+ 4	linha	linha	NOUN	_	Gender=Fem|Number=Sing	2	obj	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+-6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	B=TIPO_FLUIDO	_
++6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	válvula	válvula	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	O	_
+ 9	3	3	NUM	_	NumType=Card	8	nummod	O	_
+@@ -143746,7 +143746,7 @@
+ 12	constituído	constituir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	O	_
+ 13	basicamente	basicamente	ADV	_	_	12	advmod	O	_
+ 14	por	por	ADP	_	_	15	case	O	_
+-15	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	O	_
++15	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	B=TIPO_FLUIDO	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	apresentando	apresentar	VERB	_	VerbForm=Ger	12	advcl	O	_
+ 18	também	também	ADV	_	_	17	advmod	O	_
+@@ -148801,7 +148801,7 @@
+ 16	nomenclatura	nomenclatura	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
+ 17	de	de	ADP	_	_	19	case	O	_
+ 18	seu	seu	DET	_	Gender=Masc|Number=Sing|PronType=Prs	19	det	O	_
+-19	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	16	nmod	O	_
++19	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	16	nmod	B=TIPO_FLUIDO	_
+ 20	,	,	PUNCT	_	_	24	punct	O	_
+ 21-22	pelo	_	_	_	_	_	_	_	_
+ 21	por	por	ADP	_	_	24	case	O	_
+@@ -165570,7 +165570,7 @@
+ 16	compostos	composto	NOUN	_	Gender=Masc|Number=Plur	9	obl	O	_
+ 17	orgânicos	orgânico	ADJ	_	Gender=Masc|Number=Plur	16	amod	O	_
+ 18	como	como	ADP	_	_	19	case	O	_
+-19	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	O	_
++19	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	16	nmod:appos	B=TIPO_FLUIDO	_
+ 20	cíclicos	cíclico	ADJ	_	Gender=Masc|Number=Plur	19	amod	O	_
+ 21	,	,	PUNCT	_	_	22	punct	O	_
+ 22	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	20	conj	O	_
+@@ -165738,7 +165738,7 @@
+ 13	químicos	químico	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 14	orgânicos	orgânico	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 15	(	(	PUNCT	_	_	16	punct	O	_
+-16	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	appos	O	_
++16	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	12	appos	B=TIPO_FLUIDO	_
+ 17	)	)	PUNCT	_	_	16	punct	O	_
+ 18	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -167255,7 +167255,7 @@
+ 54	como	como	ADP	_	_	55	case	O	_
+ 55	gases	gase	NOUN	_	Gender=Masc|Number=Plur	49	nmod:appos	O	_
+ 56	de	de	ADP	_	_	57	case	O	_
+-57	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	55	nmod	O	_
++57	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	55	nmod	B=TIPO_FLUIDO	_
+ 58	leves	leve	ADJ	_	Gender=Masc|Number=Plur	57	amod	O	_
+ 59	,	,	PUNCT	_	_	60	punct	O	_
+ 60	CO2	CO2	PROPN	_	Gender=Masc|Number=Sing	55	conj	O	_
+@@ -171213,7 +171213,7 @@
+ # text = Os hidrocarbonetos aromáticos estão presentes nas diversas frações do petróleo e, normalmente, são emitidos pelos motores juntamente com os produtos da combustão.
+ # sent_id = 25-20150123-MONOGRAFIA_0-37
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	O	_
+-2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	O	_
++2	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	B=TIPO_FLUIDO	_
+ 3	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	O	_
+ 5	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	0	root	O	_
+@@ -171296,7 +171296,7 @@
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+ 22	hidrogenação	hidrogenação	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+-24	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
++24	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	B=TIPO_FLUIDO	_
+ 25	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
+ 26	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -171596,7 +171596,7 @@
+ 21	para	para	ADP	_	_	22	case	O	_
+ 22	hidrogenação	hidrogenação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
+ 23	de	de	ADP	_	_	24	case	O	_
+-24	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	O	_
++24	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	22	nmod	B=TIPO_FLUIDO	_
+ 25	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	24	amod	O	_
+ 26	,	,	PUNCT	_	_	27	punct	O	_
+ 27	usando	usar	VERB	_	VerbForm=Ger	10	advcl	O	_
+@@ -172181,7 +172181,7 @@
+ 50	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	47	nmod	O	_
+ 51	contendo	conter	VERB	_	VerbForm=Ger	47	acl	O	_
+ 52	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	O	_
+-53	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	51	obj	O	_
++53	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	51	obj	B=TIPO_FLUIDO	_
+ 54	(	(	PUNCT	_	_	55	punct	O	_
+ 55	método	método	NOUN	_	Gender=Masc|Number=Sing	53	appos	O	_
+ 56	descrito	descrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	55	acl	O	_
+@@ -172217,7 +172217,7 @@
+ 20	de	de	ADP	_	_	18	fixed	O	_
+ 21	apenas	apenas	ADV	_	_	23	advmod	O	_
+ 22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	27	conj	O	_
++23	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	27	conj	B=TIPO_FLUIDO	_
+ 24	,	,	PUNCT	_	_	18	punct	O	_
+ 25	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	26	aux:pass	O	_
+ 26	usadas	usar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	6	conj	O	_
+@@ -262709,7 +262709,7 @@
+ 48	com	com	ADP	_	_	49	case	O	_
+ 49	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	47	nmod	O	_
+ 50	de	de	ADP	_	_	51	case	O	_
+-51	água	água	NOUN	_	Gender=Fem|Number=Sing	49	nmod	B=TIPO_FLUIDO	_
++51	água	água	NOUN	_	Gender=Fem|Number=Sing	49	nmod	O	_
+ 52	ou	ou	CCONJ	_	_	53	cc	O	_
+ 53	regiões	região	NOUN	_	Gender=Fem|Number=Plur	49	conj	O	_
+ 54	glaciais	glacial	ADJ	_	Gender=Fem|Number=Plur	53	amod	B=SISTEMA_DEPOSICIONAL	_
+@@ -277188,7 +277188,7 @@
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+ 16	constituintes	constituinte	NOUN	_	Gender=Masc|Number=Plur	13	nmod	O	_
+ 17	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	O	_
+-18	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	advcl	O	_
++18	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	4	advcl	B=TIPO_FLUIDO	_
+ 19	,	,	PUNCT	_	_	20	punct	O	_
+ 20	ou	ou	CCONJ	_	_	23	cc	O	_
+ 21	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	fixed	O	_

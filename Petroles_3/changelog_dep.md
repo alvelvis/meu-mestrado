@@ -1,6 +1,6 @@
 # changelog_dep
 
-Last update: 2022-1-7-1:48:46
+Last update: 2022-2-17-17:17:31
 
 ## lemma 'diferentes' is not correct
 
@@ -2626,4 +2626,46 @@ os verbos viver|ocorrer|crescer|entrar não devem ter argumento
  8	próximo	próximo	ADV	_	_	7	advmod	O	_
  9-10	à	_	_	_	_	_	_	_	_
  9	a	a	ADP	_	_	11	case	O	_
+```
+
+## correções derivadas de aval. intrínseca
+
+* Author: Elvis de Souza <elvis.desouza99@gmail.com>
+* Date:   Thu Feb 17 16:33:29 2022 -0300
+* Lines changed: 27
+* Commit: [101fd25203c422b8cbbfb43c74aa6c0342bdb0e3](https://github.com/alvelvis/meu-mestrado/commit/101fd25203c422b8cbbfb43c74aa6c0342bdb0e3)
+* Patch file: [2022_2_17_16-33-29-101fd25203c422b8cbbfb43c74aa6c0342bdb0e3.patch](patch_changelog_dep/2022_2_17_16-33-29-101fd25203c422b8cbbfb43c74aa6c0342bdb0e3.patch)
+
+correções derivadas de aval. intrínseca
+
+```diff
+ 6-7	nos	_	_	_	_	_	_	_	_
+ 6	em	em	ADP	_	_	8	case	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	elementos	elemento	NOUN	_	Gender=Masc|Number=Plur	3	conj	O	_
++8	elementos	elemento	NOUN	_	Gender=Masc|Number=Plur	4	conj	O	_
+ 9-10	do	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+```
+
+## Revisão geral de nmod:appos e do lema “como” (adp, adv...)
+
+* Tatiana Cavalcanti
+* Date:   Thu Feb 17 16:36:12 2022 -0300
+* Lines changed: 188
+* Commit: [5862b9db06821a6a55570196c054fa4a718b9045](https://github.com/alvelvis/meu-mestrado/commit/5862b9db06821a6a55570196c054fa4a718b9045)
+* Patch file: [2022_2_17_16-36-12-5862b9db06821a6a55570196c054fa4a718b9045.patch](patch_changelog_dep/2022_2_17_16-36-12-5862b9db06821a6a55570196c054fa4a718b9045.patch)
+
+Revisão geral de nmod:appos e do lema “como” (adp, adv...)
+
+```diff
+ 11	geomorfológicas	geomorfológico	ADJ	_	Gender=Fem|Number=Plur	9	conj	O	_
+ 12	tais	tal	DET	_	Gender=Fem|Number=Plur|PronType=Dem	14	case	O	_
+ 13	como	como	ADP	_	_	12	fixed	O	_
+-14	vales	val	NOUN	_	Gender=Masc|Number=Plur	8	nmod:appos	O	_
++14	vales	vale	NOUN	_	Gender=Masc|Number=Plur	8	nmod:appos	O	_
+ 15	estruturais	estrutural	ADJ	_	Gender=Masc|Number=Plur	14	amod	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+ 17	anomalias	anomalia	NOUN	_	Gender=Fem|Number=Plur	14	conj	O	_
 ```

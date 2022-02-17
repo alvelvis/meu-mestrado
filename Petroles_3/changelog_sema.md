@@ -1,6 +1,6 @@
 # changelog_sema
 
-Last update: 2022-1-7-1:50:18
+Last update: 2022-2-17-17:40:50
 
 ## Regras para B=CAMPO
 
@@ -615,4 +615,29 @@ Modificações relacionadas a “ambiente”, “deposicional”, “sistemas (d
  24	distintos	distinto	ADJ	_	Gender=Masc|Number=Plur	22	amod	O	_
  25	,	,	PUNCT	_	_	26	punct	O	_
  26-27	tratando-se	_	_	_	_	_	_	_	_
+```
+
+## Correções de LITOLOGIA e TIPO_FLUIDO
+
+* Maria Clara Castro
+* Date:   Thu Feb 17 16:39:35 2022 -0300
+* Lines changed: 44
+* Commit: [5291b9e67c39611458d4b96e360f683262c9baaf](https://github.com/alvelvis/meu-mestrado/commit/5291b9e67c39611458d4b96e360f683262c9baaf)
+* Patch file: [2022_2_17_16-39-35-5291b9e67c39611458d4b96e360f683262c9baaf.patch](patch_changelog_sema/2022_2_17_16-39-35-5291b9e67c39611458d4b96e360f683262c9baaf.patch)
+
+Correções de LITOLOGIA e TIPO_FLUIDO
+
+```diff
+ 17	dividem	dividir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	O	_
+ 18	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	expl	O	_
+ 19	em	em	ADP	_	_	20	case	O	_
+-20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	17	obl	O	_
++20	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	17	obl	B=TIPO_FLUIDO	_
+ 21	saturados	saturar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	O	_
+ 22	,	,	PUNCT	_	_	23	punct	O	_
+-23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	conj	O	_
++23	hidrocarbonetos	hidrocarboneto	NOUN	_	Gender=Masc|Number=Plur	20	conj	B=TIPO_FLUIDO	_
+ 24	aromáticos	aromático	ADJ	_	Gender=Masc|Number=Plur	23	amod	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	resinas	resina	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
 ```
