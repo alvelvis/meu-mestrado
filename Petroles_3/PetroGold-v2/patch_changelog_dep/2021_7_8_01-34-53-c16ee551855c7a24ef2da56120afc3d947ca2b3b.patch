@@ -1,0 +1,618 @@
+commit c16ee551855c7a24ef2da56120afc3d947ca2b3b
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Jul 8 01:34:53 2021 -0300
+
+    quanto_a
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index b6ea396..884743a 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -17080,7 +17080,7 @@
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+ 11	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	B=QUÍMICA	_
+ 12	asfáltica	asfáltico	ADJ	_	Gender=Fem|Number=Sing	11	amod	B=LITOLOGIA	_
+-13	quanto	quanto	ADP	_	_	15	case	O	MWE=quanto_a|MWEPOS=ADP
++13	quanto	quanto	ADV	_	_	15	case	O	MWE=quanto_a|MWEPOS=ADP
+ 14	a	a	ADP	_	_	13	fixed	O	_
+ 15	sedimentação	sedimentação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+ 16	,	,	PUNCT	_	_	17	punct	O	_
+@@ -17090,7 +17090,7 @@
+ 20	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	B=QUÍMICA	_
+ 21	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	O	_
+ 22	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	21	obj	O	_
+-23	quanto	quanto	ADP	_	_	25	case	O	MWE=quanto_a|MWEPOS=ADP
++23	quanto	quanto	ADV	_	_	25	case	O	MWEPOS=ADP
+ 24	a	a	ADP	_	_	23	fixed	O	_
+ 25	estocagem	estocagem	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
+ 26	(	(	PUNCT	_	_	28	punct	O	_
+@@ -17682,9 +17682,9 @@
+ 5	para	para	SCONJ	_	_	6	mark	O	_
+ 6	fornecer	fornecer	VERB	_	VerbForm=Inf	4	advcl	O	_
+ 7	indicações	indicação	NOUN	_	Gender=Fem|Number=Plur	6	obj	O	_
+-8	quanto	quanto	ADV	_	_	10	advmod	O	_
+-9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+-10	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	O	_
++8	quanto	quanto	ADV	_	_	10	case	O	MWEPOS=ADP
++9	a	a	ADP	_	_	8	fixed	O	_
++10	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+ 11	e	e	CCONJ	_	_	12	cc	O	_
+ 12	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	10	conj	O	_
+ 13-14	da	_	_	_	_	_	_	_	_
+@@ -23674,15 +23674,15 @@
+ 13	,	,	PUNCT	_	_	6	punct	O	_
+ 14	com	com	ADP	_	_	15	case	O	_
+ 15	base	base	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
+-16	tanto	tanto	ADV	_	_	15	advmod	O	_
++16	tanto	tanto	ADV	_	_	18	advmod	O	_
+ 17	em	em	ADP	_	_	18	case	O	_
+ 18	diferenças	diferença	NOUN	_	Gender=Fem|Number=Plur	15	nmod	O	_
+ 19	litológicas	litológico	ADJ	_	Gender=Fem|Number=Plur	18	amod	B=LITOLOGIA	_
+-20	quanto	quanto	ADV	_	_	23	case	O	_
++20	quanto	quanto	CCONJ	_	_	23	cc	O	_
+ 21-22	ao	_	_	_	_	_	_	_	_
+-21	a	a	ADP	_	_	20	fixed	O	_
++21	a	a	ADP	_	_	23	case	O	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	O	_
+-23	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
++23	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	18	conj	O	_
+ 24	paleontológico	paleontológico	ADJ	_	Gender=Masc|Number=Sing	23	amod	O	_
+ 25	.	.	PUNCT	_	_	6	punct	O	_
+ 26	.	.	PUNCT	_	_	6	punct	O	_
+@@ -24278,9 +24278,9 @@
+ 6	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	4	fixed	O	_
+ 7	,	,	PUNCT	_	_	4	punct	O	_
+ 8	divergem	divergir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-9	quanto	quanto	ADV	_	_	8	advmod	O	_
++9	quanto	quanto	ADV	_	_	12	case	O	MWEPOS=ADP
+ 10-11	à	_	_	_	_	_	_	_	_
+-10	a	a	ADP	_	_	12	case	O	_
++10	a	a	ADP	_	_	9	fixed	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	8	obj	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+@@ -24289,9 +24289,9 @@
+ 15	paleoambiente	paleoambiente	ADV	_	_	16	advmod	O	_
+ 16	deposicional	deposicional	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 17	e	e	CCONJ	_	_	21	cc	O	_
+-18	quanto	quanto	ADV	_	_	21	advmod	O	_
++18	quanto	quanto	ADV	_	_	21	case	O	MWEPOS=ADP
+ 19-20	ao	_	_	_	_	_	_	_	_
+-19	a	a	ADP	_	_	21	case	O	_
++19	a	a	ADP	_	_	18	fixed	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	12	conj	O	_
+ 22-23	das	_	_	_	_	_	_	_	_
+@@ -24958,9 +24958,9 @@
+ 20	não	não	ADV	_	Polarity=Neg	21	advmod	O	_
+ 21	deixa	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 22	dúvidas	dúvida	NOUN	_	Gender=Fem|Number=Plur	21	obj	O	_
+-23	quanto	quanto	ADV	_	_	22	advmod	O	_
++23	quanto	quanto	ADV	_	_	26	case	O	MWEPOS=ADP
+ 24-25	à	_	_	_	_	_	_	_	_
+-24	a	a	ADP	_	_	26	case	O	_
++24	a	a	ADP	_	_	23	fixed	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+ 26	pertinência	pertinência	NOUN	_	Gender=Fem|Number=Sing	21	obl	O	_
+ 27-28	dos	_	_	_	_	_	_	_	_
+@@ -27571,11 +27571,11 @@
+ 3	presentes	presente	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	expl	O	_
+ 5	diferem	diferir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	quanto	quanto	ADV	_	_	5	advmod	O	_
++6	quanto	quanto	ADV	_	_	9	case	O	MWEPOS=ADP
+ 7-8	à	_	_	_	_	_	_	_	_
+-7	a	a	ADP	_	_	9	case	O	_
++7	a	a	ADP	_	_	6	fixed	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	continuidade	continuidade	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
++9	continuidade	continuidade	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 10-11	da	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -27811,9 +27811,9 @@
+ 7	possibilitaram	possibilitar	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	reconhecimento	reconhecimento	NOUN	_	Gender=Masc|Number=Sing	7	obj	O	_
+-10	quanto	quanto	ADV	_	_	13	case	O	_
++10	quanto	quanto	ADV	_	_	13	case	O	MWEPOS=ADP
+ 11-12	ao	_	_	_	_	_	_	_	_
+-11	a	a	ADP	_	_	13	case	O	_
++11	a	a	ADP	_	_	10	fixed	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+ 13	gênero	gênero	NOUN	_	Gender=Masc|Number=Sing	7	obl	O	_
+ 14	e/ou	e/ou	ADP	_	_	15	case	O	_
+@@ -31348,9 +31348,9 @@
+ 3	já	já	ADV	_	_	4	advmod	O	_
+ 4	publicados	publicar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	O	_
+ 5	divergem	divergir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-6	quanto	quanto	ADV	_	_	5	advmod	O	_
++6	quanto	quanto	ADV	_	_	9	case	O	MWEPOS=ADP
+ 7-8	à	_	_	_	_	_	_	_	_
+-7	a	a	ADP	_	_	9	case	O	_
++7	a	a	ADP	_	_	6	fixed	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+ 9	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	5	obj	O	_
+ 10	paleoambiental	paleoambiental	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+@@ -31362,8 +31362,8 @@
+ 15	,	,	PUNCT	_	_	20	punct	O	_
+ 16	bem	bem	ADP	_	_	20	case	O	_
+ 17	como	como	ADV	_	_	16	fixed	O	_
+-18	quanto	quanto	ADV	_	_	20	advmod	O	_
+-19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
++18	quanto	quanto	ADV	_	_	20	case	O	MWEPOS=ADP
++19	a	a	ADP	_	_	18	fixed	O	_
+ 20	delimitação	delimitação	NOUN	_	Gender=Fem|Number=Sing	9	conj	O	_
+ 21-22	da	_	_	_	_	_	_	_	_
+ 21	de	de	ADP	_	_	23	case	O	_
+@@ -77207,7 +77207,7 @@
+ 12	paleoventos	paleovento	NOUN	_	Gender=Masc|Number=Plur	9	nmod	O	_
+ 13	,	,	PUNCT	_	_	14	punct	O	_
+ 14	informações	informação	NOUN	_	Gender=Fem|Number=Plur	4	obj	O	_
+-15	quanto	quanto	ADP	_	_	18	case	O	MWE=quanto_a|MWEPOS=ADP
++15	quanto	quanto	ADP	_	_	18	case	O	MWEPOS=ADP
+ 16-17	ao	_	_	_	_	_	_	_	_
+ 16	a	a	ADP	_	_	15	fixed	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+@@ -108669,11 +108669,11 @@
+ 3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	O	_
+ 4	principais	principal	ADJ	_	Gender=Fem|Number=Plur	5	amod	O	_
+ 5	dificuldades	dificuldade	NOUN	_	Gender=Fem|Number=Plur	1	nmod	O	_
+-6	quanto	quanto	ADV	_	_	1	advmod	O	_
++6	quanto	quanto	ADV	_	_	9	case	O	MWEPOS=ADP
+ 7-8	à	_	_	_	_	_	_	_	_
+-7	a	a	ADP	_	_	9	case	O	_
++7	a	a	ADP	_	_	6	fixed	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+-9	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	6	obl	O	_
++9	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+ 10-11	do	_	_	_	_	_	_	_	_
+ 10	de	de	ADP	_	_	12	case	O	_
+ 11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	O	_
+@@ -112575,7 +112575,7 @@
+ # text = Já quanto ao óleo original in situ (OOIP) para o Entorno de Júpiter estima-se que varia de 1,21 Bbbl (baixa estimativa) a 2,57 Bbbl (alta estimativa), sendo a melhor estimativa de 1,83 bbl..
+ # sent_id = 334-20150521-MONOGRAFIA_0-103
+ 1	Já	já	ADV	_	_	17	advmod	O	_
+-2	quanto	quanto	ADP	_	_	5	case	O	MWE=quanto_a|MWEPOS=ADP
++2	quanto	quanto	ADV	_	_	5	case	O	MWEPOS=ADP
+ 3-4	ao	_	_	_	_	_	_	_	_
+ 3	a	a	ADP	_	_	2	fixed	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -113501,7 +113501,7 @@
+ 
+ # text = Quanto ao custo da construção dos novos dutos propostos, estima-se que sejam compensados tanto pelo aumento da produção de óleo (dada a área e peso liberados na FPSO) além de se substituir uma alternativa modular de processamento (em FPSO) por uma central de processamento (UPGN), que possibilitaria ganhos de escala..
+ # sent_id = 334-20150521-MONOGRAFIA_0-122
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	ao	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+@@ -113959,8 +113959,8 @@
+ # text = Já quanto a sua composição, esta é muito relativa, na grande maioria é composta em grande parte pelos hidrocarbonetos mais leves principalmente metano, etano e propano..
+ # sent_id = 334-20150521-MONOGRAFIA_0-136
+ 1	Já	já	ADV	_	_	10	advmod	O	_
+-2	quanto	quanto	ADV	_	_	5	advmod	O	_
+-3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
++2	quanto	quanto	ADV	_	_	5	case	O	MWEPOS=ADP
++3	a	a	ADP	_	_	2	fixed	O	_
+ 4	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	5	det	O	_
+ 5	composição	composição	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 6	,	,	PUNCT	_	_	5	punct	O	_
+@@ -114106,8 +114106,8 @@
+ 
+ # text = Quanto a produção nacional de gás natural, esta atingiu 82,9 MMm3/d em abril de 2014..
+ # sent_id = 334-20150521-MONOGRAFIA_0-140
+-1	Quanto	quanto	ADV	_	_	3	case	O	_
+-2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
++1	Quanto	quanto	ADV	_	_	3	case	O	MWEPOS=ADP
++2	a	a	ADP	_	_	1	fixed	O	_
+ 3	produção	produção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 4	nacional	nacional	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+@@ -114302,7 +114302,7 @@
+ 
+ # text = Quanto à distribuição da produção de gás por estado, o Rio de Janeiro é o maior responsável pela produção nacional de gás natural, com 33,2% da produção total (Figura 13)..
+ # sent_id = 334-20150521-MONOGRAFIA_0-147
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -114975,7 +114975,7 @@
+ 28	citar	citar	VERB	_	VerbForm=Inf	27	xcomp	O	_
+ 29	:	:	PUNCT	_	_	34	punct	O	_
+ 30	•	•	PUNCT	_	_	34	punct	O	_
+-31	Quanto	quanto	ADV	_	_	34	case	O	_
++31	Quanto	quanto	ADV	_	_	34	case	O	MWEPOS=ADP
+ 32-33	ao	_	_	_	_	_	_	_	_
+ 32	a	a	ADP	_	_	31	fixed	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
+@@ -116927,7 +116927,7 @@
+ 19	atender	atender	VERB	_	VerbForm=Inf	18	xcomp	O	_
+ 20	valores	valor	NOUN	_	Gender=Masc|Number=Plur	19	obj	O	_
+ 21	específicos	específico	ADJ	_	Gender=Masc|Number=Plur	20	amod	O	_
+-22	quanto	quanto	ADV	_	_	25	case	O	_
++22	quanto	quanto	ADV	_	_	25	case	O	MWEPOS=ADP
+ 23-24	ao	_	_	_	_	_	_	_	_
+ 23	a	a	ADP	_	_	22	fixed	O	_
+ 24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	O	_
+@@ -116961,9 +116961,9 @@
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+ 18	570	570	NUM	_	NumType=Card	16	conj	O	_
+ 19	mg/L	mg/L	NOUN	_	Gender=Masc|Number=Plur	11	conj	O	_
+-20	quanto	quanto	ADV	_	_	23	case	O	_
++20	quanto	quanto	ADV	_	_	23	case	O	MWEPOS=ADP
+ 21-22	à	_	_	_	_	_	_	_	_
+-21	a	a	ADP	_	_	23	case	O	_
++21	a	a	ADP	_	_	20	fixed	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	salinidade	salinidade	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 24	.	.	PUNCT	_	_	11	punct	O	_
+@@ -117709,7 +117709,7 @@
+ # text = Já quanto à estrutura de suporte, as plataformas podem ser fixas (jacket), flutuantes (floating) ou autoelevatorias (jack-up)..
+ # sent_id = 334-20150521-MONOGRAFIA_0-237
+ 1	Já	já	ADV	_	_	11	advmod	O	_
+-2	quanto	quanto	ADP	_	_	5	case	O	MWE=quanto_a|MWEPOS=ADP
++2	quanto	quanto	ADV	_	_	5	case	O	MWEPOS=ADP
+ 3-4	à	_	_	_	_	_	_	_	_
+ 3	a	a	ADP	_	_	2	fixed	O	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	O	_
+@@ -118600,9 +118600,9 @@
+ 68	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	conj	O	_
+ 69	certa	certo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	70	det	O	_
+ 70	flexibilidade	flexibilidade	NOUN	_	Gender=Fem|Number=Sing	68	obj	O	_
+-71	quanto	quanto	ADV	_	_	74	case	O	_
++71	quanto	quanto	ADV	_	_	74	case	O	MWEPOS=ADP
+ 72-73	à	_	_	_	_	_	_	_	_
+-72	a	a	ADP	_	_	74	case	O	_
++72	a	a	ADP	_	_	71	fixed	O	_
+ 73	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	74	det	O	_
+ 74	composição	composição	NOUN	_	Gender=Fem|Number=Sing	68	obl	O	_
+ 75-76	do	_	_	_	_	_	_	_	_
+@@ -123193,7 +123193,7 @@
+ 
+ # text = Quanto à reinjeção de CO2 no Brasil, foi lançado em 2009 o programa da Petrobras Pró-CO2 com o objetivo do desenvolvimento de pesquisas para o Pré-sal..
+ # sent_id = 334-20150521-MONOGRAFIA_0-371
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -129249,7 +129249,7 @@
+ 
+ # text = Quanto à aplicação destes métodos não há cronologia, existindo casos em que a recuperação terciária pode ocorrer antes da primária e secundária (GREEN e WILLHITE, 1998)..
+ # sent_id = 334-20150521-MONOGRAFIA_0-543
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -129598,7 +129598,7 @@
+ 2	pré-sal	pré-sal	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	O	_
+ 3	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	vantagens	vantagem	NOUN	_	Gender=Fem|Number=Plur	3	obj	O	_
+-5	quanto	quanto	ADP	_	_	8	case	O	MWE=quanto_a|MWEPOS=ADP
++5	quanto	quanto	ADV	_	_	8	case	O	MWEPOS=ADP
+ 6-7	à	_	_	_	_	_	_	_	_
+ 6	a	a	ADP	_	_	5	fixed	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+@@ -134880,9 +134880,9 @@
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	O	_
+ 26	processo	processo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
+-27	quanto	quanto	ADV	_	_	30	case	O	_
++27	quanto	quanto	ADV	_	_	30	case	O	MWEPOS=ADP
+ 28-29	ao	_	_	_	_	_	_	_	_
+-28	a	a	ADP	_	_	30	case	O	_
++28	a	a	ADP	_	_	27	fixed	O	_
+ 29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	atingimento	atingimento	NOUN	_	Gender=Masc|Number=Sing	19	obl	O	_
+ 31-32	das	_	_	_	_	_	_	_	_
+@@ -135219,7 +135219,7 @@
+ 
+ # text = Quanto à vazão inicial de água, esta já se distribui por mais correntes ao longo do processo..
+ # sent_id = 334-20150521-MONOGRAFIA_0-719
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -135334,9 +135334,9 @@
+ 5	ser	ser	AUX	_	VerbForm=Inf	6	aux:pass	O	_
+ 6	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	O	_
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	O	_
+-8	quanto	quanto	ADV	_	_	11	advmod	O	_
++8	quanto	quanto	ADV	_	_	11	case	O	MWEPOS=ADP
+ 9-10	ao	_	_	_	_	_	_	_	_
+-9	a	a	ADP	_	_	11	case	O	_
++9	a	a	ADP	_	_	8	fixed	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	poder	poder	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 12	calorífico	calorífico	ADJ	_	Gender=Masc|Number=Sing	11	amod	O	_
+@@ -136268,8 +136268,8 @@
+ 13	a	a	SCONJ	_	_	15	mark	O	_
+ 14	ser	ser	AUX	_	VerbForm=Inf	15	aux:pass	O	_
+ 15	atingida	atingir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	advcl	O	_
+-16	quanto	quanto	ADV	_	_	15	advmod	O	_
+-17	a	a	ADP	_	_	19	case	O	_
++16	quanto	quanto	ADV	_	_	19	case	O	MWEPOS=ADP
++17	a	a	ADP	_	_	16	fixed	O	_
+ 18	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	O	_
+ 19	gás	gás	NOUN	_	Gender=Masc|Number=Sing	15	obl	B=FLUIDO	_
+ 20	..	..	PUNCT	_	_	2	punct	O	_
+@@ -136395,7 +136395,7 @@
+ 
+ # text = Quanto ao sistema de inibidor utilizado para o duto, foi proposto que este trabalhe em circuito fechado..
+ # sent_id = 334-20150521-MONOGRAFIA_0-757
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	ao	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+@@ -136542,10 +136542,10 @@
+ 6	também	também	ADV	_	_	8	advmod	O	_
+ 7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	O	_
+ 8	alcançados	alcançar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-9	quanto	quanto	ADV	_	_	8	advmod	O	_
+-10	a	a	ADP	_	_	12	case	O	_
++9	quanto	quanto	ADV	_	_	12	case	O	MWEPOS=ADP
++10	a	a	ADP	_	_	9	fixed	O	_
+ 11	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	O	_
+-12	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	9	obl	O	_
++12	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 13	de	de	ADP	_	_	14	case	O	_
+ 14	inibição	inibição	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 15	,	,	PUNCT	_	_	8	punct	O	_
+@@ -137577,8 +137577,8 @@
+ 15	,	,	PUNCT	_	_	6	punct	O	_
+ 16	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	aux:pass	O	_
+ 17	avaliadas	avaliar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-18	quanto	quanto	ADV	_	_	20	advmod	O	_
+-19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	O	_
++18	quanto	quanto	ADV	_	_	20	case	O	MWEPOS=ADP
++19	a	a	ADP	_	_	18	fixed	O	_
+ 20	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+ 21	,	,	PUNCT	_	_	22	punct	O	_
+ 22	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	20	conj	O	_
+@@ -139816,7 +139816,7 @@
+ 
+ # text = Quanto aos tensoativos catiônicos, a grande parte apresenta pelo menos um átomo de nitrogênio com uma carga positiva..
+ # sent_id = 202-20140404-MONOGRAFIA_0-75
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	aos	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	O	_
+@@ -141788,7 +141788,7 @@
+ 10	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	O	_
+ 11	melhores	bom	ADJ	_	Gender=Masc|Number=Plur	12	amod	O	_
+ 12	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	10	obj	O	_
+-13	quanto	quanto	ADV	_	_	16	case	O	_
++13	quanto	quanto	ADV	_	_	16	case	O	MWEPOS=ADP
+ 14-15	aos	_	_	_	_	_	_	_	_
+ 14	a	a	ADP	_	_	13	fixed	O	_
+ 15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	O	_
+@@ -142976,7 +142976,7 @@
+ 
+ # text = Quanto à hipótese de desmoronamento, os autores excluem essa interpretação, corroborada pelos dados de mecanismo focal e hipocentro, afirmação essa aceita nesse trabalho..
+ # sent_id = 258-20160602-TESEMSC_0-11
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -144104,8 +144104,8 @@
+ 37	de	de	ADP	_	_	38	case	O	_
+ 38	sísmica	sísmica	NOUN	_	Gender=Fem|Number=Sing	36	nmod	B=MÉTODO	_
+ 39	2D	2d	ADJ	_	Gender=Fem|Number=Sing	38	amod	O	_
+-40	quanto	quanto	ADV	_	_	42	advmod	O	_
+-41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	O	_
++40	quanto	quanto	ADV	_	_	42	case	O	MWEPOS=ADP
++41	a	a	ADP	_	_	40	fixed	O	_
+ 42	estratigrafia	estratigrafia	NOUN	_	Gender=Fem|Number=Sing	36	nmod	O	_
+ 43	e	e	CCONJ	_	_	44	cc	O	_
+ 44	estrutural	estrutural	ADJ	_	Gender=Fem|Number=Sing	42	conj	O	_
+@@ -164536,8 +164536,8 @@
+ 
+ # text = Quanto a análise das tensões, se assumirmos o plano de falha com direção 82º na região do epicentro, ligeiramente mergulhando para NW com o bloco superior movendo-se para leste a orientação mais favorável para a máxima compressão principal (S1) seria 52º (30º da falha)..
+ # sent_id = 258-20160602-TESEMSC_0-511
+-1	Quanto	quanto	ADV	_	_	3	case	O	_
+-2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
++1	Quanto	quanto	ADV	_	_	3	case	O	MWEPOS=ADP
++2	a	a	ADP	_	_	1	fixed	O	_
+ 3	análise	análise	NOUN	_	Gender=Fem|Number=Sing	49	obl	O	_
+ 4-5	das	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+@@ -184365,7 +184365,7 @@
+ 
+ # text = Quanto à vinhaça, seu uso principal tem sido a ferti-irrigação das áreas cultivadas com cana-de-açúcar..
+ # sent_id = 279-20140530-MONOGRAFIA_0-67
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -187405,12 +187405,12 @@
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	exaustão	exaustão	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 9	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-10	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	obj	O	_
++10	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+ 11	quanto	quanto	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	15	obl	O	_
+ 12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	O	_
+ 13	combustão	combustão	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	O	_
+ 14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	O	_
+-15	completa	completo	ADJ	_	Gender=Fem|Number=Sing	10	acl:relcl	O	_
++15	completa	completo	ADJ	_	Gender=Fem|Number=Sing	11	acl:relcl	O	_
+ 16	.	.	PUNCT	_	_	9	punct	O	_
+ 17	.	.	PUNCT	_	_	9	punct	O	_
+ 
+@@ -188549,7 +188549,7 @@
+ 
+ # text = Quanto ao O2 , observa-se no gráfico anterior, a diminuição do mesmo quando  diminui, sendo também observado majoritariamente nos experimentos..
+ # sent_id = 279-20140530-MONOGRAFIA_0-212
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	ao	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+@@ -211680,14 +211680,14 @@
+ 
+ # text = Tanto a água de formação quanto a água injetada são produzidas juntamente com uma mistura de hidrocarbonetos..
+ # sent_id = 391-20160914-MONOGRAFIA_0-117
+-1	Tanto	tanto	ADV	_	_	11	advmod	O	_
++1	Tanto	tanto	ADV	_	_	3	advmod	O	_
+ 2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 3	água	água	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	B=FLUIDO	_
+ 4	de	de	ADP	_	_	5	case	I=FLUIDO	_
+ 5	formação	formação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	I=FLUIDO	_
+-6	quanto	quanto	ADV	_	_	8	advmod	O	_
++6	quanto	quanto	CCONJ	_	_	8	cc	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+-8	água	água	NOUN	_	Gender=Fem|Number=Sing	3	nmod	B=FLUIDO	_
++8	água	água	NOUN	_	Gender=Fem|Number=Sing	3	conj	B=FLUIDO	_
+ 9	injetada	injetar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	8	acl	O	_
+ 10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	O	_
+ 11	produzidas	produzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -214021,12 +214021,12 @@
+ 1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	O	_
+ 2	grande	grande	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+ 3	vantagem	vantagem	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	O	_
+-4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	O	_
+-5	quanto	quanto	ADV	_	_	0	root	O	_
++4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	O	_
++5	quanto	quanto	ADV	_	_	8	case	O	MWEPOS=ADP
+ 6-7	aos	_	_	_	_	_	_	_	_
+-6	a	a	ADP	_	_	8	case	O	_
++6	a	a	ADP	_	_	5	fixed	O	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	O	_
+-8	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
++8	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 9	utilizados	utilizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	O	_
+ 10	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	12	nsubj	O	_
+ 11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	cop	O	_
+@@ -221402,9 +221402,9 @@
+ 6	molibdênio	molibdênio	ADJ	_	Gender=Masc|Number=Sing	5	amod	B=LITOLOGIA	_
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	O	_
+ 8	estável	estável	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
+-9	quanto	quanto	ADV	_	_	8	advmod	O	_
++9	quanto	quanto	ADV	_	_	12	case	O	MWEPOS=ADP
+ 10-11	à	_	_	_	_	_	_	_	_
+-10	a	a	ADP	_	_	12	case	O	_
++10	a	a	ADP	_	_	9	fixed	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+ 12	oxidação	oxidação	NOUN	_	Gender=Fem|Number=Sing	8	obl	O	_
+ 13	enquanto	enquanto	SCONJ	_	_	15	mark	O	_
+@@ -270909,7 +270909,7 @@
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+ 22	porção	porção	NOUN	_	Gender=Fem|Number=Sing	19	obj	O	_
+ 23	emersa	emerso	ADJ	_	Gender=Fem|Number=Sing	22	amod	O	_
+-24	quanto	quanto	ADV	_	_	27	case	O	_
++24	quanto	quanto	ADV	_	_	27	case	O	MWEPOS=ADP
+ 25-26	ao	_	_	_	_	_	_	_	_
+ 25	a	a	ADP	_	_	24	fixed	O	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	O	_
+@@ -288057,7 +288057,7 @@
+ 8	de	de	ADP	_	_	9	case	I=FLUIDO	_
+ 9	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	7	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 10	,	,	PUNCT	_	_	2	punct	O	_
+-11	quanto	quanto	ADV	_	_	14	case	O	_
++11	quanto	quanto	ADV	_	_	14	case	O	MWEPOS=ADP
+ 12-13	aos	_	_	_	_	_	_	_	_
+ 12	a	a	ADP	_	_	11	fixed	O	_
+ 13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	O	_
+@@ -288321,9 +288321,9 @@
+ 10	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 11	ser	ser	AUX	_	VerbForm=Inf	12	aux:pass	O	_
+ 12	classificados	classificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	xcomp	O	_
+-13	quanto	quanto	ADV	_	_	12	advmod	O	_
++13	quanto	quanto	ADV	_	_	16	case	O	MWEPOS=ADP
+ 14-15	à	_	_	_	_	_	_	_	_
+-14	a	a	ADP	_	_	16	case	O	_
++14	a	a	ADP	_	_	13	fixed	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+ 16	finalidade	finalidade	NOUN	_	Gender=Fem|Number=Sing	12	obl	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+@@ -288336,7 +288336,7 @@
+ 
+ # text = Quanto à finalidade, os poços são divididos em: exploratórios, explotatórios e especiais..
+ # sent_id = 119-20141209-TESEMSC_0-64
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -288358,7 +288358,7 @@
+ 
+ # text = Quanto à profundidade final, os poços são classificados em: rasos, médios e profundos..
+ # sent_id = 119-20141209-TESEMSC_0-65
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	à	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	O	_
+@@ -288381,7 +288381,7 @@
+ 
+ # text = Quanto ao percurso, os poços são classificados em: verticais ou direcionais, incluindo neste último, os horizontais..
+ # sent_id = 119-20141209-TESEMSC_0-66
+-1	Quanto	quanto	ADV	_	_	4	case	O	_
++1	Quanto	quanto	ADV	_	_	4	case	O	MWEPOS=ADP
+ 2-3	ao	_	_	_	_	_	_	_	_
+ 2	a	a	ADP	_	_	1	fixed	O	_
+ 3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	O	_
+@@ -309343,7 +309343,7 @@
+ 3	,	,	PUNCT	_	_	6	punct	O	_
+ 4	tanto	tanto	ADV	_	_	6	advmod	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	redução	redução	NOUN	_	Gender=Fem|Number=Sing	33	obl	O	_
++6	redução	redução	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	O	_
+ 7-8	da	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	O	_
+@@ -309360,9 +309360,9 @@
+ 18	de	de	ADP	_	_	19	case	I=FLUIDO	_
+ 19	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	17	nmod	B=LITOLOGIA|I=FLUIDO	_
+ 20	,	,	PUNCT	_	_	6	punct	O	_
+-21	quanto	quanto	ADV	_	_	33	advmod	O	_
++21	quanto	quanto	CCONJ	_	_	23	cc	O	_
+ 22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+-23	restauração	restauração	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	O	_
++23	restauração	restauração	NOUN	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 24-25	da	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+@@ -319861,7 +319861,7 @@
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	classificações	classificação	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
+ 8	reológicas	reológico	ADJ	_	Gender=Fem|Number=Plur	7	amod	O	_
+-9	quanto	quanto	ADP	_	_	12	case	O	MWE=quanto_a|MWEPOS=ADP
++9	quanto	quanto	ADV	_	_	12	case	O	MWEPOS=ADP
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	9	fixed	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+@@ -319869,11 +319869,11 @@
+ 13	,	,	PUNCT	_	_	3	punct	O	_
+ 14	e	e	CCONJ	_	_	19	cc	O	_
+ 15	também	também	ADV	_	_	19	advmod	O	_
+-16	quanto	quanto	ADP	_	_	19	case	O	MWE=quanto_a|MWEPOS=ADP
++16	quanto	quanto	ADV	_	_	19	case	O	MWEPOS=ADP
+ 17-18	à	_	_	_	_	_	_	_	_
+ 17	a	a	ADP	_	_	16	fixed	O	_
+ 18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+-19	relação	relação	NOUN	_	Gender=Fem|Number=Sing	3	obl	O	_
++19	relação	relação	NOUN	_	Gender=Fem|Number=Sing	12	conj	O	_
+ 20	entre	entre	ADP	_	_	22	case	O	_
+ 21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	O	_
+ 22	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+@@ -322179,9 +322179,9 @@
+ 18	de	de	ADP	_	_	20	case	O	_
+ 19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	O	_
+ 20	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	17	nmod	O	_
+-21	quanto	quanto	ADV	_	_	24	case	O	_
++21	quanto	quanto	ADV	_	_	24	case	O	MWEPOS=ADP
+ 22-23	à	_	_	_	_	_	_	_	_
+-22	a	a	ADP	_	_	24	case	O	_
++22	a	a	ADP	_	_	21	fixed	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	filtração	filtração	NOUN	_	Gender=Fem|Number=Sing	15	obl	O	_
+ 25	.	.	PUNCT	_	_	11	punct	O	_

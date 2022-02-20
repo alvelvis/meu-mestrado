@@ -1,0 +1,1047 @@
+commit a71fa53e1a5f261d9514193621cc8f7a4246b38d
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Oct 20 21:48:28 2021 -0300
+
+    Correções derivadas de n-grams
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 0d60c94..3bf9b49 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -13545,8 +13545,8 @@
+ 
+ # text = 4-METODOLOGIA EXPERIMENTAL
+ # sent_id = 241-20140227-MONOGRAFIA_0-118
+-1	4-METODOLOGIA	4-metodologia	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	1	flat:name	O	_
++1	4-METODOLOGIA	4-metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	tokenização
++2	EXPERIMENTAL	experimental	ADJ	_	Gender=Fem|Number=Sing	1	amod	O	_
+ 
+ # text = Nesta seção, será descrita a metodologia utilizada para a obtenção das emulsões asfálticas convencionais e modificadas com nanomateriais, constituintes dessas emulsões, equipamentos necessários para obtenção e metodologia de caracterização das mesmas.
+ # sent_id = 241-20140227-MONOGRAFIA_0-119
+@@ -15376,8 +15376,8 @@
+ 
+ # text = 4-4-3-Potencial Hidrogeniônico
+ # sent_id = 241-20140227-MONOGRAFIA_0-176
+-1	4-4-3-Potencial	4-4-3-Potencial	NUM	_	NumType=Card	0	root	O	_
+-2	Hidrogeniônico	Hidrogeniônico	PROPN	_	Number=Sing	1	flat:name	O	_
++1	4-4-3-Potencial	4-4-3-Potencial	PROPN	_	Gender=Masc|Number=Sing	0	root	O	tokenização
++2	Hidrogeniônico	Hidrogeniônico	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	O	_
+ 
+ # text = O ensaio de pH será realizado de acordo com a ABNT NBR 6299 (2005).
+ # sent_id = 241-20140227-MONOGRAFIA_0-177
+@@ -16195,10 +16195,10 @@
+ 14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	O	_
+ 15	emulsão	emulsão	NOUN	_	Gender=Fem|Number=Sing	12	nmod	O	_
+ 16	,	,	PUNCT	_	_	23	punct	O	_
+-17	tendo	ter	AUX	_	VerbForm=Ger	23	aux	O	_
+-18	em	em	ADP	_	_	19	case	O	_
+-19	vista	vista	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+-20	que	que	SCONJ	_	_	23	mark	O	_
++17	tendo	ter	AUX	_	VerbForm=Ger	23	mark	O	MWEPOS=SCONJ
++18	em	em	ADP	_	_	17	fixed	O	_
++19	vista	vista	NOUN	_	Gender=Fem|Number=Sing	17	fixed	O	_
++20	que	que	SCONJ	_	_	17	fixed	O	_
+ 21	partículas	partícula	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	O	_
+ 22	menores	pequeno	ADJ	_	Gender=Fem|Number=Plur	21	amod	O	_
+ 23	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	O	_
+@@ -20697,10 +20697,10 @@
+ # text = Segundo Assine (2007), o arcabouço estratigráfico da Bacia do Araripe constitui-se pela supersequência pré-rifte, supersequência rifte e supersequência pós-rifte, sendo a última, subdividida em sequências pós-rifte
+ # sent_id = 284-20150917-MONOGRAFIA_0-102
+ 1	Segundo	segundo	ADP	_	_	2	case	O	_
+-2	Assine	assine	NOUN	_	Gender=Masc|Number=Sing	16	obl	O	_
+-3	(	(	PUNCT	_	_	2	flat:name	O	_
+-4	2007	2007	NUM	_	NumType=Card	2	flat:name	O	_
+-5	)	)	PUNCT	_	_	2	flat:name	O	_
++2	Assine	Assine	PROPN	_	Gender=Masc|Number=Sing	16	obl	O	_
++3	(	(	PUNCT	_	_	4	punct	O	_
++4	2007	2007	NUM	_	NumType=Card	2	nmod:appos	O	_
++5	)	)	PUNCT	_	_	4	punct	O	_
+ 6	,	,	PUNCT	_	_	2	punct	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+ 8	arcabouço	arcabouço	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	O	_
+@@ -21621,7 +21621,7 @@
+ 32-33	ao	_	_	_	_	_	_	_	_
+ 32	a	a	ADP	_	_	34	case	O	_
+ 33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	O	_
+-34	Estado	estado	NOUN	_	Gender=Masc|Number=Sing	31	obl	O	_
++34	Estado	Estado	PROPN	_	Gender=Masc|Number=Sing	31	obl	O	_
+ 35-36	do	_	_	_	_	_	_	_	_
+ 35	de	de	ADP	_	_	34	flat:name	O	_
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	flat:name	O	_
+@@ -29080,7 +29080,7 @@
+ 13	denominou	denominar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	O	_
+ 14	como	como	ADP	_	_	15	case	O	_
+ 15	Sequência	sequência	NOUN	_	Gender=Fem|Number=Sing	13	xcomp	O	_
+-16	6	6	PROPN	_	Number=Sing	15	flat:name	O	_
++16	6	6	NUM	_	NumType=Card	15	nummod	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+ 18	identificando	identificar	VERB	_	VerbForm=Ger	13	advcl	O	_
+ 19	condições	condição	NOUN	_	Gender=Fem|Number=Plur	18	obj	O	_
+@@ -30167,7 +30167,7 @@
+ 12	sedimentológicos	sedimentológico	ADJ	_	Gender=Masc|Number=Plur	11	amod	O	_
+ 13	(	(	PUNCT	_	_	15	punct	O	_
+ 14	3,5	3,5	NUM	_	NumType=Card	15	nummod	O	_
+-15	%	%	SYM	_	_	11	appos	O	_
++15	%	%	SYM	_	_	11	nmod:appos	O	_
+ 16	)	)	PUNCT	_	_	15	punct	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+ 18	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	2	conj	O	_
+@@ -33104,7 +33104,7 @@
+ 2	RECUPERAÇÃO	recuperação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 3	POR	por	ADP	_	_	4	case	O	_
+ 4	AQUECIMENTO	aquecimento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+-5	ELETROMAGNÉTICO	ELETROMAGNFECOBA	PROPN	_	Number=Sing	4	flat:name	O	_
++5	ELETROMAGNÉTICO	eletromagnético	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
+ 
+ # text = As pesquisas envolvendo o aquecimento eletromagnético datam desde a década de 50, entretanto, há poucas publicações em razão dos elevados custos de pesquisa
+ # sent_id = 398-20160721-MONOGRAFIA_0-70
+@@ -36131,7 +36131,7 @@
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
++5	EXPERIMENTAL	experimental	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 
+ # text = Atualmente, as empresas de petróleo utilizam aquecimento eletromagnético como uma das tecnologias de recuperação de petróleo em campos maduros.
+ # sent_id = 398-20160721-MONOGRAFIA_0-202
+@@ -50163,10 +50163,10 @@
+ 
+ # text = III.3.2.1 – Composição Química
+ # sent_id = 24-20150122-MONOGRAFIA_0-286
+-1	III.3.2.1	III.3.2.1	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	III.3.2.1	III.3.2.1	NUM	_	Gender=Masc|Number=Sing	3	nummod	O	_
+ 2	–	–	PUNCT	_	_	3	punct	O	_
+-3	Composição	composição	NOUN	_	Gender=Fem|Number=Sing	1	appos	O	_
+-4	Química	Química	PROPN	_	Number=Sing	3	flat:name	O	_
++3	Composição	composição	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++4	Química	químico	ADJ	_	Gender=Fem|Number=Sing	3	amod	O	_
+ 
+ # text = A determinação da composição química das argilas foi realizada pela empresa Lakefield Geosol Ltda (Belo Horizonte – MG).
+ # sent_id = 24-20150122-MONOGRAFIA_0-287
+@@ -52229,7 +52229,7 @@
+ 
+ # text = no Item III.5.
+ # sent_id = 24-20150122-MONOGRAFIA_0-378
+-1	no	ele	ADP	_	_	2	case	O	_
++1	no	ele	ADP	_	_	2	case	O	sentenciação
+ 2	Item	item	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 3	III.5	III.5	PROPN	_	Number=Sing	2	flat:name	O	_
+ 4	.	.	PUNCT	_	_	2	punct	O	_
+@@ -59265,8 +59265,8 @@
+ 10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	O	_
+ 11	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	8	nmod	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+-13	Presidente	presidente	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+-14	Olegário	Olegário	PROPN	_	Number=Sing	13	flat:name	O	_
++13	Presidente	Presidente	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++14	Olegário	Olegário	PROPN	_	Gender=Masc|Number=Sing	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	João	João	PROPN	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 17	Pinheiro	Pinheiro	PROPN	_	Number=Sing	16	flat:name	O	_
+@@ -62091,8 +62091,8 @@
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+ 11	municípios	município	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+-13	Presidente	presidente	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
+-14	Olegário	Olegário	PROPN	_	Number=Sing	13	flat:name	O	_
++13	Presidente	Presidente	PROPN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++14	Olegário	Olegário	PROPN	_	Gender=Masc|Number=Sing	13	flat:name	O	_
+ 15	,	,	PUNCT	_	_	16	punct	O	_
+ 16	João	João	PROPN	_	Gender=Masc|Number=Sing	13	conj	O	_
+ 17	Pinheiro	Pinheiro	PROPN	_	Number=Sing	16	flat:name	O	_
+@@ -70839,10 +70839,10 @@
+ 
+ # text = CONCLUSÕES E CONSIDERAÇÕES FINAIS
+ # sent_id = 283-20150917-MONOGRAFIA_0-478
+-1	CONCLUSÕES	conclusce	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++1	CONCLUSÕES	conclusão	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
+ 2	E	e	CCONJ	_	_	3	cc	O	_
+ 3	CONSIDERAÇÕES	consideração	NOUN	_	Gender=Fem|Number=Plur	1	conj	O	_
+-4	FINAIS	Finais	PROPN	_	Number=Sing	3	flat:name	O	_
++4	FINAIS	final	ADJ	_	Gender=Fem|Number=Plur	3	amod	O	_
+ 
+ # text = 1. - Introdução
+ # sent_id = 161-20150810-MONOGRAFIA_0-1
+@@ -72782,13 +72782,13 @@
+ 1	Porém	porém	ADV	_	_	12	advmod	O	_
+ 2	,	,	PUNCT	_	_	1	punct	O	_
+ 3	como	como	SCONJ	_	_	12	mark	O	_
+-4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-5	exausto	exausto	ADJ	_	Gender=Masc|Number=Sing	6	amod	O	_
+-6	proveniente	proveniente	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	O	_
++4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
++5	exausto	exausto	ADJ	_	Gender=Masc|Number=Sing	12	nsubj	O	_
++6	proveniente	proveniente	ADJ	_	Gender=Masc|Number=Sing	5	amod	O	_
+ 7-8	dessas	_	_	_	_	_	_	_	_
+ 7	de	de	ADP	_	_	9	case	O	_
+ 8	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	O	_
+-9	plantas	planta	NOUN	_	Gender=Fem|Number=Plur	6	nmod	O	_
++9	plantas	planta	NOUN	_	Gender=Fem|Number=Plur	6	obl	O	_
+ 10	de	de	ADP	_	_	11	case	O	_
+ 11	energia	energia	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
+ 12	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	O	_
+@@ -83023,7 +83023,7 @@
+ 30-31	das	_	_	_	_	_	_	_	_
+ 30	de	de	ADP	_	_	32	case	O	_
+ 31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	O	_
+-32	usinas	usina	NOUN	_	Gender=Fem|Number=Plur	28	nmod	O	_
++32	usinas	usina	NOUN	_	Gender=Fem|Number=Plur	29	obl	O	_
+ 33	siderúrgicas	siderúrgico	ADJ	_	Gender=Fem|Number=Plur	32	amod	O	_
+ 34	CSN	CSN	PROPN	_	Gender=Fem|Number=Sing	32	nmod	O	_
+ 35	e	e	CCONJ	_	_	36	cc	O	_
+@@ -84783,11 +84783,11 @@
+ 12-13	na	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
+-14	margem	margem	NOUN	_	Gender=Fem|Number=Sing	7	obl	O	_
++14	margem	margem	NOUN	_	Gender=Fem|Number=Sing	11	obl	O	_
+ 15	continental	continental	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+ 16	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	14	amod	O	_
+ 17	,	,	PUNCT	_	_	18	punct	O	_
+-18	respondendo	responder	VERB	_	VerbForm=Ger	7	advcl	O	_
++18	respondendo	responder	VERB	_	VerbForm=Ger	11	advcl	O	_
+ 19	atualmente	atualmente	ADV	_	_	18	advmod	O	_
+ 20	por	por	ADP	_	_	24	case	O	_
+ 21	mais	mais	ADV	_	_	24	advmod	O	_
+@@ -85464,10 +85464,10 @@
+ 1	5.3.1.1	5.3.1.1	NUM	_	NumType=Card	3	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	Sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-4	de	de	ADP	_	_	3	flat:name	O	_
+-5	Produção	Produção	PROPN	_	Number=Sing	3	flat:name	O	_
+-6	e	e	CCONJ	_	_	3	flat:name	O	_
+-7	Escoamento	Escoamento	PROPN	_	Number=Sing	3	flat:name	O	_
++4	de	de	ADP	_	_	5	case	O	_
++5	Produção	produção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++6	e	e	CCONJ	_	_	7	cc	O	_
++7	Escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	5	conj	O	_
+ 
+ # text = A produção do campo de Marlim é coletada através de sete plataformas, sendo quatro do tipo Semissubmersível, P-18, P-19, P-20 e P-26, e três do tipo FPSO (Floating Production Storage and Offloading), P-33, P-35 e P-37.
+ # sent_id = 161-20150810-MONOGRAFIA_0-508
+@@ -86092,10 +86092,10 @@
+ 1	5.3.2.1	5.3.2.1	NUM	_	NumType=Card	3	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	Sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-4	de	de	ADP	_	_	3	flat:name	O	_
+-5	Produção	Produção	PROPN	_	Number=Sing	3	flat:name	O	_
+-6	e	e	CCONJ	_	_	3	flat:name	O	_
+-7	Escoamento	Escoamento	PROPN	_	Number=Sing	3	flat:name	O	_
++4	de	de	ADP	_	_	5	case	O	_
++5	Produção	produção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++6	e	e	CCONJ	_	_	7	cc	O	_
++7	Escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	5	conj	O	_
+ 
+ # text = A produção do Campo de Barracuda é coletada através de duas plataformas FPSO (Floating Production Storage and Offloading): P-43 e P-48, sendo que a P-48 está localizada sobre o campo de Caratinga, onde estão interligados os poços injetores e produtores do campo.
+ # sent_id = 161-20150810-MONOGRAFIA_0-530
+@@ -87600,7 +87600,7 @@
+ 15-16	das	_	_	_	_	_	_	_	_
+ 15	de	de	ADP	_	_	17	case	O	_
+ 16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	O	_
+-17	emissões	emissão	NOUN	_	Gender=Fem|Number=Plur	13	nmod	O	_
++17	emissões	emissão	NOUN	_	Gender=Fem|Number=Plur	14	obl	O	_
+ 18	capturadas	capturar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	17	acl	O	_
+ 19	.	.	PUNCT	_	_	4	punct	O	_
+ 
+@@ -98413,7 +98413,7 @@
+ 48-49	na	_	_	_	_	_	_	_	_
+ 48	em	em	ADP	_	_	50	case	O	_
+ 49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	O	_
+-50	margem	margem	NOUN	_	Gender=Fem|Number=Sing	43	obl	O	_
++50	margem	margem	NOUN	_	Gender=Fem|Number=Sing	47	obl	O	_
+ 51	continental	continental	ADJ	_	Gender=Fem|Number=Sing	50	amod	O	_
+ 52	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	50	amod	O	_
+ 53	.	.	PUNCT	_	_	43	punct	O	_
+@@ -98775,7 +98775,7 @@
+ # sent_id = 334-20150521-MONOGRAFIA_0-35
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	bacia	bacia	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	O	_
+-3	de	de	ADP	_	_	2	flat:name	O	_
++3	de	de	ADP	_	_	4	case	O	_
+ 4	Santos	Santos	PROPN	_	Number=Sing	2	nmod	B=BACIA	_
+ 5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	O	_
+ 6	divida	dividir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -98789,15 +98789,15 @@
+ 14-15	pela	_	_	_	_	_	_	_	_
+ 14	por	por	ADP	_	_	16	case	O	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	O	_
+-16	Agência	Agência	PROPN	_	Gender=Fem|Number=Sing	13	obl	O	_
+-17	Nacional	Nacional	PROPN	_	Number=Sing	16	flat:name	O	_
++16	Agência	Agência	PROPN	_	Gender=Fem|Number=Sing	13	obl:agent	O	_
++17	Nacional	Nacional	PROPN	_	Gender=Fem|Number=Sing	16	flat:name	O	_
+ 18	de	de	ADP	_	_	16	flat:name	O	_
+-19	Petróleo	Petróleo	PROPN	_	Number=Sing	16	flat:name	O	_
++19	Petróleo	Petróleo	PROPN	_	Gender=Masc|Number=Sing	16	flat:name	O	_
+ 20	,	,	PUNCT	_	_	16	flat:name	O	_
+-21	Gás	Gás	PROPN	_	Number=Sing	16	flat:name	O	_
+-22	Natural	Natural	PROPN	_	Number=Sing	16	flat:name	O	_
++21	Gás	Gás	PROPN	_	Gender=Masc|Number=Sing	16	flat:name	O	_
++22	Natural	Natural	PROPN	_	Gender=Masc|Number=Sing	16	flat:name	O	_
+ 23	e	e	CCONJ	_	_	16	flat:name	O	_
+-24	Biocombustíveis	Biocombustíveis	PROPN	_	Number=Sing	16	flat:name	O	_
++24	Biocombustíveis	Biocombustíveis	PROPN	_	Gender=Masc|Number=Plur	16	flat:name	O	_
+ 25	(	(	PUNCT	_	_	26	punct	O	_
+ 26	ANP	ANP	PROPN	_	Gender=Fem|Number=Sing	16	appos	O	_
+ 27	)	)	PUNCT	_	_	26	punct	O	_
+@@ -98845,13 +98845,13 @@
+ 20	Shell	Shell	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+ 21	(	(	PUNCT	_	_	23	punct	O	_
+ 22	20	20	NUM	_	NumType=Card	23	nummod	O	_
+-23	%	%	SYM	_	_	20	appos	O	_
++23	%	%	SYM	_	_	20	nmod:appos	O	_
+ 24	)	)	PUNCT	_	_	23	punct	O	_
+ 25	e	e	CCONJ	_	_	26	cc	O	_
+ 26	Petrogal	Petrogal	PROPN	_	Gender=Masc|Number=Sing	14	conj	O	_
+ 27	(	(	PUNCT	_	_	29	punct	O	_
+ 28	14	14	NUM	_	NumType=Card	29	nummod	O	_
+-29	%	%	SYM	_	_	26	appos	O	_
++29	%	%	SYM	_	_	26	nmod:appos	O	_
+ 30	)	)	PUNCT	_	_	29	punct	O	_
+ 31	;	;	PUNCT	_	_	33	punct	O	_
+ 32	-	-	PUNCT	_	_	33	punct	O	_
+@@ -98869,7 +98869,7 @@
+ 44	BG	BG	PROPN	_	Gender=Masc|Number=Sing	38	conj	O	_
+ 45	(	(	PUNCT	_	_	47	punct	O	_
+ 46	30	30	NUM	_	NumType=Card	47	nummod	O	_
+-47	%	%	SYM	_	_	44	appos	O	_
++47	%	%	SYM	_	_	44	nmod:appos	O	_
+ 48	)	)	PUNCT	_	_	47	punct	O	_
+ 49	e	e	CCONJ	_	_	50	cc	O	_
+ 50	Repsol	Repsol	PROPN	_	Gender=Fem|Number=Sing	38	conj	O	_
+@@ -100060,7 +100060,7 @@
+ 33	Energia	Energia	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	(	(	PUNCT	_	_	36	punct	O	_
+ 35	20	20	NUM	_	NumType=Card	36	nummod	O	_
+-36	%	%	SYM	_	_	32	appos	O	_
++36	%	%	SYM	_	_	32	nmod:appos	O	_
+ 37	)	)	PUNCT	_	_	36	punct	O	_
+ 38	.	.	PUNCT	_	_	7	punct	O	_
+ 
+@@ -105101,10 +105101,10 @@
+ 
+ # text = II.3.1 Processamento de Óleo
+ # sent_id = 334-20150521-MONOGRAFIA_0-207
+-1	II.3.1	ii.3.1	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processamento	Processamento	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	de	de	ADP	_	_	1	flat:name	O	_
+-4	Óleo	Óleo	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.3.1	II.3.1	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processamento	processamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	de	de	ADP	_	_	4	case	O	_
++4	Óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = A separação da corrente rica em óleo proveniente do separador gravitacional ocorre, geralmente, em duas etapas: a desidratação e a estabilização.
+ # sent_id = 334-20150521-MONOGRAFIA_0-208
+@@ -105356,10 +105356,10 @@
+ 
+ # text = II.3.2 Processamento de Água
+ # sent_id = 334-20150521-MONOGRAFIA_0-217
+-1	II.3.2	ii.3.2	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processamento	Processamento	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	de	de	ADP	_	_	1	flat:name	O	_
+-4	Água	Água	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.3.2	II.3.2	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processamento	processamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	de	de	ADP	_	_	4	case	O	_
++4	Água	água	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 
+ # text = A água, retirada nos separadores gravitacionais e eletrostáticos, segue para o sistema de água produzida que é composto por baterias de hidrociclones e flotadores (Figura 16).
+ # sent_id = 334-20150521-MONOGRAFIA_0-218
+@@ -105501,10 +105501,10 @@
+ 
+ # text = II.3.3 Processamento de Gás
+ # sent_id = 334-20150521-MONOGRAFIA_0-223
+-1	II.3.3	ii.3.3	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processamento	Processamento	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	de	de	ADP	_	_	1	flat:name	O	_
+-4	Gás	Gás	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.3.3	II.3.3	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processamento	processamento	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	de	de	ADP	_	_	4	case	O	_
++4	Gás	gás	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = A produção de óleo e gás natural envolve um número significativo de operações unitárias desde o poço até o ponto de transferência.
+ # sent_id = 334-20150521-MONOGRAFIA_0-224
+@@ -106506,12 +106506,12 @@
+ 
+ # text = II.4.2 Mar do Norte
+ # sent_id = 334-20150521-MONOGRAFIA_0-252
+-1	II.4.2	ii.4.2	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Mar	Mar	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.4.2	II.4.2	NUM	_	NumType=Ord	2	nummod	O	_
++2	Mar	Mar	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	1	flat:name	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	flat:name	O	_
+-5	Norte	Norte	PROPN	_	Number=Sing	1	flat:name	O	_
++5	Norte	Norte	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	O	_
+ 
+ # text = A produção total do Mar do Norte é de aproximadamente 2 milhões de barris de petróleo por dia e 10 BSCFD.
+ # sent_id = 334-20150521-MONOGRAFIA_0-254
+@@ -108242,9 +108242,9 @@
+ 
+ # text = II.5.1 Separação Subsea
+ # sent_id = 334-20150521-MONOGRAFIA_0-297
+-1	II.5.1	ii.5.1	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	0	root	O	_
+-2	Separação	Separação	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Subsea	Subsea	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.5.1	II.5.1	NUM	_	NumType=Ord	2	nummod	O	_
++2	Separação	separação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++3	Subsea	subsea	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 
+ # text = A Petrobras em parceria com a FMC começou a operar seu primeiro separador submarino de água e óleo (SSAO) no campo de Marlim (Figura 24) em março de 2013, ligado a plataforma P-37 da Petrobras.
+ # sent_id = 334-20150521-MONOGRAFIA_0-298
+@@ -109125,7 +109125,7 @@
+ 7	AS	AS	PROPN	_	Number=Sing	6	flat:name	O	_
+ 8	(	(	PUNCT	_	_	10	punct	O	_
+ 9	40	40	NUM	_	NumType=Card	10	nummod	O	_
+-10	%	%	SYM	_	_	6	appos	O	_
++10	%	%	SYM	_	_	6	nmod:appos	O	_
+ 11	)	)	PUNCT	_	_	10	punct	O	_
+ 12	,	,	PUNCT	_	_	13	punct	O	_
+ 13	seguida	seguer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	O	_
+@@ -109141,7 +109141,7 @@
+ 22	Exxon	Exxon	PROPN	_	Gender=Fem|Number=Sing	16	conj	O	_
+ 23	(	(	PUNCT	_	_	25	punct	O	_
+ 24	20	20	NUM	_	NumType=Card	25	nummod	O	_
+-25	%	%	SYM	_	_	22	appos	O	_
++25	%	%	SYM	_	_	22	nmod:appos	O	_
+ 26	)	)	PUNCT	_	_	25	punct	O	_
+ 27	e	e	CCONJ	_	_	28	cc	O	_
+ 28	BP	BP	PROPN	_	Gender=Masc|Number=Sing	6	conj	O	_
+@@ -109346,9 +109346,9 @@
+ 
+ # text = II.5.2 Bombeamento Subsea
+ # sent_id = 334-20150521-MONOGRAFIA_0-325
+-1	II.5.2	ii.5.2	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Bombeamento	Bombeamento	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Subsea	Subsea	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.5.2	II.5.2	NUM	_	NumType=Ord	2	nummod	O	_
++2	Bombeamento	bombeamento	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Subsea	subsea	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = O bombeamento subsea multifásico é considerado uma tecnologia relativamente bem desenvolvida, mas outras melhorias serão necessárias com o aumento das distâncias de transporte e profundidades de água.
+ # sent_id = 334-20150521-MONOGRAFIA_0-326
+@@ -110205,9 +110205,9 @@
+ 
+ # text = II.5.3 Compressão Subsea
+ # sent_id = 334-20150521-MONOGRAFIA_0-348
+-1	II.5.3	ii.5.3	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	0	root	O	_
+-2	Compressão	Compressão	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Subsea	Subsea	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.5.3	II.5.3	NUM	_	NumType=Ord	2	nummod	O	_
++2	Compressão	compressão	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++3	Subsea	subsea	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 
+ # text = A compressão submarina tem dois principais objetivos: o aumento da recuperação de um poço, assim como o bombeamento, e o transporte dos hidrocarbonetos produzidos.
+ # sent_id = 334-20150521-MONOGRAFIA_0-349
+@@ -110749,9 +110749,9 @@
+ 
+ # text = II.5.4 Injeção Subsea
+ # sent_id = 334-20150521-MONOGRAFIA_0-366
+-1	II.5.4	ii.5.4	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Injeção	Injeção	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Subsea	Subsea	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.5.4	II.5.4	NUM	_	NumType=Ord	2	nummod	O	_
++2	Injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++3	Subsea	subsea	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 
+ # text = As primeiras tecnologias submarinas desenvolvidas não contavam com a tecnologia de reinjeção, porém atualmente este já é um conceito sempre presente em projetos de tecnologia subsea.
+ # sent_id = 334-20150521-MONOGRAFIA_0-367
+@@ -112377,9 +112377,9 @@
+ 
+ # text = II.7.1.1 Inibidor Termodinâmico
+ # sent_id = 334-20150521-MONOGRAFIA_0-415
+-1	II.7.1.1	ii.7.1.1	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Inibidor	Inibidor	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Termodinâmico	Termodinâmico	PROPN	_	Number=Sing	1	flat:name	O	_
++1	II.7.1.1	II.7.1.1	NUM	_	NumType=Ord	2	nummod	O	_
++2	Inibidor	inibidor	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Termodinâmico	termodinâmico	ADJ	_	Gender=Masc|Number=Sing	2	amod	O	_
+ 
+ # text = Os inibidores termodinâmicos são produtos químicos que funcionam alterando o potencial químico da fase aquosa de tal forma que a curva de equilíbrio seja deslocada para baixas temperaturas e altas pressões.
+ # sent_id = 334-20150521-MONOGRAFIA_0-416
+@@ -118711,9 +118711,9 @@
+ 
+ # text = III.3.1 Processo Subsea
+ # sent_id = 334-20150521-MONOGRAFIA_0-623
+-1	III.3.1	iii.3.1	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processo	Processo	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Subsea	Subsea	PROPN	_	Number=Sing	1	flat:name	O	_
++1	III.3.1	III.3.1	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processo	processo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Subsea	subsea	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = A etapa de processamento subsea tem como principal objetivo separar as correntes de óleo, gás e água e é apresentada na Figura 52.
+ # sent_id = 334-20150521-MONOGRAFIA_0-624
+@@ -119279,9 +119279,9 @@
+ 
+ # text = III.3.2 Processo Topside
+ # sent_id = 334-20150521-MONOGRAFIA_0-644
+-1	III.3.2	iii.3.2	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processo	Processo	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Topside	Topside	PROPN	_	Number=Sing	1	flat:name	O	_
++1	III.3.2	iii.3.2	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processo	processo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Topside	topside	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = A corrente rica em óleo separada no primeiro separador subsea é encaminhada para processamento na plataforma, conforme fluxograma da Figura 53.
+ # sent_id = 334-20150521-MONOGRAFIA_0-645
+@@ -119864,9 +119864,9 @@
+ 
+ # text = III.3.4 Processo Onshore
+ # sent_id = 334-20150521-MONOGRAFIA_0-665
+-1	III.3.4	iii.3.4	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	0	root	O	_
+-2	Processo	Processo	PROPN	_	Number=Sing	1	flat:name	O	_
+-3	Onshore	Onshore	PROPN	_	Number=Sing	1	flat:name	O	_
++1	III.3.4	III.3.4	NUM	_	NumType=Ord	2	nummod	O	_
++2	Processo	processo	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Onshore	onshore	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = Após o transporte por duto submarino, uma corrente multifásica é entregue no continente.
+ # sent_id = 334-20150521-MONOGRAFIA_0-666
+@@ -122650,7 +122650,7 @@
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+-15	poço	poço	NOUN	_	Gender=Masc|Number=Sing	11	nmod	O	_
++15	poço	poço	NOUN	_	Gender=Masc|Number=Sing	12	obl	O	_
+ 16	retorne	retornar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	O	_
+ 17	para	para	ADP	_	_	18	case	O	_
+ 18	reinjeção	reinjeção	NOUN	_	Gender=Fem|Number=Sing	16	obl	O	_
+@@ -123273,10 +123273,10 @@
+ 30	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	28	obj	O	_
+ 31	mencionados	mencionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	30	acl	O	_
+ 32	,	,	PUNCT	_	_	31	punct	O	_
+-33	tendo	ter	AUX	_	VerbForm=Ger	38	aux	O	_
+-34	em	em	ADP	_	_	35	case	O	_
+-35	vista	vista	NOUN	_	Gender=Fem|Number=Sing	38	obl	O	_
+-36	que	que	SCONJ	_	_	38	mark	O	_
++33	tendo	ter	AUX	_	VerbForm=Ger	38	mark	O	MWEPOS=SCONJ
++34	em	em	ADP	_	_	33	fixed	O	_
++35	vista	vista	NOUN	_	Gender=Fem|Number=Sing	33	fixed	O	_
++36	que	que	SCONJ	_	_	33	fixed	O	_
+ 37	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	38	nsubj	O	_
+ 38	reduzem	reduzir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	advcl	O	_
+ 39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	O	_
+@@ -128694,10 +128694,10 @@
+ # sent_id = 77-20141209-TESEMSC_0-25
+ 1	2.1	2.1	NUM	_	NumType=Card	2	nummod	O	_
+ 2	Aspectos	aspecto	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-3	Gerais	Gerais	PROPN	_	Number=Sing	2	flat:name	O	_
++3	Gerais	geral	ADJ	_	Gender=Masc|Number=Plur	2	amod	O	_
+ 4	sobre	sobre	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+-6	Petróleo	Petróleo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	O	_
++6	Petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = O petróleo caracteriza-se por ser uma mistura complexa de hidrocarbonetos composta pelos grupos de hidrocarbonetos saturados, hidrocarbonetos aromáticos, resinas e asfaltenos.
+ # sent_id = 77-20141209-TESEMSC_0-26
+@@ -129661,8 +129661,8 @@
+ 16	a	a	ADP	_	_	17	case	O	_
+ 17	associação	associação	NOUN	_	Gender=Fem|Number=Sing	15	xcomp	O	_
+ 18	asfalteno	asfalteno	NOUN	_	Gender=Fem|Number=Sing	17	nmod	O	_
+-19	–	–	PUNCT	_	_	18	flat:name	O	_
+-20	asfalteno	asfalteno	NOUN	_	Gender=Masc|Number=Sing	18	flat:name	O	_
++19	–	–	PUNCT	_	_	20	punct	O	_
++20	asfalteno	asfalteno	NOUN	_	Gender=Masc|Number=Sing	18	nmod	O	_
+ 21	e	e	CCONJ	_	_	25	cc	O	_
+ 22	então	então	ADV	_	_	25	advmod	O	_
+ 23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	O	_
+@@ -146137,12 +146137,12 @@
+ 1	5.2	5.2	NUM	_	NumType=Card	3	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	Ensaios	ensaio	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-4	para	para	ADP	_	_	3	flat:name	O	_
+-5	Definição	Definição	PROPN	_	Number=Sing	3	flat:name	O	_
+-6	de	de	ADP	_	_	3	flat:name	O	_
+-7	Curvas	Curvas	PROPN	_	Number=Sing	3	flat:name	O	_
+-8	de	de	ADP	_	_	3	flat:name	O	_
+-9	Performance	Performance	PROPN	_	Number=Sing	3	flat:name	O	_
++4	para	para	ADP	_	_	5	case	O	_
++5	Definição	definição	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++6	de	de	ADP	_	_	7	case	O	_
++7	Curvas	curva	NOUN	_	Gender=Fem|Number=Plur	5	nmod	O	_
++8	de	de	ADP	_	_	9	case	O	_
++9	Performance	performance	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 
+ # text = Com os resultados mostrados na Tabela 5-3 e Tabela 5-4, foram obtidos os gráficos comparando os resultados dos combustíveis B5 e B20.
+ # sent_id = 279-20140530-MONOGRAFIA_0-144
+@@ -148402,7 +148402,7 @@
+ 
+ # text = Dissertação Mestrado.
+ # sent_id = 279-20140530-MONOGRAFIA_0-229
+-1	Dissertação	dissertação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++1	Dissertação	dissertação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	sentenciação
+ 2	Mestrado	Mestrado	PROPN	_	Number=Sing	1	flat:name	O	_
+ 3	.	.	PUNCT	_	_	1	punct	O	_
+ 
+@@ -149826,7 +149826,7 @@
+ # text = CONCEITOS GERAIS E REVISÃO DA LITERATURA
+ # sent_id = 271-20150810-MONOGRAFIA_0-34
+ 1	CONCEITOS	conceito	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-2	GERAIS	GERAIS	PROPN	_	Number=Sing	1	flat:name	O	_
++2	GERAIS	geral	ADJ	_	Gender=Masc|Number=Plur	1	amod	O	_
+ 3	E	e	CCONJ	_	_	4	cc	O	_
+ 4	REVISÃO	revisão	NOUN	_	Gender=Fem|Number=Sing	1	conj	O	_
+ 5-6	DA	_	_	_	_	_	_	_	_
+@@ -158854,8 +158854,8 @@
+ # sent_id = 271-20150810-MONOGRAFIA_0-345
+ 1	4.3	4.3	NUM	_	NumType=Card	2	nummod	O	_
+ 2	Síntese	síntese	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-3	de	de	ADP	_	_	2	flat:name	O	_
+-4	Biodiesel	Biodiesel	PROPN	_	Number=Sing	2	flat:name	O	_
++3	de	de	ADP	_	_	4	case	O	_
++4	Biodiesel	biodiesel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	O	_
+ 
+ # text = O catalisador TA e TA-Li calcinado, foram testados para a produção de biodiesel via transesterificação por catálise heterogênea usando óleo residual e óleo de soja comercial em escala de laboratório.
+ # sent_id = 271-20150810-MONOGRAFIA_0-346
+@@ -163181,8 +163181,8 @@
+ 25	ou	ou	CCONJ	_	_	28	cc	O	_
+ 26	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	fixed	O	_
+ 27	,	,	PUNCT	_	_	25	punct	O	_
+-28	Taxa	Taxa	PROPN	_	Gender=Fem|Number=Sing	23	conj	O	_
+-29	Selic	Selic	PROPN	_	Number=Sing	28	flat:name	O	_
++28	Taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	23	conj	O	_
++29	Selic	Selic	PROPN	_	Gender=Fem|Number=Sing	28	nmod	O	_
+ 30	de	de	ADP	_	_	31	case	O	_
+ 31	agosto	agosto	NOUN	_	Gender=Masc|Number=Sing	28	nmod	O	_
+ 32	de	de	ADP	_	_	33	case	O	_
+@@ -163192,10 +163192,10 @@
+ 36	esta	este	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	28	advcl	O	_
+ 37	,	,	PUNCT	_	_	39	punct	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+-39	Taxa	Taxa	PROPN	_	Gender=Fem|Number=Sing	28	conj	O	_
+-40	Mínima	Mínima	PROPN	_	Number=Sing	39	flat:name	O	_
+-41	de	de	ADP	_	_	42	flat:name	O	_
+-42	atratividade	atratividade	NOUN	_	Gender=Fem|Number=Sing	39	flat:name	O	_
++39	Taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	28	conj	O	_
++40	Mínima	mínimo	ADJ	_	Gender=Fem|Number=Sing	39	nmod	O	_
++41	de	de	ADP	_	_	42	case	O	_
++42	atratividade	atratividade	NOUN	_	Gender=Fem|Number=Sing	39	nmod	O	_
+ 43	.	.	PUNCT	_	_	5	punct	O	_
+ 
+ # text = Tabela 14 - Valores considerados no cálculo do fluxo de caixa Horizonte de Tempo ( anos )
+@@ -164616,11 +164616,11 @@
+ 
+ # text = Para o investimento ser viável utilizando óleo de soja comercial, o custo deste teria que ser abaixo de R$ 0,21 o litro, o que é improvável.
+ # sent_id = 271-20150810-MONOGRAFIA_0-541
+-1	Para	para	ADP	_	_	3	case	O	_
++1	Para	para	ADP	_	_	5	mark	O	_
+ 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+ 3	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	5	obl	O	_
+ 4	ser	ser	AUX	_	Number=Sing|Person=3|VerbForm=Inf	5	cop	O	_
+-5	viável	viável	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
++5	viável	viável	ADJ	_	Gender=Masc|Number=Sing	16	advcl	O	_
+ 6	utilizando	utilizar	VERB	_	VerbForm=Ger	5	advcl	O	_
+ 7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	6	obj	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+@@ -164628,19 +164628,19 @@
+ 10	comercial	comercial	ADJ	_	Gender=Fem|Number=Sing	9	amod	O	_
+ 11	,	,	PUNCT	_	_	6	punct	O	_
+ 12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	O	_
+-13	custo	custo	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	O	_
++13	custo	custo	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	O	_
+ 14-15	deste	_	_	_	_	_	_	_	_
+ 14	de	de	ADP	_	_	15	case	O	_
+ 15	este	este	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	13	nmod	O	_
+-16	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	21	aux	O	_
++16	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	O	_
+ 17	que	que	SCONJ	_	_	21	mark	O	_
+ 18	ser	ser	AUX	_	VerbForm=Inf	21	cop	O	_
+ 19	abaixo	abaixo	ADV	_	_	21	advmod	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+-21	R$	R$	SYM	_	_	5	obl	O	_
++21	R$	R$	SYM	_	_	16	xcomp	O	_
+ 22	0,21	0,21	NUM	_	NumType=Card	21	nummod	O	_
+ 23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	O	_
+-24	litro	litro	NOUN	_	Gender=Masc|Number=Sing	21	nmod	O	_
++24	litro	litro	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	O	_
+ 25	,	,	PUNCT	_	_	21	punct	O	_
+ 26	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	21	appos	O	_
+ 27	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	O	_
+@@ -166299,7 +166299,7 @@
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	REFERENCIAL	referencial	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-5	TEÓRICO	TEÓRICO	PROPN	_	Number=Sing	4	flat:name	O	_
++5	TEÓRICO	teórico	ADJ	_	Gender=Masc|Number=Sing	4	amod	O	_
+ 
+ # text = 2.1. Tensoativos
+ # sent_id = 391-20160914-MONOGRAFIA_0-22
+@@ -168457,8 +168457,8 @@
+ 14	2002	2002	NUM	_	NumType=Card	10	flat:name	O	_
+ 15	)	)	PUNCT	_	_	10	punct	O	_
+ 16	:	:	PUNCT	_	_	17	punct	O	_
+-17			NOUN	_	Gender=Masc|Number=Plur	10	appos	O	_
+-18	Compostos	Compostos	PROPN	_	Number=Sing	17	flat:name	O	_
++17			PUNCT	_	_	18	punct	O	_
++18	Compostos	composto	NOUN	_	Gender=Masc|Number=Plur	8	obj	O	_
+ 19-20	do	_	_	_	_	_	_	_	_
+ 19	de	de	ADP	_	_	21	case	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+@@ -168467,16 +168467,16 @@
+ 23	e	e	CCONJ	_	_	24	cc	O	_
+ 24	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	22	conj	O	_
+ 25	;	;	PUNCT	_	_	27	punct	O	_
+-26			DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	O	_
+-27	Minerais	Minerais	PROPN	_	Gender=Masc|Number=Plur	17	conj	O	_
++26			PUNCT	_	_	27	punct	O	_
++27	Minerais	mineral	NOUN	_	Gender=Masc|Number=Plur	18	conj	O	_
+ 28	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	O	_
+ 29	;	;	PUNCT	_	_	31	punct	O	_
+-30			DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	O	_
+-31	Substâncias	Substâncias	PROPN	_	Gender=Fem|Number=Plur	17	conj	O	_
++30			PUNCT	_	_	31	punct	O	_
++31	Substâncias	substância	NOUN	_	Gender=Fem|Number=Plur	18	conj	O	_
+ 32	químicas	químico	ADJ	_	Gender=Fem|Number=Plur	31	amod	O	_
+ 33	;	;	PUNCT	_	_	34	punct	O	_
+-34			PROPN	_	Gender=Masc|Number=Sing	10	conj	O	_
+-35	Sólidos	Sólidos	PROPN	_	Number=Sing	34	flat:name	O	_
++34			PUNCT	_	_	35	punct	O	_
++35	Sólidos	sólido	NOUN	_	Gender=Masc|Number=Plur	18	conj	O	_
+ 36	(	(	PUNCT	_	_	37	punct	O	_
+ 37	incluindo	incluir	VERB	_	VerbForm=Ger	34	acl	O	_
+ 38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	O	_
+@@ -168497,8 +168497,8 @@
+ 53	asfaltenos	asfalteno	NOUN	_	Gender=Masc|Number=Plur	47	conj	O	_
+ 54	)	)	PUNCT	_	_	37	punct	O	_
+ 55	;	;	PUNCT	_	_	57	punct	O	_
+-56			ADP	_	_	57	case	O	_
+-57	Gases	gase	NOUN	_	Gender=Masc|Number=Plur	39	conj	O	_
++56			PUNCT	_	_	57	punct	O	_
++57	Gases	gás	NOUN	_	Gender=Masc|Number=Plur	18	conj	O	_
+ 58	dissolvidos	dissolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	57	acl	O	_
+ 59	.	.	PUNCT	_	_	8	punct	O	_
+ 
+@@ -170334,16 +170334,16 @@
+ 18	eletrólitos	eletrólito	NOUN	_	Gender=Masc|Number=Plur	15	appos	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	SKOOG	SKOOG	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	O	_
+-21	,	,	PUNCT	_	_	23	punct	O	_
+-22	2006	2006	NUM	_	NumType=Card	23	nummod	O	_
+-23	apud	apud	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
+-24	MORAES	MORAES	PROPN	_	Number=Sing	23	flat:name	O	_
+-25	,	,	PUNCT	_	_	26	punct	O	_
+-26	Camila	Camila	PROPN	_	Gender=Fem|Number=Sing	20	conj	O	_
+-27	Jesiele	Jesiele	PROPN	_	Number=Sing	26	flat:name	O	_
+-28	Oliveira	Oliveira	PROPN	_	Number=Sing	26	flat:name	O	_
+-29	,	,	PUNCT	_	_	30	punct	O	_
+-30	2013	2013	NOUN	_	Gender=Fem|Number=Plur	20	conj	O	_
++21	,	,	PUNCT	_	_	20	flat:name	O	_
++22	2006	2006	NUM	_	NumType=Card	20	flat:name	O	_
++23	apud	apud	ADP	_	_	24	case	O	_
++24	MORAES	MORAES	PROPN	_	Number=Sing	20	nmod	O	_
++25	,	,	PUNCT	_	_	24	flat:name	O	_
++26	Camila	Camila	PROPN	_	Gender=Fem|Number=Sing	24	flat:name	O	_
++27	Jesiele	Jesiele	PROPN	_	Number=Sing	24	flat:name	O	_
++28	Oliveira	Oliveira	PROPN	_	Number=Sing	24	flat:name	O	_
++29	,	,	PUNCT	_	_	24	flat:name	O	_
++30	2013	2013	NOUN	_	Gender=Fem|Number=Plur	24	flat:name	O	_
+ 31	)	)	PUNCT	_	_	20	punct	O	_
+ 32	.	.	PUNCT	_	_	2	punct	O	_
+ 
+@@ -173361,7 +173361,7 @@
+ 
+ # text = Hidrogenação de Benzeno em Sistema de Recirculação
+ # sent_id = 25-20150123-MONOGRAFIA_0-30
+-1	Hidrogenação	hidrogenação	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++1	Hidrogenação	hidrogenação	NOUN	_	Gender=Masc|Number=Sing	0	root	O	sentenciação
+ 2	de	de	ADP	_	_	1	flat:name	O	_
+ 3	Benzeno	Benzeno	PROPN	_	Number=Sing	1	flat:name	O	_
+ 4	em	em	ADP	_	_	5	case	O	_
+@@ -179739,9 +179739,9 @@
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	Avaliação	avaliação	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 4-5	dos	_	_	_	_	_	_	_	_
+-4	de	de	ADP	_	_	3	flat:name	O	_
+-5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	flat:name	O	_
+-6	Catalisadores	Catalisadores	PROPN	_	Number=Sing	3	flat:name	O	_
++4	de	de	ADP	_	_	6	case	O	_
++5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	O	_
++6	Catalisadores	catalisador	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
+ 
+ # text = Todos os catalisadores foram testados na hidrogenação do benzeno em sistema de recirculação.
+ # sent_id = 25-20150123-MONOGRAFIA_0-249
+@@ -185075,12 +185075,12 @@
+ # text = Hidrogenação de Benzeno em Sistema de Recirculação
+ # sent_id = 25-20150123-MONOGRAFIA_0-434
+ 1	Hidrogenação	hidrogenação	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
+-2	de	de	ADP	_	_	1	flat:name	O	_
+-3	Benzeno	Benzeno	PROPN	_	Number=Sing	1	flat:name	O	_
++2	de	de	ADP	_	_	3	case	O	_
++3	Benzeno	benzeno	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+ 4	em	em	ADP	_	_	5	case	O	_
+-5	Sistema	Sistema	PROPN	_	Gender=Masc|Number=Sing	1	nmod	O	_
+-6	de	de	ADP	_	_	5	flat:name	O	_
+-7	Recirculação	Recirculação	PROPN	_	Number=Sing	5	flat:name	O	_
++5	Sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	1	nmod	O	_
++6	de	de	ADP	_	_	7	case	O	_
++7	Recirculação	recirculação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+ 
+ # text = O benzeno era consumido e o único produto da reação nas condições utilizadas (sessão 3.3.1) era o cicloexano, segundo a seguinte equação: A Figura 23 mostra as curvas de conversão do benzeno versus tempo de reação obtidas para os diferentes catalisadores nos testes catalíticos de hidrogenação de benzeno.
+ # sent_id = 25-20150123-MONOGRAFIA_0-435
+@@ -191140,7 +191140,7 @@
+ 40	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	41	obj	O	_
+ 41	denominou	denominar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl:relcl	O	_
+ 42	de	de	ADP	_	_	43	case	O	_
+-43	Sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	41	xcomp	O	_
++43	Sistema	Sistema	PROPN	_	Gender=Masc|Number=Sing	41	xcomp	O	_
+ 44	de	de	ADP	_	_	43	flat:name	O	_
+ 45	Riftes	Riftes	PROPN	_	Number=Sing	43	flat:name	O	_
+ 46-47	da	_	_	_	_	_	_	_	_
+@@ -195156,7 +195156,7 @@
+ 32	Ferrari	Ferrari	PROPN	_	Gender=Masc|Number=Sing	29	obl:agent	O	_
+ 33	(	(	PUNCT	_	_	34	punct	O	_
+ 34	1990	1990	NUM	_	NumType=Card	32	nmod:appos	O	_
+-35	,	,	PUNCT	_	_	34	flat:name	O	_
++35	,	,	PUNCT	_	_	36	punct	O	_
+ 36	2001	2001	NUM	_	NumType=Card	34	conj	O	_
+ 37	)	)	PUNCT	_	_	34	punct	O	_
+ 38	.	.	PUNCT	_	_	29	punct	O	_
+@@ -202753,7 +202753,7 @@
+ 
+ # text = Deconvolução de Euler combinada à amplitude do sinal analítico – janela pivô
+ # sent_id = 20-20140904-TESEDSC_0-438
+-1	Deconvolução	deconvolução	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
++1	Deconvolução	deconvolução	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	1	flat:name	O	_
+ 3	Euler	Euler	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	O	_
+ 4	combinada	combinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	1	acl	O	_
+@@ -220060,21 +220060,21 @@
+ 7	de	de	ADP	_	_	8	case	O	_
+ 8	altos	alto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+ 9	magnéticos	magnético	ADJ	_	Gender=Masc|Number=Plur	8	amod	O	_
+-10	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	14	aux	O	_
++10	teriam	ter	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	0	root	O	_
+ 11	,	,	PUNCT	_	_	12	punct	O	_
+-12	portanto	portanto	CCONJ	_	_	14	cc	O	_
++12	portanto	portanto	ADV	_	_	10	advmod	O	_
+ 13	,	,	PUNCT	_	_	12	punct	O	_
+-14	profundidades	profundidade	NOUN	_	Gender=Fem|Number=Plur	0	root	O	_
++14	profundidades	profundidade	NOUN	_	Gender=Fem|Number=Plur	10	obj	O	_
+ 15	menores	pequeno	ADJ	_	Gender=Fem|Number=Plur	14	amod	O	_
+ 16-17	na	_	_	_	_	_	_	_	_
+ 16	em	em	ADP	_	_	19	case	O	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	O	_
+ 18	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	19	det	O	_
+-19	porção	porção	NOUN	_	Gender=Fem|Number=Sing	14	nmod	O	_
++19	porção	porção	NOUN	_	Gender=Fem|Number=Sing	10	obl	O	_
+ 20	SW	SW	PROPN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+ 21	e	e	CCONJ	_	_	23	cc	O	_
+ 22	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	expl	O	_
+-23	aprofundariam	aprofundar	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	14	conj	O	_
++23	aprofundariam	aprofundar	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	10	conj	O	_
+ 24	em	em	ADP	_	_	26	case	O	_
+ 25	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	26	det	O	_
+ 26	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	23	obl	O	_
+@@ -237957,15 +237957,15 @@
+ 30	Nasr-el-din	Nasr-el-din	PROPN	_	Number=Sing	28	flat:name	O	_
+ 31	,	,	PUNCT	_	_	28	flat:name	O	_
+ 32	1998	1998	NUM	_	NumType=Card	28	flat:name	O	_
+-33	,	,	PUNCT	_	_	34	punct	O	_
+-34	apud	apud	NOUN	_	Gender=Fem|Number=Sing	28	conj	O	_
+-35	Lima	Lima	PROPN	_	Number=Sing	34	flat:name	O	_
+-36	,	,	PUNCT	_	_	34	flat:name	O	_
+-37	2010	2010	NUM	_	NumType=Card	34	nmod:appos	O	_
++33	,	,	PUNCT	_	_	35	punct	O	_
++34	apud	apud	ADP	_	_	35	case	O	_
++35	Lima	Lima	PROPN	_	Number=Sing	28	nmod	O	_
++36	,	,	PUNCT	_	_	35	flat:name	O	_
++37	2010	2010	NUM	_	NumType=Card	35	flat:name	O	_
+ 38	)	)	PUNCT	_	_	28	punct	O	_
+ 39	e	e	CCONJ	_	_	43	cc	O	_
+-40	por	por	ADP	_	_	41	case	O	_
+-41	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	43	obl	O	_
++40	por	por	ADP	_	_	43	cc	O	MWEPOS=CCONJ
++41	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	40	fixed	O	_
+ 42	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	43	aux:pass	O	_
+ 43	escolhidas	escolher	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	18	conj	O	_
+ 44	para	para	SCONJ	_	_	46	mark	O	_
+@@ -239997,13 +239997,13 @@
+ 28	Amorim	Amorim	PROPN	_	Gender=Masc|Number=Sing	14	parataxis	O	_
+ 29	,	,	PUNCT	_	_	28	flat:name	O	_
+ 30	2006	2006	NUM	_	NumType=Card	28	flat:name	O	_
+-31	,	,	PUNCT	_	_	32	punct	O	_
+-32	apud	apud	NOUN	_	Gender=Masc|Number=Sing	28	conj	O	_
+-33	Barbosa	Barbosa	PROPN	_	Number=Sing	32	flat:name	O	_
+-34	et	et	PROPN	_	Number=Sing	32	flat:name	O	_
+-35	al.	al.	PROPN	_	Number=Sing	32	flat:name	O	_
+-36	,	,	PUNCT	_	_	32	flat:name	O	_
+-37	2007	2007	NUM	_	NumType=Card	32	flat:name	O	_
++31	,	,	PUNCT	_	_	33	punct	O	_
++32	apud	apud	ADP	_	_	33	case	O	_
++33	Barbosa	Barbosa	PROPN	_	Number=Sing	28	nmod	O	_
++34	et	et	PROPN	_	Number=Sing	33	flat:name	O	_
++35	al.	al.	PROPN	_	Number=Sing	33	flat:name	O	_
++36	,	,	PUNCT	_	_	33	flat:name	O	_
++37	2007	2007	NUM	_	NumType=Card	33	flat:name	O	_
+ 38	)	)	PUNCT	_	_	28	punct	O	_
+ 39	.	.	PUNCT	_	_	14	punct	O	_
+ 
+@@ -242520,9 +242520,9 @@
+ # text = Figura 2. 2– Escoamento do fluido em um poço horizontal. (a) com reboco; (b) sem reboco (Gallino et al., 2001)
+ # sent_id = 119-20141209-TESEMSC_0-164
+ 1	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
+-2	2.	2.	NUM	_	NumType=Card	1	nummod	O	_
++2	2.	2.	NUM	_	NumType=Card	1	nummod	O	tokenização
+ 3	2–	2–	NUM	_	NumType=Card	2	flat:name	O	_
+-4	Escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	1	appos	O	_
++4	Escoamento	escoamento	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	O	_
+ 5-6	do	_	_	_	_	_	_	_	_
+ 5	de	de	ADP	_	_	7	case	O	_
+ 6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+@@ -248172,8 +248172,8 @@
+ 28	forças	força	NOUN	_	Gender=Fem|Number=Plur	24	conj	O	_
+ 29	de	de	ADP	_	_	30	case	O	_
+ 30	van	van	X	_	_	28	nmod	O	_
+-31	der	dar	X	_	_	30	flat:name	O	_
+-32	Waals	Waals	PROPN	_	Gender=Masc|Number=Sing	30	flat:name	O	_
++31	der	der	X	_	_	30	nmod	O	_
++32	Waals	Waals	PROPN	_	Gender=Masc|Number=Sing	30	nmod	O	_
+ 33	.	.	PUNCT	_	_	3	punct	O	_
+ 
+ # text = Essencialmente, o polímero ocupa a região de adsorção da superfície e, quanto maior a área superficial disponível, maior o nível de adsorção observado (Sorbie, 1991).
+@@ -257327,7 +257327,7 @@
+ 3	Figura	figura	NOUN	_	Gender=Fem|Number=Sing	5	obl	O	_
+ 4	4.10	4.10	NUM	_	NumType=Card	3	nummod	O	_
+ 5-6	tem-se	_	_	_	_	_	_	_	_
+-5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
++5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 6	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl	O	_
+ 7	,	,	PUNCT	_	_	3	punct	O	_
+ 8-9	à	_	_	_	_	_	_	_	_
+@@ -265079,7 +265079,7 @@
+ 1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	:	:	PUNCT	_	_	3	punct	O	_
+ 3	Modificado	modificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	parataxis	O	_
+-4	de	de	ADP	_	_	3	flat:name	O	_
++4	de	de	ADP	_	_	5	case	O	_
+ 5	Pereira	Pereira	PROPN	_	Number=Sing	3	obl	O	_
+ 6	(	(	PUNCT	_	_	7	punct	O	_
+ 7	2008	2008	NUM	_	NumType=Card	3	nmod:appos	O	_
+@@ -269120,7 +269120,7 @@
+ 
+ # text = Densidade: Segundo Annis e Smith (1996), a densidade do fluido de perfuração tem que ser tal que a pressão hidrostática exercida pela coluna de fluido evite o influxo para o poço.
+ # sent_id = 240-20140220-MONOGRAFIA_0-192
+-1	Densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	21	parataxis	O	_
++1	Densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	18	parataxis	O	_
+ 2	:	:	PUNCT	_	_	4	punct	O	_
+ 3	Segundo	segundo	ADP	_	_	4	case	O	_
+ 4	Annis	Annis	PROPN	_	Gender=Masc|Number=Sing	21	obl	O	_
+@@ -269131,17 +269131,17 @@
+ 9	)	)	PUNCT	_	_	8	punct	O	_
+ 10	,	,	PUNCT	_	_	4	punct	O	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	O	_
+-12	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	O	_
++12	densidade	densidade	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	O	_
+ 13-14	do	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+ 14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	O	_
+ 15	fluido	fluido	NOUN	_	Gender=Masc|Number=Sing	12	nmod	O	_
+ 16	de	de	ADP	_	_	17	case	O	_
+ 17	perfuração	perfuração	NOUN	_	Gender=Fem|Number=Sing	15	nmod	O	_
+-18	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	O	_
++18	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 19	que	que	SCONJ	_	_	21	mark	O	_
+ 20	ser	ser	AUX	_	VerbForm=Inf	21	cop	O	_
+-21	tal	tal	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
++21	tal	tal	ADJ	_	Gender=Masc|Number=Sing	18	xcomp	O	_
+ 22	que	que	SCONJ	_	_	32	mark	O	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	O	_
+ 24	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	32	nsubj	O	_
+@@ -269159,7 +269159,7 @@
+ 35	para	para	ADP	_	_	37	case	O	_
+ 36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	O	_
+ 37	poço	poço	NOUN	_	Gender=Masc|Number=Sing	32	obl	O	_
+-38	.	.	PUNCT	_	_	21	punct	O	_
++38	.	.	PUNCT	_	_	18	punct	O	_
+ 
+ # text = Esta é a primeira das necessidades de qualquer fluido e deve ser considerado antes de qualquer outra das propriedades ou funções do fluido.
+ # sent_id = 240-20140220-MONOGRAFIA_0-193
+@@ -272150,7 +272150,7 @@
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
++5	EXPERIMENTAL	experimental	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 
+ # text = Neste capítulo serão discriminados os reagentes, materiais, equipamentos e a metodologia utilizada no desenvolvimento da parte experimental desta pesquisa, bem como, a construção dos diagramas de fase, preparo do fluido de perfuração e dos ensaios reológicos realizados.
+ # sent_id = 240-20140220-MONOGRAFIA_0-296
+@@ -273826,8 +273826,8 @@
+ 3	DIAGRAMAS	diagrama	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 4	DE	de	ADP	_	_	5	case	O	_
+ 5	FASE	fase	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+-6	TERNÁRIO	TERNÁRIO	PROPN	_	Number=Sing	5	flat:name	O	_
+-7	OBTIDOS	obtir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
++6	TERNÁRIO	ternário	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
++7	OBTIDOS	obter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	O	_
+ 
+ # text = O primeiro experimento realizado neste trabalho foi a construção do diagrama de fase ternário, composto por: fase orgânica ou fase óleo, no caso a n-Parafina, os tensoativos Ultranex 40 e Ultranex 80 e água doce.
+ # sent_id = 240-20140220-MONOGRAFIA_0-341
+@@ -276825,7 +276825,7 @@
+ 
+ # text = DIAZ, E. Reologia aplicada a revestimentos de papel. Curso de especialização em papel e celulose, 2002.
+ # sent_id = 240-20140220-MONOGRAFIA_0-451
+-1	DIAZ	DIAZ	PROPN	_	Gender=Fem|Number=Sing	0	root	O	_
++1	DIAZ	DIAZ	PROPN	_	Gender=Fem|Number=Sing	0	root	O	sentenciação
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+ 3	E.	E.	PROPN	_	Gender=Fem|Number=Sing	1	conj	O	_
+ 4	Reologia	Reologia	PROPN	_	Number=Sing	3	flat:name	O	_
+@@ -287008,17 +287008,17 @@
+ 
+ # text = Tem que ser o suficiente bastante para desconta minar o ambiente no qual houve o acidente, ou proporcionar uma recuperação natural com menor tempo.
+ # sent_id = 411-20150702-MONOGRAFIA_0-257
+-1	Tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	O	_
++1	Tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 2	que	que	SCONJ	_	_	5	mark	O	_
+ 3	ser	ser	AUX	_	VerbForm=Inf	5	cop	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+-5	suficiente	suficiente	ADJ	_	Gender=Masc|Number=Sing	0	root	O	_
++5	suficiente	suficiente	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	O	_
+ 6	bastante	bastante	ADV	_	_	5	advmod	O	_
+ 7	para	para	SCONJ	_	_	8	mark	O	_
+ 8	desconta	descontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	O	_
+ 9	minar	minar	VERB	_	VerbForm=Inf	8	xcomp	O	_
+ 10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	O	_
+-11	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	9	obj	O	_
++11	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	8	obj	O	_
+ 12-13	no	_	_	_	_	_	_	_	_
+ 12	em	em	ADP	_	_	14	case	O	_
+ 13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	O	_
+@@ -287035,7 +287035,7 @@
+ 24	com	com	ADP	_	_	26	case	O	_
+ 25	menor	pequeno	ADJ	_	Gender=Masc|Number=Sing	26	amod	O	_
+ 26	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	20	obl	O	_
+-27	.	.	PUNCT	_	_	5	punct	O	_
++27	.	.	PUNCT	_	_	1	punct	O	_
+ 
+ # text = É de extrema importância evitar que a mancha do petróleo entre em contato com a costa, principalmente dentro dos estuários, local onde o processo natural de intemperismo do óleo é considerado difícil e restrito.
+ # sent_id = 411-20150702-MONOGRAFIA_0-258
+@@ -294932,7 +294932,7 @@
+ 1	2.3.1.3	2.3.1.3	NUM	_	NumType=Card	3	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	Tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+-4	Anfóteros	Anfóteros	PROPN	_	Number=Sing	3	flat:name	O	_
++4	Anfóteros	anfótero	NOUN	_	Gender=Masc|Number=Plur	3	nmod	O	_
+ 
+ # text = Tensoativos anfóteros podem se comporta tanto como tensoativo catiônico ou aniônico, isso vai depender do PH do meio onde ele se encontra.
+ # sent_id = 243-20141015-MONOGRAFIA_1-168
+@@ -295647,7 +295647,7 @@
+ # sent_id = 243-20141015-MONOGRAFIA_1-190
+ 1	2.3.2.2	2.3.2.2	NUM	_	NumType=Card	3	nummod	O	_
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+-3	Ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	0	root	O	_
++3	Ponto	Ponto	PROPN	_	Gender=Masc|Number=Sing	0	root	O	_
+ 4	Krafft	Krafft	PROPN	_	Gender=Masc|Number=Sing	3	flat:name	O	_
+ 
+ # text = O ponto de Krafft é uma característica particular dos tensoativos iônicos, estando essa ligada diretamente a solubilidade do tensoativo em água.
+@@ -296084,7 +296084,7 @@
+ 2	.	.	PUNCT	_	_	1	punct	O	_
+ 3	-	-	PUNCT	_	_	4	punct	O	_
+ 4	METODOLOGIA	metodologia	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+-5	EXPERIMENTAL	EXPERIMENTAL	PROPN	_	Number=Sing	4	flat:name	O	_
++5	EXPERIMENTAL	experimental	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 
+ # text = 3.1. Equipamentos Utilizados
+ # sent_id = 243-20141015-MONOGRAFIA_1-202

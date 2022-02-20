@@ -1,0 +1,716 @@
+commit d1754a735059ef556d814b41f2a8283da9373755
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Fri Aug 13 09:39:16 2021 -0300
+
+    Três correções
+    
+    Terminações do domínio como ADJ ou VERB
+    Flat:name que não era PROPN
+    NUM seguido de NUM que não era flat
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index f3ddfce..0b7afcc 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -2888,9 +2888,9 @@
+ 30	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_
+ 31	sílticos	síltico	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	_
+ 32	,	,	PUNCT	_	_	33	punct	_	_
+-33	siltitos	siltito	ADJ	_	Gender=Masc|Number=Plur	31	conj	_	_
++33	siltitos	siltito	NOUN	_	Gender=Masc|Number=Plur	30	conj	_	_
+ 34	e	e	CCONJ	_	_	35	cc	_	_
+-35	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	31	conj	_	_
++35	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	30	conj	_	_
+ 36	)	)	PUNCT	_	_	30	punct	_	_
+ 37	.	.	PUNCT	_	_	1	punct	_	_
+ 
+@@ -4800,9 +4800,9 @@
+ 5	Zona	Zona	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+ 6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+ 7	possivelmente	possivelmente	ADV	_	_	8	advmod	_	_
+-8	pré-neógeno	pré-neógeno	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_
++8	pré-neógeno	pré-neógeno	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 9	ou	ou	CCONJ	_	_	10	cc	_	_
+-10	neógeno	neógeno	ADJ	_	Gender=Masc|Number=Sing	8	conj	_	_
++10	neógeno	neógeno	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_
+ 11	inferior	inferior	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_
+ 12	,	,	PUNCT	_	_	13	punct	_	_
+ 13	separando	separar	VERB	_	VerbForm=Ger	8	advcl	_	_
+@@ -26151,9 +26151,9 @@
+ 1	7	7	NUM	_	NumType=Card	4	parataxis	_	_
+ 2	.	.	PUNCT	_	_	4	punct	_	_
+ 3	-	-	PUNCT	_	_	4	punct	_	_
+-4	ESTRATIGRAFIA	ESTRATIGRAFIA	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
+-5	DE	de	ADP	_	_	4	flat:name	_	_
+-6	SEQUÊNCIAS	sequência	NOUN	_	Gender=Fem|Number=Plur	4	flat:name	_	_
++4	ESTRATIGRAFIA	estratigrafia	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
++5	DE	de	ADP	_	_	6	case	_	_
++6	SEQUÊNCIAS	sequência	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_
+ 
+ # text = O Membro Romualdo corresponde litoestratigraficamente a uma sequência deposicional com aproximadamente 100 m de espessura, limitada por desconformidades, na base (limite inferior da sequência deposicional) e no topo (limite superior da sequência deposicional).
+ # sent_id = 284-20150917-MONOGRAFIA_0-295
+@@ -28495,7 +28495,7 @@
+ 14	paulatinamente	paulatinamente	ADV	_	_	16	advmod	_	_
+ 15	,	,	PUNCT	_	_	14	punct	_	_
+ 16	retornam	retornar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+-17	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	16	nsubj	_	_
++17	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_
+ 18	com	com	ADP	_	_	19	case	_	_
+ 19	conchostráceos	conchostráceo	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_
+ 20	e	e	CCONJ	_	_	21	cc	_	_
+@@ -44769,7 +44769,7 @@
+ 11	crosta	crosta	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_
+ 12	terrestre	terrestre	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_
+ 13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+-14	ilitas	ilito	ADJ	_	Gender=Fem|Number=Plur	0	root	_	_
++14	ilitas	ilito	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_
+ 15	,	,	PUNCT	_	_	16	punct	_	_
+ 16	seguidas	seguir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	advcl	_	_
+ 17-18	pela	_	_	_	_	_	_	_	_
+@@ -44787,7 +44787,7 @@
+ 27	por	por	ADP	_	_	29	case	_	_
+ 28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+ 29	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_
+-30	ilita-montmorilonita	ilita-montmortmonito	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_
++30	ilita-montmorilonita	ilita-montmortmonito	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_
+ 31	(	(	PUNCT	_	_	32	punct	_	_
+ 32	WEAVER	WEAVER	PROPN	_	Gender=Fem|Number=Sing	14	parataxis	_	_
+ 33	,	,	PUNCT	_	_	32	flat:name	_	_
+@@ -46200,7 +46200,7 @@
+ 24-25	chama-se	_	_	_	_	_	_	_	_
+ 24	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+ 25	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	expl	_	_
+-26	brucita	brucito	ADJ	_	Gender=Masc|Number=Sing	24	xcomp	_	_
++26	brucita	brucito	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_
+ 27	,	,	PUNCT	_	_	24	punct	_	_
+ 28	cuja	cujo	DET	_	Gender=Fem|Number=Sing|PronType=Rel	29	det	_	_
+ 29	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	31	nsubj	_	_
+@@ -47285,9 +47285,9 @@
+ # sent_id = 24-20150122-MONOGRAFIA_0-201
+ 1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+ 2	argilomineral	argilomineral	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	_	_
+-3	caulinita	caulinita	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_
++3	caulinita	caulinita	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+ 4	(	(	PUNCT	_	_	5	punct	_	_
+-5	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	_
++5	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	9	parataxis	_	_
+ 6	II.4	II.4	NUM	_	NumType=Card	5	nummod	_	_
+ 7	)	)	PUNCT	_	_	5	punct	_	_
+ 8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	_
+@@ -58138,7 +58138,7 @@
+ 39	de	de	ADP	_	_	41	case	_	_
+ 40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+ 41	argilomineral	argilomineral	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	_
+-42	esmectita	esmectito	ADJ	_	Gender=Masc|Number=Sing	41	amod	_	_
++42	esmectita	esmectito	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	_
+ 43	presente	presente	ADJ	_	Gender=Masc|Number=Sing	41	amod	_	_
+ 44-45	na	_	_	_	_	_	_	_	_
+ 44	em	em	ADP	_	_	46	case	_	_
+@@ -60316,9 +60316,9 @@
+ 9	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+ 10	conglomeráticos	conglomerático	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	_
+ 11	,	,	PUNCT	_	_	12	punct	_	_
+-12	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	10	conj	_	_
++12	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+ 13	e	e	CCONJ	_	_	14	cc	_	_
+-14	lamitos	lamito	ADJ	_	Gender=Masc|Number=Plur	10	conj	_	_
++14	lamitos	lamito	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+ 15	sendo	ser	AUX	_	VerbForm=Ger	22	mark	_	_
+ 16	que	que	SCONJ	_	_	15	fixed	_	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+@@ -60403,7 +60403,7 @@
+ 27	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	25	obl:agent	_	_
+ 28	matriz-sustentado	matriz-sustentado	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	_
+ 29	e	e	CCONJ	_	_	30	cc	_	_
+-30	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	27	conj	_	_
++30	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	27	conj	_	_
+ 31	líticos	lítico	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	_
+ 32	depositados	depositar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	30	acl	_	_
+ 33	por	por	ADP	_	_	34	case	_	_
+@@ -60462,11 +60462,11 @@
+ 33	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	27	conj	_	_
+ 34	conglomeráticos	conglomerático	ADJ	_	Gender=Masc|Number=Plur	33	amod	_	_
+ 35	,	,	PUNCT	_	_	36	punct	_	_
+-36	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	33	conj	_	_
++36	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	33	conj	_	_
+ 37	,	,	PUNCT	_	_	38	punct	_	_
+-38	siltitos	siltito	ADJ	_	Gender=Masc|Number=Plur	33	conj	_	_
++38	siltitos	siltito	NOUN	_	Gender=Masc|Number=Plur	33	conj	_	_
+ 39	e	e	CCONJ	_	_	40	cc	_	_
+-40	argilitos	argilito	ADJ	_	Gender=Masc|Number=Plur	33	conj	_	_
++40	argilitos	argilito	NOUN	_	Gender=Masc|Number=Plur	33	conj	_	_
+ 41	.	.	PUNCT	_	_	5	punct	_	_
+ 
+ # text = Campos e Dardenne (1997) caracterizaram este membro como originado em sistema fluvial entrelaçado.
+@@ -63594,22 +63594,22 @@
+ 23	G	g	NOUN	_	Gender=Masc|Number=Plur	20	appos	_	_
+ 24	)	)	PUNCT	_	_	23	punct	_	_
+ 25	e	e	CCONJ	_	_	26	cc	_	_
+-26	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	16	conj	_	_
++26	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	_
+ 27	com	com	ADP	_	_	28	case	_	_
+ 28	seleção	seleção	NOUN	_	Gender=Fem|Number=Sing	26	obl	_	_
+ 29	moderada	moderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	28	acl	_	_
+ 30	a	a	ADP	_	_	31	case	_	_
+ 31	ruim	ruim	ADJ	_	Gender=Masc|Number=Sing	29	obl	_	_
+ 32	,	,	PUNCT	_	_	33	punct	_	_
+-33	maciços	maciço	ADJ	_	Gender=Masc|Number=Plur	31	conj	_	_
++33	maciços	maciço	ADJ	_	Gender=Masc|Number=Plur	26	conj	_	_
+ 34	(	(	PUNCT	_	_	35	punct	_	_
+ 35	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	31	appos	_	_
+ 36	)	)	PUNCT	_	_	35	punct	_	_
+-37	ou	ou	CCONJ	_	_	39	cc	_	_
++37	ou	ou	CCONJ	_	_	41	cc	_	_
+ 38	mais	mais	ADV	_	_	39	advmod	_	_
+-39	raramente	raramente	ADV	_	_	2	advmod	_	_
++39	raramente	raramente	ADV	_	_	41	advmod	_	_
+ 40	com	com	ADP	_	_	41	case	_	_
+-41	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	39	obl	_	_
++41	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	33	conj	_	_
+ 42	cruzada	cruzado	ADJ	_	Gender=Fem|Number=Sing	41	amod	_	_
+ 43	acanalada	acanalar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	41	acl	_	_
+ 44	decimétrica	decimétrico	ADJ	_	Gender=Fem|Number=Sing	41	amod	_	_
+@@ -63932,9 +63932,9 @@
+ 14	,	,	PUNCT	_	_	6	punct	_	_
+ 15	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	16	aux:pass	_	_
+ 16	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+-17	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	16	xcomp	_	_
++17	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_
+ 18	com	com	ADP	_	_	19	case	_	_
+-19	deformações	deformação	NOUN	_	Gender=Fem|Number=Plur	16	obl	_	_
++19	deformações	deformação	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_
+ 20	convolutas	convoluto	ADJ	_	Gender=Fem|Number=Plur	19	amod	_	_
+ 21	,	,	PUNCT	_	_	24	punct	_	_
+ 22	e	e	CCONJ	_	_	24	cc	_	_
+@@ -65136,7 +65136,7 @@
+ 15	folhelho	folhelho	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	_
+ 16	cinza	cinza	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_
+ 17	até	até	ADP	_	_	18	case	_	_
+-18	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	13	obl	_	_
++18	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	13	obl	_	_
+ 19	muito	muito	ADV	_	_	20	advmod	_	_
+ 20	finos	fino	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_
+ 21	.	.	PUNCT	_	_	7	punct	_	_
+@@ -65963,7 +65963,7 @@
+ 6	,	,	PUNCT	_	_	1	punct	_	_
+ 7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	aux:pass	_	_
+ 8	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+-9	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	8	nsubj:pass	_	_
++9	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	_	_
+ 10	maciços	maciço	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	_
+ 11	(	(	PUNCT	_	_	12	punct	_	_
+ 12	Sm	Sm	PROPN	_	Gender=Masc|Number=Sing	9	appos	_	_
+@@ -65986,7 +65986,7 @@
+ 29	Sr	Sr	PROPN	_	Gender=Masc|Number=Sing	25	appos	_	_
+ 30	)	)	PUNCT	_	_	29	punct	_	_
+ 31	e	e	CCONJ	_	_	32	cc	_	_
+-32	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	26	conj	_	_
++32	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	_
+ 33	com	com	ADP	_	_	34	case	_	_
+ 34	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	32	obl	_	_
+ 35	plano-paralela	plano-paralela	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_
+@@ -67154,29 +67154,29 @@
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+ 2	inferior	inferior	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_
+ 3	compreende	compreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+-4	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	3	xcomp	_	_
++4	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_
+ 5	de	de	ADP	_	_	6	case	_	_
+ 6	granulometria	granulometria	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_
+ 7	fina	fino	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_
+ 8	a	a	ADP	_	_	9	case	_	_
+ 9	grossa	grosso	ADJ	_	Gender=Fem|Number=Sing	7	obl	_	_
+ 10	,	,	PUNCT	_	_	11	punct	_	_
+-11	seleção	seleção	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_
++11	seleção	seleção	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_
+ 12	moderada	moderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	_	_
+ 13	,	,	PUNCT	_	_	15	punct	_	_
+ 14	com	com	ADP	_	_	15	case	_	_
+-15	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_
++15	cimento	cimento	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	_
+ 16	carbonático	carbonático	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_
+ 17	e	e	CCONJ	_	_	19	cc	_	_
+ 18	com	com	ADP	_	_	19	case	_	_
+-19	estratificações	estratificação	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_
++19	estratificações	estratificação	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_
+ 20	plano-paralela	plano-paralela	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_
+ 21	,	,	PUNCT	_	_	22	punct	_	_
+-22	cruzada	cruzar	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_
++22	cruzada	cruzado	ADJ	_	Gender=Fem|Number=Sing	20	conj	_	_
+ 23	acanalada	acanalar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	22	acl	_	_
+ 24	ou	ou	CCONJ	_	_	26	cc	_	_
+ 25	sem	sem	ADP	_	_	26	case	_	_
+-26	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_
++26	estruturas	estrutura	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	_
+ 27	aparentes	aparente	ADJ	_	Gender=Fem|Number=Plur	26	amod	_	_
+ 28	.	.	PUNCT	_	_	3	punct	_	_
+ 
+@@ -67318,7 +67318,7 @@
+ 32	a	a	SCONJ	_	_	33	mark	_	_
+ 33	ocorrerem	ocorrer	VERB	_	Number=Plur|Person=3|VerbForm=Inf	31	xcomp	_	_
+ 34	apenas	apenas	ADV	_	_	35	advmod	_	_
+-35	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	33	xcomp	_	_
++35	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	_	_
+ 36	.	.	PUNCT	_	_	16	punct	_	_
+ 
+ # text = Nesta transição há intercalações de finos (fácies H e M) com lentes e camadas tabulares de arenitos médios/grossos, em alguns casos com matriz.
+@@ -68432,7 +68432,7 @@
+ 8	descreve	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 9	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	expl	_	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+-11	associação	associação	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_
++11	associação	associação	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_
+ 12-13	das	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	_	_
+ 13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+@@ -68445,8 +68445,8 @@
+ 20	,	,	PUNCT	_	_	21	punct	_	_
+ 21	Sr	Sr	PROPN	_	Gender=Fem|Number=Sing	15	conj	_	_
+ 22	e	e	CCONJ	_	_	24	cc	_	_
+-23	subordinadamente	subordinadamente	ADV	_	_	24	advmod	_	_
+-24	lamitos	lamito	ADJ	_	Gender=Masc|Number=Plur	15	conj	_	_
++23	subordinadamente	subordinadamente	ADV	_	_	8	advmod	_	_
++24	lamitos	lamito	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_
+ 25	.	.	PUNCT	_	_	8	punct	_	_
+ 
+ # text = Algumas feições descritas em campo, como lentes com gradação inversa produzidas por grain flow, estrutura pin stripe, fácies
+@@ -85054,7 +85054,7 @@
+ 4	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+ 5	por	por	ADP	_	_	8	case	_	_
+ 6	100	100	NUM	_	NumType=Card	8	nummod	_	_
+-7	mil	mil	NUM	_	NumType=Card	8	nummod	_	_
++7	mil	mil	NUM	_	NumType=Card	6	flat	_	_
+ 8	quilômetros	quilômetro	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_
+ 9	quadrados	quadrados	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_
+ 10-11	do	_	_	_	_	_	_	_	_
+@@ -96352,11 +96352,11 @@
+ # sent_id = 161-20150810-MONOGRAFIA_0-878
+ 1	8.3.3.2	8.3.3.2	NUM	_	NumType=Card	3	parataxis	_	_
+ 2	.	.	PUNCT	_	_	3	punct	_	_
+-3	Custos	Custos	PROPN	_	Gender=Masc|Number=Plur	0	root	_	_
+-4	Operacionais	operacionais	ADJ	_	Gender=Masc|Number=Plur	3	flat:name	_	_
++3	Custos	custos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_
++4	Operacionais	operacionais	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 5	e	e	CCONJ	_	_	7	cc	_	_
+ 6	de	de	ADP	_	_	7	case	_	_
+-7	Manutenção	Manutenção	PROPN	_	Number=Sing	3	conj	_	_
++7	Manutenção	manutenção	NOUN	_	Number=Sing	4	conj	_	_
+ 
+ # text = Quadro 11 - Resultados dos custos de operação e manutenção das plataformas * o valor corresponde também às plataformas de produção ligadas pelos carbodutos auxiliares às plataformas injetoras ; vide figura 31
+ # sent_id = 161-20150810-MONOGRAFIA_0-879
+@@ -97971,7 +97971,7 @@
+ 21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
+ 22	de	de	ADP	_	_	25	case	_	_
+ 23	120	120	NUM	_	NumType=Card	25	nummod	_	_
+-24	mil	mil	NUM	_	NumType=Card	25	nummod	_	_
++24	mil	mil	NUM	_	NumType=Card	23	flat	_	_
+ 25	barris	barril	NOUN	_	Gender=Masc|Number=Plur	10	acl:relcl	_	_
+ 26	por	por	ADP	_	_	27	case	_	_
+ 27	dia	dia	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_
+@@ -99785,7 +99785,7 @@
+ 6	montante	montante	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_
+ 7	(	(	PUNCT	_	_	10	punct	_	_
+ 8	406	406	NUM	_	NumType=Card	10	nummod	_	_
+-9	mil	mil	NUM	_	NumType=Card	10	nummod	_	_
++9	mil	mil	NUM	_	NumType=Card	8	flat	_	_
+ 10	bpd	bpd	NOUN	_	Gender=Masc|Number=Plur	6	appos	_	_
+ 11	)	)	PUNCT	_	_	10	punct	_	_
+ 12	correspondentes	correspondente	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_
+@@ -101281,7 +101281,7 @@
+ 11	FPSO	FPSO	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	_
+ 12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+ 13	75	75	NUM	_	NumType=Card	15	nummod	_	_
+-14	mil	mil	NUM	_	NumType=Card	15	nummod	_	_
++14	mil	mil	NUM	_	NumType=Card	13	flat	_	_
+ 15	bopd	bopd	NOUN	_	Gender=Masc|Number=Plur	3	ccomp	_	_
+ 16	,	,	PUNCT	_	_	17	punct	_	_
+ 17	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	15	appos	_	_
+@@ -101298,12 +101298,12 @@
+ 28	para	para	ADP	_	_	29	case	_	_
+ 29	Tupi	Tupi	PROPN	_	Gender=Masc|Number=Sing	24	obl	_	_
+ 30	(	(	PUNCT	_	_	32	punct	_	_
+-31	100	100	NUM	_	NumType=Card	32	nummod	_	_
+-32	mil	mil	NUM	_	NumType=Card	17	parataxis	_	_
++31	100	100	NUM	_	NumType=Card	36	nummod	_	_
++32	mil	mil	NUM	_	NumType=Card	31	flat	_	_
+ 33	e	e	CCONJ	_	_	36	cc	_	_
+-34	120	120	NUM	_	NumType=Card	35	nummod	_	_
+-35	mil	mil	NUM	_	NumType=Card	32	conj	_	_
+-36	bopd	bopd	NOUN	_	Gender=Masc|Number=Plur	32	nmod	_	_
++34	120	120	NUM	_	NumType=Card	31	conj	_	_
++35	mil	mil	NUM	_	NumType=Card	34	flat	_	_
++36	bopd	bopd	NOUN	_	Gender=Masc|Number=Plur	17	parataxis	_	_
+ 37	)	)	PUNCT	_	_	32	punct	_	_
+ 38	e	e	CCONJ	_	_	39	cc	_	_
+ 39	inferir	inferir	VERB	_	VerbForm=Inf	15	conj	_	_
+@@ -101326,7 +101326,7 @@
+ 53	Guará	Guará	PROPN	_	Number=Sing	52	flat:name	_	_
+ 54	(	(	PUNCT	_	_	57	punct	_	_
+ 55	16	16	NUM	_	NumType=Card	57	nummod	_	_
+-56	mil	mil	NUM	_	NumType=Card	57	nummod	_	_
++56	mil	mil	NUM	_	NumType=Card	55	flat	_	_
+ 57	bopd	bopd	NOUN	_	Gender=Masc|Number=Plur	52	appos	_	_
+ 58	)	)	PUNCT	_	_	57	punct	_	_
+ 59	e	e	CCONJ	_	_	62	cc	_	_
+@@ -101342,7 +101342,7 @@
+ 67	Iara	Iara	PROPN	_	Gender=Fem|Number=Sing	62	nmod	_	_
+ 68	(	(	PUNCT	_	_	71	punct	_	_
+ 69	20	20	NUM	_	NumType=Card	71	nummod	_	_
+-70	mil	mil	NUM	_	NumType=Card	71	nummod	_	_
++70	mil	mil	NUM	_	NumType=Card	69	flat	_	_
+ 71	bopd	bopd	NOUN	_	Gender=Masc|Number=Plur	67	nmod	_	_
+ 72	)	)	PUNCT	_	_	71	punct	_	_
+ 73	.	.	PUNCT	_	_	3	punct	_	_
+@@ -102014,7 +102014,7 @@
+ 32	com	com	ADP	_	_	33	case	_	_
+ 33	MEG	MEG	PROPN	_	Gender=Fem|Number=Sing	23	obl	_	_
+ 34	(	(	PUNCT	_	_	35	punct	_	_
+-35	monoetilenoglicol	monoetilenoglicol	ADJ	_	Gender=Masc|Number=Sing	33	nmod	_	_
++35	monoetilenoglicol	monoetilenoglicol	NOUN	_	Gender=Masc|Number=Sing	33	appos	_	_
+ 36	)	)	PUNCT	_	_	35	punct	_	_
+ 37	.	.	PUNCT	_	_	5	punct	_	_
+ 
+@@ -106422,7 +106422,7 @@
+ 15	gás	gás	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_
+ 16	com	com	ADP	_	_	17	case	_	_
+ 17	trietileno	trietileno	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_
+-18	glicol	glicol	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_
++18	glicol	glicol	NOUN	_	Gender=Masc|Number=Sing	17	compound	_	_
+ 19	(	(	PUNCT	_	_	20	punct	_	_
+ 20	TEG	TEG	PROPN	_	Gender=Masc|Number=Sing	17	appos	_	_
+ 21	)	)	PUNCT	_	_	20	punct	_	_
+@@ -106494,7 +106494,7 @@
+ 54	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	51	nmod	_	_
+ 55	de	de	ADP	_	_	58	case	_	_
+ 56	500	500	NUM	_	NumType=Card	58	nummod	_	_
+-57	mil	mil	NUM	_	NumType=Card	58	nummod	_	_
++57	mil	mil	NUM	_	NumType=Card	56	flat	_	_
+ 58	barris	barril	NOUN	_	Gender=Masc|Number=Plur	54	nmod	_	_
+ 59	de	de	ADP	_	_	60	case	_	_
+ 60	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	58	nmod	_	_
+@@ -106859,7 +106859,7 @@
+ 33	desidratação	desidratação	NOUN	_	Gender=Fem|Number=Sing	30	obl:arg	_	_
+ 34	com	com	ADP	_	_	35	case	_	_
+ 35	trietileno	trietileno	NOUN	_	Gender=Masc|Number=Sing	33	nmod	_	_
+-36	glicol	glicol	ADJ	_	Gender=Masc|Number=Sing	35	amod	_	_
++36	glicol	glicol	NOUN	_	Gender=Masc|Number=Sing	35	compound	_	_
+ 37	.	.	PUNCT	_	_	26	punct	_	_
+ 
+ # text = Esse gás é entregue aos terminais através de um número relativamente limitado de grandes sistemas de gasodutos.
+@@ -113030,12 +113030,12 @@
+ 16	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	_
+ 17	offshore	offshore	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_
+ 18	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
+-19	metanol	metanol	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_
++19	metanol	metanol	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+ 20	(	(	PUNCT	_	_	21	punct	_	_
+ 21	MeOH	MeOH	PROPN	_	Gender=Masc|Number=Sing	19	appos	_	_
+ 22	)	)	PUNCT	_	_	21	punct	_	_
+ 23	e	e	CCONJ	_	_	24	cc	_	_
+-24	monoetilenoglicol	monoetilenoglicol	ADJ	_	Gender=Masc|Number=Sing	19	conj	_	_
++24	monoetilenoglicol	monoetilenoglicol	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_
+ 25	(	(	PUNCT	_	_	26	punct	_	_
+ 26	MEG	MEG	PROPN	_	Gender=Fem|Number=Sing	24	appos	_	_
+ 27	)	)	PUNCT	_	_	26	punct	_	_
+@@ -129087,7 +129087,7 @@
+ 21	e	e	CCONJ	_	_	22	cc	_	_
+ 22	cicloalcanos	cicloalcano	ADJ	_	Gender=Masc|Number=Plur	11	conj	_	_
+ 23	(	(	PUNCT	_	_	24	punct	_	_
+-24	naftenos	nafteno	ADJ	_	Gender=Masc|Number=Plur	22	appos	_	_
++24	naftenos	nafteno	NOUN	_	Gender=Masc|Number=Plur	22	appos	_	_
+ 25	)	)	PUNCT	_	_	24	punct	_	_
+ 26	.	.	PUNCT	_	_	4	punct	_	_
+ 
+@@ -129850,7 +129850,7 @@
+ 15	preferidas	preferir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+ 16	a	a	ADP	_	_	17	case	_	_
+ 17	associação	associação	NOUN	_	Gender=Fem|Number=Sing	15	xcomp	_	_
+-18	asfalteno	asfalteno	ADJ	_	Gender=Fem|Number=Sing	17	nmod	_	_
++18	asfalteno	asfalteno	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_
+ 19	–	–	PUNCT	_	_	18	flat:name	_	_
+ 20	asfalteno	asfalteno	NOUN	_	Gender=Masc|Number=Sing	18	flat:name	_	_
+ 21	e	e	CCONJ	_	_	25	cc	_	_
+@@ -130128,7 +130128,7 @@
+ 35	rochas	rocha	NOUN	_	Gender=Fem|Number=Plur	33	obl	_	_
+ 36	porosas	poroso	ADJ	_	Gender=Fem|Number=Plur	35	amod	_	_
+ 37	(	(	PUNCT	_	_	38	punct	_	_
+-38	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	35	nmod	_	_
++38	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	35	nmod:appos	_	_
+ 39	,	,	PUNCT	_	_	40	punct	_	_
+ 40	carbonatos	carbonato	NOUN	_	Gender=Masc|Number=Plur	38	conj	_	_
+ 41	,	,	PUNCT	_	_	42	punct	_	_
+@@ -155047,16 +155047,16 @@
+ # text = 3.2.4.1 Metilação dos Ácidos Graxos livres - (AGL)
+ # sent_id = 271-20150810-MONOGRAFIA_0-204
+ 1	3.2.4.1	3.2.4.1	NUM	_	NumType=Card	2	parataxis	_	_
+-2	Metilação	Metilação	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
++2	Metilação	metilação	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_
+ 3-4	dos	_	_	_	_	_	_	_	_
+-3	de	de	ADP	_	_	2	flat:name	_	_
+-4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	flat:name	_	_
+-5	Ácidos	Ácidos	PROPN	_	Number=Sing	2	flat:name	_	_
+-6	Graxos	Graxos	PROPN	_	Number=Sing	2	flat:name	_	_
+-7	livres	livre	ADJ	_	Gender=Masc|Number=Plur	2	flat:name	_	_
++3	de	de	ADP	_	_	5	case	_	_
++4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
++5	Ácidos	ácidos	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
++6	Graxos	graxos	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_
++7	livres	livre	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_
+ 8	-	-	PUNCT	_	_	10	punct	_	_
+ 9	(	(	PUNCT	_	_	10	punct	_	_
+-10	AGL	AGL	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	_
++10	AGL	AGL	PROPN	_	Gender=Fem|Number=Sing	5	appos	_	_
+ 11	)	)	PUNCT	_	_	10	punct	_	_
+ 
+ # text = A partir do perfil de ácidos graxos obtido por CG-FID é possível calcular a Massa Molar média (MMmédia) dos óleos.
+@@ -159662,9 +159662,9 @@
+ 2	se	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	_	_
+ 3	razão	razão	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_
+ 4	molar	molar	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_
+-5	metanol	metanol	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_
++5	metanol	metanol	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_
+ 6	:	:	PUNCT	_	_	7	punct	_	_
+-7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_
++7	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	compound	_	_
+ 8	de	de	ADP	_	_	9	case	_	_
+ 9	6:1	6:1	NUM	_	NumType=Card	7	nummod	_	_
+ 10	e	e	CCONJ	_	_	11	cc	_	_
+@@ -161520,7 +161520,7 @@
+ 16	e	e	CCONJ	_	_	21	cc	_	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+ 18	solução	solução	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	_	_
+-19	metanol	metanol	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_
++19	metanol	metanol	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_
+ 20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+ 21	colocado	colocar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	conj	_	_
+ 22	em	em	ADP	_	_	23	case	_	_
+@@ -170839,7 +170839,7 @@
+ 25	flotação	flotação	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_
+ 26	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	27	aux:pass	_	_
+ 27	empregados	empregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	conj	_	_
+-28	xileno	xileno	ADJ	_	Gender=Masc|Number=Sing	27	xcomp	_	_
++28	xileno	xileno	NOUN	_	Gender=Masc|Number=Sing	27	xcomp	_	_
+ 29	como	como	ADP	_	_	31	case	_	_
+ 30	poluente	poluente	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_
+ 31	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_
+@@ -172554,7 +172554,7 @@
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+ 2	diferentes	diferente	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
+ 3	tensoativos	tensoativo	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	_	_
+-4	nonilfenol	nonilfenol	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
++4	nonilfenol	nonilfenol	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_
+ 5	etoxilados	etoxilado	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_
+ 6	com	com	ADP	_	_	9	case	_	_
+ 7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+@@ -181724,7 +181724,7 @@
+ 
+ # text = b Redução do volume de microporos em relação à zeólita suporte considerando a área do catalisador por massa de zeólita.
+ # sent_id = 25-20150123-MONOGRAFIA_0-309
+-1	b	b	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_
++1	b	b	PROPN	_	Gender=Fem|Number=Sing	0	root	_	sentenciação
+ 2	Redução	redução	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+@@ -181737,7 +181737,7 @@
+ 10-11	à	_	_	_	_	_	_	_	_
+ 10	a	a	ADP	_	_	8	fixed	_	_
+ 11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+-12	zeólita	zeólito	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_
++12	zeólita	zeólito	NOUN	_	Gender=Fem|Number=Sing	13	amod	_	_
+ 13	suporte	suporte	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_
+ 14	considerando	considerar	VERB	_	VerbForm=Ger	2	advcl	_	_
+ 15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+@@ -181754,7 +181754,7 @@
+ 
+ # text = c Redução do volume de meso e macroporos em relação à zeólita suporte considerando a área do catalisador por massa de zeólita.
+ # sent_id = 25-20150123-MONOGRAFIA_0-310
+-1	c	c	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_
++1	c	c	NOUN	_	Gender=Fem|Number=Sing	0	root	_	sentenciação
+ 2	Redução	redução	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
+ 3-4	do	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	5	case	_	_
+@@ -181769,8 +181769,8 @@
+ 12-13	à	_	_	_	_	_	_	_	_
+ 12	a	a	ADP	_	_	10	fixed	_	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+-14	zeólita	zeólito	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_
+-15	suporte	suporte	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_
++14	zeólita	zeólita	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_
++15	suporte	suporte	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_
+ 16	considerando	considerar	VERB	_	VerbForm=Ger	1	advcl	_	_
+ 17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+ 18	área	área	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_
+@@ -183662,7 +183662,7 @@
+ 42	em	em	ADP	_	_	44	case	_	_
+ 43	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
+ 44	cavidades	cavidade	NOUN	_	Gender=Fem|Number=Plur	40	obl	_	_
+-45	sodalitas	sodalito	ADJ	_	Gender=Fem|Number=Plur	44	amod	_	_
++45	sodalitas	sodalita	NOUN	_	Gender=Fem|Number=Plur	44	nmod	_	_
+ 46	(	(	PUNCT	_	_	47	punct	_	_
+ 47	cavidades	cavidade	NOUN	_	Gender=Fem|Number=Plur	44	appos	_	_
+ 48	beta	beto	ADJ	_	Gender=Fem|Number=Plur	47	amod	_	_
+@@ -187977,8 +187977,8 @@
+ # sent_id = 20-20140904-TESEDSC_0-49
+ 1	2	2	NUM	_	NumType=Card	2	nummod	_	_
+ 2	CONTEXTO	contexto	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_
+-3	GEOLÓGICO	GEOLÓGICO	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_
+-4	REGIONAL	regional	ADJ	_	Gender=Masc|Number=Sing	3	flat:name	_	_
++3	GEOLÓGICO	geológico	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_
++4	REGIONAL	regional	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_
+ 
+ # text = A área em questão representa um trecho da região proximal destas bacias dominado pelo embasamento raso.
+ # sent_id = 20-20140904-TESEDSC_0-51
+@@ -190186,14 +190186,14 @@
+ 8	e	e	CCONJ	_	_	9	cc	_	_
+ 9	folhelhos	folhelho	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_
+ 10	(	(	PUNCT	_	_	11	punct	_	_
+-11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	_
++11	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	5	nmod:appos	_	_
+ 12	Outeiro	Outeiro	PROPN	_	Number=Sing	11	flat:name	_	_
+ 13	)	)	PUNCT	_	_	11	punct	_	_
+ 14	e	e	CCONJ	_	_	15	cc	_	_
+-15	arenitos	arenito	ADJ	_	Gender=Masc|Number=Plur	5	conj	_	_
++15	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_
+ 16	turbidíticos	turbidítico	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_
+ 17	(	(	PUNCT	_	_	18	punct	_	_
+-18	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	_
++18	Membro	membro	PROPN	_	Gender=Masc|Number=Sing	15	nmod:appos	_	_
+ 19	Namorado	Namorado	PROPN	_	Number=Sing	18	flat:name	_	_
+ 20	)	)	PUNCT	_	_	18	punct	_	_
+ 21	.	.	PUNCT	_	_	4	punct	_	_
+@@ -193380,16 +193380,16 @@
+ 7	alcalinas	alcalino	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_
+ 8	félsicas	félsico	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_
+ 9	,	,	PUNCT	_	_	10	punct	_	_
+-10	insaturadas	insaturar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	8	conj	_	_
++10	insaturadas	insaturado	ADJ	_	Gender=Fem|Number=Plur	8	conj	_	_
+ 11	(	(	PUNCT	_	_	12	punct	_	_
+-12	nefelina	nefelina	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_
+-13	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	12	compound	_	_
++12	nefelina	nefelina	NOUN	_	Gender=Fem|Number=Sing	10	nmod:appos	_	_
++13	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_
+ 14	)	)	PUNCT	_	_	12	punct	_	_
+ 15	a	a	ADP	_	_	16	case	_	_
+-16	supersaturadas	supersaturada	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	_
++16	supersaturadas	supersaturada	NOUN	_	Gender=Fem|Number=Plur	10	obl	_	_
+ 17	(	(	PUNCT	_	_	18	punct	_	_
+-18	quartzo	quartzo	NOUN	_	Gender=Masc|Number=Sing	16	appos	_	_
+-19	sienito	sienito	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_
++18	quartzo	quartzo	NOUN	_	Gender=Masc|Number=Sing	16	nmod:appos	_	_
++19	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
+ 20	)	)	PUNCT	_	_	18	punct	_	_
+ 21	(	(	PUNCT	_	_	22	punct	_	_
+ 22	figura	figura	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	_	_
+@@ -193654,7 +193654,7 @@
+ 20	com	com	ADP	_	_	22	case	_	_
+ 21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+ 22	nefelina	nefelina	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_
+-23	sienito	sienito	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_
++23	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_
+ 24	,	,	PUNCT	_	_	11	punct	_	_
+ 25	onde	onde	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	26	obl	_	_
+ 26	puderam	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	22	acl:relcl	_	_
+@@ -193679,7 +193679,7 @@
+ 43	traquito	traquito	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	_
+ 44	e	e	CCONJ	_	_	45	cc	_	_
+ 45	nefelina	nefelina	NOUN	_	Gender=Fem|Number=Sing	43	conj	_	_
+-46	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	45	compound	_	_
++46	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	45	nmod	_	_
+ 47	.	.	PUNCT	_	_	11	punct	_	_
+ 
+ # text = No contato sudoeste ocorre um único dique de brecha com pouco mais de 30 cm de espessura, enquanto no contato nordeste ocorrem dois diques, um deles, de direção NE-SW, com aproximadamente 20m de espessura, com xenólitos até métricos.
+@@ -193739,7 +193739,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-203
+ 1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+ 2	quartzo	quartzo	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_
+-3	sienitos	sienito	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_
++3	sienitos	sienito	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_
+ 4	que	que	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	5	nsubj	_	_
+ 5	ocorrem	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
+ 6-7	na	_	_	_	_	_	_	_	_
+@@ -195276,7 +195276,7 @@
+ 3-4	da	_	_	_	_	_	_	_	_
+ 3	de	de	ADP	_	_	2	flat:name	_	_
+ 4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	flat:name	_	_
+-5	Barra	barra	NOUN	_	Gender=Fem|Number=Sing	2	flat:name	_	_
++5	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	_	_
+ 6-7	do	_	_	_	_	_	_	_	_
+ 6	de	de	ADP	_	_	5	flat:name	_	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	flat:name	_	_
+@@ -229227,7 +229227,7 @@
+ 22-23	da	_	_	_	_	_	_	_	_
+ 22	de	de	ADP	_	_	21	flat:name	_	_
+ 23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	flat:name	_	_
+-24	Barra	barra	NOUN	_	Gender=Fem|Number=Sing	21	flat:name	_	_
++24	Barra	barra	PROPN	_	Gender=Fem|Number=Sing	21	flat:name	_	_
+ 25-26	do	_	_	_	_	_	_	_	_
+ 25	de	de	ADP	_	_	24	flat:name	_	_
+ 26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	flat:name	_	_
+@@ -230039,8 +230039,8 @@
+ 24-25	do	_	_	_	_	_	_	_	_
+ 24	de	de	ADP	_	_	27	case	_	_
+ 25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+-26	orógeno	orógeno	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_
+-27	Ribeira	Ribeira	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	_
++26	orógeno	orógeno	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_
++27	Ribeira	Ribeira	PROPN	_	Gender=Masc|Number=Sing	26	nmod	_	_
+ 28	)	)	PUNCT	_	_	20	punct	_	_
+ 29	,	,	PUNCT	_	_	4	punct	_	_
+ 30	que	que	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	32	nsubj:pass	_	_
+@@ -235819,7 +235819,7 @@
+ 19	de	de	ADP	_	_	17	fixed	_	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+ 21	nefelina	nefelina	NOUN	_	Gender=Masc|Number=Sing	30	obl	_	_
+-22	sienito	sienito	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	_
++22	sienito	sienito	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_
+ 23-24	na	_	_	_	_	_	_	_	_
+ 23	em	em	ADP	_	_	25	case	_	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+@@ -243945,7 +243945,7 @@
+ 6	argila	argila	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_
+ 7	mineral	mineral	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_
+ 8	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
+-9	atapulgita	atapulgita	ADJ	_	Gender=Fem|Number=Sing	8	xcomp	_	_
++9	atapulgita	atapulgita	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_
+ 10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+ 11	ser	ser	AUX	_	VerbForm=Inf	12	aux:pass	_	_
+ 12	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	xcomp	_	_
+@@ -243962,7 +243962,7 @@
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+ 8	argila	argila	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_
+ 9	mineral	mineral	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_
+-10	sepiolita	sepiolita	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_
++10	sepiolita	sepiolita	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_
+ 11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+ 12	mais	mais	ADV	_	_	13	advmod	_	_
+ 13	indicada	indicar	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_
+@@ -265975,7 +265975,7 @@
+ 17	ou	ou	CCONJ	_	_	18	cc	_	_
+ 18	linear	linear	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_
+ 19	alquil	alquil	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
+-20	benzeno	benzeno	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_
++20	benzeno	benzeno	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_
+ 21	(	(	PUNCT	_	_	22	punct	_	_
+ 22	CATARINA	Catarina	PROPN	_	Gender=Fem|Number=Sing	2	parataxis	_	_
+ 23	,	,	PUNCT	_	_	22	flat:name	_	_
+@@ -292253,9 +292253,9 @@
+ 8	,	,	PUNCT	_	_	9	punct	_	_
+ 9	tolueno	tolueno	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_
+ 10	,	,	PUNCT	_	_	11	punct	_	_
+-11	xileno	xileno	ADJ	_	Gender=Masc|Number=Sing	7	conj	_	_
++11	xileno	xileno	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_
+ 12	e	e	CCONJ	_	_	13	cc	_	_
+-13	naftalenos	naftaleno	ADJ	_	Gender=Masc|Number=Plur	7	conj	_	_
++13	naftalenos	naftaleno	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+ 14	,	,	PUNCT	_	_	7	punct	_	_
+ 15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
+ 16	relativamente	relativamente	ADV	_	_	17	advmod	_	_
+@@ -295585,7 +295585,7 @@
+ 16	etoxilado	etoxilar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
+ 17	,	,	PUNCT	_	_	18	punct	_	_
+ 18	propileno	propileno	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_
+-19	glicol	glicol	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_
++19	glicol	glicol	NOUN	_	Gender=Masc|Number=Sing	18	compound	_	_
+ 20	etoxilado	etoxilar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
+ 21	e	e	CCONJ	_	_	23	cc	_	_
+ 22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_

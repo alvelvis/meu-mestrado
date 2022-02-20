@@ -1,0 +1,167 @@
+commit 7c9d2d38d0cb2df14cef14a0d03dd0ea3f2169e4
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Wed Jun 9 14:34:53 2021 -0300
+
+    conglomerados e sustentados
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 1e9d768..c614236 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -6209,7 +6209,7 @@
+ 2	,	,	PUNCT	_	_	3	punct	O	_
+ 3	siltitos	siltito	NOUN	_	Gender=Masc|Number=Plur	1	conj	B=LITOLOGIA	_
+ 4	e	e	CCONJ	_	_	5	cc	O	_
+-5	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	conj	O	_
++5	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	1	conj	O	_
+ 6	com	com	ADP	_	_	7	case	O	_
+ 7	seixos	seixo	NOUN	_	Gender=Masc|Number=Plur	5	obl	O	_
+ 8	de	de	ADP	_	_	9	case	O	_
+@@ -25903,9 +25903,9 @@
+ 
+ # text = Conglomerados com estratificação cruzada acanalada (Fácies Gt)
+ # sent_id = 284-20150917-MONOGRAFIA_0-187
+-1	Conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	O	_
++1	Conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	0	root	O	_
+ 2	com	com	ADP	_	_	3	case	O	_
+-3	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	1	obl	B=LITOLOGIA	_
++3	estratificação	estratificação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	B=LITOLOGIA	_
+ 4	cruzada	cruzar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	I=LITOLOGIA	_
+ 5	acanalada	acanalar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	I=LITOLOGIA	_
+ 6	(	(	PUNCT	_	_	7	punct	O	_
+@@ -25921,20 +25921,20 @@
+ # text = Conglomerados creme-amarronzados, matriz-sustentados, mal selecionados, com grau de arredondamento variável (arredondados a angulosos)..
+ # sent_id = 284-20150917-MONOGRAFIA_0-189
+ 1	Conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	0	root	B=LITOLOGIA	_
+-2	creme-amarronzados	creme-amarronzar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	O	_
++2	creme-amarronzados	creme-amarronzado	ADJ	_	Gender=Masc|Number=Plur	1	acl	O	_
+ 3	,	,	PUNCT	_	_	4	punct	O	_
+-4	matriz-sustentados	matriz-sustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	O	_
++4	matriz-sustentados	matriz-sustentado	ADJ	_	Gender=Masc|Number=Plur	1	conj	O	_
+ 5	,	,	PUNCT	_	_	7	punct	O	_
+ 6	mal	mal	ADV	_	_	7	advmod	O	_
+-7	selecionados	selecionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	4	conj	O	_
+-8	,	,	PUNCT	_	_	4	punct	O	_
++7	selecionados	selecionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	2	conj	O	_
++8	,	,	PUNCT	_	_	10	punct	O	_
+ 9	com	com	ADP	_	_	10	case	O	_
+-10	grau	grau	NOUN	_	Gender=Masc|Number=Sing	2	obl	O	_
++10	grau	grau	NOUN	_	Gender=Masc|Number=Sing	2	conj	O	_
+ 11	de	de	ADP	_	_	12	case	O	_
+ 12	arredondamento	arredondamento	NOUN	_	Gender=Masc|Number=Sing	10	nmod	O	_
+ 13	variável	variável	ADJ	_	Gender=Masc|Number=Sing	12	amod	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+-15	arredondados	arredondar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	O	_
++15	arredondados	arredondar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	10	nmod:appos	O	_
+ 16	a	a	ADP	_	_	17	case	O	_
+ 17	angulosos	anguloso	NOUN	_	Gender=Masc|Number=Plur	15	obl	O	_
+ 18	)	)	PUNCT	_	_	15	punct	O	_
+@@ -29008,7 +29008,7 @@
+ 15	St	St	PROPN	_	Gender=Masc|Number=Sing	14	nmod	I=LITOLOGIA	_
+ 16	)	)	PUNCT	_	_	14	punct	O	_
+ 17	e	e	CCONJ	_	_	18	cc	O	_
+-18	conglomerados	conglomerar	NOUN	_	Gender=Masc|Number=Plur	14	conj	O	_
++18	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	12	conj	O	_
+ 19	(	(	PUNCT	_	_	20	punct	O	_
+ 20	fácies	fácies	NOUN	_	Gender=Masc|Number=Plur	18	nmod:appos	B=LITOLOGIA	_
+ 21	Gt	Gt	PROPN	_	Gender=Masc|Number=Sing	20	nmod	O	_
+@@ -30090,7 +30090,7 @@
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	base	base	NOUN	_	Gender=Fem|Number=Sing	7	nmod	O	_
+ 11	(	(	PUNCT	_	_	12	punct	O	_
+-12	LSDi	LSDi	PROPN	_	Gender=Fem|Number=Sing	10	appos	O	_
++12	LSDi	LSDi	PROPN	_	Gender=Fem|Number=Sing	7	appos	O	_
+ 13	)	)	PUNCT	_	_	12	punct	O	_
+ 14	,	,	PUNCT	_	_	4	punct	O	_
+ 15	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	O	_
+@@ -30114,10 +30114,10 @@
+ 33	Gt	Gt	PROPN	_	Number=Sing	32	flat:name	O	_
+ 34	)	)	PUNCT	_	_	32	punct	O	_
+ 35	,	,	PUNCT	_	_	36	punct	O	_
+-36	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	30	conj	O	_
+-37	sustentados	sustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	36	acl	O	_
++36	matriz	matriz	NOUN	_	Gender=Masc|Number=Plur	30	conj	O	_
++37	sustentados	sustentado	ADJ	_	Gender=Masc|Number=Plur	36	compound	O	_
+ 38	a	a	ADP	_	_	39	case	O	_
+-39	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	37	obl	B=LITOLOGIA	_
++39	arenitos	arenito	NOUN	_	Gender=Masc|Number=Plur	36	obl	B=LITOLOGIA	_
+ 40	muito	muito	ADV	_	_	41	advmod	O	_
+ 41	grossos	grosso	ADJ	_	Gender=Masc|Number=Plur	39	amod	O	_
+ 42	.	.	PUNCT	_	_	4	punct	O	_
+@@ -32068,10 +32068,10 @@
+ 19	)	)	PUNCT	_	_	17	punct	O	_
+ 20	registradas	registrar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	14	acl	O	_
+ 21	como	como	ADP	_	_	22	case	O	_
+-22	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	20	xcomp	O	_
++22	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	20	xcomp	O	_
+ 23	,	,	PUNCT	_	_	24	punct	O	_
+-24	matriz	matriz	NOUN	_	Gender=Fem|Number=Sing	20	conj	O	_
+-25	sustentados	sustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	24	acl	O	_
++24	matriz	matriz	NOUN	_	Gender=Masc|Number=Plur	22	conj	O	_
++25	sustentados	sustentado	ADJ	_	Gender=Masc|Number=Plur	24	compound	O	_
+ 26	,	,	PUNCT	_	_	28	punct	O	_
+ 27	com	com	ADP	_	_	28	case	O	_
+ 28	clastos	clasto	NOUN	_	Gender=Masc|Number=Plur	7	obl	O	_
+@@ -65818,7 +65818,7 @@
+ 25	composto	compor	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	O	_
+ 26	por	por	ADP	_	_	27	case	O	_
+ 27	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	25	obl:agent	B=LITOLOGIA	_
+-28	clasto-sustentados	clastobsusustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	27	acl	O	_
++28	clasto-sustentados	clasto-sustentado	ADJ	_	Gender=Masc|Number=Plur	27	amod	O	_
+ 29	,	,	PUNCT	_	_	25	punct	O	_
+ 30	e	e	CCONJ	_	_	33	cc	O	_
+ 31	secundariamente	secundariamente	ADV	_	_	33	advmod	O	_
+@@ -68972,7 +68972,7 @@
+ 9	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	O	_
+ 10	matriz-sustentados	matriz-sustentado	ADJ	_	Gender=Masc|Number=Plur	9	amod	O	_
+ 11	ou	ou	CCONJ	_	_	12	cc	O	_
+-12	clasto-sustentados	clastobsusustentado	ADJ	_	Gender=Masc|Number=Plur	10	conj	O	_
++12	clasto-sustentados	clasto-sustentado	ADJ	_	Gender=Masc|Number=Plur	10	conj	O	_
+ 13	,	,	PUNCT	_	_	16	punct	O	_
+ 14	geralmente	geralmente	ADV	_	_	16	advmod	O	_
+ 15	pouco	pouco	ADV	_	_	16	advmod	O	_
+@@ -69022,8 +69022,8 @@
+ 23	quase	quase	ADV	_	_	26	advmod	O	_
+ 24	que	que	SCONJ	_	_	26	mark	O	_
+ 25	somente	somente	ADV	_	_	26	advmod	O	_
+-26	conglomerado	conglomerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	advcl	B=LITOLOGIA	_
+-27	clasto-sustentado	clasto-susustentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	26	conj	O	_
++26	conglomerado	conglomerado	NOUN	_	Gender=Masc|Number=Sing	19	xcomp	B=LITOLOGIA	_
++27	clasto-sustentado	clasto-sustentado	ADJ	_	Gender=Masc|Number=Sing	26	amod	O	_
+ 28	e	e	CCONJ	_	_	30	cc	O	_
+ 29	com	com	ADP	_	_	30	case	O	_
+ 30	espessura	espessura	NOUN	_	Gender=Fem|Number=Sing	27	conj	O	_
+@@ -69046,8 +69046,8 @@
+ 3-4	observou-se	_	_	_	_	_	_	_	_
+ 3	observou	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+ 4	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	expl	O	_
+-5	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	3	xcomp	O	_
+-6	clasto-sustentados	clastobsusustentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	xcomp	O	_
++5	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	3	nsubj:pass	O	_
++6	clasto-sustentados	clasto-sustentado	ADJ	_	Gender=Masc|Number=Plur	5	amod	O	_
+ 7	(	(	PUNCT	_	_	8	punct	O	_
+ 8	fácies	fácies	NOUN	_	Gender=Masc|Number=Plur	6	nmod:appos	B=LITOLOGIA	_
+ 9	G	g	NOUN	_	Gender=Masc|Number=Plur	8	nmod	O	_
+@@ -69123,9 +69123,9 @@
+ 17	acamamento	acamamento	NOUN	_	Gender=Masc|Number=Sing	14	obj	O	_
+ 18	horizontal	horizontal	ADJ	_	Gender=Masc|Number=Sing	17	amod	O	_
+ 19	e	e	CCONJ	_	_	20	cc	O	_
+-20	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	18	conj	O	_
++20	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	17	conj	O	_
+ 21	aparentemente	aparentemente	ADV	_	_	22	advmod	O	_
+-22	maciços	maciço	ADJ	_	Gender=Masc|Number=Plur	20	xcomp	B=LITOLOGIA	_
++22	maciços	maciço	ADJ	_	Gender=Masc|Number=Plur	20	amod	B=LITOLOGIA	_
+ 23	(	(	PUNCT	_	_	24	punct	O	_
+ 24	Figura	Figura	PROPN	_	Gender=Fem|Number=Sing	9	parataxis	O	_
+ 25	8	8	PROPN	_	Number=Sing	24	flat:name	O	_
+@@ -69264,8 +69264,8 @@
+ 8	Abaeté	Abaeté	PROPN	_	Number=Sing	7	flat:name	I=LOCAL:GEO	_
+ 9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	aux:pass	O	_
+ 10	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+-11	principalmente	principalmente	ADV	_	_	12	advmod	O	_
+-12	conglomerados	conglomerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	xcomp	O	_
++11	principalmente	principalmente	ADV	_	_	10	advmod	O	_
++12	conglomerados	conglomerado	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	O	_
+ 13	matriz-sustentado	matriz-sustentado	ADJ	_	Gender=Masc|Number=Sing	12	amod	O	_
+ 14	(	(	PUNCT	_	_	15	punct	O	_
+ 15	fácies	fácies	NOUN	_	Gender=Masc|Number=Plur	12	nmod:appos	B=LITOLOGIA	_

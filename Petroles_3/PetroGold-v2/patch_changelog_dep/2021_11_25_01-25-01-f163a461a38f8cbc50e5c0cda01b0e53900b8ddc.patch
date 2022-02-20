@@ -1,0 +1,386 @@
+commit f163a461a38f8cbc50e5c0cda01b0e53900b8ddc
+Author: Elvis de Souza <elvis.desouza99@gmail.com>
+Date:   Thu Nov 25 01:25:01 2021 -0300
+
+    correções de 'a priori'
+
+diff --git a/Petroles_3/Petroles_3_golden.conllu b/Petroles_3/Petroles_3_golden.conllu
+index 3cbe0c6..ff7cca4 100644
+--- a/Petroles_3/Petroles_3_golden.conllu
++++ b/Petroles_3/Petroles_3_golden.conllu
+@@ -32374,11 +32374,11 @@
+ 21	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	O	_
+ 22	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 23	decidir	decidir	VERB	_	VerbForm=Inf	22	xcomp	O	_
+-24	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	25	expl	O	_
+-25	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	xcomp	O	_
+-26	ou	ou	CCONJ	_	_	28	cc	O	_
+-27	não	não	ADV	_	Polarity=Neg	28	advmod	O	_
+-28	implantar	implantar	VERB	_	VerbForm=Inf	25	conj	O	_
++24	se	se	SCONJ	_	_	25	mark	O	_
++25	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	O	_
++26	ou	ou	CCONJ	_	_	27	cc	O	_
++27	não	não	ADV	_	Polarity=Neg	25	advmod	O	_
++28	implantar	implantar	VERB	_	VerbForm=Inf	25	xcomp	O	_
+ 29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	O	_
+ 30	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	28	obj	O	_
+ 31	exploratório	exploratório	ADJ	_	Gender=Masc|Number=Sing	30	amod	O	_
+@@ -196706,9 +196706,9 @@
+ 3	consistentes	consistente	ADJ	_	Gender=Fem|Number=Plur	2	amod	O	_
+ 4	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	O	_
+ 5	depender	depender	VERB	_	VerbForm=Inf	0	root	O	_
+-6	,	,	PUNCT	_	_	5	punct	O	_
+-7	portanto	portanto	CCONJ	_	_	5	cc	O	_
+-8	,	,	PUNCT	_	_	5	punct	O	_
++6	,	,	PUNCT	_	_	7	punct	O	_
++7	portanto	portanto	ADV	_	_	5	advmod	O	_
++8	,	,	PUNCT	_	_	7	punct	O	_
+ 9-10	da	_	_	_	_	_	_	_	_
+ 9	de	de	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+@@ -196725,8 +196725,8 @@
+ 19	de	de	ADP	_	_	18	fixed	O	_
+ 20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	O	_
+ 21	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	17	obl	O	_
+-22	a	a	ADP	_	_	23	case	O	_
+-23	priori	priori	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++22	a	a	ADP	_	_	21	amod	O	MWEPOS=ADJ
++23	priori	priori	NOUN	_	Gender=Fem|Number=Sing	22	fixed	O	_
+ 24	sobre	sobre	ADP	_	_	26	case	O	_
+ 25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+ 26	geologia	geologia	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+@@ -196746,14 +196746,14 @@
+ 5	nível	nível	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	O	_
+ 6	de	de	ADP	_	_	7	case	O	_
+ 7	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	5	nmod	O	_
+-8	a	a	ADP	_	_	9	case	O	_
+-9	priori	priori	NOUN	_	Gender=Masc|Number=Sing	7	nmod	O	_
++8	a	a	ADP	_	_	7	amod	O	MWEPOS=ADJ
++9	priori	priori	NOUN	_	Gender=Masc|Number=Sing	8	fixed	O	_
+ 10	,	,	PUNCT	_	_	12	punct	O	_
+ 11	mais	mais	ADV	_	_	12	advmod	O	_
+ 12	consistentes	consistente	ADJ	_	Gender=Fem|Number=Plur	15	nsubj	O	_
+ 13	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	15	cop	O	_
+ 14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	O	_
+-15	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	5	advcl	O	_
++15	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	2	advcl	O	_
+ 16	obtidas	obter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	O	_
+ 17-18	pelo	_	_	_	_	_	_	_	_
+ 17	por	por	ADP	_	_	20	case	O	_
+@@ -199820,8 +199820,8 @@
+ 17	utilizadas	utilizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+ 18	como	como	ADP	_	_	19	case	O	_
+ 19	informação	informação	NOUN	_	Gender=Fem|Number=Sing	17	xcomp	O	_
+-20	a	a	ADP	_	_	21	case	O	_
+-21	priori	priori	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
++20	a	a	ADP	_	_	19	amod	O	MWEPOS=ADJ
++21	priori	priori	NOUN	_	Gender=Fem|Number=Sing	20	fixed	O	_
+ 22	para	para	ADP	_	_	23	case	O	_
+ 23	geração	geração	NOUN	_	Gender=Fem|Number=Sing	17	obl	O	_
+ 24	de	de	ADP	_	_	25	case	O	_
+@@ -199862,7 +199862,7 @@
+ 15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	O	_
+ 16	escasso	escasso	ADJ	_	Gender=Masc|Number=Sing	8	acl:relcl	O	_
+ 17	,	,	PUNCT	_	_	16	punct	O	_
+-18	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	22	cc	O	_
++18	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	22	cc	O	MWEPOS=CCONJ
+ 19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	fixed	O	_
+ 20	,	,	PUNCT	_	_	22	punct	O	_
+ 21	em	em	ADP	_	_	22	case	O	_
+@@ -199871,10 +199871,10 @@
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	O	_
+ 25	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	26	amod	O	_
+ 26	informação	informação	NOUN	_	Gender=Fem|Number=Sing	45	nsubj	O	_
+-27	a	a	ADP	_	_	28	case	O	_
+-28	priori	priori	NOUN	_	Gender=Fem|Number=Sing	26	nmod	O	_
++27	a	a	ADP	_	_	26	amod	O	MWEPOS=ADJ
++28	priori	priori	NOUN	_	Gender=Fem|Number=Sing	27	fixed	O	_
+ 29	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	30	nsubj	O	_
+-30	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	28	acl:relcl	O	_
++30	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	26	acl:relcl	O	_
+ 31	provir	provir	VERB	_	VerbForm=Inf	30	xcomp	O	_
+ 32	de	de	ADP	_	_	34	case	O	_
+ 33	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	O	_
+@@ -202693,8 +202693,8 @@
+ 9	,	,	PUNCT	_	_	11	punct	O	_
+ 10	como	como	ADP	_	_	11	case	O	_
+ 11	informação	informação	NOUN	_	Gender=Fem|Number=Sing	8	nmod:appos	O	_
+-12	a	a	ADP	_	_	13	case	O	_
+-13	priori	priori	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
++12	a	a	ADP	_	_	11	amod	O	MWEPOS=ADJ
++13	priori	priori	NOUN	_	Gender=Fem|Number=Sing	12	fixed	O	_
+ 14	,	,	PUNCT	_	_	11	punct	O	_
+ 15	de	de	ADP	_	_	16	case	O	_
+ 16	inclinações	inclinação	NOUN	_	Gender=Fem|Number=Plur	11	nmod	O	_
+@@ -202790,17 +202790,17 @@
+ 21	de	de	ADP	_	_	23	case	O	_
+ 22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	O	_
+ 23	informação	informação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+-24	a	a	ADP	_	_	25	case	O	_
+-25	priori	priori	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++24	a	a	ADP	_	_	23	amod	O	MWEPOS=ADJ
++25	priori	priori	NOUN	_	Gender=Fem|Number=Sing	24	fixed	O	_
+ 26	sobre	sobre	ADP	_	_	27	case	O	_
+-27	compacidade	compacidade	NOUN	_	Gender=Fem|Number=Sing	25	nmod	O	_
++27	compacidade	compacidade	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
+ 28-29	da	_	_	_	_	_	_	_	_
+ 28	de	de	ADP	_	_	30	case	O	_
+ 29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	O	_
+ 30	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	27	nmod	O	_
+ 31	anômala	anômalo	ADJ	_	Gender=Fem|Number=Sing	30	amod	O	_
+ 32	,	,	PUNCT	_	_	33	punct	O	_
+-33	ou	ou	CCONJ	_	_	37	cc	O	_
++33	ou	ou	CCONJ	_	_	37	cc	O	MWEPOS=CCONJ
+ 34	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	fixed	O	_
+ 35	,	,	PUNCT	_	_	33	punct	O	_
+ 36	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	O	_
+@@ -203115,8 +203115,8 @@
+ # sent_id = 20-20140904-TESEDSC_0-512
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	informação	informação	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	O	_
+-3	a	a	ADP	_	_	4	case	O	_
+-4	priori	priori	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
++3	a	a	ADP	_	_	2	amod	O	MWEPOS=ADJ
++4	priori	priori	NOUN	_	Gender=Fem|Number=Sing	3	fixed	O	_
+ 5	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	6	nsubj	O	_
+ 6	vincula	vincular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	O	_
+ 7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	O	_
+@@ -203435,8 +203435,8 @@
+ 14	intérprete	intérprete	NOUN	_	Gender=Masc|Number=Sing	11	obl:agent	O	_
+ 15	como	como	ADP	_	_	16	case	O	_
+ 16	informação	informação	NOUN	_	Gender=Fem|Number=Sing	11	xcomp	O	_
+-17	a	a	ADP	_	_	18	case	O	_
+-18	priori	priori	NOUN	_	Gender=Fem|Number=Sing	16	nmod	O	_
++17	a	a	ADP	_	_	16	amod	O	MWEPOS=ADJ
++18	priori	priori	NOUN	_	Gender=Fem|Number=Sing	17	fixed	O	_
+ 19	,	,	PUNCT	_	_	11	punct	O	_
+ 20	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	O	_
+ 21	numerados	numerar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -203891,8 +203891,8 @@
+ 4	introduzir	introduzir	VERB	_	VerbForm=Inf	23	advcl	O	_
+ 5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+ 6	informação	informação	NOUN	_	Gender=Fem|Number=Sing	4	obj	O	_
+-7	a	a	ADP	_	_	8	case	O	_
+-8	priori	priori	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++7	a	a	ADP	_	_	6	amod	O	MWEPOS=ADJ
++8	priori	priori	NOUN	_	Gender=Fem|Number=Sing	7	fixed	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	O	_
+ 11	valores	valor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	O	_
+@@ -204145,8 +204145,8 @@
+ 1	Obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	0	root	O	_
+ 2	de	de	ADP	_	_	3	case	O	_
+ 3	informação	informação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	O	_
+-4	a	a	ADP	_	_	5	case	O	_
+-5	priori	priori	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++4	a	a	ADP	_	_	3	amod	O	MWEPOS=ADJ
++5	priori	priori	NOUN	_	Gender=Fem|Number=Sing	4	fixed	O	_
+ 
+ # text = A obtenção de informação a priori é de suma importância na criação dos vínculos necessários para dar significado geológico ao problema de inversão compacta generalizada.
+ # sent_id = 20-20140904-TESEDSC_0-540
+@@ -204154,8 +204154,8 @@
+ 2	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	O	_
+ 3	de	de	ADP	_	_	4	case	O	_
+ 4	informação	informação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+-5	a	a	ADP	_	_	6	case	O	_
+-6	priori	priori	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++5	a	a	ADP	_	_	4	amod	O	MWEPOS=ADJ
++6	priori	priori	NOUN	_	Gender=Fem|Number=Sing	5	fixed	O	_
+ 7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	O	_
+ 8	de	de	ADP	_	_	10	case	O	_
+ 9	suma	suma	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+@@ -204285,8 +204285,8 @@
+ 11	obtenção	obtenção	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	O	_
+ 12	de	de	ADP	_	_	13	case	O	_
+ 13	informação	informação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	O	_
+-14	a	a	ADP	_	_	15	case	O	_
+-15	priori	priori	NOUN	_	Gender=Fem|Number=Sing	13	nmod	O	_
++14	a	a	ADP	_	_	13	amod	O	MWEPOS=ADJ
++15	priori	priori	NOUN	_	Gender=Fem|Number=Sing	14	fixed	O	_
+ 16	sobre	sobre	ADP	_	_	18	case	O	_
+ 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	O	_
+ 18	ambiente	ambiente	NOUN	_	Gender=Masc|Number=Sing	13	nmod	O	_
+@@ -204364,7 +204364,7 @@
+ 
+ # text = A princípio, o usuário do método de inversão compacta generalizada pode criar seus vínculos sem informação a priori, simplesmente por tentativa e erro até produzir um modelo satisfatório, uma vez que este método é especialmente concebido para testar hipóteses interpretativas dada à sua habilidade inerente de ajuste aos perfis mais complexos de observações do campo magnético anômalo.
+ # sent_id = 20-20140904-TESEDSC_0-548
+-1	A	a	ADP	_	_	13	cc	O	_
++1	A	a	ADP	_	_	13	advmod	O	MWEPOS=ADV
+ 2	princípio	princípio	NOUN	_	Gender=Masc|Number=Sing	1	fixed	O	_
+ 3	,	,	PUNCT	_	_	1	punct	O	_
+ 4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	O	_
+@@ -204383,8 +204383,8 @@
+ 16	vínculos	vínculo	NOUN	_	Gender=Masc|Number=Plur	14	obj	O	_
+ 17	sem	sem	ADP	_	_	18	case	O	_
+ 18	informação	informação	NOUN	_	Gender=Fem|Number=Sing	14	obl	O	_
+-19	a	a	ADP	_	_	20	case	O	_
+-20	priori	priori	NOUN	_	Gender=Fem|Number=Sing	18	nmod	O	_
++19	a	a	ADP	_	_	18	amod	O	MWEPOS=ADJ
++20	priori	priori	NOUN	_	Gender=Fem|Number=Sing	19	fixed	O	_
+ 21	,	,	PUNCT	_	_	24	punct	O	_
+ 22	simplesmente	simplesmente	ADV	_	_	24	advmod	O	_
+ 23	por	por	ADP	_	_	24	case	O	_
+@@ -204397,7 +204397,7 @@
+ 30	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	28	obj	O	_
+ 31	satisfatório	satisfatório	ADJ	_	Gender=Masc|Number=Sing	30	amod	O	_
+ 32	,	,	PUNCT	_	_	40	punct	O	_
+-33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	mark	O	_
++33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	mark	O	MWEPOS=SCONJ
+ 34	vez	vez	NOUN	_	Gender=Fem|Number=Sing	33	fixed	O	_
+ 35	que	que	SCONJ	_	_	33	fixed	O	_
+ 36	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	37	det	O	_
+@@ -204966,8 +204966,8 @@
+ 3	inexistência	inexistência	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	informação	informação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+-6	a	a	ADP	_	_	7	case	O	_
+-7	priori	priori	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++6	a	a	ADP	_	_	5	amod	O	MWEPOS=ADJ
++7	priori	priori	NOUN	_	Gender=Fem|Number=Sing	6	fixed	O	_
+ 8	sobre	sobre	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+ 10	geometria	geometria	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
+@@ -205126,8 +205126,8 @@
+ 1	Admitindo	admitir	VERB	_	VerbForm=Ger	19	advcl	O	_
+ 2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	O	_
+ 3	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	1	obj	O	_
+-4	a	a	ADP	_	_	5	case	O	_
+-5	priori	priori	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
++4	a	a	ADP	_	_	3	amod	O	MWEPOS=ADJ
++5	priori	priori	NOUN	_	Gender=Fem|Number=Sing	4	fixed	O	_
+ 6	sobre	sobre	ADP	_	_	8	case	O	_
+ 7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	O	_
+ 8	susceptibilidade	susceptibilidade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+@@ -205343,11 +205343,11 @@
+ 4	existência	existência	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+ 5	de	de	ADP	_	_	6	case	O	_
+ 6	informação	informação	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
+-7	a	a	ADP	_	_	8	case	O	_
+-8	priori	priori	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
++7	a	a	ADP	_	_	6	amod	O	MWEPOS=ADJ
++8	priori	priori	NOUN	_	Gender=Fem|Number=Sing	7	fixed	O	_
+ 9	sobre	sobre	ADP	_	_	11	case	O	_
+ 10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	O	_
+-11	susceptibilidade	susceptibilidade	NOUN	_	Gender=Fem|Number=Sing	1	obl	O	_
++11	susceptibilidade	susceptibilidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	O	_
+ 12	magnética	magnético	ADJ	_	Gender=Fem|Number=Sing	11	amod	O	_
+ 13-14	da	_	_	_	_	_	_	_	_
+ 13	de	de	ADP	_	_	15	case	O	_
+@@ -205657,8 +205657,8 @@
+ 3	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	1	obj	O	_
+ 4	de	de	ADP	_	_	5	case	O	_
+ 5	informação	informação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	O	_
+-6	a	a	ADP	_	_	7	case	O	_
+-7	priori	priori	NOUN	_	Gender=Fem|Number=Sing	5	nmod	O	_
++6	a	a	ADP	_	_	5	amod	O	MWEPOS=ADJ
++7	priori	priori	NOUN	_	Gender=Fem|Number=Sing	6	fixed	O	_
+ 8	,	,	PUNCT	_	_	1	punct	O	_
+ 9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	O	_
+ 10	aplicada	aplicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	O	_
+@@ -206724,10 +206724,10 @@
+ 
+ # text = Em outras palavras, o próprio modelo sugere o espessamento do pacote sedimentar independentemente do elemento geométrico, introduzido como informação a priori, se for assumido um contraste limite de susceptibilidade magnética de -0,002 para o pacote.
+ # sent_id = 20-20140904-TESEDSC_0-608
+-1	Em	em	ADP	_	_	8	cc	O	_
+-2	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	O	_
+-3	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	8	obl	O	_
+-4	,	,	PUNCT	_	_	3	punct	O	_
++1	Em	em	ADP	_	_	8	advmod	O	MWEPOS=ADV
++2	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	1	fixed	O	_
++3	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	1	fixed	O	_
++4	,	,	PUNCT	_	_	1	punct	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	O	_
+ 6	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Emp	7	det	O	_
+ 7	modelo	modelo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	O	_
+@@ -206749,8 +206749,8 @@
+ 21	introduzido	introduzir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	O	_
+ 22	como	como	ADP	_	_	23	case	O	_
+ 23	informação	informação	NOUN	_	Gender=Fem|Number=Sing	21	xcomp	O	_
+-24	a	a	ADP	_	_	25	case	O	_
+-25	priori	priori	NOUN	_	Gender=Masc|Number=Sing	23	nmod	O	_
++24	a	a	ADP	_	_	23	amod	O	MWEPOS=ADJ
++25	priori	priori	NOUN	_	Gender=Masc|Number=Sing	24	fixed	O	_
+ 26	,	,	PUNCT	_	_	21	punct	O	_
+ 27	se	se	SCONJ	_	_	29	mark	O	_
+ 28	for	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux:pass	O	_
+@@ -212189,8 +212189,8 @@
+ 2	não	não	ADV	_	Polarity=Neg	3	advmod	O	_
+ 3	existe	existir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 4	informação	informação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	O	_
+-5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	O	_
+-6	priori	priori	NOUN	_	Gender=Fem|Number=Sing	4	nmod	O	_
++5	a	a	ADP	_	_	4	amod	O	MWEPOS=ADJ
++6	priori	priori	NOUN	_	Gender=Fem|Number=Sing	5	fixed	O	_
+ 7	disponível	disponível	ADJ	_	Gender=Fem|Number=Sing	4	amod	O	_
+ 8	sobre	sobre	ADP	_	_	10	case	O	_
+ 9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	O	_
+@@ -212686,11 +212686,11 @@
+ 19	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	6	conj	O	_
+ 20	de	de	ADP	_	_	21	case	O	_
+ 21	informação	informação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	O	_
+-22	a	a	ADP	_	_	23	case	O	_
+-23	priori	priori	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
++22	a	a	ADP	_	_	21	amod	O	MWEPOS=ADJ
++23	priori	priori	NOUN	_	Gender=Fem|Number=Sing	22	fixed	O	_
+ 24	sobre	sobre	ADP	_	_	26	case	O	_
+ 25	sua	seu	DET	_	Gender=Fem|Number=Sing|PronType=Prs	26	det	O	_
+-26	geologia	geologia	NOUN	_	Gender=Fem|Number=Sing	23	nmod	O	_
++26	geologia	geologia	NOUN	_	Gender=Fem|Number=Sing	21	nmod	O	_
+ 27	,	,	PUNCT	_	_	19	punct	O	_
+ 28-29	optou-se	_	_	_	_	_	_	_	_
+ 28	optou	optar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	O	_
+@@ -218912,7 +218912,7 @@
+ # sent_id = 20-20140904-TESEDSC_0-945
+ 1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	O	_
+ 2	porção	porção	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	O	_
+-3	SE	se	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	20	expl	O	_
++3	SE	SE	NOUN	_	Gender=Fem|Number=Sing	2	nmod	O	_
+ 4-5	do	_	_	_	_	_	_	_	_
+ 4	de	de	ADP	_	_	6	case	O	_
+ 5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	O	_
+@@ -218931,7 +218931,7 @@
+ 18	NE-SW	NE-SW	PROPN	_	Gender=Masc|Number=Sing	16	nmod	O	_
+ 19	,	,	PUNCT	_	_	11	punct	O	_
+ 20	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+-21	se	se	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	expl	O	_
++21	se	se	PRON	_	_	22	expl	O	_
+ 22	associar	associar	VERB	_	VerbForm=Inf	20	xcomp	O	_
+ 23-24	à	_	_	_	_	_	_	_	_
+ 23	a	a	ADP	_	_	25	case	O	_
+@@ -230525,11 +230525,11 @@
+ 18	carentes	carente	ADJ	_	Gender=Masc|Number=Plur	17	amod	O	_
+ 19	de	de	ADP	_	_	20	case	O	_
+ 20	informação	informação	NOUN	_	Gender=Fem|Number=Sing	18	obl	O	_
+-21	a	a	ADP	_	_	22	case	O	_
+-22	priori	priori	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
++21	a	a	ADP	_	_	20	amod	O	MWEPOS=ADJ
++22	priori	priori	NOUN	_	Gender=Fem|Number=Sing	21	fixed	O	_
+ 23	sobre	sobre	ADP	_	_	25	case	O	_
+ 24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	O	_
+-25	geologia	geologia	NOUN	_	Gender=Fem|Number=Sing	22	nmod	O	_
++25	geologia	geologia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	O	_
+ 26-27	da	_	_	_	_	_	_	_	_
+ 26	de	de	ADP	_	_	28	case	O	_
+ 27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	O	_
+@@ -230715,8 +230715,8 @@
+ 8	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	O	_
+ 9	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	8	xcomp	O	_
+ 10	informação	informação	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	O	_
+-11	a	a	ADP	_	_	12	case	O	_
+-12	priori	priori	NOUN	_	Gender=Fem|Number=Sing	10	nmod	O	_
++11	a	a	ADP	_	_	10	amod	O	MWEPOS=ADJ
++12	priori	priori	NOUN	_	Gender=Fem|Number=Sing	11	fixed	O	_
+ 13	adicional	adicional	ADJ	_	Gender=Fem|Number=Sing	10	amod	O	_
+ 14	que	que	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	O	_
+ 15	não	não	ADV	_	Polarity=Neg	16	advmod	O	_
+@@ -230786,8 +230786,8 @@
+ 7	e	e	CCONJ	_	_	9	cc	O	_
+ 8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	O	_
+ 9	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	6	conj	O	_
+-10	a	a	ADP	_	_	11	case	O	_
+-11	priori	priori	NOUN	_	Gender=Fem|Number=Sing	9	nmod	O	_
++10	a	a	ADP	_	_	9	amod	O	MWEPOS=ADJ
++11	priori	priori	NOUN	_	Gender=Fem|Number=Sing	10	fixed	O	_
+ 12-13	da	_	_	_	_	_	_	_	_
+ 12	de	de	ADP	_	_	14	case	O	_
+ 13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	O	_
